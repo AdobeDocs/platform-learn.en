@@ -1,0 +1,75 @@
+---
+title: Build a journey with a Federated Audience
+seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Build a journey with a Federated Audience
+description: In this exercise, a federated audience is used in a Journey Optimizer journey.
+role: Data Architect, Data Engineer
+jira: KT-18743
+thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
+exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
+---
+# Build a journey with a Federated Audience 
+
+Federated audiences can be used in journeys within Adobe Journey Optimizer (AJO). This includes using queried attributes from Federated Audience Composition to personalize messaging. 
+
+To continue with the SecurFinancial story, specifically the customer retargeting and personalization use case, we orchestrate a journey for pre-qualified customers. The goal is to send a personalized email based on attributes federated from SecurFinancial's data warehouse.
+
+## Steps
+
+### Build a Journey with a Read Audience
+
+1. Navigate to the **Journeys** portal and click the **Create Journey** button.
+
+    ![create-a-journey](assets/create-journey.png)
+
+2. Update the Journey Properties with a new name. In our exmample: **`SecurFinancial - Home Loan Offer`**.
+
+3. Click on **Orchestration**, then drag and drop the **Read audience** tile to the canvas.
+
+4. Click on the **pencil icon** next to the Audience box on the right side of the screen.
+
+5. In the search bar, search for the audience. In our example: **`SecureFinancial Customers - No Loans, Good Credit`**. Click **Save**.
+
+    ![create-a-journey](assets/select-audience.png)
+
+6. Leave all the settings as default in the right side menu and then click **Save**.
+
+    ![save-audience-settings](assets/save-audience-settings.png)
+
+### Personalize Email
+
+1. Click on **Actions**, then click and drag the **Email** tile to the canvas.
+
+2. On the right side menu, click on **Email configuration** and select **EmailMarketing**. Then click on **Edit content**.
+
+3. Add a subject line. In our example: **`Learn more about SecurFinancial Home Loan`**. Then click on **Edit email body**.
+
+4. Click the **Content template** button in the top right corner. Find and select the appopriate template. Our example uses the `SecureFinancial Template`. Then click **Confirm**.
+
+    ![journey-email-config](assets/journey-email-config.png)
+
+    ![journey-email-confirm](assets/journey-email-confirm.png)
+
+5. Review the template and click **Use Template**.
+
+6. You will now be in the Email Designer. Hover over the `{profile.person.name.firstName}` macro and click the **personalization avatar**.
+
+7. In the personalization window, drill down to the folder path with the uploaded federated audience. In our example: **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
+
+8. Click into the **read audience** folder. The enrichment attributes from your federated audience can be found here.
+
+9. Select the **First Name** attribute to the expression builder. The email will dynamically express the first name value of the customer to personalize the email.
+
+10. Click **Save**.
+
+11. Now that the first name personalization has been added, add `Hi, ` in front of the personalization variable. Then click **Save**.
+
+    ![journey-email-save](assets/journey-email-save.png)
+
+12. Click on the **Back** button twice to return to the journey canvas. Then in the **Action: Email** menu to the right, click **Save**.
+
+    ![save-final-journey](assets/save-final-journey.png)    
+
+We created a journey in AJO using a federated audience and federated enrichment attributes. 
+
+Now we'll look at how to [enrich an audience](federated-audience-composition.md) in Experience Platform with data from the data warehouse.

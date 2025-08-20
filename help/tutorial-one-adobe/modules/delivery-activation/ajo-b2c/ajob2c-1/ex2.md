@@ -43,7 +43,7 @@ You'll then see a popup opening, showing you your AEM Assets Media Library. Go t
 
 >[!NOTE]
 >
->If you don't see the Citi Signal images in your AEM Assets Library, you can find them [here](./../../../../assets/ajo/CitiSignal-images.zip). Download them to your desktop, create the folder **citi-signal-images** and upload all the images in that folder.
+>If you don't see the CitiSignal images in your AEM Assets Library, you can find them [here](./../../../../assets/ajo/CitiSignal-images.zip). Download them to your desktop, create the folder **citi-signal-images** and upload all the images in that folder.
 
 ![Journey Optimizer](./images/fragm5.png) 
 
@@ -227,8 +227,6 @@ Click **Publish** to publish your footer so it can be used in an email.
 After a couple of minutes, you'll see that the status of your footer has changed to **Live**.
 
 ![Journey Optimizer](./images/fragm38.png)
-
-You've now finished this exercise.
 
 ## Next Steps
 

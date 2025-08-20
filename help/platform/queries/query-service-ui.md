@@ -6,6 +6,7 @@ role: Data Engineer, Developer
 level: Beginner
 jira: KT-7680
 thumbnail: 333403.jpg
+hidefromtoc: true
 exl-id: 63de8b83-5da2-4f24-a47d-70c14bdfe437
 ---
 # Query Service UI

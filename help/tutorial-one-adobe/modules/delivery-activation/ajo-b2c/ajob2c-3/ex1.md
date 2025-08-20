@@ -1,35 +1,24 @@
 ---
-title: Offer Decisioning - Offer Decisioning 101
-description: Offer Decisioning - Offer Decisioning 101
+title: Getting Started with push notifications
+description: Getting Started with push notifications
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: b46e0205-b0a1-4a14-95f6-9afe21cd2b5e
 ---
-# 3.3.1 Offer Decisioning 101
+# 3.3.1 Getting Started with push notifications
 
-## 3.3.1.1 Terminology
+In order to use push notifications with Adobe Journey Optimizer, there are a number of settings to check and know about.
 
-To get a better understanding about Offer Decisioning, we highly recommend you to read the [overview](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=en) on how the Offer Decisioning Application Service works with Adobe Experience Platform.
+Here are all the settings to verify:
 
-Working with Offer Decisioning, you need to understand the following concepts:
+- Datasets and schemas in Adobe Experience Platform
+- Datastream for mobile
+- Data collection property for mobile
+- App surface for push certificates
+- Test your push setup using AEP Assurance
 
-| Term                      | Explanation                                                                                                                                                                                                                                              |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Offer**                 | An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer has a status: draft, approved or archived.                                                                                |
-| **Placement**             | The combination of location (or Channel Type) and context (or Content Type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image, JSON in Mobile, Web, Social, Instant Messaging, and non-Digital channels. |
-| **Rule**                  | The logic that defines and controls the eligibility of end-users for an offer.                                                                                                                                                                           |
-| **Personalized Offer**    | A customizable marketing message based on eligibility rules and constraints.                                                                                                                                                                             |
-| **Fallback Offer**        | The default offer displayed when an end-user is not eligible for any of the offers in the collection used.                                                                                                                                               |
-| **Capping**               | Used in an offer definition to define how many times an offer can be presented in total and to a specific user.                                                                                                                                          |
-| **Priority**              | Level to determine the priority rank from a result set of offers.                                                                                                                                                                                        |
-| **Collection**            | Used to filter out a sub-set of offers from the personalized offer list to speed up the offer decisioning process.                                                                                                                                       |
-| **Decision**              | A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.                                                                                                                            |
-| **AEM Assets Essentials** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform.                                                                                                 |
-
-{style="table-layout:auto"}
-
-## 3.3.1.2 Offer Decisioning
+Let's review these one by one.
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
@@ -39,126 +28,195 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-In the left menu, click **Offers**. You'll now see the Offers menu, which contains things like Offers, Collections and Decisions.
+## 3.3.1.1 Push dataset
 
-![Placements](./images/homedec.png)
+Adobe Journey Optimizer uses datasets to store things like the push tokens from mobile devices or interactions with push messages (such as: message sent, message opened, etc) in a dataset in Adobe Journey Optimizer.
 
-Click **Components**. You'll now see things like Placements, Collection qualifier, Rules and Rankings.
+You can find these datasets by going to **Datasets** in the menu on the left side of your screen. To show system datasets, click the **Enable filters** icon.
 
-![Placements](./images/components.png)
+Enable the option for **System** and search for **AJO**. You'll then see the datasets used for push notifications.
 
-## 3.3.1.3 Placements
+![Data Ingestion](./images/menudsjo1.png)
 
-Go to **Placements**.
+## 3.3.1.2 Datastream for Mobile
 
-![Placements](./images/placements.png)
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
 
-In the **Placements** tab you can define your placements for your offers. When you define a decision the placement defines where the resulting offer will appear (Channel Type) and in what shape or form (Content Type).
+In the left menu, go to **Datastreams** and search for your datastream that you created in [Getting Started](./../../../../modules/getting-started/gettingstarted/ex2.md), which is named `--aepUserLdap-- - One Adobe Datastream (Mobile)`. Click to open it.
 
-If you don't see any placements in your environment, please create them as indicated below and in the screenshot.
+![Datastreams](./images/edgeconfig1a.png)
 
-| Name                   | Channel Type | Content Type |
-| ---------------------- | ------------ | ------------ |
-| **Non-digital - Text** | Non-digital  | Text         |
-| **Web - JSON**         | Web          | JSON         |
-| **Web - HTML**         | Web          | HTML         |
-| **Web - Text**         | Web          | Text         |
-| **Web - Image**        | Web          | Image        |
-| **Email - JSON**       | Email        | JSON         |
-| **Email - HTML**       | Email        | HTML         |
-| **Email - Text**       | Email        | Text         |
-| **Email - Image**      | Email        | Image        |
+Click **Edit** on the **Adobe Experience Platform** service.
 
-{style="table-layout:auto"}
+![Datastreams](./images/edgeconfig1.png)
 
-**Note**: Please do not change anything to the placements already available.
+You'll then see the datastream settings that were defined, and into which datasets events and profile attributes will be stored.
 
-Click on any Placement to visualize its settings.
+You should also enable the following options if they aren't enabled yet:
 
-![Placements](./images/placement1.png)
+- **Offer Decisioning**
+- **Personalization Destinations**
+- **Adobe Journey Optimizer**
 
-You'll now see all fields of the Placement:
+Click **Save**.
 
-- **Name** of the Placement
-- **Placement ID**
-- **Channel Type** for the Placement
-- **Content Type** of the Placement, which can be **Text**, **HTML**, **Image** or **JSON**
-- **Description** field allowing to add additional description for the Placement
+![Name the Datastream and save](./images/edgeconfig2.png)
 
-## 3.3.1.4 Decision Rules
+## 3.3.1.3 Review your Data Collection property for Mobile
 
-A Rule (also called eligibility rule) is the equivalent of an **audience**. A Rule is in fact an audience itself with the only difference that a Rule can be used with an Offer to provide the best offer to a profile in Adobe Experience Platform.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), to **Tags**. As part of the [Getting Started](./../../../../modules/getting-started/gettingstarted/ex1.md) module, Data Collection Tags properties were created. 
 
-As you already know how to define audiences based on the previous enablement modules, let's just quickly revisit the Segmentation Environment:
+You've been using these Data Collection Tags properties already as part of previous modules. 
 
-Go to **Rules**. Click **+ Create Rule**.
+Click to open the Data Collection property for mobile.
 
-![Decision Rules](./images/rules.png)
- 
-You'll then see the Audience creation interface of Adobe Experience Platform.
+![DSN](./images/launchprop.png)
 
-![Decision Rules](./images/createrule1.png)
+In your Data Collection property, go to **Extensions**. You'll then see the various extensions that are needed for the mobile app. Click to select the extension **Adobe Experience Platform Edge Network** and then select **Configure**.
 
-You can now access all fields that are part of the Union Schema for the Real-time Customer Profile and can build out any rule.
+![Adobe Experience Platform Data Collection](./images/launchprop1.png)
 
-It's also good to know that you can simply reuse already defined audiences in Adobe Experience Platform, by going to **Audiences** > ``--aepTenantId--``.
+You'll then see that your datastream for mobile is linked here. Next, click **Cancel** to go back to the extensions overview.
 
-You'll then see this:
+![Adobe Experience Platform Data Collection](./images/launchprop2.png)
 
-![Decision Rule](./images/decisionruleaud.png) 
+You'll then be back back here. You'll see the extension for **AEP Assurance**. AEP Assurance helps you inspect, proof, simulate, and validate how you collect data or serve experiences in your mobile app. You can read more about AEP Assurance here: [https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
-If you wish, you can now configure your own Rules. For this exercise, you'll need two rules:
+![Adobe Experience Platform Data Collection](./images/launchprop8.png)
 
-- all - Male Customers
-- all - Female Customers
+Next, click **Configure** to open the extension **Adobe Journey Optimizer**. This extension enables push notifications and measurement for Adobe Journey Optimizer.
 
-If these rules don't exist yet, please to create them. If they already exist, please use those rules and don't create new rules.
+![Adobe Experience Platform Data Collection](./images/launchprop9.png)
 
-The attribute to use to build the rule is **XDM Individual Profile** > **Person** > **Gender**.
+You'll then see that this is where the dataset for tracking push events is linked. There's no need to make any changes to your Data Collection property. Click **Cancel** to go back to the previous screen.
 
-As an example, here's the rule definition for the rule **all - Male Customers**:
+![Adobe Experience Platform Data Collection](./images/launchprop10.png)
 
-![Decision Rule](./images/allmale.png)
+## 3.3.1.4 Review your App Surface setup
 
-As an example, here's the rule definition for the rule **all - Female Customers**:
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). In the left menu, go to **App Surfaces** and open the App Surface for **DX Demo App APNS**.
 
-![Decision Rule](./images/allfemale.png)
+![Adobe Experience Platform Data Collection](./images/appsf.png)
 
-## 3.3.1.5 Offers
+You'll then see the configured App Surface for iOS and Android.
 
-Go to **Offers** and select **Offers**. Click **+ Create Offer**.
+![Adobe Experience Platform Data Collection](./images/appsf1.png)
 
-![Decision Rule](./images/offers1.png)
+## 3.3.1.5 Test push notification setup using AEP Assurance.
 
-You'll then see this popup. 
+You already installed the **DX Demo** mobile application as part of the **Getting Started** module. Once the app is installed, you'll find it on your device's home screen. Click the icon to open the app.
 
-![Decision Rule](./images/offers2.png)
+![DSN](./../../../../modules/getting-started/gettingstarted/images/mobileappn1.png)
 
-Don't create any offers now - you'll do that in the next exercise.
+After logging in, you'll see a notification requesting your permission to send notifications. We'll send notifications as part of the tutorial, so click **Allow**.
 
-You now see that there are two types of offers:
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
 
-- Personalized Offers
-- Fallback Offers
+You'll then see the app's homepage. Go to **Settings**.
 
-A Personalized Offer is specific content that should be shown in a specific situation. A Personalized Offer is specifically built to deliver a personal and contextual experience if specific criteria are met.
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn3.png)
 
-A Fallback Offer is an offer that is shown if the criteria for Personalized Offers aren't met. 
+In settings, you'll see that currently a **Public Project** is loaded in the app. Click **Custom Project**.
 
-## 3.3.1.6 Decisions
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn4.png)
 
-A Decision combines placements, a collection of personalized offers and a fallback offer to ultimately be used by the Offer Decisioning engine to find the best offer for a specific profile, based on each of the individual personalized offer characteristics like priority, eligibility constraint and total / user capping.
+You can now load a custom project. Click the QR code to easily load your project.
 
-To configure your **Decision**, click **Decisions**.
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
 
-![Decision Rule](./images/activity.png)
+After going through the **Getting Started** section, you had this result. Click to open the **Mobile Retail project** that was created for you.
 
-In the next exercise, you'll configure your own offers and decision.
+![DSN](./../../../modules/../getting-started/gettingstarted/images/dsn5b.png)
+
+In case you had accidentally closed your browser window, or for future demo or enablement sessions, you can also access your website project by going to [https://dsn.adobe.com/projects](https://dsn.adobe.com/projects). After logging in with your Adobe ID, you'll see this. Click your mobile app project to open it.
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/web8a.png)
+
+Next, click **Run**.
+
+![DSN](./images/web8b.png)
+
+You'll then see this popup, which contains a QR code. Scan this QR-code from within the mobile app.
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/web8c.png)
+
+You'll then see your project ID show in the app, after which you can click **Switch**.
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn7.png)
+
+Your app is now ready to be used.
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn8.png)
+
+You now need to scan a QR code to connect your mobile device to your Assurance session. 
+
+To start an AEP Assurance session, Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Click **Assurance** in the left menu. Then, click **Create Session**.
+
+![Adobe Experience Platform Data Collection](./images/griffon3.png)
+
+Select **Deep link connect** and then click **Start**.
+
+![Adobe Experience Platform Data Collection](./images/griffon5.png)
+
+Fill out the values:
+
+- Session Name: `--aepUserLdap-- - Push Debugging`
+- Base URL: `dxdemo://default`
+
+Click **Next**.
+
+![Adobe Experience Platform Data Collection](./images/griffon4.png)
+
+You'll then see a QR code on your screen, which you should scan with your iOS device.
+
+![Adobe Experience Platform Data Collection](./images/griffon6.png)
+
+On your mobile device, open the camera app and scan the QR code that is displayed by Assurance.
+
+![Adobe Experience Platform Data Collection](./images/ipadPushTest8a.png)
+
+You'll then see a popup screen, asking you to enter the PIN-code. Copy the PIN-code from your AEP Assurance screen and click **Connect**.
+
+![Adobe Experience Platform Data Collection](./images/ipadPushTest9.png)
+
+You'll then see this.
+
+![Adobe Experience Platform Data Collection](./images/ipadPushTest11.png)
+
+In Assurance, you'll now see that a client device is  connected to the Assurance session. Next, click **Configure**.
+
+![Adobe Experience Platform Data Collection](./images/griffon7.png)
+
+Scroll down to **Push Debug**. Click the **+** icon and then click **Save**. 
+
+![Adobe Experience Platform Data Collection](./images/griffon7a.png)
+
+Go to **Push Debug**. You should see this.
+
+![Adobe Experience Platform Data Collection](./images/griffon10.png)
+
+Some explanation:
+
+- The first column, **Client**, shows the available identifiers on your iOS device. You'll see an ECID and a Push Token.
+- The 2nd column shows the **App Store Credentials & Configuration**
+- The second column shows **Profile** information, with additional info on what platform the Push Token lives in (APNS or APNSSandbox). If you click the **Inspect Profile** button, you'll be taken to Adobe Experience Platform and you'll see the full Real-time Customer Profile.
+
+To test your Push configuration setup, go to **Send Test Push Setup** button. Click **Send Test Push Notification**
+
+![Adobe Experience Platform Data Collection](./images/griffon11.png)
+
+You need to make sure that the **DX Demo** app isn't open at the time of clicking the **Send Push Notification** button. If the app is open, the push notification might be received in the background and wouldn't be visible.
+
+You'll then see a push notification like this one appear on your mobile device.
+
+![Adobe Experience Platform Data Collection](./images/ipadPush2.png)
+
+If you've received the push notification, that means that your setup is correct and working fine and you can now create a real journey that will result in sending a push message from Journey Optimizer. 
 
 ## Next Steps
 
-Go to [3.3.2 Configure your Offers and Decision](./ex2.md){target="_blank"}
+Go to [3.3.2 Configure a journey with push messages](./ex2.md){target="_blank"}
 
-Go back to [Offer Decisioning](offer-decisioning.md){target="_blank"}
+Go back to [Adobe Journey Optimizer: Push and In-app Messages](ajopushinapp.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

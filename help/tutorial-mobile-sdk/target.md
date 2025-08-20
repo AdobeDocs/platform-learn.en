@@ -33,7 +33,7 @@ Before you can perform A/B tests with Target, you must ensure that the proper co
 In this lesson, you will:
 
 * Update your datastream for Target integration.
-* Update your tag property with the Journey Optimizer - Decisioning extension.
+* Update your tag property with the Offer Decisioning and Target extension.
 * Update your schema to capture propositon events.
 * Validate setup in Assurance.
 * Create a simple A/B test in Target.
@@ -81,17 +81,18 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
    ![AEP datastream configuration](assets/datastream-aep-configuration-target.png){zoomable="yes"}
 
 
-### Install Adobe Journey Optimizer - Decisioning tags extension
+### Install Offer Decisioning and Target tags extension
 
 Although this lesson is about A/B tests in Target, the result of the tests are seen as an offer and are implemented in the Adobe infrastructure using the Adobe Journey Optimizer - Decisioning tags extension. That extension handles both offers served by Journey Optimizer and Target.
 
 1. Navigate to **[!UICONTROL Tags]**, find your mobile tag property, and open the property.
 1. Select **[!UICONTROL Extensions]**.
 1. Select **[!UICONTROL Catalog]**.
-1. Search for the **[!UICONTROL Adobe Journey Optimizer - Decisioning]** extension.
+1. Search for the **[!UICONTROL Offer Decisioning and Target]** extension.
 1. Install the extension. The extension does not require additional configuration.
 
-    ![Add Decisioning extension](assets/tag-add-decisioning-extension.png){zoomable="yes"}
+    ![Add Offer Decisioning and Target extension](assets/tag-add-decisioning-extension.png){zoomable="yes"}
+
 
 
 ### Update your schema
@@ -110,7 +111,7 @@ Although this lesson is about A/B tests in Target, the result of the tests are s
 To validate your setup in Assurance:
 
 1. Go to the Assurance UI.
-1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Validate Setup]** underneath **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
+1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Validate Setup]** underneath **[!UICONTROL OFFER DECISIONING AND TARGET]**.
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Validate Setup]** in the left rail. Both datastream setup is validated and the SDK setup in your application.
    ![AJO Decisioning validation](assets/ajo-decisioning-validation.png){zoomable="yes"} 
@@ -377,7 +378,7 @@ You can send additional Target parameters (like mbox, profile, product, or order
 To validate the A/B test in Assurance:
 
 1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
-1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Review & Simulate]** underneath **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
+1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Review & Simulate]** underneath **[!UICONTROL OFFER DECSIONING AND TARGET]**.
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Review & Simulate]** in the left rail. Both datastream setup is validated and the SDK setup in your application.
 1. Select **[!UICONTROL Requests]** at the top bar. You see your **[!DNL Target]** requests.
@@ -391,7 +392,7 @@ You should now have all the tools to start adding more A/B tests or other Target
 
 >[!SUCCESS]
 >
->You have enabled the app for A/B tests and displayed the results of an A/B test with Adobe Target and the Adobe Journey Optimizer - Decisioning extension for the Adobe Experience Platform Mobile SDK.
+>You have enabled the app for A/B tests and displayed the results of an A/B test with the Offer Decisioning and Target extension for the Adobe Experience Platform Mobile SDK.
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 

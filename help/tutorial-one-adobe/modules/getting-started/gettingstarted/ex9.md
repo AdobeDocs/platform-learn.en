@@ -6,7 +6,7 @@ exl-id: 25f80da8-88c3-4273-962a-476675cf6047
 ---
 # Applications to install
 
-Below is an overview of the prework that is needed prior to joining a live workshop.
+Below is an overview of the applications you will need to have installed on your computer before starting the tutorial.
 
 ## Adobe Creative Cloud
 
@@ -14,11 +14,37 @@ Go to [https://creativecloud.adobe.com/apps/download/creative-cloud](https://cre
 
 ![Adobe I/O New Integration](./images/cc.png)
 
-## Photoshop
+## Adobe Photoshop
 
 Open the **Adobe Creative Cloud** app, go to **Apps**. Install Photoshop on your computer.
 
 ![Adobe I/O New Integration](./images/psd.png)
+
+## Adobe Illustrator
+
+Open the **Adobe Creative Cloud** app, go to **Apps**. Install Illustrator on your computer.
+
+![Adobe I/O New Integration](./images/psd.png)
+
+## Adobe Premiere Pro
+
+Install Adobe Premiere Pro Beta version on your computer from [https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)
+
+![Adobe I/O New Integration](./images/prpro.png)
+
+Click **Open Creative Cloud Desktop App**.
+
+![Adobe I/O New Integration](./images/prpro1.png)
+
+Click **Install** on the card for the **Premiere Pro (Beta)** app.
+
+![Adobe I/O New Integration](./images/prpro2.png)
+
+## Frame.io Transfer app
+
+Go to [https://frame.io/transfer](https://frame.io/transfer) and download the version for your computer.
+
+![Frame.io](./images/frameio11.png)
 
 ## Visual Studio Code
 

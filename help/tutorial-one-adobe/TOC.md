@@ -1,17 +1,17 @@
 ---
-user-guide-title: Comprehensive Technical Tutorial for Adobe applications, from Creative Cloud to Experience Cloud
-breadcrumb-title: Comprehensive Technical Tutorial for Adobe applications, from Creative Cloud to Experience Cloud
+user-guide-title: One Adobe Technical Tutorial
+breadcrumb-title: One Adobe Technical Tutorial
 hide: yes
 doc-type: multipage
 recommendations: noDisplay,noCatalog
 ---
 
-# Comprehensive Technical Tutorial - One Adobe {#tutorial-one-adobe}
+# One Adobe Technical Tutorial {#tutorial-one-adobe}
 
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
++ [GenStudio for Content Supply Chain Technical Enablement](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + [Completion](/help/tutorial-one-adobe/completion.md)
-+ [Prework](/help/tutorial-one-adobe/prework.md)
 
 + Getting started {#gettingstarted}
   + Getting started {#gettingstarted}
@@ -26,7 +26,18 @@ recommendations: noDisplay,noCatalog
     + [Option 2: PostBuster setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
     + [Applications to install](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
 
-+ Workflow and planning {#planning}
++ Workflow and planning {#wfplanning}
+  + 1.1 Workfront Planning {#wfpl1}
+    + [Overview](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
+    + [1.1.1 Getting started with Workfront Planning](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
+  + 1.2 Workfront Workflow {#wfpl2}
+    + [Overview](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
+    + [1.2.1 Workfront + AEM Assets CS Metadata Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+    + [1.2.2 Proofing with Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
+    + [1.2.4 Workfront + AEM Sites CS Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex4.md)
+    + [1.2.5 Workfront + Photoshop Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 
 + Creation & Production {#production}
   + 1.1 Overview of Adobe Firefly Services {#crpr1}
@@ -45,12 +56,25 @@ recommendations: noDisplay,noCatalog
     + [1.2.5 Frame.io and Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
     + [1.2.6 Frame.io to Workfront Fusion to AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
-  + 1.3 Adobe Express and Adobe Experience Cloud {#crpr3}  
-    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
-    + [1.3.1 Getting started with Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
-    + [1.3.2 Animation and Video in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
-    + [1.3.3 Bulk Create Assets in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+  + 1.3 GenStudio for Performance Marketing {#crpr3}  
+    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
+    + [1.3.1 Configuration: Brands](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
+    + [1.3.2 Configuration: Personas, Products and Templates](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+    + [1.3.3 Campaign Activation to Meta](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+    + [1.3.4 Create Email Experience for AJO](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex4.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
+  + 1.4 Adobe Express and Adobe Experience Cloud {#crpr4}  
+    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.4/express.md)
+    + [1.4.1 Getting started with Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex1.md)
+    + [1.4.2 Animation and Video in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex2.md)
+    + [1.4.3 Bulk Create Assets in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex3.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.4/summary.md)
+  + 1.5 Streamline your workflow with Frame.io {#crpr5}  
+    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.5/frameio.md)
+    + [1.5.1 Getting started with Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex1.md)
+    + [1.5.2 Approvals with Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex2.md)
+    + [1.5.3 Frame.io and Premiere Pro](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex3.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
 
 + Asset Management {#assetmgmt}
   + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -62,11 +86,9 @@ recommendations: noDisplay,noCatalog
     + [1.1.5 Advanced Custom Block](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
     + [1.1.6 AEM Edge Delivery Services MarTech plugin](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
-  + 1.2 Workfront {#assetm2}
-    + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/workfront.md)
-    + [1.2.1 Getting started Workfront](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
-    + [1.2.2 Proofing with Workfront](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex2.md)
-    + [1.2.5 Workfront + Photoshop integration](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex5.md)
+  + 1.2 Adobe Experience Manager Assets {#assetm2}
+    + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
+    + [1.2.1 Getting Started with AEM Assets](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
 + Delivery & Activation {#activation}
@@ -160,21 +182,17 @@ recommendations: noDisplay,noCatalog
       + [3.2.4 Create your journey and messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
       + [3.2.5 Trigger your journey](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/summary.md)
-    + 3.3 Adobe Journey Optimizer: Offer Decisioning {#ajo33}
-      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
-      + [3.3.1 Offer Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
-      + [3.3.2 Configure your Offers and Decision](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
-      + [3.3.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
-      + [3.3.4 Combine Adobe Target and Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex4.md)
-      + [3.3.5 Use your decision in an email](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex5.md)
-      + [3.3.6 Test your Decision using the API](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex6.md)
+    + 3.3 Adobe Journey Optimizer: Push and In-app Messages {#ajo33}
+      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
+      + [3.3.1 Getting Started with push notifications](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
+      + [3.3.2 Configure a journey with push messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
+      + [3.3.3 Configure a campaign with in-app messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/summary.md)
-    + 3.4 Adobe Journey Optimizer: Event-based Journeys {#ajo34}
+    + 3.4 Adobe Journey Optimizer: Order Confirmation journey and Campaigns {#ajo34}
       + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
       + [3.4.1 Configure a trigger-based journey - Order Confirmation](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex1.md)
       + [3.4.2 Configure a campaign](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex2.md)
       + [3.4.3 Apply segment-based personalization in an email message](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex3.md)
-      + [3.4.4 Setup and use push notifications](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex4.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/summary.md)
     + 3.5 Adobe Journey Optimizer: Translation Services {#ajo35}
       + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
@@ -182,6 +200,22 @@ recommendations: noDisplay,noCatalog
       + [3.5.2 Create your Campaign](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
       + [3.5.3 Add Languages to your Email](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/summary.md)
+    + 3.6 Adobe Journey Optimizer: Content Management  {#ajo36}
+      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
+      + [3.6.1 Content Cards](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex1.md)
+      + [3.6.2 Landing Pages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex2.md)
+      + [3.6.3 AJO and GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex3.md)
+      + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/summary.md)
+    + 3.7 Adobe Journey Optimizer: Experience Decisioning {#ajo37}
+      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
+      + [3.7.1 Experience Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex1.md)
+      + [3.7.2 Configure your offers and decision](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex2.md)
+      + [3.7.3 Web SDK setup for Experience Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex3.md)
+      + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/summary.md)
+    + 3.8 Adobe Journey Optimizer: Campaigns {#ajo38}
+      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
+      + [3.8.1 Getting Started with Campaigns](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
+      + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/summary.md)
 
 + Reporting & Insights {#reporting}
   + Customer Journey Analytics  {#cjab2c}
@@ -213,4 +247,8 @@ recommendations: noDisplay,noCatalog
       + [2.1.7 Query Service and Tableau](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex7.md)
       + [2.1.8 Query Service API](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex8.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/summary.md)
-
+  + Content Analytics {#contentanalytics} 
+    + 3.1 Content Analytics {#ca1}
+      + [Overview](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
+      + [3.1.1 Getting started with Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
+      + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)

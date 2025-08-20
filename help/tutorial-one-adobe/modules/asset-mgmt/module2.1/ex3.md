@@ -302,10 +302,10 @@ Your website will then open in the **Universal Editor**.
 
 ![AEMCS](./images/aemcssetup45.png){zoomable="yes"}
 
-You will now be able to acces your website by going to `main--citisignal--XXX.aem.page/us/en` and/or `main--citisignal--XXX.aem.live/us/en`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
+You will now be able to acces your website by going to `main--citisignal--XXX.aem.page/us/en/` and/or `main--citisignal--XXX.aem.live/us/en/`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
 
 In this example, the full URL becomes this:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` and/or `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` and/or `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 It may take some time before all the assets are shown correctly, as they need to be published first.
 

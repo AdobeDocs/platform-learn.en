@@ -1,15 +1,15 @@
 ---
-title: Send parameters - Migrate the Adobe Target implementation in your mobile app to the Adobe Journey Optimizer - Decisioning extension
+title: Send parameters - Migrate the Adobe Target implementation in your mobile app to the Offer Decisioning and Target extension
 description: Learn how to send mbox, profile, and entity parameters to Adobe Target using Experience Platform Web SDK.
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
 ---
-# Send parameters to Target using the Decisioning extension
+# Send parameters to Target using the Offer Decisioning and Target extension
 
 Target implementations differ across mobile applications due to app architecture, business requirements, and features used. Most Target implementations include passing various parameters for contextual information, audiences, and content recommendations.
 
 With the Target extension, all Target paramters were passed using the `TargetParameters` function.
 
-With the Decisioning extension:
+With the Offer Decisioning and Target extension:
 
 * Parameters intended for multiple Adobe applications can be passed in the XDM object 
 * Parameters intended only for Target can be passed in the `data.__adobe.target` object
@@ -35,7 +35,7 @@ Entity parameters for a specific item must be prefixed with `entity.` for proper
 
 ## Purchase parameters
 
-Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Mobile SDK implementation using the Decisioning extension, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
+Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Mobile SDK implementation using the Offer Decisioning and Target extension, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
 
 Purchase information is passed to Target when the `commerce` field group has `purchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
 
@@ -206,4 +206,4 @@ Next, learn how to [track Target conversion events](track-events.md) with the Pl
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your mobile Target migration from the Target extension to the Decisioning extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).
+>We are committed to helping you be successful with your mobile Target migration from the Target extension to the Offer Decisioning and Target extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).

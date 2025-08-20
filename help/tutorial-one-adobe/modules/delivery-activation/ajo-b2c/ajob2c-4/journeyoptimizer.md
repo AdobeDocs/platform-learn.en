@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
 ---
-# 3.4 Adobe Journey Optimizer
+# 3.4 Adobe Journey Optimizer: Order Confirmation journey and Campaigns
 
 In this module, you'll learn everything there is to know about Adobe Journey Optimizer, which helps companies design and deliver connected, contextual, and personalized experiences to their customers.
 
@@ -14,7 +14,6 @@ In this module, you'll learn everything there is to know about Adobe Journey Opt
 - Become familiar with Adobe Journey Optimizer
 - Create email and push messages
 - Configure trigger-based and batch journeys
-- Send email and push notifications as part of a customer journey
 
 ## Prerequisites
 
@@ -39,10 +38,6 @@ In this exercise, you'll configure a traditional email campaign.
 [3.4.3 Apply segment-based personalization in an email message](./ex3.md)
 
 In this exercise, you'll use segment memberships to define what content will be shown inside an email.
-
-[3.4.4 Setup and use push notifications](./ex4.md)
-
-In this exercise you'll install a mobile application on your iOS device and you'll configure and deliver a push notification to your device.
 
 [Summary and benefits](./summary.md)
 

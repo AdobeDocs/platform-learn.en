@@ -9,11 +9,11 @@ exl-id: da018975-7421-4d70-b04d-ad8b0597f460
 
 ## 3.1.3.1 Update your Data Collection property
 
-Go to [Adobe Experience Platform Data Collection](https://experience.adobe.com/launch/) and select **Tags**.
+Go to [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection/home) and select **Tags**.
 
 ![Properties page](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png) 
 
-In **Getting Started**, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
+In **Getting Started**, Demo System Next created a couple of Tags properties for you, including one for the website and one for the mobile app. Find them by searching for `--aepUserLdap-- - One Adobe` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
 
 ![Search box](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -43,7 +43,7 @@ You'll then see this:
 
 Navigate to the field `_experience.campaign.orchestration.eventID`. Remove the current value, and paste your eventID there.
 
-As a reminder, the Event ID can be found in Adobe Journey Optimizer under **Configurations > Events** and you'll find the event ID in the sample payload of your even, which looks like this: `"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`.
+As a reminder, the Event ID can be found in Adobe Journey Optimizer under **Configurations > Events** and you'll find the event ID in the sample payload of your even, which looks like this: `"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`.
 
 ![ACOP](./images/payloadeventID.png)
 

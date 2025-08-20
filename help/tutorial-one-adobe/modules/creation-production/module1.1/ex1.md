@@ -70,7 +70,7 @@ The first thing that is needed to achieve this, is a black and white version of 
 
 ### 1.1.1.3.1 Create your composition reference image
 
-You can use [this sample image](./images/CitiSignal.jpg) or you can create your own text to experiment. Follow the below steps in Adobe Illustrator to create your own image file. If your choice is to use the predefined image, then skip the below section and go to step **1.1.1.2.2 Generate your image** directly.
+You can use [this sample image](./images/CitiSignal.jpg) or you can create your own text to experiment. Follow the below steps in Adobe Illustrator to create your own image file. If your choice is to use the predefined image, then skip the below section and go to step **1.1.1.3.2 Generate your image** directly.
 
 Open **Adobe Illustrator**. Click **New file**.
 
@@ -233,13 +233,13 @@ In the **Adobe IO - OAuth** collection, select the request named **POST - Get Ac
 
 Now that you have a valid and fresh access_token, you are ready to send your first request to Firefly Services APIs.
 
-The request you'll be using here is a **synchronous** request, which provides you with a response that contains the requested image within a few seconds.
+The request you'll be using here is a **asynchronous** request, which provides you with a response that contains the URL of the job that has been submitted, which means that you'll need to use a second request to check on the status of the job and to access the image that was generated.
 
 >[!NOTE]
 >
->With the release of Firefly Image 4 and Image 4 Ultra, synchronous requests will be deprecated in favour of asynchronours requests. You'll find exercises on asynchronous requests further down in this tutorial.
+>With the release of Firefly Image 4 and Image 4 Ultra, synchronous requests will be deprecated in favour of asynchronours requests. 
 
-Select the request named **POST - Firefly - T2I V3** from the **FF - Firefly Services Tech Insiders** collection. Go to **Headers** and verify the key/value pair combinations.
+Select the request named **POST - Firefly - T2I V3 async** from the **FF - Firefly Services Tech Insiders** collection. Go to **Headers** and verify the key/value pair combinations.
 
 | Key     | Value     | 
 |:-------------:| :---------------:| 
@@ -248,7 +248,7 @@ Select the request named **POST - Firefly - T2I V3** from the **FF - Firefly Ser
 
 Both values in this request refer to environment variables that have been defined upfront. `{{API_KEY}}` refers to the field **Client ID** of your Adobe I/O project. As part of the **Getting Started** section this tutorial, you configured that in Postman.
 
-The value for the field **Authorization** is a bit special: `Bearer {{ACCESS_TOKEN}}`. It contains a reference to the **Access Token** that you generated in the previous step. When you received your **Access Token** by using the request **POST - Get Access Token** in the **Adobe IO - OAuth** collection, a script ran in Postman that stored the field **access_token** as an environment variable, which is now being referenced in the request **POST - Firefly - T2I V3**. Please note the specific addition of the word **Bearer** and a space before the `{{ACCESS_TOKEN}}`. The word bearer is case-sensitive and the space is required. If this isn't done correctly, Adobe I/O will return a **401 Unauthorized** error as it won't be able to process your **Access Token** correctly.
+The value for the field **Authorization** is a bit special: `Bearer {{ACCESS_TOKEN}}`. It contains a reference to the **Access Token** that you generated in the previous step. When you received your **Access Token** by using the request **POST - Get Access Token** in the **Adobe IO - OAuth** collection, a script ran in Postman that stored the field **access_token** as an environment variable, which is now being referenced in the request **POST - Firefly - T2I V3 async**. Please note the specific addition of the word **Bearer** and a space before the `{{ACCESS_TOKEN}}`. The word bearer is case-sensitive and the space is required. If this isn't done correctly, Adobe I/O will return a **401 Unauthorized** error as it won't be able to process your **Access Token** correctly.
 
 ![Firefly](./images/ff0.png)
 
@@ -256,7 +256,23 @@ Next, go to the **Body** and verify the prompt. Click **Send**.
 
 ![Firefly](./images/ff1.png)
 
-Copy (or click) the image URL from the response and open it in your web browser to view the image. 
+You will then get an immediate response. This response doesn't contain the image URLs of generated image, instead it contains a URL of the status report of the job that you launched, and it contains another URL that allows you to cancel the running job.
+
+>[!NOTE]
+>
+>The Postman collection you're using has been configured to use dynamic variables. As an example, the field **statusUrl** has been stored as a dynamic variable in Postman thanks to the **Scripts** that have been configured in Postman.
+
+![Firefly](./images/ff1a.png)
+
+To check the status report of your running job, select the request named **GET - Firefly - Get Status Report** from the **FF - Firefly Services Tech Insiders** collection. Click to open it, and then click **Send**. Select the URL of the generated image and open it in your browser.
+
+>[!NOTE]
+>
+>The Postman collection you're using has been configured to use dynamic variables. As an example, the field **statusUrl** of the previous request was stored as a dynamic variable in Postman and it's now being used as the URL for the **GET - Firefly - Get Status Report** request.
+
+![Firefly](./images/ff1b.png)
+
+You should have received a similar response. This is the overview of the job that was executed. You can see the field **url**, which contains the generated image. Copy (or click) the image URL from the response and open it in your web browser to view the image. 
 
 ![Firefly](./images/ff2.png)
 
@@ -264,7 +280,7 @@ You should see a beautiful image portraying `horses in a field`.
 
 ![Firefly](./images/ff3.png)
 
-In the **Body** of your request **POST - Firefly - T2I V3**, add the following under the field `"promptBiasingLocaleCode": "en-US"` and replace the variable `XXX` by one of the seed numbers that were randomly used by the Firefly Services UI. In this example, the **seed** number is `142194`.
+In the **Body** of your request **POST - Firefly - T2I V3 async**, add the following under the field `"promptBiasingLocaleCode": "en-US"` and replace the variable `XXX` by one of the seed numbers that were randomly used by the Firefly Services UI. In this example, the **seed** number is `142194`.
 
 ```json
 ,
@@ -273,7 +289,11 @@ In the **Body** of your request **POST - Firefly - T2I V3**, add the following u
   ]
 ```
 
-Click **Send**. You'll then receive a response with a new image generated by Firefly Services. Open the image to view it.
+Click **Send**. You'll then again receive a response with a link to the status report of the job you just submitted. 
+
+![Firefly](./images/ff3a.png)
+
+To check the status report of your running job, select the request named **GET - Firefly - Get Status Report** from the **FF - Firefly Services Tech Insiders** collection. Click to open it, and then click **Send**. Select the URL of the generated image and open it in your browser.
 
 ![Firefly](./images/ff4.png)
 
@@ -281,7 +301,7 @@ You should then see a new image with slight differences, based on the **seed** t
 
 ![Firefly](./images/ff5.png)
 
-Next, in the **Body** of your request **POST - Firefly - T2I V3**, paste the below **styles** object under the **seeds** object. This will change the style of the generated image to **art_deco**.
+Next, in the **Body** of your request **POST - Firefly - T2I V3 async**, paste the below **styles** object under the **seeds** object. This will change the style of the generated image to **art_deco**.
 
 ```json
 ,
@@ -294,11 +314,11 @@ Next, in the **Body** of your request **POST - Firefly - T2I V3**, paste the bel
   }
 ```
 
-You should then have this. Click **Send**.
+You should then have this. Click **Send**. You'll then again receive a response with a link to the status report of the job you just submitted. 
 
 ![Firefly](./images/ff6.png)
 
-Click the image URL to open it.
+To check the status report of your running job, select the request named **GET - Firefly - Get Status Report** from the **FF - Firefly Services Tech Insiders** collection. Click to open it, and then click **Send**. Select the URL of the generated image and open it in your browser.
 
 ![Firefly](./images/ff7.png)
 
@@ -306,7 +326,7 @@ Your image has now changed a bit. When applying style presets, the seed image is
 
 ![Firefly](./images/ff8.png)
 
-Remove the code for the **seeds** object from the **Body** of your request. Click **Send** and then click the image URL which you get from the response.
+Remove the code for the **seeds** object from the **Body** of your **POST - Firefly - T2I V3 async** request. Click **Send** and then click the image URL which you get from the response. You'll then again receive a response with a link to the status report of the job you just submitted. 
 
 ```json
 ,
@@ -317,13 +337,17 @@ Remove the code for the **seeds** object from the **Body** of your request. Clic
 
 ![Firefly](./images/ff9.png)
 
+To check the status report of your running job, select the request named **GET - Firefly - Get Status Report** from the **FF - Firefly Services Tech Insiders** collection. Click to open it, and then click **Send**. Select the URL of the generated image and open it in your browser.
+
+![Firefly](./images/ff9a.png)
+
 Your image has now changed a bit again.
 
 ![Firefly](./images/ff10.png)
 
 ## 1.1.1.7 Firefly Services API, Gen Expand
 
-Select the request named **POST - Firefly - Gen Expand** from the **FF - Firefly Services Tech Insiders** collection and go to the **Body** of the request.
+Select the request named **POST - Firefly - Gen Expand async** from the **FF - Firefly Services Tech Insiders** collection and go to the **Body** of the request.
 
 - **size**: Enter the desired resolution. The value entered here should be bigger than the original size of the image and cannot be larger than 3999.
 - **image.source.url**: This field requires a link to the image that needs to be expanded. In this example, a variable is used to refer to the image that was generated in the previous exercise.
@@ -333,7 +357,11 @@ Select the request named **POST - Firefly - Gen Expand** from the **FF - Firefly
 
 ![Firefly](./images/ff11.png)
 
-Click the image URL that is part of the response.
+You'll then again receive a response with a link to the status report of the job you just submitted. 
+
+![Firefly](./images/ff11a.png)
+
+To check the status report of your running job, select the request named **GET - Firefly - Get Status Report** from the **FF - Firefly Services Tech Insiders** collection. Click to open it, and then click **Send**. Select the URL of the generated image and open it in your browser.
 
 ![Firefly](./images/ff12.png)
 
@@ -341,9 +369,27 @@ You'll now see that the image generated in the previous exercise has now been ex
 
 ![Firefly](./images/ff13.png)
 
-When you change the alignment of the placement, the output will also be slightly different. In this example, the placement is changed to **left, bottom**. Click **Send** and then click to open the generated image URL.
+Generate a new image using the **Firefly - T2I V3 async** request.
+
+![Firefly](./images/ff13a.png)
+
+To check the status report of your running job, select the request named **GET - Firefly - Get Status Report** from the **FF - Firefly Services Tech Insiders** collection. Click to open it, and then click **Send**. Select the URL of the generated image and open it in your browser.
+
+![Firefly](./images/ff13b.png)
+
+You should then see a similar image.
+
+![Firefly](./images/ff13c.png)
+
+Select the request named **POST - Firefly - Gen Expand async** from the **FF - Firefly Services Tech Insiders** collection and go to the **Body** of the request.
+
+When you change the alignment of the placement, the output will also be slightly different. In this example, the placement is changed to **left, bottom**. Click **Send**. You'll then again receive a response with a link to the status report of the job you just submitted. 
 
 ![Firefly](./images/ff14.png)
+
+To check the status report of your running job, select the request named **GET - Firefly - Get Status Report** from the **FF - Firefly Services Tech Insiders** collection. Click to open it, and then click **Send**. Select the URL of the generated image and open it in your browser.
+
+![Firefly](./images/ff14a.png)
 
 You should then see that the original image is used in a different placement, which influences the whole image.
 
@@ -375,7 +421,7 @@ Go to the **Body** of the request. You should see that in the body, 4 images var
 
 ![Firefly](./images/ffim4_2.png)
 
-You will then get an immediate response. Contrary to the previous synchronous requets that you used, this response doesn't contain image URLs of generated images. It does contain a URL of the status report of the job that you launched, and it contains another URL that allows you to cancel the running job.
+You will then get an immediate response. This response doesn't contain the image URLs of generated image, instead it contains a URL of the status report of the job that you launched, and it contains another URL that allows you to cancel the running job.
 
 ![Firefly](./images/ffim4_3.png)
 
@@ -399,7 +445,7 @@ You should then see a hyperrealistic image of **horses in a field**.
 
 Go back to the request named **POST - Firefly - T2I V4** from the **FF - Firefly Services Tech Insiders** collection and go to the **Headers** of the request.
 
-Change the variable **x-model-version** to `image4_ultra`. In this example, you'll be using `image4_standard`.
+Change the variable **x-model-version** to `image4_ultra`. In this example, you'll be using `image4_ultra`.
 
 ![Firefly](./images/ffim4_11.png)
 

@@ -75,7 +75,7 @@ Before you follow the steps, ensure that you have downloaded the [Postman](https
 1. In Postman, select your environment in the top-right dropdown and click the eye icon to view the environment variables:
     ![Environment Selection](../assets/data-generator/images/env-selection.png)
 
-1. Make sure that the following environment variables are populated. To learn how to obtain the environment variables' value, check out the [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md) tutorial for step-by-step instructions. 
+1. Make sure that the following environment variables are populated. To learn how to obtain the environment variables' value, check out the [Authenticate to Experience Platform APIs](/help/platform/api/platform-api-authentication.md) tutorial for step-by-step instructions. 
 
     * `CLIENT_SECRET` 
     * `API_KEY`&mdash;`Client ID` in Adobe Developer Console

@@ -34,7 +34,7 @@ For **Event ID Type**, select **System Generated**.
 
 ![Journey Optimizer](./images/eventidtype.png)
 
-Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+Next is the schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 After selecting the Schema, you'll see a number of fields being selected in the **Payload** section. Click the **Edit/Pencil** icon to add additional fields to this event.
 
@@ -72,7 +72,7 @@ You'll now see an example of the expected payload. Your event has a unique orche
 ![Journey Optimizer](./images/oc42.png)
 
 The event ID is what needs to be sent to Adobe Journey Optimizer in order to trigger the journey that you'll build in the next step. Write down this eventID, as you'll need it in one of the next steps.
-`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
+`"eventID": "618da2a203c3392e43a538d40ff5deef0bd1e7c64f6b6bfe131d4a38a67193ae"`
 
 Click **Ok**, followed by **Cancel**.
 
@@ -96,19 +96,15 @@ Next, under **Actions**, search for the **Email** action and add it onto the can
 
 ![Journey Optimizer](./images/oc47.png)
 
-Set the **Category** to **Marketing** and select an email surface that enables you to send email. In this case, the email surface to select is **Email**. Ensure that the checkboxes for **Clicks on email** and **email opens** are both enabled.
+Set the **Category** to **Marketing** and select an email surface that enables you to send email. In this case, the email surface to select is **Email**. The next step is to create your message. To do that, click **Edit content**.
 
 ![ACOP](./images/journeyactions1.png)
-
-The next step is to create your message. To do that, click **Edit content**.
-
-![ACOP](./images/journeyactions2.png)
 
 You now see this. Click the **Subject line** text field.
 
 ![ACOP](./images/journeyactions3.png)
 
-In the text area start writing **Thanks for your order,** and click the **Personalization** icon.
+In the text area start writing `Thanks for your order, ` and click the **Personalization** icon.
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -344,7 +340,7 @@ Your journey is now published.
 
 Go to [Adobe Experience Platform Data Collection](https://experience.adobe.com/launch/) and select **Tags**.
 
-This is the Adobe Experience Platform Data Collection Properties page you saw before.
+This is the Adobe Experience Platform Data Collection properties page you saw before.
 
 ![Properties page](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png) 
 
@@ -398,15 +394,11 @@ Have a look at the Profile Viewer panel and the Real-time Customer Profile with 
       
 ![Demo](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 
-Go to the Register/Login page. Click **CREATE AN ACCOUNT**.
+Go to the **Sign In** page, click **CREATE AN ACCOUNT** and fill out these fields. Click **Register** after which you'll be redirected to the previous page.
   
 ![Demo](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
-  
-Fill out your details and click **Register** after which you'll be redirected to the previous page. 
 
-![Demo](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
-
-Add any product to your cart
+Add any product to your cart.
 
 ![Journey Optimizer](./images/cart1a.png)
 

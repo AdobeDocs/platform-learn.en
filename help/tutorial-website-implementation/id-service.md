@@ -230,7 +230,7 @@ To validate your work, you will log into the Luma site to confirm the behavior o
 
    ![Click Login in the top navigation](images/idservice-loginNav.png)
 
-1. Enter `test@adobe.com` as the username
+1. Enter `test@test.com` as the username
 1. Enter `test` as the password
 1. Click the **[!UICONTROL LOGIN]** button
 

@@ -48,10 +48,6 @@ For the **URL Configuration**, use this:
 
 ![Demo](./images/slackname.png)
 
-You don't need to change the Header Fields.
-
-![Demo](./images/slackurl.png)
-
 **Authentication** should be set to **No Authentication**.
 
 ![Demo](./images/slackauth.png)
@@ -78,7 +74,7 @@ Copy the below text and paste it in the empty popup window.
 }
 ```
 
-You'll then see this:
+You'll then see this. Click **Save**.
 
 ![Demo](./images/slackmsgpopup1.png)
 
@@ -90,7 +86,7 @@ Your custom action is now part of the **Actions** list.
 
 ![Demo](./images/slackdone.png)
 
-You've defined events, an external data sources and actions. Now let's consolidate all of that in one journey.
+You've defined events, an external data sources and actions. Next, you'll combine all of that in one journey.
 
 ## Next Steps
 

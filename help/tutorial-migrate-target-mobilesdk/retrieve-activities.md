@@ -1,6 +1,6 @@
 ---
-title: Retrieve Target activities - Migrate the Adobe Target implementation in your mobile app to the Adobe Journey Optimizer - Decisioning extension
-description: Learn how to retrieve Adobe Target activities when migrating from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension.
+title: Retrieve Target activities - Migrate the Adobe Target implementation in your mobile app to the Offer Decisioning and Target extension
+description: Learn how to retrieve Adobe Target activities when migrating from the Adobe Target to the Offer Decisioning and Target Mobile extension.
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
 ---
 # Retrieve Target activities 
@@ -12,7 +12,7 @@ The content returned by Target, also known as "offers", typically consists of te
 * Enable feature flags in your application
 * Serve alternate text or images
 
-If you have activities which need to run in both Target extension and Decisioning extension versions of your application, be sure to test thoroughly. If you need to use different offers for different versions of your app, consider using the targeting options in the interface to deliver different offers to the different versions.
+If you have activities which need to run in both Target extension and Offer Decisioning and Target extension versions of your application, be sure to test thoroughly. If you need to use different offers for different versions of your app, consider using the targeting options in the interface to deliver different offers to the different versions.
 
 Always be sure to include error handling to display suitable experiences under error conditions.
 
@@ -140,8 +140,8 @@ Optimize.updatePropositions(for: [decisionScope1, decisionScope2]
 
 
 
-Next, learn how to [pass Target parameters using the Decisioning extension](send-parameters.md).
+Next, learn how to [pass Target parameters using the Offer Decisioning and Target extension](send-parameters.md).
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your mobile Target migration from the Target extension to the Decisioning extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).
+>We are committed to helping you be successful with your mobile Target migration from the Target extension to the Offer Decisioning and Target extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).

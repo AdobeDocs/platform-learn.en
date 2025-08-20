@@ -8,8 +8,7 @@ exl-id: 7ae5afb2-689e-428a-9382-b72ac0cb5826
 ---
 # Summary & benefits
 
-Congratulations and thank you for investing your time in learning about Offer Decisioning and Adobe Journey Optimizer! 
-In this module, you've learned how to use the Offer Decisioning application service. 
+Congratulations and thank you for investing your time in learning about Adobe Journey Optimizer! 
 
 ## Benefits
 
@@ -17,11 +16,8 @@ Highlights will be mentioned when this exercise is published.
 
 ## Check this out
 
-- Product documentation: [Offer Decisioning Glossary](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=en)
-- Product documentation: [Web SDK - Offer Decisioning Overview](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=en)
-
 ## Next Steps
 
-Go back to [Offer Decisioning](offer-decisioning.md){target="_blank"}
+Go back to [Adobe Journey Optimizer: Push and In-app Messages](ajopushinapp.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

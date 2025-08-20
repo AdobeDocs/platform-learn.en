@@ -13,11 +13,14 @@ exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
 This tutorial is very diverse and offers clear insights in the following applications:
 
 - Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
-- Adobe Workfront & Adobe Workfront Fusion
-- Adobe Experience Manager Cloud Service, Sites, Assets and Edge Delivery Services 
+- Adobe Workfront Workflow, Adobe Workfront Planning & Adobe Workfront Fusion
+- Adobe Experience Manager Cloud Service, Sites, Assets, Forms, and Edge Delivery Services 
+- AEM Assets Dynamic Media, Content Hub
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
+- Adobe Customer Journey Analytics
+- Adobe Content Analytics
 
 This tutorial doesn't just focus on Adobe applications, but takes into account the broader ecosystem in which brands operate. In order to do that, in some lessons there is a focus on how non-Adobe applications integrate with Adobe applications. As such, you'll gain a deep understanding in how the following applications will work together with Adobe Experience Platform:
 
@@ -28,22 +31,16 @@ This tutorial doesn't just focus on Adobe applications, but takes into account t
 - Snowflake
 - ...
 
-## Prerequisites
+## Show your knowledge
 
-If you want to take this tutorial using your own Adobe Experience Cloud instance, the following applications need to be provisioned in your instance and you need to be able to access:
+![Adobe Qualified](./assets/images/badge.png){width="100px" align="left"}
 
-- Adobe Firefly
-- Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
-- Adobe Workfront
-- Adobe Workfront Fusion
-- Adobe Experience Platform, Adobe Experience Platform Data Collection
-- Access to Demo System Next: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+After completing some of the modules in this tutorial, you can take an Adobe Credential exam to receive an **Adobe Qualified** badge. 
 
-## Completion & Certification
-
-This tutorial is part of an Adobe Certification course. You can sign up for the course alongside this tutorial by going to [https://certification.adobe.com](https://certification.adobe.com).
-
-For every module that you complete using the below tutorial, you need to submit a proof of completion as indicated [here](./completion.md).
+- When you complete the module [Overview of Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}, you are ready to take and pass the **Adobe Qualified** exam **AD2-E901**: 
+[https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
+- When you complete the module [Creative Workflow Automation with Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}, you are ready to take and pass the **Adobe Qualified** exam **AD2-E902**: 
+[https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## Content Status
 
@@ -57,29 +54,41 @@ In this foundational module, you will prepare everything so that you can access 
 
 ### 1. Workflow & Planning
 
+[1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+
+In this module, you will configure and use Adobe Workfront Planning to create a new workspace, define record types, manage records, create a new request form and utilize the AI assistant. 
+
+[1.2 Workflow Management with Adobe Workfront Workflow](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+
+In this module, you will configure and use Adobe Workfront to manage approval flows and you'll use integrations with Adobe Experience Manager Assets, Universal Editor, Photoshop and more.
+
 ### 2. Creation & Production
 
-[1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Overview of Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 In this module, you will use Adobe Firefly Services APIs, Photoshop APIs and Microsoft Azure Storage Services to generate images and store them programmatically.
 
 [1.2 Creative Workflow Automation with Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
-In this foundational module, you will use Adobe Workfront Fusion to automate and scale your content creation workflows.
+In this module, you will use Adobe Workfront Fusion to automate and scale your content creation workflows.
 
-[1.3 Adobe Express and Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+[1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
 
-In this foundational module, you will use Adobe Express to create images and videos, and you'll share those assets towards the broader Adobe Experience Cloud ecosystem.
+In this module you will use Adobe GenStudio for Performance Marketing, a Gen AI-first end to end workflow application for marketing and creative teams to create, activate and optimize omni-channel content with enterprise governance for digital marketing campaigns.
+
+[1.4 Adobe Express and Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
+
+In this module, you will use Adobe Express to create images and videos, and you'll share those assets towards the broader Adobe Experience Cloud ecosystem.
+
+[1.5 Streamline your workflow with Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+In this module, you will use Adobe Frame.io in combination with Adobe Premiere Pro to collaborate and review images and videos.
 
 ### 3. Asset Management
 
 [1.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
 In this foundational module, you will setup your Adobe Experience Manager Cloud Service Program, Site and Assets repository.
-
-[1.2 Workflow Management with Adobe Workfront](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"}
-
-In this foundational module, you will configure and use Adobe Workfront to manage approval flows and you'll use integrations with Adobe Experience Manager Assets, Universal Editor, Photoshop and more.
 
 ### 4. Delivery & Activation
 
@@ -133,9 +142,9 @@ In this module you'll use Adobe Journey Optimizer to build out a trigger-based j
 
 In this module, you'll use Adobe Journey Optimizer to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way over various channels.
 
-[3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
+[3.3 Adobe Journey Optimizer: Push and In-app Messages](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
 
-In this module, you'll use Adobe Journey Optimizer to configure Personalized Offers and your own Offer Decision.
+In this module, you'll use Adobe Journey Optimizer to configure push notifications and in-app messages.
 
 [3.4 Adobe Journey Optimizer: Event-based Journeys](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
 
@@ -144,6 +153,18 @@ In this module, you'll learn everything there is to know about Journey Optimizer
 [3.5 Adobe Journey Optimizer: Translation Services](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
 
 In this module, you'll learn how to setup and use Translation Services within Adobe Journey Optimizer to localize your messages to your customers.
+
+[3.6 Adobe Journey Optimizer: Content Management](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
+
+In this module, you'll learn how to setup and use Content Cards and Landing Pages within Adobe Journey Optimizer and you'll deepdive into the integration between Adobe Journey Optimizer and GenStudio for Performance Marketing.
+
+[3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
+
+In this module, you'll learn how to setup and use Decisioning and Code-based Experiences within Adobe Journey Optimizer.
+
+[3.8 Adobe Journey Optimizer: Campaigns](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
+
+In this module, you'll learn how to setup and use Campaigns within Adobe Journey Optimizer.
 
 ### 5. Reporting & Insights
 
@@ -162,6 +183,12 @@ In this module, you'll set up your own instance of Google Cloud Platform, load d
 [2.1 Query Service](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
 
 In this module, you'll learn how to use Adobe Experience Platform Query Service.
+
+#### Content Analytics
+
+[3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
+
+In this module, you'll learn how to implement and use Adobe Content Analytics.
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -32,7 +32,7 @@ Make sure the **Type** is set to **Unitary**, and for the **Event ID Type** sele
 
 ![Demo](./images/evname.png)
 
-Next, you need to select a schema. All schemas that are shown here, are Adobe Experience Platform Schemas.
+Next, you need to select a schema.
 
 ![Demo](./images/evschema.png)
 
@@ -103,7 +103,7 @@ Clicking the **View Payload** icon opens up a sample XDM payload for this event.
 
 Write down the `eventID` as you'll need it in the last to test your configuration.
 
-In this example, the `eventID` is `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`.
+In this example, the `eventID` is `209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7`.
 
 You've now defined the event that will trigger the journey we're building. Once the journey is triggered, the geofence-fields like City, and any others you may have chosen (like Country, Latitude and Longitude) will be made available to the journey.
 

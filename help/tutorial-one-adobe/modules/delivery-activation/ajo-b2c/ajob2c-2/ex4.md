@@ -37,7 +37,7 @@ As a Name for the journey, use `--aepUserLdap-- - Geofence Entry Journey`. No ot
 
 ![Demo](./images/joname.png)
 
-On the left side of your screen, have a look at **Events**. You should see your previously created event in that list. Select it, then drag and drop it on the journey canvas. Your journey then looks like this. Click **Save**.
+On the left side of your screen, have a look at **Events**. You should see your previously created event in that list, which is named `--aepUserLdap--GeofenceEntry`. Select it, then drag and drop it on the journey canvas. Your journey then looks like this.
 
 ![Demo](./images/joevents.png)
 
@@ -195,7 +195,7 @@ In the left menu, go back to **Actions**, select the Action `--aepUserLdap--Text
 
 ![Demo](./images/joa18.png)
 
-Go to **Action Parameters** and click the **Edit** icon for the parameter `textToSlack`.
+Scroll down to **Request Parameters** and click the **Edit** icon for the parameter `textToSlack`.
 
 ![Demo](./images/joa19.png)
 
@@ -209,7 +209,7 @@ Select the below code, copy it and paste it in the **Advanced Mode Editor**. Cli
 
 ![Demo](./images/joa21.png)
 
-You will see your completed action. Click **Save**.
+You will see your completed action. Scroll up and click **Save**.
 
 ![Demo](./images/joa22.png)
 
@@ -227,7 +227,7 @@ In the left menu, go back to **Actions**, select the Action `--aepUserLdap--Text
 
 ![Demo](./images/jop18.png)
 
-Go to **Action Parameters** and click the **Edit** icon for the parameter `textToSlack`.
+Scroll down to **Request Parameters** and click the **Edit** icon for the parameter `textToSlack`.
 
 ![Demo](./images/joa19z.png)
 
@@ -241,7 +241,7 @@ Select the below code, copy it and paste it in the **Advanced Mode Editor**. Cli
 
 ![Demo](./images/jop21.png)
 
-You will see your completed action. Click **Ok**.
+You will see your completed action. Scroll up and click **Save**.
 
 ![Demo](./images/jop22.png)
 
@@ -259,7 +259,7 @@ In the left menu, go back to **Actions**, select the Action `--aepUserLdap--Text
 
 ![Demo](./images/jod18.png)
 
-Go to **Action Parameters** and click the **Edit** icon for the parameter `textToSlack`.
+Scroll down to **Request Parameters** and click the **Edit** icon for the parameter `textToSlack`.
 
 ![Demo](./images/joa19zzz.png)
 

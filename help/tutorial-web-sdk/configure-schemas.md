@@ -154,9 +154,6 @@ To complete this lesson, select **[!UICONTROL Save]** on the top right.
 
 Now, you are able to reference this schema when you add the Web SDK extension to your tag property. 
 
-
-[Next: **Configure an identity namespace**](configure-identities.md)
-
 >[!NOTE]
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
