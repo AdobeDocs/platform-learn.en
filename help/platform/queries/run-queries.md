@@ -1,6 +1,6 @@
 ---
 title: Run Queries with Query Service
-description: This video shows how to run queries in the Adobe Experience Platform interface and in a PSQL client. Additionally, using individual properties in an XDM object, using Adobe-defined functions, and using CREATE TABLE AS SELECT (CTAS) are demonstrated.
+description: Learn how to use the Adobe Experience Platform Query Editor to create, run, and manage SQL queries efficiently. Viewers will learn how to use features like the object browser, autocomplete, parameterized queries, and scheduling tools to streamline data workflows and generate actionable insights across their organization.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
@@ -10,7 +10,6 @@ exl-id: 7b264733-a0e0-44cd-a2c0-680a473f8cf6
 ---
 # Run queries
 
-This video shows how to run queries in the Adobe Experience Platform interface and in a PSQL client. Additionally, using individual properties in an XDM object, using Adobe-defined functions, and using CREATE TABLE AS SELECT (CTAS) are demonstrated. For detailed product documentation, see the [Query Editor UI guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html). 
-For more information, please visit the [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).
+Learn how to use the Adobe Experience Platform Query Editor to create, run, and manage SQL queries efficiently. Viewers will learn how to use features like the object browser, autocomplete, parameterized queries, and scheduling tools to streamline data workflows and generate actionable insights across their organization. For more information, please visit the [Query Service documentation](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)

@@ -1,241 +1,114 @@
 ---
-title: Getting started with Workfront
-description: Getting started with Workfront
+title: Getting started with AEM Assets
+description: Getting started with AEM Assets
 kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
 ---
-# 1.2.1 Getting started with Workfront
+# 1.2.1 Getting started with AEM Assets
 
-Log in to Adobe Workfront by going to [https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/){target="_blank"}.
+Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Ensure you're in the correct environment, which should be named `--aepImsOrgName--`.
 
-You then see this.
+![AEM Assets](./images/aemassets0.png)
 
-![WF](./images/wfb1.png)
+Open **Adobe Experience Manager Assets**.
 
-## 1.2.1.1 Configure your AEM Assets Integration
+![AEM Assets](./images/aemassets1.png)
 
-Click the 9 dots **hamburger** icon and then select **Setup**.
+Select the AEM Assets CS environment that is assigned to you. In this case, the environment to select is `--aepUserLdap-- - CitiSignal dev author`.
 
-![WF](./images/wfb2.png)
+![AEM Assets](./images/aemassets2.png)
 
-In the left menu, scroll down to **Documents** and then click **Experience Manager Assets**.
+You should then see this. Go to **Assets**.
 
-![WF](./images/wfb3.png)
+![AEM Assets](./images/aemassets3.png)
 
-Click **+ Add Experience Manager integration**.
+You should use a folder that is named `--aepUserLdap-- - CitiSignal Fiber Campaign`. If it doesn't exist yet, click **Create Folder**.
 
-![WF](./images/wfb4.png)
+![AEM Assets](./images/aemassets4.png)
 
-For the name of your integration, use `--aepUserLdap-- - Citi Signal AEM`.
+Enter the name `--aepUserLdap--` for your folder and click **Create**.
 
-Open the **Experience Manager repository** dropdown and select your AEM CS instance, which should be named `--aepUserLdap-- - Citi Signal`.
+![AEM Assets](./images/aemassets5.png)
 
-![WF](./images/wfb5.png)
+Open your newly created folder. In one of the previous exercise, you created 2 images which are named `CitiSignal - Neon Rabbit - Get On Board Now!.png` and `CitiSignal - Neon Rabbit - Timetravel now!.png`. You now need to upload these images in this folder if they aren't there yet.
 
-Under **Metadata**, configure the following mapping:
+In case you don't have these files anymore, you can download them [here](./images/CitiSignal_Neon_Rabbit.zip){target="_blank"}.
 
-| Workfront Field | Experience Manager Assets field|
-| --------------- | ------------------------------ | 
-| **Document** > **Name** | **wm:documentName** | 
-| **Project** > **Description** | **wm:projectDescription** | 
-| **Task** > **Name** | **wm:taskName** | 
-| **Task** > **Description** | **wm:taskDescription** | 
+Click **Add Assets**.
 
-Enable the switch for **Sync object metadata**.
+![AEM Assets](./images/aemassets6.png)
 
-Click **Save**.
+Select the 2 images mentioned above. Click **Open**.
 
-![WF](./images/wfb6.png)
+![AEM Assets](./images/aemassets7.png)
 
-Your integration from Workfront to AEM Assets CS is now configured.
+Click **Upload**.
 
-![WF](./images/wfb7.png)
+![AEM Assets](./images/aemassets8.png)
 
-## 1.2.1.2 Configure Metadata integration with AEM Assets
+Click one of the images to select it.
 
-Next, you need to configure AEM Assets so that the metadata fields from the asset in Workfront will be shared with AEM.
+![AEM Assets](./images/aemassets9.png)
 
-To do that, go to [https://experience.adobe.com/](https://experience.adobe.com/). Click **Experience Manager Assets**.
+Click **Details**.
 
-![WF](./images/wfbaem1.png)
+![AEM Assets](./images/aemassets10.png)
 
-Click to select your AEM Assets environment, which should be named `--aepUserLdap-- - Citi Signal dev`.
+You're now seeing the available metadata of the specific file.
 
-![WF](./images/wfbaem2.png)
+![AEM Assets](./images/aemassets11.png)
 
-You should then see this. In the left menu, go to **Assets** and click **Create Folder**.
+In the right menu, go to **Renditions**. You'll then see a number of predefined renditions of the image you selected with the ability to download them.
 
-![WF](./images/wfbaem3.png)
+![AEM Assets](./images/aemassets12.png)
 
-Name your folder `--aepUserLdap-- - Workfront Assets` and click **Create**.
+In the right menu, click the **scissors** icon. You find a number of editing actions that are available to you, powered by Adobe Express. Click **Remove Background**.
 
-![WF](./images/wfbaem4.png)
+![AEM Assets](./images/aemassets13.png)
 
-Next, go to **Metadata Forms** in the left menu and then click **Create**.
+After a couple of seconds, you should see something similar to this, with the ability to either apply your changes or download the new file. Close the popup.
 
-![WF](./images/wfbaem5.png)
+![AEM Assets](./images/aemassets14.png)
 
-Use the name `--aepUserLdap-- - Metadata Form` and click **Create**.
+Clip **Crop Image**.
 
-![WF](./images/wfbaem6.png)
+![AEM Assets](./images/aemassets15.png)
 
-Add 3 new **Single Line Text** fields to the form and select the first field. Then, click the **Schema** icon next to the **Metadata property** field.
+You can test some variations of different cropping sizes.
 
-![WF](./images/wfbaem7.png)
+![AEM Assets](./images/aemassets16.png)
 
-In the search field, enter `wm:project` and then select the field **Project Description**. Click **Select**.
+In the right menu, go to **Tasks**. Click **Assign Tasks**.
 
-![WF](./images/wfbaem8.png)
+![AEM Assets](./images/aemassets17.png)
 
-Change the label of the field to **Project Description**.
+Set the **Task Title** to `Review image & approve`. Assign yourself. Click **Create**.
 
-![WF](./images/wfbaem9.png)
+![AEM Assets](./images/aemassets18.png)
 
-Next, select the 2nd **Single Line Text** field and click the **Schema** icon next to the **Metadata property** field again. 
+Click **View** on the notification.
 
-![WF](./images/wfbaem10b.png)
+![AEM Assets](./images/aemassets19.png)
 
-You'll then see this popup again. In the search field, enter `wm:project` and then select the field **Project ID**. Click **Select**.
+Alternatively, refresh the screen to see the newly created tas appear in the **Related Tasks** list. Click the **Open** button to view the detail of the task.
 
-![WF](./images/wfbaem10.png)
+![AEM Assets](./images/aemassets20.png)
 
-Change the label of the field to **Project ID**.
+You should then see something like this. Click **Approve**.
 
-![WF](./images/wfbaem10a.png)
+![AEM Assets](./images/aemassets21.png)
 
-Select the 3rd **Single Line Text** field and click the **Schema** icon next to the **Metadata property** field again. 
+Confirm by clicking **Approve**.
 
-![WF](./images/wfbaem11a.png)
+![AEM Assets](./images/aemassets22.png)
 
-You'll then see this popup again. In the search field, enter `wm:project` and then select the field **Project Name**. Click **Select**.
+Your asset is now approved in AEM Assets.
 
-![WF](./images/wfbaem11.png)
+![AEM Assets](./images/aemassets23.png)
 
-Change the label of the field to **Project Name**. Click **Save**.
+Next Step: [Summary & Benefits](./summary.md){target="_blank"}
 
-![WF](./images/wfbaem12.png)
-
-Change the **Tab name** on the form to `--aepUserLdap-- - Workfront Metadata`. Click **Save** and **Close**.
-
-![WF](./images/wfbaem13.png)
-
-Your **Metadata Form** is now configured.
-
-![WF](./images/wfbaem14.png)
-
-Next, you need to assign the Metadata Form to the folder you created before. Check the checkbox for your Metadata Form and click **Assign to Folder(s)**.
-
-![WF](./images/wfbaem15.png)
-
-Select your folder, which should be named `--aepUserLdap-- - Workfront Assets`. Click **Assign**.
-
-![WF](./images/wfbaem16.png)
-
-The Metadata Form is now assigned to your folder successfully.
-
-![WF](./images/wfbaem17.png)
-
-## 1.2.1.2 Configure your AEM Sites Integration
-
->[!NOTE]
->
->This plugin is currently in **Early Access** mode and isn't generally available yet. 
->
->This plugin may already be installed in the Workfront instance your using. If it is already installed, you can review the below instructions but there's no need to change anything in your configuration then.
-
-Go to [https://experience.adobe.com/#/@experienceplatform/aem/extension-manager/universal-editor](https://experience.adobe.com/#/@experienceplatform/aem/extension-manager/universal-editor){target="_blank"}.
-
-Make sure the **toggle** for this plugin is set to **Enabled**. Then, click the **gear** icon.
-
-![WF](./images/wfb8.png)
-
-You'll see an **Extension configuration** popup. Configure the following fields to use this plugin.
-
-| Key | Value|
-| --------------- | ------------------------------ | 
-| **`IMS_ENV`** | **PROD** | 
-| **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** | 
-| **`SHOW_CUSTOM_FORMS`** | **'{"previewUrl": true, "publishUrl": true}'** | 
-
-Click **Save**.
-
-![WF](./images/wfb8.png)
-
-Go back to your Workfront UI and click the 9 dots **hamburger** icon. Select **Setup**.
-
-![WF](./images/wfb9.png)
-
-In the left menu, go to **Custom Forms** and select **Form**. Click **+ New custom form**.
-
-![WF](./images/wfb10.png)
-
-Select **Task** and click **Continue**.
-
-![WF](./images/wfb11.png)
-
-You'll then see an empty custom form. Enter the form name `Content Fragment & Integration ID`.
-
-![WF](./images/wfb12.png)
-
-Drag and drop a new **Single line text** field onto the canvas.
-
-![WF](./images/wfb13.png)
-
-Configure the new field like this:
-
-- **Label**: **Content Fragment**
-- **Name**: **`aem_workfront_integration_content_fragment`**
-
-![WF](./images/wfb14.png)
-
-Add a new **Single line text** field onto the canvas and configure the new field like this:
-
-- **Label**: **Integration ID**
-- **Name**: **`aem_workfront_integration_id`**
-
-Click **Apply**.
-
-![WF](./images/wfb15.png)
-
-You now need to configure a second custom form. Click **+ New custom form**.
-
-![WF](./images/wfb10.png)
-
-Select **Task** and click **Continue**.
-
-![WF](./images/wfb11.png)
-
-You'll then see an empty custom form. Enter the form name `Preview & Publish URL`.
-
-![WF](./images/wfb16.png)
-
-Drag and drop a new **Single line text** field onto the canvas.
-
-![WF](./images/wfb17.png)
-
-Configure the new field like this:
-
-- **Label**: **Preview URL**
-- **Name**: **`aem_workfront_integration_preview_url`**
-
-![WF](./images/wfb18.png)
-
-Add a new **Single line text** field onto the canvas and configure the new field like this:
-
-- **Label**: **Publish URL**
-- **Name**: **`aem_workfront_integration_publish_url`**
-
-Click **Apply**.
-
-![WF](./images/wfb19.png)
-
-You should then have 2 custom forms available.
-
-![WF](./images/wfb20.png)
-
-Next Step: [1.2.2 Proofing with Workfront](./ex2.md){target="_blank"}
-
-Go Back to [Workflow Management with Adobe Workfront](./workfront.md){target="_blank"}
+Go Back to [Adobe Experience Manager Assets](./aemassets.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}

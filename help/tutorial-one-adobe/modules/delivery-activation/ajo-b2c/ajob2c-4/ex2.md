@@ -15,7 +15,6 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-
 ## 3.4.2.1 Create audience
 
 Before creating your campaign, you should define the audience that should receive the campaign. To create an audience, go to **Audiences** in the left menu. You'll see all previously created audience there.

@@ -227,7 +227,7 @@ After receiving your **Shared Access Signature**, select **Copy** to copy the UR
 
 ![Azure Storage](./images/az29.png){zoomable="yes"}
 
-Use the **SAS-token** to upload a file into your Azure Storage Account. 
+Use the **SAS-token URL** to upload a file into your Azure Storage Account. 
 
 Back in Postman, select the folder **FF - Firefly Services Tech Insiders**, then select **...** on the **Firefly** folder, and then select **Add request**.
 
@@ -339,7 +339,7 @@ Select **Create**.
 
 ![Azure Storage](./images/az102.png){zoomable="yes"}
 
-Copy the URL and write it down in a file on your computer to get your long-term SAS-token with Read permissions.
+Copy the URL and write it down in a file on your computer to get your long-term SAS-token with Read/Write permissions.
 
 ![Azure Storage](./images/az103.png){zoomable="yes"}
 

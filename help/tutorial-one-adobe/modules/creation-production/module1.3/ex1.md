@@ -1,250 +1,417 @@
 ---
-title: Getting started with Adobe Express
-description: Getting started with Adobe Express
+title: GenStudio for Performance Marketing Configuration Brand
+description: GenStudio for Performance Marketing Configuration Brand
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-exl-id: c1b1d78d-9374-4ccd-82cf-e71c682fc907
+exl-id: b34c6bbf-4c47-4791-b15e-73b8ba059434
 ---
-# 1.3.1 Getting started with Adobe Express
+# 1.3.1 Configuration: Brand
 
-## 1.3.1.1 Logging in to Adobe Express
+A brand distinguishes an organization, product, service or concept from others. Some aspects of a brand are objective, like a logo, while others are subjective, like tone of voice.
 
-Open a new incognito browser window and go to [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}. Log in using your **Company or School account** and then select the account **`--aepImsOrgName--`**. 
+GenStudio for Performance Marketing uses the wealth of brand information from your brand, partners it with product and persona information, and builds out a comprehensive brand identity. This brand identity is used to inform the creation of on-brand content using Adobe’s generative AI technology.
 
-![Adobe Express](./images/express1.png)
+To start creating your own brand, follow the below steps.
 
-Adobe Express is available to you as part of your organization's licenses. To ensure you have access to Adobe Express, you need to check that you're logged in to the right organization. To do that, click the **profile** icon and verify which account is active. The account that you should be using is named `--aepImsOrgName--`.
+Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **GenStudio**.
 
-Click **Switch profile** to change account.
-
-![Adobe Express](./images/express2.png)
-
-Choose the right account from the menu, in this case **Experience Platform International** (but that may be a different org for you).
-
-![Adobe Express](./images/express3.png)
-
-Once the right account is active, go to **Apps** and click **Get Started** on the **Adobe Express** card.
-
-![Adobe Express](./images/express4.png)
-
-You're now logged in to **Adobe Express**.
-
-![Adobe Express](./images/express5.png)
-
-## 1.3.1.2 Get started from a brand template
-
-In Adobe Express, go to **Brands**. Your brand template library is likely empty at the moment. CitiSignal has defined a brand template previously, and you should now reuse that existing template. 
-
-![Adobe Express](./images/express6.png)
-
-To do that, go to [https://www.adobe.com/files/link/1c2f92cf-17bc-4d11-6031-dbd251e6cb57](https://www.adobe.com/files/link/1c2f92cf-17bc-4d11-6031-dbd251e6cb57).
-
-You should then see this. Click the 3 dots **...**.
-
-![Adobe Express](./images/express7.png)
-
-Select **Make a copy**.
-
-![Adobe Express](./images/express8.png)
-
-After about a minute, you should see a message confirming that you've made a personal copy of the brand template.
-
-![Adobe Express](./images/express9.png)
-
-Go back to Adobe Express, to **Brands**, and refresh the page. You should now see the **CitiSignal (Telco)** brand template. Click to open the **CitiSignal (Telco)** brand template.
-
-![Adobe Express](./images/express10.png)
-
-You should then see a library of assets such as logos, fonts, colors, templates etc.
-
-![Adobe Express](./images/express11.png)
-
-Go to **Express Templates** and click to open the template **Banner Variations**.
-
-![Adobe Express](./images/express12.png)
-
-Click **Start a new file**.
-
-![Adobe Express](./images/express13.png)
+![GSPeM](./images/gspem1.png)
 
 You should then see this.
 
-![Adobe Express](./images/express14.png)
+![GSPeM](./images/gspem2.png)
 
-Click the textbox that says **Trade-up & Save**. Then, select **Rewrite** and choose a style, then click **Generate**.
+The first thing to do to use GenStudio for Performance Marketing is to configure your brand. Click the **Brands** icon. 
 
-![Adobe Express](./images/express15.png)
+![GSPeM](./images/gspem3.png)
 
-Choose a variation and click **Replace**.
+Click **+ Add Brand**.
 
-![Adobe Express](./images/express16.png)
+![GSPeM](./images/gspem4.png)
 
-You should then see the updated text.
+Enter the name `--aepUserLdap-- - CitiSignal` for your brand. Select **Add manually** and then click **Add brand**.
 
-![Adobe Express](./images/express17.png)
+![GSPeM](./images/gspem5.png)
 
-Next, click the text **MORE DETAILS**.
+## 1.3.1.1 Colors
 
-![Adobe Express](./images/express18.png)
+You should then see this. Click **Colors**.
 
-Select **Effects**.
+![GSPeM](./images/gspem6.png)
 
-![Adobe Express](./images/express19.png)
+Click **+ Add color**.
 
-Go to **Shape** and click **View all**.
+![GSPeM](./images/gspem7.png)
 
-![Adobe Express](./images/express20.png)
+There are 4 different colors to add:
 
-Click the **finetune** button. Change the **Shape size** and then click the color button.
+- `#8821F4`
+- `#14161A`
+- `#EEEEEE`
+- `#FF006C`
 
-![Adobe Express](./images/express21.png)
+Enter the hex code for the color `#8821F4`. Click **Add**.
 
-Change the color by picking another color from the **CitiSignal color theme**.
+![GSPeM](./images/gspem8.png)
 
-![Adobe Express](./images/express22.png)
+Click **+ Add color**.
 
-You should then see the changed button.
+![GSPeM](./images/gspem9.png)
 
-![Adobe Express](./images/express23.png)
+Enter the hex code for the color `#14161A`. Click **Add**.
 
-Next, go to **Brands** and then click **Apply Brand**. You should then see the appearance of the image change.
+![GSPeM](./images/gspem10.png)
 
-![Adobe Express](./images/express24.png)
+Click **+ Add color**.
 
-Note that you can also detail the **Apply Brand** settings by clicking the **gear** icon.
+![GSPeM](./images/gspem11.png)
 
-![Adobe Express](./images/express25.png)
+Enter the hex code for the color `#EEEEEE `. Click **Add**.
 
-Next, click the 3 dots **...** on theimage you're working on and then click **Duplicate**.
+![GSPeM](./images/gspem12.png)
 
-![Adobe Express](./images/express26.png)
+Click **+ Add color**.
 
-You should then see an new, identical image. Click the background layer on the right side of your screen.
+![GSPeM](./images/gspem13.png)
 
-![Adobe Express](./images/express27.png)
+Enter the hex code for the color `#FF006C `. Click **Add**.
 
->[!IMPORTANT]
->
->In order to complete this exercise, you need to have access to a working AEM Assets CS Author environment. If you follow exercise [Adobe Experience Manager Cloud Service & Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} you wil have access to such an environment.
+![GSPeM](./images/gspem14.png)
 
-Go to **Assets** in the left menu, select your AEM Assets CS repository which should be named `--aepUserLdap-- - CitiSignal dev`. Next, go to the folder **citisignal**.
+You should now have this.
 
-![Adobe Express](./images/express28.png)
+![GSPeM](./images/gspem15.png)
 
-Select the image **homepage-hero-1.png**. You should then see the background layer change.
+## 1.3.1.2 Logos
 
-![Adobe Express](./images/express29.png)
+Download the file [CitiSignal-GSPeM-assets.zip](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) to your desktop and unzip it.
 
-Select the textbox as indicated and click **Rewrite**. Select **Rephrase** and then select a specific style. Click **Generate**.
+![GSPeM](./images/gspem17.png)
 
-![Adobe Express](./images/express30.png)
+Next, go to **Logos**. Click **+ Add Logo**.
 
-Select a variant and click **Replace**.
+![GSPeM](./images/gspem16.png)
 
-![Adobe Express](./images/express31.png)
+Click **Browse**.
 
-You should then see this. Next, click the 3 dots **...** on the page at the bottom of the page and click **Duplicate**.
+![GSPeM](./images/gspem18.png)
 
-![Adobe Express](./images/express32.png)
+Go to the folder **CitiSignal-GSPeM-assets** > **logos** and select these files. Click **Open**.
 
-On the newly created image, go to **media** and click **Generate image**.
+![GSPeM](./images/gspem19.png)
 
-![Adobe Express](./images/express33.png)
+You should then have this. Click **Add logos**.
 
-Select **Landscape (4:3)**.
+![GSPeM](./images/gspem20.png)
 
-![Adobe Express](./images/express34.png)
+You should then have this.
 
-Enetr the prompt `laser beams running through space` and click **Generate**.
+![GSPeM](./images/gspem21.png)
 
-![Adobe Express](./images/express35.png)
+## 1.3.1.3 Brand voice guidelines
 
-You should then see an image generated by Adobe Firefly. Note that the layer in which the image was generated is all the way at the top.
+Next, go to **Brand voice guidelines**.
 
-![Adobe Express](./images/express36.png)
+![GSPeM](./images/gspem22.png)
 
-Move down the newly generated image and put it just on top of the previous background layer.
+For **Tone & Voice**, use this:
 
-![Adobe Express](./images/express37.png)
+```
+• Convey a sense of exploration and adventure
+• Be authentic and conversational
+• Evoke excitement and curiosity
+• Speak honestly and straightforwardly
+• Be approachable and relatable
+• Use everyday language
+```
 
-Remove the old background layer by clicking it and selecting **Delete**.
+![GSPeM](./images/gspem23.png)
 
-![Adobe Express](./images/express37a.png)
+For **Brand values**, use this:
 
-Adjust the image so that it covers the whole canvas.
+```
+• Inspirational
+• Sustainability
+• Quality
+• Durability
+• Functionality
+• Reliability
+• Community-oriented
+• Be inclusive and welcome diversity
+• Encourage active lifestyles
+• Promote discovery
+```
 
-![Adobe Express](./images/express38.png)
+![GSPeM](./images/gspem24.png)
 
-Select the textbox **Switch & Save** to change the font color to **white**.
+For **Editorial guidelines**, use this:
 
-![Adobe Express](./images/express39.png)
+```
+• Keep sentences concise and impactful
+• Use active voice
+• Lists, bullets, and series should be consistent — either they all start with a noun, or they all start with a verb
+• Use serial commas
+```
 
-Change the font color to **white**.
+![GSPeM](./images/gspem25.png)
 
-![Adobe Express](./images/express40.png)
+For **Editorial restrictions**, use this:
 
-Select the other textbox to also change the font color to **white**.
+```
+• Avoid activity-specific jargon unless it’s widely adopted
+• Avoid promoting the skill level or experience level of the user of our outdoor equipment
+• Avoid technical language or jargon
+```
 
-![Adobe Express](./images/express41.png)
+![GSPeM](./images/gspem26.png)
 
-Change the font color to **white**.
+## 1.3.1.4 Image guidelines
 
-![Adobe Express](./images/express42.png)
+Next, go to **Image guidelines**.
 
-Next, click **Resize** and enter a custom resolution of **2600** x **1080**. Ensure that the checkbox for **Expand image** is checked. Click **Resize**.
+![GSPeM](./images/gspem27.png)
 
-![Adobe Express](./images/express43.png)
+Set **Content Type** to **Art** and for **Description**, use this:
 
-You should then see this.
+```
+Capture candid, unposed shots of real people and futuristic animals engaging with technology in their daily lives to convey authenticity and relatability.
+```
 
-![Adobe Express](./images/express44.png)
+![GSPeM](./images/gspem28.png)
 
-After a couple of minutes, you'll see some new variations of the image. Choose one and then click **Keep**.
+For **Composition**, use this:
 
-![Adobe Express](./images/express45.png)
+```
+Focus on the experiences, speed and emotions of using technology, rather than just the products themselves.
+```
 
-You should then see this.
+![GSPeM](./images/gspem29.png)
 
-![Adobe Express](./images/express46.png)
+For **Environment**, use this:
 
-Move and adjust the image so that it fills the available space.
+```
+Highlight futuristic, clean, and professional settings that reflect innovation and connectivity.
+```
 
-![Adobe Express](./images/express47.png)
+![GSPeM](./images/gspem30.png)
 
-Next, click **Translate**.
+For **Color**, use this:
 
-![Adobe Express](./images/express48.png)
+```
+Use a palette inspired by technology, including sleek metallics, cool purple and blue, and neutral tones.
+```
 
-Choose some languages such as **French**, **Dutch** and **Spanish**. Make sure that only the specific page you're working on is selected, which in this case is **Page 3**. Click **Translate**.
+![GSPeM](./images/gspem31.png)
 
-![Adobe Express](./images/express50.png)
+For **Lighting**, use this:
 
-Translations will then be generated.
+```
+Utilize bright, natural lighting to create a welcoming and dynamic atmosphere.
+```
 
-![Adobe Express](./images/express51.png)
+![GSPeM](./images/gspem32.png)
 
-You should then see a number of new pages being created. Click the **close** icon.
+For **Mood**, use this:
 
-![Adobe Express](./images/express52.png)
+```
+Each image should evoke a feeling of speed, innovation and being part of the future.
+```
 
-Verify the translations and change them if needed, such as in this example where the translation isn't optimal.
+![GSPeM](./images/gspem33.png)
 
-![Adobe Express](./images/express53.png)
+For **Restrictions**, use this:
 
-Update the text as needed.
+```
+Avoid cluttered or busy backgrounds that detract from the main subject.
+```
 
-![Adobe Express](./images/express54.png)
+![GSPeM](./images/gspem34.png)
 
-Your assets are now ready.
+## 1.3.1.4 Channel guidelines
 
-![Adobe Express](./images/express55.png)
+Next, go to **Channel guidelines**.
+
+![GSPeM](./images/gspem35.png)
+
+For **Email**, use the following values:
+
+- **General**
+
+```
+• Use simple, short sentences
+• Be clear and concise
+• Invoke a sense of adventure and exploration
+```
+
+- **Subject line**
+
+```
+• Limit to less than 8 words
+• Provide specific details about what’s inside the email
+• Use sentence case
+• Do not use end punctuation
+```
+
+- **Preheader**
+
+```
+• Limit to less than 80 characters
+• Provide specific details about what’s inside the email
+• Use sentence case
+• Use ending punctuation
+```
+
+- **Headline**
+
+```
+• Limit to less than 12 words
+• Generate excitement through compelling and exciting statements
+• Use sentence case
+```
+
+- **Sub-headline**: leave empty for now
+
+- **Body**
+
+```
+• Limit to less than 120 words
+• Use bullet points for lists containing more than 3 items
+• Use between 0 to 4 headings within the body to separate main ideas
+• Use sentence case
+• Use ending punctuation
+```
+
+- **Call-to-action (CTA)**
+
+```
+• Limit to between 1 to 3 short words
+• Limit to less than 20 characters
+• Use an action-oriented verb as the first word and intended action the end-user should take
+• Avoid ending punctuation
+• Use title case
+```
+
+![GSPeM](./images/gspem36.png)
+
+For **Meta ads**, use the following values:
+
+- **General**
+
+```
+• Use simple, short sentences
+• Be clear and concise
+• Invoke a sense of adventure and exploration
+• Make product names prominent
+• Use community-building concepts and language
+```
+
+- **Headline**
+
+```
+• Limit  to less than 8 words
+• Limit to less than 27 characters
+• Make it clear what action the reader should take
+• Use sentence case
+• Avoid ending punctuation
+```
+
+- **Body**
+
+```
+• Limit to less than 125 characters
+• Use sentence case
+• Use ending punctuation
+```
+
+- **On image text**: leave empty for now
+
+![GSPeM](./images/gspem37.png)
+
+For **Banner and Display ads**, use the following values:
+
+- **General**
+
+```
+• Make readers feel inspired, interested, and sure of the next step
+• Avoid word repetition
+• Make product names prominent
+```
+
+- **Headline**
+
+```
+• Clearly state the main benefit of the offer
+• Use sentence case
+• Use ending punctuation
+• Limit to less than 60 characters
+```
+
+- **Sub-headline**: leave empty for now
+
+- **Body**
+
+```
+• Communicate the benefits of clicking into the offer
+• Use sentence case
+• Use ending punctuation
+```
+
+- **Call-to-action (CTA)**
+
+```
+• Limit to between 1 to 3 short words
+• Limit to less than 20 characters
+• Use an action-oriented verb as the first word
+• Use title case
+• Avoid ending punctuation
+```
+
+![GSPeM](./images/gspem38.png)
+
+For **LinkedIn**, use the following values:
+
+- **General**: leave empty for now
+
+- **Headline**: leave empty for now
+
+- **Description**: leave empty for now
+
+- **Introductory text**: leave empty for now
+
+- **On image text**: leave empty for now
+
+![GSPeM](./images/gspem39.png)
+
+Finally, go to **Overview**. You can now see an overview of everything you configured. There's one last thing to do. Click **+ Add** under **When to use this brand**.
+
+![GSPeM](./images/gspem40.png)
+
+Enter the below text and click **Save changes**.
+
+```
+This is the default brand for CitiSignal marketing campaign. Use the CitiSignal brand for all brand and product campaigns that don't require specific guidelines.
+```
+
+![GSPeM](./images/gspem41.png)
+
+Click **Publish**.
+
+![GSPeM](./images/gspem42.png)
+
+Click **Publish** again.
+
+![GSPeM](./images/gspem43.png)
+
+Your brand is now published and this brand can now be used to create branded content. Click **Done**.
+
+![GSPeM](./images/gspem44.png)
 
 ## Next Steps
 
-Go to [Animation and Video in Adobe Express](./ex2.md){target="_blank"}
+Go to [Configuration: Personas, Products and Templates](./ex2.md){target="_blank"}
 
-Go back to [Adobe Express and Adobe Experience Cloud](./express.md){target="_blank"}
+Go back to [GenStudio for Performance Marketing](./genstudio.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}

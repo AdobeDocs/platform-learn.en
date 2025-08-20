@@ -310,7 +310,7 @@ To validate Analytics is capturing data properly through Experience Platform Web
 ### Experience Cloud ID validation
 
 1. Go to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
-1. Select the login button on the top right, and use credentials u: test@adobe.com p: test to authenticate 
+1. Select the login button on the top right, and use credentials u: test@test.com p: test to authenticate 
 1. Open the Experience Platform Debugger and [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
 
@@ -333,13 +333,13 @@ To validate Analytics is capturing data properly through Experience Platform Web
 
 1. Scroll down to find `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. It is a Context Data Variable that captures ECID
 1. Keep scrolling down until you see the Analytics `[!UICONTROL mid]` variable. Both IDs match with your device's Experience Cloud ID.
-1. On the Luma site, 
+1. On the Luma site:
 
     ![Analytics ECID](assets/analytics-debugger-ecid.png)    
 
     >[!NOTE]
     >
-    >Since you are logged in, take a moment to validate the authenticated ID `112ca06ed53d3db37e4cea49cc45b71e` for the user **`test@adobe.com`** is captured as well in the `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
+    >Since you are logged in, take a moment to validate the authenticated ID `b642b4217b34b1e8d3bd915fc65c4452` for the user **`test@test.com`** is captured as well in the `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
 
 ### Report suite override validation
 
@@ -359,6 +359,10 @@ Go to a product page like the [Didi Sport Watch product page](https://luma.enabl
 
 1. Look for `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. 
 1. Scroll down to see the `[!UICONTROL gn]` variable. It is the Analytics dynamic syntax for the `[!UICONTROL s.pageName]` variable. It captures the page name from the data layer.
+
+    >[!NOTE]
+    >
+    > The `gn` value might be `test` if you overwrote the `xdm` object with the `data` object in the earlier exercise.
 
     ![Analytics product string](assets/analytics-debugger-edge-page-view.png)  
 
@@ -383,7 +387,7 @@ Since you are already on a product page, this exercise continues to use the same
 
     >[!TIP]
     >
-    > The `ecommerce - pdp library loaded - AA (order 20)` rule is overwriting the value of `eventType` set by the `all pages global content variables - library loaded - AA (order 1)` rule as it is set to trigger later in the sequence
+    > The `ecommerce - library loaded - set product details variables - 20` rule is overwriting the value of `eventType` set by the `all pages - library loaded - set global variables - 1` rule as it is set to trigger later in the sequence
 
 
     ![Analytics Product View](assets/analytics-debugger-prodView.png) 
@@ -443,7 +447,13 @@ Then scroll down to **[!UICONTROL mcvisId]** to validate that the ECID is correc
 ### Content page views validation
 
 Using the same beacon, validate that content page views are mapped to the correct Adobe Analytics variable.
-Scroll down to **[!UICONTROL pageName]** to validate that the `Page Name` is correctly captured
+Scroll down to **[!UICONTROL pageName]** to validate that the `Page Name` is correctly captured:
+
+
+    >[!NOTE]
+    >
+    > The `pageName` value might be `test` if you overwrote the `xdm` object with the `data` object in the earlier exercise.
+
     ![Page name validation with Assurance](assets/assurance-hitdebugger-content-pagename.png)
 
 ### Product string and e-commerce events validation
@@ -470,8 +480,6 @@ Continue to validate your implementation by reviewing the cart, checkout, and pu
  
 
 Congratulations! You did it! This is the end of the lesson and now you are ready to implement Adobe Analytics with Platform Web SDK for your own website.
-
-[Next: **Add Adobe Audience Manager**](setup-audience-manager.md)
 
 >[!NOTE]
 >

@@ -14,13 +14,49 @@ In this module you will setup everything so that you can collect data, access th
 - Learn how to setup your enablement environment
 - Learn how to use the website and mobile application
 
-## Prerequisites
+## Learning Paths
 
-- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Access to Demo System Next: [https://dsn.adobe.com](https://dsn.adobe.com)
+### Path: Firefly Services
+
+If you signed up for an on-demand training focused on **Adobe Firefly Services**, only the following exercises are required:
+
+- [Install the Chrome extension for the Experience League documentation](./ex1.md)
+- [Configure your Adobe I/O project](./ex6.md)
+- [Option 1: Postman setup](./ex7.md) OR [Option 2: PostBuster setup](./ex8.md)
+- [Applications to install](./ex9.md)
+
+### Path: Workfront Fusion
+
+If you signed up for an on-demand training focused on **Adobe Workfront Fusion**, only the following exercises are required:
+
+- [Install the Chrome extension for the Experience League documentation](./ex1.md)
+- [Configure your Adobe I/O project](./ex6.md)
+- [Option 1: Postman setup](./ex7.md) OR [Option 2: PostBuster setup](./ex8.md)
+- [Applications to install](./ex9.md)
+
+### Path: AEM CS + EDS
+
+If you signed up for an on-demand training focused on **Adobe Experience Manager Cloud Service** and **Edge Delivery Services**, only the following exercises are required:
+
+- [Install the Chrome extension for the Experience League documentation](./ex1.md)
+- [Applications to install](./ex9.md)
+
+### Path: LIVE, ALL or AEP + Apps
+
+If you are attending a **live workshop**, or if you signed up for an on-demand training that is focused on **ALL** the exercies, of if you signed up for an on-demand training focused on **AEP + Apps**, the following exercises are required:
+
+- [Install the Chrome extension for the Experience League documentation](./ex1.md)
+- [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md)
+- [Create your Datastream](./ex3.md)
+- [Use the website](./ex4.md)
+- [Use the mobile app](./ex5.md)
+- [Configure your Adobe I/O project](./ex6.md)
+- [Option 1: Postman setup](./ex7.md) OR [Option 2: PostBuster setup](./ex8.md)
+- [Applications to install](./ex9.md)
 
 ## Exercises
+
+Depending on the learning path you're taking, some of the below exercises will be required while others may not be required.
 
 [Install the Chrome extension for the Experience League documentation](./ex1.md)
 
@@ -61,6 +97,10 @@ In this exercise you'll prepare your Postman environment to interact with variou
 >If you're an Adobe employee, follow the instructions to install PostBuster!
 
 In this exercise you'll prepare your PostBuster environment to interact with various Adobe API endpoints
+
+[Applications to install](./ex9.md)
+
+In this exercise, you'll find instructions on how to install all the applications you will need to have on your computer before starting the tutorial.
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

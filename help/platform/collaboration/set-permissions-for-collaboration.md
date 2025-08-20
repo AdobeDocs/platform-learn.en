@@ -12,7 +12,7 @@ exl-id: 2b2c1a7b-4916-4b03-b74e-7aa0d02cb0f3
 ---
 # Set permissions for Real-Time CDP Collaboration
 
-Learn how to set up the needed permissions to access and use Real-Time CDP Collaboration. For detailed documentation, go to [Access control overview](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}.
+Learn how to set up the needed permissions to access and use Real-Time CDP Collaboration. For detailed documentation, go to [access control overview](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452216/?learn=on&enablevpops)
 

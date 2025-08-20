@@ -102,7 +102,7 @@ You have finished this exercise.
 
 ## Next Steps
 
-Go to [3.4.4 Setup and use push notifications for iOS](./ex4.md){target="_blank"}
+Go to [Summary and benefits](./summary.md){target="_blank"}
 
 Go back to [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 
