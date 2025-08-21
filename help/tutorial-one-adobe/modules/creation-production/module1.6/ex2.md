@@ -134,19 +134,39 @@ You should then see this.
 
 ![ETL](./images/bucket4.png)
 
-You can download CitiSignal image files [here](./../../asset-mgmt/module2.2/images/CitiSignal_Neon_Rabbit.zip){target="_blank"}.
+You can download CitiSignal image files [here](./images/package.zip){target="_blank"}.
 
 Export the files onto your desktop.
 
 ![ETL](./images/bucket5.png)
 
-Take the 2 images files in that folder and drop them into the S3 bucket upload window. Click **Upload**.
+Click **Add Folder**.
 
 ![ETL](./images/bucket6.png)
 
-You should then see this. Your S3 bucket, your image files and your IAM user are now ready to be used by your external DAM app.
+Select the folder **assets** from the download folder **package**. Click **Upload**.
 
 ![ETL](./images/bucket7.png)
+
+You should then see this. Click **Add Folder** again.
+
+![ETL](./images/bucket8.png)
+
+Select the folder **thumbnails** from the download folder **package**. Click **Upload**.
+
+![ETL](./images/bucket9.png)
+
+You should then see this. Click **Upload**.
+
+![ETL](./images/bucket10.png)
+
+Your upload is now done. Click **Close**.
+
+![ETL](./images/bucket11.png)
+
+You should now have this folder structure in your S3 bucket.
+
+![ETL](./images/bucket12.png)
 
 ## Next Steps
 
