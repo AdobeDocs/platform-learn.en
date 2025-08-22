@@ -64,11 +64,11 @@ Campaigns
   + [User interface](/help/platform/intro-to-platform/interface-tour.md)
   + [Roles and project phases](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Introduction to Real-Time CDP {#rtcdp}
-    + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-    + [End-to-end demo](/help/platform/rtcdp/demo.md)
-    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-    + [Overview of B2B Edition](/help/platform/rtcdp/b2b-overview.md)
-    + [Orchestrate campaigns with Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
+    + [Brief Overview](rtcdp/understanding-the-real-time-customer-data-platform.md)
+    + [How to use Real-Time CDP](rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+    + [End-to-end demo](rtcdp/demo.md)
+    + [Overview of B2B Edition](rtcdp/b2b-overview.md)
+    + [Orchestrate campaigns with Marketo Engage](rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview){target="_blank"}
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
