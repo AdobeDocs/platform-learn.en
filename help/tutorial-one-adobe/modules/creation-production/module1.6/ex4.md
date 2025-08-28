@@ -53,6 +53,10 @@ Click **Submit**.
 
 ## 1.6.4.2 Approve your app
 
+>[!IMPORTANT]
+>
+>This step can only be executed by System Administrators in Adobe Admin Console. If you're not a System Administrator, you won't be able to execute this. Contact your System Administrator to request approval of your app instead.
+
 Once a developer submits a new app for publication, the system administrators of your org will be notified and will be asked to review and approve.
 
 If you're a system administrator, you'll receive this email and then you can click **My Exchange** to start that process.

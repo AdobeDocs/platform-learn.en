@@ -123,7 +123,7 @@ AWS_REGION=us-west-2
 AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 ```
 
-You should now paste this text in both files, `.env.dev` and `.env.prod`. Don't forget to save your changes.
+You should now paste this text in the `.env` file. Don't forget to save your changes.
 
 ![Ext DAM](./images/extdam21.png)
 
@@ -146,6 +146,10 @@ Don't forget to save your changes.
 ## 1.6.3.5 Run your external DAM app
 
 In your terminal window, run the command `aio app run`. You should then see this after 1-2 minutes.
+
+>[!NOTE]
+>
+>When you run `aio app run` for the first time, you may be redirected to the browser to accept a new certificate. If that happens, accept the certificate and then you'll be able to continue with the below steps.
 
 ![Ext DAM](./images/extdam24.png)
 
