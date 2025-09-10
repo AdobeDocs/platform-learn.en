@@ -80,7 +80,7 @@ Now, you can update your project to register the lifecycle events.
 
 1. When the app enters the background, you want to pause lifecycle data collection from your app's `override fun onActivityPaused` function. Add this code to  `override fun onActivityPaused(activity: Activity)`:
 
-   ```swift
+   ```kotlin
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
