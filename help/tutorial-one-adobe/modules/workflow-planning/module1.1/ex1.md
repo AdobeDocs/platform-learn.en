@@ -42,7 +42,7 @@ You should then see this. Click **Create Workspace**.
 
 ![Workfront Planning](./images/wfpl3.png)
 
-Click **Use tempmate** for the template **Basic Marketing Management**.
+Click **Use template** for the template **Basic Marketing Management**.
 
 ![Workfront Planning](./images/wfpl4.png)
 
@@ -154,7 +154,7 @@ Once done, click the arrow to go back to the previous screen.
 
 ![Workfront Planning](./images/wfpla6.png)
 
-You've now created a new record type, you both deleted and created fields and you creatd 3 Business Units. Go back to the Workspace overview screen by clicking the arrow in the top left corner.
+You've now created a new record type, you both deleted and created fields and you created 3 Business Units. Go back to the Workspace overview screen by clicking the arrow in the top left corner.
 
 ![Workfront Planning](./images/wfpl18.png)
 
