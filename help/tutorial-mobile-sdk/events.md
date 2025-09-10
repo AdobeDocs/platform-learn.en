@@ -72,6 +72,12 @@ var xdmData: [String: Any] = [
 ]
 ```
 
+In this code: 
+
+  * `eventType`: Describes the event that occurred, use a [known value](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) when possible.
+
+  * `commerce.productViews.value`: the numeric or boolean value of the event. If it's a Boolean (or "Counter" in Adobe Analytics), the value is always set to 1. If it's a numeric or currency event, the value can be > 1.
+
 >[!TAB Android]
 
 ```kotlin
@@ -85,13 +91,14 @@ val xdmData = mapOf(
 )
 ```
 
->[!ENDTABS]
-
-* In this code: 
+In this code: 
 
   * `eventType`: Describes the event that occurred, use a [known value](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) when possible.
 
   * `commerce.productViews.value`: the numeric or boolean value of the event. If it's a Boolean (or "Counter" in Adobe Analytics), the value is always set to 1. If it's a numeric or currency event, the value can be > 1.
+
+>[!ENDTABS]
+
 
 * In your schema, identify any additional data associated with the commerce product view event. In this example, include **[!UICONTROL productListItems]** which is a standard set of fields used with any commerce-related event:
       
