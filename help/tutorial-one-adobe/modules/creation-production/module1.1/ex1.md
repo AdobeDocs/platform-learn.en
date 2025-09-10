@@ -62,7 +62,7 @@ Here's an example of common response codes you may expect:
 
 ## 1.1.1.3 Explore firefly.adobe.com - stage 1
 
-Let's start exploring Adobe Firefly Services. For exploreation, you'll start with a CitiSignal image generation example. The CitiSignal design team would like to generate a neon version of the CitiSignal brand name. They would like to use Adobe Firefly Services to do that.
+Let's start exploring Adobe Firefly Services. For exploration, you'll start with a CitiSignal image generation example. The CitiSignal design team would like to generate a neon version of the CitiSignal brand name. They would like to use Adobe Firefly Services to do that.
 
 The first thing that is needed to achieve this, is a black and white version of the CitiSignal brand name, something that looks like this:
 
