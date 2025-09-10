@@ -9,9 +9,9 @@ exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
 
 Learn how to collect identity data in a mobile app.
 
-Adobe Experience Platform Identity Service helps you to gain a better view of your customers and their behaviors by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real time. Identity fields and namespaces are the glue that joins different data sources together to build the 360-degree real-time customer profile.
+Adobe Experience Platform Identity Service helps you to gain a better view of your customers and their behaviors. The services bridges identities across devices and systems, and allows you to deliver impactful, personal digital experiences in real time. Identity fields and namespaces are the glue that joins different data sources together to build the 360-degree real-time customer profile.
 
-Learn more about the [Identity extension](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) and the [identity service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html) in the documentation.
+Learn more about the [Identity extension](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) and the [identity service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) in the documentation.
 
 ## Prerequisites
 
@@ -29,11 +29,11 @@ In this lesson, you will:
 
 ## Set up a custom identity namespace
 
-Identity namespaces are components of [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) that serve as indicators of the context to which an identity relates. For example, they distinguish a value of `name@email.com` as an email address or `443522` as a numeric CRM ID.
+Identity namespaces are components of [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) that serve as indicators of the context to which an identity relates. For example, they distinguish a value of `name@email.com` as an email address or `443522` as a numeric CRM ID.
 
 >[!NOTE]
 >
->The Mobile SDK generates a unique identity in its own namespace, named Experience Cloud ID (ECID) when the app is installed. This ECID is stored in persistent memory on the mobile device and is sent with every hit. The ECID is removed when the user uninstalls the app or when the user sets the Mobile SDK global privacy status to opt-out. In the sample Luma app, you should remove and reinstall the app to create a new profile with its own unique ECID.
+>The Mobile SDK generates a unique identity in its own namespace, named Experience Cloud ID (ECID) when the app is installed. This ECID is stored in persistent memory on the mobile device and is sent with every hit. The ECID is removed when the user uninstalls the app or when the user sets the Mobile SDK global privacy status to opt out. In the sample Luma app, you should remove and reinstall the app to create a new profile with its own unique ECID.
 
 
 To create a new identity namespace:
@@ -174,7 +174,7 @@ You want to update both the standard identity (email) and the custom identity (L
 
 ## Remove an identity
 
-You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API to remove the identity from the stored client-side identity map. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side identity graph. See [View identity graphs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) for more information on identity graphs.
+You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API to remove the identity from the stored client-side identity map. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side identity graph. See [View identity graphs](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs) for more information on identity graphs.
 
 
 >[!BEGINTABS]
@@ -243,7 +243,7 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 >[!ENDTABS]
       
    1. Provide an email address and a CRM Id, or
-   1. Select <img src="assets/insert.png" width=15/> (iOS) or **[!UICONTROL Generate Random Email]** (Android) to randomly generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]**.
+   1. Select <img src="assets/insert.png" width=15/> (iOS) or **[!UICONTROL Generate Random Email]** (Android) to  generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]** randomly.
    1. Select **[!UICONTROL Login]**.
 
 >[!BEGINTABS]
@@ -261,7 +261,7 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
     
 Back in Assurance:
 
-1. Look in the Assurance web interface for the **[!UICONTROL Edge Identity Update Identities]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor.
+1. Inspect the Assurance web interface for the **[!UICONTROL Edge Identity Update Identities]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor.
 1. Select the event and review the data in the **[!UICONTROL ACPExtensionEventData]** object. You should see the identities you updated.
 ![validate identities update](assets/identity-validate-assurance.png){zoomable="yes"}
 
@@ -278,7 +278,7 @@ Once you complete the steps in the [Experience Platform lesson](platform.md), yo
 
 >[!INFO]
 >
->There is no code in the app to reset the ECID, which means you can only reset the ECID (and effectively create a new profile with a new ECID) through an uninstall and a reinstall of the application. To implement the reset of identifiers, see the [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) and [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API calls. Be aware though, when using a push notification identifier (see [Sending push notifications](journey-optimizer-push.md)), that identifier becomes another 'sticky' profile identifier on the device.
+>There is no code in the app to reset the ECID. You can only reset the ECID (and effectively create a new profile with a new ECID) through an uninstall and a reinstall of the application. To implement the reset of identifiers, see the [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) and [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API calls. Be aware that when you use a push notification identifier (see [Sending push notifications](journey-optimizer-push.md)), that identifier becomes another 'sticky' profile identifier on the device.
 
 
 >[!SUCCESS]

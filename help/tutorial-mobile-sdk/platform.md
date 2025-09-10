@@ -37,9 +37,9 @@ In this lesson, you will:
 
 ## Create a dataset
 
-All data that is successfully ingested into Adobe Experience Platform is persisted within the data lake as datasets. A dataset is a storage and management construct for a collection of data (typically a table) that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. See the [documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) for information.
+All data that is successfully ingested into Adobe Experience Platform is persisted within the data lake as datasets. A dataset is a storage and management construct for a collection of data (typically a table) that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. See the [documentation](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) for more information.
 
-1. Navigate to the Experience Platform interface by selecting it from the Apps ![Apps](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in the top right.
+1. Navigate to the Experience Platform UI. Select **[!UICONTROL Experience Platform]** from the Apps ![Apps](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in the top right.
 
 
 1. Select **[!UICONTROL Datasets]** from the left navigation menu.
@@ -97,10 +97,10 @@ Open your dataset in the Platform interface. You should see the data arriving in
 
 ![validate data landing Platform dataset batches](assets/platform-dataset-batches.png){zoomable="yes"}
 
-You should also be able to see example records and fields using the **[!UICONTROL Preview dataset]** feature:
+You should also see example records and fields using the **[!UICONTROL Preview dataset]** feature:
 ![validate lifecycle sent to Platform dataset](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
-A more robust tool for validating data is Platform's [query service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html).
+A more robust tool for validating data is Platform's [query service](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data).
 
 ## Enable Real-Time Customer Profile
 
@@ -110,7 +110,7 @@ Experience Platform's Real-Time Customer Profile allows you to build a holistic 
 
 1. Open your schema, for example **[!DNL Luma Mobile App Event Schema]**.
 1. Enable **[!UICONTROL Profile]**.
-1. Select **[!UICONTROL Data for this schema will contain a primary identity in the identityMap field.]** in the  dialog.
+1. Select **[!UICONTROL Data for this schema contains a primary identity in the identityMap field.]** in the  dialog.
 1. **[!UICONTROL Save]** the schema.
 
     ![enable the schema for profile](assets/platform-profile-schema.png){zoomable="yes"}
@@ -151,7 +151,7 @@ From the profile detail screen:
 1. To view the identity graph, click the link or navigate to **[!UICONTROL Identities]**, then select **[!UICONTROL Identity Graph]** from the top bar.
 1. To look up the identity value, specify `Luma CRM ID` as the **[!UICONTROL Identity namespace]** and the copied value as the **[!UICONTROL Identity value]**. Then select **[!UICONTROL View]**.
    
-   This visualization shows you all of the identities that are linked together in a profile and their origin. Here is an example of an identity graph constructed of data collected from completing both this Mobile SDK tutorial (Data Source 2) and the [Web SDK tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) (Data Source 1):
+   This visualization shows you the identities that are linked together in a profile and their origin. Here is an example of an identity graph constructed of data collected from completing both this Mobile SDK tutorial (Data Source 2) and the [Web SDK tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview) (Data Source 1):
 
    ![grab an identity value](assets/platform-profile-identitygraph.png){zoomable="yes"}
 

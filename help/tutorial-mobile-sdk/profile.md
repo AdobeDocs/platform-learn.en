@@ -8,7 +8,9 @@ exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
 
 Learn how to collect profile data in a mobile app.
 
-You can use the Profile extension to store attributes about your user on the client. This information can be used later to target and personalize messages during online or offline scenarios, without having to connect to a server for optimal performance. The Profile extension manages the Client-Side Operation Profile (CSOP), provides a way to react to APIs, updates user profile attributes, and shares the user profile attributes with the rest of the system as a generated event.
+You can use the Profile extension to store attributes about your user on the client. This information can be used later to target and personalize messages during online or offline scenarios, without having to connect to a server for optimal performance. 
+
+The Profile extension manages the Client-Side Operation Profile (CSOP), provides a way to react to APIs, updates user profile attributes, and shares the user profile attributes with the rest of the system as a generated event.
 
 The Profile data is used by other extensions to perform profile-related actions. An example is the Rules Engine extension that consumes the profile data and runs rules based on the profile data. Learn more about the [Profile extension](https://developer.adobe.com/client-sdks/documentation/profile/) in the documentation
 
@@ -31,7 +33,7 @@ In this lesson, you will:
 
 ## Set and update user attributes
 
-It would be helpful for targeting and / or personalization in the app to quickly know if a user has made a purchase in the past or recently. Let's set that up in the Luma app.
+It would be helpful for targeting and personalization in the app to know quickly if a user has made a purchase in the past or recently. Let's set that up in the Luma app.
 
 >[!BEGINTABS]
 
@@ -131,7 +133,7 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
     This code:
     
     1. Calls the [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API with the `isPaidUser` attribute name as single element in the `attributeNames` array.
-    1. Then checks for the value of the `isPaidUser` attribute and when `yes`, replaces the person icon with a  a badge on the <img src="assets/paiduser.png" width=20/> icon in the toolbar at the top right.
+    1. Then checks for the value of the `isPaidUser` attribute. When `yes`, the code replaces the person icon with a badge on the <img src="assets/paiduser.png" width=20/> icon in the toolbar at the top right.
 
 >[!ENDTABS]
 
@@ -198,7 +200,7 @@ See the [API reference](https://developer.adobe.com/client-sdks/documentation/pr
 >[!ENDTABS]
 
 
-In the Assurance UI you should see a **[!UICONTROL UserProfileUpdate]** and **[!UICONTROL getUserAttributes]** events with the updated `profileMap` value.
+In the Assurance UI, you should see a **[!UICONTROL UserProfileUpdate]** and **[!UICONTROL getUserAttributes]** events with the updated `profileMap` value.
 
    ![validate profile](assets/profile-validate.png){zoomable="yes"}
 

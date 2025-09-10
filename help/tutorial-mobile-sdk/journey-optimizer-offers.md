@@ -15,7 +15,7 @@ Journey Optimizer Decision Management helps you to deliver the best offer and ex
 
 ![Architecture](assets/architecture-ajo.png){zoomable="yes"}
 
-Decision management makes personalization easy with a central library of marketing offers and a decision engine that applies rules and constraints to rich, real-time profiles created by Adobe Experience Platform. As a result, it enables you to send your customers the right offer at the right time. See [About Decision Management](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) for more information. 
+Decision management makes personalization easy with a central library of marketing offers and a decision engine that applies rules and constraints to rich, real-time profiles created by Adobe Experience Platform. As a result, it enables you to send your customers the right offer at the right time. See [About Decision Management](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning) for more information. 
 
 
 
@@ -29,7 +29,7 @@ Decision management makes personalization easy with a central library of marketi
 
 * Successfully built and run app with SDKs installed and configured.
 * Set up the app for Adobe Experience Platform.
-* Access to Journey Optimizer - Decision Management with the [proper permissions to manage offers and decisions](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+* Access to Journey Optimizer - Decision Management with the [proper permissions to manage offers and decisions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 
 ## Learning objectives
@@ -57,12 +57,10 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
 
 1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
 1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
-1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Adobe Journey Optimizer]** are selected. If you will do the Target lesson, select **[!UICONTROL Personalization Destinations]**, too. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
+1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Adobe Journey Optimizer]** are selected. If you do the Target lesson, select **[!UICONTROL Personalization Destinations]**, too. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) for more information.
 1. To save your datastream configuration, select **[!UICONTROL Save]** .
 
    ![AEP datastream configuration](assets/datastream-aep-configuration-offers.png){zoomable="yes"}
-
-   
 
 
 ### Install Offer Decisioning and Target tags extension
@@ -78,11 +76,11 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
 
 ### Update your schema
 
-1. Navigate to Data Collection interface and select **[!UICONTROL Schemas]** from the left rail.
+1. Navigate to the Data Collection interface and select **[!UICONTROL Schemas]** from the left rail.
 1. Select **[!UICONTROL Browse]** from the top bar.
 1. Select your schema to open it.
 1. In the schema editor, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to Field groups.
-1. In the **[!UICONTROL Add fields groups]** dialog, ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**. This field group collects the experience event data relevant to offers: what offer is presented, as part of which collection, decision, and other parameters (see later in this lesson). But also what is happening with the offer? Is it displayed, interacted with, dismissed, and so forth.
+1. In the **[!UICONTROL Add fields groups]** dialog, ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**. This field group collects the experience event data relevant to offers, like what offer is presented, as part of which collection, decision, and other parameters (see later in this lesson)? But also what is happening with the offer? Is it displayed, interacted with, dismissed, and so forth?
    ![Proposition](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
 1. Select **[!UICONTROL Save]** to save the changes to your schema.
 
@@ -100,7 +98,7 @@ To validate your setup in Assurance:
 
 ## Create placement
 
-Before you can actually create offers, you have to define how and where these offers can be placed in the mobile app. In Decision Management, you define placements for this purpose and you will define a placement for the mobile channel that supports a JSON payload:
+Before you can actually create offers, you have to define how and where these offers can be placed in the mobile app. In Decision Management, you define placements for this purpose and you define a placement for the mobile channel that supports a JSON payload:
 
 1. In the Journey Optimizer UI, select ![Components](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Components]** from **[!UICONTROL DECISION MANAGEMENT]** in the left rail.
 
@@ -126,7 +124,7 @@ To create the Mobile JSON placement:
 1. Select **[!UICONTROL Create offer]**.
 1. In the **[!UICONTROL New offer]** dialog, select **[!UICONTROL Personalized offer]** and click **[!UICONTROL Next]**.
 1. In the **[!UICONTROL Details]** step of **[!UICONTROL Create new personalized offer]**:
-   1. Enter a **[!UICONTROL Name]** for the offer, for example `Luma - Juno Jacket`, and enter a **[!UICONTROL Start date and time]** and an **[!UICONTROL End date and time]**. Outside of these dates, the offer won't be selected by the Decisioning engine.
+   1. Enter a **[!UICONTROL Name]** for the offer, for example `Luma - Juno Jacket`, and enter a **[!UICONTROL Start date and time]** and an **[!UICONTROL End date and time]**. Only offers within these dates are selected by the Decisioning engine.
    1. Select **[!UICONTROL Next]**.
       ![Offers - Details](assets/ajo-offers-details.png){zoomable="yes"}
 
@@ -233,7 +231,7 @@ An evaluation criterium is the combination of
 * eligibility rules: for example, is the offer only available for a specific audience,
 * a ranking method: when multiple offers are available to pick from, which method do you use to rank them (for example by offer priority, using a formula, or an AI model).
 
-See [Key steps to create and manage offers](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) if you want to better understand how placements, rules, rankings, offers, representations, collections, decisions, and so on, interact and relate to each other. This lesson is solely focused on using the output of a decision rather than on the flexibility in defining decisions within Journey Optimizer - Decision Management.
+See [Key steps to create and manage offers](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) if you want to understand how placements, rules, rankings, offers, representations, collections, decisions, and so on, interact and relate to each other. This lesson is solely focused on using the output of a decision rather than on the flexibility in defining decisions within Journey Optimizer - Decision Management.
 
 1. In the Journey Optimizer UI, select **[!UICONTROL Offers]** from the left rail.
 1. Select **[!UICONTROL Decisions]** from the top bar.
@@ -321,7 +319,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
-1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL decisions]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details you copied from the Journey Optimizer interface.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL decisions]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details that you copied from the Journey Optimizer interface.
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator. Find the `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` function. Add the following code:
 
@@ -357,7 +355,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
        ]
        ```
 
-      However, you can use any kind of implementation to ensure the Optimize APIs get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation. <br/>For your information: the other key-values in the `decisions.json` file are for future use and not relevant and used currently in this lesson and as as part of the tutorial.
+      However, you can use any kind of implementation to ensure the Optimize APIs get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation. <br/>For your information: the other key-values in the `decisions.json` file are for future use and not relevant and used currently in this lesson and as part of the tutorial.
 
    * calls two APIs: [`Optimize.clearCachePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandler).  These functions clear any cached propositions and update the propositions for this profile.
 
@@ -387,7 +385,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >[!TAB Android]
 
 
-1. In Android Studio, ensure that [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) is part of the depencencies in **[!UICONTROL build.gradle.kts (Module :app)]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. In Android Studio, ensure that [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) is part of the dependencies in **[!UICONTROL build.gradle.kts (Module :app)]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
 1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL MainActivity]** in the Android Studio navigator.
 1. Ensure `Optimize` is part of your list of imports.
 
@@ -412,7 +410,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    )
    ```
 
-1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL decisions.json]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details you copied from the Journey Optimizer interface.
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL decisions.json]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details that you copied from the Journey Optimizer interface.
 
 1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator. Find the `suspend fun updatePropositionsOD(ecid: String,        activityId: String, placementId: String, itemCount: Int) ` function. Add the following code:
 
@@ -454,7 +452,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
        ]
        ```
 
-      However, you can use any kind of implementation to ensure the Optimize APIs get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation. <br/>For your information: the other key-values in the `decisions.json` file are for future use and not relevant and used currently in this lesson and as as part of the tutorial.
+      However, you can use any kind of implementation to ensure the Optimize APIs get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation. <br/>For your information: the other key-values in the `decisions.json` file are for future use and not relevant and used currently in this lesson and as part of the tutorial.
 
    * calls two APIs: [`Optimize.clearCachePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandler).  These functions clear any cached propositions and update the propositions for this profile.
 
@@ -491,7 +489,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 1. Rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-1. Go to the **[!DNL Personalisation]** tab.
+1. Go to the **[!DNL Personalization]** tab.
 
 1. Scroll to the top, and you see two random offers displayed  from the collection that you have defined in the **[!DNL DECISION LUMA - MOBILE APP DECISION]** tile.
 
@@ -504,7 +502,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 1. Rebuild and run the app in the simulator or on a physical device from Android Studio, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-1. Go to the **[!DNL Personalisation]** tab.
+1. Go to the **[!DNL Personalization]** tab.
 
 1. Scroll to the top, and you see two random offers displayed in the upper box from the collection that you have defined in the **[!DNL DECISION LUMA - MOBILE APP DECISION]** tile.
 

@@ -15,7 +15,7 @@ Journey Optimizer allows you to create campaigns to send in-app messages to targ
 
 ![Architecture](assets/architecture-ajo.png){zoomable="yes"}
 
-Before you send in-app messages with Journey Optimizer, you must ensure that the proper configurations and integrations are in place. To understand the in-app messaging data flow in Journey Optimizer, refer to [the documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Before you send in-app messages with Journey Optimizer, you must ensure that the proper configurations and integrations are in place. To understand the in-app messaging data flow in Journey Optimizer, refer to [the documentation](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/in-app/inapp-configuration).
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Before you send in-app messages with Journey Optimizer, you must ensure that the
 
 * Successfully built and run app with SDKs installed and configured.
 * Set up the app for Adobe Experience Platform.
-* Access to Journey Optimizer and [sufficient permissions for push notifications](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). Also you need sufficient permission to the following Journey Optimizer features.
+* Access to Journey Optimizer and [sufficient permissions for push notifications](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/push/push-config/push-configuration). Also you need sufficient permission to the following Journey Optimizer features.
   * Manage campaigns.
 * Physical iOS device or simulator for testing.
 
@@ -53,9 +53,9 @@ In this lesson, you will
 
 To begin, you must create a channel configuration to be able to send in App messages notifications from Journey Optimizer.
 
-1. In the Journey Optimizer interface open the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu and then select **[!UICONTROL Create channel configuration]**.
+1. In the Journey Optimizer interface, open the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu and then select **[!UICONTROL Create channel configuration]**.
 
-1. Enter a name and a description (optional) for the configuration. For example `LumaInAppMessaging` and `Channel for in-app messaging`.
+1. Enter a name and a description (optional) for the configuration. For example, `LumaInAppMessaging` and `Channel for in-app messaging`.
 
     >[!NOTE]
     >
@@ -65,15 +65,15 @@ To begin, you must create a channel configuration to be able to send in App mess
 
 1. Select the **In-app messaging** channel.
 
-1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more about marketing actions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). For example: Push Targeting.
+1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies with the messages using this configuration. All consent policies associated with the marketing action are leveraged to respect the preferences of your customers. [Learn more about marketing actions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). For example: Push Targeting.
 
-1. Select the Platform for which you want to define the settings. This allows you to specify the target app for each platform and ensures consistent content delivery across multiple platforms.
+1. Select the Platform for which you want to define the settings. This setting allows you to specify the target app for each platform and ensures consistent content delivery across multiple platforms.
 
     >[!NOTE]
     >
-    >For iOS and Android platforms, delivery is based solely on the app ID. If both apps share the same app ID, content will be delivered to both, regardless of the platform selected in the **[!UICONTROL Channel configuration]**.
+    >For iOS and Android platforms, delivery is based solely on the app ID. If both apps share the same app ID, content is delivered to both, regardless of the platform selected in the **[!UICONTROL Channel configuration]**.
 
-1. Enter the App ids for the platform you want to support.
+1. Enter the App ids for the platform that you want to support.
 
    ![Create a channel configuration](assets/in-app-messaging-config.png){zoomable="yes"}
 
@@ -87,7 +87,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 
 1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
 1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
-1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Adobe Journey Optimizer]** is selected. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
+1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Adobe Journey Optimizer]** is selected. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) for more information.
 1. To save your datastream configuration, select **[!UICONTROL Save]**.
 
 
@@ -104,7 +104,7 @@ For your app to work with Journey Optimizer, you must update your tag property.
 1. Search for the **[!UICONTROL Adobe Journey Optimizer]** extension.
 1. Install the extension.
 
-When *only* using in-app messages in your app, in **[!UICONTROL Install Extension]** or **[!UICONTROL Configure Extension]**, you do not need to configure anything. However, if you already have followed the [Push notifications](journey-optimizer-push.md) lesson in the tutorial, you will see that for the **[!UICONTROL Development]** environment, the **[!UICONTROL AJO Push Tracking Experience Event Dataset]** dataset is selected from the **[!UICONTROL Event Dataset]** list.
+When *only* using in-app messages in your app, in **[!UICONTROL Install Extension]** or **[!UICONTROL Configure Extension]**, you do not need to configure anything. If you already have followed the [Push notifications](journey-optimizer-push.md) lesson in the tutorial, you see that for the **[!UICONTROL Development]** environment, the **[!UICONTROL AJO Push Tracking Experience Event Dataset]** dataset is selected from the **[!UICONTROL Event Dataset]** list.
 
 
 ### Implement Journey Optimizer in the app
@@ -146,7 +146,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 >[!TAB Android]
 
-1. In Android Studio, ensure that [aepsdk-messaging-android](https://github.com/adobe/aepsdk-messaging-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. In Android Studio, ensure that [aepsdk-messaging-android](https://github.com/adobe/aepsdk-messaging-android) is part of the dependencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
 1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
 1. Ensure `com.adobe.marketing.mobile.Messaging` is part of your list of imports.
 
@@ -194,9 +194,9 @@ To create your own in-app message, you must define a campaign in Journey Optimiz
 * application lifecycle events, such as launch, install, upgrade, close, or crash,
 * geolocation events, like entering or exiting a point of interest.
 
-In this tutorial, you are going to use the Mobile Core generic and extension-independent APIs (see [Mobile Core generic APIs](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) to facilitate the event tracking of user screens, actions, and PII data. Events generated by these APIs are published to the SDK event hub and are available for use by extensions. The SDK event hub provides the core data structure tied to all Mobile Platform SDK extensions, maintaining a list of registered extensions and internal modules, a list of registered event listeners, and a shared state database.
+In this tutorial, you are going to use the Mobile Core generic and extension-independent APIs (see [Mobile Core generic APIs](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) to facilitate the event tracking of user screens, actions, and PII data. Events generated by these APIs are published to the SDK event hub and are available for use by extensions. The SDK event hub provides the core data structure tied to all Mobile Platform SDK extensions. The event hub maintains a list of registered extensions and internal modules, a list of registered event listeners, and a shared state database.
 
-The SDK event hub publishes and receives event data from registered extensions to simplify integrations with Adobe and third-party solutions. For instance, when the Optimize extension is installed, all requests and interactions with the Journey Optimizer - Decision Management offer engine are handled by the event hub. 
+The SDK event hub publishes and receives event data from registered extensions to simplify integrations with Adobe and third-party solutions. For instance, when the Optimize extension is installed, the event hub handles all requests and interactions with the Journey Optimizer - Decision Management offer engine. 
 
 1. In the Journey Optimizer UI, select **[!UICONTROL Campaigns]** from the left rail.
 1. Select **[!UICONTROL Create Campaign]**.
@@ -211,8 +211,8 @@ The SDK event hub publishes and receives event data from registered extensions t
 
    1. Select the **[!UICONTROL Action]** tab.
 
-      1. Underneath **[!UICONTROL Show message if]**, select ![Add](/help/assets/icons/Add.svg) **[!UICONTROL Add action]**. From the drop-down menu select **[!UICONTROL In-app message]**.
-      1. From the **[!UICONTROL In-app message configuration]** drop-down menu, select your configuration. For example **[!UICONTROL LumaInAppMessaging]**.
+      1. Underneath **[!UICONTROL Show message if]**, select ![Add](/help/assets/icons/Add.svg) **[!UICONTROL Add action]**. From the drop-down menu, select **[!UICONTROL In-app message]**.
+      1. From the **[!UICONTROL In-app message configuration]** drop-down menu, select your configuration. For example, **[!UICONTROL LumaInAppMessaging]**.
       1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit triggers]**.
       1. In the **[!UICONTROL In-app message trigger]** dialog:
          
@@ -244,7 +244,7 @@ The SDK event hub publishes and receives event data from registered extensions t
 
          ![In-app message settings](assets/in-app-message-settings.png){zoomable="yes"}
 
-1. Select **[!UICONTROL Review to activate]**. To optionally edit any of the configurations for **[!UICONTROL Content]**, **[!UICONTROL Properties]**, **[!UICONTROL Actions]**, or more,  select ![Edit](/help/assets/icons/Edit.svg).
+1. Select **[!UICONTROL Review to activate]**. To edit optionally any of the configurations for **[!UICONTROL Content]**, **[!UICONTROL Properties]**, **[!UICONTROL Actions]**, or more,  select ![Edit](/help/assets/icons/Edit.svg).
 1. In the **[!UICONTROL Review to activate (*campaign name*)]** screen, select **[!UICONTROL Activate]**.
 1. After a while, you see your **_campaign name_** with status **[!UICONTROL Live]** in the **[!UICONTROL Campaigns]** list.
    ![Campaign list](assets/ajo-campaign-list.png){zoomable="yes"}

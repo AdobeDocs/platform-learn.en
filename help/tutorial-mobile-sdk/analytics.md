@@ -48,11 +48,11 @@ To send your XDM data from the Edge Network to Adobe Analytics, you configure th
 
 ## Automatic mapping
 
-Many of the standard XDM fields are automatically mapped to Analytics variables. See the [full list](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en).
+Many of the standard XDM fields are automatically mapped to Analytics variables. See the [full list](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping).
 
 ### Example #1 - s.products
 
-A good example is the [products variable](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) which can't be populated using processing rules. With an XDM implementation, you pass all the necessary data in `productListItems` and `s.products` are automatically populated via Analytics mapping.
+A good example is the [products variable](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/products) which can't be populated using processing rules. With an XDM implementation, you pass all the necessary data in `productListItems` and `s.products` are automatically populated via Analytics mapping.
 
 This object:
 
@@ -81,7 +81,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->If `productListItems[].SKU` and `productListItems[].name` both contain data, the value in `productListItems[].SKU` is used. See [Analytics variable mapping in Adobe Experience Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) for more information. 
+>If `productListItems[].SKU` and `productListItems[].name` both contain data, the value in `productListItems[].SKU` is used. See [Analytics variable mapping in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) for more information. 
 
 
 ### Example #2 - scAdd
@@ -165,7 +165,7 @@ Note the following in the Analytics mapping:
 
 ## Mapping with Context Data
 
-XDM data forwarded to Analytics gets converted into [context data](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en) including both standard and custom fields.
+XDM data forwarded to Analytics gets converted into [context data](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/getting-started/proc-rules.md?lang=en) including both standard and custom fields.
 
 The context data key is constructed following this syntax:
 
@@ -187,7 +187,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >Custom fields are placed under your Experience Cloud Org identifier.
 >
->`_techmarketingdemos` is replaced with your Organization's unique value.
+The tenant name `_techmarketingdemos` is replaced with your organization's unique value.
 
 
 
@@ -205,7 +205,7 @@ To map this XDM context data to your Analytics data in your report suite, you ca
 
 ### Merchandising eVars
 
-If you are using [merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) in your Analytics setup, for example to capture the color of products, like `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`, you have to extend your XDM payload that you defined in [Track event data](events.md) to capture that merchandising information.
+If you are using [merchandising eVars](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) in your Analytics setup, you have to extend your XDM payload that you defined in [Track event data](events.md) to capture that merchandising information. Example of a merchandising var is `evar1` where when you want to capture the color of products, like `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
 
 * In JSON:
 
@@ -295,15 +295,15 @@ Here is what a processing rule using this data might look like:
 >The first time you map to a processing rule, the interface does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
 
 
-See [Map contextData variables into props and eVars with processing rules](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+See [Map contextData variables into props and eVars with processing rules](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules).
 
 >[!TIP]
 >
->Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+>Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead, you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
 
 ## Migrate from Analytics mobile extension
 
-If you have developed your mobile application using the [Adobe Analytics mobile extension](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application) you have most likely used [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) and [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API calls. 
+If you have developed your mobile application using the [Adobe Analytics mobile extension](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application), you most likely have used [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) and [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API calls. 
 
 If you decide to migrate to use the recommended Edge Network, you do have options:
 
@@ -315,6 +315,6 @@ If you decide to migrate to use the recommended Edge Network, you do have option
 
 >[!SUCCESS]
 >
->You have set up your app to map your Experience Edge XDM objects to Adobe Analytics variables enabling the Adobe Analytics service in your datastream and using processing rules where applicable.<br/> Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content,  share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have set up your app to map your Experience Edge XDM objects to Adobe Analytics variables by enabling the Adobe Analytics service in your datastream. And using processing rules where applicable.<br/> Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content,  share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Send data to Experience Platform](platform.md)**

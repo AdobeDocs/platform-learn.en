@@ -1,5 +1,5 @@
 ---
-title: Track event data in mobile apps with Platform Mobile SDK
+title: Track event data in mobile apps with the Experience Platform Mobile SDK
 description: Learn how to track event data in a mobile app.
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
@@ -8,11 +8,11 @@ exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
 
 Learn how to track events in a mobile app.
 
-The Edge Network extension provides an API to send Experience Events to Platform Edge Network. An Experience Event is an object that contains data conforming to the XDM ExperienceEvent schema definition. More simply, these events capture what people do in your mobile app. Once data is received by Platform Edge Network, that data can be forwarded to applications and services configured in your datastream, such as Adobe Analytics and Experience Platform. Learn more about the [Experience Events](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in the product documentation.
+The Edge Network extension provides an API to send experience events to the Platform Edge Network. An experience event is an object that contains data conforming to the XDM ExperienceEvent schema definition. More simply, these events capture what people do in your mobile app. Once the Platform Edge Network received data, that data can be forwarded to applications and services configured in your datastream, such as Adobe Analytics and Experience Platform. Learn more about the [Experience Events](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in the product documentation.
 
 ## Prerequisites
 
-* All package dependencies are in place in your Xcode project.
+* All package dependencies are configured in your Xcode project.
 * Registered extensions in **[!UICONTROL AppDelegate]**.
 * Configured MobileCore extension to use your development `appId`.
 * Imported SDKs.
@@ -87,7 +87,10 @@ val xdmData = mapOf(
 
 >[!ENDTABS]
 
+* In this code: 
+
   * `eventType`: Describes the event that occurred, use a [known value](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) when possible.
+
   * `commerce.productViews.value`: the numeric or boolean value of the event. If it's a Boolean (or "Counter" in Adobe Analytics), the value is always set to 1. If it's a numeric or currency event, the value can be > 1.
 
 * In your schema, identify any additional data associated with the commerce product view event. In this example, include **[!UICONTROL productListItems]** which is a standard set of fields used with any commerce-related event:
@@ -180,7 +183,7 @@ Edge.sendEvent(productViewEvent, null)
 
 The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API is the AEP Mobile SDK equivalent to the [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) and [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API calls. See [Migrate from Analytics mobile extension to Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) for more information.
 
-You are now going to actually implement this code in your project.
+You are now going to implement this code in your project.
 You have different commerce product-related actions in your app and you want to send events, based on these actions as performed by the user:
 
 * view: occurs when a user views a specific product,
@@ -192,7 +195,7 @@ To implement the sending of commerce-related experience events in a reusable way
 
 >[!BEGINTABS]
 
->[!TAB ios]
+>[!TAB iOS]
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator, and add the following to the `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` function.
 
@@ -458,7 +461,7 @@ Edge.sendEvent(event, null)
 
 >[!ENDTABS]
 
-Again, lets actually implement this code in your project. 
+Again, implement this code in your project. 
 
 >[!BEGINTABS]
 
@@ -660,11 +663,11 @@ You should now have all the tools to start adding data collection to your app. Y
 
 ## Send events to Analytics and Platform
 
-Now that you have collected the events and sent them to Platform Edge Network, they are sent to the applications and services configured in your [datastream](create-datastream.md). In later lessons, you map this data to [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md), and other Adobe Experience Cloud solutions like [Adobe Target](target.md) and Adobe Journey Optimizer. 
+Now that you have collected the events and sent them to Platform Edge Network, they are sent to the applications and services configured in your [datastream](create-datastream.md). In later lessons, you map this data to [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md), and other Adobe Experience Cloud solutions (like [Adobe Target](target.md) and Adobe Journey Optimizer). 
 
 >[!SUCCESS]
 >
->You have now set up your app to track commerce, app interaction, and screen tracking events to the Adobe Experience Platform Edge Network and all services you have defined in your datastream.
+>You have now set up your app to track commerce, app interaction, and screen tracking events to the Adobe Experience Platform Edge Network. And to all services that you have defined in your datastream.
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 

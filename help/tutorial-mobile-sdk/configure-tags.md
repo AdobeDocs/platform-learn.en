@@ -9,7 +9,7 @@ exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
 
 Learn how to configure a tag property in the [!UICONTROL Data Collection] interface.
 
-Tags in Adobe Experience Platform are the next generation of tag management capabilities from Adobe. Tags give customers a simple way to deploy and manage analytics, marketing, and advertising tags necessary to power relevant customer experiences. Learn more about [Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) in the product documentation.
+Tags in Adobe Experience Platform are the next generation of tag management capabilities from Adobe. Tags give customers a simple way to deploy and manage analytics, marketing, and advertising tags necessary to power relevant customer experiences. Learn more about [Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) in the product documentation.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ To complete the lesson, you must have permission to create a tag property. It's 
 
 >[!NOTE]
 >
-> Platform Launch (Client Side) is now [Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
+> Platform Launch (Client Side) is now [Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Learning objectives
 
@@ -40,7 +40,7 @@ In this lesson, you will:
 
         >[!NOTE]
         >
-        > Default consent settings for the edge-based mobile sdk implementations such as the one you are doing in this lesson come from the [!UICONTROL Consent extension] and not the [!UICONTROL Privacy] setting in the tag property configuration. You add and configure the Consent extension later in this lesson. For more info, see [the documentation](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
+        > Default consent settings for the edge-based Mobile SDK implementations, such as the one you are doing in this lesson, come from the [!UICONTROL Consent extension] and not the [!UICONTROL Privacy] setting in the tag property configuration. You add and configure the Consent extension later in this lesson. For more info, see [the documentation](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
 1. Open the new property.    
@@ -62,7 +62,7 @@ In this lesson, you will:
         ![Select as the working library](assets/tags-working-library.png){zoomable="yes"}
 1. Check extensions:
 
-    1. Ensure that **[!UICONTROL Initial Build]** is selected as default library. 
+    1. Ensure that **[!UICONTROL Initial Build]** is selected as the default library. 
    
     1. Select **[!UICONTROL Extensions]** in the left rail.
 
@@ -113,7 +113,7 @@ In this lesson, you will:
 
        ![edge network settings](assets/tags-extension-edge.png){zoomable="yes"}
 
-Your library is built for the new extensions and configurations. A successful build is indicated by a <span style="color:green">●</span> in the **[!UICONTROL Initial Build]** button.
+Your library is built for the new extensions and configurations. A <span style="color:green">●</span> in the **[!UICONTROL Initial Build]** button indicated a successful build.
 
 
 ## Generate SDK install instructions
@@ -136,9 +136,9 @@ Tags provide you with instructions and code snippets to install the Adobe Experi
  
    The [install instructions](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) provide you a good starting point for implementation.
 
-   For the remainder of this tutorial, you will **not** use the CocoaPods instructions but instead use a native Swift Package Manager (SPM) based setup.
+   For the remainder of this tutorial, you are **not** using the CocoaPods instructions. Instead, you use the native Swift Package Manager (SPM) based setup.
 
-1. Select the **[!UICONTROL Swift]** tab below **[!UICONTROL Add Initialization Code]**. This block of code shows how to import the required SDKs and register the extensions at launch. This is covered in more detail in [Install SDKs](install-sdks.md).
+1. Select the **[!UICONTROL Swift]** tab below **[!UICONTROL Add Initialization Code]**. This block of code shows how to import the required SDKs and register the extensions at launch. This import and registration is covered in more detail in [Install SDKs](install-sdks.md).
 
 1. Copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the **[!UICONTROL Environment File ID]** and store it in a place as you need it later. This unique ID points to your development environment. Each environment (Production, Staging, Development) does have its own unique ID value.
 
@@ -156,7 +156,7 @@ Tags provide you with instructions and code snippets to install the Adobe Experi
  
    The [install instructions](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) provide you a good starting point for implementation.
 
-1. This block of code shows how to import the required SDKs and register the extensions at launch. This is covered in more detail in [Install SDKs](install-sdks.md).
+1. This block of code shows how to import the required SDKs and register the extensions at launch. This import and registration is covered in more detail in [Install SDKs](install-sdks.md).
 
 1. Copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the **[!UICONTROL Environment File ID]** and store it in a place as you need it later. This unique ID points to your development environment. Each environment (Production, Staging, Development) does have its own unique ID value.
 
@@ -174,7 +174,7 @@ If you are familiar with the web version of Tags, formerly Launch, it's importan
 
 * On the web, a tag property is rendered into JavaScript which is then (usually) hosted in the cloud. That JavaScript file is referenced directly in the website.
 
-* In a mobile tag property, rules and configurations are rendered into JSON files which are hosted in the cloud. The JSON files are downloaded and read by the Mobile Core extension in the mobile app. Extensions are separate SDKs that work together. If you add an extension to your tag property, you must also update the app. If you change an extension setting or create a rule, those changes are reflected in the app once you publish the updated tag library. That flexibility allows you to modify settings (like Adobe Analytics report suite id) or even change your app's behavior (using data elements and rules, as you will see in later lessons) without having to change code in your app and resubmit the app store.
+* In a mobile tag property, rules and configurations are rendered into JSON files which are hosted in the cloud. The JSON files are downloaded and read by the Mobile Core extension in the mobile app. Extensions are separate SDKs that work together. If you add an extension to your tag property, you must also update the app. If you change an extension setting or create a rule, those changes are reflected in the app once you publish the updated tag library. That flexibility allows you to modify settings (like Adobe Analytics report suite id). Or even change your app's behavior (using data elements and rules, as you see in later lessons) without having to change code in your app and resubmit to the app store.
 
 >[!SUCCESS]
 >

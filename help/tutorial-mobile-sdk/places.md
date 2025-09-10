@@ -83,7 +83,7 @@ You define some points of interest in the Places service.
 
 Verify whether your schema, as defined in [Create schema](create-schema.md), incorporates the necessary field groups and classes to collect POI and geolocation data.
 
-1. Navigate to Data Collection interface and select **[!UICONTROL Schemas]** from the left rail.
+1. Navigate to the Data Collection interface and select **[!UICONTROL Schemas]** from the left rail.
 1. Select **[!UICONTROL Browse]** from the top bar.
 1. Select your schema to open it.
 1. In the schema editor, select **[!UICONTROL Consumer Experience Event]**.
@@ -233,7 +233,7 @@ To validate your setup in Assurance:
 1. If not already available in the left rail, select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Events]** and **[!UICONTROL Map & Simulate]** underneath **[!UICONTROL PLACES SERVICE]**.
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Map & Simulate]** in the left rail.
-1. Move the map to a location of one of your POI's.
+1. Move the map to a location of one of your POIs.
 1. Select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simulate Load POIs. Your POI is identified using a circle and pin.
 1. Select your POI.
 1. From the popup, select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulate Entry Event]**.
@@ -256,7 +256,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 >[!IMPORTANT]
 >
->Setting up the Maps SDK for Android in your app requires you to setup billing as your incur costs with the usage. You can limit the costs using your unique application id and a SHA-1 key. For more details, see [Map SDK for Android](https://developers.google.com/maps/documentation/android-sdk/overview). If you do not want to set up billing or incur costs, skip this lesson.
+>Setting up the Maps SDK for Android in your app requires you to set up billing as your incur costs with the usage. You can limit the costs using your unique application id and an SHA-1 key. For more details, see [Map SDK for Android](https://developers.google.com/maps/documentation/android-sdk/overview). If you do not want to set up billing or incur costs, skip this lesson.
 
 >[!BEGINTABS]
 
@@ -299,23 +299,86 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** in Xcode's Project navigator. 
    
-   1. For the Entry button, enter the following code
+   1. For the Entry button, enter the following code:
 
-    ```swift
-    // Simulate geofence entry event
-    Task {
-        await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
-    }
-    ```  
+        ```swift
+        // Simulate geofence entry event
+        Task {
+            await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
+        }
+        ```  
 
-   1. For the Exit button, enter the following code
+   1. For the Exit button, enter the following code:
 
-    ```swift
-    // Simulate geofence exit event
-    Task {
-        await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
-    }
-    ```  
+        ```swift
+        // Simulate geofence exit event
+        Task {
+            await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
+        }
+        ```  
+
+>[!TAB Android]
+
+1. In Android Studio, ensure that [aepsdk-places-android](https://github.com/adobe/aepsdk-places-android) is part of the dependencies in **[!UICONTROL build.gradle.kts (Module :app)]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
+1. Ensure `com.adobe.marketing.mobile.Messaging` is part of your list of imports.
+
+    `import import com.adobe.marketing.mobile.Places`
+
+1. Ensure `Places.EXTENSION` is part of the array of extensions that you are registering.
+
+    ```kotlin
+    val extensions = listOf(
+        Identity.EXTENSION,
+        Lifecycle.EXTENSION,
+        Signal.EXTENSION,
+        Edge.EXTENSION,
+        Consent.EXTENSION,
+        UserProfile.EXTENSION,
+        Places.EXTENSION,
+        Messaging.EXTENSION,
+        Optimize.EXTENSION,
+        Assurance.EXTENSION
+    )
+    ```
+
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio project navigator. Find the `suspend fun processGeofence(geofence: Geofence?, transitionType: Int)` function. Add the following code:
+
+    ```kotlin
+    // Process geolocation event
+    Places.processGeofence(geofence, transitionType)
+    ```
+
+    This [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API communicates the geolocation information to the Places service.
+
+
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LocationView.k]** in the Android Studio project navigator.
+   
+   1. For the Entry button, enter the following code:
+
+      ```kotlin
+      // Simulate geofence entry event
+      coroutineScope.launch {
+          MobileSDK.shared.processGeofence(
+             region,
+             Geofence.GEOFENCE_TRANSITION_ENTER
+          )
+      }
+      ```  
+
+   1. For the Exit button, enter the following code:
+
+        ```kotlin
+        // Simulate geofence entry event
+        coroutineScope.launch {
+            MobileSDK.shared.processGeofence(
+                region,
+                Geofence.GEOFENCE_TRANSITION_EXIT
+            )
+        }
+        ```  
+
+>[!ENDTABS]
 
 ## Validate using your app
 
@@ -329,7 +392,7 @@ To validate the geolocation features in your app:
 
 1. Go to the **[!UICONTROL Location]** tab.
 
-1. Move (drag) the map around to ensure that the blue middle circle is on above of one of your POI's, for example London.
+1. Move (drag) the map around to ensure that the blue middle circle is on above of one of your POIs, for example London.
 
 1. Tap <img src="assets/geobutton.png" width=20/> until you see the category and name appear in the label at the red location with the pin.
    
@@ -341,7 +404,7 @@ To validate the geolocation features in your app:
 
    <img src="assets/appentryexit.png" width=300/>
 
-1. You should see the events in the Assurance UI. Both in the general Events and in the Places Service Events.
+1. You should see the events in the Assurance UI. Both in the Events and in the Places Service Events.
 
 >[!TAB Android]
 
@@ -360,7 +423,6 @@ To validate the geolocation features in your app:
 
 1. You should see the events in the Assurance UI.
 
-Be aware that the Android Places API calls do not interact with the Mobile SDK Eventhub, so the POI - Enty and POI - Exit rules you have defined are not automatically triggered. You can work around by sending an explicit experience event with all details required for a geofence event.
 
 >[!ENDTABS]
 
@@ -370,9 +432,9 @@ Be aware that the Android Places API calls do not interact with the Mobile SDK E
 
 You should now have all the tools to start adding more functionality to your geolocation functionality in the app. As you have forwarded the events to the Edge Network, once you have set up the app for [Experience Platform](platform.md), you should see the experience events appearing for the profile used in the app. 
 
-In the Journey Optimizer section of this tutorial, you will see that experience events can be used to trigger journeys (see [push notification](journey-optimizer-inapp.md) and [in-app messaging](journey-optimizer-push.md) with Journey Optimizer). For example, the usual example of sending your app user a push notification with some product promotion when that user enters the geofence of a physical store.
+In the Journey Optimizer section of this tutorial, you see that experience events can be used to trigger journeys (see [push notification](journey-optimizer-inapp.md) and [in-app messaging](journey-optimizer-push.md) with Journey Optimizer). For example, the usual example of sending your app user a push notification with some product promotion when that user enters the geofence of a physical store.
 
-You have seen an implementation of functionality for your app, mostly driven by the Places service and data elements and rules you defined in your tag property. As such, minimizing the code in your app. Alternatively, you can implement the same functionality directly in your app using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (see [Events](events.md) for more information) with an XDM payload containing a populated `placeContext` object.
+This implementation of geolocation functionality for your app is minimizing code. The Places service, data elements and rules that you defined in your tag property provide most of the functionality. Alternatively, you can implement the same functionality directly in your app using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (see [Events](events.md) for more information) with an XDM payload containing a populated `placeContext` object.
 
 >[!SUCCESS]
 >

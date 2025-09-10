@@ -19,11 +19,11 @@ Experience Platform uses schemas to describe the structure of data in a consiste
 
 Before data can be ingested into Platform, a schema must be composed to describe the data's structure and provide constraints to the type of data that can be contained within each field. Schemas consist of a base class and zero or more schema field groups. 
 
-For more information on the schema composition model, including design principles, and best practices, see the [basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) or the playlist [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
+For more information on the schema composition model, including design principles, and best practices, see the [basics of schema composition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) or the playlist [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
 
 >[!TIP]
 >
->If you're familiar with Analytics Solution Design Reference (SDRs), you can think of a schema as a more robust SDR. See [Create and maintain a Solution Design Reference (SDR) Document](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=en) for more information.
+>If you're familiar with Analytics Solution Design Reference (SDRs), you can think of a schema as a more robust SDR. See [Create and maintain a Solution Design Reference (SDR) Document](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) for more information.
 
 ## Prerequisites
 
@@ -64,13 +64,13 @@ You are now on the main schemas page and are presented with a list of any existi
 * **Classes** define the behavioral aspects of the data that the schema contains. For example: `XDM ExperienceEvent` captures time-series, event data and `XDM Individual Profile` captures attribute data about an individual.
 * **Data types** are used as reference field types in classes or field groups in the same way as basic literal fields.
 
-The above descriptions are a high-level overview. For more details, see the [Schema building blocks](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html) video or read [Basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) in the product documentation.
+The above descriptions are a high-level overview. For more details, see the [Schema building blocks](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/schemas/schema-building-blocks) video or read [Basics of schema composition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) in the product documentation.
 
 In this tutorial, you use the Consumer Experience Event field group and create a custom one to demonstrate the process. 
 
 >[!NOTE]
 >
->Adobe continues to add more standard field groups and they should be used whenever possible since these fields are implicitly understood by Experience Platform services and provide greater consistency when used across Platform components. Using standard field groups provides tangible benefits such automatic mapping in Analytics and AI features in Platform.
+>Adobe continues to add more standard field groups and they should be used whenever possible. These fields are implicitly understood by Experience Platform services and provide greater consistency when used across Platform components. The use of standard field groups provides tangible benefits such as automatic mapping in Analytics and AI features in Platform.
 
 ## Luma app schema architecture
 
@@ -197,7 +197,7 @@ You begin by creating a custom data type describing the two events:
 
 ## Add a custom field group
 
-Now add a custom field group using your custom data type:
+Now, add a custom field group using your custom data type:
 
 1. Open the schema that you created earlier in this lesson.
 

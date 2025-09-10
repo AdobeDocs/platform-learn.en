@@ -8,7 +8,7 @@ exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
 
 Learn how to collect lifecycle data in a mobile app.
 
-The Adobe Experience Platform Mobile SDK Lifecycle extension enables the collection  lifecycle data from your mobile app. The Adobe Experience Platform Edge Network extension sends this lifecycle data to the Platform Edge Network where it is then  forwarded to other applications and services according to your datastream configuration. Learn more about the [Lifecycle extension](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) in the product documentation.
+The Adobe Experience Platform Mobile SDK Lifecycle extension enables the collection of lifecycle data from your mobile app. The Adobe Experience Platform Edge Network extension sends this lifecycle data to the Platform Edge Network where it is then  forwarded to other applications and services according to your datastream configuration. Learn more about the [Lifecycle extension](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) in the product documentation.
 
 
 ## Prerequisites
@@ -45,7 +45,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 ## Implementation changes
 
-Now you can update your project to register the lifecycle events.
+Now, you can update your project to register the lifecycle events.
 
 >[!BEGINTABS]
 
@@ -53,7 +53,7 @@ Now you can update your project to register the lifecycle events.
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** in the Xcode Project navigator.
 
-1. When launched, if your app is resuming from a background state, iOS might call your `sceneWillEnterForeground:` delegate method and this is where you want to trigger a lifecycle start event. Add this code to `func sceneWillEnterForeground(_ scene: UIScene)`:
+1. When launched, if your app is resuming from a background state, iOS might call your `sceneWillEnterForeground:` delegate method and this method is where you want to trigger a lifecycle start event. Add this code to `func sceneWillEnterForeground(_ scene: UIScene)`:
  
    ```swift
    // When in foreground start lifecycle data collection
@@ -71,7 +71,7 @@ Now you can update your project to register the lifecycle events.
 
 1. Navigate to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio navigator.
 
-1. When launched, if your app is resuming from a background state, Android might call your override `fun onActivityResumed function` and this is where you want to trigger a lifecycle start event. Add this code to `override fun onActivityResumed(activity: Activity)`:
+1. When launched, if your app is resuming from a background state, Android might call your override `fun onActivityResumed function` and this function is where you want to trigger a lifecycle start event. Add this code to `override fun onActivityResumed(activity: Activity)`:
  
    ```kotlin
    // When in foreground start lifecycle data collection
@@ -92,7 +92,7 @@ Now you can update your project to register the lifecycle events.
 
 1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. Send the app to the background. Check for **[!UICONTROL LifecyclePause]** events in the Assurance UI.
-1. Bring app to the foreground. Check for **[!UICONTROL LifecycleResume]** events in the Assurance UI.
+1. Bring the app to the foreground. Check for **[!UICONTROL LifecycleResume]** events in the Assurance UI.
 ![validate lifecycle](assets/lifecycle-lifecycle-assurance.png){zoomable="yes"}
 
 

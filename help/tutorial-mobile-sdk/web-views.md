@@ -21,9 +21,9 @@ In this lesson, you will:
 
 ## Potential tracking issues
 
-If you send data from the native portion of the app and from a WebView within the app, each generates their own Experience Cloud ID (ECID), which results in disconnected hits and inflated visit / visitor data. More information about the ECID can be found in the [ECID overview](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+Separate (Experience Cloud Identity) ECIDs are generated when you send data from the native portion of your app and from a WebView within the app. These separate ECIDs result in disconnected hits and inflated visit and visitor data. More information about the ECID can be found in the [ECID overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid).
 
-To solve for that undesirable situation, it's important to pass the user's ECID from the native portion of your app to a WebView you might want to use in your app.
+To solve the disconnected hits and inflated data, you need to pass the user's ECID from the native portion of your app to a WebView that you might want to use in your app.
 
 The AEP Edge Identity extension used within the WebView collects the current ECID and adds it to the URL instead of sending a request to Adobe for a new ID. The implementation then uses this ECID to request the URL.
 

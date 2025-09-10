@@ -9,13 +9,13 @@ exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
 
 Learn how to create a datastream in Experience Platform.
 
-A datastream is a server-side configuration on Platform Edge Network. The datastream ensures that incoming data to the Platform Edge Network is routed to Adobe Experience Cloud applications and services appropriately. For more information, see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) or this [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
+A datastream is a server-side configuration on Platform Edge Network. The datastream ensures that incoming data to the Platform Edge Network is routed to Adobe Experience Cloud applications and services appropriately. For more information, see the [documentation](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) or this [video](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/configure-datastreams).
 
 ![Architecture](assets/architecture.png){zoomable="yes"}
 
 ## Prerequisites
 
-To create a datastream, your organization must be provisioned for this feature in the Data Collection interface (formerly [!UICONTROL Launch]) and you must have user permissions manage and view datastreams.
+To create a datastream, your organization must be provisioned for this feature in the Data Collection interface (formerly [!UICONTROL Launch]) and you must have user permissions to manage and view datastreams.
 
 ## Learning objectives
 
@@ -96,9 +96,9 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->Enabling each of the services that your organization uses ensures data collected in the mobile app can be used everywhere. See [datastream settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) for more information..
+>Enabling each of the services that your organization uses ensures data collected in the mobile app can be used everywhere. See [datastream settings](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) for more information.
 
-When implementing Platform Mobile SDK in your own app, you should ultimately create three datastreams to map to your three tag environments (development, stage, and production). If you are using Platform Mobile SDK with Platform-based applications such as Adobe Real-Time Customer Data Platform or Adobe Journey Optimizer, you should be sure to create those datastreams in the appropriate sandboxes.
+When implementing Platform Mobile SDK in your own app, you should ultimately create three datastreams to map to your three tag environments (development, stage, and production). If you are using Platform Mobile SDK with Platform-based applications, such as Adobe Real-Time Customer Data Platform or Adobe Journey Optimizer, you should be sure to create those datastreams in the appropriate sandboxes.
 
 >[!SUCCESS]
 >

@@ -33,7 +33,7 @@ To begin collecting data, you must get consent from the user. In a real-world ap
 
 >[!TAB iOS]
 
-1. You only want to ask the user once for consent. You can do this by combining the Mobile SDK consent with the required authorization for tracking using Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). In this app, you assume that when the user authorizes tracking they consent to collecting events.
+1. You only want to ask the user once for consent. You combine the Mobile SDK consent with the required authorization for tracking using Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). In this app, you assume that when the user authorizes tracking they consent to collecting events.
  
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator.
   
@@ -47,7 +47,7 @@ To begin collecting data, you must get consent from the user. In a real-world ap
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL DisclaimerView]** in Xcode's Project navigator, which is the view that is shown after installing or reinstalling the application and starting the app for the first time. The user is prompted to authorize tracking per Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). If the user authorizes, you also update the consent.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL DisclaimerView]** in Xcode's Project navigator. The Xode's Project navigator is the view that is shown after installing or reinstalling the application and starting the app for the first time. The user is prompted to authorize tracking per Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). If the user authorizes, you also update the consent.
 
    Add the following code to the `ATTrackingManager.requestTrackingAuthorization { status in` closure.
 
@@ -171,7 +171,7 @@ In the above example, you are simply logging the consent status to the console i
 
 ## Validate with Assurance
 
-1. Delete the application from your device or simulator to properly reset and initialize the tracking and consent.
+1. Delete the application from your device or simulator to reset and initialize the tracking and consent properly.
 1. To connect your simulator or device to Assurance, review the [setup instructions](assurance.md#connecting-to-a-session) section.
 1. When moving in the app from **[!UICONTROL Home]** screen to **[!UICONTROL Products]** screen and back to **[!UICONTROL Home]** screen, you should see a **[!UICONTROL Get Consents Response]** event in the Assurance UI.
     ![validate consent](assets/consent-update.png){zoomable="yes"}

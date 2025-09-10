@@ -11,7 +11,7 @@ exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
 
 Learn how to optimize and personalize the experiences in your mobile apps with Platform Mobile SDK and Adobe Target.
 
-Target provides everything that you must tailor and personalize your customers' experiences. Target helps you maximize revenue on your web and mobile sites, apps, social media, and other digital channels. Target can perform A/B tests, multivariate tests, recommend products and content, target content, auto-personalize content with AI, and much more. The focus in this lesson is on the A/B test functionality of Target. See the [A/B Test overview](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) for more information. 
+Target provides everything that you must tailor and personalize your customers' experiences. Target helps you maximize revenue on your web and mobile sites, apps, social media, and other digital channels. Target can perform A/B tests, multivariate tests, recommend products and content, target content, auto-personalize content with AI, and much more. The focus in this lesson is on the A/B test functionality of Target. See the [A/B Test overview](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab) for more information. 
 
 ![Architecture](assets/architecture-at.png){zoomable="yes"}
 
@@ -25,7 +25,7 @@ Before you can perform A/B tests with Target, you must ensure that the proper co
 ## Prerequisites
 
 * Successfully built and run app with SDKs installed and configured.
-* Access to Adobe Target with [permissions, properly configured roles, workspaces, and properties](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en).
+* Access to Adobe Target with [permissions, properly configured roles, workspaces, and properties](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/property-channel).
 
 
 ## Learning objectives
@@ -60,9 +60,9 @@ To ensure data send from your mobile app to Experience Platform Edge Network is 
 
    You can find your properties in the Target UI, in **[!UICONTROL Administration]** > **[!UICONTROL Properties]**. Select ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) to reveal the property token for the property you want to use. The property token has a format like `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; you must only enter the value `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
-   Optionally, you can specify a Target Environment ID. Target uses environments to organize your sites and pre-production environments for easy management and separate reporting. The preset environments include Production, Staging, and Development. See [Environments](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) and [Target Environment ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) for more information.
+   Optionally, you can specify a Target Environment ID. Target uses environments to organize your sites and pre-production environments for easy management and separate reporting. The preset environments include Production, Staging, and Development. See [Environments](https://experienceleague.adobe.com/en/docs/target/using/administer/environments) and [Target Environment ID](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) for more information.
 
-   Optionally, you can specify a Target third-party ID namespace to support profile syncing on an identity namespace (for example CRM ID). See [Target Third Party ID namespace](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace) for more information.
+   Optionally, you can specify a Target third-party ID namespace to support profile syncing on an identity namespace (for example CRM ID). See [Target Third Party ID namespace](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) for more information.
 
 1. Select **[!UICONTROL Save]**.
 
@@ -75,7 +75,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 
 1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
 1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
-1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure that **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Personalization Destinations]** are selected. If you also follow the Journey Optimizer lessons, you select **[!UICONTROL Adobe Journey Optimizer]**. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
+1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure that **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Personalization Destinations]** are selected. If you also follow the Journey Optimizer lessons, you select **[!UICONTROL Adobe Journey Optimizer]**. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) for more information.
 1. To save your datastream configuration, select **[!UICONTROL Save]** .
 
    ![AEP datastream configuration](assets/datastream-aep-configuration-target.png){zoomable="yes"}
@@ -83,7 +83,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 
 ### Install Offer Decisioning and Target tags extension
 
-Although this lesson is about A/B tests in Target, the result of the tests are seen as an offer and are implemented in the Adobe infrastructure using the Adobe Offer Decisioning and Target tags extension. That extension handles both offers served by Journey Optimizer and Target.
+Although this lesson is about A/B tests in Target, the result of a test is seen as an offer and is implemented in the Adobe infrastructure using the Adobe Offer Decisioning and Target tags extension. That extension handles both offers served by Journey Optimizer and Target.
 
 1. Navigate to **[!UICONTROL Tags]**, find your mobile tag property, and open the property.
 1. Select **[!UICONTROL Extensions]**.
@@ -118,11 +118,11 @@ To validate your setup in Assurance:
 
 ## Create an A/B Test
 
-There are many types of activities you can create in Adobe Target and implement in a mobile app, as mentioned in the introduction. For this lesson, you will implement an A/B test.
+There are many types of activities that you can create in Adobe Target and implement in a mobile app, as mentioned in the introduction. For this lesson, you implement an A/B test.
 
 1. In the Target UI, select **[!UICONTROL Activities]** from the top bar.
 1. Select **[!UICONTROL Create Activity]** and **[!UICONTROL A/B Test]** from the context menu.
-1. In the **[!UICONTROL Create A/B Test Activity]** dialog, select **[!UICONTROL Mobile]** as the **[!UICONTROL Type]**, select a workspace from the **[!UICONTROL Choose Workspace]** list, and select your property from the **[!UICONTROL Choose property]** list if you are a Target Premium customer and specified a property token in the datastream. 
+1. In the **[!UICONTROL Create A/B Test Activity]** dialog, select **[!UICONTROL Mobile]** as the **[!UICONTROL Type]**, select a workspace from the **[!UICONTROL Choose Workspace]** list. Select your property from the **[!UICONTROL Choose property]** list if you are a Target Premium customer and specified a property token in the datastream. 
 1. Select **[!UICONTROL Create]**.
    ![Create Target activity](assets/target-create-activity1.png){zoomable="yes"}
 
@@ -160,7 +160,7 @@ There are many types of activities you can create in Adobe Target and implement 
         ```
 
 
-1. In the **[!DNL Targeting]** step, review the setup of your A/B test. By default, both offers are allocated equally across all visitors. Select **[!UICONTROL Next]** to continue.
+1. In the **[!DNL Targeting]** step, review the setup of your A/B test. By default, both offers are allocated equally to all visitors. Select **[!UICONTROL Next]** to continue.
 
    ![Targeting](assets/target-targeting.png){zoomable="yes"}
 
@@ -241,7 +241,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
       * sets up an XDM dictionary `xdmData`, containing the ECID to identify the profile for which you have to present the A/B test, and 
       * defines a `decisionScope`, an array of locations on where to present the A/B test. 
 
-    Then the function calls two API's: [`Optimize.clearCachedPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). These functions clear any cached propositions and update the propositions for this profile. A proposition in this context is the experience (offer) that is selected from the Target activity (your A/B test) and which you defined in [Create an A/B test](#create-an-ab-test).
+    Then the function calls two APIs: [`Optimize.clearCachedPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). These functions clear any cached propositions and update the propositions for this profile. A proposition in this context is the experience (offer) that is selected from the Target activity (your A/B test) and which you defined in [Create an A/B test](#create-an-ab-test).
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** in the Xcode Project navigator. Find the `func onPropositionsUpdateAT(location: String) async {` function and inspect the code of this function. The most important part of this function is the  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which: 
    * retrieves the propositions for the current profile based on the decision scope (which is the location you have defined in the A/B Test),
@@ -249,7 +249,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    * unwraps the content of the offer so it can be displayed properly in the app, and
    * triggers the `displayed()` action on the offer which sends an event back to Platform Edge Network informing the offer is displayed. 
 
-1. Still in **[!DNL TargetOffersView]**, add the following code to the `.onFirstAppear` modifier. This code ensures the callback for updating the offers is registered only once.
+1. Still in **[!DNL TargetOffersView]**, add the following code to the `.onFirstAppear` modifier. This code ensures that the callback for updating the offers is registered only once.
 
     ```swift
     // Invoke callback for offer updates
@@ -267,7 +267,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 >[!TAB Android]
 
-1. In Android Studio, ensure that [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. In Android Studio, ensure that [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) is part of the dependencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
 1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL MainActivity]** in the Android Studio navigator.
 1. Ensure `Optimize` is part of your list of imports.
 
@@ -353,7 +353,7 @@ You can send additional Target parameters (like mbox, profile, product, or order
 
 1. Rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-1. Go to the **[!UICONTROL Personalisation]** tab.
+1. Go to the **[!UICONTROL Personalization]** tab.
 
 1. Scroll down to the bottom, and you see one of the two offers that you have defined in your A/B test displayed in the **[!UICONTROL TARGET]** tile.
 
@@ -364,9 +364,9 @@ You can send additional Target parameters (like mbox, profile, product, or order
 
 1. Rebuild and run the app in the simulator or on a physical device from Android Studio, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-1. Go to the **[!DNL Personalisation]** tab.
+1. Go to the **[!DNL Personalization]** tab.
 
-1. You see one of the two offers that you have defined in your A/B test displayed in the bottom  box, in the **[!UICONTROL TARGET]** tile.
+1. You see one of the two offers that you have defined in your A/B test displayed in the bottom  box in the **[!UICONTROL TARGET]** tile.
 
     <img src="assets/ajo-app-offers-android.png" width=300>
 
@@ -384,7 +384,7 @@ To validate the A/B test in Assurance:
 1. Select **[!UICONTROL Requests]** at the top bar. You see your **[!DNL Target]** requests.
    ![AJO Decisioning validation](assets/assurance-decisioning-requests.png){zoomable="yes"}
 
-1. You can explore **[!UICONTROL Simulate]** and **[!UICONTROL Event List]** tabs for further functionality checking your setup for Target offers.
+1. You can explore **[!UICONTROL Simulate]** and **[!UICONTROL Event List]** tabs for additional functionality that helps you to validate your Target offers setup.
 
 ## Next steps
 
