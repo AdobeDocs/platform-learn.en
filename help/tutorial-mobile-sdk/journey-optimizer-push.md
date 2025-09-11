@@ -250,11 +250,11 @@ For your app to work with Journey Optimizer, you must update your tag property.
 
 >[!TAB iOS]
 
-<img src="assets/luma-app-push.png" width=300/>
+<img src="assets/luma-app-push.png" width=300>
 
 >[!TAB Android]
 
-<img src="assets/luma-app-push-android.png" width=300/>
+<img src="assets/luma-app-push-android.png" width=300>
 
 >[!ENDTABS]
 
@@ -676,7 +676,7 @@ To validate the push notification event and journey:
 
    You see the push notification appear on top of the app.
    
-   <img src="assets/ajo-test-push.png" width=300/>
+   <img src="assets/ajo-test-push.png" width=300>
 
 >[!TAB Android]
 
@@ -688,7 +688,7 @@ To validate the push notification event and journey:
 
    You see the push notification appear on top of the app.
 
-   <img src="assets/ajo-test-push-android.png" width=300/>
+   <img src="assets/ajo-test-push-android.png" width=300>
 
 >[!ENDTABS]
 

@@ -104,11 +104,11 @@ To execute the code:
 
 >[!TAB iOS]
 
-<img src="./assets/tou1.png" width=300/> <img src="./assets/tou2.png" width=300/> 
+<img src="./assets/tou1.png" width=300> <img src="./assets/tou2.png" width=300> 
 
 >[!TAB Android]
 
-<img src="./assets/tou1-android.png" width=300/> <img src="./assets/tou2-android.png" width=300/>
+<img src="./assets/tou1-android.png" width=300> <img src="./assets/tou2-android.png" width=300>
 
 >[!ENDTABS]
 
