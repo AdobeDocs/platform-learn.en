@@ -287,11 +287,11 @@ Create two other rules for checkout and purchase following the same pattern with
 
 1. **[!UICONTROL Condition]**: /content/luma/us/en/user/checkout.html
 1. Set `eventType` to `commerce.checkouts`
-1. Set `commerce.checkout.value` to `1`
+1. Set `commerce.checkouts.value` to `1`
 
     >[!TIP]
     >
-    >This is equivalent to setting `scCheckout` event in Analytics 
+    >This is equivalent to setting `scCheckouts` event in Analytics 
 
 
 **Rule name**: `ecommerce - library loaded - set purchase variables -  20`
