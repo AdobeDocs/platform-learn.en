@@ -117,7 +117,7 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
     This code:
     
     1. Calls the [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API with the `isPaidUser` attribute name as single element in the `attributeNames` array.
-    1. Then checks for the value of the `isPaidUser` attribute and when `yes`, places a badge on the <img src="assets/paiduser.png" width=20/> icon in the toolbar at the top right.
+    1. Then checks for the value of the `isPaidUser` attribute and when `yes`, places a badge on the <img src="assets/paiduser.png" width=20> icon in the toolbar at the top right.
 
 >[!TAB Android]
 
@@ -133,7 +133,7 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
     This code:
     
     1. Calls the [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API with the `isPaidUser` attribute name as single element in the `attributeNames` array.
-    1. Then checks for the value of the `isPaidUser` attribute. When `yes`, the code replaces the person icon with a badge on the <img src="assets/paiduser.png" width=20/> icon in the toolbar at the top right.
+    1. Then checks for the value of the `isPaidUser` attribute. When `yes`, the code replaces the person icon with a badge on the <img src="assets/paiduser.png" width=20> icon in the toolbar at the top right.
 
 >[!ENDTABS]
 
@@ -162,7 +162,7 @@ See the [API reference](https://developer.adobe.com/client-sdks/documentation/pr
 1. Select **[!DNL Products]** in the tab bar.
 1. Select one product.
 1. Select <img src="assets/saveforlater.png" width=15/>.
-1. Select <img src="assets/addtocart.png" width=20/>.
+1. Select <img src="assets/addtocart.png" width=20>.
 1. Select <img src="assets/purchase.png" width=15/>.
 
     <img src="./assets/mobile-app-events-3.png" width=300> 
@@ -187,8 +187,8 @@ See the [API reference](https://developer.adobe.com/client-sdks/documentation/pr
 
 1. Select **[!DNL Products]** in the tab bar.
 1. Select one product.
-1. Select<img src="assets/heart.png" width=25/>.
-1. Select <img src="assets/addtocart.png" width=20/>.
+1. Select<img src="assets/heart.png" width=25>.
+1. Select <img src="assets/addtocart.png" width=20>.
 1. Select <img src="assets/purchase.png" width=15/>.
 
     <img src="./assets/mobile-app-events-3-android.png" width=300> 

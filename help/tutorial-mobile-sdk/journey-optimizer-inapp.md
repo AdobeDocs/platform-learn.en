@@ -311,7 +311,7 @@ You can validate the in-app messages from within the app itself.
 
 1. Tap **[!UICONTROL In-App Message]**. You see the in-app message appear in your app.
 
-   <img src="assets/ajo-in-app-message.png" width=300/>
+   <img src="assets/ajo-in-app-message.png" width=300>
 
 
 >[!TAB Android]
@@ -322,7 +322,7 @@ You can validate the in-app messages from within the app itself.
 
 1. Tap **[!UICONTROL In-App Message]**. You see the in-app message appear in your app.
 
-   <img src="assets/ajo-in-app-message-android.png" width=300/>
+   <img src="assets/ajo-in-app-message-android.png" width=300>
 
 
 >[!ENDTABS]

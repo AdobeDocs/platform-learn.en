@@ -394,15 +394,15 @@ To validate the geolocation features in your app:
 
 1. Move (drag) the map around to ensure that the blue middle circle is on above of one of your POIs, for example London.
 
-1. Tap <img src="assets/geobutton.png" width=20/> until you see the category and name appear in the label at the red location with the pin.
+1. Tap <img src="assets/geobutton.png" width=20> until you see the category and name appear in the label at the red location with the pin.
    
 1. Tap the label of the POI, which opens up the **[!UICONTROL Nearby POI]** sheet. 
    
-   <img src="assets/appgeolocation.png" width=300/>
+   <img src="assets/appgeolocation.png" width=300>
 
 1. Press the **[!UICONTROL Entry]** or **[!UICONTROL Exit]** buttons to simulate geofence entry and geofence exit events from the app.
 
-   <img src="assets/appentryexit.png" width=300/>
+   <img src="assets/appentryexit.png" width=300>
 
 1. You should see the events in the Assurance UI. Both in the Events and in the Places Service Events.
 
@@ -414,12 +414,12 @@ To validate the geolocation features in your app:
 
 1. Tap somewhere within the red circle that appears.
 
-   <img src="assets/appgeolocation-android.png" width=300/>
+   <img src="assets/appgeolocation-android.png" width=300>
 
 
 1. Press the **[!UICONTROL Entry]** or **[!UICONTROL Exit]** buttons to simulate geofence entry and geofence exit events from the app.
 
-   <img src="assets/appentryexit-android.png" width=300/>
+   <img src="assets/appentryexit-android.png" width=300>
 
 1. You should see the events in the Assurance UI.
 
