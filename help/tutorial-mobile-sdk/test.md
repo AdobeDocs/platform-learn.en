@@ -87,6 +87,6 @@ Review the [setup instructions](assurance.md#connecting-to-a-session) section to
 1. Select **[!UICONTROL Home]** in the tab bar and verify you see an **[!UICONTROL ECID]**, **[!UICONTROL Email]**, and **[!UICONTROL CRM ID]** in the Home screen.
 1. Select **[!DNL Products]** in the tab bar.
 1. Select a product.
-1. Select ![Save for later](assets/saveforlater.png) (iOS) or ![Save for later](assets/heart.png){width=25} (Android).
+1. Select ![Save for later](assets/saveforlater.png) (iOS) or ![Save for later](assets/heart.png) (Android).
 1. Select ![Add to cart](assets/addtocart.png).
 1. Select ![Purchase](assets/purchase.png).
