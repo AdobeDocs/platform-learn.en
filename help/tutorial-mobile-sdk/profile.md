@@ -154,7 +154,7 @@ See the [API reference](https://developer.adobe.com/client-sdks/documentation/pr
     
     <img src="./assets/mobile-app-events-1.png" width=300> 
 
-1. To insert a random email and customer id, select the >  button .
+1. To insert a random email and customer id, select the **[!UICONTROL A |]** button .
 1. Select **[!UICONTROL Login]**.
 
     <img src="./assets/mobile-app-events-2.png" width=300>
