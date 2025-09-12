@@ -99,7 +99,7 @@ You need to provide a unique bundle identifier for your app.
  
 Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
-![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
+![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 >[!TAB Android]
 

@@ -241,10 +241,12 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 <img src="./assets/identity1-android.png" width=300>
 
 >[!ENDTABS]
+
+In the **[!UICONTROL Identities]** screen:
       
-   1. Provide an email address and a CRM Id, or
-   1. Select  **[!UICONTROL A |]** (iOS) or **[!UICONTROL Generate Random Email]** (Android) to  generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]** randomly.
-   1. Select **[!UICONTROL Login]**.
+1. Provide an email address and a CRM Id, or 
+1. Select  **[!UICONTROL A |]** (iOS) or **[!UICONTROL Generate Random Email]** (Android) to  generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]** randomly.
+1. Select **[!UICONTROL Login]**.
 
 >[!BEGINTABS]
 
