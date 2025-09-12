@@ -56,7 +56,7 @@ It would be helpful for targeting and personalization in the app to know quickly
 
     1. Uses the `profileMap` dictionary as a value to the `attributeDict` parameter of the [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API call.
 
-1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** in the Xcode Project navigator and find the call to `updateUserAttributes` (within the code for the Purchases <img src="assets/purchase.png" width= 15/> button). Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** in the Xcode Project navigator and find the call to `updateUserAttributes` (within the code for the Purchases ![CreditCard](/help/assets/icons/CreditCard.svg) button). Add the following code:
 
     ```swift
     // Update attributes
@@ -81,7 +81,7 @@ It would be helpful for targeting and personalization in the app to know quickly
 
     1. Uses the `profileMap` map as a value to the `attributeDict` parameter of the [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API call.
 
-1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL ProductView.kt]** and find the call to `updateUserAttributes` (within the code for the Purchases <img src="assets/purchase.png" width= 15/> button). Add the following code:
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL ProductView.kt]** and find the call to `updateUserAttributes` (within the code for the Purchases ![CreditCard](/help/assets/icons/CreditCard.svg) button). Add the following code:
 
     ```kotlin
     // Update attributes
@@ -117,7 +117,7 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
     This code:
     
     1. Calls the [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API with the `isPaidUser` attribute name as single element in the `attributeNames` array.
-    1. Then checks for the value of the `isPaidUser` attribute and when `yes`, places a badge on the <img src="assets/paiduser.png" width=20> icon in the toolbar at the top right.
+    1. Then checks for the value of the `isPaidUser` attribute and when `yes`, places a badge on the ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg) icon in the toolbar at the top right.
 
 >[!TAB Android]
 
@@ -133,7 +133,7 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
     This code:
     
     1. Calls the [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API with the `isPaidUser` attribute name as single element in the `attributeNames` array.
-    1. Then checks for the value of the `isPaidUser` attribute. When `yes`, the code replaces the person icon with a badge on the <img src="assets/paiduser.png" width=20> icon in the toolbar at the top right.
+    1. Then checks for the value of the `isPaidUser` attribute. When `yes`, the code replaces the person icon with a badge icon in the toolbar at the top right.
 
 >[!ENDTABS]
 
@@ -150,24 +150,24 @@ See the [API reference](https://developer.adobe.com/client-sdks/documentation/pr
 
 1. Select **[!UICONTROL Home]** in the tab bar.
 1. Move the Assurance icon to the left.
-1. To open the Login sheet, select the <img src="assets/login.png" width=15/> button.
+1. To open the Login sheet, select the ![User](/help/assets/icons/User.svg) button.
     
     <img src="./assets/mobile-app-events-1.png" width=300> 
 
-1. To insert a random email and customer id, select the <img src="assets/insert.png" width=15/> button .
+1. To insert a random email and customer id, select the >  button .
 1. Select **[!UICONTROL Login]**.
 
     <img src="./assets/mobile-app-events-2.png" width=300>
 
 1. Select **[!DNL Products]** in the tab bar.
 1. Select one product.
-1. Select <img src="assets/saveforlater.png" width=15/>.
-1. Select <img src="assets/addtocart.png" width=20>.
-1. Select <img src="assets/purchase.png" width=15/>.
+1. Select ![Heart](/help/assets/icons/Heart.svg).
+1. Select ![ShoppingCart](/help/assets/icons/ShoppingCart.svg).
+1. Select ![CreditCard](/help/assets/icons/CreditCard.svg).
 
     <img src="./assets/mobile-app-events-3.png" width=300> 
 
-1. Return back to **[!UICONTROL Home]** screen. You should see that a badge has been added <img src="assets/person-badge-icon.png" width=15/>.
+1. Return back to **[!UICONTROL Home]** screen. You should see that a badge has been added ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg).
     
     <img src="./assets/personbadges.png" width=300>
 
@@ -176,24 +176,24 @@ See the [API reference](https://developer.adobe.com/client-sdks/documentation/pr
 
 1. Select **[!UICONTROL Home]** in the tab bar.
 1. Move the Assurance icon to the left.
-1. To open the Login sheet, select the <img src="assets/login.png" width=15/> button.
+1. To open the Login sheet, select the ![User](/help/assets/icons/User.svg) button.
     
     <img src="./assets/mobile-app-events-1-android.png" width=300> 
 
-1. To insert a random email and customer id, select the <img src="assets/insert.png" width=15/> button .
+1. To insert a random email and customer id, select **[!UICONTROL Generate Random Email]** .
 1. Select **[!UICONTROL Login]**.
 
     <img src="./assets/mobile-app-events-2-android.png" width=300>
 
 1. Select **[!DNL Products]** in the tab bar.
 1. Select one product.
-1. Select<img src="assets/heart.png" width=25>.
-1. Select <img src="assets/addtocart.png" width=20>.
-1. Select <img src="assets/purchase.png" width=15/>.
+1. Select ![ThumbUp](/help/assets/icons/ThumbUp.svg)
+1. Select ![ShoppingCart](/help/assets/icons/ShoppingCart.svg).
+1. Select ![CreditCard](/help/assets/icons/CreditCard.svg).
 
     <img src="./assets/mobile-app-events-3-android.png" width=300> 
 
-1. Return back to **[!UICONTROL Home]** screen. You should see that the person icon is updated.
+1. Return back to **[!UICONTROL Home]** screen. You should see that the person icon is updated. 
     
     <img src="./assets/personbadges-android.png" width=300>
 

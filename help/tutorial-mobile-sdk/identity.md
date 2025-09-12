@@ -228,7 +228,7 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. In the Luma app
    1. Select the **[!UICONTROL Home]** tab and move the Assurance icon to the left. 
-   1. Select the <img src="assets/login.png" width=15/> icon from the top right.
+   1. Select the ![User](/help/assets/icons/User.svg) icon from the top right.
 
 >[!BEGINTABS]
 
@@ -243,7 +243,7 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 >[!ENDTABS]
       
    1. Provide an email address and a CRM Id, or
-   1. Select <img src="assets/insert.png" width=15/> (iOS) or **[!UICONTROL Generate Random Email]** (Android) to  generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]** randomly.
+   1. Select  **[!UICONTROL A |]** (iOS) or **[!UICONTROL Generate Random Email]** (Android) to  generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]** randomly.
    1. Select **[!UICONTROL Login]**.
 
 >[!BEGINTABS]
