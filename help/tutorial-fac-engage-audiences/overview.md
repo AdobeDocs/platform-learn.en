@@ -1,6 +1,6 @@
 ---
-title: Engage with audiences directly from your data warehouse using Federated Audience Composition overview
-description: Federated Audience Composition is a powerful feature that enables data architects and data engineers to curate and activate high-value audiences directly from supported data warehouses.
+title: Engage with Audiences Using Federated Audience Composition
+description: Learn about Federated Audience Composition (FAC) and how it enables data architects and data engineers to curate and activate high-value audiences directly from supported data warehouses.
 breadcrumb-title: Overview
 role: Data Architect, Data Engineer
 jira: KT-18743
@@ -9,17 +9,17 @@ recommendations: catalog, noDisplay
 last-substantial-update: 2025-08-11
 exl-id: 9d5a2e40-6cda-4164-87db-1bfffe3438e3
 ---
-# Engage with audiences directly from your data warehouse using Federated Audience Composition overview
+# Engage with audiences from data warehouse using Federated Audience Composition
 
-Federated Audience Composition (FAC) is a module for Adobe Real-Time Customer Data Platform (Real-Time CDP) and Adobe Journey Optimizer. It is also, available with Adobe Real-Time CDP Composable Audiences ( a tailored solution for customers as a Composable CDP). It empowers data architects and data engineers to curate and activate high-value audiences directly from [supported enterprise data warehouses](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}, without copying or moving customer data into Adobe Experience Platform (AEP). This composable CDP approach (a tailored solution for customers) aligns with industry trends, enabling businesses to leverage their data infrastructure for personalized digital experiences while maintaining data governance.
+Federated Audience Composition (FAC) is a module for Adobe Real-Time Customer Data Platform (Real-Time CDP) and Adobe Journey Optimizer. It is also available with Adobe Real-Time CDP Composable Audiences (a tailored solution for customers as a Composable CDP). It empowers data architects and data engineers to curate and activate high-value audiences directly from [supported enterprise data warehouses](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}, without copying or moving customer data into Adobe Experience Platform (AEP). This composable CDP approach (a tailored solution for customers) aligns with industry trends, enabling businesses to leverage their data infrastructure for personalized digital experiences while maintaining data governance.
 
 ## Business context
 
-SecurFinancial is a leading financial services firm. It leverages its wealth of customer data across disparate sources to personalize offers and campaigns for a large number of segments. They plan to use Adobe Real-Time CDP Federated Audience Composition module which allows businesses to use their data warehouse for data management while using Adobe Experience Platform for delivering personalized customer experiences. Key benefits include:
+SecurFinancial is a leading financial services firm. It leverages its wealth of customer data across disparate sources to personalize offers and campaigns for a large number of segments. They plan to use Adobe Real-Time CDP Federated Audience Composition module, which allows businesses to use their data warehouse for data management while using Experience Platform for delivering personalized customer experiences. Key benefits include:
 
 - **Access to warehouse data**: Create high-value audiences from datasets in supported data warehouses without data replication.
 - **Minimized data movement**: Query data directly in the warehouse, without duplication and maintaining data governance.
-- **Unified Experience Workflows**: Curate and activate audiences within Adobe Experience Platform for cross-channel use cases.
+- **Unified experience workflows**: Curate and activate audiences within Adobe Experience Platform for cross-channel use cases.
 - **Enhanced personalization**: Enrich profiles and audiences with warehouse attributes to power real-time, triggered experiences.
 
 ## Business scenario
