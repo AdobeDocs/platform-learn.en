@@ -14,7 +14,7 @@ Experience Platform Mobile SDK is a client-side SDK that allows customers of Ado
 ![Architecture](assets/architecture.png){zoomable="yes"}
 
 
-This tutorial guides you through the implementation of the Platform Mobile SDK in a sample app called Luma. The [Luma app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) has functionality that lets you build a realistic implementation. After you have completed this tutorial, you should be ready to start implementing all of your marketing solutions through Experience Platform Mobile SDK in your own mobile apps.
+This tutorial guides you through the implementation of the Platform Mobile SDK in a sample app called Luma. The Luma app has functionality that lets you build a realistic implementation. After you have completed this tutorial, you should be ready to start implementing all of your marketing solutions through Experience Platform Mobile SDK in your own mobile apps.
 
 The lessons are designed for:
 
@@ -113,9 +113,8 @@ Two versions of the sample app are available for download. Both versions can be 
 
 You use Android as the platform, [!DNL Kotlin]+[!DNL Java] as the programming language, [!DNL JetPack Compose] as the UI framework and [!DNL Android Studio] as the integrated development environment (IDE). However, many of the implementation concepts explained are similar for other development platforms. Many have already successfully completed this tutorial with little to no previous Android / Kotlin+Java / JetPack Compose experience. You do not need to be an expert to complete the lessons, but you get more out of the lessons if you can comfortably read and understand code.
 
-You can download a final productized test version of the app from Google Play.
+If you prefer, you can [join a test for a productized version](https://play.google.com/apps/internaltest/4700642199234438150) of the app from Google Play.
 
-[![Download](assets/download-app-android.svg)](https://play.google.com/store/apps/details?id=com.adobe.luma.tutorial.android)
 
 >[!ENDTABS]
 
