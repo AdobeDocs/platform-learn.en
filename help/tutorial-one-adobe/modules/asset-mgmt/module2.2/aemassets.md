@@ -18,7 +18,7 @@ doc-type: tutorial
 
 [1.2.1 Getting started with AEM Assets](./ex1.md){target="_blank"}
 
-In this exercise, you'll set up a number of basic settings in Workfront.
+In this exercise, you'll set up a number of basic settings in Adobe Experience Manager Assets.
 
 [Summary and benefits](./summary.md){target="_blank"}
 

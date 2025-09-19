@@ -97,6 +97,12 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
     + [1.2.1 Getting Started with AEM Assets](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
+  + 1.5 Adobe Commerce as a Cloud Service {#assetm3}
+    + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/accs.md)
+    + [1.5.1 Getting started with Adobe Commerce as a Cloud Service](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
+    + [1.5.2 Connect ACCS to AEM Sites CS/EDS Storefront](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex2.md)
+    + [1.5.3 Connect ACCS to AEM Assets CS](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex3.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/summary.md)
 
 + Delivery & Activation {#activation}
   + Data Collection {#dc}
