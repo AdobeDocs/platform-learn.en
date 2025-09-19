@@ -21,9 +21,11 @@ doc-type: tutorial
 
 ## 1.5.3.4 Update config.json
 
+Add the below code snippet under line 6 `"ac-environment-id":XXX`:
+
 ```json
  "commerce-assets-enabled": "true",
- ```
+```
  
 
 
