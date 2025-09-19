@@ -14,6 +14,6 @@ Congratulations ...
 
 ## Check this out
 
-Go Back to [Adobe Experience Manager Assets](./aemassets.md){target="_blank"}
+Go Back to [Adobe Commerce as a Cloud Service](./accs.md){target="_blank"}
 
 [Go Back to All Modules](../../../overview.md)
