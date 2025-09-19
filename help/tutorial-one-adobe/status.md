@@ -39,6 +39,7 @@ Below is an overview of the status of the content in this tutorial.
 | ---------------------- | ------------ | ------------ |------------ |
 | [1.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025  | Yes         | - |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025  | Yes         | - |
+| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 19/09/2025  | Yes         | - |
 
 ## 4. Delivery & Activation
 
