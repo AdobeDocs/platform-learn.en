@@ -50,7 +50,7 @@ Go to the GitHub repository that was created when setting up your AEM Sites CS/E
 
 ![ACCS+AEM Sites](./images/accsaemsites6.png)
 
-Scroll down and click to open the file **config.json**.
+In the root directory, scroll down and click to open the file **config.json**.
 
 ![ACCS+AEM Sites](./images/accsaemsites7.png)
 
