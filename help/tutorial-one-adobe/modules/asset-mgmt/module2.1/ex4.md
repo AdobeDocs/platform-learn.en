@@ -5,9 +5,9 @@ kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
 ---
-# 1.1.4 Develop a basic custom block
+# 1.1.3 Develop a basic custom block
 
-## 1.1.4.1 Setup your local development environment
+## 1.1.3.1 Setup your local development environment
 
 Go to [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, download and install **Github Desktop**.
 
@@ -37,7 +37,7 @@ You'll now see that folder open in Visual Studio Code, you're now ready to creat
 
 ![Block](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2 Create a basic custom block
+## 1.1.3.2 Create a basic custom block
 
 Adobe recommends that you develop blocks in a three-phased approach:
 
@@ -139,7 +139,7 @@ Save your changes.
 
 ![Block](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3 Commit your changes
+## 1.1.3.3 Commit your changes
 
 You've now made several changes in your project that need to be committed back to your GitHub repository. To do that, open **GitHub Desktop**.
 
@@ -163,7 +163,7 @@ In your browser, go to your GitHub account and to the repository your created fo
 
 ![Block](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 Add your block to a page
+## 1.1.3.4 Add your block to a page
 
 Now that your basic quote block is defined and committed to the CitiSignal project, you can add a **fiberoffer** block to an existing page.
 
@@ -243,7 +243,7 @@ Click **Publish** again.
 
 Your new page has now been published.
 
-## 1.1.4.5 Add your new page to the navigation menu
+## 1.1.3.5 Add your new page to the navigation menu
 
 In your AEM Sites overview, go to **CitiSignal** > **Fragments** and check the checkbox for **Header**. Click **Edit**.
 
@@ -278,7 +278,7 @@ Here is your basic custom block, but now rendered on the website.
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-Next Step: [1.1.5 Advanced Custom Block](./ex5.md){target="_blank"}
+Next Step: [Advanced Custom Block](./ex5.md){target="_blank"}
 
 Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 

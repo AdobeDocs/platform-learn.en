@@ -87,11 +87,10 @@ recommendations: noDisplay,noCatalog
   + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
     + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
     + [1.1.1 Create your Cloud Manager Program](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
-    + [1.1.2 Create your document-based website](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex2.md)
-    + [1.1.3 Setup your AEM CS environment](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
-    + [1.1.4 Basic Custom Block](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
-    + [1.1.5 Advanced Custom Block](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
-    + [1.1.6 AEM Edge Delivery Services MarTech plugin](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
+    + [1.1.2 Setup your AEM CS environment](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
+    + [1.1.3 Basic Custom Block](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
+    + [1.1.4 Advanced Custom Block](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
+    + [1.1.5 AEM Edge Delivery Services MarTech plugin](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
   + 1.2 Adobe Experience Manager Assets {#assetm2}
     + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
