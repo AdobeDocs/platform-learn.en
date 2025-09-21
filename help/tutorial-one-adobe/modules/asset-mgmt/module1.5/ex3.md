@@ -80,6 +80,8 @@ Make sure the directory is empty.
 
 ![ACCS+AEM Assets](./images/accsaemassets15.png)
 
+Go to [https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce).
+
 Next, copy the file **assets-commerce-main.zip** to your desktop and unzip it. Open the folder **assets-commerce-main**.
 
 ![ACCS+AEM Assets](./images/accsaemassets16.png)
@@ -92,7 +94,7 @@ Next, open **Microsoft Visual Studio Code** and open the folder that contains yo
 
 ![ACCS+AEM Assets](./images/accsaemassets18.png)
 
-Go to **Search** in the left menu and search for `<my-app>`. You need to replace all occurences of `<my-app>` by `--aepUserLdap--aemaccs`.
+Go to **Search** in the left menu and search for `<my-app>`. You need to replace all occurences of `<my-app>` by `--aepUserLdap--citisignalaemaccs`.
 
 Click the **replace all** icon.
 
@@ -134,13 +136,145 @@ Click **Run**. Running a pipeline deployment may take 10-15 minutes. You need to
 
 ![ACCS+AEM Assets](./images/accsaemassets28.png)
 
-## 1.5.3.4 Update config.json
+## 1.5.3.2 Enable AEM Assets integration in ACCS
 
-Add the below code snippet under line 6 `"ac-environment-id":XXX`:
+Go back to your ACCS instance. In the left menu, go to **Stores** and then select **Configuration**.
+
+![ACCS+AEM Assets](./images/accsaemassets49.png)
+
+Scroll down in the menu to **ADOBE SERVICES** and then open **AEM Assets Integration**. You should then see this.
+
+![ACCS+AEM Assets](./images/accsaemassets50.png)
+
+Fill out the following variables:
+
+- **AEM Assets Program ID**: You can take the Program ID from the AEM CS Author URL. In this example, the Program ID is `166717`.
+
+![ACCS+AEM Assets](./images/accsaemassets50a.png)
+
+- **AEM Assets Environment ID**: You can take the Environment ID from the AEM CS Author URL. In this example, the Environment ID is `1786231`.
+
+![ACCS+AEM Assets](./images/accsaemassets50b.png)
+
+- **Asset Selector IMS Client ID**: set to `1`
+- **Synchronization enabled**: set to `Yes`
+- **Visualization Owner**: set to `AEM Assets`
+- **Asset matching rule**: `Match by product SKU`
+- **Match by product SKU attribute name**: `commerce:skus`
+
+Click **Save Config**.
+
+![ACCS+AEM Assets](./images/accsaemassets51.png)
+
+## 1.5.3.3 Update config.json
+
+Go to the GitHub repository that was created when setting up your AEM Sites CS/EDS environment. That repository was created in the exercise [1.1.2 Setup your AEM CS environment](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} and should be named **citisignal-aem-accs**.
+
+In the root directory, scroll down and click to open the file **config.json**. Click the **edit** icon to make changes to the file.
+
+![ACCS+AEM Assets](./images/accsaemassets101.png)
+
+Add the below code snippet under line 5 `"commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/XXX/graphql",`:
 
 ```json
  "commerce-assets-enabled": "true",
 ```
+
+Click **Commit Changes...**.
+
+![ACCS+AEM Assets](./images/accsaemassets102.png)
+
+Click **Commit Changes**.
+
+![ACCS+AEM Assets](./images/accsaemassets103.png)
+
+Your change is now saved and will be published soon. It may take a couple of minutes before the change is visible on the storefront.
+
+![ACCS+AEM Assets](./images/accsaemassets104.png)
+
+## 1.5.3.4 Verify Commerce Fields in AEM Assets CS
+
+Log in to your AEM CS Author environment and go to **Assets**.
+
+![ACCS+AEM Assets](./images/accsaemassets30.png)
+
+Go to **Files**.
+
+![ACCS+AEM Assets](./images/accsaemassets31.png)
+
+Open the **CitiSignal** folder.
+
+![ACCS+AEM Assets](./images/accsaemassets32.png)
+
+Hover over any asset and click the **info** icon.
+
+![ACCS+AEM Assets](./images/accsaemassets33.png)
+
+You should now see a **Commerce** tab that contains 2 new metadata attributes.
+
+![ACCS+AEM Assets](./images/accsaemassets34.png)
+
+Your AEM Assets CS environment now support the Commerce integration. You can now start uploading product images.
+
+## 1.5.3.4 Upload Product Assets & Link to Products
+
+[Download the product images here](./images/Product_Images.zip). Once downloaded, export the files onto your desktop.
+
+![ACCS+AEM Assets](./images/accsaemassets35.png)
+
+Click **Create** and then select **Folder**.
+
+![ACCS+AEM Assets](./images/accsaemassets36.png)
+
+Enter the value **Product_Images** for the fields **Title** and **Name**. Click **Create**.
+
+![ACCS+AEM Assets](./images/accsaemassets37.png)
+
+Click to open the folder you just created.
+
+![ACCS+AEM Assets](./images/accsaemassets38.png)
+
+Click **Create** and then select **Files**.
+
+![ACCS+AEM Assets](./images/accsaemassets39.png)
+
+Navigate to the **Product_Images** folder on your desktop, select all the files and then click **Open**.
+
+![ACCS+AEM Assets](./images/accsaemassets40.png)
+
+Click **Upload**.
+
+![ACCS+AEM Assets](./images/accsaemassets41.png)
+
+Your images will then be available in your folder.
+
+![ACCS+AEM Assets](./images/accsaemassets42.png)
+
+Click the first product image to open it.
+
+![ACCS+AEM Assets](./images/accsaemassets43.png)
+
+Set the status of the product image to **Approved**. The AEM Assets CS - ACCS integration only works for approved images.
+
+![ACCS+AEM Assets](./images/accsaemassets44.png)
+
+Go to the **Commerce** tab and then click **Add** under **Product skus**.
+
+![ACCS+AEM Assets](./images/accsaemassets45.png)
+
+Take the product SKU from the image file name, increase the value to 1, and select all options in the **usage** dropdown list.
+
+![ACCS+AEM Assets](./images/accsaemassets46.png)
+
+You should then have this. Click **Save & Close**.
+
+![ACCS+AEM Assets](./images/accsaemassets47.png)
+
+Repeat this action of approving an asset and setting the Commerce tab for every image that you imported in this folder. Once you're done, every image should have a **green thumbs up**, indicating that the asset has been approved.
+
+![ACCS+AEM Assets](./images/accsaemassets48.png)
+
+## 1.5.3.5 Verify Product Images on AEM Sites CS/EDS Storefront
  
 
 
