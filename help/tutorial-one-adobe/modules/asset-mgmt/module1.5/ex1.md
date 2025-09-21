@@ -95,7 +95,17 @@ You should then see this message. Click **OK**.
 
 ![AEM Assets](./images/accs15.png)
 
-You should then be back here.
+You should then be back here. Click the **CitiSignal** website to open it.
+
+![AEM Assets](./images/accs16.png)
+
+Check the checkbox to set this website as the default website.
+
+Click **Save Web Site**.
+
+![AEM Assets](./images/accs16a.png)
+
+You should then be back here. 
 
 ![AEM Assets](./images/accs16.png)
 

@@ -11,7 +11,7 @@ Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){tar
 
 ![AEMCS](./images/aemcs1.png)
 
-For the **Program Name**, use `--aepUserLdap-- - CitiSignal`. Select the option **Set up a sandbox**. Click **Continue**.
+For the **Program Name**, use `--aepUserLdap-- - CitiSignal AEM+ACCS`. Select the option **Set up a sandbox**. Click **Continue**.
 
 ![AEMCS](./images/aemcs2.png)
 
@@ -45,8 +45,6 @@ Click **Create**.
 Creating your environment will take some time, 10-20mins.
 
 ![AEMCS](./images/aemcs4.png)
-
-While you wait, you can already start with exercise [1.1.2 Create your document-based website](./ex2.md){target="_blank"}.
 
 Once the environments are created and ready to use, you'll receive an email confirmation after which you can come back here.
 
@@ -101,7 +99,7 @@ After about 10 minutes, the activation of **Dynamic Media** will be done.
 
 Once your pipeline run has finished, you can continue with the next exercise.
 
-Next Step: [1.1.2 Create your document-based website](./ex2.md){target="_blank"}
+Next Step: [Setup your AEM CS environment](./ex3.md){target="_blank"}
 
 Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 

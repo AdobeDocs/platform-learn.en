@@ -88,7 +88,7 @@ In this module, you will use Adobe Frame.io in combination with Adobe Premiere P
 
 In this module, you will build a custom application to extend capability in GenStudio for Performance Marketing, using Adobe IO and App Builder.
 
-### 3. Asset Management
+### 3. Asset Management & Sites
 
 [1.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
@@ -97,6 +97,10 @@ In this module, you will setup your Adobe Experience Manager Cloud Service Progr
 [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 In this module, you will explore AEM Assets.
+
+[1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
+
+In this module, you will create your Adobe Commerce as a Cloud Service instance. You'll connect your Commerce instance to your AEM Sites CS Storefront and your AEM Assets CS environment.
 
 ### 4. Delivery & Activation
 
