@@ -3,6 +3,7 @@ title: Adobe Commerce as a Cloud Service
 description: Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
+exl-id: f4a448ae-d867-4aa9-970c-7da5c77f48c5
 ---
 # 1.5 Adobe Commerce as a Cloud Service
 

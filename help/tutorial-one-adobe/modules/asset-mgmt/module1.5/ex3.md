@@ -3,6 +3,7 @@ title: Connect ACCS to AEM Assets CS
 description: Connect ACCS to AEM Assets CS
 kt: 5342
 doc-type: tutorial
+exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
 ---
 # 1.5.3 Connect ACCS to AEM Assets CS
 

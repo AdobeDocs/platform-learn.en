@@ -3,6 +3,7 @@ title: Getting started with Adobe Commerce as a Cloud Service
 description: Getting started with Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
+exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
 ---
 # 1.5.1 Getting started with Adobe Commerce as a Cloud Service
 
