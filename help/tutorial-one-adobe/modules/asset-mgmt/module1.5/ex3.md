@@ -16,6 +16,10 @@ doc-type: tutorial
 >
 >If you have previously configured an AEM CS Program with an AEM Sites and Assets CS environment, it may be that your AEM CS sandbox was hibernated. Given that dehibernating such a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
+After completing the previous exercise, you could see a product being returned by ACCS to your website but it didn't have an image yet. At the end of this exercise, you should see an image being returned as well.
+
+![ACCS+AEM Sites](./images/accsaemsites11.png)
+
 ## 1.5.3.1 Update Pipeline Config
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. The org you should select is `--aepImsOrgName--`. 
@@ -166,6 +170,10 @@ Click **Save Config**.
 
 ![ACCS+AEM Assets](./images/accsaemassets51.png)
 
+You should then see this.
+
+![ACCS+AEM Assets](./images/accsaemassets52.png)
+
 ## 1.5.3.3 Update config.json
 
 Go to the GitHub repository that was created when setting up your AEM Sites CS/EDS environment. That repository was created in the exercise [1.1.2 Setup your AEM CS environment](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} and should be named **citisignal-aem-accs**.
@@ -275,8 +283,25 @@ Repeat this action of approving an asset and setting the Commerce tab for every 
 ![ACCS+AEM Assets](./images/accsaemassets48.png)
 
 ## 1.5.3.5 Verify Product Images on AEM Sites CS/EDS Storefront
- 
 
+>[!NOTE]
+>
+>It may take up to 15 minutes before the changes you made above are successfully deployed. If you don't see your image being shown yet, wait 15 minutes and then try again.
+ 
+To verify that the integration is working, you need to open your CitiSignal website.
+
+To acces your website, go to `main--citisignal-aem-accs--XXX.aem.page` and/or `main--citisignal-aem-accs--XXX.aem.live`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
+
+So in this example, the full URL becomes this:
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` and/or `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
+
+You should then see this. Go to **Phones**.
+
+![ACCS+AEM Assets](./images/accsaemassets150.png)
+
+You should then see a product image being shown for the **iPhone Air**.
+
+![ACCS+AEM Assets](./images/accsaemassets151.png)
 
 Next Step: [Summary & Benefits](./summary.md){target="_blank"}
 
