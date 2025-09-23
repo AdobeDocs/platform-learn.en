@@ -339,7 +339,7 @@ You should then see this.
 
 ![Block](./images/blockadv20.png){zoomable="yes"}
 
-Next Step: [AEM Edge Delivery Services MarTech plugin](./ex6.md){target="_blank"}
+Next Step: [AEM Edge Delivery Services MarTech plugin](./ex5.md){target="_blank"}
 
 Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 

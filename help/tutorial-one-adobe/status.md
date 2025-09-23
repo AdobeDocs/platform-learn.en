@@ -76,7 +76,8 @@ Below is an overview of the status of the content in this tutorial.
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
-| [1.1 Agentic AI](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md){target="_blank"}      | 06/01/2025        | Yes        | - |
+| [1.1 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"}      | 23/09/2025        | NO        | - |
+| [1.2 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"}      | 23/09/2025        | NO        | - |
 
 {style="table-layout:auto"}
 
