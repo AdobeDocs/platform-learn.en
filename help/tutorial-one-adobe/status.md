@@ -72,6 +72,13 @@ Below is an overview of the status of the content in this tutorial.
 | [2.1 Query Service](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"}      | 04/12/2024        | Yes        |-|
 | [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"}      | 02/08/2025        | No        |Content being developed|
 
+## 6. Agentic AI
+
+| Name                   | Last Update | Working 100% | Remarks |
+| ---------------------- | ------------ | ------------ |------------ |
+| [1.1 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"}      | 23/09/2025        | NO        | - |
+| [1.2 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"}      | 23/09/2025        | NO        | - |
+
 {style="table-layout:auto"}
 
 >[!NOTE]

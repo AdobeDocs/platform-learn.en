@@ -21,19 +21,19 @@ exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
 
 In this exercise, you'll create your Cloud Manager Program which will create the Sites, Assets and Edge Delivery Services products for you.
 
-[1.1.2 Setup your AEM CS environment](./ex3.md){target="_blank"}
+[1.1.2 Setup your AEM CS environment](./ex2.md){target="_blank"}
 
 In this exercise you'll set up your AEM CS environment and access your CitiSignal website.
 
-[1.1.3 Basic Custom Block](./ex4.md){target="_blank"}
+[1.1.3 Basic Custom Block](./ex3.md){target="_blank"}
 
 In this exercise you'll develop a basic custom block for your website.
 
-[1.1.4 Advanced Custom Block](./ex5.md){target="_blank"}
+[1.1.4 Advanced Custom Block](./ex4.md){target="_blank"}
 
 In this exercise you'll develop an advanced custom block for your website.
 
-[1.1.5 AEM Edge Delivery Services MarTech plugin](./ex6.md){target="_blank"}
+[1.1.5 AEM Edge Delivery Services MarTech plugin](./ex5.md){target="_blank"}
 
 In this exercise you'll implement the AEM MarTech plugin. The AEM MarTech plugin helps you quickly set up a complete MarTech stack for your AEM project. 
 
