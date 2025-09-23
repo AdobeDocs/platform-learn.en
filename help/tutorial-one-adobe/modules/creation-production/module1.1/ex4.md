@@ -81,7 +81,7 @@ You now need to provide the reference images for the Custom Model to be trained.
 
 ![Firefly Custom Models](./images/ffcm7.png){zoomable="yes"} 
 
-Download the reference images [here](https://tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip). Unzip the download file, which whould give you this.
+Download the reference images [here](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip). Unzip the download file, which whould give you this.
 
 ![Firefly Custom Models](./images/ffcm8.png){zoomable="yes"} 
 

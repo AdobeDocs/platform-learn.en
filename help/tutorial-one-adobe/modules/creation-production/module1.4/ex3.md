@@ -9,7 +9,7 @@ exl-id: c580ac9b-ded1-4b86-b7db-1c38649f50a4
 ---
 # 1.4.3 Bulk Create Assets in Adobe Express
 
-Before you start this exercise, download the required assets from [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} and unzip them on your desktop.
+Before you start this exercise, download the required assets from [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} and unzip them on your desktop.
 
 ![Adobe Express](./images/expressassets.png)
 

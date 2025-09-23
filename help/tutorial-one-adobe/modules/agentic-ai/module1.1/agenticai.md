@@ -8,7 +8,7 @@ doc-type: tutorial
 
 ## Learning Objectives
 
-- ...
+In this module, you will create your own agent and explore the various architectural elements that make up an agent.
 
 ## Prerequisites
 

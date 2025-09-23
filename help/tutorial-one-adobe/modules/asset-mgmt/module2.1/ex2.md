@@ -157,7 +157,7 @@ Next, click **Upload package**.
 
 Click **Browse** to locate the package to upload.
 
-The package to upload is called **citisignal-assets.zip** and can be downloaded here: [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip){target="_blank"}.
+The package to upload is called **citisignal-assets.zip** and can be downloaded here: [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip){target="_blank"}.
 
 ![AEMCS](./images/aemcssetup23.png)
 

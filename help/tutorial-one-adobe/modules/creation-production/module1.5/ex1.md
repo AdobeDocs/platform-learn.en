@@ -42,7 +42,7 @@ Your project is now created. You now need to upload assets in your project. Clic
 
 ![Frame.io](./images/frameio7.png)
 
-Download these files: [https://tech-insiders.s3.us-west-2.amazonaws.com/Frame.io_Assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/Frame.io_Assets.zip) to your desktop and unzip them onto your desktop.
+Download these files: [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/Frame.io_Assets.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/Frame.io_Assets.zip) to your desktop and unzip them onto your desktop.
 
 ![Frame.io](./images/frameio8.png)
 

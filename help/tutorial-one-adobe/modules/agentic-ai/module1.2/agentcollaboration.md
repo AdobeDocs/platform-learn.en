@@ -8,7 +8,7 @@ doc-type: tutorial
 
 ## Learning Objectives
 
-- ...
+In this module, the agent you created before will start to work together with various Adobe Agents.
 
 ## Prerequisites
 

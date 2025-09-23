@@ -9,7 +9,7 @@ exl-id: 510e9f59-1399-4a52-ad51-67e3f407037f
 ---
 # 1.4.2 Animation and Video in Adobe Express
 
-Before you start this exercise, download the required assets from [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} and unzip them on your desktop.
+Before you start this exercise, download the required assets from [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} and unzip them on your desktop.
 
 ![Adobe Express](./images/expressassets.png)
 
