@@ -12,8 +12,6 @@ exl-id: 35878e5b-b716-42c7-bcf3-a4ccbe32abc5
 ---
 # Audience Agent overview
 
-Audience Agent streamlines audience management with conversational creation, optimization, insights, and secure integration across B2B/B2C apps.
-
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+Audience Agent streamlines audience management with conversational creation, optimization, insights, and secure integration across B2B/B2C apps. For more information, see the [Audience Agent documentation](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience).
 
 >[!SLIDE](audience-agent-overview)
