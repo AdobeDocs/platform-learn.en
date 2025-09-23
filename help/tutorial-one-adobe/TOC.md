@@ -264,3 +264,7 @@ recommendations: noDisplay,noCatalog
       + [Overview](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
       + [3.1.1 Getting started with Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
++ [WIP - Agentic AI](/help/tutorial-one-adobe/ai.md)
+  + WIP - Agentic AI {#agenticai}
+    + [Overview](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
+    + [1.1.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
