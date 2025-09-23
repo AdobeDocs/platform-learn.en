@@ -11,8 +11,6 @@ hidefromtoc: yes
 ---
 # Agent Orchestrator overview
 
-Agent Orchestrator streamlines customer experience workflows with smart agents and a conversational interface.
-
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+Agent Orchestrator streamlines customer experience workflows with smart agents and a conversational interface. For more information, see the [Agent Orchestrator documentation](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator).
 
 >[!SLIDE](agent-orchestrator-overview)

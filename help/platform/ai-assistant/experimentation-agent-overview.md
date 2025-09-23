@@ -12,7 +12,7 @@ hidefromtoc: yes
 ---
 # Experimentation Agent overview
 
-Experimentation Agent speeds up digital optimization with insights, guided setup, and automated analysis for marketers, analysts, and admins.
+Experimentation Agent speeds up digital optimization with insights, guided setup, and automated analysis for marketers, analysts, and admins. For more information, see the [Experiment Accelerator documentation](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator).
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
+>[!SLIDE](experimentation-agent-overview)
