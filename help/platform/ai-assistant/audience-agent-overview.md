@@ -1,7 +1,7 @@
 ---
 title: Audience Agent overview
 description: Audience Agent streamlines audience management with conversational creation, optimization, insights, and secure integration across B2B/B2C apps.
-feature: AI Assistant, Segmentation
+feature: AI Assistant, Audiences
 role: User, Developer, Leader, Admin
 level: Beginner
 last-substantial-update: 2025-09-23
