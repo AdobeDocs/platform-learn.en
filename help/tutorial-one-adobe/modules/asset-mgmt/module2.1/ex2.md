@@ -363,7 +363,7 @@ You'll then see that your website, in both a mobile and desktop visualization, g
 
 ![AEMCS](./images/aemcssetup50.png)
 
-Next Step: [Develop a custom block](./ex4.md){target="_blank"}
+Next Step: [Develop a custom block](./ex3.md){target="_blank"}
 
 Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 

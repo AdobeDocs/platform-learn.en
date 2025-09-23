@@ -99,7 +99,7 @@ After about 10 minutes, the activation of **Dynamic Media** will be done.
 
 Once your pipeline run has finished, you can continue with the next exercise.
 
-Next Step: [Setup your AEM CS environment](./ex3.md){target="_blank"}
+Next Step: [Setup your AEM CS environment](./ex2.md){target="_blank"}
 
 Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 
