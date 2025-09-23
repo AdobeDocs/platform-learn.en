@@ -3,6 +3,7 @@ title: Agentic AI
 description: Agentic AI
 kt: 5342
 doc-type: tutorial
+exl-id: 434e7c16-92ef-4c2f-b958-3549d5150301
 ---
 # 1.1 Agentic AI
 

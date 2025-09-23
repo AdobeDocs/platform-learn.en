@@ -3,6 +3,7 @@ title: Agent Collaboration
 description: Agent Collaboration
 kt: 5342
 doc-type: tutorial
+exl-id: 96f8490e-a7f4-4b81-8e7a-1ae2cab158fe
 ---
 # 1.2 Agent Collaboration
 
