@@ -84,6 +84,7 @@ Campaigns
   + [Use alerts](/help/platform/admin/use-alerts.md)
 + AI Assistant {#ai-assistant}
   + [Overview](/help/platform/ai-assistant/overview.md)
+  + [Agent Orchestrator](/help/platform/ai-assistant/agent-orchestrator-overview.md)
   + [Get access](/help/platform/ai-assistant/access.md)
   + [Onboard with a new product](/help/platform/ai-assistant/onboard.md)
   + [Learn about products](/help/platform/ai-assistant/product-knowledge.md)
@@ -91,6 +92,10 @@ Campaigns
   + [Discoverability panel](/help/platform/ai-assistant/discoverability-panel.md)
   + [Find unused audiences](/help/platform/ai-assistant/find-unused-audiences.md)
   + [Operational insights](/help/platform/ai-assistant/operational-insights.md)
+  + [Audience Agent](/help/platform/ai-assistant/audience-agent-overview.md)
+  + [Journey Agent](/help/platform/ai-assistant/journey-agent-overview.md)
+  + [Experimentation Agent](/help/platform/ai-assistant/experimentation-agent-overview.md)
+  + [Data Insights Agent](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-insights-agent/introduction-to-the-data-insights-agent)
   + [Impact analysis](/help/platform/ai-assistant/impact-analysis.md)
   + [Product Support Agent](/help/platform/ai-assistant/product-support-agent.md)
   + [Security overview](/help/platform/ai-assistant/security-overview.md)
