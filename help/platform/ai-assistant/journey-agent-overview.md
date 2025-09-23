@@ -8,7 +8,7 @@ level: Beginner
 last-substantial-update: 2025-09-23
 jira: KT-19109
 hide: yes
-hidefromtoc: true
+hidefromtoc: yes  
 ---
 # Journey Agent overview
 
