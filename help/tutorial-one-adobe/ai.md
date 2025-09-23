@@ -11,7 +11,7 @@ doc-type: multipage-overview
 
 Agentic AI Tech Labs are a work in progress and will be released in November/December 2025.
 
-1. Getting Started with Agents and AI
+## 1.1 Getting Started with Agents and AI
 
 **Goal** 
 
@@ -31,7 +31,7 @@ Technical elements:
 - MCP Server, Python Notebook
 - Adobe API's
 
-2. Agent Collaboration
+## 1.2 Agent Collaboration
 
 **Goal**
 

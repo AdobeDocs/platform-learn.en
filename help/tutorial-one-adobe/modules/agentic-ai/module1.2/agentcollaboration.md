@@ -1,10 +1,10 @@
 ---
-title: Agentic AI
-description: Agentic AI
+title: Agent Collaboration
+description: Agent Collaboration
 kt: 5342
 doc-type: tutorial
 ---
-# 1.1 Agentic AI
+# 1.2 Agent Collaboration
 
 ## Learning Objectives
 
@@ -16,7 +16,7 @@ doc-type: tutorial
 
 ## Exercises
 
-[1.1.1 Getting started with Agentic AI](./ex1.md){target="_blank"}
+[1.1.1 Getting started with Agent Collaboration](./ex1.md){target="_blank"}
 
 In this exercise, ...
 
