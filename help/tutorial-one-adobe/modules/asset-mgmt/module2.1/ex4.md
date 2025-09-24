@@ -1,284 +1,345 @@
 ---
-title: AEM CS - Basic Custom Block
-description: AEM CS - Basic Custom Block
+title: AEM CS - Advanced Custom Block
+description: AEM CS - Advanced Custom Block
 kt: 5342
 doc-type: tutorial
-exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
+exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
 ---
-# 1.1.3 Develop a basic custom block
+# 1.1.4 Advanced Custom Block
 
-## 1.1.3.1 Setup your local development environment
+In the previous exercise, you configured a basic custom block called **Fiber Offer** that showcases fields like **Offer Text**, **Offer CTA** and **Offer Image** onto your website. 
 
-Go to [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, download and install **Github Desktop**.
+You can now continue working on this block.
 
-![Block](./images/block1.png){zoomable="yes"}
+![AEMCS](./images/nav7.png){zoomable="yes"}
 
-Once Github Desktop is installed, go to the GitHub repo you created in the previous exercise. Click **<> Code** and then click **Open with GitHub Desktop**.
+## 1.1.4.1 Style your block
 
-![Block](./images/block2.png){zoomable="yes"}
+Now that you have a working **fiberoffer** block you can apply styling to it.
 
-Your GitHub repo will then be opened in GitHub Desktop. Feel free to change the **Local Path**. Click **Clone**.
+Go back to Visual Studio Code and open the folder **blocks**. You should now see multiple folders that each reference a specific block. In order to make your **fiberoffer** block more advanced, you now need to create a folder for your custom block.
 
-![Block](./images/block3.png){zoomable="yes"}
+![AEMCS](./images/blockadv1.png){zoomable="yes"}
 
-A local folder will now be created.
+Select the folder **blocks** and then click the **Create New Folder** icon.
 
-![Block](./images/block4.png){zoomable="yes"}
+![AEMCS](./images/blockadv2.png){zoomable="yes"}
 
-Open Visual Studio Code. Go to **File** > **Open Folder**.
+Name your folder `fiberoffer` and hit **enter**.
 
-![Block](./images/block5.png){zoomable="yes"}
+![AEMCS](./images/blockadv3.png){zoomable="yes"}
 
-Select the folder that is used by your GitHub setup for **citisignal**.
+Select the new **fiberoffer** folder and click the **Create New File** icon.
 
-![Block](./images/block6.png){zoomable="yes"}
+![AEMCS](./images/blockadv4.png){zoomable="yes"}
 
-You'll now see that folder open in Visual Studio Code, you're now ready to create a new block.
+A new file is now created. Enter the name **fiberoffer.js** and hit enter.
 
-![Block](./images/block7.png){zoomable="yes"}
+![AEMCS](./images/blockadv5.png){zoomable="yes"}
 
-## 1.1.3.2 Create a basic custom block
+You can now implement block decoration by adding the following JavaScript into the file **fiberoffer.js**.
 
-Adobe recommends that you develop blocks in a three-phased approach:
+Save the file.
 
-- Create the definition and model for the block, review it, and bring it to production.
-- Create content with the new block.
-- Implement the decoration and styles for the new block.
+```js
+export default function decorate(block) {
+  const offerText = block.children[0];
+  const offerCTA = block.children[1];
+  const offerImage = block.children[2];
 
-### component-definition.json
+  offerText.id = 'offerText';
+  offerText.className = 'offerText';
+  offerCTA.id = 'offerCTA';
+  offerCTA.className = 'offerCTA';
+  offerImage.id = 'offerImage';
+  offerImage.className = 'offerImage';
+}
+```
 
-In Visual Studio Code, open the file **component-definition.json**.
+![AEMCS](./images/blockadv6.png){zoomable="yes"}
 
-![Block](./images/block8.png){zoomable="yes"}
+Select the new **fiberoffer** folder and click the **Create New File** icon again.
 
-Scroll down until you see the component **Quote**. Set your cursor next to the closing bracket of the last component.
+![AEMCS](./images/blockadv7.png){zoomable="yes"}
 
-![Block](./images/block9.png){zoomable="yes"}
+A new file is now created. Enter the name **fiberoffer.css** and hit enter.
 
-Paste this code and enter a comma **,** after the block of code:
+![AEMCS](./images/blockadv8.png){zoomable="yes"}
 
-```json
-{
-  "title": "FiberOffer",
-  "id": "fiberoffer",
-  "plugins": {
-    "xwalk": {
-      "page": {
-        "resourceType": "core/franklin/components/block/v1/block",
-        "template": {
-          "name": "FiberOffer",
-          "model": "fiberoffer",
-          "offerText": "<p>Fiber will soon be available in your region!</p>",
-          "offerCallToAction": "Get your offer now!",
-          "offerImage": ""
-        }
-      }
-    }
-  }
+Copy and paste the folllowing CSS code in the newly created file.
+
+```js
+.offerText, .offerCTA, .offerImage{
+    color: #14161A;
+    font-size: 30px;
+    padding: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    text-align: center;
 }
 ```
 
 Save your changes.
 
-![Block](./images/block10.png){zoomable="yes"}
-
-### component-models.json
-
-In Visual Studio Code, open the file **component-models.json**.
-
-![Block](./images/block11.png){zoomable="yes"}
-
-Scroll down until you see the last item. Set your cursor next to the closing bracket of the last component.
-
-![Block](./images/block12.png){zoomable="yes"}
-
-Enter a comma **,**, then push enter and on the next line, paste this code:
-
-```json
-{
-  "id": "fiberoffer",
-  "fields": [
-     {
-       "component": "richtext",
-       "name": "offerText",
-       "value": "",
-       "label": "Offer Text",
-       "valueType": "string"
-     },
-     {
-       "component": "richtext",
-       "valueType": "string",
-       "name": "offerCallToAction",
-       "label": "Offer CTA",
-       "value": ""
-     },
-     {
-       "component": "reference",
-       "valueType": "string",
-       "name": "offerImage",
-       "label": "Offer Image",
-        "multi": false
-     }
-   ]
-}
-```
-
-Save your changes.
-
-![Block](./images/block13.png){zoomable="yes"}
-
-### component-filters.json
-
-In Visual Studio Code, open the file **component-filters.json**.
-
-![Block](./images/block14.png){zoomable="yes"}
-
-Under **section**, enter a comma **,** and the id of your component **fiberoffer** after the current last line.
-
-Save your changes.
-
-![Block](./images/block15.png){zoomable="yes"}
-
-## 1.1.3.3 Commit your changes
+![AEMCS](./images/blockadv9.png){zoomable="yes"}
 
 You've now made several changes in your project that need to be committed back to your GitHub repository. To do that, open **GitHub Desktop**.
 
-You should then see the 3 files that you just edited under **Changes**. Review your changes.
+You should then see the 2 files that you just edited under **Changes**. Review your changes.
 
-![Block](./images/block16.png){zoomable="yes"}
+Enter a name for your PR, `js css`. Click **Commit to main**.
 
-Enter a name for your PR, `Fiber Offer custom block`. Click **Commit to main**.
-
-![Block](./images/block17.png){zoomable="yes"}
+![Block](./images/blockadv10.png){zoomable="yes"}
 
 You should then see this. Click **Push origin**.
 
-![Block](./images/block18.png){zoomable="yes"}
-
-After a couple of seconds, your changes have been pushed to your GitHub repository.
-
-![Block](./images/block19.png){zoomable="yes"}
+![Block](./images/blockadv11.png){zoomable="yes"}
 
 In your browser, go to your GitHub account and to the repository your created for CitiSignal. You should then see something like this, showing that your changes have been received.
 
-![Block](./images/block20.png){zoomable="yes"}
-
-## 1.1.3.4 Add your block to a page
-
-Now that your basic quote block is defined and committed to the CitiSignal project, you can add a **fiberoffer** block to an existing page.
-
-Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
-
-![AEMCS](./images/aemcs6.png){zoomable="yes"}
-
-Next, click the 3 dots **...** on the **Environments** tab and click **View Details**.
-
-![AEMCS](./images/aemcs9.png){zoomable="yes"}
-
-You'll then see your environment details. Click the URL of your **Author** environment.
-
->[!NOTE]
->
->It is possible that your environment is hibernated. If that is the case, you'll need to de-hibernate your environment first.
-
-![AEMCS](./images/aemcs10.png){zoomable="yes"}
-
-You should then see your AEM Author environment. Go to **Sites**.
-
-![AEMCS](./images/block21.png){zoomable="yes"}
-
-Go to **CitiSignal** > **us** > **en**.
-
-![AEMCS](./images/block22.png){zoomable="yes"}
-
-Click **Create** and select **Page**.
-
-![AEMCS](./images/block23.png){zoomable="yes"}
-
-Select **Page** and click **Next**.
-
-![AEMCS](./images/block24.png){zoomable="yes"}
-
-Enter the following values:
-
-- Title: **CitiSignal Fiber**
-- Name: **citisignal-fiber**
-- Page Title: **CitiSignal Fiber**
-
-Click **Create**.
-
-![AEMCS](./images/block25.png){zoomable="yes"}
-
-You should then see this.
-
-![AEMCS](./images/block26.png){zoomable="yes"}
-
-Click in the blank area to select the **section** component. Then, click the plus **+** icon in the right menu.
-
-![AEMCS](./images/block27.png){zoomable="yes"}
-
-You should then see your custom block shown in the list of available blocks. Click to select it.
-
-![AEMCS](./images/block28.png){zoomable="yes"}
-
-You'll then see fields like **Offer Text**, **Offer CTA** and **Offer Image** being added to the editor. Click **+ Add** on the **Offer Image** field to select an image.
-
-![AEMCS](./images/block29.png){zoomable="yes"}
-
-You should then see this. Click to open the folder **citisignal**.
-
-![AEMCS](./images/blockpub1.png){zoomable="yes"}
-
-Select the image **product-enrichment-1.png**. Click **Select**.
-
-![AEMCS](./images/blockpub2.png){zoomable="yes"}
-
-You should then have this. Click **Publish**.
-
-![AEMCS](./images/blockpub3.png){zoomable="yes"}
-
-Click **Publish** again.
-
-![AEMCS](./images/blockpub4.png){zoomable="yes"}
-
-Your new page has now been published.
-
-## 1.1.3.5 Add your new page to the navigation menu
-
-In your AEM Sites overview, go to **CitiSignal** > **Fragments** and check the checkbox for **Header**. Click **Edit**.
-
-![AEMCS](./images/nav0.png){zoomable="yes"}
-
-Add a menu option to the nav menu with the text `Fiber`. Select the text **Fiber** and click the **link** icon.
-
-![AEMCS](./images/nav1.png){zoomable="yes"}
-
-Enter this for the **URL** `/us/en/citisignal-fiber` and click the **V** icon to confirm.
-
-![AEMCS](./images/nav3.png){zoomable="yes"}
-
-You should then have this. Click **Publish**.
-
-![AEMCS](./images/nav4.png){zoomable="yes"}
-
-Click **Publish** again.
-
-![AEMCS](./images/nav5.png){zoomable="yes"}
+![Block](./images/blockadv12.png){zoomable="yes"}
 
 You will now be able to view the changes to your website by going to `main--citisignal--XXX.aem.page/us/en/` and/or `main--citisignal--XXX.aem.live/us/en/`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
 
 In this example, the full URL becomes this:
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/` and/or `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
-You should then see this. Click **Fiber**.
+You should then see this, with the styling applied to your page.
 
-![AEMCS](./images/nav6.png){zoomable="yes"}
+![Block](./images/blockadv13.png){zoomable="yes"}
 
-Here is your basic custom block, but now rendered on the website.
+## 1.1.4.2 Add logic and load data from an external endpoint
 
-![AEMCS](./images/nav7.png){zoomable="yes"}
+For this exercise, you will be doing a 'raw' configuration of Adobe's Web SDK and you'll be requesting the next best offer from Adobe Journey Optimizer Offer Decisioning. 
 
-Next Step: [Advanced Custom Block](./ex5.md){target="_blank"}
+To be clear: this is not intended as a best practice implementation of Web SDK for AEM as a Cloud Service. In the next exercise you will be implementing data collection using a specific plugin that was developed for this.
+
+This exercise is intended to show you a couple of basic things in JavaScript, like loading an external JS library, using the **alloy.js** library, sending a request and more.
+
+The library **alloy.js** is the library behing Web SDK which makes it possible to send requests from a website to Adobe's Edge Network, and from there so applications like Adobe Experience Platform, Adobe Analytics, Adobe Target and more.
+
+Add this code under the previous code you added for the styling of your block:
+
+```javascript
+var script1 = document.createElement('script');
+  script1.text = "!function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||[]).push(o),n[o]=function(){var u=arguments;return new Promise(function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}(window,['alloy']);"
+  document.head.appendChild(script1);
+
+  var script2 = document.createElement('script');
+  script2.async = true;
+  script2.src = "https://cdn1.adoberesources.net/alloy/2.14.0/alloy.min.js";
+  document.head.appendChild(script2);
+
+  alloy("configure", {
+    "edgeConfigId": "045c5ee9-468f-47d5-ae9b-a29788f5948f",
+    "orgId": "907075E95BF479EC0A495C73@AdobeOrg",
+    "defaultConsent": "in"
+  });
+```
+
+You should then have this.
+
+The first script tag (script1) that you added, is a function that is used by Web SDK and which creates a window object, named **alloy**.
+
+The second script tag (script2) will asynchronously load the alloy.js library from Adobe's CDN.
+
+The third block of code basically configures the alloy object to send data towards a specific Adobe IMS Org and Datastream. 
+
+In the **Getting Started** module, you already configured a datastream, called `--aepUserLdap-- - One Adobe Datastream`. The field **edgeConfigId** in the above code references the ID of the datastream that was configured.
+
+You don't need to change the field **edgeConfigId** at this moment. In the next exercise you will be able to do this using the **MarTech** plugin.
+
+![Block](./images/blockadv15.png){zoomable="yes"}
+
+You should now have this.
+
+![Block](./images/blockadv14.png){zoomable="yes"}
+
+Next, add this block below the previous code that you added in.
+
+```javascript
+var ECID = "";
+
+  alloy("getIdentity")
+    .then(function (result) {
+      // The command succeeded.
+      console.log("ECID:", result.identity.ECID);
+      ECID = result.identity.ECID;
+      getOffer(ECID);
+
+    })
+    .catch(function (error) {
+      // The command failed.
+      // "error" will be an error object with additional information.
+    });
+```
+
+This block of code is used to retrieve the value of the Experience Cloud ID (ECID). The ECID is the unique device identifier of your browser.
+
+As you can see in the above code, once the ECID is retrieved, another function is being called. This function is called **getOffer()** which you will add next.
+
+![Block](./images/blockadv16.png){zoomable="yes"}
+
+Next, add the below code under the 
+
+```javascript
+async function getOffer(ECID) {
+  var url = "https://edge.adobedc.net/ee/irl1/v1/interact?configId=045c5ee9-468f-47d5-ae9b-a29788f5948f";
+
+  var timestamp = new Date().toISOString();
+
+  var offerRequest = {
+    "events": [
+      {
+        "xdm": {
+          "eventType": "decisioning.propositionDisplay",
+          "timestamp": timestamp,
+          "_experienceplatform": {
+            "identification": {
+              "core": {
+                "ecid": ECID
+              }
+            }
+          },
+          "identityMap": {
+            "ECID": [
+              {
+                "id": ECID
+              }
+            ]
+          }
+        },
+        "query": {
+          "personalization": {
+            "schemas": [
+              "https://ns.adobe.com/personalization/default-content-item",
+              "https://ns.adobe.com/personalization/html-content-item",
+              "https://ns.adobe.com/personalization/json-content-item",
+              "https://ns.adobe.com/personalization/redirect-item",
+              "https://ns.adobe.com/personalization/ruleset-item",
+              "https://ns.adobe.com/personalization/message/in-app",
+              "https://ns.adobe.com/personalization/message/content-card",
+              "https://ns.adobe.com/personalization/dom-action"
+            ],
+            "decisionScopes": [
+              "eyJ4ZG06YWN0aXZpdHlJZCI6ImRwczpvZmZlci1hY3Rpdml0eToxYTI3ODk3NzAzYTY5NWZmIiwieGRtOnBsYWNlbWVudElkIjoiZHBzOm9mZmVyLXBsYWNlbWVudDoxYTI0ZGM2MWJmYjJlMjIwIn0=",
+              "eyJ4ZG06YWN0aXZpdHlJZCI6ImRwczpvZmZlci1hY3Rpdml0eToxYTI3ODk3NzAzYTY5NWZmIiwieGRtOnBsYWNlbWVudElkIjoiZHBzOm9mZmVyLXBsYWNlbWVudDoxYTI0ZGM0MzQyZjJlMjFlIn0="
+            ]
+          }
+        }
+      }
+    ]
+  }
+
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(offerRequest),
+    });
+
+    if (response.status === 200) {
+      var body = await response.json();
+      console.log("Offer Decisioning Response: ", body);
+
+      const decisions = body["handle"];
+
+      decisions.forEach(decision => {
+        if (decision["type"] == "personalization:decisions") {
+          console.log("Offer Decisioning decision detail: ", decision);
+          const payloads = decision["payload"];
+
+          if (payloads === undefined || payloads.length == 0) {
+            //do nothing
+          } else {
+            payloads.forEach(payload => {
+              if (payload["placement"]["name"] == "Web - Image") {
+                console.log("Web-Image payload");
+                const items = payload["items"];
+                items.forEach(item => {
+                  if (item["id"].includes("dps:fallback-offer")) {
+                    console.log("Item details: ", item);
+                    const deliveryURL = item["data"]["deliveryURL"];
+
+                    document.querySelector("#offerImage").innerHTML = "<img style='max-width:100%;' src='" + item["data"]["deliveryURL"] + "'/>";
+                  } else if (item["id"].includes("dps:personalized-offer")) {
+                    console.log("Item details: ", item);
+                    const deliveryURL = item["data"]["deliveryURL"];
+                    console.log("Web-Image Personalized Offer Content: ", deliveryURL)
+
+                    document.querySelector("#offerImage").innerHTML = "<img style='max-width:100%;' src='" + item["data"]["deliveryURL"] + "'/>";
+                  }
+                });
+              } else if (payload["placement"]["name"] == "Web - JSON") {
+                console.log("Web-JSON payload");
+                const items = payload["items"];
+                items.forEach(item => {
+                  if (item["id"].includes("dps:fallback-offer")) {
+                    const content = JSON.parse(item["data"]["content"]);
+
+                    console.log("Web-JSON Fallback Content: ", content)
+
+                    document.querySelector("#offerText").innerHTML = content.text;
+                    document.querySelector("#offerCTA").innerHTML = content.cta;
+                  } else if (item["id"].includes("dps:personalized-offer")) {
+                    const content = JSON.parse(item["data"]["content"]);
+
+                    console.log("Web-JSON Personalized Offer Content: " + content);
+
+                    document.querySelector("#offerText").innerHTML = content.text;
+                    document.querySelector("#offerCTA").innerHTML = content.cta;
+                  }
+                });
+              }
+            });
+          }
+          document.querySelector("#offerImage").style.display = "block";
+          document.querySelector("#offerText").style.display = "block";
+          document.querySelector("#offerCTA").style.display = "block";
+        }
+      });
+    } else {
+      console.warn("Offer Decisioning Response unsuccessful:", response.body);
+    }
+  } catch (error) {
+    console.error("Error when getting Offer Decisioning Response:", error);
+  }
+}
+```
+
+It's very important that this code block is pasted below the closing bracket which you can see on line 42 in this example. The code you just pasted is a separate function that needs it's own place in this file, and can't be nested in the above **default function**.
+
+![Block](./images/blockadv17.png){zoomable="yes"}
+
+The code block you just pasted simulates a request that would normally be made by Web SDK/alloy.js. In this example a **fetch** request will be made to **edge.adobedc.net**.
+
+In the request, 2 **Decision Scopes** are specified which will ask Adobe Journey Optimizer Offer Decisioning to provide a decision about what offer needs to be seen by this ECID.
+
+Once the response is received, this code will parse the response and will filter out things like the URL of the image that needs to be displayed and also the JSON response which contains things like the Offer Text and the Offer CTA, after which it will display these on the website.
+
+Remember - this approach is used just for enablement purpose and is not the best practice way of implementing data collection.
+
+Save your changes. Then, open **Github Desktop**, give a name to your PR and click **Commit to main**.
+
+![Block](./images/blockadv18.png){zoomable="yes"}
+
+Next, click **Push origin**.
+
+![Block](./images/blockadv19.png){zoomable="yes"}
+
+You will now be able to view the changes to your website by going to `main--citisignal--XXX.aem.page/us/en/` and/or `main--citisignal--XXX.aem.live/us/en/`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
+
+In this example, the full URL becomes this:
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` and/or `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
+
+You should then see this.
+
+![Block](./images/blockadv20.png){zoomable="yes"}
+
+Next Step: [AEM Edge Delivery Services MarTech plugin](./ex5.md){target="_blank"}
 
 Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 
