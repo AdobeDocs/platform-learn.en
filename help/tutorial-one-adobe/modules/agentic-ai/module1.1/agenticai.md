@@ -9,7 +9,7 @@ exl-id: 434e7c16-92ef-4c2f-b958-3549d5150301
 
 ## Learning Objectives
 
-- ...
+In this module, you will create your own agent and explore the various architectural elements that make up an agent.
 
 ## Prerequisites
 

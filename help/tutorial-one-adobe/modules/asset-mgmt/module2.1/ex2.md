@@ -125,7 +125,7 @@ Click **Commit changes**.
 
 The file `fstab.yaml` has now been updated.
 
-## 1.1.2.3 Upload CitiSignal assets
+## 1.1.2.3 Upload CitiSignal assets & site
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
 
@@ -157,11 +157,11 @@ Next, click **Upload package**.
 
 Click **Browse** to locate the package to upload.
 
-The package to upload is called **citisignal-assets.zip** and can be downloaded here: [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}.
+The package to upload is called **citisignal-assets.zip** and can be downloaded here: [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip){target="_blank"}.
 
 ![AEMCS](./images/aemcssetup23.png)
 
-Select the package and click **Open**.
+Select the package `citisignal_aem_accs.zip` and click **Open**.
 
 ![AEMCS](./images/aemcssetup24.png)
 
@@ -169,11 +169,7 @@ Next, click **OK**.
 
 ![AEMCS](./images/aemcssetup25.png)
 
-The package will then be uploaded.
-
-![AEMCS](./images/aemcssetup26.png)
-
-Next, click **Install** on the package you just uploaded.
+The package will then be uploaded. Next, click **Install** on the package you just uploaded.
 
 ![AEMCS](./images/aemcssetup27.png)
 
@@ -223,61 +219,66 @@ Click **Publish**.
 
 Your assets have now been published.
 
-## 1.1.2.5 Create CitiSignal website
+## 1.1.2.5 Publish CitiSignal website
 
-Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
+Click the **Adobe Experience Manager** product name in the top left corner of your screen and then click the **arrow** next to **Assets**.
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/aemcssetup30a.png)
 
-Next, click the URL of your Author environment.
-
-![AEMCS](./images/aemcssetup18.png)
-
-Click **Sign in with Adobe**.
-
-![AEMCS](./images/aemcssetup19.png)
-
-You'll then see your Author environment. Click **Sites**.
+Next, click **Sites**.
 
 ![AEMCS](./images/aemcssetup30.png)
 
-Click **Create** and then click **Site from template**.
+You should then see your **CitiSignal** website which was created after installing the package before.
 
 ![AEMCS](./images/aemcssetup31.png)
 
-Click **Import**.
+In order to link your site to the GitHub repository that you created before, you need to create an **Edge Delivery Services Configuration**.
+
+The first step to do that is to create a **Cloud Configuration**.
+
+To do that, click the **Adobe Experience Manager** product name in the top left corner of your screen, then click the **tools** icon and then select **General**. Click to open **Configuration Browser**.
+
+![AEMCS](./images/aemcssetup31a.png)
+
+You should then see this. Click **Create**
+
+![AEMCS](./images/aemcssetup31b.png)
+
+Set the fields **Title** and **Name** to `CitiSignal`. Enable the checkbox for **Cloud Configurations**.
+
+Click **Create**.
+
+![AEMCS](./images/aemcssetup31c.png)
+
+You should then have this.
+
+![AEMCS](./images/aemcssetup31d.png)
+
+Next, you need to update some fields of the **Cloud Configuration** you just created.
+
+To do that, click the **Adobe Experience Manager** product name in the top left corner of your screen, then click the **tools** icon and then select **Cloud Services**. Click to open **Edge Delivery Services Configuration**.
 
 ![AEMCS](./images/aemcssetup32.png)
 
-You now need to import a preconfigured template for your site. You can download the template [here](./../../../assets/aem/citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip){target="_blank"}. Save the file to your desktop.
+Select **CitiSignal**, click **Create** and select **Configuration**.
 
-Next, select the file `citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip` and click **Open**.
+![AEMCS](./images/aemcssetup31e.png)
+
+You now need to fill out the fields **Organization** and **Site Name**. To do that, first have a look ath the URL of your GitHub repository.
+
+![AEMCS](./images/aemcssetup31f.png)
+
+- **Organization**: use the name of your GitHub org name, in this example it is `woutervangeluwe`
+- **Site Name**: use the name of the GitHub repository, which should be `citisignal-aem-accs`.
+
+Click **Save & Close**.
 
 ![AEMCS](./images/aemcssetup33.png)
 
-You'll then see this. Click to select the template you just uploaded and then, click **Next**.
+You should then have this. Enable the checkbox in front of your newly create Edge Cloud Configuration and click **Publish**.
 
 ![AEMCS](./images/aemcssetup34.png)
-
-You now need to fill out some details.
-
-- Site title: use **CitiSignal**
-- Site name: use **CitiSignal**
-- GitHub URL: copy the URL of the GitHub repo you were using before
-
-![AEMCS](./images/aemcssetup35.png) 
-
-You'll then have this. Click **Create**.
-
-![AEMCS](./images/aemcssetup36.png)
-
-Your site is now being created. This may take a couple of minutes. Click **Okay**.
-
-![AEMCS](./images/aemcssetup37.png)
-
-Refresh your screen after a couple of minutes, you'll then see your newly created CitiSignal website.
-
-![AEMCS](./images/aemcssetup38.png)
 
 ## 1.1.2.6 Update file paths.json
 
@@ -302,6 +303,10 @@ Click **Commit Changes**.
 The file `paths.json` has now been updated.
 
 ## 1.1.2.7 Publish CitiSignal website
+
+Click the **Adobe Experience Manager** product name in the top left corner of your screen and then select **Sites**.
+
+![AEMCS](./images/aemcssetup38.png)
 
 Next, click the checkbox in front of **CitiSignal**. Then, click **Manage Publication**.
 
@@ -358,7 +363,7 @@ You'll then see that your website, in both a mobile and desktop visualization, g
 
 ![AEMCS](./images/aemcssetup50.png)
 
-Next Step: [Develop a custom block](./ex4.md){target="_blank"}
+Next Step: [Develop a custom block](./ex3.md){target="_blank"}
 
 Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 

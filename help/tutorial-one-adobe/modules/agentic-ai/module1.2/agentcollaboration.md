@@ -9,7 +9,7 @@ exl-id: 96f8490e-a7f4-4b81-8e7a-1ae2cab158fe
 
 ## Learning Objectives
 
-- ...
+In this module, the agent you created before will start to work together with various Adobe Agents.
 
 ## Prerequisites
 

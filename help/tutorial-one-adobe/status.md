@@ -39,7 +39,7 @@ Below is an overview of the status of the content in this tutorial.
 | ---------------------- | ------------ | ------------ |------------ |
 | [1.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025  | Yes         | - |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025  | Yes         | - |
-| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 19/09/2025  | Yes         | - |
+| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 23/09/2025  | Yes         | - |
 
 ## 4. Delivery & Activation
 
@@ -76,8 +76,8 @@ Below is an overview of the status of the content in this tutorial.
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
-| [1.1 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"}      | 23/09/2025        | NO        | - |
-| [1.2 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"}      | 23/09/2025        | NO        | - |
+| [1.1 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"}      | 23/09/2025        | No | Work In Progress |
+| [1.2 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md){target="_blank"}      | 23/09/2025        | No | Work In Progress |
 
 {style="table-layout:auto"}
 
