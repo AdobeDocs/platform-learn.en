@@ -7,7 +7,6 @@ level: Beginner
 last-substantial-update: 2025-09-23
 jira: KT-19103
 hide: yes
-hidefromtoc: yes
 ---
 # Agent Orchestrator overview
 
