@@ -228,6 +228,7 @@ Campaigns
   + [Monitor data ingestion](/help/platform/monitoring/monitoring-dashboard.md)
   + [Monitor segment activation](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
   + [Monitor dataflows](/help/platform/monitoring/data-monitoring.md)
+  + [Streaming capacity management](monitoring/streaming-management.md)
 + Partner data support {#partner-data-support}
   + [Partner data support overview](/help/platform/partner-data-support/partner-data-support-overview.md)
   + [Support offsite prospecting](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
