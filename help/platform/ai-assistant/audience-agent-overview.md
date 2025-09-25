@@ -6,6 +6,8 @@ role: User, Developer, Leader, Admin
 level: Beginner
 last-substantial-update: 2025-09-23
 jira: KT-19108
+hide: yes
+hidefromtoc: yes
 exl-id: 35878e5b-b716-42c7-bcf3-a4ccbe32abc5
 ---
 # Audience Agent overview
