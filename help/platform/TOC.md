@@ -95,7 +95,7 @@ Campaigns
   + [Audience Agent](/help/platform/ai-assistant/audience-agent-overview.md)
   + [Journey Agent](/help/platform/ai-assistant/journey-agent-overview.md)
   + [Experimentation Agent](/help/platform/ai-assistant/experimentation-agent-overview.md)
-  + [Data Insights Agent](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-insights-agent/introduction-to-the-data-insights-agent)
+  + [Data Insights Agent](/help/platform/ai-assistant/data-insights-agent-overview.md)
   + [Impact analysis](/help/platform/ai-assistant/impact-analysis.md)
   + [Product Support Agent](/help/platform/ai-assistant/product-support-agent.md)
   + [Security overview](/help/platform/ai-assistant/security-overview.md)
