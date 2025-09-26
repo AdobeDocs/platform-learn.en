@@ -175,7 +175,7 @@ Configure the second option using the name `512GB` in all 3 columns, and then cl
 
 ![AEM Assets](./images/accs30.png)
 
-Configure the third option using the name `1TB` in all 3 columns, and then click **Add Option** again.
+Configure the third option using the name `1TB` in all 3 columns.
 
 ![AEM Assets](./images/accs31.png)
 
@@ -192,7 +192,7 @@ Scroll up and click **Save Attribute**.
 
 ![AEM Assets](./images/accs33.png)
 
-You should then see this. Seledct both attributes for **color** and **storage** and click **Next**.
+You should then see this. Select both attributes for **color** and **storage** and click **Next**.
 
 ![AEM Assets](./images/accs34.png)
 
@@ -228,7 +228,7 @@ You should then see this. Click **Generate Products**.
 
 ![AEM Assets](./images/accs42.png)
 
-Click **Save**.
+Set the **Quantity** of each product to `10000`. Click **Save**.
 
 ![AEM Assets](./images/accs43.png)
 
@@ -249,7 +249,6 @@ You should then see this. Click **Back**.
 You now see the product **iPhone Air** and its variations in the Product Catalog.
 
 ![AEM Assets](./images/accs47.png)
-
 
 Next Step: [Connect ACCS to AEM Sites CS/EDS Storefront](./ex2.md){target="_blank"}
 
