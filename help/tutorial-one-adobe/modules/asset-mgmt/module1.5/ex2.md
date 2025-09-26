@@ -71,6 +71,11 @@ Click **Commmit changes**.
 
 The **config.json** file was now updated. You should see your changes on the website within a couple of minutes. The way to verify if the changes were picked up successfully is to go to the **Phones** product page. You should now see the **iPhone Air** appear on the page.
 
+To acces your website, you need to go to `main--citisignal-aem-accs--XXX.aem.page` and/or `main--citisignal-aem-accs--XXX.aem.live`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
+
+In this example, the full URL becomes this:
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` and/or `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
+
 ![ACCS+AEM Sites](./images/accsaemsites11.png)
 
 While the product is now showing successfully, there isn't an image available for the product just yet. You will set up the link with AEM Assets CS for product images in the next exercise.

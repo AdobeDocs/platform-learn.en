@@ -85,7 +85,9 @@ Make sure the directory is empty.
 
 ![ACCS+AEM Assets](./images/accsaemassets15.png)
 
-Go to [https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce).
+Go to [https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce). Click **<> Code** and then select **Download ZIP**. Download the file and then drop it on your desktop.
+
+![ACCS+AEM Assets](./images/accsaemassets15a.png)
 
 Next, copy the file **assets-commerce-main.zip** to your desktop and unzip it. Open the folder **assets-commerce-main**.
 
