@@ -5,8 +5,10 @@ feature: AI Assistant, Experimentation
 feature-set: Journey Optimizer, Experience Platform
 role: User, Developer, Leader, Admin
 level: Beginner
-last-substantial-update: 2025-09-23
+last-substantial-update: 2025-09-25
 jira: KT-19110
+hide: no
+hidefromtoc: no
 exl-id: 8089b703-a694-4c0c-86bc-61991edc9b78
 ---
 # Experimentation Agent overview
