@@ -262,7 +262,7 @@ Campaigns
   + [Overview](/help/platform/queries/understanding-query-service.md)
   + [Run queries](/help/platform/queries/run-queries.md)
   + [Explore Data](/help/platform/queries/explore-data.md)
-  + [Prepare Data](/help/platform/queries/prepare-data.md)
+  + [Derive Data](/help/platform/queries/prepare-data.md)
   + [Query Service UI](/help/platform/queries/query-service-ui.md)
   + [Query Service API](/help/platform/queries/query-service-api.md)
   + [Adobe Defined Functions](/help/platform/queries/adobe-defined-functions.md)
