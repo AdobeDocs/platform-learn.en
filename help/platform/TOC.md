@@ -261,19 +261,13 @@ Campaigns
 + Queries and Data Distiller {#queries}
   + [Overview](/help/platform/queries/understanding-query-service.md)
   + [Run queries](/help/platform/queries/run-queries.md)
-  + [Explore Data](/help/platform/queries/explore-data.md)
-  + [Derive Data](/help/platform/queries/prepare-data.md)
-  + [Query Service UI](/help/platform/queries/query-service-ui.md)
-  + [Query Service API](/help/platform/queries/query-service-api.md)
+  + [Validate data](/help/platform/queries/explore-data.md)
+  + [Derive data](/help/platform/queries/prepare-data.md)
   + [Adobe Defined Functions](/help/platform/queries/adobe-defined-functions.md)
-  + [Data usage patterns](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
-  + [Generate datasets from query results](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets){target="_blank"}
-  + [Tableau](/help/platform/queries/psql-client-tableau.md)
-  + [Analyze and visualize data](/help/platform/queries/analyze-and-visualize.md)
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
+  + [Connect Tableau](/help/platform/queries/psql-client-tableau.md)
+  + [Analyze and visualize data in Tableau](/help/platform/queries/analyze-and-visualize.md)
   + [Recharge your customer data](/help/platform/queries/recharge-your-customer-data.md)
-  + [Connect clients to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview){target="_blank"}
-  + [Validate data in the datalake](/help/platform/queries/validate-data-in-the-datalake.md)
 + Schemas {#schemas}
   + [Overview](/help/platform/schemas/schemas-and-experience-data-model.md)
   + [Building blocks](/help/platform/schemas/schema-building-blocks.md)
