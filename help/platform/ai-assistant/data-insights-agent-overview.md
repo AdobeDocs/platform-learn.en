@@ -6,8 +6,6 @@ role: User, Developer, Leader, Admin
 level: Beginner
 last-substantial-update: 2025-09-25
 jira: KT-19280
-hide: yes
-hidefromtoc: yes
 ---
 # Data Insights Agent overview
 
