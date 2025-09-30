@@ -7,8 +7,6 @@ role: User, Developer, Leader, Admin
 level: Beginner
 last-substantial-update: 2025-09-23
 jira: KT-19109
-hide: yes
-hidefromtoc: yes
 exl-id: 46a251ce-4de2-4c35-800d-fdc6c3a162d4
 ---
 # Journey Agent overview
