@@ -85,6 +85,7 @@ Campaigns
 + AI Assistant {#ai-assistant}
   + [Overview](/help/platform/ai-assistant/overview.md)
   + [Agent Orchestrator](/help/platform/ai-assistant/agent-orchestrator-overview.md)
+  + [Agent Orchestrator interface](/help/platform/ai-assistant/agent-orchestrator-ui.md)
   + [Get access](/help/platform/ai-assistant/access.md)
   + [Audience Agent](/help/platform/ai-assistant/audience-agent-overview.md)
   + [Journey Agent](/help/platform/ai-assistant/journey-agent-overview.md)
