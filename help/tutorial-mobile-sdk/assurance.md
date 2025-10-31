@@ -166,7 +166,7 @@ Assurance works by opening a URL, either via a browser or QR code. That URL begi
 
 Ensure you specify an `android:scheme` (for example. `lumatutorialandroid`) and `android:host` (for example `default`) to define the base URL.
 
-To learn more about deep links in Android, see [Create Deep Links to App Content](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
+To learn more about deep links in Android, see [Create Deep Links](https://developer.android.com/training/app-links/create-deeplinks){target="_blank"} in the Android documentation.
 
 Assurance works by opening a URL, either via a browser or QR code. That URL begins with the base URL, which opens the app and contains additional parameters. Those unique parameters are used to connect the session.  In the example app, the deep link is `lumatutorialandroid://default`.
 
