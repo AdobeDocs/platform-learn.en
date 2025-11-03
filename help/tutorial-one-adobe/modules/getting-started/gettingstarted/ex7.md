@@ -11,6 +11,12 @@ exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
 >
 >If you're an Adobe employee, follow the instructions to [install PostBuster](./ex8.md){target="_blank"}!
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+[!VIDEO](https://video.tv.adobe.com/v/3476495?quality=12&learn=on)
+
 ## Postman environment download
 
 Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} and open your project.

@@ -27,6 +27,16 @@ In this module, you'll learn how to perform all of the above steps yourself, and
 - Access to Adobe Workfront and Adobe Workfront Planning
 - Access to an Adobe Experience Manager Cloud Service sandbox with Content Hub enabled
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!NOTE]
+>
+>This video doesn't have audio yet. Once audio is available, a new version will be uploaded.
+
+[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
+
 ## Exercises
 
 [1.3.1 Configuration: Brands](./ex1.md){target="_blank"}
