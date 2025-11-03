@@ -192,7 +192,7 @@ As part of this task, you need to create a new image and then upload it as a doc
 
 ## 1.2.2.5 Add a new Document to your Task and start the approval flow
 
-For this exercise, you need to download and use this asset: [CitiSignal-NeonRabbit-Timetravelnow!.png](./images/CitiSignal-NeonRabbit-Timetravelnow!.png)
+For this exercise, you need to download and use this asset: [CitiSignal-NeonRabbit-Timetravelnow.png](./images/CitiSignal-NeonRabbit-Timetravelnow.png)
 
 ![WF](./images/CitiSignal-NeonRabbit-Timetravelnow!.png)
 
@@ -240,7 +240,7 @@ You now need to make design changes, which you will do in Adobe Express.
 
 ## 1.2.2.6 Add a new version of your Document to your Task
 
-For this exercise, you need to download and use this asset: [CitiSignal-NeonRabbit-GetOnBoardNow!.png](./images/CitiSignal-NeonRabbit-GetOnBoardNow!.png)
+For this exercise, you need to download and use this asset: [CitiSignal-NeonRabbit-GetOnBoardNow.png](./images/CitiSignal-NeonRabbit-GetOnBoardNow.png)
 
 ![WF](./images/CitiSignal-NeonRabbit-GetOnBoardNow!.png)
 
