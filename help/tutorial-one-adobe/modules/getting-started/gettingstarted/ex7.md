@@ -15,7 +15,7 @@ exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
 
-[!VIDEO](https://video.tv.adobe.com/v/3476495?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3476495?quality=12&learn=on)
 
 ## Postman environment download
 

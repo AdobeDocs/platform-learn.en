@@ -15,7 +15,7 @@ exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
 
-[!VIDEO](https://video.tv.adobe.com/v/3476496?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3476496?quality=12&learn=on)
 
 ## Install PostBuster
 

@@ -11,7 +11,7 @@ exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
 
-[!VIDEO](https://video.tv.adobe.com/v/3476494?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3476494?quality=12&learn=on)
 
 ## Create your Adobe I/O project
 
