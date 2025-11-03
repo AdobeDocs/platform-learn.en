@@ -11,6 +11,12 @@ exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
 >
 >If you're not an Adobe employee, follow the instructions to [install Postman](./ex7.md){target="_blank"}. The below instructions are only intended for Adobe employees.
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476496?quality=12&learn=on)
+
 ## Install PostBuster
 
 Go to [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}. 

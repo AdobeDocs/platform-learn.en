@@ -15,6 +15,12 @@ Learn the various ways you can use Adobe Firefly Services.
 
 Access to Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476493?quality=12&learn=on)
+
 ## Exercises
 
 [1.1.1 Getting started with Firefly Services](./ex1.md){target="_blank"}
