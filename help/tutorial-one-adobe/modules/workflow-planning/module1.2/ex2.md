@@ -192,9 +192,9 @@ As part of this task, you need to create a new image and then upload it as a doc
 
 ## 1.2.2.5 Add a new Document to your Task and start the approval flow
 
-For this exercise, you need to download and use this asset: [CitiSignal-NeonRabbit-Timetravelnow.png](./images/CitiSignal-NeonRabbit-Timetravelnow.png)
+For this exercise, you need to download and use this asset: [timetravelnow.png](./images/timetravelnow.png)
 
-![WF](./images/CitiSignal-NeonRabbit-Timetravelnow!.png)
+![WF](./images/timetravelnow.png)
 
 Go back to the **Task Detail** screen. Go to **Documents**. Click **+ Add new** and then select your AEM Assets CS repository, which should be named `--aepUserLdap-- - CitiSignal`.
 
@@ -240,9 +240,9 @@ You now need to make design changes, which you will do in Adobe Express.
 
 ## 1.2.2.6 Add a new version of your Document to your Task
 
-For this exercise, you need to download and use this asset: [CitiSignal-NeonRabbit-GetOnBoardNow.png](./images/CitiSignal-NeonRabbit-GetOnBoardNow.png)
+For this exercise, you need to download and use this asset: [getonboard.png](./images/getonboard.png)
 
-![WF](./images/CitiSignal-NeonRabbit-GetOnBoardNow!.png)
+![WF](./images/getonboard.png)
 
 In your Task view in Adobe Workfront, select the old image file that wasn't approved. Then, click **+ Add new**, select **Version** and then select your AEM Assets CS repository, which should be named `--aepUserLdap-- - CitiSignal`.
 
