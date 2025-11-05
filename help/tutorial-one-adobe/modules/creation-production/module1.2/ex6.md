@@ -7,7 +7,7 @@ jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
 ---
-# 1.2.6 Frame I/O to Workfront Fusion to AEM Assets
+# 1.2.4 Frame I/O to Workfront Fusion to AEM Assets
 
 >[!IMPORTANT]
 >
@@ -21,7 +21,7 @@ In the previous exercise you configured a scenario that automatically generates 
 
 The business teams however don't need a PSD file, they need a PNG file or a JPG file. In this exercise, you'll configure a new automation that will result in a PNG file being generated once the asset in Frame I/O is approved, and that PNG file will be stored in AEM Assets automatically.
 
-## 1.2.6.1 Create a new scenario
+## 1.2.4.1 Create a new scenario
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **Workfront Fusion**.
 
@@ -51,7 +51,7 @@ You should then see this. Click **Copy address to clipboard**.
 
 ![Frame IO](./images/aemf6.png)
 
-## 1.2.6.2 Configure Webhook in Frame.io
+## 1.2.4.2 Configure Webhook in Frame.io
 
 Go to Postman and open the request **POST - Get Access Token** in the collection **Adobe IO - OAuth**. Next, click **Send** to request a new **access_token**.
 
@@ -95,7 +95,7 @@ The detailed view of the bubble shows you the data that was received from Frame.
 
 ![Frame IO](./images/aemf16.png)
 
-## 1.2.6.3 Get Asset Details from Frame.io
+## 1.2.4.3 Get Asset Details from Frame.io
 
 Now that the communication between Frame.io and Workfront Fusion has been established over a custom webhook, you should get more details about the asset for which the status label was updated. To do this, you'll once again use the Frame.io connector in Workfront Fusion, similar to the previous exercise.
 
@@ -172,7 +172,7 @@ You should then have this. Click **Save** to save your changes.
 
 ![Frame IO](./images/aemf35a.png)
 
-## 1.2.6.4 Convert to PNG
+## 1.2.4.4 Convert to PNG
 
 Hover over the module **Frame.io - Make a custom API call** and click the **+** icon.
 
@@ -218,7 +218,7 @@ In the details of the execution of the **Adobe Photoshop - Convert image format*
 
 ![Frame IO](./images/aemf39.png)
 
-## 1.2.6.5 Store PNG in AEM Assets CS
+## 1.2.4.5 Store PNG in AEM Assets CS
 
 Hover over the **Adobe Photoshop - Convert image format** module and click the **+** icon.
 
@@ -384,3 +384,4 @@ Go to [Summary and Benefits of Creative Workflow Automation with Workfront Fusio
 Go back to [Creative Workflow Automation with Workfront Fusion](./automation.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}
+1.2.4

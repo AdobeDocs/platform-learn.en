@@ -77,7 +77,7 @@ Using the above keys and values, you can configure the **Set multiple variables*
 
 ![WF Fusion](./images/wffusion11.png)
 
-Enter the **Variable name**: **CONST_client_id** and its **Variable value**, select **Add**.
+Enter the **Variable name**: **`CONST_client_id`** and its **Variable value**, select **Add**.
 
 ![WF Fusion](./images/wffusion12.png)
 
@@ -85,7 +85,7 @@ Select **Add item**.
 
 ![WF Fusion](./images/wffusion13.png)
 
-Enter **Variable name**: **CONST_client_secret** and its **Variable value**, select **Add**.
+Enter **Variable name**: **`CONST_client_secret`** and its **Variable value**, select **Add**.
 
 ![WF Fusion](./images/wffusion14.png)
 
@@ -93,7 +93,7 @@ Select **Add item**.
 
 ![WF Fusion](./images/wffusion15.png)
 
-Enter **Variable name**: **CONST_scope** and its **Variable value**, select **Add**.
+Enter **Variable name**: **`CONST_scope`** and its **Variable value**, select **Add**.
 
 ![WF Fusion](./images/wffusion16.png)
 
@@ -224,7 +224,7 @@ Your screen should look like this:
 
 ![WF Fusion](./images/wffusion45.png)
 
-Next, change the name of your scenario to `--aepUserLdap-- - Adobe I/O Authentication`.
+Next, change the name of your scenario to `--aepUserLdap-- - Firefly + Photoshop`.
 
 ![WF Fusion](./images/wffusion46.png)
 
@@ -234,7 +234,7 @@ Select **Save**.
 
 ## Next Steps
 
-Go to [Use Adobe APIs within Workfront Fusion](./ex2.md){target="_blank"}
+Go to [Automation using Connectors](./ex4.md){target="_blank"}
 
 Go back to [Creative Workflow Automation with Workfront Fusion](./automation.md){target="_blank"}
 
