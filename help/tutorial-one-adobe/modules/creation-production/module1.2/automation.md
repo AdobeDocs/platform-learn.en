@@ -21,23 +21,15 @@ Learn how to automatie creative workflows with Workfront Fusion.
 
 In this exercise, explore Workfront Fusion in combination with Firefly Services and get an understanding of its capabilities.
 
-[1.2.2 Use Adobe APIs within Workfront Fusion](./ex2.md){target="_blank"}
-
-In this exercise, learn how to configure and use Firefly Services APIs and Photoshop APIs within Workfront Fusion, while exploring Workfront Fusion's capabilities.
-
-[1.2.3 Process automation with Workfront Fusion](./ex3.md){target="_blank"}
+[1.2.2 Automation using Connectors](./ex4.md){target="_blank"}
 
 In this exercise, continue refining your journey to automate image creation process.
 
-[1.2.4 Automation using Connectors](./ex4.md){target="_blank"}
-
-In this exercise, continue refining your journey to automate image creation process.
-
-[1.2.5 Frame.io and Workfront Fusion](./ex5.md){target="_blank"}
+[1.2.3 Frame.io and Workfront Fusion](./ex5.md){target="_blank"}
 
 In this exercise, you'll connect Frame.io to your Workfront Fusion scenario.
 
-[1.2.6 Frame.io to Workfront Fusion to AEM Assets](./ex6.md){target="_blank"}
+[1.2.4 Frame.io to Workfront Fusion to AEM Assets](./ex6.md){target="_blank"}
 
 In this exercise, you'll further refine your setup, so that your approved asset in Frame.io uses a Workfront Fusion scenario to then export a PNG rendition of the asset towards AEM Assets.
 

@@ -190,25 +190,25 @@ You should then see this.
 
 As part of this task, you need to create a new image and then upload it as a document in Workfront. You'll now create that asset yourself using Adobe Express.
 
-## 1.2.2.5 Add a new Document to your Task and start the approval flow
+## 1.2.2.5 Add a new Document to your Project and start the approval flow
 
 For this exercise, you need to download and use this asset: [timetravelnow.png](./images/timetravelnow.png)
 
 ![WF](./images/timetravelnow.png)
 
-Go back to the **Task Detail** screen. Go to **Documents**. Click **+ Add new** and then select your AEM Assets CS repository, which should be named `--aepUserLdap-- - CitiSignal`.
+Go back to the **Project Detail** screen. Go to **Documents**. Click **+ Add new** and then select **Document**.
 
 ![WF](./images/wfp10.png)
 
-Double-click to open the folder `--aepUserLdap-- CitiSignal Fiber Campaign`.
+Click to select the file `timetravelnow.png`. Click **Open**.
 
 ![WF](./images/wfp10a.png)
 
-Select the file you created in the previous step, which is named **CitiSignal - Neon rabbit - Timetravel Now!.png**. Click **Select**.
+You should then have this.
 
-![WF](./images/2048x2048.png){width="50px" align="left"}
+![WF](./images/wfp10b.png)
 
-You should then have this. Hover over the uploaded document. Click **Create proof** and then choose **Advanced Proof**.
+Hover over the uploaded document. Click **Create proof** and then choose **Advanced Proof**.
 
 ![WF](./images/wfp13.png)
 

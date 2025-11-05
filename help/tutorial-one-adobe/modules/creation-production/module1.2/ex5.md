@@ -7,7 +7,7 @@ jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
 ---
-# 1.2.5 Frame.io and Workfront Fusion
+# 1.2.3 Frame.io and Workfront Fusion
 
 In the previous exercise you configured the scenario `--aepUserLdap-- - Firefly + Photoshop` and configured an incoming webhook to trigger the scenario, and a webhook response when the scenario completed successfully. You then used Postman to trigger that scenario. Postman is a great tool for testing, but in a real business scenario, business users wouldn't use Postman to trigger a scenario. Instead, they would use another application and they would expect that other application to activate a scenario in Workfront Fusion. In this exercise, that is exactly what you'll be doing with Frame.io.
 
@@ -15,11 +15,11 @@ In the previous exercise you configured the scenario `--aepUserLdap-- - Firefly 
 >
 >This exercise was created for Frame.io V4. Some of the below capabilities used in the exercise are currently in alpha and aren't generally available yet.
 
-## 1.2.5.1 Prerequisites
+## 1.2.3.1 Prerequisites
 
 Before continuing with this exercise, you need to have completed the setup of [your Adobe I/O project](./../../../modules/getting-started/gettingstarted/ex6.md) including adding the **Frame.io API** to your Adobe I/O project, and you also need to have configured an application to interact with APIs, such as [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) or [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-## 1.2.5.2 Accessing Frame.io
+## 1.2.3.2 Accessing Frame.io
 
 Go to [https://next.frame.io/](https://next.frame.io/){target="_blank"}.
 
@@ -55,7 +55,7 @@ The file **citisignal-fiber.psd** will then be available in your newly created f
 
 ![Frame IO](./images/framev4_7.png)
 
-## 1.2.5.3 Workfront Fusion and Frame.io
+## 1.2.3.3 Workfront Fusion and Frame.io
 
 In the previous exercise, you created the scenario `--aepUserLdap-- - Firefly + Photoshop`, which started off with a custom webhook and that ended with a webhook response. The usage of the webhooks was then tested using Postman, but obviously, the point of such a scenario is to be called by an external application. As stated before, Frame.io will be that exercise, but in between Frame.io and the `--aepUserLdap-- - Firefly + Photoshop` another Workfront Fusion scenario is needed. you will now configure that scenario.
 
@@ -91,7 +91,7 @@ You should then see this. Leave this screen open and untouched as you'll need it
 
 ![Frame IO](./images/frame10.png)
 
-## 1.2.5.4 Frame.io V4 Custom Actions API
+## 1.2.3.4 Frame.io V4 Custom Actions API
 
 Go to Postman and open the request **POST - Get Access Token** in the collection **Adobe IO - OAuth**. Verify the field **scope** under **Params**. The field **scope** should include the scope `frame.s2s.all`. If it's missing, please add it. Next, click **Send** to request a new **access_token**.
 
@@ -171,7 +171,7 @@ The detailed view of the bubble shows you the data that was received from Frame.
 
 Now that communication has been established between Frame.io and Workfront Fusion, you can continue your configuration.
 
-## 1.2.5.5 Providing a custom form response to Frame.io
+## 1.2.3.5 Providing a custom form response to Frame.io
 
 When the custom action is invoked in Frame.io, Frame.io expects to receive a response from Workfront Fusion. If you think back to the scenario you built in the previous exercise, a number of variables are required to update the standard Photoshop PSD file. Those variables are defined in the payload that you used:
 
@@ -315,7 +315,7 @@ Switch back to Workfront Fusion and click the bubble on the **Custom webhook** m
 
 ![Frame IO](./images/frame43.png)
 
-## 1.2.5.6 Retrieve file location from Frame.io
+## 1.2.3.6 Retrieve file location from Frame.io
 
 As dicussed before, fields like **prompt**, **cta**, **button** and **psdTemplate** are needed for this scenario to function. The first 3 fields are now available already but the **psdTemplate** to use is still missing. The **psdTemplate** will now reference a Frame.io location as the file **citisignal-fiber.psd** is hosted in Frame.io. In order to retrieve the location of that file, you need to configure and use the Frame.io connection in Workfront Fusion.
 
@@ -432,7 +432,7 @@ The specific piece of information that is needed for this use case, is the locat
 
 You now have all the information (**prompt**, **cta**, **button** and **psdTemplate**) availabe that is needed for this use case to function.
 
-## 1.2.5.7 Invoke Workfront scenario
+## 1.2.3.7 Invoke Workfront scenario
 
 In the previous exercise you configured the scenario `--aepUserLdap-- - Firefly + Photoshop`. You now need to make a minor change to that scenario. 
 
@@ -497,7 +497,7 @@ Click **Save** to save your changes.
 
 ![Frame IO](./images/frame73.png)
 
-## 1.2.5.8 Save new asset in Frame.io
+## 1.2.3.8 Save new asset in Frame.io
 
 Once the other Workfront Fusion scenario has been invoked, the result will be a new Photoshop PSD template that is available. That PSD file needs to be stored back into Frame.io, which is the last step in this scenario.
 
@@ -554,7 +554,7 @@ Click **Save** to save your changes.
 
 ![Frame IO](./images/frame81.png)
 
-## 1.2.5.9 Test your end-to-end use case
+## 1.2.3.9 Test your end-to-end use case
 
 Click **Run once** in your scenario `--aepUserLdap-- - Frame IO Custom Action`.
 
