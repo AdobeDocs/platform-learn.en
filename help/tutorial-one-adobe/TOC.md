@@ -50,9 +50,9 @@ recommendations: noDisplay,noCatalog
   + 1.2 Creative Workflow Automation with Workfront Fusion {#crpr2}  
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
     + [1.2.1 Getting Started with Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
-    + [1.2.2 Automation using Connectors](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
-    + [1.2.3 Frame.io and Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
-    + [1.2.4 Frame.io to Workfront Fusion to AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
+    + [1.2.2 Automation using Connectors](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
+    + [1.2.3 Frame.io and Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
+    + [1.2.4 Frame.io to Workfront Fusion to AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
   + 1.3 GenStudio for Performance Marketing {#crpr3}  
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
