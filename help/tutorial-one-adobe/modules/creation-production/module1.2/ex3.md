@@ -596,7 +596,7 @@ You've now successfully completed this exercise.
 
 ## Next steps
 
-Go to [1.2.6 Frame.io to Fusion to AEM Assets](./ex6.md){target="_blank"}
+Go to [1.2.4 Frame.io to Fusion to AEM Assets](./ex4.md){target="_blank"}
 
 Go back to [Creative Workflow Automation with Workfront Fusion](./automation.md){target="_blank"}
 
