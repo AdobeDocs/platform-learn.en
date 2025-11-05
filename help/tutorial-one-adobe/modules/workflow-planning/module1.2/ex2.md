@@ -197,7 +197,7 @@ For this exercise, you need to download and use this asset: [timetravelnow.png](
 
 ![WF](./images/timetravelnow.png)
 
-Go back to the **Project Detail** screen. Go to **Documents**. Click **+ Add new** and then select **Document**.
+Go to **Documents** for your Task. Click **+ Add new** and then select **Document**.
 
 ![WF](./images/wfp10.png)
 
@@ -233,11 +233,11 @@ Select **Changes required** and click **make decision**.
 
 ![WF](./images/wfp24.png)
 
-Go back to your **Task** and the **Document**. You'll see the text **Changes required** also appear there..
+Go back to your **Task** and the **Document**. You'll see the text **Changes required** also appear there.
 
 ![WF](./images/wfp25.png)
 
-You now need to make design changes, which you will do in Adobe Express.
+You now need to make design changes and upload a new version of the image.
 
 ## 1.2.2.6 Add a new version of your Document to your Task
 
@@ -245,11 +245,11 @@ For this exercise, you need to download and use this asset: [getonboard.png](./i
 
 ![WF](./images/getonboard.png)
 
-In your Task view in Adobe Workfront, select the old image file that wasn't approved. Then, click **+ Add new**, select **Version** and then select your AEM Assets CS repository, which should be named `--aepUserLdap-- - CitiSignal`.
+In your Task view in Adobe Workfront, select the old image file that wasn't approved. Then, click **+ Add new**, select **Version** and then choose **Document**.
 
 ![WF](./images/wfp26.png)
 
-Navigate to the folder `--aepUserLdap-- CitiSignal Fiber Campaign` and select the file `CitiSignal - Neon Rabit - Get On Board Now!.png`. Click **Select**.
+Click to select the file `getonboardnow.png`. Click **Open**.
 
 ![WF](./images/wfp26a.png)
 
@@ -285,11 +285,11 @@ You'll then be back in your Task view, with an approved asset. This asset now ne
 
 ![WF](./images/wfp34.png)
 
-Select the approved document. Click the **Share arrow** icon and select your AEM Assets integration, which should be named `--aepUserLdap-- - CitiSignal AEM`.
+Select the approved document. Click the **Share arrow** icon and select your AEM Assets integration, which should be named `--aepUserLdap-- - CitiSignal AEM+ACCS`.
 
 ![WF](./images/wfp35.png)
 
-Double-click the folder you created before, which should be named `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
+Double-click the folder you created before, which should be named `--aepUserLdap-- - CitiSignal Fiber Campaign`.
 
 ![WF](./images/wfp36.png)
 
@@ -311,7 +311,7 @@ You should then see this.
 
 ## 1.2.2.7 View your file in AEM Assets
 
-Go to your folder in AEM Assets CS, which is named `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
+Go to your folder in AEM Assets CS, which is named `--aepUserLdap-- - CitiSignal Fiber Campaign`.
 
 ![WF](./images/wfppaem1.png)
 

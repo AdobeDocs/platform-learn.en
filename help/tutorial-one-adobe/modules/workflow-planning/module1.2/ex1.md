@@ -103,7 +103,7 @@ Next, click **Create Folder**.
 
 ![WF](./images/wfbaem3a.png)
 
-Name your folder `--aepUserLdap-- - CitiSignal Fiber Launch Assets` and click **Create**.
+Name your folder `--aepUserLdap-- - CitiSignal Fiber Campaign` and click **Create**.
 
 ![WF](./images/wfbaem4.png)
 
@@ -155,7 +155,7 @@ Next, select the fourth field and click the **Schema** icon next to the **Metada
 
 ![WF](./images/wfbaem11a.png)
 
-You'll then see this popup again. In the search field, enter `wm:document` and then select the field **Project ID**. Click **Select**.
+You'll then see this popup again. In the search field, enter `wm:document` and then select the field **Document Status**. Click **Select**.
 
 ![WF](./images/wfbaem101.png)
 
@@ -167,7 +167,7 @@ Next, select the fifth field and click the **Schema** icon next to the **Metadat
 
 ![WF](./images/wfbaem103.png)
 
-You'll then see this popup again. In the search field, enter `wm:document` and then select the field **Project ID**. Click **Select**.
+You'll then see this popup again. In the search field, enter `wm:document` and then select the field **Document Name**. Click **Select**.
 
 ![WF](./images/wfbaem104.png)
 
@@ -215,7 +215,7 @@ Next, you need to assign the Metadata Form to the folder you created before. Che
 
 ![WF](./images/wfbaem15.png)
 
-Select your folder, which should be named `--aepUserLdap-- - CitiSignal Fiber Launch Assets`. Click **Assign**.
+Select your folder, which should be named `--aepUserLdap-- - CitiSignal Fiber Campaign`. Click **Assign**.
 
 ![WF](./images/wfbaem16.png)
 
