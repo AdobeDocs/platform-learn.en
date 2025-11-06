@@ -11,7 +11,7 @@ recommendations: noDisplay,noCatalog
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
 + [GenStudio for Content Supply Chain Technical Enablement](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
-+ [Completion](/help/tutorial-one-adobe/completion.md)
++ [Architecture](/help/tutorial-one-adobe/architecture.md)
 
 + Getting started {#gettingstarted}
   + Getting started {#gettingstarted}
