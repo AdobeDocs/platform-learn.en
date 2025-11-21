@@ -185,7 +185,7 @@ Select **AEM Assets**.
 
 ![GSPeM](./images/gsasset8.png)
 
-Click **Select folder**.
+Click **Select folder**. Change the name of the asset to `--aepUserLdap-- - neon rabbit`.
 
 ![GSPeM](./images/gsasset9.png)
 

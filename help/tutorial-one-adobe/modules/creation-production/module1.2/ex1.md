@@ -164,11 +164,11 @@ Once the scenario has run, your screen should look like this:
 
 ![WF Fusion](./images/wffusion30.png)
 
-Select the **question mark** icon on the **Set multiple variables** object to see what happened when that object ran.
+Select the **magnifying glass** icon on the **Set multiple variables** object to see what happened when that object ran.
 
 ![WF Fusion](./images/wffusion31.png)
 
-Select the **question mark** icon on the **HTTP - Make a request** object to see what happened when that object ran. In the **OUTPUT**, see the **access_token** being returned by Adobe I/O.
+Select the **magnifying glass** icon on the **HTTP - Make a request** object to see what happened when that object ran. In the **OUTPUT**, see the **access_token** being returned by Adobe I/O.
 
 ![WF Fusion](./images/wffusion32.png)
 
@@ -200,7 +200,7 @@ Select **Run once** again.
 
 ![WF Fusion](./images/wffusion39.png)
 
-Once the scenario runs, select the **question mark** icon on the last **Set multiple variables** object. You should see that the access_token is being stored in the variable `bearer_token`.
+Once the scenario runs, select the **magnifying glass** icon on the last **Set multiple variables** object. You should see that the access_token is being stored in the variable `bearer_token`.
 
 ![WF Fusion](./images/wffusion40.png)
 

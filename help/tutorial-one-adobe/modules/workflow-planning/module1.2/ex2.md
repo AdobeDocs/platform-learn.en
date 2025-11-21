@@ -53,6 +53,8 @@ Click **Continue**.
 
 ![WF](./images/blueprint3.png)
 
+Change the **Project Template Name** to `--aepUserLdap-- - Integrated Campaign Execution`.
+
 Click **Install as is...**.
 
 ![WF](./images/blueprint4.png)
@@ -83,7 +85,7 @@ In your program, go to **Projects**. Click **+ New Project** and then select **N
 
 ![WF](./images/wfp6.png)
 
-Select the template **Integrated Campaign Execution** and click **Use template**.
+Select the template `--aepUserLdap-- - Integrated Campaign Execution` and click **Use template**.
 
 ![WF](./images/wfp6g.png)
 

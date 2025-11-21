@@ -61,7 +61,7 @@ You should then see this. Next, drag the red dot on the first module towards the
 
 ![WF Fusion](./images/wffusion217b.png)
 
-You should then see this. Newt, click the **Custom webhook** module.
+You should then see this. Next, click the **Custom webhook** module.
 
 ![WF Fusion](./images/wffusion217c.png)
 

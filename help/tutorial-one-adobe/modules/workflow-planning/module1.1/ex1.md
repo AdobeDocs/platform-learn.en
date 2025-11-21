@@ -71,7 +71,7 @@ You should then see the **Add record type** popup.
 
 Update the following information on the **Appearance** tab:
 
-- Replace **Untitled record type** by `Business Unit`.
+- Replace **Untitled record type** with `Business Unit`.
 - Description: `Defines which BU is leading campaign planning.`.
 - Select a color and shape for the icon of your choice
 
@@ -109,7 +109,7 @@ Next, click the **+** icon to add a new field. Scroll down in the list of availa
 
 Set the **Name** of the field to `Business Unit Lead` and set the description of the field to `Business Unit Lead responsible for budget and resources (VP, Head).`
 
-Click **Save**.
+Click **Create**.
 
 ![Workfront Planning](./images/wfpl17.png)
 
