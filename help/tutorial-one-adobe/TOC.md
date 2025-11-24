@@ -270,6 +270,6 @@ recommendations: noDisplay,noCatalog
   + 1.2 Agent Collaboration {#agenticai2}
     + [Overview](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/agentcollaboration.md)
     + [1.2.1 Getting started with Agent Collaboration](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/ex1.md)
-	+ 1.3 Agent Orchestrator {#agenticai3}
+  + 1.3 Agent Orchestrator {#agenticai3}
     + [Overview](/help/tutorial-one-adobe/modules/agentic-ai/module1.3/agentorchestrator.md)
     + [1.3.1 Getting started with Agent Orchestrator](/help/tutorial-one-adobe/modules/agentic-ai/module1.3/ex1.md)
