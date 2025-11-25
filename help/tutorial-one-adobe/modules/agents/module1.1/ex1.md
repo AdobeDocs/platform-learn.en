@@ -6,7 +6,7 @@ doc-type: tutorial
 ---
 # 1.1.1 Getting started with Agent Orchestrator
 
-## 1.3.1 Set Context in Agent Orchestrator 
+## 1.1.1 Set Context in Agent Orchestrator 
 
 Navigate to AI assistant and put in on Large view. 
 
@@ -16,7 +16,7 @@ Confirm you are in CJA context for analytics tasks.
 >
 >Use context switching when moving between analysis (CJA) and orchestration (JO).
 
-## 1.3.2 Start with overall purchase trends to anchor context and zoom into fiber 
+## 1.1.2 Start with overall purchase trends to anchor context and zoom into fiber 
 
 **Prompt**: 
 
@@ -60,7 +60,7 @@ Drill down into Fiber-specific trends.
 
 **Action** Note growth curve and regional spikes. 
 
-## 1.3.3 Correlate Orders with Content Preferences 
+## 1.1.3 Correlate Orders with Content Preferences 
 
 **Prompt**: 
 
@@ -94,7 +94,7 @@ Analyze conversion by genre (e.g., Sci-Fi, Sports).
 
 **Goal** Validate if Sci-Fi fans over-index for Fiber upgrades. 
 
-## 1.3.4 Identify Existing Fiber Journeys 
+## 1.1.4 Identify Existing Fiber Journeys 
 
 **Prompt**: 
 
@@ -124,7 +124,7 @@ List active or past journeys with Fiber messaging.
 
 Action: Shortlist high-performing journeys for cloning. 
 
-## 1.3.5 Check the seed audience for a relevant historical promo 
+## 1.1.5 Check the seed audience for a relevant historical promo 
 
 **Prompt**: 
 
@@ -160,7 +160,7 @@ Review audience criteria (streaming habits, device count).
 
 Goal: Understand traits for high-bandwidth needs. 
 
-## 1.3.6 Validate journey performance via fallout analysis 
+## 1.1.6 Validate journey performance via fallout analysis 
 
 **Prompt**: 
 
@@ -215,7 +215,7 @@ Build funnel visualization: Delivered → Opened → Clicked → Checkout → Or
 Action: Identify drop-off points and optimize messaging or UX. 
 
 
-## 1.3.7 Find existing audiences aligned to high usage 
+## 1.1.7 Find existing audiences aligned to high usage 
 
 **Prompt**: 
 
@@ -247,7 +247,7 @@ Locate audiences with high data usage.
 
 Goal: Combine with Sci-Fi preference for Fiber Max targeting. 
 
-## 1.3.8 Determine whether those audiences are already in use 
+## 1.1.8 Determine whether those audiences are already in use 
 
 **Prompt**: 
 
@@ -279,7 +279,7 @@ Ensure no overlap with active campaigns.
 
 Action: Apply suppression if needed. 
 
-## 1.3.9 Create New Journey for Fiber Max Launch 
+## 1.1.9 Create New Journey for Fiber Max Launch 
 
 **Prompt**: 
 

@@ -9,9 +9,22 @@ doc-type: multipage-overview
 
 ## Overview - Work In Progress
 
-Agentic AI Tech Labs are a work in progress and will be released in November/December 2025.
+[1.1 Agent Orchestrator](./modules/agentic-ai/module1.3/agentorchestrator.md)
 
-[1.1 Getting Started with Agents and AI](./modules/agentic-ai/module1.1/agenticai.md)
+**Goal** 
+
+Learn how to use Adobe Experience Platform Agents and Agent Orchestrator to: 
+
+- Analyze purchase trends
+- Identify high-propensity audiences
+- Validate journey performance
+- Create a new journey for the CitiSignal Fiber Max rollout
+
+[1.2 Getting Started with Agents and AI](./modules/agentic-ai/module1.1/agenticai.md)
+
+>[!NOTE]
+>
+>This module hasn't been released yet.
 
 **Goal** 
 
@@ -31,7 +44,11 @@ Technical elements:
 - MCP Server, Python Notebook
 - Adobe API's
 
-[1.2 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
+[1.3 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
+
+>[!NOTE]
+>
+>This module hasn't been released yet.
 
 **Goal**
 
