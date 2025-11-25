@@ -262,11 +262,14 @@ recommendations: noDisplay,noCatalog
       + [Overview](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
       + [3.1.1 Getting started with Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ (WIP) Agentic AI {#agenticai}
++ Agents {#agents}
   + [Agentic AI Overview](/help/tutorial-one-adobe/ai.md)
-  + 1.1 Getting Started with Agents and AI {#agenticai1}
-    + [Overview](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
-    + [1.1.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
-  + 1.2 Agent Collaboration {#agenticai2}
-    + [Overview](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/agentcollaboration.md)
-    + [1.2.1 Getting started with Agent Collaboration](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/ex1.md)
+  + 1.1 Agent Orchestrator {#agents1}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
+    + [1.1.1 Getting started with Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+  + 1.2 Getting Started with Agents and AI {#agents2}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
+    + [1.2.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+  + 1.3 Agent Collaboration {#agents3}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
+    + [1.3.1 Getting started with Agent Collaboration](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
