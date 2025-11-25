@@ -80,15 +80,7 @@ You should then see this, which drills down into Fiber-specific trends.
 
 ## 1.1.1.3 Correlate Orders with Content Preferences 
 
-Enter the following **Prompt** and click the **generate** button.
-
-```javascript
-Show me ordersYTD by preferred genre for the last 2 months
-```
-
-![Agent Orchestrator](./images/ao8.png)
-
-**Intent** Test the hypothesis that content preference (e.g., SciFi, Sports, Drama) predicts broadband upgrade behavior—especially for highbandwidth needs. 
+**Intent**: Test the hypothesis that content preference (e.g., SciFi, Sports, Drama) predicts broadband upgrade behavior—especially for highbandwidth needs. 
 
 **Thinking**
 
@@ -110,13 +102,31 @@ Analyze conversion by genre (e.g., Sci-Fi, Sports).
 
 **Goal** Validate if Sci-Fi fans over-index for Fiber upgrades. 
 
-## 1.1.1.4 Identify Existing Fiber Journeys 
-
 Enter the following **Prompt** and click the **generate** button.
 
 ```javascript
-What journey was running and had Fiber in the name
+Show me ordersYTD by preferredGenre for the last 2 months
 ```
+
+![Agent Orchestrator](./images/ao8.png)
+
+You should then see this:
+
+![Agent Orchestrator](./images/ao9.png)
+
+## 1.1.1.4 Identify Existing Fiber Journeys 
+
+Click the **context** window.
+
+![Agent Orchestrator](./images/ao10.png)
+
+Set the context to:
+
+- **Documentation Source**: **Adobe Journey Optimizer**
+- **Sandbox**: **Accelerate**
+- **Dataview**: **Accelerate 2026 B2C**
+
+![Agent Orchestrator](./images/ao11.png)
 
 **Intent** Discover which active or recently concluded journeys include “Fiber” in the title—e.g., “Fiber Upgrade NYC – Sept”, “Fiber Trial – Streaming Bundle”. 
 
@@ -132,23 +142,39 @@ List of journeys with status (active, paused, ended), date ranges, target segmen
 
 Next move: Shortlist one or two successful fiber journeys for cloning/adaptation. 
 
-**Prompt**
+Enter the following **Prompt** and click the **generate** button.
 
-`What journey was running and had Fiber in the name?`
+```javascript
+What journeys exist? 
+```
+
+![Agent Orchestrator](./images/ao12.png)
+
+You should then see this:
+
+![Agent Orchestrator](./images/ao13.png)
 
 List active or past journeys with Fiber messaging. 
 
-Action: Shortlist high-performing journeys for cloning. 
-
-## 1.1.1.5 Check the seed audience for a relevant historical promo 
+Action: Shortlist high-performing journeys for cloning.
 
 Enter the following **Prompt** and click the **generate** button.
 
 ```javascript
-What was the initial audience in that SCi-Fi promo 2024 - jl journey
+Which of these journeys has 'Fiber' in its name?
 ```
 
-**Intent** Understand the seed definition of the “SciFi Promo 2024 - jl” journey—what traits drove targeting (e.g., “SciFi Genre Preference,” “4+ devices,” “stream ≥ 300GB/month”). 
+![Agent Orchestrator](./images/ao14.png)
+
+You should then see this:
+
+![Agent Orchestrator](./images/ao15.png)
+
+## 1.1.1.5 Check the seed
+
+**Intent**:
+
+Understand the seed definition of the “CitiSignal - Fiber Max Launch Promotion” journey—what traits drove targeting (e.g., “SciFi Genre Preference,” “4+ devices,” “stream ≥ 300GB/month”). 
 
 **Thinking**
 
@@ -166,41 +192,44 @@ Audience criteria (inclusion/exclusion), audience size, region filters, recency,
 
 From this point, the marketer switches into analytics mode to ensure proper reporting. 
 
-**Prompt**: 
+Enter the following **Prompt** and click the **generate** button.
 
 ```javascript
-What was the initial audience in that SCi-Fi promo 2024 - jl journey?
+What was the initial audience in the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 
+![Agent Orchestrator](./images/ao16.png)
 Review audience criteria (streaming habits, device count). 
 
-Goal: Understand traits for high-bandwidth needs. 
+**Goal**: Understand traits for high-bandwidth needs. 
 
 ## 1.1.1.6 Validate journey performance via fallout analysis 
 
-**Prompt**: 
+Enter the following **Prompt** and click the **generate** button.
 
 ```javascript
-Create a fall-out report on the "Sci-Fi Promo 2024 - jl" journey
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ``` 
 
 >[!NOTE]
 >
 >Change context to CJA) 
 
-**Intent** Build a stepwise funnel in Customer Journey Analytics
+**Intent**:
+
+Build a stepwise funnel in Customer Journey Analytics
 
 Delivered → Opened → Clicked → Landed → Product View → Add to Cart → Checkout → Order Complete 
 
 Include Fiber-related SKU views as a branch. 
 
-Thinking: 
+**Thinking**: 
 
 “Where are we losing people—email open, landing page load, PDPs, checkout friction?” 
 
 “Do SciFi users bounce more or less than average on Fiber PDP?” 
 
-Expected outputs: 
+**Expected outputs**: 
 
 A fallout visualization with dropoff rates at each step. 
 
@@ -208,7 +237,7 @@ Segment overlays (SciFi vs Sports vs Other).
 
 Device/browser breakdown for technical friction. 
 
-Decisions: 
+**Decisions**: 
 
 If checkout dropoff is high, coordinate with product/UX to fix payment flow. 
 
@@ -220,20 +249,19 @@ If PDP exit is high, rework claim clarity (speeds, installation times, bundle va
 
 Now the marketer moves into Adobe Journey Optimizer for orchestration and audience ops. 
 
-**Prompt**: 
+Enter the following **Prompt** and click the **generate** button.
 
 ```javascript
-Create a fall-out report on the "Sci-Fi Promo 2024 - jl" journey 
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey 
 ```
 
 Build funnel visualization: Delivered → Opened → Clicked → Checkout → Order. 
 
-Action: Identify drop-off points and optimize messaging or UX. 
-
+**Action**: Identify drop-off points and optimize messaging or UX. 
 
 ## 1.1.1.7 Find existing audiences aligned to high usage 
 
-**Prompt**: 
+Enter the following **Prompt** and click the **generate** button.
 
 ```javascript
 Is there an audience that has "heavy downloaders" in the title?
@@ -243,77 +271,67 @@ Is there an audience that has "heavy downloaders" in the title?
 >
 >Change context to Adobe Journey Optimizer
 
-Intent: Locate any JO audience named with “heavy downloaders”—likely defined by monthly data usage thresholds, streaming hours, or device concurrency. 
+**Intent**: 
 
-Thinking: 
+Locate any JO audience named with “heavy downloaders”—likely defined by monthly data usage thresholds, streaming hours, or device concurrency. 
+
+**Thinking**: 
 
 “If an audience like Heavy Downloaders exists, it’s perfect for Fiber Max positioning: speed, reliability, unlimited tiers.” 
 
-Expected outputs: 
+**Expected outputs**: 
 
 Audience metadata: definition criteria, size, last refresh, governance tags, region availability. 
 
-**Prompt**: 
-
-```javascript
-Is there an audience that has " heavy downloaders" in the title 
-```
-
 Locate audiences with high data usage. 
 
-Goal: Combine with Sci-Fi preference for Fiber Max targeting. 
+**Goal**: Combine with Sci-Fi preference for Fiber Max targeting. 
 
 ## 1.1.1.8 Determine whether those audiences are already in use 
 
-**Prompt**: 
+**Intent**: 
 
-```javascript
-Which of the above are used in a journey? 
-```
+Check audience-to-journey linkage—ensure we don’t doublemessage or collide with current programs. 
 
-Intent: Check audience-to-journey linkage—ensure we don’t doublemessage or collide with current programs. 
-
-Thinking: 
+**Thinking**: 
 
 “If Heavy Downloaders is already in a retention journey, we need suppression logic or frequency capping to avoid fatigue.” 
 
-Expected outputs: 
+**Expected outputs**: 
 
 Mappings: audience → journey name, status, contact policy, last send, performance. 
 
-Decision: 
+**Decision**: 
 
 If in use, create exclusions or shared suppression for Vienna launch. 
 
 If not in use, greenlight for new journey. 
 
-Prompt: 
+Enter the following **Prompt** and click the **generate** button.
 
-which of the above are used in a journey? 
+```javascript
+Which of the above are used in a journey? 
+```
 
 Ensure no overlap with active campaigns. 
 
-Action: Apply suppression if needed. 
+**Action**: Apply suppression if needed. 
 
 ## 1.1.1.9 Create New Journey for Fiber Max Launch 
 
-**Prompt**: 
+**Intent**: 
 
-```javascript
-Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
-```
-
-Intent: Build a new JO journey targeting the compound audience: 
+Build a new journey targeting the compound audience: 
 
 Heavy Downloaders ∩ SciFi Preference (kbaa_5207bf audience key). 
 
-Thinking: 
+**Thinking**: 
 
 “This is the sweet spot for Fiber Max: high propensity + creative relevance.” 
 
 “We’ll orchestrate a multitouch experience tied to Vienna availability.” 
 
-Journey design (JO): 
+**Journey design (JO)**: 
 
 Entry Criteria: 
 
@@ -363,7 +381,7 @@ How this all fits together (the marketer’s mental model)
 
 Diagnose demand (overall categories → Fiber specifically). 
 
-Prove contenttoconversion signal (orders by genre). 
+Prove content toconversion signal (orders by genre). 
 
 Mine successful journeys (find Fibernamed journeys and the SciFi promo audience). 
 
@@ -371,6 +389,11 @@ Validate friction points (CJA fallout on SciFi journey).
 
 Activate against highpropensity segments (Heavy Downloaders ∩ SciFi). 
 
+Enter the following **Prompt** and click the **generate** button.
+
+```javascript
+Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
+```
 
 Go Back to [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
