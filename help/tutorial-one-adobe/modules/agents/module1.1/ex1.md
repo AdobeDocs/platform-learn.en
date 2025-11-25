@@ -367,7 +367,7 @@ Suppress if current Fiber subscriber or if ticket exists for install.
 
 Respect optout preferences. 
 
-Measurement Plan (CJA): 
+**Measurement Plan (CJA)**: 
 
 Track: Delivery, open, click, PDP view, checkout start, order completion. 
 
@@ -375,13 +375,11 @@ KPIs: Conversion rate to Fiber Max, uplift vs control, timetoinstall.
 
 Diagnostics: Fallout report by device/genre segment. 
 
-Shape 
-
 How this all fits together (the marketer’s mental model) 
 
 Diagnose demand (overall categories → Fiber specifically). 
 
-Prove content toconversion signal (orders by genre). 
+Prove content to conversion signal (orders by genre). 
 
 Mine successful journeys (find Fibernamed journeys and the SciFi promo audience). 
 
@@ -389,11 +387,103 @@ Validate friction points (CJA fallout on SciFi journey).
 
 Activate against highpropensity segments (Heavy Downloaders ∩ SciFi). 
 
+Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+
+You should then see this. Make sure you're in the org **Experience Platform International**.
+
+Click the **context** window.
+
+![Agent Orchestrator](./images/ao2.png)
+
+Set the context to:
+
+- **Documentation Source**: **Journey Optimizer**
+- **Sandbox**: **Accelerate**
+- **Dataview**: **Accelerate 2026 B2C**
+
+Click **Set context**.
+
+![Agent Orchestrator](./images/aoea3.png)
+
 Enter the following **Prompt** and click the **generate** button.
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
+
+![Agent Orchestrator](./images/aocj1.png)
+
+You should then see this. Enter `yes` and click generate.
+
+![Agent Orchestrator](./images/aocj2.png)
+
+You should then see this. Enter `yes` and click generate.
+
+![Agent Orchestrator](./images/aocj3.png)
+
+You should then see this. Enter `The first one` and click generate.
+
+![Agent Orchestrator](./images/aocj4.png)
+
+You should then see this. Enter `yes` and click generate.
+
+![Agent Orchestrator](./images/aocj5.png)
+
+Review the response. Enter `yes` and click generate.
+
+![Agent Orchestrator](./images/aocj6.png)
+
+Click **Review**.
+
+![Agent Orchestrator](./images/aocj7.png)
+
+Update the journey name with your LDAP to make it unique. Click **Save**.
+
+![Agent Orchestrator](./images/aocj8.png)
+
+Your journey has now been created in draft mode.
+
+![Agent Orchestrator](./images/aocj9.png)
+
+## 1.1.1.10 Experiments
+
+Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+
+You should then see this. Make sure you're in the org **Experience Platform International**.
+
+Click the **context** window.
+
+![Agent Orchestrator](./images/ao2.png)
+
+Set the context to:
+
+- **Documentation Source**: **Journey Optimizer**
+- **Sandbox**: **Accelerate**
+- **Dataview**: **Accelerate 2026 B2C**
+
+Click **Set context**.
+
+![Agent Orchestrator](./images/aoea3.png)
+
+Enter the following **Prompt** and click the **generate** button.
+
+```javascript
+How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
+```
+
+![Agent Orchestrator](./images/aoea0.png)
+
+You should then see this:
+
+![Agent Orchestrator](./images/aoea1.png)
+
+Click the suggestion to compare the conversion rates of each treatment and then click **generate**.
+
+![Agent Orchestrator](./images/aoea2.png)
+
+You should then see a detailed comparison like this:
+
+![Agent Orchestrator](./images/aoea4.png)
 
 Go Back to [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
