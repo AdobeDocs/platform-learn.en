@@ -9,7 +9,7 @@ doc-type: multipage-overview
 
 ## Overview - Work In Progress
 
-[1.1 Agent Orchestrator](./modules/agentic-ai/module1.3/agentorchestrator.md)
+[1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
 **Goal** 
 
@@ -20,7 +20,7 @@ Learn how to use Adobe Experience Platform Agents and Agent Orchestrator to:
 - Validate journey performance
 - Create a new journey for the CitiSignal Fiber Max rollout
 
-[1.2 Getting Started with Agents and AI](./modules/agentic-ai/module1.1/agenticai.md)
+[1.2 Getting Started with Agents and AI](./modules/agents/module1.2/agenticai.md)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Technical elements:
 - MCP Server, Python Notebook
 - Adobe API's
 
-[1.3 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
+[1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md)
 
 >[!NOTE]
 >
