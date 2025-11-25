@@ -6,33 +6,43 @@ doc-type: tutorial
 ---
 # 1.1.1 Getting started with Agent Orchestrator
 
-## 1.1.1 Set Context in Agent Orchestrator 
+## 1.1.1.1 Set Context in Agent Orchestrator 
 
-Navigate to AI assistant and put in on Large view. 
+Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
-Confirm you are in CJA context for analytics tasks. 
+You should then see this. Make sure you're in the org **Experience Platform International**.
+
+![Agent Orchestrator](./images/ao1.png)
+
+Click the **context** window.
+
+![Agent Orchestrator](./images/ao2.png)
+
+Set the context to:
+
+- **Documentation Source**: **Customer Journey Analytics**
+- **Sandbox**: **Accelerate**
+- **Dataview**: **Accelerate 2026 B2C**
+
+Click **Set context**.
+
+![Agent Orchestrator](./images/ao3.png)
 
 >[!NOTE]
 >
->Use context switching when moving between analysis (CJA) and orchestration (JO).
+>In this lab, you'll be switching context when moving between analysis and orchestration.
 
-## 1.1.2 Start with overall purchase trends to anchor context and zoom into fiber 
-
-**Prompt**: 
-
-```javascript
-Show me purchases by mainCategory over the last 2 month
-```
+## 1.1.1.2 Start with overall purchase trends to anchor context and zoom into fiber 
 
 **Intent**: Get a toplevel pulse on category demand—Mobile, Landline, Internet, TV, Fiber—specifically for the most recent 60 days. This sets baselines for seasonality, promo effects, and regional variance after the NY rollout. 
 
-Thinking: 
+**Thinking**: 
 
 “Is Fiber gaining share postNY? Are we seeing cannibalization of Copper/DSL Internet? What’s the mix shift vs TV bundles?” 
 
 “This will help me size the addressable audience for Vienna and set realistic targets.” 
 
-Actionable readouts the marketer expects: 
+**Actionable readouts the marketer expects**: 
 
 A stacked bar/line chart of Purchases by mainCategory (daily/weekly grain). 
 
@@ -40,33 +50,43 @@ Percent share of purchases by category vs prior period.
 
 Notable spikes correlating with promotional dates. 
 
+Enter the following **Prompt** and click the **generate** button.
+
+```javascript
+Show me purchases by mainCategory over the last 2 months.
+```
+
+![Agent Orchestrator](./images/ao4.png)
+
+You should then see this:
+
 >[!NOTE]
 >
 >Keep an eye on lagging attribution—Fiber orders may be captured under “Internet” in some legacy schemas. If so, reconcile taxonomy before decisions. 
 
-  
+![Agent Orchestrator](./images/ao5.png)
 
-**Prompt**: 
+Enter the following **Prompt** and click the **generate** button.
 
-```javascript
-Show me purchases by mainCategory over the last 2 monthzoom into fiber performance
-```
+`Show me purchases by mainCategory = Fiber over the last 2 months per week`
 
-**Next Prompt**
+![Agent Orchestrator](./images/ao6.png)
 
-`Show me purchases by mainCategory = Fiber over the last 2 months`
+You should then see this, which drills down into Fiber-specific trends. 
 
-Drill down into Fiber-specific trends. 
+**Action**: Note the growth curve and regional spikes. 
 
-**Action** Note growth curve and regional spikes. 
+![Agent Orchestrator](./images/ao7.png)
 
-## 1.1.3 Correlate Orders with Content Preferences 
+## 1.1.1.3 Correlate Orders with Content Preferences 
 
-**Prompt**: 
+Enter the following **Prompt** and click the **generate** button.
 
 ```javascript
 Show me ordersYTD by preferred genre for the last 2 months
 ```
+
+![Agent Orchestrator](./images/ao8.png)
 
 **Intent** Test the hypothesis that content preference (e.g., SciFi, Sports, Drama) predicts broadband upgrade behavior—especially for highbandwidth needs. 
 
@@ -84,19 +104,15 @@ Rank genres by order conversion rate and AOV (average order value).
 
 Decision: If SciFi shows a strong signal, this becomes a primary creative pillar for Vienna’s Fiber Max launch (e.g., “never buffer again” messaging, premium bundles). 
 
-**Prompt**
-
-`Show me ordersYTD by preferred genre for the last 2 months`
-
 **Intention**
 
 Analyze conversion by genre (e.g., Sci-Fi, Sports). 
 
 **Goal** Validate if Sci-Fi fans over-index for Fiber upgrades. 
 
-## 1.1.4 Identify Existing Fiber Journeys 
+## 1.1.1.4 Identify Existing Fiber Journeys 
 
-**Prompt**: 
+Enter the following **Prompt** and click the **generate** button.
 
 ```javascript
 What journey was running and had Fiber in the name
@@ -124,9 +140,9 @@ List active or past journeys with Fiber messaging.
 
 Action: Shortlist high-performing journeys for cloning. 
 
-## 1.1.5 Check the seed audience for a relevant historical promo 
+## 1.1.1.5 Check the seed audience for a relevant historical promo 
 
-**Prompt**: 
+Enter the following **Prompt** and click the **generate** button.
 
 ```javascript
 What was the initial audience in that SCi-Fi promo 2024 - jl journey
@@ -160,7 +176,7 @@ Review audience criteria (streaming habits, device count).
 
 Goal: Understand traits for high-bandwidth needs. 
 
-## 1.1.6 Validate journey performance via fallout analysis 
+## 1.1.1.6 Validate journey performance via fallout analysis 
 
 **Prompt**: 
 
@@ -215,7 +231,7 @@ Build funnel visualization: Delivered → Opened → Clicked → Checkout → Or
 Action: Identify drop-off points and optimize messaging or UX. 
 
 
-## 1.1.7 Find existing audiences aligned to high usage 
+## 1.1.1.7 Find existing audiences aligned to high usage 
 
 **Prompt**: 
 
@@ -247,7 +263,7 @@ Locate audiences with high data usage.
 
 Goal: Combine with Sci-Fi preference for Fiber Max targeting. 
 
-## 1.1.8 Determine whether those audiences are already in use 
+## 1.1.1.8 Determine whether those audiences are already in use 
 
 **Prompt**: 
 
@@ -279,7 +295,7 @@ Ensure no overlap with active campaigns.
 
 Action: Apply suppression if needed. 
 
-## 1.1.9 Create New Journey for Fiber Max Launch 
+## 1.1.1.9 Create New Journey for Fiber Max Launch 
 
 **Prompt**: 
 
