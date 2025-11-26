@@ -322,7 +322,23 @@ Enter the following **Prompt** and click the **send** button.
 
 >[!NOTE]
 >
->Please verify that the context of the assistant is pointing to the sandbox **Accelerate** and the dataview **Accelerate 2026 B2C**
+>Please verify that the context of the assistant is pointing to the documentation source **Journey Optimizer**, the sandbox **Accelerate** and the dataview **Accelerate 2026 B2C**
+
+```javascript
+How can I manage journey conflicts?
+```
+
+![Agent Orchestrator](./images/aocj80.png)
+
+Review the information.
+
+![Agent Orchestrator](./images/aocj81.png)
+
+Scroll down and select the **Sources** to find that the information is sourced frm Experience League.
+
+![Agent Orchestrator](./images/aocj82.png)
+
+Enter the following **Prompt** and click the **send** button.
 
 ```javascript
 List any conflicts for "CitiSignal - Fiber Max Launch Promotion" journey
