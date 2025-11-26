@@ -312,7 +312,7 @@ Your journey has now been created in draft mode.
 
 ![Agent Orchestrator](./images/aocj9.png)
 
-## 1.1.1.10 Conflicts
+## 1.1.1.10 Journey Conflict Management
 
 Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
