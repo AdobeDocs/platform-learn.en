@@ -383,6 +383,7 @@ Enter the following **Prompt** and click the **send** button.
 ```javascript
 List any conflicts for the journey +CitiSignal Fiber Max
 ```
+
 Then manually select the journey **CitiSignal - Fiber Max Launch Promotion** from the list.
 
 ![Agent Orchestrator](./images/aocj70.png)
