@@ -6,6 +6,12 @@ doc-type: tutorial
 ---
 # 1.1.1 Getting started with Agent Orchestrator
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3477257?quality=12&learn=on)
+
 ## 1.1.1.1 Set Context in Agent Orchestrator 
 
 Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
@@ -56,7 +62,9 @@ You should then see this:
 
 Enter the following **Prompt** and click the **send** button.
 
-`Show me purchases by mainCategory = Fiber over the last 2 months per week`
+```javascript
+Show me purchases by mainCategory = Fiber over the last 2 months per week
+```
 
 ![Agent Orchestrator](./images/ao6.png)
 
@@ -207,7 +215,7 @@ Based on the above findings and research, there's a correlation between customer
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Create an audience that combines people with an average download per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
+Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
 ![Agent Orchestrator](./images/ao32.png)
