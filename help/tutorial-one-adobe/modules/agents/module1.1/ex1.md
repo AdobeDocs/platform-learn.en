@@ -20,9 +20,17 @@ Click the **context** window.
 
 Set the context to:
 
-- **Documentation Source**: **Customer Journey Analytics**
-- **Sandbox**: **Accelerate**
+- **Documentation Source**: **Journey Optimizer**
+
+The Documentation Source setting helps to give preference to which set of experience league documents to check for questions that relate to product knowledge/Experience League.
+
+- **Sandbox**: **Prod - Accelerate (VA7)**
+
+The Sandbox setting helps to identify which sandbox AI Assistant should look at when asking questions.
+
 - **Dataview**: **Accelerate 2026 B2C**
+
+The Dataview setting helps to identify which dataview AI Assistant should look at when asking questions.
 
 Click **Set context**.
 
@@ -54,15 +62,29 @@ Enter the following **Prompt** and click the **send** button.
 
 You should then see this, which drills down into Fiber-specific trends. 
 
-**Action**: Note the growth curve and regional spikes. 
-
 ![Agent Orchestrator](./images/ao7.png)
 
 ## 1.1.1.3 Correlate Orders with Content Preferences 
 
 **Intent**
 
-Test the hypothesis that content preference (e.g., SciFi, Sports, Drama) predicts broadband upgrade behavior—especially for highbandwidth needs. 
+Test the hypothesis that a preference for a specific genre (e.g., SciFi, Sports, Drama) predicts broadband upgrade behavior—especially for high bandwidth needs. 
+
+First, you need to find out which field is used to store the genre preference.
+
+Enter the following **Prompt** and click the **send** button.
+
+```javascript
+Which field is used to store the preferred genre?
+```
+
+![Agent Orchestrator](./images/ao7a.png)
+
+You should then see this, which shows that the field used for genre is **_experienceplatform.individualCharacteristics.preferences.preferredGenre**.
+
+![Agent Orchestrator](./images/ao7b.png)
+
+With that information, you can start drilling down in the purchase data.
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -72,9 +94,13 @@ Show me ordersYTD by preferredGenre for the last 2 months
 
 ![Agent Orchestrator](./images/ao8.png)
 
-You should then see this:
+You should then see this. Click the icon on the **Reasoning complete** block to understand whats happening in Agent Orchestrator behind the scenes.
 
 ![Agent Orchestrator](./images/ao9.png)
+
+You should then see a similar explanation.
+
+![Agent Orchestrator](./images/ao10.png)
 
 ## 1.1.1.4 Identify Existing Fiber Journeys
 
@@ -90,15 +116,19 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-You should then see this:
+You should then see this. Click **Show more**.
 
 ![Agent Orchestrator](./images/ao13.png)
 
-List active or past journeys with Fiber messaging. 
+You should then see a larger list of active or past journeys. Click the **download** icon to download a list of these journeys.
 
-Action: Shortlist high-performing journeys for cloning.
+![Agent Orchestrator](./images/ao13a.png)
 
-Enter the following **Prompt** and click the **send** button.
+This will generate a CSV file for you that contains all the output from the AI Assistant.
+
+![Agent Orchestrator](./images/ao13b.png)
+
+Click to close the right pane. Enter the following **Prompt** and click the **send** button.
 
 ```javascript
 Which of these journeys has 'Fiber' in its name?
@@ -106,21 +136,27 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/ao14.png)
 
-You should then see this:
+You should then see this. Click the link on one of the journeys and select **Journey Details**.
 
 ![Agent Orchestrator](./images/ao15.png)
 
-## 1.1.1.5 Check the seed
+A new window will be opened, and you'll be taken to the Journey Details overview immediately.
+
+![Agent Orchestrator](./images/ao15a.png)
+
+## 1.1.1.5 Check which audience is used
 
 **Intent**:
 
 Understand the seed definition of the “CitiSignal - Fiber Max Launch Promotion” journey—what traits drove targeting (e.g., “SciFi Genre Preference,” “4+ devices,” “stream ≥ 300GB/month”). 
 
-Enter the following **Prompt** and then type in **+CitiSignal fib** to enable autocomplete. Select the journey **CitiSignal - Fiber Max Launch Promotion**.
+Enter the following **Prompt**:
 
 ```javascript
 What was the initial audience in the journey named 
 ```
+
+Then manually type in `+CitiSignal fib` to enable autocomplete. Select the journey **CitiSignal - Fiber Max Launch Promotion**.
 
 ![Agent Orchestrator](./images/ao16.png)
 
@@ -136,11 +172,7 @@ You should then see this.
 
 **Intent**
 
-Build a stepwise funnel in Customer Journey Analytics
-
-Delivered → Opened → Clicked → Landed → Product View → Add to Cart → Checkout → Order Complete 
-
-Include Fiber-related SKU views as a branch. 
+You want to understand journey performance fallout to know if there are any nodes or conditions within the journey that are experiencing a large percentage of profiles being dropped. This is helpful in understanding if additional adjustments are needed in the journey.
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -150,19 +182,29 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ![Agent Orchestrator](./images/ao19.png)
 
+You should then see this.
+
+![Agent Orchestrator](./images/ao20.png)
+
+Scroll down a little bit. You can now review the table by inspecting each node and its respective enter numbers, fallout numbers, and fallout rate. 
+
+AI Assistant provides you with observations and recommendations. 
+
+Click the sentence **Here is how I got the results**.
+
+![Agent Orchestrator](./images/ao21.png)
+
+You can then see the steps followed by AI Assistant to get to the results.
+
+![Agent Orchestrator](./images/ao22.png)
+
 ## 1.1.1.7 Create a new audience
 
 **Intent**
 
-Based on the above findings, there's a correlation between customers that consume a lot of data and that have a preferred genre of sci-fi or fantasy. You will now combine these attributes in an audience.
-
-Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Based on the above findings and research, there's a correlation between customers that consume a lot of data and that have a preferred genre of sci-fi or fantasy. You will now combine these attributes in an audience.
 
 Enter the following **Prompt** and click the **send** button.
-
->[!NOTE]
->
->Please verify that the context of the assistant is pointing to the sandbox **Accelerate** and the dataview **Accelerate 2026 B2C**
 
 ```javascript
 Create an audience that combines people with an average download per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
@@ -171,6 +213,10 @@ Create an audience that combines people with an average download per month of ov
 ![Agent Orchestrator](./images/ao32.png)
 
 Review the plan. Enter `yes` and click **send**.
+
+>[!NOTE]
+>
+>This plan is generated based on a reference guide in the system. Customers will eventually be able to customize plans and add their own plans, but for now they are static.
 
 ![Agent Orchestrator](./images/ao33.png)
 
@@ -196,7 +242,7 @@ Your audience has now been created.
 
 >[!NOTE]
 >
->When creating a new audience, it will take 24 hours before the audience is available to the assistant for further usage.
+>When creating a new audience, it will take 24 hours before the audience is available to AI Assistant for further usage.
 
 ## 1.1.1.8 Find existing audiences aligned to high usage and check if they are in use
 
@@ -206,17 +252,9 @@ Locate any audience named with "heavy downloaders", defined by monthly data usag
 
 >[!NOTE]
 >
->In the previous steo you created a new audience, please remember that it will take 24 hours before the audience is available to the assistant for further usage. You should now use another, already existing audience instead.
-
-Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-You should then see this. Make sure you're in the org **Experience Platform International**.
+>In the previous step you created a new audience, please remember that it will take 24 hours before the audience is available to AI Assistant for further usage. You should now use another, already existing audience instead.
 
 Enter the following **Prompt** and click the **send** button.
-
->[!NOTE]
->
->Please verify that the context of the assistant is pointing to the sandbox **Accelerate** and the dataview **Accelerate 2026 B2C**
 
 ```javascript
 Is there an audience that has "heavy downloaders" in the title?
@@ -224,9 +262,27 @@ Is there an audience that has "heavy downloaders" in the title?
 
 ![Agent Orchestrator](./images/ao30.png)
 
-You should then see this.
+You should then see this. You now want to see all your audiences and how much they have changed over the last few days.
+
+Enter the following **Prompt** and click the **send** button.
+
+```javascript
+List how much these audiences changed over the last few days.
+```
 
 ![Agent Orchestrator](./images/ao31.png)
+
+You should then see this. Click **Show more**.
+
+![Agent Orchestrator](./images/ao31a.png)
+
+You should then see this. Click to close the right pane.
+
+![Agent Orchestrator](./images/ao31b.png)
+
+Scroll down a little bit to review the steps taken by AI Assistant.
+
+![Agent Orchestrator](./images/ao31c.png)
 
 There are some existing audiences already for "heavy downloaders". Let's see if they are in use already.
 
@@ -245,12 +301,12 @@ You should then see something similar to this.
 You should now verify if that journey is active. Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Which of the above are used in a journey? 
+Are these journeys active? 
 ```
 
 ![Agent Orchestrator](./images/ao52.png)
 
-You should then see something similar to this. That journey isn't running at the moment.
+You should then see something similar to this. None of these journeys are currently running.
 
 ![Agent Orchestrator](./images/ao53.png)
 
@@ -262,17 +318,9 @@ For the upcoming launch of Fiber Max, you should now create a new journey.
 
 Build a new journey targeting the compound audience: 
 
-Heavy Downloaders ∩ SciFi Preference (kbaa_5207bf audience key). 
-
-Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-You should then see this. Make sure you're in the org **Experience Platform International**.
+Heavy Downloaders ∩ SciFi Preference. 
 
 Enter the following **Prompt** and click the **send** button.
-
->[!NOTE]
->
->Please verify that the context of the assistant is pointing to the sandbox **Accelerate** and the dataview **Accelerate 2026 B2C**
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
@@ -288,15 +336,15 @@ You should then see this. Enter `yes` and click generate.
 
 ![Agent Orchestrator](./images/aocj3.png)
 
-You should then see this. Enter `The first one` and click generate.
+You should then see this. Enter `The first one` and click send.
 
 ![Agent Orchestrator](./images/aocj4.png)
 
-You should then see this. Enter `yes` and click generate.
+You should then see this. Enter `yes` and click send.
 
 ![Agent Orchestrator](./images/aocj5.png)
 
-Review the response. Enter `yes` and click generate.
+Review the response. Enter `yes` and click send.
 
 ![Agent Orchestrator](./images/aocj6.png)
 
@@ -314,15 +362,7 @@ Your journey has now been created in draft mode.
 
 ## 1.1.1.10 Journey Conflict Management
 
-Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-You should then see this. Make sure you're in the org **Experience Platform International**.
-
 Enter the following **Prompt** and click the **send** button.
-
->[!NOTE]
->
->Please verify that the context of the assistant is pointing to the documentation source **Journey Optimizer**, the sandbox **Accelerate** and the dataview **Accelerate 2026 B2C**
 
 ```javascript
 How can I manage journey conflicts?
@@ -334,17 +374,22 @@ Review the information.
 
 ![Agent Orchestrator](./images/aocj81.png)
 
-Scroll down and select the **Sources** to find that the information is sourced frm Experience League.
+Scroll down and select the **Sources** to find that the information is sourced from Experience League.
 
 ![Agent Orchestrator](./images/aocj82.png)
 
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-List any conflicts for "CitiSignal - Fiber Max Launch Promotion" journey
+List any conflicts for the journey +CitiSignal Fiber Max
 ```
+Then manually select the journey **CitiSignal - Fiber Max Launch Promotion** from the list.
 
 ![Agent Orchestrator](./images/aocj70.png)
+
+You should then see this. Click **send**.
+
+![Agent Orchestrator](./images/aocj70a.png)
 
 Review the journey conflict information.
 
@@ -356,15 +401,7 @@ Scroll down to find more journey conflict details.
 
 ## 1.1.1.11 Experiments
 
-Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-You should then see this. Make sure you're in the org **Experience Platform International**.
-
 Enter the following **Prompt** and click the **send** button.
-
->[!NOTE]
->
->Please verify that the context of the assistant is pointing to the sandbox **Accelerate** and the dataview **Accelerate 2026 B2C**
 
 ```javascript
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
@@ -376,13 +413,19 @@ You should then see this:
 
 ![Agent Orchestrator](./images/aoea1.png)
 
-Click the suggestion to compare the conversion rates of each treatment and then click **send**.
+Scroll down and click one of the suggestions. Click **send**.
+
+>[!NOTE]
+>
+>Suggestions are dynamic so you should expect to see different suggestions each time a response is generated. Your suggestions will likely be different than the suggestions shown in this screenshot.
 
 ![Agent Orchestrator](./images/aoea2.png)
 
-You should then see a detailed comparison like this:
+You should then see a detailed answer related to the suggestion that was chosen.
 
 ![Agent Orchestrator](./images/aoea4.png)
+
+You've now completed this lab.
 
 Go Back to [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
