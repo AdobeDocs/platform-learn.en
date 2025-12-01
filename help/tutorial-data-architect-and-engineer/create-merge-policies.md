@@ -77,7 +77,7 @@ Let's see if the merge policy is doing what we would expect:
 1. Go to the **[!UICONTROL Browse]** tab
 1. Change the **[!UICONTROL Merge policy]** to your new `Loyalty Prioritized` policy
 1. As the **[!UICONTROL Identity namespace]**, use your `Luma CRM Id`
-1. As the **[!UICONTROL Identity value]** use `112ca06ed53d3db37e4cea49cc45b71e`
+1. As the **[!UICONTROL Identity value]** use `b642b4217b34b1e8d3bd915fc65c4452`
 1. Select the **[!UICONTROL Show profile]** button
 1. `Daniel` is back!
 
@@ -104,7 +104,7 @@ Now let's look at what this merge policy does:
 1. Go to the **[!UICONTROL Browse]** tab
 1. Change the **[!UICONTROL Merge policy]** to your new `Loyalty Only` policy
 1. As the **[!UICONTROL Identity namespace]**, use your `Luma CRM Id`
-1. As the **[!UICONTROL Identity value]** use `112ca06ed53d3db37e4cea49cc45b71e`
+1. As the **[!UICONTROL Identity value]** use `b642b4217b34b1e8d3bd915fc65c4452`
 1. Select the **[!UICONTROL Show profile]** button
 1. Confirm that no profiles are found:
     ![Loyalty Only no CRM Id lookup.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)

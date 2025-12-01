@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 9837c076-e6ca-47a0-96b9-5fa5fdba3fd2
 ---
 # 1.3.4 Create Email Experience for AJO
 

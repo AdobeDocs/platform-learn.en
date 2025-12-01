@@ -4,6 +4,7 @@ description: Experience Decisioning - Summary
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
+exl-id: 6df04e3c-087d-4ac2-a61c-19a45e0e8054
 ---
 # Summary & benefits
 

@@ -17,16 +17,62 @@ Data Collection is the next generation of website tag and mobile SDK management 
 
 <div id="staff-picks-section">
 
+## Implementation Guides
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+      <img alt="Implement Adobe Experience Cloud with Web SDK" src="assets/thumb_websdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+    <strong>Implement the Experience Cloud with Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>Use tags to implement Platform Web SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <img alt="Implement in mobile apps" src="assets/thumb_swift.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <strong>Implement the Experience Cloud in mobile apps</strong>
+    </a>
+    </div>
+    <p>
+    <em>Use tags to implement Platform Mobile SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <img alt="Migrate Target to Web SDK" src="assets/thumb_legacy.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <strong>Implement legacy libraries with tags</strong>
+    </a>
+    </div>
+    <p>
+    <em>Use tags to implement legacy Analytics, Target, and Audience Manager libraries</em>
+    <p>
+  </td>
+</tr>
+</table>
+
 ## Migration Guides
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrate Target to Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migrate Adobe Target to Web SDK</strong>
     </a>
     </div>
@@ -58,52 +104,25 @@ Data Collection is the next generation of website tag and mobile SDK management 
     <p>
   </td>
 </tr>
-</table>
-
-## Implementation Guides
-
-<table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
-      <img alt="Implement Adobe Experience Cloud with Web SDK" src="assets/thumb_websdk.png" />
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+      <img alt="Migrate Target to Mobile SDK on Edge Network" src="assets/thumb_targetMobileSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
-    <strong>Implement the Experience Cloud with Web SDK</strong>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+    <strong>Migrate Adobe Target to Mobile SDK on Edge Network</strong>
     </a>
     </div>
     <p>
-    <em>Use tags to implement Platform Web SDK</em>
+    <em>Replace the Target extension with the Offer Decisioning and Target extension</em>
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
-      <img alt="Implement in mobile apps" src="assets/thumb_swift.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
-    <strong>Implement the Experience Cloud in mobile apps</strong>
-    </a>
-    </div>
-    <p>
-    <em>Use tags to implement Platform Mobile SDK</em>
-    <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-      <img alt="Migrate Target to Web SDK" src="assets/thumb_legacy.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-    <strong>Implement legacy libraries with tags</strong>
-    </a>
-    </div>
-    <p>
-    <em>Use tags to implement legacy Analytics, Target, and Audience Manager libraries</em>
-    <p>
   </td>
-</tr>
+  </tr>
 </table>
 
 </div>

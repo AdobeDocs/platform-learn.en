@@ -3,6 +3,7 @@ title: Connect ACCS to AEM Sites CS/EDS Storefront
 description: Connect ACCS to AEM Sites CS/EDS Storefront
 kt: 5342
 doc-type: tutorial
+exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
 ---
 # 1.5.2 Connect ACCS to AEM Sites CS/EDS Storefront
 

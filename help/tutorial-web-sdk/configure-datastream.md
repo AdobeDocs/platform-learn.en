@@ -33,7 +33,7 @@ Now, you can create a datastream to tell Platform Edge Network where to send dat
 
 **To create a datastream:**
 
-1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
+1. Open the [Data Collection interface](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Make sure you are in the correct sandbox 
 
    >[!NOTE]
@@ -69,8 +69,6 @@ Datastream configuration override is a two-step process:
 In the [Set up Adobe Analytics](setup-analytics.md) lesson, you override the report suite for a page using the Platform Web SDK Send Event Action.
 
 You are now ready to install the Platform Web SDK extension in your tag property!
-
-[Next: **Install Platform Web SDK extension in tags**](install-web-sdk.md)
 
 >[!NOTE]
 >

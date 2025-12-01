@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 59ea2c5f-e8ec-4e9b-a2ab-2159174b040e
 ---
 # 3.1.1 Getting started with Content Analytics
 

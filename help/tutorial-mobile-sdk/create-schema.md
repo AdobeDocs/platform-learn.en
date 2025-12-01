@@ -19,11 +19,11 @@ Experience Platform uses schemas to describe the structure of data in a consiste
 
 Before data can be ingested into Platform, a schema must be composed to describe the data's structure and provide constraints to the type of data that can be contained within each field. Schemas consist of a base class and zero or more schema field groups. 
 
-For more information on the schema composition model, including design principles, and best practices, see the [basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) or the playlist [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
+For more information on the schema composition model, including design principles, and best practices, see the [basics of schema composition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) or the playlist [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
 
 >[!TIP]
 >
->If you're familiar with Analytics Solution Design Reference (SDRs), you can think of a schema as a more robust SDR. See [Create and maintain a Solution Design Reference (SDR) Document](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=en) for more information.
+>If you're familiar with Analytics Solution Design Reference (SDRs), you can think of a schema as a more robust SDR. See [Create and maintain a Solution Design Reference (SDR) Document](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) for more information.
 
 ## Prerequisites
 
@@ -47,16 +47,16 @@ In this lesson, you will:
 
 1. Select **[!UICONTROL Data Collection]** from the menu.
 
-    ![Login to Experience Cloud](assets/experiencecloud-login.png)
+    ![Login to Experience Cloud](assets/experiencecloud-login.png){zoomable="yes"}
 
     >[!NOTE]
     >
     > Customers of Platform-based applications like Real-Time CDP should use a development sandbox for this tutorial. Other customers use the default production sandbox.
 
 
-1. Select **[!UICONTROL Schemas]** under **[!UICONTROL Data Management]** in the left rail.
+1. Select ![Schemas](/help/assets/icons/Schemas.svg) **[!UICONTROL Schemas]** under **[!UICONTROL Data management]** in the left rail.
 
-    ![tags home screen](assets/mobile-schema-navigate.png)
+    ![tags home screen](assets/mobile-schema-navigate.png){zoomable="yes"}
 
 You are now on the main schemas page and are presented with a list of any existing schemas. You can also see tabs corresponding to the core building blocks of a schema:
 
@@ -64,13 +64,13 @@ You are now on the main schemas page and are presented with a list of any existi
 * **Classes** define the behavioral aspects of the data that the schema contains. For example: `XDM ExperienceEvent` captures time-series, event data and `XDM Individual Profile` captures attribute data about an individual.
 * **Data types** are used as reference field types in classes or field groups in the same way as basic literal fields.
 
-The above descriptions are a high-level overview. For more details, see the [Schema building blocks](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html) video or read [Basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) in the product documentation.
+The above descriptions are a high-level overview. For more details, see the [Schema building blocks](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/schemas/schema-building-blocks) video or read [Basics of schema composition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) in the product documentation.
 
 In this tutorial, you use the Consumer Experience Event field group and create a custom one to demonstrate the process. 
 
 >[!NOTE]
 >
->Adobe continues to add more standard field groups and they should be used whenever possible since these fields are implicitly understood by Experience Platform services and provide greater consistency when used across Platform components. Using standard field groups provides tangible benefits such automatic mapping in Analytics and AI features in Platform.
+>Adobe continues to add more standard field groups and they should be used whenever possible. These fields are implicitly understood by Experience Platform services and provide greater consistency when used across Platform components. The use of standard field groups provides tangible benefits such as automatic mapping in Analytics and AI features in Platform.
 
 ## Luma app schema architecture
 
@@ -89,13 +89,17 @@ For learning purposes, you use prebuilt and custom field groups.
 
 ## Create a schema 
 
-1. Select **[!UICONTROL Create Schema]**.
+1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create Schema]**.
+
+1. In the **[!UICONTROL Create a schema]** dialog, select **[!UICONTROL Manual]**. Use **[!UICONTROL Select]** to continue.
+
+   ![Schema manual](assets/schema-manual.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Select a class]** step of the **[!UICONTROL Create schema]** wizard, select **[!UICONTROL Experience Event]** underneath **[!UICONTROL Select a base class for this schema]**.
 
 1. Select **[!UICONTROL Next]**.
     
-    ![Schema Wizard base class](assets/schema-wizard-base-class.png)
+    ![Schema Wizard base class](assets/schema-wizard-base-class.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Name and review]** step of the **[!UICONTROL Create schema]** wizard, enter a **[!UICONTROL Schema display name]**, for example `Luma Mobile Event Schema` and a [!UICONTROL Description], for example `Schema for Luma mobile app experience events`.
 
@@ -105,12 +109,12 @@ For learning purposes, you use prebuilt and custom field groups.
 
 1. Select **[!UICONTROL Finish]** to finish the wizard.
 
-    ![Schema name and review](assets/schema-wizard-name-and-review.png)
+    ![Schema name and review](assets/schema-wizard-name-and-review.png){zoomable="yes"}
 
 
 1. Select ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add** next to **[!UICONTROL Field groups]**.
 
-   ![Add field group](assets/add-field-group.png)
+   ![Add field group](assets/add-field-group.png){zoomable="yes"}
 
 1. Search for `Consumer Experience Event`.
 
@@ -120,11 +124,12 @@ For learning purposes, you use prebuilt and custom field groups.
 
 1. Select **[!UICONTROL Add field groups]**.
 
-    ![Selecting field group](assets/schema-select-field-groups.png)
+    ![Selecting field group](assets/schema-select-field-groups.png){zoomable="yes"}
 
     You are brought back to the main schema composition screen where you can see all the available fields.
 
 1. Select **[!UICONTROL Save]**.
+1. Select ![Schemas](/help/assets/icons/Schemas.svg) **[!UICONTROL Schemas]** under **[!UICONTROL Data management]** to return to the main **[!UICONTROL Schemas]** interface.
 
 >[!NOTE]
 >
@@ -133,6 +138,7 @@ For learning purposes, you use prebuilt and custom field groups.
 The [!UICONTROL Consumer Experience Event] field group has a data type called [!UICONTROL Web information], which describes events like page view and link clicks. At the time of writing, there isn't a mobile app parity to this feature, so you are going to create your own. 
 
 ## Create a custom data type
+
 
 You begin by creating a custom data type describing the two events:
 
@@ -143,15 +149,15 @@ You begin by creating a custom data type describing the two events:
 
 1. Select **[!UICONTROL Create data type]**.
 
-    ![Selecting data type menu](assets/schema-datatype-create.png)
+    ![Selecting data type menu](assets/schema-datatype-create.png){zoomable="yes"}
 
 1. Provide a **[!UICONTROL Display name]** and **[!UICONTROL Description]**, for example `App Information` and `Custom data type describing "Screen Views" & "App Actions"`
 
-    ![Providing name & description](assets/schema-datatype-name.png)
+    ![Providing name & description](assets/schema-datatype-name.png){zoomable="yes"}
 
     >[!TIP]
     >
-    > Always use readable, descriptive [!UICONTROL display names] for your custom fields, as this practice makes them more accessible to marketers when the fields surface in downstream services like the segment builder.
+    > Always use readable, descriptive [!UICONTROL display names] for your custom fields. This practice makes custom fields more accessible to marketers when the fields surface in downstream services like the segment builder.
 
 
 1. To add a field, select the ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) button. 
@@ -161,7 +167,7 @@ You begin by creating a custom data type describing the two events:
 
 1. Select **[!UICONTROL Apply]**.
 
-    ![Adding new app action event](assets/schema-datatype-app-action.png)
+    ![Adding new app action event](assets/schema-datatype-app-action.png){zoomable="yes"}
 
 1. To measure how often an action has occurred, add a field by selecting the ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) button next to the **[!UICONTROL appInteraction]** object you created. 
 
@@ -171,7 +177,7 @@ You begin by creating a custom data type describing the two events:
 
 1. Select **[!UICONTROL Apply]**.
 
-    ![Adding action name field](assets/schema-datatype-action-name.png)
+    ![Adding action name field](assets/schema-datatype-action-name.png){zoomable="yes"}
 
 1. Add a field describing the type of interaction by selecting the ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) button next to the **[!UICONTROL appInteraction]** object. 
 
@@ -179,7 +185,7 @@ You begin by creating a custom data type describing the two events:
 
     This step is the equivalent of a dimension in Adobe Analytics. 
 
-    ![Selecting apply](assets/schema-datatype-apply.png)
+    ![Selecting apply](assets/schema-datatype-apply.png){zoomable="yes"}
 
 1. Scroll to the bottom of the right rail and select **[!UICONTROL Apply]**.
 
@@ -187,17 +193,17 @@ You begin by creating a custom data type describing the two events:
 
 1. Select **[!UICONTROL Save]**.
 
-    ![Final state of data type](assets/schema-datatype-final.png)
+    ![Final state of data type](assets/schema-datatype-final.png){zoomable="yes"}
 
 ## Add a custom field group
 
-Now add a custom field group using your custom data type:
+Now, add a custom field group using your custom data type:
 
 1. Open the schema that you created earlier in this lesson.
 
 1. Select ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to **[!UICONTROL Field groups]**.
 
-    ![Adding new field group](assets/schema-fieldgroup-add.png)
+    ![Adding new field group](assets/schema-fieldgroup-add.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Create new field group]**.
 
@@ -205,7 +211,7 @@ Now add a custom field group using your custom data type:
 
 1. Select **Add field groups**.
 
-    ![Providing name & description](assets/schema-fieldgroup-name.png)
+    ![Providing name & description](assets/schema-fieldgroup-name.png){zoomable="yes"}
 
 1. From the main composition screen, select **[!UICONTROL App Interactions**].
 
@@ -219,7 +225,7 @@ Now add a custom field group using your custom data type:
 
 1. Select **[!UICONTROL Save]**.
 
-    ![Selecting apply](assets/schema-fieldgroup-apply.png)
+    ![Selecting apply](assets/schema-fieldgroup-apply.png){zoomable="yes"}
 
 >[!NOTE]
 >

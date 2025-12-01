@@ -103,7 +103,7 @@ These steps are more or less the same as what you did in the [Debugger lesson](v
 
    ![Your Launch development environment shown in Debugger](assets/experience-platform-debugger-dev.png)
 
-1. Log into the Luma site using the credentials `test@adobe.com`/`test`
+1. Log into the Luma site using the credentials `test@test.com`/`test`
 
 1. Return to the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html)
 
@@ -225,7 +225,7 @@ First you must generate more sample data. Repeat the steps from earlier in this 
 1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in the left-navigation
 
 1. As the **[!UICONTROL Identity namespace]** use `lumaCRMId`
-1. Copy & paste the value of the `lumaCRMId` passed in the call that you inspected in the Experience Platform Debugger, in this case `112ca06ed53d3db37e4cea49cc45b71e`.
+1. Copy & paste the value of the `lumaCRMId` passed in the call that you inspected in the Experience Platform Debugger, in this case `b642b4217b34b1e8d3bd915fc65c4452`.
 
     ![Profile](assets/experience-platform-validate-dataset-profile.png)
 
@@ -246,11 +246,15 @@ First you must generate more sample data. Repeat the steps from earlier in this 
 
 You have now enabled Platform Web SDK for Experience Platform (And Real-Time CDP! And Journey Optimizer! And Customer Journey Analytics!).
 
+## Create an Edge-evaluated audience
+
+Completion of this exercise is recommended for customers of Real-Time Customer Data Platform and Journey Optimizer. 
+
+When Web SDK data is ingested into Adobe Experience Platform, it can be enriched by other data sources you have ingested into Platform. For example, when a user logs into the Luma site, an identity graph is constructed in Experience Platform and all other profile-enabled datasets can potentially be joined together to build Real-Time Customer Profiles. To see this in action, you will quickly create another dataset in Adobe Experience Platform with some sample loyalty data so that you can use Real-Time Customer Profiles with Real-Time Customer Data Platform and Journey Optimizer. You will then build an audience based on this data.
+
 ### Create a Loyalty schema and ingest sample data
 
-Completion of this exercise is expected for customers of Real-Time Customer Data Platform and Journey Optimizer. 
-
-When Web SDK data is ingested into Adobe Experience Platform, it can be enriched by other data sources you have ingested into Platform. For example, when a user logs into the Luma site, an identity graph is constructed in Experience Platform and all other profile-enabled datasets can potentially be joined together to build Real-Time Customer Profiles. To see this in action, quickly create another dataset in Adobe Experience Platform with some sample loyalty data so that you can use Real-Time Customer Profiles with Real-Time Customer Data Platform and Journey Optimizer. Since you have already done similar exercises, the instructions will be brief.
+Since you have already done similar exercises, the instructions will be brief.
 
 Create the loyalty schema:
 
@@ -276,9 +280,33 @@ To create the dataset and ingest the sample data:
    
     ![Loyalty schema](assets/web-channel-loyalty-dataset.png)
 
+
+### Set an Active-on-Edge Merge Policy
+
+All audiences are created with a merge policy. Merge policies create different "views" of a profile, can contain a subset of datasets, and prescribe a priority order when different datasets contribute the same profile attributes. To be evaluated on the edge, an audience must use a merge policy with has the **[!UICONTROL Active-On-Edge Merge Policy]** setting.
+
+
+>[!IMPORTANT]
+>
+>Only one merge policy per sandbox can have the **[!UICONTROL Active-On-Edge Merge Policy]** setting
+
+
+1. Open the Experience Platform or Journey Optimizer interface and make sure you are in the development environment you are using for the tutorial.
+1. Navigate to **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** page
+1. Open the **[!UICONTROL Default Merge Policy]** (probably named `Default Timebased`)
+   ![Create an audience](assets/merge-policy-open-default.png)
+1. Enable the **[!UICONTROL Active-On-Edge Merge Policy]** setting
+1. Select **[!UICONTROL Next]**
+
+   ![Create an audience](assets/merge-policy-set-active-on-edge.png)
+1. Keep selecting **[!UICONTROL Next]** to continue through the other steps of the workflow and select **[!UICONTROL Finish]** to save your settings
+   ![Create an audience](assets/merge-policy-finish.png)
+
+You are now able to create audiences which will evaluate on the Edge.
+
 ### Create an audience
 
-Audiences group profiles together around common traits. Build a quick audience you can use in your web campaign:
+Audiences group profiles together around common traits. Build a simple audience you can use in in Real-Time CDP or Journey Optimizer:
 
 1. In the Experience Platform or Journey Optimizer interface, go to **[!UICONTROL Customer]** > **[!UICONTROL Audiences]** in the left navigation
 1. Select **[!UICONTROL Create audience]**
@@ -296,10 +324,13 @@ Audiences group profiles together around common traits. Build a quick audience y
 
    ![Define the audience](assets/web-campaign-define-audience.png)
 
+>[!NOTE]
+>
+> Since we set the default merge policy as **[!UICONTROL Active-On-Edge Merge Policy]** the audience you created is automatically associated with this merge policy.
+
+
 Since this is a very simple audience, we can use the Edge evaluation method. Edge audiences evaluate on the edge, so in the same request made by the Web SDK to Platform Edge Network, we can evaluate the audience definition and confirm immediately if the user will qualify.
 
-
-[Next: **Set up Adobe Analytics**](setup-analytics.md)
 
 >[!NOTE]
 >

@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
 ---
 # 1.6.3 Create and deploy your external DAM app
 

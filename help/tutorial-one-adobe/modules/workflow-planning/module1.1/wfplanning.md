@@ -3,6 +3,7 @@ title: Adobe Workfront Planning
 description: Adobe Workfront Planning
 kt: 5342
 doc-type: tutorial
+exl-id: 08ed2cca-4670-4038-b2f0-aa7adb3fc2bf
 ---
 # 1.1 Adobe Workfront Planning
 
