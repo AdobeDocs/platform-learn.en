@@ -16,10 +16,6 @@ In this module, the agent you created before will start to work together with va
 
 ## Exercises
 
-[1.1.1 Getting started with Agent Collaboration](./ex1.md){target="_blank"}
-
-In this exercise, ...
-
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
