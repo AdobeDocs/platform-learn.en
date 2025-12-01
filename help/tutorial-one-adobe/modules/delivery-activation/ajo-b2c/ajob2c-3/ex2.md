@@ -3,6 +3,7 @@ title: Configure a journey with push messages
 description: Configure a journey with push messages
 kt: 5342
 doc-type: tutorial
+exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
 ---
 # 3.3.2 Configure a journey with push messages
 

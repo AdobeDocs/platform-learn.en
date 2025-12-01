@@ -102,7 +102,7 @@ You can use the Debugger to validate client-side beacons triggered from your Pla
 
 You can also validate the Identity Map details:
 
-1. Log in to the Luma site using the credentials `test@adobe.com`/`test`
+1. Log in to the Luma site using the credentials `test@test.com`/`test`
 
 1. Return to the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html)
 
@@ -158,8 +158,6 @@ To enable Edge Trace:
     ![Analytics beacon Edge Trace](assets/validate-edge-trace.png)
 
 At this point, you are not able to view any Platform Edge Network requests going to Adobe applications because you have not enabled any in the datastream. In future lessons, you use Edge Trace to view the outgoing server-side requests to Adobe applications and event forwarding. But first, learn about another tool to validate server-side requests made by Platform Edge Network&mdash;Adobe Experience Platform Assurance!
-
-[Next: **Validate with Assurance**](validate-with-assurance.md)
 
 >[!NOTE]
 >

@@ -19,7 +19,7 @@ The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.
 
 >[!NOTE]
 >
-> For demonstration purposes, the exercises in this lesson have you capture the identity details of a fictional customer logged into the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html) using the credentials, **user: `test@adobe.com` / password: test**. 
+> For demonstration purposes, the exercises in this lesson have you capture the identity details of a fictional customer logged into the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html) using the credentials, **user: `test@test.com` / password: test**. 
 
 ## Learning objectives
 
@@ -51,7 +51,7 @@ Before you begin the exercises, watch this short video to learn more about ident
 
 Now, create a namespace for the Luma CRM ID:
 
-1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
+1. Open the [Data Collection interface](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Select the sandbox that you are using for the tutorial
 
    >[!NOTE]
@@ -89,8 +89,6 @@ Now, create a namespace for the Luma CRM ID:
 > In the [Create Identities](create-identities.md) lesson, you will learn how to use this namespace when sending identities to Platform Edge Network. 
 
 Now that identities are in place, the datastream can be configured.
-
-[Next: **Configure a datastream**](configure-datastream.md)
 
 >[!NOTE]
 >

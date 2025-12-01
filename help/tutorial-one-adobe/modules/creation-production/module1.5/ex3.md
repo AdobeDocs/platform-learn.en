@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 517d8af4-aa27-45ed-84ae-44795dbf7f8f
 ---
 # 1.5.3 Frame.io and Premiere Pro
 

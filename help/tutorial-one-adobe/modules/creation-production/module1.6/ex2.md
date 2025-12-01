@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 044677e4-7ca3-4dfe-9067-640983681ea7
 ---
 # 1.6.2 Create your AWS S3 bucket
 

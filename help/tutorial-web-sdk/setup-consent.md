@@ -216,8 +216,6 @@ For more information on consent in Web SDK, see [Supporting customer consent pre
 
 For more information on the [!UICONTROL Set consent] action, see [Set consent](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
-[Next: **Set up Event Forwarding**](setup-event-forwarding.md)
-
 >[!NOTE]
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

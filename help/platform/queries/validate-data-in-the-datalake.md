@@ -6,6 +6,7 @@ role: Data Engineer, Data Architect, Developer, Architect
 level: Intermediate
 last-substantial-update: 2023-07-26
 jira: KT-11948
+hide: yes
 exl-id: c6eb04c7-4f0d-4547-bc43-436278e1770f
 ---
 # Validate data in the datalake

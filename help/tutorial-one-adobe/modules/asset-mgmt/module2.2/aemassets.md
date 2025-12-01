@@ -3,6 +3,7 @@ title: Adobe Experience Manager Assets
 description: Adobe Experience Manager Assets
 kt: 5342
 doc-type: tutorial
+exl-id: 89d1fa65-0a1e-4565-b4c2-a12fc9d6dad9
 ---
 # 1.2 Adobe Experience Manager Assets
 

@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
 ---
 # 1.3.3 Campaign Activation to Meta
 

@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
 ---
 # 1.3 GenStudio for Performance Marketing
 

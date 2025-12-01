@@ -3,6 +3,7 @@ title: Offer Decisioning - Test your Decision
 description: Offer Decisioning - Test your Decision
 kt: 5342
 doc-type: tutorial
+exl-id: 8cfe3d33-9451-46f4-b468-b93cd37d0806
 ---
 # 3.7.3 Web SDK setup for Experience Decisioning
 

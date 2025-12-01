@@ -28,9 +28,9 @@ Adobe Experience Platform Web SDK is a client-side JavaScript library that allow
 
 Some of the benefits of the Platform Web SDK compared to the standalone at.js library include:
 
-* Faster sharing of audiences from [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
-* Integrating Target with Journey Optimizer to support [Offer Decisioning delivery](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
-* Ability to use [first-party ids](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html) to generate the ECID for longer duration visitor identification
+* Faster sharing of audiences from [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+* Integrating Target with Journey Optimizer to support [Offer Decisioning delivery](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
+* Ability to use [first-party ids](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) to generate the ECID for longer duration visitor identification
 * A smaller footprint for improved page speed metrics
 * Additional implementation flexibility for developers
 

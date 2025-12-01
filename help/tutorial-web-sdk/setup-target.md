@@ -334,7 +334,7 @@ Now that you have configured the Platform Web SDK to request content for the `ho
          if (proposition.scope === "homepage-hero") {
             heroProposition = proposition;
             break;
-         }xw
+         }
       }
    }
    // Send a "display" event
@@ -522,7 +522,7 @@ To create the analytics-on-bottom request:
 
 Now that the rules are updated, you can validate if the data is being passed correctly using the Adobe Debugger.
 
-1. Navigate to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and login with the email `test@adobe.com` and password `test`
+1. Navigate to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and login with the email `test@test.com` and password `test`
 1. Navigate to a product details page
 1. Open the Adobe Experience Platform debugger browser extension and [switch the tag property to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Reload the page
@@ -588,8 +588,6 @@ Additionally, you can use Assurance where appropriate to confirm Target decision
 This confirms that the A4T information that was queued for later transmission when we made the target decisioning call was sent properly when the analytics tracking call fired later on the page.
 
 Now that you have completed this lesson you should have a working implementation of Adobe Target using the Platform Web SDK.
-
-[Next: **Set up Journey Optimizer web channel**](setup-web-channel.md)
 
 >[!NOTE]
 >

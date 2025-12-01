@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 42f69ae8-114a-4195-b343-c143638d9d34
 ---
 # 3.7 Adobe Journey Optimizer: Experience Decisioning
 

@@ -35,7 +35,7 @@ If you are new to Platform Web SDK, don't worry - the items below are covered in
 | QA URLs | Supported | Supported |
 | Mbox 3rd party IDs | Supported | Supported |
 | Customer attributes | Supported | Supported |
-| Remote offers | Supported | Supported |
+| Remote offers | Supported | Partially supported. Dynamic remote offers are not supported. |
 | Redirect offers | Supported | Supported. However, a redirect from a page with Platform Web SDK to a page with at.js (and in the opposite direction) is not supported. |
 | On-Device Decisioning | Supported | Not currently supported |
 | Prefetch Mboxes | Supported for custom scopes and SPA VEC | Prefetch is the default mode for Web SDK |

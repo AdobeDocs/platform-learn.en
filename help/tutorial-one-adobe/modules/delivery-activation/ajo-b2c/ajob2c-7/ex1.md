@@ -4,6 +4,7 @@ description: Experience Decisioning - Experience Decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
+exl-id: 89fd2293-f8cc-4a0b-a200-d1ebecbd1cfb
 ---
 # 3.7.1 Experience Decisioning 101
 

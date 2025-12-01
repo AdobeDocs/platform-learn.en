@@ -21,14 +21,14 @@ role: Developer, Data Engineer
   + [Build rules](tags/build-rules.md)
   + [Stack rules](tags/stack-rules.md)
   + [Build and publish a library](tags/build-and-publish-a-library.md)
-  + [Implement in websites with Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
+  + [Implement in websites with Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
   + [Implement in websites with solution SDKs](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
-  + [Implement in mobile apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
+  + [Implement in mobile apps](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 + Web SDK{#web-sdk}
   + [Overview](web-sdk/overview.md)
   + [Demo](web-sdk/demo.md)
-  + [Implementation tutorial (with tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
-  + [Migrate Target tutorial](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
+  + [Implementation tutorial (with tags)](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
+  + [Migrate Target tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
   + [Migrate Analytics tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
   + Consent{#consent}
     + [Overview](web-sdk/consent/overview.md)
@@ -40,7 +40,9 @@ role: Developer, Data Engineer
   + [Overview](mobile-sdk/overview.md)
   + [Create mobile properties](mobile-sdk/create-mobile-properties.md)
   + [Use dependency managers](mobile-sdk/use-dependency-managers.md)
-  + [Implement in mobile apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
+  + [Implement in mobile apps](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+
+  + [Migrate Target tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + Server API{#server-api}
   + [Overview](server-api/overview.md)
   + [Basics of APIs](server-api/introduction.md)

@@ -3,6 +3,7 @@ title: AJO and GenStudio for Performance Marketing
 description: AJO and GenStudio for Performance Marketing
 kt: 5342
 doc-type: tutorial
+exl-id: 1424f649-d004-4b14-b8af-927ca1d47de5
 ---
 # 3.6.3 AJO and GenStudio for Performance Marketing
 

@@ -412,7 +412,14 @@ Now that we have captured the CRM Id value, we must associate it with a special 
 
 1. As the **[!UICONTROL ID]**, select the icon to open the data element selection modal and choose your `CRM Id` data element
 1. As the **[!UICONTROL Authenticated State]**, select **[!UICONTROL Authenticated]**
-1. Leave **[!UICONTROL Primary]** _unchecked_. Since the CRM Id is not present for most visitors to the Luma website, you definitely _do not want to override the ECID as the primary identifier_. It would be a rare use case to use anything other than the ECID as the primary identifier. Usually I don't mention the default settings in these instructions, but I am calling this one out to help you avoid headaches later on in your own implementation.
+1. Check **[!UICONTROL Primary]**
+
+    >[!TIP]
+    >
+    > Adobe recommends sending identities that represent a person, such as `Luma CRM Id`, as the [!UICONTROL primary] identity.
+    >
+    > If the identity map contains the person identifier (for example, `Luma CRM Id`), then the person identifier becomes the [!UICONTROL primary] identity. Otherwise, `ECID` becomes the [!UICONTROL primary] identity.
+
 1. Select the **[!UICONTROL Save to Library]** button (`Luma Platform Tutorial` should still be your working library)
     ![Add the CRM Id to the Identity Map data element](assets/websdk-property-dataElement-identityMap.png)
 
@@ -438,7 +445,7 @@ To validate that the CRM Id is now being sent by the Web SDK:
 1. Open the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html)
 1. Map it to your tag property using the Debugger, as per the earlier instructions
 1. Select the **Login** link on the top right of the Luma website
-1. Log in using the credentials `test@adobe.com`/`test`
+1. Log in using the credentials `test@test.com`/`test`
 1. Once authenticated, inspect the Experience Platform Web SDK call in the Debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Network Requests]** > **[!UICONTROL events]** of the most recent request) and you should see the `lumaCrmId`:
     ![Validate the identity in the Debugger](assets/websdk-debugger-confirmIdentity.png)
 1. Look up the user profile using the ECID namespace and value again. In the profile, you will see the CRM Id and also the Loyalty Id and the profile details like the name and phone number. All identities and data have been stitched together into a single, real-time customer profile!

@@ -29,7 +29,7 @@ First you must have a tag property. A property is a container for all the JavaSc
 
 Create a new tag property for the tutorial:
 
-1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
+1. Open the [Data Collection interface](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Select **[!UICONTROL Tags]** in the left navigation
 1. Select the **[!UICONTROL New Property]** button
     ![Add a new property](assets/websdk-property-addNewProperty.png)
@@ -76,8 +76,6 @@ For more information on each section of the extension, see [Configure the Adobe 
 >During this tutorial, you configure just one datastream and associate it with all tag environments (development, stage, and production). When you implement Platform Web SDK on your own website, you should configure a separate datastream for each environment and map them accordingly in the extension configuration. 
 
 Now that you have installed Platform Web SDK and associated it with the datastream, you are ready to start collecting data.
-
-[Next: **Create data elements**](create-data-elements.md)
 
 >[!NOTE]
 >

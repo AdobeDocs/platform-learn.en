@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer Content Management
 description: Adobe Journey Optimizer Content Management
 kt: 5342
 doc-type: tutorial
+exl-id: 43161ace-b2bc-418c-8f2b-a8fe0e3d0ebf
 ---
 # 3.6 Adobe Journey Optimizer: Content Management 
 
