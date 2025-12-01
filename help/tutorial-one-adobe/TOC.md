@@ -273,3 +273,6 @@ recommendations: noDisplay,noCatalog
   + 1.3 Agent Collaboration {#agents3}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
     + [1.3.1 Getting started with Agent Collaboration](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
+  + 1.4 Brand Concierge {#agents4}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
+    + [1.4.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)

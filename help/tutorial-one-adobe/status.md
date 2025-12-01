@@ -76,9 +76,10 @@ Below is an overview of the status of the content in this tutorial.
 
 | Name                   | Last Update | Working 100% | Remarks | Time Investment |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"}      | 25/11/2025        | No | Work In Progress | TBD |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"}      | 25/11/2025        | Yes | - | 30min |
 | [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"}      | 25/11/2025        | No | Work In Progress | TBD |
 | [1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md){target="_blank"}      | 25/11/2025       | No | Work In Progress | TBD |
+| [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"}      | 25/11/2025       | No | Work In Progress | TBD |
 
 {style="table-layout:auto"}
 
