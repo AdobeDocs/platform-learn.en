@@ -17,10 +17,6 @@ In this module, you will create your own agent and explore the various architect
 
 ## Exercises
 
-[1.1.1 Getting started with Agentic AI](./ex1.md){target="_blank"}
-
-In this exercise, ...
-
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
