@@ -10,7 +10,7 @@ doc-type: tutorial
 >
 >This exercise is being worked on and isn't finished yet.
 
-### Data Collection Tags property
+## Data Collection Tags property
 
 Brand Concierge needs to send data to Adobe Experience Platform. To do that, Web SDK (or alloy.js) needs to be deployed to your website. 
 

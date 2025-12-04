@@ -14,6 +14,118 @@ doc-type: tutorial
 
 In order for Brand Concierge to appear on your website, you need to create a new custom block that needs to be added to a new page, and you'll need to ensure that your new page is added to the navigation of your website.
 
+You now need to configure the following things in this order:
+
+- Create a new custom block that will be used to load Brand Concierge on your website.
+- Create a new page on your website for Brand Concierge.
+- Link the newly created custom block on the newly created Brand Concierge page.
+- Add a reference to navigate to the newly created Brand Concierge page in your website's navigation header file.
+
+### Create new custom block
+
+To create the new custom block, navigate to the GitHub repository that is linked to your website.
+
+![Block](./images/block1.png)
+
+#### component-definition.json
+
+Scroll down until you see the file **component-definition.json** and open it
+
+![Block](./images/block8.png)
+
+Scroll down until you see the **Blocks**. Set your cursor under the closing bracket of the component **Cards**
+
+![Block](./images/block9.png)
+
+Paste this code and enter a comma **,** after the block of code:
+
+```json
+{
+  "title": "FiberOffer",
+  "id": "fiberoffer",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "FiberOffer",
+          "model": "fiberoffer",
+          "offerText": "<p>Fiber will soon be available in your region!</p>",
+          "offerCallToAction": "Get your offer now!",
+          "offerImage": ""
+        }
+      }
+    }
+  }
+}
+```
+
+Save your changes.
+
+![Block](./images/block10.png)
+
+#### component-models.json
+
+In Visual Studio Code, open the file **component-models.json**.
+
+![Block](./images/block11.png)
+
+Scroll down until you see the last item. Set your cursor next to the closing bracket of the last component.
+
+![Block](./images/block12.png)
+
+Enter a comma **,**, then push enter and on the next line, paste this code:
+
+```json
+{
+  "id": "fiberoffer",
+  "fields": [
+     {
+       "component": "richtext",
+       "name": "offerText",
+       "value": "",
+       "label": "Offer Text",
+       "valueType": "string"
+     },
+     {
+       "component": "richtext",
+       "valueType": "string",
+       "name": "offerCallToAction",
+       "label": "Offer CTA",
+       "value": ""
+     },
+     {
+       "component": "reference",
+       "valueType": "string",
+       "name": "offerImage",
+       "label": "Offer Image",
+        "multi": false
+     }
+   ]
+}
+```
+
+Save your changes.
+
+![Block](./images/block13.png)
+
+#### component-filters.json
+
+In Visual Studio Code, open the file **component-filters.json**.
+
+![Block](./images/block14.png)
+
+Under **section**, enter a comma `,` and paste the id of your component `"fiberoffer"` after the current last line.
+
+Save your changes.
+
+![Block](./images/block15.png)
+
+
+### Create new page & link new custom block
+
+### Update navigation header file
+
 ## 1.4.2.2 Configure your website to show Brand Concierge - GitHub
 
 After updating the content using your AEM Author environment, you now need to update some of the code in the GitHub repository that is used for your website.
