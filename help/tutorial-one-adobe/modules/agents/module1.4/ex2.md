@@ -236,7 +236,7 @@ Create a new menu option in the nav menu with the text `Brand Concierge`. Then, 
 
 ![AEMCS](./images/nav1.png)
 
-Enter this for the field **Path or URL** `/content/CitiSignal/brandconcierge.html` and enter `Brand Concierge** for the field **Title**. Click **Save**.
+Enter this for the field **Path or URL** `/content/CitiSignal/brandconcierge.html` and enter `Brand Concierge` for the field **Title**. Click **Save**.
 
 ![AEMCS](./images/nav3.png)
 
