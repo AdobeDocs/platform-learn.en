@@ -205,6 +205,34 @@ You'll then be back here.
 
 ![Brand Concierge](./images/bc25.png)
 
+After 10-20 minutes, the **Status** of both knowledge sources should be **Completed**. Click **Home**.
+
+![Brand Concierge](./images/bc27.png)
+
+You should then see this. Click **+ Connect** on the **Website links** card.
+
+![Brand Concierge](./images/bc28.png)
+
+Select the knowledge source **CitiSignal Website** and click **Save**.
+
+![Brand Concierge](./images/bc29.png)
+
+You should then see this. Click **+ Connect** on the **Product catalog** card.
+
+![Brand Concierge](./images/bc30.png)
+
+Select the knowledge source **CitiSignal Products** and click **Save**.
+
+![Brand Concierge](./images/bc31.png)
+
+You should then see this. Click **Preview** to start interacting with your Brand Concierge.
+
+![Brand Concierge](./images/bc32.png)
+
+You can now start asking questions related to the provided knowledge sources.
+
+![Brand Concierge](./images/bc33.png)
+
 ## 1.4.1.3 AEP onboarding steps
 
 Brand Concierge uses Adobe Experience Platform to store interaction data from conversations. The connection between Brand Concierge and Experience Platform requires a datastream to be configured and used by Brand Concierge.
@@ -236,6 +264,10 @@ Your datastream is now configured. Copy the datastream name and the datastream i
 ### Brand Concierge Configuration Management API
 
 The next step is to enable the Brand Concierge Configuration Management API to configure the datastream that you just created. This is required to resolve things like IMS Org ID and sandbox details during request processing.
+
+This is currently an internal Adobe step that needs to happen. This step is required as otherwise, the setup of the datastream isn't correct for usage by Brand Concierge.
+
+Next Step: [Implement Brand Concierge on your website](./ex2.md){target="_blank"}
 
 Go Back to [Brand Concierge](./brandconcierge.md){target="_blank"}
 

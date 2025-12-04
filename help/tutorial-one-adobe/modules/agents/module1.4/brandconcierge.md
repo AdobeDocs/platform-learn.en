@@ -24,6 +24,10 @@ Learn how to use Adobe Experience Platform Agents and Brand Concierge to:
 
 In this exercise, you'll explore Brand Concierge's abilities.
 
+[1.4.2 Implement Brand Concierge on your website](./ex1.md){target="_blank"}
+
+In this exercise, you'll implement your Brand Concierge instance on your website.
+
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
