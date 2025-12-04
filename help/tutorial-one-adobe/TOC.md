@@ -276,3 +276,4 @@ recommendations: noDisplay,noCatalog
   + 1.4 Brand Concierge {#agents4}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
     + [1.4.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
+    + [1.4.2 Implement Brand Concierge on your website](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
