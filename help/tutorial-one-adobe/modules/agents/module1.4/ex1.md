@@ -6,10 +6,6 @@ doc-type: tutorial
 ---
 # 1.4.1 Getting started with Brand Concierge
 
->[!IMPORTANT]
->
->This exercise is being worked on and isn't finished yet.
-
 ## Video
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
