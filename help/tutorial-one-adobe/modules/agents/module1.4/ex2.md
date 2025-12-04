@@ -33,6 +33,10 @@ Scroll down until you see the file **component-definition.json** and open it
 
 ![Block](./images/block8.png)
 
+Click the **pencl** icon to start editing the file.
+
+![Block](./images/block8a.png)
+
 Scroll down until you see the **Blocks**. Set your cursor under the closing bracket of the component **Cards**
 
 ![Block](./images/block9.png)
@@ -41,32 +45,33 @@ Paste this code and enter a comma **,** after the block of code:
 
 ```json
 {
-  "title": "FiberOffer",
-  "id": "fiberoffer",
+  "title": "BrandConcierge",
+  "id": "brandconcierge",
   "plugins": {
     "xwalk": {
       "page": {
         "resourceType": "core/franklin/components/block/v1/block",
         "template": {
-          "name": "FiberOffer",
-          "model": "fiberoffer",
-          "offerText": "<p>Fiber will soon be available in your region!</p>",
-          "offerCallToAction": "Get your offer now!",
-          "offerImage": ""
+          "name": "BrandConcierge",
+          "model": "brandconcierge"
         }
       }
     }
   }
-}
+},
 ```
 
-Save your changes.
+Click **Commit changes...**.
 
 ![Block](./images/block10.png)
 
+Click **Commit changes**.
+
+![Block](./images/block10a.png)
+
 #### component-models.json
 
-In Visual Studio Code, open the file **component-models.json**.
+Scroll down until you see the file **component-models.json** and click the **pencil** icon to start editing the file.
 
 ![Block](./images/block11.png)
 
@@ -78,53 +83,176 @@ Enter a comma **,**, then push enter and on the next line, paste this code:
 
 ```json
 {
-  "id": "fiberoffer",
-  "fields": [
-     {
-       "component": "richtext",
-       "name": "offerText",
-       "value": "",
-       "label": "Offer Text",
-       "valueType": "string"
-     },
-     {
-       "component": "richtext",
-       "valueType": "string",
-       "name": "offerCallToAction",
-       "label": "Offer CTA",
-       "value": ""
-     },
-     {
-       "component": "reference",
-       "valueType": "string",
-       "name": "offerImage",
-       "label": "Offer Image",
-        "multi": false
-     }
-   ]
+  "id": "brandconcierge",
+  "fields": []
 }
 ```
 
-Save your changes.
+Click **Commit changes...**.
 
 ![Block](./images/block13.png)
 
+Click **Commit changes**.
+
+![Block](./images/block13a.png)
+
 #### component-filters.json
 
-In Visual Studio Code, open the file **component-filters.json**.
+Scroll down until you see the file **component-filters.json** and click the **pencil** icon to start editing the file.
 
 ![Block](./images/block14.png)
 
-Under **section**, enter a comma `,` and paste the id of your component `"fiberoffer"` after the current last line.
+You should then see this.
 
-Save your changes.
+![Block](./images/block14a.png)
+
+Under **section**, enter a comma `,` and paste the id of your component `"brandconcierge"` after the current last line.
+
+Click **Commit changes...**.
 
 ![Block](./images/block15.png)
 
+Click **Commit changes**.
+
+![Block](./images/block15a.png)
+
+#### brandconcierge.css
+
+When creating a block, it's best practice to create a file for the styling of your block, and it should have the same name as your block. you should now create that file, which we will leave empty for now.
+
+Go to the **blocks** folder. Then, click **Add file** and select **Create new file**.
+
+![Block](./images/css1.png)
+
+In the text box, enter `brandconcierge/brandconcierge.css`. The file can remain empty for now. Click **Commit changes...**.
+
+![Block](./images/css2.png)
+
+Click **Commit changes**.
+
+![Block](./images/css3.png)
+
+#### brandconcierge.js
+
+When creating a block, it's best practice to create a file for the javascript related to your block, and it should have the same name as your block.
+
+Click **Add file** and select **Create new file**.
+
+![Block](./images/js1.png)
+
+In the text box, enter `brandconcierge.js`. The file can remain empty for now. Click **Commit changes...**.
+
+```javascript
+export default function decorate(block) {
+  block.setAttribute('id', 'brand-concierge-mount');
+}
+```
+
+![Block](./images/js2.png)
+
+Click **Commit changes**.
+
+![Block](./images/js3.png)
 
 ### Create new page & link new custom block
 
+Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
+
+![AEMCS](./images/aemcs6.png)
+
+Next, click the 3 dots **...** on the **Environments** tab and click **View Details**.
+
+![AEMCS](./images/aemcs9.png)
+
+You'll then see your environment details. Click the URL of your **Author** environment.
+
+>[!NOTE]
+>
+>It is possible that your environment is hibernated. If that is the case, you'll need to de-hibernate your environment first.
+
+![AEMCS](./images/aemcs10.png)
+
+You should then see your AEM Author environment. Go to **Sites**.
+
+![AEMCS](./images/block21.png)
+
+Go to **CitiSignal**. Click **Create** and select **Page**.
+
+![AEMCS](./images/block23.png)
+
+Select **Page** and click **Next**.
+
+![AEMCS](./images/block24.png)
+
+Enter the following values:
+
+- Title: **Brand Concierge**
+- Name: **brandconcierge**
+- Page Title: **Brand Concierge**
+
+Click **Create**.
+
+![AEMCS](./images/block25.png)
+
+Select **Open**.
+
+![AEMCS](./images/block22.png)
+
+You should then see this. 
+
+![AEMCS](./images/block26.png)
+
+Click in the blank area to select the **section** component. Then, click the plus **+** icon in the right menu.
+
+![AEMCS](./images/block27.png)
+
+You should then see your custom block shown in the list of available blocks. Click to select it.
+
+![AEMCS](./images/block28.png)
+
+You should then see an empy block being added to this page. This block will be loaded dynamically using the javacript libraries you'll be adding in the next step.
+
+Click **Publish**.
+
+![AEMCS](./images/block29.png)
+
+Click **Publish** again.
+
+![AEMCS](./images/block30.png)
+
+Your new page is now published, and can now be added to the navigation header in the next step.
+
 ### Update navigation header file
+
+In your AEM Sites overview, go to **CitiSignal** and check the checkbox for the file **Header/nav**. Click **Edit**.
+
+![AEMCS](./images/nav0.png)
+
+Select the **Text** field in the preview screen and then click the **Text** field on the right side of the screen to edit it.
+
+![AEMCS](./images/nav0a.png)
+
+Create a new menu option in the nav menu with the text `Brand Concierge`. Then, select the text **Brand Concierge** and click the **link** icon.
+
+![AEMCS](./images/nav1.png)
+
+Enter this for the field **Path or URL** `/content/CitiSignal/brandconcierge.html` and enter `Brand Concierge** for the field **Title**. Click **Save**.
+
+![AEMCS](./images/nav3.png)
+
+You should then have this. Click **Done**.
+
+![AEMCS](./images/nav4.png)
+
+You should then have this. Click **Publish**.
+
+![AEMCS](./images/nav4a.png)
+
+Click **Publish** again.
+
+![AEMCS](./images/nav5.png)
+
+Your new page is now added to the menu.
 
 ## 1.4.2.2 Configure your website to show Brand Concierge - GitHub
 
