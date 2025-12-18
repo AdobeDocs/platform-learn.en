@@ -115,6 +115,17 @@ These 3 values combined, lead to this new URL that needs to be configured in the
 
 `https://author-p166717-e1786231.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal-aem-accs/main`
 
+You should also verify that these lines of code are also added to the file:
+
+```
+folders:
+  /products/: /products/default
+```
+
+>[!IMPORTANT]
+>
+>You can see these lines of code on lines 6 and 7 in the below image. In case these lines are missing, please add them manually. 
+
 Click **Commit changes...**.
 
 ![AEMCS](./images/aemcs13.png)
