@@ -15,6 +15,12 @@ Learn how to use Adobe Experience Platform Agents and Agent Orchestrator to:
 - Validate journey performance
 - Create a new journey for the CitiSignal Fiber Max rollout
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3477257?quality=12&learn=on)
+
 ## Prerequisites
 
 - Access to Adobe Journey Optimizer and Customer Journey Analytics 
