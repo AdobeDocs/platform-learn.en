@@ -179,7 +179,9 @@ You'll then see your environment details. Click the URL of your **Author** envir
 
 >[!NOTE]
 >
->It is possible that your environment is hibernated. If that is the case, you'll need to de-hibernate your environment first.
+>It is possible that your environment is hibernated. If that is the case, you'll need to de-hibernate your environment first. You can find instructions on how to de-hibernate in the video below.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
 ![AEMCS](./images/aemcs10.png)
 

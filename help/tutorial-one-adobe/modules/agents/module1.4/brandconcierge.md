@@ -12,6 +12,12 @@ Brand Concierge is an AI-powered digital companion that transforms the way brand
 
 Learn how to use Adobe Experience Platform Agents and Brand Concierge to: 
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478139?quality=12&learn=on)
+
 ## Prerequisites
 
 - Access to Adobe Journey Optimizer and Customer Journey Analytics 

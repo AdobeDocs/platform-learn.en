@@ -11,6 +11,12 @@ exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
 
 - Learn how to use Adobe Experience Manager Cloud Service in various ways.
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478142?quality=12&learn=on)
+
 ## Prerequisites
 
 - Access to Cloud Manager 
