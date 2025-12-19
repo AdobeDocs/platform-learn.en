@@ -10,7 +10,10 @@ doc-type: tutorial
 
 Brand Concierge is an AI-powered digital companion that transforms the way brands engage with their website visitors. Unlike generic chatbots, Brand Concierge delivers personalized, conversational experiences tailored to each visitor’s intent. It helps visitors discover products, compare options, get instant answers, and receive guided recommendations in real time. The platform serves both B2C and B2B and it acts as an intelligent extension of your brand on any digital channel, while preserving your brand voice, content integrity, and compliance.
 
-Learn how to use Adobe Experience Platform Agents and Brand Concierge to: 
+In this exercise you'll learn how to:
+
+- Configure your Brand Concierge instance in your Adobe Experience Platform sandbox
+- Implement your Brand Concierge on your AEM CS/EDS website 
 
 ## Video
 
