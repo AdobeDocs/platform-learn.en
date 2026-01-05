@@ -32,10 +32,6 @@ In this module, you'll learn how to perform all of the above steps yourself, and
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
 
->[!NOTE]
->
->This video doesn't have audio yet. Once audio is available, a new version will be uploaded.
-
 >[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
 
 ## Exercises
