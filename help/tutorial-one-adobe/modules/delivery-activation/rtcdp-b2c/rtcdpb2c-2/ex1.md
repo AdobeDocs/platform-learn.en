@@ -106,7 +106,7 @@ Once the **Schema** and **Dataset** are configured, you're now ready to ingest E
 
 The data prepared for the experience events in this exercise must comply to the requirements and schema of the [Consumer Experience Event XDM Field Group](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
 
-Please download the zip file with demo data from this location: [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
+Please download the zip file with demo data from this location: [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM_CAI_EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM_CAI_EVENTS-WEB.zip).
 
 You've now downloaded a file named **CUSTOM-CAI-EVENTS-WEB.zip**. Place the file on your computer's desktop and unzip it, after which you'll see a folder named **CUSTOM-CAI-EVENTS-WEB**. 
 
