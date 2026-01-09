@@ -13,7 +13,15 @@ Learn how to automatie creative workflows with Workfront Fusion.
 
 ## Prerequisites
 
-- Access to Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+- Access to Adobe Firefly
+- Access to Adobe Workfront Fusion
+- Access to Adobe Frame.io
+
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478697?quality=12&learn=on)
 
 ## Exercises
 
