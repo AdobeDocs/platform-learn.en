@@ -6,6 +6,10 @@ doc-type: tutorial
 ---
 # 1.1.2 Adobe Marketing Agent with ChatGPT
 
+>[!IMPORTANT]
+>
+>This lab uses a feature that hasn't been released yet. The feature is still being developed so it isn't generally available yet.
+
 ## Video
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
