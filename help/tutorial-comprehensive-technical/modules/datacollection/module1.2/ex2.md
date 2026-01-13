@@ -167,7 +167,7 @@ Use the below information to create those 3 new fields under the  **[!UICONTROL 
 
 - ecid:
   - Field name: **`--aepUserLdap--_ecid`**
-  - Display name:  **`--aepUserLdap--ecid`**
+  - Display name:  **`--aepUserLdap--_ecid`**
   - Type: **[!UICONTROL String]**
   - Field Group: **`--aepUserLdap-- - Profile Identification Field Group`**
 
