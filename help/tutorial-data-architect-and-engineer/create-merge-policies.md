@@ -116,7 +116,7 @@ CRM Id is an identity field in the `Luma Loyalty Dataset`, but only primary iden
 1. Select the **[!UICONTROL Show profile]** button
 1. Select the profile id to open the profile
 1. Go to the **[!UICONTROL Attributes]** tab
-1. Note that other profile details from the CRM dataset, such as the mobile phone number and email address are not available because we only
+1. Note that other profile details from the CRM dataset, such as the mobile phone number and email address are not available because our `Loyalty Only` merge policy does not include the CRM dataset.
     ![CRM data is not viewable in the Loyalty Only policy](assets/mergepolicies-loyaltyOnly-attributes.png)
 1. Go to the **[!UICONTROL Events]** tab
 1. ExperienceEvent data is available despite not explicitly including it in the merge policy datasets:
