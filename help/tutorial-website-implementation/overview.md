@@ -127,7 +127,7 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake reta
 
     +++
 
-1. Get a text editor in which you can make changes to the sample html page. (If you don't have one, we recommend trying [Brackets](https://brackets.io/))
+1. Get a text editor in which you can make changes to the sample html page. (If you don't have one, we recommend trying [Visual Studio Code](https://code.visualstudio.com/))
 1. Bookmark the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 >[!NOTE]
