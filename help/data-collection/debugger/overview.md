@@ -17,7 +17,6 @@ Learn how the Adobe Experience Platform Debugger [Chrome extension](https://chro
 
 ## Additional Resources
 
-* [Download the Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 * [Download the Chrome extension](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Experience Platform Debugger documentation](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html)
 * [Debug a tags implementation](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)

@@ -242,9 +242,8 @@ As you can see on the [!UICONTROL Publishing Flow] screen, there is a lot more t
 
 ### Add the Adobe Experience Platform Debugger
 
-The Experience Platform Debugger is an extension available for Chrome and Firefox browsers which helps you see the Adobe technology implemented in your web pages. Download the version for your preferred browser:
+The Experience Platform Debugger is an extension available for Chrome which helps you see the Adobe technology implemented in your web pages. Download the version for your preferred browser:
 
-* [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome extension](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 If you've never used the Debugger before&mdash;and this one is different from the older Adobe Experience Cloud Debugger&mdash;you might want to watch this five-minute overview video:
