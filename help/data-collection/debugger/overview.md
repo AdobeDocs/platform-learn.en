@@ -6,7 +6,6 @@ short-description: Debug your web implementations of the Adobe Experience Platfo
 feature: Debugger
 level: Beginner
 jira: KT-4723
-thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
 ---
 # Adobe Experience Platform Debugger overview
