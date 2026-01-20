@@ -4,7 +4,6 @@ description: Learn how to create an event-forwarding rule in Data Collection.
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6423
-thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
 ---
 # Create an event-forwarding rule

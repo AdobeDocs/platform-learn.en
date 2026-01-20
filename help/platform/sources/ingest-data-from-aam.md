@@ -21,5 +21,4 @@ As you reconfigure your processes and personnel to move from Adobe Audience Mana
 >[!WARNING]
 >
 >In the video above, it shows an option of choosing ALL segments and/or traits. We do not recommend using this option unless you have a limited number of segments with an understood number of unique visitors in those segments. Bringing over large numbers of visitor profiles in "all segments" or "all traits" can balloon the profile service in Real-Time CDP, which can have a huge effect on pricing of the application (since number of profiles affect your cost of the application). It is recommended, therefore, that instead of choosing "all", you choose specific segments to bring over to Real-Time CDP.
->
->Please watch the [April 28, 2022 episode of Experience League LIVE](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html) where this is discussed in detail.
+

@@ -35,7 +35,7 @@ There are many things that could be implemented for Analytics in tags. This less
 
 You should have already completed the lessons in [Configure tags](create-a-property.md) and [Add the Identity Service](id-service.md).
 
-Additionally, you will need at least one report suite ID and your tracking server. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html). You can retrieve your tracking server from your current implementation, Adobe Consultant or Customer Care representative.
+Additionally, you will need at least one report suite ID and your tracking server. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). You can retrieve your tracking server from your current implementation, Adobe Consultant or Customer Care representative.
 
 ## Add the Analytics Extension
 

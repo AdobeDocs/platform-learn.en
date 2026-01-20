@@ -89,7 +89,7 @@ For more details and to obtain the un-minified pre-hiding snippet, please see [t
 
 ## Add the Target Extension
 
-The Adobe Target extension supports client-side implementations using Target's JavaScript SDK for the modern web, at.js. Customers still using Target's older library, mbox.js, [should upgrade to at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) in order to use tags.
+The Adobe Target extension supports client-side implementations using Target's at.js JavaScript library. For Web SDK implementatons of Adobe Target, see the [Experience Platform Web SDK Tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/applications-setup/setup-target).
 
 The Target v2 extension consists of two main parts:
 

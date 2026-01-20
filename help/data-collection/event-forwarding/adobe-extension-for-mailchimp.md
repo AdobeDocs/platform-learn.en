@@ -4,7 +4,6 @@ description: Overview video of the Adobe event forwarding extension for Mailchim
 feature: Event Forwarding
 level: Experienced
 jira: KT-10714
-thumbnail: 345140.jpeg
 exl-id: 2aad8921-6330-4e81-ad3a-044423889abd
 ---
 # Adobe extension for Mailchimp
