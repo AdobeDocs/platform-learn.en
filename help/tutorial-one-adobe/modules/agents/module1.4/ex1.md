@@ -4,13 +4,13 @@ description: Getting started with Brand Concierge
 kt: 5342
 doc-type: tutorial
 ---
-# 1.3.1 Getting started with Brand Concierge
+# 1.4.1 Getting started with Brand Concierge
 
 ## Video
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
 
-## 1.3.1.1 Brand Concierge overview
+## 1.4.1.1 Brand Concierge overview
 
 While configuring Brand Concierge, the 2 main elements you'll be using are:
 
@@ -55,7 +55,7 @@ While configuring Brand Concierge, the 2 main elements you'll be using are:
   - Log behavioral and operational events to AEP for analytics
   - Apply surface-specific configurations
 
-## 1.3.1.2 Brand Concierge instance configuration
+## 1.4.1.2 Brand Concierge instance configuration
 
 To start creating your own Brand Concierge instance, follow the below steps.
 
@@ -229,7 +229,7 @@ You can now start asking questions related to the provided knowledge sources.
 
 ![Brand Concierge](./images/bc33.png)
 
-## 1.3.1.3 AEP onboarding steps
+## 1.4.1.3 AEP onboarding steps
 
 Brand Concierge uses Adobe Experience Platform to store interaction data from conversations. The connection between Brand Concierge and Experience Platform requires a datastream to be configured and used by Brand Concierge.
 

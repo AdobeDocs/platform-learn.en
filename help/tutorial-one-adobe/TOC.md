@@ -272,7 +272,12 @@ recommendations: noDisplay,noCatalog
   + 1.2 Getting Started with Agents and AI {#agents2}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
     + [1.2.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-  + 1.3 Brand Concierge {#agents4}
+  + 1.4 Brand Concierge {#agents4}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
-    + [1.3.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
-    + [1.3.2 Implement Brand Concierge on your website](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+    + [1.4.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
+    + [1.4.2 Implement Brand Concierge on your website](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+  + 1.5 Analytics & Agents {#agents5}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+    + [1.5.1 CJA & ChatGPT with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+    + [1.5.2 CJA & Claude.ai with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+    + [1.5.3 Adobe Analytics & ChatGPT with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)

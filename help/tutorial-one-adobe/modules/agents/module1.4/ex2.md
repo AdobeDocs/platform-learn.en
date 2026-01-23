@@ -4,7 +4,7 @@ description: Implement Brand Concierge on your website
 kt: 5342
 doc-type: tutorial
 ---
-# 1.3.2 Implement Brand Concierge on your website
+# 1.4.2 Implement Brand Concierge on your website
 
 >[!IMPORTANT]
 >
@@ -16,7 +16,7 @@ doc-type: tutorial
 >
 >If you have previously configured an AEM CS Program with an AEM Assets CS environment, it may be that your AEM CS sandbox was hibernated. Given that dehibernating such a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
-## 1.3.2.1 Configure your website to show Brand Concierge - AEM Author
+## 1.4.2.1 Configure your website to show Brand Concierge - AEM Author
 
 In order for Brand Concierge to appear on your website, you need to create a new custom block that needs to be added to a new page, and you'll need to ensure that your new page is added to the navigation of your website.
 
@@ -262,7 +262,7 @@ Click **Publish** again.
 
 Your new page is now added to the menu.
 
-## 1.3.2.2 Configure your website to show Brand Concierge - GitHub
+## 1.4.2.2 Configure your website to show Brand Concierge - GitHub
 
 After updating the content using your AEM Author environment, you now need to update some of the code in the GitHub repository that is used for your website.
 
@@ -389,7 +389,7 @@ You've now updated the required code to load the libraries on your website.
 
 ![Brand Concierge](./images/aem12.png)
 
-## 1.3.2.3 Test your configuration
+## 1.4.2.3 Test your configuration
 
 You will now be able to test your changes on your website by going to `main--citisignal-aem-accs--XXX.aem.page` or `main--citisignal-aem-accs--XXX.aem.live`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
 
