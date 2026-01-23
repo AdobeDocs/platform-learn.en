@@ -45,25 +45,16 @@ Technical elements:
 - MCP Server, Python Notebook
 - Adobe API's
 
-[1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md)
-
->[!NOTE]
->
->This module hasn't been released yet.
+[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Goal**
 
-Connect your own agent to Adobe agents. Learners will set up the Agent2Agent (A2A) protocol to connect their agents with AEP Agent Orchestrator. 
+Brand Concierge is an AI-powered digital companion that transforms the way brands engage with their website visitors. Unlike generic chatbots, Brand Concierge delivers personalized, conversational experiences tailored to each visitor’s intent. It helps visitors discover products, compare options, get instant answers, and receive guided recommendations in real time. The platform serves both B2C and B2B and it acts as an intelligent extension of your brand on any digital channel, while preserving your brand voice, content integrity, and compliance.
 
-- Agent Chaining
-- Agent Collaboration
+In this exercise you'll learn how to:
 
-What's the architecture behind an Adobe agent?
-What's the architecture behind A2A?
-
-Technical elements:
-
-- Agent Interoperability with Google's A2A protocol
+- Configure your Brand Concierge instance in your Adobe Experience Platform sandbox
+- Implement your Brand Concierge on your AEM CS/EDS website 
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 

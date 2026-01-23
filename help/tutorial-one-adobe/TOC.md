@@ -268,13 +268,11 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
     + [1.1.1 Getting started with Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
     + [1.1.2 Adobe Marketing Agent with ChatGPT](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+    + [1.1.3 Adobe Marketing Agent with Microsoft Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
   + 1.2 Getting Started with Agents and AI {#agents2}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
     + [1.2.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-  + 1.3 Agent Collaboration {#agents3}
-    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
-    + [1.3.1 Getting started with Agent Collaboration](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
-  + 1.4 Brand Concierge {#agents4}
+  + 1.3 Brand Concierge {#agents4}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
-    + [1.4.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
-    + [1.4.2 Implement Brand Concierge on your website](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+    + [1.3.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
+    + [1.3.2 Implement Brand Concierge on your website](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)

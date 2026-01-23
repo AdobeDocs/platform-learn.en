@@ -4,7 +4,7 @@ description: Brand Concierge
 kt: 5342
 doc-type: tutorial
 ---
-# 1.4 Brand Concierge
+# 1.3 Brand Concierge
 
 ## Learning Objectives
 
@@ -29,11 +29,11 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 ## Exercises
 
-[1.4.1 Getting started with Brand Concierge](./ex1.md){target="_blank"}
+[1.3.1 Getting started with Brand Concierge](./ex1.md){target="_blank"}
 
 In this exercise, you'll explore Brand Concierge's abilities.
 
-[1.4.2 Implement Brand Concierge on your website](./ex1.md){target="_blank"}
+[1.3.2 Implement Brand Concierge on your website](./ex2.md){target="_blank"}
 
 In this exercise, you'll implement your Brand Concierge instance on your website.
 
