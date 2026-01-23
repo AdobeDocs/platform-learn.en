@@ -165,6 +165,96 @@ create a line visualization by hour for product views on January 21
 
 ![ChatGPT & CJA](./images/chatgpt108.png)
 
+Select **UpsertProject**.
+
+![ChatGPT & CJA](./images/chatgpt109.png)
+
+Select **RunReport**.
+
+![ChatGPT & CJA](./images/chatgpt110.png)
+
+You should then see this.
+
+![ChatGPT & CJA](./images/chatgpt111.png)
+
+Scroll down.
+
+![ChatGPT & CJA](./images/chatgpt112.png)
+
+You can now also download this line graph. Enter the following **prompt** and click the **send** button.
+
+```javascript
+export this chart to PNG
+```
+
+![ChatGPT & CJA](./images/chatgpt113.png)
+
+You should then see this. Click **Download the PNG**.
+
+![ChatGPT & CJA](./images/chatgpt114.png)
+
+Enter the following **prompt** and click the **send** button.
+
+```javascript
+can you breakdown product views by user agent?
+```
+
+![ChatGPT & CJA](./images/chatgpt115.png)
+
+Select **RunReport**.
+
+![ChatGPT & CJA](./images/chatgpt116.png)
+
+You should then see this.
+
+![ChatGPT & CJA](./images/chatgpt117.png)
+
+## 1.5.1.5 Fallout Visualization
+
+Enter the following **prompt** and click the **send** button.
+
+```javascript
+can you create a fallout visualization for the product interaction funnel, starting with all traffic and then in the next steps add Product Views, Add to Cart and purchases?
+```
+
+![ChatGPT & CJA](./images/chatgpt118.png)
+
+Select **UpsertProject**.
+
+![ChatGPT & CJA](./images/chatgpt119.png)
+
+Select **RunReport**.
+
+![ChatGPT & CJA](./images/chatgpt120.png)
+
+You should then see something like this. Enter the following **prompt** and click the **send** button.
+
+```javascript
+can you show me a visualization of the above fallout analysis?
+```
+
+![ChatGPT & CJA](./images/chatgpt120a.png)
+
+Click **Download the PNG**.
+
+![ChatGPT & CJA](./images/chatgpt121.png)
+
+You now see the visualization of your fallout analysis.
+
+![ChatGPT & CJA](./images/chatgpt122.png)
+
+Enter the following **prompt** and click the **send** button.
+
+```javascript
+break down the fallout analysis at the touchpoint of the add to carts
+```
+
+![ChatGPT & CJA](./images/chatgpt123.png)
+
+Select **RunReport**.
+
+![ChatGPT & CJA](./images/chatgpt124.png)
+
 Go Back to [Analytics & Agents](./analyticsagents.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}
