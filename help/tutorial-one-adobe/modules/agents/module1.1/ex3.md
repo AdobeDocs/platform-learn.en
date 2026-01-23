@@ -12,14 +12,12 @@ doc-type: tutorial
 
 ## Prerequisites
 
->[!NOTE]
->
->In order to follow the steps in this lab as documented below, the following access is required:
+In order to follow the steps in this lab as documented below, the following access is required:
 
->- Access to Real-Time CDP, Journey Optimizer and Customer Journey Analytics
->- Access to AI Assistant in Adobe Experience Cloud
->- Access to AEP Agent Orchestrator
->- Access to Microsoft 365 Copilot
+- Access to Real-Time CDP, Journey Optimizer and Customer Journey Analytics
+- Access to AI Assistant in Adobe Experience Cloud
+- Access to AEP Agent Orchestrator
+- Access to Microsoft 365 Copilot
 
 ## Video
 
