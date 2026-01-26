@@ -267,8 +267,8 @@ recommendations: noDisplay,noCatalog
   + 1.1 Agent Orchestrator {#agents1}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
     + [1.1.1 Getting started with Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
-    + [1.1.2 Adobe Marketing Agent with ChatGPT](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
-    + [1.1.3 Adobe Marketing Agent with Microsoft Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
+    + [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+    + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
   + 1.2 Getting Started with Agents and AI {#agents2}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
     + [1.2.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
