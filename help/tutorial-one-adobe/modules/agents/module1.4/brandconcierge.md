@@ -33,7 +33,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 In this exercise, you'll explore Brand Concierge's abilities.
 
-[1.4.2 Implement Brand Concierge on your website](./ex1.md){target="_blank"}
+[1.4.2 Implement Brand Concierge on your website](./ex2.md){target="_blank"}
 
 In this exercise, you'll implement your Brand Concierge instance on your website.
 

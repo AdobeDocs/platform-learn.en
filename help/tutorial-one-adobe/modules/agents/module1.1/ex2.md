@@ -6,6 +6,13 @@ doc-type: tutorial
 ---
 # 1.1.2 Adobe Marketing Agent with ChatGPT
 
+[!BADGE Beta]
+
++++See details
+By using the Adobe Marketing Agent with ChatGPT Beta, You hereby acknowledge that the Beta is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any “Feedback” (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
+
++++
+
 >[!IMPORTANT]
 >
 >This lab uses a feature that hasn't been released yet. The feature is still being developed so it isn't generally available yet.
@@ -24,7 +31,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 >- a paid version of OpenAI's ChatGPT
 >- using the ChatGPT web client
 
-Go to https://chatgpt.com/ and log in using your account details. Once you're logged in, you should see this. Click your username.
+Go to [https://chatgpt.com/](https://chatgpt.com/){target="_blank"} and log in using your account details. Once you're logged in, you should see this. Click your username.
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -80,11 +87,11 @@ For this exercise, the context needs to be set to use:
 
 - **Sandbox**: **Prod - Accelerate (VA7)**
 
-The Sandbox setting helps to identify which sandbox AI Assistant should look at when asking questions.
+The Sandbox setting helps to identify which sandbox ChatGPT should look at when asking questions.
 
 - **Dataview**: **Accelerate 2026 B2C**
 
-The Dataview setting helps to identify which dataview AI Assistant should look at when asking questions.
+The Dataview setting helps to identify which dataview ChatGPT should look at when asking questions.
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -116,9 +123,9 @@ list dataviews
 
 ![Agent Orchestrator](./images/chatgpt14.png)
 
-You should then see a similar list of available sandboxes. The current sandbox in this example is set to **prod**. 
+You should then see a similar list of available dataviews.
 
-To change that to the sandbox that needs to be used, enter the following **Prompt** and click the **send** button.
+To set the dataview that needs to be used, enter the following **Prompt** and click the **send** button.
 
 ```javascript
 switch to Accelerate 2026 B2C
