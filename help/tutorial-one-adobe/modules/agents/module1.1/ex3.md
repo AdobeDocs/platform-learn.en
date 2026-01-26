@@ -11,6 +11,8 @@ doc-type: tutorial
 +++See details
 By using the Adobe Marketing Agent with Microsoft Copilot Beta, You hereby acknowledge that the Beta is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any “Feedback” (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
 
++++
+
 >[!IMPORTANT]
 >
 >This lab uses a feature that hasn't been released yet. The feature is still being developed so it isn't generally available yet.
