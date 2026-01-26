@@ -33,11 +33,11 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 In this exercise, you'll explore Agent Orchestrator's abilities against the background of the CitiSignal launch campaign for Fiber Max.
 
-[1.1.2 Adobe Marketing Agent with ChatGPT](./ex2.md){target="_blank"}
+[1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](./ex2.md){target="_blank"}
 
 In this exercise, you'll explore Agent Orchestrator's abilities against the background of the CitiSignal launch campaign for Fiber Max, by using Adobe Marketing Agent with ChatGPT.
 
-[1.1.3 Adobe Marketing Agent with Microsoft Copilot](./ex3.md){target="_blank"}
+[1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](./ex3.md){target="_blank"}
 
 In this exercise, you'll explore Agent Orchestrator's abilities against the background of the CitiSignal launch campaign for Fiber Max, by using Adobe Marketing Agent with Microsoft Copilot.
 
