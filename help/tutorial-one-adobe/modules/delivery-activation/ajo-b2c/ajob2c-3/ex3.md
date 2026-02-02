@@ -1,6 +1,6 @@
 ---
-title: Offer Decisioning - Test your Decision
-description: Offer Decisioning - Test your Decision
+title: Configure a campaign with in-app messages
+description: Configure a campaign with in-app messages
 kt: 5342
 doc-type: tutorial
 exl-id: c40b9b8c-9717-403c-bf02-6b8f42a59c05

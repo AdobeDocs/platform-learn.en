@@ -45,7 +45,7 @@ Technical elements:
 - MCP Server, Python Notebook
 - Adobe API's
 
-[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
+[1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Goal**
 
@@ -55,6 +55,17 @@ In this exercise you'll learn how to:
 
 - Configure your Brand Concierge instance in your Adobe Experience Platform sandbox
 - Implement your Brand Concierge on your AEM CS/EDS website 
+
+[1.5 Analytics & Agents](./modules/agents/module1.5/analyticsagents.md)
+
+**Goal**
+
+As a Data Analyst, AI Developer or AI Application Architect, you'll learn how to automate reporting tasks like report creation, scheduling analysis using external agents. You'll learn how to pull fresh campaign data, audience data or performance data into your agentic workflows.
+
+In this exercise you'll learn how to:
+
+- Connect ChatGPT and/or Claude.ai to **Customer Journey Analytics** and perform data analysis tasks
+- Connect ChatGPT and/or Claude.ai to **Adobe Analytics** and perform data analysis tasks
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 

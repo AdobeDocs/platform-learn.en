@@ -80,6 +80,9 @@ recommendations: noDisplay,noCatalog
     + [1.6.3 Create and deploy your external DAM app](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
     + [1.6.4 Publish your app privately](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
+  + 1.7 Workflow Builder {#crpr7}  
+    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
+    + [1.7.1 Getting started with Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
 
 + Asset Management {#assetmgmt}
   + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -262,6 +265,7 @@ recommendations: noDisplay,noCatalog
       + [Overview](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
       + [3.1.1 Getting started with Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
 + Agents {#agents}
   + [Agentic AI Overview](/help/tutorial-one-adobe/ai.md)
   + 1.1 Agent Orchestrator {#agents1}
