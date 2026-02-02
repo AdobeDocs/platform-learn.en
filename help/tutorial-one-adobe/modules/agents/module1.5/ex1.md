@@ -245,17 +245,7 @@ You now see the visualization of your fallout analysis.
 
 ![ChatGPT & CJA](./images/chatgpt122.png)
 
-Enter the following **prompt** and click the **send** button.
-
-```javascript
-break down the fallout analysis at the touchpoint of the add to carts
-```
-
-![ChatGPT & CJA](./images/chatgpt123.png)
-
-Select **RunReport**.
-
-![ChatGPT & CJA](./images/chatgpt124.png)
+Next Step: [CJA & Claude.ai with MCP server](./ex2.md){target="_blank"}
 
 Go Back to [Analytics & Agents](./analyticsagents.md){target="_blank"}
 

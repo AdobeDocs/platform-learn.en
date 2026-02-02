@@ -25,9 +25,9 @@ In this exercise, you'll set up a custom MCP server in ChatGPT to connect ChatGP
 
 In this exercise, you'll set up a custom MCP server in Claude.ai to connect Claude.ai directly to Customer Journey Analytics and you'll start analyzing your data that is hosted in Adobe Customer Journey Analytics (CJA) directly from Claude.ai.
 
-[1.5.3 Adobe Analytics & ChatGPT with MCP server](./ex3.md){target="_blank"}
+[1.5.3 Adobe Analytics & Claude.ai with MCP server](./ex3.md){target="_blank"}
 
-In this exercise, you'll set up a custom MCP server in ChatGPT to connect ChatGPT directly to Adobe Analytics and you'll start analyzing your data that is hosted in Adobe Analytics (AA) directly from ChatGPT.
+In this exercise, you'll set up a custom MCP server in Claude.ai to connect Claude.ai directly to Adobe Analytics and you'll start analyzing your data that is hosted in Adobe Analytics (AA) directly from Claude.ai.
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
