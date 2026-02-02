@@ -6,10 +6,12 @@ doc-type: tutorial
 ---
 # 1.5.1 CJA & ChatGPT with MCP server
 
->[!IMPORTANT]
->
->This lab uses a feature that hasn't been released yet. The feature is still being developed so it isn't generally available yet.
+[!BADGE Alpha]
 
++++Alpha Details
+By using the CJA & Claude.ai with MCP server Alpha, You hereby acknowledge that the Alpha is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Alpha. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Alpha and/or accompanying materials. The Alpha is considered Confidential Information of Adobe. Any “Feedback” (information regarding the Alpha including but not limited to problems or defects you encounter while using the Alpha, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
+
++++
 
 >[!NOTE]
 >
