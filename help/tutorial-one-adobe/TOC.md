@@ -284,4 +284,4 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
     + [1.5.1 CJA & ChatGPT with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
     + [1.5.2 CJA & Claude.ai with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
-    + [1.5.3 Adobe Analytics & ChatGPT with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+    + [1.5.3 Adobe Analytics & Claude.ai with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
