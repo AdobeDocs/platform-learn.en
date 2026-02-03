@@ -12,6 +12,6 @@ doc-type: Tutorial
 
 Next Step: [Adobe Express & ESM](./ex3.md){target="_blank"}
 
-Go back to [Workflow Builder](./workflowbuilder.md){target="_blank"}
+Go back to [Enterprise Storage Management](./esm.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}
