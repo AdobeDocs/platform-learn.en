@@ -186,6 +186,26 @@ You should then see something like this.
 
 ![Claude.ai & CJA](./images/claudeaa113.png)
 
+Enter the following **Prompt** and click the **send** button.
+
+```javascript
+which tracking codes drove the most visits and purchases?
+```
+
+![Claude.ai & CJA](./images/claudeaa114.png)
+
+You should then see something like this, first showing **Top Tracking Codes by Visits**.
+
+![Claude.ai & CJA](./images/claudeaa115.png)
+
+You can then see the tracking codes that drove the most purchases in the **Top Tracking Codes by Orders (Purchases)** report.
+
+![Claude.ai & CJA](./images/claudeaa116.png)
+
+And then you find additional insights provided by Claude.ai based on the data coming from Adobe Analytics.
+
+![Claude.ai & CJA](./images/claudeaa117.png)
+
 You've now finished this exercise.
 
 Go Back to [Analytics & Agents](./analyticsagents.md){target="_blank"}
