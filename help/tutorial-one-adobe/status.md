@@ -32,6 +32,7 @@ Below is an overview of the status of the content in this tutorial.
 | [1.5 Streamline your workflow with Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}| 02/08/2025  | Yes         | - | 1h |
 | [1.6 GenStudio for Performance Marketing - Extensibility](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}| 21/08/2025  | Yes       | - | 1h 30min |
 | [1.7 Workflow Builder](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}| 02/02/2026  | No       | Content in development | - |
+| [1.8 Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"}| 02/02/2026  | No       | Content in development | - |
 
 
 ## 3. Asset Management

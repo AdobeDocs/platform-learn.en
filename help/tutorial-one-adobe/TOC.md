@@ -86,8 +86,8 @@ recommendations: noDisplay,noCatalog
   + 1.8 Enterprise Storage Management {#crpr8}  
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
     + [1.8.1 Workfront & ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
-    + [1.8.2 Frame.io & ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
-    + [1.8.3 Adobe Express & ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+    + [1.8.2 Frame.io & ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
+    + [1.8.3 Adobe Express & ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex3.md)
 
 + Asset Management {#assetmgmt}
   + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
