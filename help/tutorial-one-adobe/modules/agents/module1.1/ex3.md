@@ -3,6 +3,7 @@ title: Adobe Marketing Agent for Microsoft 365 Copilot
 description: Adobe Marketing Agent for Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
+exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
 ---
 # 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
 

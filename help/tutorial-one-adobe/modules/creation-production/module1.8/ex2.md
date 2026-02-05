@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 39854816-4572-46e5-8fe4-861da1eb41cf
 ---
 # 1.8.2. Frame.io & ESM
 

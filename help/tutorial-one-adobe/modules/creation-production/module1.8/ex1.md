@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 2f9a3eef-16ef-497c-97f7-377ff9ed2f82
 ---
 # 1.8.1 Workfront & ESM
 

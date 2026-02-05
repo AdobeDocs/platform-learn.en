@@ -3,6 +3,7 @@ title: CJA & ChatGPT with MCP server
 description: CJA & ChatGPT with MCP server
 kt: 5342
 doc-type: tutorial
+exl-id: 95157782-18a8-40d1-85de-69b1ad8fa505
 ---
 # 1.5.1 CJA & ChatGPT with MCP server
 
