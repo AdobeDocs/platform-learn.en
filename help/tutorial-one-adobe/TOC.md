@@ -290,3 +290,9 @@ recommendations: noDisplay,noCatalog
     + [1.5.1 CJA & ChatGPT with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
     + [1.5.2 CJA & Claude.ai with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
     + [1.5.3 Adobe Analytics & Claude.ai with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+  + 1.6 AEM & Agents {#agents6}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
+    + [1.6.1 Content Production Agent](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+  + 1.7 Intelligent Developer Tools for Adobe Commerce {#agents7}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
+    + [1.7.1 Setting up your development environment](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
