@@ -20,10 +20,6 @@ doc-type: tutorial
 
 TBC.
 
-[Summary and benefits](./summary.md){target="_blank"}
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
