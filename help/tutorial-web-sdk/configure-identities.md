@@ -13,6 +13,10 @@ The [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com
 
 The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (yes, there are two!) uses the ECIDs and customer IDs to generate identity graphs, allowing you to merge attributes and behaviors into Real-Time Customer Profiles.
 
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 >[!NOTE]
 >
 >A custom identity namespace is _not required_ to implement Adobe Analytics, Adobe Target, or Adobe Audience Manager with Web SDK (authenticated identities can be passed in the `data` object instead of the `xdm` object as you will see later). Identity namespaces are required for Platform-native applications like Journey Optimizer, Real-Time Customer Data Platform, Customer Journey Analytics. While you may decide not to use an identity namespace in your own implementation, you are expected to do so as part of this tutorial.

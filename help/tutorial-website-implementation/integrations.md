@@ -7,6 +7,11 @@ exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
 
 In this lesson, you will review the key integrations between the solutions you  just implemented. The good news is that by completing the earlier lessons, you have already implemented the code-aspects of the integrations! You don't need to do any additional work in this lesson besides reading and validating.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:

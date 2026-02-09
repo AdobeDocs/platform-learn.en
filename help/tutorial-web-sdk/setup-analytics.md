@@ -11,6 +11,11 @@ Learn how to set up Adobe Analytics using [Adobe Experience Platform Web SDK](ht
 
 [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) is an industry-leading application that empowers you to understand your customers as people and steer your business with customer intelligence.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 ![Web SDK to Adobe Analytics diagram](assets/dc-websdk-aa.png)  
 
 ## Learning objectives

@@ -75,6 +75,11 @@ In these lessons, it is assumed that you have an Adobe account and the required 
 
 ## Load the Luma website
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 Load the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} in a separate browser tab and bookmark it so you can easily load it whenever needed during the tutorial. You do not require any additional access to Luma other than being able to load our hosted, production site.
 
 [![Luma website](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} 

@@ -9,6 +9,11 @@ In this lesson, you will create your first Data Element, Rule, and Library.
 
 Data Elements and Rules are the basic building blocks of tags. Data Elements store the attributes you want to send to your marketing and advertising solutions, while Rules fire the requests to those solutions under the right conditions.  Libraries are the JavaScript files that load on the page to do all of the work. In this lesson, you will use all three to make our sample page do something.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:

@@ -15,6 +15,11 @@ exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 
 In this lesson, you will stream data using the Adobe Experience Platform Web SDK.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 There are two main tasks we must complete in the Data Collection interface:
 
 * We must implement Web SDK on the Luma website to send data about visitor activity from the website to the Adobe Edge network. We will do a simple implementation using tags (formerly Launch)
