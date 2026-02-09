@@ -12,13 +12,19 @@ doc-type: tutorial
 
 ## Prerequisites
 
-- Access to AEM Assets & Dynamic Media 
+- Access to AEM Assets & Dynamic Media
+- Access to Adobe Photoshop
+- Access to Adobe Journey Optimizer
 
 ## Exercises
 
-[1.4.1 Getting started with AEM Assets & Dynamic Media](./ex1.md){target="_blank"}
+[1.4.1 Create your assets and dynamic media template](./ex1.md){target="_blank"}
 
-TBC.
+In this exercise, you'll use Adobe Photoshop to create various images, which you will then set up as a dynamic template with AEM Assets Dynamic Media.
+
+[1.4.2 Use your dynamic media template with Adobe Journey Optimizer](./ex2.md){target="_blank"}
+
+In this exercise, you'll use the template you created with AEM Assets Dynamic Media in Adobe Journey Optimizer to hyper-personalize emails.
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
