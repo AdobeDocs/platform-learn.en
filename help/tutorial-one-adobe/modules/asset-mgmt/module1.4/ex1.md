@@ -249,6 +249,71 @@ Add a second text layer and make it look like this. Don't forget to enable the o
 
 ![AEM Assets Dynamic Media](./images/aemdm32.png)
 
+Select the first text layer. Click the 3 dots **...** and then select **Edit**.
+
+![AEM Assets Dynamic Media](./images/aemdm33.png)
+
+You should then see this. Scroll down.
+
+![AEM Assets Dynamic Media](./images/aemdm34.png)
+
+Click the **switcher** icon so that the field **Text** is enabled. Change the **Parameter Name** to `title`.
+
+![AEM Assets Dynamic Media](./images/aemdm35.png)
+
+Select the second text layer. Click the 3 dots **...** and then select **Edit**.
+
+![AEM Assets Dynamic Media](./images/aemdm36.png)
+
+You should then see this. Scroll down.
+
+![AEM Assets Dynamic Media](./images/aemdm37.png)
+
+Click the **switcher** icon so that the field **Text** is enabled. Change the **Parameter Name** to `body`.
+
+![AEM Assets Dynamic Media](./images/aemdm38.png)
+
+Select the layer for **Paris**. Click the 3 dots **...** and click **Edit**.
+
+![AEM Assets Dynamic Media](./images/aemdm39.png)
+
+Go to **Paramaters**. Enable the field **Hide** and enter the **Parameter Name**: `city_paris`. Click **Save**.
+
+![AEM Assets Dynamic Media](./images/aemdm40.png)
+
+Select the layer for **Dubai**. Click the 3 dots **...** and click **Edit**.
+
+![AEM Assets Dynamic Media](./images/aemdm41.png)
+
+Go to **Paramaters**. Enable the field **Hide** and enter the **Parameter Name**: `city_dubai`. Click **Save**.
+
+![AEM Assets Dynamic Media](./images/aemdm42.png)
+
+Select the layer for **New York**. Click the 3 dots **...** and click **Edit**.
+
+![AEM Assets Dynamic Media](./images/aemdm43.png)
+
+Go to **Paramaters**. Enable the field **Hide** and enter the **Parameter Name**: `city_ny`. Click **Save**.
+
+![AEM Assets Dynamic Media](./images/aemdm44.png)
+
+Click **Preview**.
+
+![AEM Assets Dynamic Media](./images/aemdm45.png)
+
+Enable the switcher for **Include all parameters** and change some input variables as indicated in the screenshot. You should see your image change dynamically based on the input provided. For the fields **city_paris**, **city_dubai** and **city_ny**, a value of 0 means that this image will NOT be hidden and a value of 1 means this image will be hidden.
+
+![AEM Assets Dynamic Media](./images/aemdm46.png)
+
+By changing some variables, you now see another image being shown.
+
+![AEM Assets Dynamic Media](./images/aemdm47.png)
+
+By changing more variables, you now see another image being shown.
+
+![AEM Assets Dynamic Media](./images/aemdm48.png)
+
+Your Dynamic Media template is now configured successfully. In the next exercise, you'll use that template in combination with an email campaign in Adobe Journey Optimizer.
 
 ## Next Steps
 
