@@ -13,6 +13,11 @@ Experience Data Model (XDM) schemas are the building blocks, principles, and bes
 
 Platform Web SDK uses your schema to standardize your web event data, send it to the Platform Edge Network, and ultimately forward the data to any Experience Cloud applications configured in the datastream. This step is critical as it defines a standard data model required for ingesting customer experience data into Experience Platform and enables downstream services and applications built on these standards. 
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 >[!NOTE]
 >
 >An XDM schema is _not required_ to implement Adobe Analytics, Adobe Target, or Adobe Audience Manager with Web SDK (data can be passed in the `data` object instead of the `xdm` object as you will see later). An XDM schema is required for the most performant implementations of Platform-native applications like Journey Optimizer, Real-Time Customer Data Platform, Customer Journey Analytics. While you may decide not to use an XDM schema in your own implementation, you are expected to do so as part of this tutorial.
