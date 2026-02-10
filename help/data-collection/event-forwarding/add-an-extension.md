@@ -4,12 +4,11 @@ description: Learn how to add an event-forwarding extension in Data Collection.
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6422
-thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
 ---
 # Add an event-forwarding extension
 
-Learn how to add an event-forwarding extension in Data Collection. For more information, please visit the [event forwarding documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Learn how to add an event-forwarding extension in Data Collection. For more information, please visit the [event forwarding documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >

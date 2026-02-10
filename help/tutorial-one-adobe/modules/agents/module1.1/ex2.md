@@ -1,14 +1,22 @@
 ---
-title: Adobe Marketing Agent with ChatGPT
-description: Adobe Marketing Agent with ChatGPT
+title: Adobe Marketing Agent for ChatGPT Enterprise
+description: Adobe Marketing Agent for ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
+exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
 ---
-# 1.1.2 Adobe Marketing Agent with ChatGPT
+# 1.1.2 Adobe Marketing Agent for ChatGPT Enterprise
 
 >[!IMPORTANT]
 >
 >This lab uses a feature that hasn't been released yet. The feature is still being developed so it isn't generally available yet.
+
+[!BADGE In Development]
+
++++In Development details
+By using the Adobe Marketing Agent for ChatGPT Enterprise Beta, You hereby acknowledge that the Beta is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any “Feedback” (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
+
++++
 
 ## Video
 
@@ -16,15 +24,15 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478410?quality=12&learn=on)
 
-## 1.1.2.1 Create custom app in ChatGPT for Adobe Marketing Agent 
+## 1.1.2.1 Create custom app in ChatGPT Enterprise for Adobe Marketing Agent 
 
 >[!NOTE]
 >
 >Using Adobe Marketing Agent in ChatGPT requires the following:
->- a paid version of OpenAI's ChatGPT
->- using the ChatGPT web client
+>- a paid version of OpenAI's ChatGPT Enterprise
+>- using the ChatGPT Enterprise web client
 
-Go to https://chatgpt.com/ and log in using your account details. Once you're logged in, you should see this. Click your username.
+Go to [https://chatgpt.com/](https://chatgpt.com/){target="_blank"} and log in using your account details. Once you're logged in, you should see this. Click your username.
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -80,11 +88,11 @@ For this exercise, the context needs to be set to use:
 
 - **Sandbox**: **Prod - Accelerate (VA7)**
 
-The Sandbox setting helps to identify which sandbox AI Assistant should look at when asking questions.
+The Sandbox setting helps to identify which sandbox ChatGPT should look at when asking questions.
 
 - **Dataview**: **Accelerate 2026 B2C**
 
-The Dataview setting helps to identify which dataview AI Assistant should look at when asking questions.
+The Dataview setting helps to identify which dataview ChatGPT should look at when asking questions.
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -116,9 +124,9 @@ list dataviews
 
 ![Agent Orchestrator](./images/chatgpt14.png)
 
-You should then see a similar list of available sandboxes. The current sandbox in this example is set to **prod**. 
+You should then see a similar list of available dataviews.
 
-To change that to the sandbox that needs to be used, enter the following **Prompt** and click the **send** button.
+To set the dataview that needs to be used, enter the following **Prompt** and click the **send** button.
 
 ```javascript
 switch to Accelerate 2026 B2C

@@ -9,9 +9,13 @@ exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
 
 Learn how to validate your Adobe Experience Platform Web SDK implementation with Adobe Experience Platform Debugger.
 
-The Experience Platform Debugger is an extension available for Chrome and Firefox browsers, which helps you see the Adobe technology implemented in your web pages. Download the version for your preferred browser:
 
-* [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
+The Experience Platform Debugger is an extension available for Chrome  which helps you see the Adobe technology implemented in your web pages:
+
 * [Chrome extension](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 If you have never used the debugger before, you might want to watch this five-minute overview video:

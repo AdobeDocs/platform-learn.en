@@ -4,7 +4,6 @@ description: Learn how to create and configure datastreams
 feature: Datastreams
 level: Beginner
 jira: KT-9762
-thumbnail: 340825.jpeg
 exl-id: 890a2129-1c17-43d1-9568-ce8025470306
 ---
 # Configure datastreams

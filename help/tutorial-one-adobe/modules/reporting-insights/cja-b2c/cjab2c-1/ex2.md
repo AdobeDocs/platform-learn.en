@@ -122,7 +122,7 @@ After having created your **Connection** it may take a few hours before your dat
 
 ## Next Steps
 
-Go to [1.1.3 Create a Data View](./ex3.md)(./ex2.md){target="_blank"}
+Go to [1.1.3 Create a Data View](./ex3.md){target="_blank"}
 
 Go back to [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 

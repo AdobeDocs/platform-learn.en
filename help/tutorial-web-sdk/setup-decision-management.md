@@ -14,6 +14,10 @@ Learn how to implement Adobe Journey Optimizer's Decision Management capability 
 By following this tutorial, Journey Optimizer users are equipped to use Decision Management features, enhancing the personalization and relevance of their customer interactions.
 
 
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 ![Web SDK and Adobe Analytics diagram](assets/dc-websdk-ajo.png)  
 
 ## Learning Objectives

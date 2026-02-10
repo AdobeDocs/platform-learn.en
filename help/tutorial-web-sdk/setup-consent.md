@@ -9,6 +9,11 @@ exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
 
 Learn how to configure the privacy settings of the Adobe Experience Platform Web SDK tag extension. Set consent based on the visitor's interaction with a banner from a Consent Management Platform (CMP). 
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 >[!NOTE]
 > 
 >For demonstration purposes, this tutorial uses [Klaro](https://klaro.org/) as a CMP. You are welcome to follow along using Klaro or the CMP you use with your website.

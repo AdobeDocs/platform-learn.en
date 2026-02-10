@@ -10,6 +10,11 @@ In this lesson, we will implement the [Adobe Target extension](https://experienc
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
@@ -89,7 +94,7 @@ For more details and to obtain the un-minified pre-hiding snippet, please see [t
 
 ## Add the Target Extension
 
-The Adobe Target extension supports client-side implementations using Target's JavaScript SDK for the modern web, at.js. Customers still using Target's older library, mbox.js, [should upgrade to at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) in order to use tags.
+The Adobe Target extension supports client-side implementations using Target's at.js JavaScript library. For Web SDK implementatons of Adobe Target, see the [Experience Platform Web SDK Tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/applications-setup/setup-target).
 
 The Target v2 extension consists of two main parts:
 

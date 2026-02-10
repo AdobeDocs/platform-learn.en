@@ -16,6 +16,6 @@ This video walks users through two advanced use cases for getting the most out o
 1. Using the workflow to create reference objects. 
 1. Copying the reference objects into an existing implementation.
 
-For more information on the Meta Conversions API quick start workflow, visit [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=en#quick-start).
+For more information on the Meta Conversions API quick start workflow, visit [the documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview#quick-start).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on&enablevpops)

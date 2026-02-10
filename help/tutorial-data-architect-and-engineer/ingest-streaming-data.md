@@ -15,6 +15,11 @@ exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 
 In this lesson, you will stream data using the Adobe Experience Platform Web SDK.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 There are two main tasks we must complete in the Data Collection interface:
 
 * We must implement Web SDK on the Luma website to send data about visitor activity from the website to the Adobe Edge network. We will do a simple implementation using tags (formerly Launch)
@@ -242,9 +247,8 @@ As you can see on the [!UICONTROL Publishing Flow] screen, there is a lot more t
 
 ### Add the Adobe Experience Platform Debugger
 
-The Experience Platform Debugger is an extension available for Chrome and Firefox browsers which helps you see the Adobe technology implemented in your web pages. Download the version for your preferred browser:
+The Experience Platform Debugger is an extension available for Chrome which helps you see the Adobe technology implemented in your web pages. Download the version for your preferred browser:
 
-* [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome extension](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 If you've never used the Debugger before&mdash;and this one is different from the older Adobe Experience Cloud Debugger&mdash;you might want to watch this five-minute overview video:

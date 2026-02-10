@@ -1,11 +1,12 @@
 ---
 title: Use the Adobe Experience Platform Agent Orchestrator interface
-description: Learn how to interact with Experience Cloud solutions through contextual prompts, dynamic objects, and multiple specialized agents using Adobe Experience Platform Agent Orchestrator. 
+description: Learn how to interact with Experience Cloud solutions through contextual prompts, dynamic objects, and multiple specialized agents using Adobe Experience Platform Agent Orchestrator.
 feature: AI Assistant
 role: User, Developer, Admin
 level: Beginner
 last-substantial-update: 2025-10-17
 jira: KT-19105
+exl-id: b5e5f9cd-e33a-4259-a7df-08516c82ad19
 ---
 # Use the Adobe Experience Platform Agent Orchestrator interface
 

@@ -14,6 +14,11 @@ Learn how to implement the Adobe Journey Optimizer [web channel](https://experie
 
 By following this lesson, Journey Optimizer users are equipped to use the web channel for advanced online personalization using the Journey Optimizer web designer.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 ![Web SDK and Adobe Analytics diagram](assets/dc-websdk-ajo.png)  
 
 ## Learning Objectives

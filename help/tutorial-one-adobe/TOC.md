@@ -80,6 +80,13 @@ recommendations: noDisplay,noCatalog
     + [1.6.3 Create and deploy your external DAM app](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
     + [1.6.4 Publish your app privately](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
+  + 1.7 Workflow Builder {#crpr7}  
+    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
+    + [1.7.1 Getting started with Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+  + 1.8 Unified Review & Approval with Workfront, Frame.io and Enterprise Storage Management {#crpr8}
+    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
+    + [1.8.1 Getting started with Workfront, Frame.io & ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+    + [1.8.2 Create a new asset, review & approve it](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
 
 + Asset Management {#assetmgmt}
   + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -94,6 +101,10 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
     + [1.2.1 Getting Started with AEM Assets](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
+  + 1.4 Adobe Experience Manager Assets & Dynamic Media {#assetm4}
+    + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
+    + [1.4.1 Create your assets and dynamic media template](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
+    + [1.4.2 Use your dynamic media template with Adobe Journey Optimizer](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex2.md)
   + 1.5 Adobe Commerce as a Cloud Service {#assetm3}
     + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/accs.md)
     + [1.5.1 Getting started with Adobe Commerce as a Cloud Service](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
@@ -262,19 +273,29 @@ recommendations: noDisplay,noCatalog
       + [Overview](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
       + [3.1.1 Getting started with Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
 + Agents {#agents}
   + [Agentic AI Overview](/help/tutorial-one-adobe/ai.md)
   + 1.1 Agent Orchestrator {#agents1}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
     + [1.1.1 Getting started with Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
-    + [1.1.2 Adobe Marketing Agent with ChatGPT](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+    + [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+    + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
   + 1.2 Getting Started with Agents and AI {#agents2}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
     + [1.2.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-  + 1.3 Agent Collaboration {#agents3}
-    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
-    + [1.3.1 Getting started with Agent Collaboration](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
   + 1.4 Brand Concierge {#agents4}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
     + [1.4.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
     + [1.4.2 Implement Brand Concierge on your website](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+  + 1.5 Analytics & Agents {#agents5}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+    + [1.5.1 CJA & ChatGPT with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+    + [1.5.2 CJA & Claude.ai with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+    + [1.5.3 Adobe Analytics & Claude.ai with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+  + 1.6 AEM & Agents {#agents6}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
+    + [1.6.1 Content Production Agent](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+  + 1.7 Intelligent Developer Tools for Adobe Commerce {#agents7}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
+    + [1.7.1 Setting up your development environment](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)

@@ -25,9 +25,13 @@ Click to download the latest release of **PostBuster**.
 
 ![PostBuster](./images/pb1.png)
 
-Download the correct version for your OS.
+Click the correct version for your OS.
 
 ![PostBuster](./images/pb2.png)
+
+Download the file.
+
+![PostBuster](./images/pb2a.png)
 
 Once the download has completed and has been installed, open PostBuster. You should then see this. Click **Import**.
 

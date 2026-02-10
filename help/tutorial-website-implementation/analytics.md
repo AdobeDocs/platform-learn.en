@@ -8,6 +8,11 @@ exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
 
 In this lesson, you will implement the [Adobe Analytics extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) and create rules to send data to Adobe Analytics.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
 >[!NOTE]
@@ -35,7 +40,7 @@ There are many things that could be implemented for Analytics in tags. This less
 
 You should have already completed the lessons in [Configure tags](create-a-property.md) and [Add the Identity Service](id-service.md).
 
-Additionally, you will need at least one report suite ID and your tracking server. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html). You can retrieve your tracking server from your current implementation, Adobe Consultant or Customer Care representative.
+Additionally, you will need at least one report suite ID and your tracking server. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). You can retrieve your tracking server from your current implementation, Adobe Consultant or Customer Care representative.
 
 ## Add the Analytics Extension
 

@@ -6,7 +6,6 @@ level: Experienced
 doc-type: Feature Video
 last-substantial-update: 2022-11-15
 jira: KT-11493
-thumbnail: 3411365.jpeg
 exl-id: 48f59810-c745-45de-8e10-7c6b9009bafc
 ---
 # Set up Google Ads enhanced conversions

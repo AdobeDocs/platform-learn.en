@@ -4,7 +4,6 @@ description: Learn how to create an event-forwarding property in Data Collection
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6420
-thumbnail: 331938.jpeg
 exl-id: 63a578d3-1220-4588-b289-7310f4905d52
 ---
 # Create an event-forwarding property

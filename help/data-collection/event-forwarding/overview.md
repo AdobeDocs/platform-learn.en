@@ -4,12 +4,11 @@ description: Learn how event forwarding centralizes data collection, reduces the
 feature: Event Forwarding
 level: Beginner
 jira: KT-6419
-thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
 ---
 # Event forwarding overview
 
-Learn how event forwarding centralizes data collection, reduces the amount of code required in your web and mobile apps, and streams data to non-Adobe solutions via Adobe Experience Platform Edge Network. For more information, please visit the [event forwarding documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Learn how event forwarding centralizes data collection, reduces the amount of code required in your web and mobile apps, and streams data to non-Adobe solutions via Adobe Experience Platform Edge Network. For more information, please visit the [event forwarding documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >

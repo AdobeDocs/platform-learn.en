@@ -10,6 +10,11 @@ This lesson will guide you through the steps to enable Adobe Audience Manager us
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) (AAM) provides industry-leading services for online audience data management, giving digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
@@ -34,7 +39,7 @@ In order to complete this lesson, you will need:
 
 1. Admin access to Adobe Analytics so that you can enable Server-Side Forwarding for the report suite you are using for this tutorial. Alternatively, you can ask an existing admin at your organization to do this for you, following the instructions below.
 
-1. Your “Audience Manager Subdomain” (also known as the “Partner Name” “Partner ID,” or “Partner Subdomain”). If you already have Audience Manager implemented on your actual website, the easiest way to obtain it is to go to your actual website and open the Debugger. The subdomain is available on the Summary tab, in the Audience Manager section:
+1. Your "Audience Manager Subdomain" (also known as the "Partner Name" "Partner ID," or "Partner Subdomain"). If you already have Audience Manager implemented on your actual website, the easiest way to obtain it is to go to your actual website and open the Debugger. The subdomain is available on the Summary tab, in the Audience Manager section:
 
    ![You can use the Debugger to find the Audience Manager Subdomain on your actual website](images/aam-debugger-partner.png)
 
@@ -111,7 +116,7 @@ This is the second of two steps for enabling SSF. You have already flipped the s
 
 1. Check the box to **[!UICONTROL Automatically share Analytics Data with Audience Manager]**. This will add the Audience Manager "Module" (code) to the Analytics `AppMeasurement.js` implementation.
 
-1. Add your “Audience Manager Subdomain” (also known as the “Partner Name,” “Partner ID,” or “Partner Subdomain”). Follow these instructions to [obtain your Audience Manager Subdomain](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
+1. Add your "Audience Manager Subdomain" (also known as the "Partner Name," "Partner ID," or "Partner Subdomain"). Follow these instructions to [obtain your Audience Manager Subdomain](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
