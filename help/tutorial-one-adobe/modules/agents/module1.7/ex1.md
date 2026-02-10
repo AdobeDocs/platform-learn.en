@@ -10,7 +10,7 @@ doc-type: tutorial
 `npm install -g @adobe/aio-cli`
 `npm install @adobe/aio-commerce-sdk`
 
-
+`aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime`
 
 Next Step: [-](./ex1.md){target="_blank"}
 
