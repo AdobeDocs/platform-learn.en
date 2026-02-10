@@ -85,9 +85,7 @@ First we will configure the datastream. A datastream tells Experience Platform E
 
 To create your [!UICONTROL datastream]:
 
-1. Log into the [Experience Platform Data Collection user interface](https://experience.adobe.com/launch/)
-    <!--when will the edge config go live?-->
-
+1. Make sure you are still in the` Luma Tutorial` sandbox
 1. Select **[!UICONTROL Datastreams]** in the left navigation
 1. Select the **[!UICONTROL New Datastream]** button in the upper-right hand corner
 
@@ -99,18 +97,19 @@ To create your [!UICONTROL datastream]:
    
     ![Name the datastram and save](assets/websdk-edgeConfig-name.png)
 
-On the next screen, you specify where you want to send data. To send data to Experience Platform:
+Once data arrives at the Edge, the [!UICONTROL Datastream] forwards it to the configured [!UICONTROL Services]. To send data to Experience Platform:
 
-1. Toggle on **[!UICONTROL Adobe Experience Platform]** to expose additional fields
-1. For **[!UICONTROL Sandbox]**, select `Luma Tutorial`
-1. For **[!UICONTROL Event Dataset]**, select `Luma Web Events Dataset`
-1. If you use other Adobe applications, feel free to explore the other sections to see which information is required in the Edge Configuration of these other solutions. Remember, Web SDK was developed not only to stream data into Experience Platform, but also to replace all previous JavaScript libraries used by other Adobe applications. The Edge Configuration is used to specify the account details of each application to which you want to send the data.
+1. Select **[!UICONTROL Add Service]**
+    ![Add Service](assets/websdk-datastream-addService.png)
+    
+1. Select your `Luma Web Events Dataset`
 1. Select **[!UICONTROL Save]** 
-    ![Configure the datastream and save](assets/websdk-edgeConfig-addEnvironment.png)
 
-Once the Edge Configuration has saved, the resulting screen will show three environments have been created for Development, Staging, and Production. Additional Development environments can be added:
-    ![Each Edge Configuration can have multiple environments](assets/websdk-edgeConfig-environments.png)
-All three environments contain the Platform details you just entered. However, these details can be configured differently per environment. For example, you could have each environment send data to a different Platform sandbox. In this tutorial, we will not do any additional customization to our datastream.
+    ![Select your dataset and save](assets/websdk-datastream-addPlatformService.png)
+
+Although there is a Profile Dataset option in the datastream configuration, this should not be used to send normal XDM Individual Profile data to Platform. This setting should only be used to send consent, push token, and user activity region details.
+
+The checkboxes for [!UICONTROL Offer Decisioning], [!UICONTROL Edge Segmentation], [!UICONTROL Personalization Destinations], and [!UICONTROL Adobe Journey Optimizer] allow you to activate data on the Edge, but are not used in this tutorial.
 
 ## Install the Web SDK Extension
 
