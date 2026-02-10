@@ -11,6 +11,12 @@ exl-id: f287d101-2ebc-480a-adad-9fc180cf614e
 
 - Learn how to use AEM Assets & Dynamic Media in various ways.
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479788?quality=12&learn=on)
+
 ## Prerequisites
 
 - Access to AEM Assets & Dynamic Media

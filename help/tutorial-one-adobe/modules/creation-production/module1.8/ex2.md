@@ -137,9 +137,13 @@ You should then see this. Hover over the file **timetravelnow.png** and click **
 
 ![WF](./images/wffio14.png)
 
-As the project manager, you can now see the current version of that image so you know what's happening and that this is actively being worked on.
+As the project manager, you can now see the current version of that image so you know what's happening and that this is actively being worked on. Click **Open in Frame.io**.
 
 ![WF](./images/wffio15.png)
+
+A new window will then open up, showing the asset in Frame.io.
+
+![WF](./images/wffio15a.png)
 
 ## 1.8.2.5 Approve the asset 
 

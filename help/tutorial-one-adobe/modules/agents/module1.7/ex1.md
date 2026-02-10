@@ -7,6 +7,12 @@ exl-id: c9bfb327-362f-4475-89da-8e9788940d56
 ---
 # 1.7.1 Setting up your development environment
 
+`npm install -g npm@11.9.0`
+`npm install -g @adobe/aio-cli`
+`npm install @adobe/aio-commerce-sdk`
+
+`aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime`
+
 Next Step: [-](./ex1.md){target="_blank"}
 
 Go Back to [Intelligent Developer Tools for Adobe Commerce](./aiassisteddev.md){target="_blank"}

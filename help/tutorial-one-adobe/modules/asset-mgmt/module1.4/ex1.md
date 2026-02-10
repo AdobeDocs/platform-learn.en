@@ -128,17 +128,63 @@ This is the version for Paris.
 
 There will potentially be many other cities that CitiSignal will be rolling Fiber Max out to so in the future, new layers may be created in this file. For now, the focus is on the 3 cities already mentioned.
 
-In order to use these variations in combination with AEM Assets Dynamic Media, the layers for each city should be exported as images. To do that, go to **File** > **Export** > **Layers to Files...**.
+In order to use these variations in combination with AEM Assets Dynamic Media, the layers for each city should be exported as images separately without the background file, and another export should be done for the background layer without including any cities. 
+
+You should now hide and show only one of the layers. The first layer to show is the **Paris** layer, and all other layers should be hidden.
+
+To export that layer, go to **File** > **Export** > **Export As...**.
 
 ![AEM Assets Dynamic Media](./images/aemdm4.png)
 
-You should then see something like this. Select a location to export the files to, select the file type **PNG-8** and click **Run**.
+You should then see this. Select the file type **PNG**, make sure **Transparency** is enabled and then click **Export**.
 
 ![AEM Assets Dynamic Media](./images/aemdm5.png)
 
-After a couple of seconds, you should see this. Click **OK**.
+Change the filename to `citisignal-fiber-max-is-coming-paris.png`and click **Export**.
 
 ![AEM Assets Dynamic Media](./images/aemdm6.png)
+
+The next layer to show is the **Dubai** layer, and all other layers should be hidden.
+
+To export that layer, go to **File** > **Export** > **Export As...**.
+
+![AEM Assets Dynamic Media](./images/aemdm4a.png)
+
+You should then see this. Select the file type **PNG**, make sure **Transparency** is enabled and then click **Export**.
+
+![AEM Assets Dynamic Media](./images/aemdm5a.png)
+
+Change the filename to `citisignal-fiber-max-is-coming-dubai.png`and click **Export**.
+
+![AEM Assets Dynamic Media](./images/aemdm6a.png)
+
+The next layer to show is the **New York** layer, and all other layers should be hidden.
+
+To export that layer, go to **File** > **Export** > **Export As...**.
+
+![AEM Assets Dynamic Media](./images/aemdm4b.png)
+
+You should then see this. Select the file type **PNG**, make sure **Transparency** is enabled and then click **Export**.
+
+![AEM Assets Dynamic Media](./images/aemdm5b.png)
+
+Change the filename to `citisignal-fiber-max-is-coming-newyork.png`and click **Export**.
+
+![AEM Assets Dynamic Media](./images/aemdm6b.png)
+
+The next layer to show is the **background** layer, and all other layers should be hidden.
+
+To export that layer, go to **File** > **Export** > **Export As...**.
+
+![AEM Assets Dynamic Media](./images/aemdm4c.png)
+
+You should then see this. Select the file type **PNG**, make sure **Transparency** is enabled and then click **Export**.
+
+![AEM Assets Dynamic Media](./images/aemdm5c.png)
+
+Change the filename to `citisignal-fiber-max-is-coming-background`and click **Export**.
+
+![AEM Assets Dynamic Media](./images/aemdm6c.png)
 
 You should then have these files available in the export location that you selected.
 
@@ -312,9 +358,72 @@ By changing some variables, you now see another image being shown.
 
 By changing more variables, you now see another image being shown.
 
-![AEM Assets Dynamic Media](./images/aemdm48.png)
+In order to use this template with Adobe Journey Optimizer, and to meet the requirements of this use case, you should add one more layer that will be used to dynamically change the path of the file that needs to be displayed, based on a field that is part of the Real-Time Customer Profile in Adobe Experience Platform.
 
-Your Dynamic Media template is now configured successfully. In the next exercise, you'll use that template in combination with an email campaign in Adobe Journey Optimizer.
+During dataprep, a field was created in Adobe Experience Platform Schema's to store the **closest rollout city** for a customer. The path of the field is `--aepTenantId--.individualCharacteristics.fiber_rollout.closest_rollout_city`. 
+
+>[!NOTE]
+>
+>The screenshot below of the Adobe Experience Platform Schema is for information only. There is no need to navigate to AEP to visualize this yourself.
+
+![AEM Assets Dynamic Media](./images/aemdm50.png)
+
+In the next exercise, you will use that field to dynamically select which image should be shown to which customer.
+
+To make that possible, you should add a new image layer.
+
+First, let's hide the other layers that contain images for the rollout cities.
+
+![AEM Assets Dynamic Media](./images/aemdm51.png)
+
+Next, go to **Images** and select a random image of a city and add it to the canvas, and make sure it fits the whole canvas. It doesn't matter which city image you choose, as the path will be change dynamically by AJO in the next exercise.
+
+![AEM Assets Dynamic Media](./images/aemdm52.png)
+
+
+![AEM Assets Dynamic Media](./images/aemdm53.png)
+
+Go to **Parameters**. 
+
+Click the **switcher** icon so that the field **Hide** is enabled. Change the **Parameter Name** to `dynamic_city_hide`.
+
+Click the **switcher** icon so that the field **Hide** is enabled. Change the **Parameter Name** to `dynamic_city_image`.
+
+Click **Save**.
+
+![AEM Assets Dynamic Media](./images/aemdm54.png)
+
+Click **Preview**.
+
+![AEM Assets Dynamic Media](./images/aemdm55.png)
+
+You should then see this. Enable the switcher icon to **Include all parameters**. Change some input variables as indicated in the screenshot. You should see your image change dynamically based on the input provided. The static fields **city_paris**, **city_dubai** and **city_ny**, should be set to 1 which means that these images will be hidden.
+
+The field **dynamic_city_hide** should be set to 0, which means that it will be shown.
+
+The field **dynamic_city_image** now has the URL to the image of Paris, which looks like this: `vangeluwCitiSignalDM/citisignal-fiber-max-is-coming_citisignal-paris-1`.
+
+![AEM Assets Dynamic Media](./images/aemdm56.png)
+
+Select the word **paris** in the URL.
+
+![AEM Assets Dynamic Media](./images/aemdm57.png)
+
+Change **paris** to `newyork` and then click somewhere else in the UI to see the image change to the New York city image.
+
+![AEM Assets Dynamic Media](./images/aemdm58.png)
+
+Select the word **newyork** and change it to `dubai` and then click somewhere else in the UI to see the image change to the Dubai city image.
+
+Finally, click **Publish**.
+
+![AEM Assets Dynamic Media](./images/aemdm60.png)
+
+You should then see this. Click **Yes**.
+
+![AEM Assets Dynamic Media](./images/aemdm61.png)
+
+Your Dynamic Media template is now configured and published successfully. In the next exercise, you'll use that template in combination with an email campaign in Adobe Journey Optimizer.
 
 ## Next Steps
 

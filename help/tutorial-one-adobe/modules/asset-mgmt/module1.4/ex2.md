@@ -11,7 +11,7 @@ exl-id: 0dd499cc-ec3b-42c3-9c08-6512ea5b9377
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./images/acophome.png)
+![ACOP](./images/acophome.png) 
 
 You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
@@ -77,9 +77,69 @@ Navigate to the folder in which you stored your Dynamic Media template. Select y
 
 ![Journey Optimizer](./images/gsemail32.png)
 
-You should then see this.
+You should then see this. You also. notice the **PARAMETERS** which allow you to change the parameters of the dynamic media template.
 
 ![Journey Optimizer](./images/gsemail33.png)
+
+## 1.4.2.2 Personalize the dynamic media template
+
+As dicussed in the previous exercise, AJO now needs to dynamically decide what the values should be that become part of the Dynamic Media template.
+
+Just like in the **Preview** step in the previous exercise, the fields **city_paris**, **city_dubai** and **city_ny**, should be set to 1 which means that these images will be hidden.
+
+For the field **title**, click the personalization icon.
+
+![Journey Optimizer](./images/gsemail34.png)
+
+Replace the default text by this: `Hi {{profile.person.name.firstName}}`. Click **Save**.
+
+![Journey Optimizer](./images/gsemail35.png)
+
+For the field **body**, click the personalization icon.
+
+![Journey Optimizer](./images/gsemail36.png)
+
+Replace the default text by this: `CitiSignal is coming to {{profile.homeAddress.city}}!`. Click **Save**.
+
+![Journey Optimizer](./images/gsemail37.png)
+
+Ensure that the field **`dynamic_city_hide`** is set to 0. Click the personalization icon for the field **`dynamic_city_image`**.
+
+![Journey Optimizer](./images/gsemail38.png)
+
+Replace the default text by this: `--aepUserLdap--CitiSignalDM/citisignal-fiber-max-is-coming_citisignal-{{profile._experienceplatform.individualCharacteristics.fiber_rollout.closest_rollout_city}}-1`. Click **Save**.
+
+![Journey Optimizer](./images/gsemail39.png)
+
+You should then see this. The image isn't rendering here anymore which is expected as the dynamic variables aren't available in the context of the email editor.
+
+Click **Save**.
+
+![Journey Optimizer](./images/gsemail40.png)
+
+Top test your configuration, click **Simulate Content** and then select **Simulate Content**.
+
+![Journey Optimizer](./images/gsemail41.png)
+
+You should then see something like this. If you don't have test profiles available, you can add them by going to **Manage test profiles**.
+
+Once you have test profiles available that contain the data needed to test this use case, you can switch from one profile to another to see the changes happen dynamically.
+
+Here's a profile that is linked to the rollout city New York.
+
+![Journey Optimizer](./images/gsemail42.png)
+
+Here's a profile that is linked to the rollout city Paris.
+
+![Journey Optimizer](./images/gsemail43.png)
+
+Here's a profile that is linked to the rollout city Dubai.
+
+Click **Close**.
+
+![Journey Optimizer](./images/gsemail44.png)
+
+You've now finished this exercise. There's no need to publish your email campaign.
 
 ## Next Steps
 
