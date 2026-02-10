@@ -56,10 +56,6 @@ Click **Install Blueprint**.
 
 ![WF](./images/blueprint4.png)
 
-You should then see this. Installing may take a couple of minutes.
-
-![WF](./images/blueprint5.png)
-
 After a couple of minutes, the blueprint will be installed.
 
 ![WF](./images/blueprint6.png)
@@ -82,7 +78,7 @@ Go to **Programs** and click **+ New Program**. Select **New Program**.
 
 ![WF](./images/wfnp1.png)
 
-Enter the program name: `--aepUserLdap-- CitiSignal Fiber Launch`.
+Enter the program name: `--aepUserLdap-- - CitiSignal Fiber Launch`.
 
 ![WF](./images/wfp6b.png)
 
@@ -194,7 +190,7 @@ In Workfront, navigate to the **Project** level.
 
 Go to **Documents**, click **+ Add new** and then select **Document**.
 
-![WF](./images/wfrefimg3.png) 
+![WF](./images/wfrefimg3.png)
 
 Navigate to the folder that you downloaded which contains the reference images. Select all images and click **Open**.
 
