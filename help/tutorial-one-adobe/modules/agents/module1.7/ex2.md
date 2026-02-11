@@ -3,6 +3,7 @@ title: Use Cursor.ai to develop your project
 description: Use Cursor.ai to develop your project
 kt: 5342
 doc-type: tutorial
+exl-id: c73498b6-5e08-41b5-81a9-c0a76a6e2792
 ---
 # 1.7.2 Use Cursor.ai to develop your project
 
