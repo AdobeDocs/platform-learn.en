@@ -283,4 +283,4 @@ recommendations: noDisplay,noCatalog
   + 1.7 Intelligent Developer Tools for Adobe Commerce {#agents7}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
     + [1.7.1 Setting up your development environment](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
-    + [1.7.2 Use Cursor.ai to develop your project](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)
+    + [1.7.2 Use Cursor to develop your project](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)
