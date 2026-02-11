@@ -337,7 +337,7 @@ Go to **Stores** and then to **Configuration**.
 
 ![Cursor + Commerce](./images/cursorai64.png)
 
-Go to **Adobe Services** and select **Adobe I/O Events**. You should then see that the field **Adobe I/O Workspace Configuration** has a value of a couple of asterixes and the field **Merchant ID** should also have a value like `--aepUserLdap--_commerce_events`.	
+Go to **Adobe Services** and select **Adobe I/O Events**. You should then see that the field **Adobe I/O Workspace Configuration** has a value of a couple of asterixes and the field **Merchant ID** should also have a value like `--aepUserLdap--_commerce_events`.
 
 ![Cursor + Commerce](./images/cursorai65.png)
 
