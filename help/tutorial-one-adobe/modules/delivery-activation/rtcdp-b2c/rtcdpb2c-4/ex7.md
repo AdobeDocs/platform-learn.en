@@ -104,8 +104,6 @@ An audience status of **realized** means that your profile is part of the audien
 
 ## Next Steps
 
-Go to [Summary and benefits](./summary.md){target="_blank"}
-
 Go back to [Real-Time CDP: Audience Activation to Microsoft Azure Event Hub](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

@@ -33,8 +33,6 @@ Next Step:
 
 ## Next Steps
 
-Go to [Summary and benefits](./summary.md){target="_blank"}
-
 Go back to [Setup of Adobe Experience Platform Data Collection and the Web SDK tag extension](./data-ingestion-launch-web-sdk.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

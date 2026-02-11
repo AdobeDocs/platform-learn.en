@@ -39,10 +39,6 @@ In this exercise you'll configure your own journey which will deliver push notif
 
 In this exercise you'll configure a campaign that delivers in-app messages to your customers.
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

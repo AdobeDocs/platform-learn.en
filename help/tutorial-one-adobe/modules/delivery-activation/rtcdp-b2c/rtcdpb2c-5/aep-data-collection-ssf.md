@@ -53,10 +53,6 @@ In this exercise, you'll create and configure a Google Cloud Function and you'll
 
 In this exercise, you'll configure your AWS environment using AWS IAM, AWS Kinesis, AWS Firehose and AWS S3 after which you'll start forwarding event data that is collected by Web SDK.
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

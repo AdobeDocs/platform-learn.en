@@ -25,8 +25,6 @@ In the next exercise you'll see how you can combine your offers and decisions th
 
 ## Next Steps
 
-Go to [Summary & Benefits](./summary.md){target="_blank"}
-
 Go back to [Experience Decisioning](ajo-decisioning.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

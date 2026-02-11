@@ -62,10 +62,6 @@ In this exercise you will create an Azure function that will be triggered in rea
 
 At this point, everything is setup. You can now do some browsing on your demo website and get audience qualifications delivered to your Microsoft Azure Event Hub Trigger function.  
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

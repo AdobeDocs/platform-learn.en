@@ -294,8 +294,6 @@ Now go back to your open webhook on [https://eodts05snjmjz67.m.pipedream.net](ht
 
 ## Next Steps
 
-Go to [Summary and benefits](./summary.md){target="_blank"}
-
 Go back to [Real-time CDP - Build an audience and take action](./real-time-cdp-build-a-segment-take-action.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

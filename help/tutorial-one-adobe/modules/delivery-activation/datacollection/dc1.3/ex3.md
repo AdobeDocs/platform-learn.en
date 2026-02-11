@@ -141,8 +141,6 @@ The audience is now populated, and the audience is targetable from within the AE
 
 ## Next Steps
 
-Go to [Summary & benefits](./summary.md){target="_blank"}
-
 Go back to [Federated Audience Composition](./fac.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

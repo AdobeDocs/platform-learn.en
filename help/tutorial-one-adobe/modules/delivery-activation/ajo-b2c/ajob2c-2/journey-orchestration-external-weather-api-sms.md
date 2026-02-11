@@ -55,10 +55,6 @@ Combine events, data sources and actions into an intelligent and contextual jour
 
 Trigger your specific journey.
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

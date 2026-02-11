@@ -39,10 +39,6 @@ In this exercise, you'll configure a traditional email campaign.
 
 In this exercise, you'll use segment memberships to define what content will be shown inside an email.
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

@@ -52,8 +52,6 @@ You'll now see the information that would ideally be displayed in the Call Cente
 
 ## Next Steps
 
-Go to [Summary and benefits](./summary.md){target="_blank"}
-
 Go back to [Real-time Customer Profile](./real-time-customer-profile.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}
