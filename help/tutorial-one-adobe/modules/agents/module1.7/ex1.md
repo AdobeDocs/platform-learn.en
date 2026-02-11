@@ -25,7 +25,7 @@ Select **App Builder**.
 
 ![GSPeM Extensibility](./images/commerceagent2.png)
 
-Enter the name `--aepUserLdap-- vangeluw Commerce Events`. Click **Save**.
+Enter the name `--aepUserLdap-- Commerce Events`. Click **Save**.
 
 ![GSPeM Extensibility](./images/commerceagent4.png)
 
@@ -169,7 +169,7 @@ You've now set up the basic elements to be able to run an App Builder project, i
 
 ## Next Steps
 
-Go to [Use Cursor.ai to develop your project](./ex2.md){target="_blank"}
+Go to [Use Cursor to develop your project](./ex2.md){target="_blank"}
 
 Go Back to [Intelligent Developer Tools for Adobe Commerce](./aiassisteddev.md){target="_blank"}
 

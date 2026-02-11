@@ -71,7 +71,7 @@ In this exercise you'll learn how to:
 
 **Goal**
 
-In this module you'll use intelligent developer tools such as Cursor.ai to develop an extension to your Adobe Commerce as a Cloud Service environment. The goal of that extension is to forward incoming order events to a 3rd party endpoint. Event forwarding in Adobe Commerce as a Cloud Service relies on Adobe I/O App Builder, Adobe I/O Events and Adobe I/O Runtime. The configuration of all these services will be assisted by Cursor.ai.
+In this module you'll use intelligent developer tools such as Cursor to develop an extension to your Adobe Commerce as a Cloud Service environment. The goal of that extension is to forward incoming order events to a 3rd party endpoint. Event forwarding in Adobe Commerce as a Cloud Service relies on Adobe I/O App Builder, Adobe I/O Events and Adobe I/O Runtime. The configuration of all these services will be assisted by Cursor.
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
