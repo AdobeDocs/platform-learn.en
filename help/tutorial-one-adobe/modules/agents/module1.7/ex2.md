@@ -80,9 +80,21 @@ Go to [https://pipedream.com/requestbin](https://pipedream.com/requestbin), crea
 
 Click **copy** to copy the url. You'll need to specify this url in the next exercise. The URL in this example is `https://eodts05snjmjz67.m.pipedream.net`.
 
-![Data Ingestion](./images/webhook1.png)
+![Cursor.ai + Commerce](./images/webhook1.png)
 
 ## 1.7.2.3 Cursor.ai
+
+Open Cursor.ai. Click **Open project**.
+
+![Cursor.ai + Commerce](./images/cursorai14.png)
+
+Navigate to the folder that you created, which should be named `--aepUserLdap---commerce`. In that folder, select the folder which is named `commerce-integration-starter-kit`. Click **Open**.
+
+![Cursor.ai + Commerce](./images/cursorai15.png)
+
+You should then see this. Before continuing, sure that the top-level folder that is opened in Cursor.ai is `commerce-integration-starter-kit`.
+
+![Cursor.ai + Commerce](./images/cursorai16.png)
 
 `I would like to build an app that subscribes to order created events and sends them to a configurable URL with basic authentication`
 
