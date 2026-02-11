@@ -62,10 +62,6 @@ In this exercise, set up an activity in Adobe Target, implemented via the Web SD
 
 To ensure the Web SDK is able to ingest data into Adobe Experience Platform, there is a requirement for a specific XDM mixin to be part of the XDM schema in Adobe Experience Platform.
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

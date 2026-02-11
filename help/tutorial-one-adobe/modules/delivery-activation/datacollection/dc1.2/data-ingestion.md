@@ -50,10 +50,6 @@ In this exercise, you'll go on the website and mobile app and behave like a cust
 
 Setup your Data Landing Zone Source connector with Azure Blob storage.
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

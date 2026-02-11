@@ -164,8 +164,6 @@ Loading the data can take a couple of minutes, when succesful, you'll see a stat
 
 ## Next Steps
 
-Go to [Summary and benefits](./summary.md){target="_blank"}
-
 Go back to [Data Ingestion](./data-ingestion.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

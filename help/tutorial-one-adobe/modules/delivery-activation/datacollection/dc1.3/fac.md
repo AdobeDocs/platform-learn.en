@@ -42,10 +42,6 @@ In this exercise, you'll configure your data model in AEP for the federated data
 
 In this exercise, you'll configure your data model in AEP for the federated data.
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
