@@ -1,13 +1,13 @@
 ---
-title: Experience Decisioning
-description: Experience Decisioning
+title: Adobe Journey Optimizer Decisioning
+description: Adobe Journey Optimizer Decisioning
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 42f69ae8-114a-4195-b343-c143638d9d34
 ---
-# 3.7 Adobe Journey Optimizer: Experience Decisioning
+# 3.7 Adobe Journey Optimizer: Decisioning
 
 In this module, you will get a hands-on walkthrough of Adobe Journey Optimizer's Experience Decisioning capabilities.
 
@@ -30,7 +30,7 @@ With Experience Decisioning, you can determine the best option from a set of ava
 
 ## Exercises
 
-[3.7.1 Experience Decisioning 101](./ex1.md)
+[3.7.1 Adobe Journey Optimizer Decisioning 101](./ex1.md)
 
 In this exercise you'll get a better understanding of all the different concepts of Offer Decisioning, and how to access Offer Decisioning in Adobe Journey Optimizer.
 
@@ -38,7 +38,7 @@ In this exercise you'll get a better understanding of all the different concepts
 
 In this exercise you'll configure your own personalized offers and your own decision, which will then be published.
 
-[3.7.3 Web SDK setup for Experience Decisioning](./ex3.md)
+[3.7.3 Web SDK setup for Adobe Journey Optimizer Decisioning](./ex3.md)
 
 In this exercise you'll use the demo website to test your decision.
 
