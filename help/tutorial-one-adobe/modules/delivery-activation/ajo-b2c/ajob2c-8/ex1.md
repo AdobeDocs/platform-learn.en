@@ -17,8 +17,6 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 ## Next Steps
 
-Go to [Summary & Benefits](./summary.md)
-
 Go back to [Adobe Journey Optimizer: Campaigns](./ajocampaigns.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

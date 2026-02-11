@@ -53,10 +53,6 @@ Use the audience you created to configure an Experience Targeting Activity in Ad
 
 Configure your own destination using Destinations SDK.
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

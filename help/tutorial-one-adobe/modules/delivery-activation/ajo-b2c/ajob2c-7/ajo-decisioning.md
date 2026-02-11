@@ -42,10 +42,6 @@ In this exercise you'll configure your own personalized offers and your own deci
 
 In this exercise you'll use the demo website to test your decision.
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

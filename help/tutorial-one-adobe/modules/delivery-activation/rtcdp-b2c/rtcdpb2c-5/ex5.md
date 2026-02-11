@@ -339,8 +339,6 @@ When you download such a file and open it using a text editor, you'll see that i
 
 ## Next Steps
 
-Go to [Summary and benefits](./summary.md){target="_blank"}
-
 Go back to [Real-Time CDP Connections: Event Forwarding](./aep-data-collection-ssf.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

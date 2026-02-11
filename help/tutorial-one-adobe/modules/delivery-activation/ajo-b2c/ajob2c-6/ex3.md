@@ -229,8 +229,6 @@ You've now completed this exercise.
 
 ## Next Steps
 
-Go to [Summary and Benefits](./summary.md)
-
 Go back to [Adobe Journey Optimizer: Content Management](./ajocontent.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

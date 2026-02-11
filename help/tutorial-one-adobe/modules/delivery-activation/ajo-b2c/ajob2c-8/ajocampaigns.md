@@ -21,10 +21,6 @@ exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
 
 In this exercise, you will configure and use Campaigns in Adobe Journey Optimizer.
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

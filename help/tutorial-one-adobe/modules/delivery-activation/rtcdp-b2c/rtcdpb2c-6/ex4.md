@@ -227,8 +227,6 @@ You have finished this exercise.
 
 ## Next Steps
 
-Go to [Summary and benefits](./summary.md){target="_blank"}
-
 Go back to [Stream data from Apache Kafka into Adobe Experience Platform](./aep-apache-kafka.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

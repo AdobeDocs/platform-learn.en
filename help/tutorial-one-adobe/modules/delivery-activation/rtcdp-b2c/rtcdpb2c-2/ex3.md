@@ -55,8 +55,6 @@ To ensure that no unneeded demo data is kept in your environment, please make su
 
 ## Next Steps
 
-Go to [Summary and benefits](./summary.md){target="_blank"}
-
 Go back to [Intelligent Services](./intelligent-services.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

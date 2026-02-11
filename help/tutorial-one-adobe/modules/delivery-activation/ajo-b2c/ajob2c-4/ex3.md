@@ -102,8 +102,6 @@ You have finished this exercise.
 
 ## Next Steps
 
-Go to [Summary and benefits](./summary.md){target="_blank"}
-
 Go back to [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

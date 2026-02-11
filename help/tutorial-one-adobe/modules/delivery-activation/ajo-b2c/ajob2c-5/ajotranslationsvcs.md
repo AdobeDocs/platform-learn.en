@@ -30,10 +30,6 @@ In this exercise, you will configure your Translations Provider using Microsoft 
 
 In this exercise, you will add languages to the email in your campaign.
 
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
