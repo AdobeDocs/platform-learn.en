@@ -67,6 +67,12 @@ In this exercise you'll learn how to:
 - Connect ChatGPT and/or Claude.ai to **Customer Journey Analytics** and perform data analysis tasks
 - Connect ChatGPT and/or Claude.ai to **Adobe Analytics** and perform data analysis tasks
 
+[1.7 Intelligent Developer Tools for Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
+
+**Goal**
+
+In this module you'll use intelligent developer tools such as Cursor.ai to develop an extension to your Adobe Commerce as a Cloud Service environment. The goal of that extension is to forward incoming order events to a 3rd party endpoint. Event forwarding in Adobe Commerce as a Cloud Service relies on Adobe I/O App Builder, Adobe I/O Events and Adobe I/O Runtime. The configuration of all these services will be assisted by Cursor.ai.
+
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
