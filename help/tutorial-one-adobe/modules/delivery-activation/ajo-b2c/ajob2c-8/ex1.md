@@ -51,10 +51,629 @@ Select **Upload DDL file** and then click **Choose files**.
 
 ![AJO OC](./images/ajoocdata3.png)
 
-Now that your relational XDM schemas are configured and with data being ingested, you can start to use that data to create your orchestrated campaign in the next exercise. 
+Download the file [citisignal_ddl_tables_only.sql](./assets/citisignal_ddl_tables_only.sql) to your desktop. 
+
+![AJO OC](./images/ajoocdata4.png)
+
+Select the file **`citisignal_ddl_tables_only.sql`** and click **open**.
+
+![AJO OC](./images/ajoocdata5.png)
+
+You should then see this. Click **Next**.
+
+![AJO OC](./images/ajoocdata6.png)
+
+### Identity
+
+Some of your schemas contain personal identifiers and those fields shuold be marked as **Identity**, and you need to select the **Namespace** that is applicable to that specific type of identity.
+
+**`citisignal_accounts`**
+
+For this schema, go to the field **account_id** and set the **Identity** type to **Demo System - CRMID**.
+
+![AJO OC](./images/ajoocdata7.png)
+
+**`citisignal_recipients`**
+
+For this schema, go to the field **account_id** and set the **Identity** type to **Demo System - CRMID** and go to the field **email** and set the **Identity** type to **Email**.
+
+![AJO OC](./images/ajoocdata8.png)
+
+### Versioning
+
+In order to keep track of updates to the data that will be ingested against these schemas, it is required to set a field that will be used to keep track of the version of the uploaded data. The field that is used for this in all these schemas is the field **lastmodified**, which contains a timestamp of the uploaded data.
+
+You now need to check the checkbox for **Versioning** for the field **lastmodified** in each of these schemas.
+
+**`citisignal_products`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata9.png)
+
+**`citisignal_product_bundles`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata10.png)
+
+**`citisignal_product_relationships`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata11.png)
+
+**`citisignal_accounts`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata12.png)
+
+**`citisignal_recipients`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata13.png)
+
+**`citisignal_mobile_subscriptions`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata14.png)
+
+**`citisignal_internet_subscriptions`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata15.png)
+
+**`citisignal_tv_subscriptions`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata16.png)
+
+**`citisignal_equipment_subscriptions`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata17.png)
+
+**`citisignal_mobile_usage_summary`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata18.png)
+
+**`citisignal_internet_usage_summary`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata19.png)
+
+**`citisignal_offers`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata20.png)
+
+**`citisignal_offer_eligibility`**
+
+Check the checkbox for **Versioning** for the field **lastmodified**.
+
+![AJO OC](./images/ajoocdata21.png)
+
+### Schema name
+
+WHen ingesting these schemas for enablement purposes in a shared sandbox, it is required to change the name of each schema so that it's unique in that specific sandbox. The reason for making this change is to avoid schema naming conflicts.
+
+For this lab, you should add your LDAP in front of each schema name, which means that every schema name should have this prefix: `--aepUserLdap--_`
+
+**`citisignal_products`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_products`.
+
+![AJO OC](./images/ajoocdatan9.png)
+
+**`citisignal_product_bundles`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_product_bundles`.
+
+![AJO OC](./images/ajoocdatan10.png)
+
+**`citisignal_product_relationships`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_product_relationships`.
+
+![AJO OC](./images/ajoocdatan11.png)
+
+**`citisignal_accounts`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_accounts`.
+
+![AJO OC](./images/ajoocdatan12.png)
+
+**`citisignal_recipients`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_recipients`.
+
+![AJO OC](./images/ajoocdatan13.png)
+
+**`citisignal_mobile_subscriptions`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_mobile_subscriptions`.
+
+![AJO OC](./images/ajoocdatan14.png)
+
+**`citisignal_internet_subscriptions`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_internet_subscriptions`.
+
+![AJO OC](./images/ajoocdatan15.png)
+
+**`citisignal_tv_subscriptions`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_internet_subscriptions`.
+
+![AJO OC](./images/ajoocdatan16.png)
+
+**`citisignal_equipment_subscriptions`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_equipment_subscriptions`.
+
+![AJO OC](./images/ajoocdatan17.png)
+
+**`citisignal_mobile_usage_summary`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_mobile_usage_summary`.
+
+![AJO OC](./images/ajoocdatan18.png)
+
+**`citisignal_internet_usage_summary`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_internet_usage_summary`.
+
+![AJO OC](./images/ajoocdatan19.png)
+
+**`citisignal_offers`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_offers`.
+
+![AJO OC](./images/ajoocdatan20.png)
+
+**`citisignal_offer_eligibility`**
+
+Change the name of your schema to`--aepUserLdap--_ citisignal_offer_eligibility`.
+
+![AJO OC](./images/ajoocdatan21.png)
+
+Your schemas are now ready to be saved. Click **Done**.
+
+![AJO OC](./images/ajoocdata22.png)
+
+You should then see this. Click **Save**.
+
+![AJO OC](./images/ajoocdata23.png)
+
+Click **Open jobs**.
+
+![AJO OC](./images/ajoocdata24.png)
+
+You should then see this. You should wait until the job completes successfully before continuing to the next step.
+
+![AJO OC](./images/ajoocdata25.png)
+
+Once the job completes successfully, you can continue with the next step. This may take 5-10 minutes.
+
+![AJO OC](./images/ajoocdata26.png)
+
+Now that your relational XDM schemas are configured and with data being ingested, you can start to use that data to create your orchestrated campaign in the next exercise.
 
 ## 3.8.1.2 Data ingestion
 
+Go to **Datasets**. You should then see a dataset that was created for each schema that you created.
+
+![AJO OC](./images/ajoocdata27.png)
+
+Download the file [data.zip](./assets/data.zip) to your desktop and unzip it.
+
+![AJO OC](./images/ajoocdata28.png)
+
+Open the folder **data**. You should see a CSV file for each of the schemas that were created. You now need to upload that data into each corresponding dataset. For this lab, you will be doing that by doing a loal file upload into each dataset.
+
+![AJO OC](./images/ajoocdata29.png)
+
+**`vangeluw_citisignal_products`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_products`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas9a.png)
+
+Click **Choose files**. Select the file **`citisignal_products.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas9b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas9c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas9d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas9e.png)
+
+**`vangeluw_citisignal_product_bundles`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_product_bundles`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas10a.png)
+
+Click **Choose files**. Select the file **`citisignal_product_bundles.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas10b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas10c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas10d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas10e.png)
+
+**`vangeluw_citisignal_product_relationships`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_product_relationships`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas11a.png)
+
+Click **Choose files**. Select the file **`citisignal_product_relationships.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas11b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas11c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas11d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas11e.png)
+
+**`vangeluw_citisignal_accounts`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_accounts`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas12a.png)
+
+Click **Choose files**. Select the file **`citisignal_accounts.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas12b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas12c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas12d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas12e.png)
+
+**`vangeluw_citisignal_recipients`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_recipients`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas13a.png)
+
+Click **Choose files**. Select the file **`citisignal_recipients.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas13b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas13c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas13d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas13e.png)
+
+**`vangeluw_citisignal_mobile_subscriptions`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_mobile_subscriptions`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas14a.png)
+
+Click **Choose files**. Select the file **`citisignal_mobile_subscriptions.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas14b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas14c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas14d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas14e.png)
+
+**`vangeluw_citisignal_internet_subscriptions`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_internet_subscriptions`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas15a.png)
+
+Click **Choose files**. Select the file **`citisignal_internet_subscriptions.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas15b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas15c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas15d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas15e.png)
+
+**`vangeluw_citisignal_tv_subscriptions`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_tv_subscriptions`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas16a.png)
+
+Click **Choose files**. Select the file **`citisignal_tv_subscriptions.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas16b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas16c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas16d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas16e.png)
+
+**`vangeluw_citisignal_equipment_subscriptions`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_equipment_subscriptions`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas17a.png)
+
+Click **Choose files**. Select the file **`citisignal_equipment_subscriptions.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas17b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas17c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas17d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas17e.png)
+
+**`vangeluw_citisignal_mobile_usage_summary`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_mobile_usage_summary`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas18a.png)
+
+Click **Choose files**. Select the file **`citisignal_mobile_usage_summary.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas18b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas18c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas18d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas18e.png)
+
+**`vangeluw_citisignal_internet_usage_summary`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_internet_usage_summary`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas19a.png)
+
+Click **Choose files**. Select the file **`citisignal_internet_usage_summary.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas19b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas19c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas19d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas19e.png)
+
+**`vangeluw_citisignal_offers`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_offers`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas20a.png)
+
+Click **Choose files**. Select the file **`citisignal_offers.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas20b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas20c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas20d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas20e.png)
+
+**`vangeluw_citisignal_offer_eligibility`**
+
+Go to **Sources**, search for `local` and then click **Add data** under **Local File Upload**.
+
+![AJO OC](./images/ajoocdatas10.png)
+
+Enable the toggle for **Enable change data capture**.
+
+Select the dataset `vangeluw_citisignal_offer_eligibility`.
+
+Click **Next**.
+
+![AJO OC](./images/ajoocdatas21a.png)
+
+Click **Choose files**. Select the file **`citisignal_offer_eligibility.csv`** and click **open**.
+
+![AJO OC](./images/ajoocdatas21b.png)
+
+Click **Next**
+
+![AJO OC](./images/ajoocdatas21c.png)
+
+Click **Finish**.
+
+![AJO OC](./images/ajoocdatas21d.png)
+
+After a couple of minutes, you can see the data being ingested in your dataset.
+
+![AJO OC](./images/ajoocdatas21e.png)
+
+All data is now ingested. In the next exercise you'll start to use that data as part of an orchestrated campaign.
 
 ## Next Steps
 
