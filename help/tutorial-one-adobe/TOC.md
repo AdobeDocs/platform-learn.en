@@ -80,9 +80,9 @@ recommendations: noDisplay,noCatalog
     + [1.6.3 Create and deploy your external DAM app](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
     + [1.6.4 Publish your app privately](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
-  + 1.7 Workflow Builder {#crpr7}  
+  + 1.7 Firefly Custom Workflows {#crpr7}  
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
-    + [1.7.1 Getting started with Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+    + [1.7.1 Getting started with Firefly Custom Workflows](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
   + 1.8 Unified Review & Approval with Workfront, Frame.io and Enterprise Storage Management {#crpr8}
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
     + [1.8.1 Getting started with Workfront, Frame.io & ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
