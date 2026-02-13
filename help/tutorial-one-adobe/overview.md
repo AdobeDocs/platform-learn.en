@@ -88,9 +88,9 @@ In this module, you will use Adobe Frame.io in combination with Adobe Premiere P
 
 In this module, you will build a custom application to extend capability in GenStudio for Performance Marketing, using Adobe IO and App Builder.
 
-[1.7 Workflow Builder](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+[1.7 Firefly Custom Workflows](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
 
-In this module, you will use Workflow Builder to solve for repeatable creative design and automation use cases.
+In this module, you will use Custom Workflows in Firefly to solve for repeatable creative design and automation use cases.
 
 [1.8 Unified Review & Approval with Workfront, Frame.io and Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"}
 
