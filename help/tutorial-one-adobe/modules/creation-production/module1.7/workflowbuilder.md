@@ -9,7 +9,7 @@ exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
 ---
 # 1.7 Firefly Custom Workflows
 
-Firefly Custom Workflows's primary focus is on creative technologists and solution builders who create and configure workflows.  
+Firefly Custom Workflows's primary focus is on creative technologists and solution builders who create and configure workflows.   
 
 With Firefly Custom Workflows, you can:
 
