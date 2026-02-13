@@ -171,8 +171,8 @@ You've now done this for 1 image. Let's now use this workflow, but for multiple 
 
 Download these images to your desktop:
 
-- [watch.png](./assets/watch.png) 
-- [airpods.png](./assets/airpods.png) 
+- [watch.jpg](./assets/watch.jpg) 
+- [airpods.jpg](./assets/airpods.jpg) 
 
 ![Firefly Custom Workflows](./images/ffcw28.png)
 
