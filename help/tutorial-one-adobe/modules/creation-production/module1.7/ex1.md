@@ -165,7 +165,7 @@ After a couple of videos, you should see this which shows a video based on the c
 
 ![Firefly Custom Workflows](./images/ffcw27.png)
 
-## 1.7.1.4 Scale
+## 1.7.1.5 Scale
 
 You've now done this for 1 image. Let's now use this workflow, but for multiple images.
 
@@ -196,9 +196,53 @@ After several minutes, you should see a similar output, with 3 images being gene
 
 ![Firefly Custom Workflows](./images/ffcw33.png)
 
-## Next Steps
+## 1.7.1.5 Store in AEM Assets CS
 
-Go to [...](./ex1.md){target="_blank"}
+In this exercise, you'll store the assets that are created as part of your custom workflow in AEM Assets CS.
+
+You should first create a new folder in your AEM Assets CS environment.
+
+To do that, go to [https://experience.adobe.com](https://experience.adobe.com). Click to open **Experience Manager Assets**.
+
+![Firefly Custom Workflows](./images/ffcw50.png)
+
+Select your AEM Assets CS environment, which should be named `--aepUserLdap-- - CitiSignal AEM + ACCS`.
+
+![Firefly Custom Workflows](./images/ffcw51.png)
+
+Go to **Assets** and click **Create Folder**.
+
+![Firefly Custom Workflows](./images/ffcw52.png)
+
+Enter the name: `--aepUserLdap-- - Firefly Custom Workflows`. Click **Create**.
+
+![Firefly Custom Workflows](./images/ffcw53.png)
+
+Go back to your custom workflow and go to the **Output Images** node. Click **Default** and then select **AEM Assets**.
+
+![Firefly Custom Workflows](./images/ffcw57.png)
+
+You should then see this popup. Select your AEM Assets CS repository, and then select the folder that you just created, which should be named: `--aepUserLdap-- - Firefly Custom Workflows`. Click **Select**.
+
+![Firefly Custom Workflows](./images/ffcw54.png)
+
+Go to the **Output Video** node. Click **Default** and then select **AEM Assets**.
+
+![Firefly Custom Workflows](./images/ffcw55.png)
+
+You should then see this popup. Select your AEM Assets CS repository, and then select the folder that you just created, which should be named: `--aepUserLdap-- - Firefly Custom Workflows`. Click **Select**.
+
+![Firefly Custom Workflows](./images/ffcw56.png)
+
+You should then have this. Click **Run**.
+
+![Firefly Custom Workflows](./images/ffcw56a.png)
+
+After a couple of minutes, you should see the assets that are created become available in the folder in AEM Assets CS.
+
+![Firefly Custom Workflows](./images/ffcw58.png)
+
+## Next Steps
 
 Go back to [Workflow Builder](./workflowbuilder.md){target="_blank"}
 
