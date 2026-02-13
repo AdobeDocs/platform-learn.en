@@ -679,6 +679,6 @@ All data is now ingested. In the next exercise you'll start to use that data as 
 
 Go to [Create your orchestrated campaign](./ex2.md){target="_blank"}
 
-Go back to [Adobe Journey Optimizer: Campaigns](./ajocampaigns.md){target="_blank"}
+Go back to [Adobe Journey Optimizer: Orchestrated Campaigns](./ajocampaigns.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

@@ -1,16 +1,32 @@
 ---
-title: Workflow Builder
-description: Workflow Builder
+title: Firefly Custom Workflows
+description: Firefly Custom Workflows
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 ---
-# 1.7 Workflow Builder
+# 1.7 Firefly Custom Workflows
+
+Firefly Custom Workflows's primary focus is on creative technologists and solution builders who create and configure workflows.  
+
+With Firefly Custom Workflows, you can:
+
+- Build Workflows: Create multi-step production workflows using a visual interface with manual or AI assistance.
+- Run Workflows: Execute workflows at scale, including batch processing, with a robust runtime that operates outside the browser.
+- Deploy Workflows: Publish workflows as API endpoints or programmatic UIs for integration into other tools and systems.
+- Integrate Workflows: Connect workflows to enterprise systems like DAMs, activation streams, and content supply chains.
+
+The primary use cases that are supported include things like:
+
+- Social Media Channel adaptations, such as creating size variants for every social media platform and type.
+- Asset preparation, such as preparing assets for use in additional surfaces such as print or web.
+- Content retargeting, such as refreshing and reusing visuals to re-engage interestd audiences.
+- E-commerce, such as normalizing product images and creating segment-specific variants for different audiences.
 
 ## Prerequisites
 
-- ...
+- Access to Firefly Custom Workflows
 
 ## Video
 
@@ -20,7 +36,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 ## Exercises
 
-[1.7.1 Getting started with Workflow Builder](./ex1.md){target="_blank"}
+[1.7.1 Getting started with Firefly Custom Workflows](./ex1.md){target="_blank"}
 
 In this exercise, you'll start using Workflow Builder.
 

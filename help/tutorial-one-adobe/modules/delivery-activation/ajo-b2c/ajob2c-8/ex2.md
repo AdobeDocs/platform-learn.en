@@ -26,6 +26,6 @@ You should then see this. Click the **+** icon.
 
 ## Next Steps
 
-Go back to [Adobe Journey Optimizer: Campaigns](./ajocampaigns.md){target="_blank"}
+Go back to [Adobe Journey Optimizer: Orchestrated Campaigns](./ajocampaigns.md){target="_blank"}
 
 Go back to [All modules](./../../../../overview.md){target="_blank"}

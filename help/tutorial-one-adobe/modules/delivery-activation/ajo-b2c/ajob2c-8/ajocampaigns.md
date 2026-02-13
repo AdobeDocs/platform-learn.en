@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
 ---
-# 3.8 Adobe Journey Optimizer: Campaign Orchestration 
+# 3.8 Adobe Journey Optimizer: Orchestrated Campaigns 
 
 Adobe Journey Optimizer Campaign Orchestration enables brands to solve for sophisticated campaign orchestration use cases focused on brand-initiated customer engagement to drive revenue and customer loyalty.
 
@@ -20,11 +20,13 @@ Adobe Journey Optimizer Campaign Orchestration comes with a relational XDM schem
 
 ## Learning Objectives
 
-- Learn how to configure and use Campaigns in Adobe Journey Optimizer.
+- Learn how to set up relational schema's in Adobe Journey Optimizer
+- Learn how to ingest data in Adobe Journey Optimizer
+- Learn how to configure and use Orchestrated Campaigns in Adobe Journey Optimizer.
 
 ## Prerequisites
 
-- Access to Adobe Journey Optimizer
+- Access to Adobe Journey Optimizer Orchestrated Campaigns
 
 ## Exercises
 
