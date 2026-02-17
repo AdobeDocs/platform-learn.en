@@ -6,10 +6,6 @@ doc-type: tutorial
 ---
 # 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
 
->[!IMPORTANT]
->
->This lab uses a feature that hasn't been released yet. The feature is still being developed so it isn't generally available yet.
-
 [!BADGE Beta]
 
 +++Beta Details
