@@ -673,7 +673,59 @@ After a couple of minutes, you can see the data being ingested in your dataset.
 
 ![AJO OC](./images/ajoocdatas21e.png)
 
-All data is now ingested. In the next exercise you'll start to use that data as part of an orchestrated campaign.
+All data is now ingested. 
+
+## 3.8.1.3 Profile Target Dimension
+
+With Orchestrated Campaigns, you can design and deliver targeted communications at the entity level, leveraging Adobe Experience Platform’s relational schema capabilities. Experience Platform uses schemas to describe the structure of data in a consistent and reusable way. When data is ingested into Experience Platform, it is structured according to an XDM schema.
+
+Although segmentation for Orchestrated Campaigns operates primarily on relational schemas, the actual message delivery always occurs at the Profile level.
+
+When configuring targeting, you define two key aspects:
+
+- Targetable Schemas: You specify which relational schemas are eligible for targeting. By default, the schema named Recipient is used, but you can configure alternatives such as Visitors, Customers, etc.
+
+- Profile Linkage: The system must understand how the target schema maps to the Profile schema. This is achieved through a shared identity field — one that exists both in the target schema and the Profile schema and is configured as an identity namespace.
+
+You now need to configure your Profile Target Dimensions. Go to **Administration** > **Configuration** and then click **Manage** under **Profile Target Dimension**.
+
+![AJO OC](./images/ajoocptd1.png)
+
+You should then see this. Click **Create**.
+
+![AJO OC](./images/ajoocptd2.png)
+
+For the **Schema**, select `--aepUserLdap--_citisignal_accounts`. For the **Identity value**, select **account_id**.
+
+Click **Save**.
+
+![AJO OC](./images/ajoocptd3.png)
+
+Click **Create** again.
+
+![AJO OC](./images/ajoocptd4.png)
+
+For the **Schema**, select `--aepUserLdap--_citisignal_recipients`. For the **Identity value**, select **account_id**.
+
+Click **Save**.
+
+![AJO OC](./images/ajoocptd5.png)
+
+Click **Create** again.
+
+![AJO OC](./images/ajoocptd6.png)
+
+For the **Schema**, select `--aepUserLdap--_citisignal_recipients`. For the **Identity value**, select **email**.
+
+Click **Save**.
+
+![AJO OC](./images/ajoocptd7.png)
+
+You should then have this.
+
+![AJO OC](./images/ajoocptd8.png)
+
+In the next exercise you'll start to use that data as part of an orchestrated campaign.
 
 ## Next Steps
 
