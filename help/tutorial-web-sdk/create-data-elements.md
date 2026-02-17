@@ -35,7 +35,7 @@ You have an understanding of what a data layer is and have completed the previou
 
 >[!IMPORTANT]
 >
->The data for this lesson comes from the `[!UICONTROL lumaDataLayer]` data layer on the Luma site. To view the data layer, open your developer console and type in `[!UICONTROL lumaDataLayer]` to see the full data layer available.![digitalData data layer](assets/data-element-data-layer.png)
+>The data for this lesson comes from the `[!UICONTROL digitalData]` data layer on the Luma site. To view the data layer, open your developer console and type in `[!UICONTROL digitalData]` to see the full data layer available.![digitalData data layer](assets/data-element-data-layer.png)
 
 
 ## Data layer approaches
