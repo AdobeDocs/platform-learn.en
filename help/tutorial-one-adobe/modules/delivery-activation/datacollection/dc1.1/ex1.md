@@ -58,7 +58,7 @@ Some further reading for those interested in understanding Adobe Experience Plat
 - [Adobe Experience Platform Data Collection User Guide](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 - [Implement Adobe Experience Cloud with Web SDK tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
 - [Set-up user permissions](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
-- [API documentation](https://developer.adobelaunch.com/api/)
+- [API documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/api/overview)
 
 ## Next Steps
 
