@@ -344,7 +344,7 @@ To validate Analytics is capturing data properly through Experience Platform Web
 
     >[!NOTE]
     >
-    >Since you are logged in, take a moment to validate the authenticated ID `b642b4217b34b1e8d3bd915fc65c4452` for the user **`test@test.com`** is captured as well in the `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
+    >Since you are logged in, take a moment to validate the authenticated ID `f660ab912ec121d1b1e928a0bb4bc61b` for the user **`test@test.com`** is captured as well in the `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
 
 ### Report suite override validation
 

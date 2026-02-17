@@ -230,7 +230,7 @@ First you must generate more sample data. Repeat the steps from earlier in this 
 1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in the left-navigation
 
 1. As the **[!UICONTROL Identity namespace]** use `lumaCRMId`
-1. Copy & paste the value of the `lumaCRMId` passed in the call that you inspected in the Experience Platform Debugger, in this case `b642b4217b34b1e8d3bd915fc65c4452`.
+1. Copy & paste the value of the `lumaCRMId` passed in the call that you inspected in the Experience Platform Debugger, in this case `f660ab912ec121d1b1e928a0bb4bc61b`.
 
     ![Profile](assets/experience-platform-validate-dataset-profile.png)
 
