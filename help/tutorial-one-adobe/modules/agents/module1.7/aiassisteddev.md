@@ -19,6 +19,12 @@ In this module you'll use intelligent developer tools such as Cursor to develop 
 - You should have completed this module as there are dependencies: [Adobe Experience Manager Cloud Service & Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md).
 - You should have completed this module as there are dependencies: [Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md).
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479939?quality=12&learn=on)
+
 ## Exercises
 
 [1.7.1 Setting up your development environment](./ex1.md){target="_blank"}

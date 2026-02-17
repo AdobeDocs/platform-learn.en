@@ -28,6 +28,12 @@ Adobe Journey Optimizer Campaign Orchestration comes with a relational XDM schem
 
 - Access to Adobe Journey Optimizer Orchestrated Campaigns
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479938?quality=12&learn=on)
+
 ## Exercises
 
 [3.8.1 Setting up your relational data foundation](./ex1.md)
