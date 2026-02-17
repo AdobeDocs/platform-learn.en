@@ -15,6 +15,12 @@ TBC
 
 - Access to Adobe Experience Manager (AEM)
 
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479941?quality=12&learn=on)
+
 ## Exercises
 
 [1.6.1 Content Production Agent](./ex1.md){target="_blank"}
