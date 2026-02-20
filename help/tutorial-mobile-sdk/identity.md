@@ -188,7 +188,7 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
    currentEmailId = "testUser@gmail.com"
-   currentCRMId = "b642b4217b34b1e8d3bd915fc65c4452"
+   currentCRMId = "f660ab912ec121d1b1e928a0bb4bc61b"
    ```
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Logout]** button. Add the following code:
