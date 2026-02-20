@@ -1,0 +1,739 @@
+{
+	"info": {
+		"_postman_id": "80984ca0-d9d8-42f0-a6fa-099336e19061",
+		"name": "Frame.io V4 - Tech Insiders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6862362"
+	},
+	"item": [
+		{
+			"name": "Webhooks",
+			"item": [
+				{
+					"name": "POST - Create Webhook",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{ACCESS_TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"vangeluw - Fusion to AEM Assets\",\n        \"events\": [\"metadata.value.updated\"],\n        \"url\": \"https://hook.fusion.adobe.com/6tp1dfdhyxsxukp3xdpaue47h6d1oxw6\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts/:account_id/workspaces/:workspace_id/webhooks",
+							"host": [
+								"{{FRAME_IO_BASE_URL}}"
+							],
+							"path": [
+								"v4",
+								"accounts",
+								":account_id",
+								"workspaces",
+								":workspace_id",
+								"webhooks"
+							],
+							"variable": [
+								{
+									"key": "account_id",
+									"value": "{{FRAME_IO_ACCOUNT_ID}}"
+								},
+								{
+									"key": "workspace_id",
+									"value": "{{FRAME_IO_WORKSPACE_ID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - List Webhooks",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{ACCESS_TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts/:account_id/workspaces/:workspace_id/webhooks",
+							"host": [
+								"{{FRAME_IO_BASE_URL}}"
+							],
+							"path": [
+								"v4",
+								"accounts",
+								":account_id",
+								"workspaces",
+								":workspace_id",
+								"webhooks"
+							],
+							"query": [
+								{
+									"key": "include",
+									"value": "creator",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "account_id",
+									"value": "{{FRAME_IO_ACCOUNT_ID}}"
+								},
+								{
+									"key": "workspace_id",
+									"value": "{{FRAME_IO_WORKSPACE_ID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Show Webhook",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{ACCESS_TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts/:account_id/webhooks/:webhook_id",
+							"host": [
+								"{{FRAME_IO_BASE_URL}}"
+							],
+							"path": [
+								"v4",
+								"accounts",
+								":account_id",
+								"webhooks",
+								":webhook_id"
+							],
+							"query": [
+								{
+									"key": "include",
+									"value": "creator",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "account_id",
+									"value": "{{FRAME_IO_ACCOUNT_ID}}"
+								},
+								{
+									"key": "webhook_id",
+									"value": "{{FRAME_IO_WORKSPACE_ID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Delete Webhook",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{ACCESS_TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts/:account_id/webhooks/:webhook_id",
+							"host": [
+								"{{FRAME_IO_BASE_URL}}"
+							],
+							"path": [
+								"v4",
+								"accounts",
+								":account_id",
+								"webhooks",
+								":webhook_id"
+							],
+							"variable": [
+								{
+									"key": "account_id",
+									"value": "{{FRAME_IO_ACCOUNT_ID}}"
+								},
+								{
+									"key": "webhook_id",
+									"value": ""
+								}
+							]
+						},
+						"description": "Gets S3 URLs for multipart upload into Project root.\n\nNote: for simplicity, example file / filesize will return only one URL."
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH - Update Webhook",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{ACCESS_TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"change\",\n        \"events\": [\n            \"metadata.value.updated\"\n        ],\n        \"url\": \"https://url.change.com\",\n        \"active\": false\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts/:account_id/webhooks/:webhook_id",
+							"host": [
+								"{{FRAME_IO_BASE_URL}}"
+							],
+							"path": [
+								"v4",
+								"accounts",
+								":account_id",
+								"webhooks",
+								":webhook_id"
+							],
+							"variable": [
+								{
+									"key": "account_id",
+									"value": "{{FRAME_IO_ACCOUNT_ID}}"
+								},
+								{
+									"key": "webhook_id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Custom Actions",
+			"item": [
+				{
+					"name": "POST - Create Custom Action",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "api-version",
+								"value": "experimental"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{ACCESS_TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n          \"name\": \"vangeluw - Frame.io Custom Action V4\",\n          \"description\": \"Frame.io Custom Action to Fusion V4\",\n          \"url\": \"https://hook.fusion.adobe.com/vcvs1cf76rlwfffgxxi7dece7dfqshr8\",\n          \"event\": \"my.event\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts/:account_id/workspaces/:workspace_id/actions",
+							"host": [
+								"{{FRAME_IO_BASE_URL}}"
+							],
+							"path": [
+								"v4",
+								"accounts",
+								":account_id",
+								"workspaces",
+								":workspace_id",
+								"actions"
+							],
+							"variable": [
+								{
+									"key": "account_id",
+									"value": "{{FRAME_IO_ACCOUNT_ID}}"
+								},
+								{
+									"key": "workspace_id",
+									"value": "{{FRAME_IO_WORKSPACE_ID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - List Custom Actions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "api-version",
+								"value": "experimental"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{ACCESS_TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts/:account_id/workspaces/:workspace_id/actions?include=creator",
+							"host": [
+								"{{FRAME_IO_BASE_URL}}"
+							],
+							"path": [
+								"v4",
+								"accounts",
+								":account_id",
+								"workspaces",
+								":workspace_id",
+								"actions"
+							],
+							"query": [
+								{
+									"key": "include",
+									"value": "creator"
+								}
+							],
+							"variable": [
+								{
+									"key": "account_id",
+									"value": "{{FRAME_IO_ACCOUNT_ID}}"
+								},
+								{
+									"key": "workspace_id",
+									"value": "{{FRAME_IO_WORKSPACE_ID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Get Custom Action",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "api-version",
+								"value": "experimental"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{ACCESS_TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts/:account_id/actions/:action_id",
+							"host": [
+								"{{FRAME_IO_BASE_URL}}"
+							],
+							"path": [
+								"v4",
+								"accounts",
+								":account_id",
+								"actions",
+								":action_id"
+							],
+							"variable": [
+								{
+									"key": "account_id",
+									"value": "{{FRAME_IO_ACCOUNT_ID}}"
+								},
+								{
+									"key": "action_id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Delete Custom Action",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "api-version",
+								"value": "experimental"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{ACCESS_TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts/:account_id/actions/:action_id",
+							"host": [
+								"{{FRAME_IO_BASE_URL}}"
+							],
+							"path": [
+								"v4",
+								"accounts",
+								":account_id",
+								"actions",
+								":action_id"
+							],
+							"variable": [
+								{
+									"key": "account_id",
+									"value": "{{FRAME_IO_ACCOUNT_ID}}"
+								},
+								{
+									"key": "action_id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH - Update Custom Action",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "api-version",
+								"value": "experimental"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{ACCESS_TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n          \"url\": \"https://hook.fusion.adobe.com/k149lwmka5rro53y1gmj42zt3vp069fy\",\n          \"active\": true\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts/:account_id/actions/:action_id",
+							"host": [
+								"{{FRAME_IO_BASE_URL}}"
+							],
+							"path": [
+								"v4",
+								"accounts",
+								":account_id",
+								"actions",
+								":action_id"
+							],
+							"variable": [
+								{
+									"key": "account_id",
+									"value": "{{FRAME_IO_ACCOUNT_ID}}"
+								},
+								{
+									"key": "action_id",
+									"value": "9254e3a4-9238-435c-8940-ccde161e18d3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET - List Accounts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "api-version",
+						"value": "4.0"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{ACCESS_TOKEN}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts",
+					"host": [
+						"{{FRAME_IO_BASE_URL}}"
+					],
+					"path": [
+						"v4",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - List Workspaces",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"followRedirects": true,
+				"disableUrlEncoding": false,
+				"disableCookies": false
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "api-version",
+						"value": "4.0"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{ACCESS_TOKEN}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{FRAME_IO_BASE_URL}}/v4/accounts/:account_id/workspaces?page_size=50",
+					"host": [
+						"{{FRAME_IO_BASE_URL}}"
+					],
+					"path": [
+						"v4",
+						"accounts",
+						":account_id",
+						"workspaces"
+					],
+					"query": [
+						{
+							"key": "include",
+							"value": "creator",
+							"disabled": true
+						},
+						{
+							"key": "page_size",
+							"value": "50"
+						}
+					],
+					"variable": [
+						{
+							"key": "account_id",
+							"value": "{{FRAME_IO_ACCOUNT_ID}}"
+						}
+					]
+				},
+				"description": "Gets S3 URLs for multipart upload into Project root.\n\nNote: for simplicity, example file / filesize will return only one URL."
+			},
+			"response": []
+		}
+	]
+}

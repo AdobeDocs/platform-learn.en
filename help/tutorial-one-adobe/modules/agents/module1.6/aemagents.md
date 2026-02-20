@@ -6,9 +6,19 @@ doc-type: tutorial
 ---
 # 1.6 Adobe Experience Manager & Agents
 
+Adobe Experience Manager now includes several purpose-built agents, each designed to take on work that has historically required tons of manual effort. These are not generic AI assistants, they are domain-trained agents that understand AEM deeply and operate across content, code, assets, governance, and optimization.
+
+- **Experience Production Agent**, which accelerates updates, content changes, and even full site migrations. 
+- **Governance Agent**, enforces brand, rights, and compliance rules automatically. 
+- **Discovery Agent**, prepares content for AI-native discovery and acts as an intelligent strategist. 
+- **Content Optimization Agent**, instantly creates performance-ready, channel-specific asset variations. 
+- **Development Agent**, accelerates developers with AI-assisted troubleshooting and performance tuning.
+
+Together, these agents move AEM far beyond traditional CMS capabilities and into automated experience operations. Every one of these agents is designed with humans in control, ensuring accuracy, trust, and oversight.
+
 ## Learning Objectives
 
-TBC
+- Learn how to use the various available AEM Agents
 
 ## Prerequisites
 
@@ -22,9 +32,9 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 ## Exercises
 
-[1.6.1 Content Production Agent](./ex1.md){target="_blank"}
+[1.6.1 Getting started with AEM Agents](./ex1.md){target="_blank"}
 
-TBC
+In this exercise, you'll explore **Discovery Agent** and **Experience Production Agent**.
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
