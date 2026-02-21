@@ -4,7 +4,7 @@ description: Adobe Experience Manager & Agents
 kt: 5342
 doc-type: tutorial
 ---
-# 1.6 Adobe Experience Manager & Agents
+# 1.6 Adobe Experience Manager & Agents 
 
 Adobe Experience Manager now includes several purpose-built agents, each designed to take on work that has historically required tons of manual effort. These are not generic AI assistants, they are domain-trained agents that understand AEM deeply and operate across content, code, assets, governance, and optimization.
 
