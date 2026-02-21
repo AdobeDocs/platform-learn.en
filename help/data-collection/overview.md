@@ -48,11 +48,11 @@ Data Collection is the next generation of website tag and mobile SDK management 
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-      <img alt="Migrate Target to Web SDK" src="assets/thumb_legacy.png" />
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/overview" target="_blank">
+      <img alt="Implement legacy libraries" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/overview" target="_blank">
     <strong>Implement legacy libraries with tags</strong>
     </a>
     </div>
