@@ -377,16 +377,16 @@ Go to [https://experience.adobe.com/#/experiencemanager/](https://experience.ado
 
 ![AEM Agents](./images/aemagents71.png)
 
+Paste the following prompt and click **send**. Replace XXX in this prompt by the URL that you copied in the previous step.
+
 ```
 On the page XXX, please make the following changes:
 
-- change the word 'Winter' to 'Spring'
+- change the word 'winter' to 'spring'
 - change the word 'lion' to 'leopard'
 - change the image in the hero block to use the image 'citisignal_leopard.png'
 - change the text '99.9% network reliability' to '99.999% network reliability'
 ```
-
-Replace XXX in this text to the URL that you copied in the previous step.
 
 ![AEM Agents](./images/aemagents72.png)
 
@@ -442,12 +442,19 @@ You should now see this. Your changes are in production now.
 
 Refresh your page, you should now see all your changes on the published page.
 
-![AEM Agents](./images/aemagents85.png) 
+![AEM Agents](./images/aemagents85.png)
+
+Alternatively, instead of going through the manual promotion process, you can also enter the prompt `accept` in AI Assistant.
+
+![AEM Agents](./images/aemagents86.png)
+
+You should then get a confirmation that changes are published.
+
+![AEM Agents](./images/aemagents87.png)
 
 ### Content Update - Form Creation
 
 The Form Creation skill enables users to build adaptive forms through natural language prompts without dependency on development or IT teams. This capability accelerates form development while maintaining brand consistency and allowing business users to create forms without deep technical product knowledge.
-
 
 ## Next Steps
 
