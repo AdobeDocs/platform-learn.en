@@ -442,7 +442,7 @@ You should now see this. Your changes are in production now.
 
 Refresh your page, you should now see all your changes on the published page.
 
-![AEM Agents](./images/aemagents85.png)
+![AEM Agents](./images/aemagents85.png) 
 
 ### Content Update - Form Creation
 
