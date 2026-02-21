@@ -1,6 +1,6 @@
 ---
-title: Content Production Agent
-description: Content Production Agent
+title: Getting started with AEM Agents
+description: Getting started with AEM Agents
 kt: 5342
 doc-type: tutorial
 ---
