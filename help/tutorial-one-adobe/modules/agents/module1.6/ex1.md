@@ -193,7 +193,7 @@ You can then also review any of the other available metadata.
 
 ## 1.6.1.2 Experience Production Agent
 
-### Content Update
+### Content Update - Assets
 
 The Content Update skill updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
 
@@ -215,7 +215,236 @@ Review the images that were generated.
 
 ![AEM Agents](./images/aemagents42.png)
 
-### Form Creation
+### Content Update - Pages
+
+Go back to your Adobe Experience Manager Author environment and then go to **Sites**.
+
+![AEM Agents](./images/aemagents43.png)
+
+Go to **CitiSignal**. Click **Create** and select **Page**.
+
+![AEM Agents](./images/aemagents44.png)
+
+Select **Page** and click **Next**.
+
+![AEM Agents](./images/aemagents45.png)
+
+Enter the following values:
+
+- Title: **Fiber Max**
+- Name: **fiber-max**
+- Page Title: **Fiber Max**
+
+Click **Create**.
+
+![AEM Agents](./images/aemagents46.png)
+
+Select **Open**.
+
+![AEM Agents](./images/aemagents47.png)
+
+You should then see this. 
+
+![AEM Agents](./images/aemagents48.png)
+
+Click in the blank area to select the **section** component. Then, click the plus **+** icon in the right menu and select **Hero**.
+
+![AEM Agents](./images/aemagents49.png)
+
+You should then see this. Click **+ Add** to add an image.
+
+![AEM Agents](./images/aemagents50.png)
+
+Select your assets repository. Then, open the folder **CitiSignal**.
+
+![AEM Agents](./images/aemagents51.png)
+
+Choose the image of the lion that you uploaded earlier. Click **Select**.
+
+![AEM Agents](./images/aemagents52.png)
+
+You should then see this. Click the **text** area to change the text.
+
+![AEM Agents](./images/aemagents53.png)
+
+Paste this text in the are:
+
+```
+This winter, be as fast as a lion.
+```
+
+Select **Heading 1** and then click **Done**.
+
+![AEM Agents](./images/aemagents54.png)
+
+You should then see this. Go to **Content tree** and select the area **Section**.
+
+![AEM Agents](./images/aemagents55.png)
+
+Click the **+** icon and then select **Cards**.
+
+![AEM Agents](./images/aemagents56.png)
+
+You should then see this. Make sure that in the **Content tree**, **Cards** is selected.
+
+Then, click the button **+** 4 times.
+
+![AEM Agents](./images/aemagents57.png)
+
+You should now see this, where there are 4 **Card** objects in the **Cards** object.
+
+![AEM Agents](./images/aemagents58.png)
+
+Select the first **Card**. Click the **text** area to change the text.
+
+![AEM Agents](./images/aemagents59.png)
+
+Paste the following text. Make sure the first line of text is using **Heading 1**. Click **Done**.
+
+```
+99.9% network reliability
+
+Game, video chat and stream on multiple devices with ultra low lag.
+```
+
+![AEM Agents](./images/aemagents60.png)
+
+Select the second **Card**. Click the **text** area to change the text.
+
+![AEM Agents](./images/aemagents61.png)
+
+Paste the following text. Make sure the first line of text is using **Heading 1**. Click **Done**.
+
+```
+3-year
+
+price lock guarantee
+
+For new and existing Fiber Max customers on all internet plans.
+
+No hidden fees.
+```
+
+![AEM Agents](./images/aemagents62.png)
+
+Select the third **Card**. Click the **text** area to change the text.
+
+![AEM Agents](./images/aemagents63.png)
+
+Paste the following text. Make sure the first line of text is using **Heading 1**. Click **Done**.
+
+```
+More ways to save
+
+Save over 45% on the best entertainment with CitiSignal
+```
+
+![AEM Agents](./images/aemagents64.png)
+
+Select the fourth **Card**. Click the **text** area to change the text.
+
+![AEM Agents](./images/aemagents65.png)
+
+Paste the following text. Make sure the first line of text is using **Heading 1**. Click **Done**.
+
+```
+Get Fiber Max now!
+
+Fill out the form here to get started.
+```
+
+![AEM Agents](./images/aemagents66.png)
+
+You should now have this. Click **Publish**.
+
+![AEM Agents](./images/aemagents67.png)
+
+Click **Publish** again.
+
+![AEM Agents](./images/aemagents68.png)
+
+Click **Open Page**.
+
+![AEM Agents](./images/aemagents69.png)
+
+Copy the URL of the page as you'll need it next.
+
+The URL should be similar to this: `https://author-pXXXXXX-eXXXXXXX.adobeaemcloud.com/content/CitiSignal/fiber-max.html`.
+
+![AEM Agents](./images/aemagents70.png)
+
+Go to [https://experience.adobe.com/#/experiencemanager/](https://experience.adobe.com/#/experiencemanager/). Click to open **AI Assistant**.
+
+![AEM Agents](./images/aemagents71.png)
+
+```
+On the page XXX, please make the following changes:
+
+- change the word 'Winter' to 'Spring'
+- change the word 'lion' to 'leopard'
+- change the image in the hero block to use the image 'citisignal_leopard.png'
+- change the text '99.9% network reliability' to '99.999% network reliability'
+```
+
+Replace XXX in this text to the URL that you copied in the previous step.
+
+![AEM Agents](./images/aemagents72.png)
+
+After 1-2 minutes, you should see this. Enter the prompt `generate` and click **Send**.
+
+![AEM Agents](./images/aemagents74.png)
+
+A couple of minutes later, you should see a confirmation like this that the changes have been performed. Click **Preview the updated page**.
+
+![AEM Agents](./images/aemagents75.png)
+
+You now get a visual confirmation of the changes that have been done. This preview page is purely for informational purpose, you can't take action from this page.
+
+![AEM Agents](./images/aemagents76.png)
+
+To take action, click **Edit in AEM**. 
+
+![AEM Agents](./images/aemagents75a.png)
+
+In the Universal Editor, you now see all the changes in detail, with the ability the change anything. Once you've reviewed the page, click **Publish**.
+
+![AEM Agents](./images/aemagents77.png)
+
+Click **Publish** again. The change you've made isn't published to your production environment yet. Instead, it's been published under **Launches** in AEM. 
+
+Launches enable you to efficiently develop content for a future release. A Launch is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current pages. This means that you are effectively editing two versions at the same time: pages that are currently published, and a version of those pages, to be published at a time in the future. Once that time arrives you can replace the original pages and publish the new version.
+
+![AEM Agents](./images/aemagents78.png)
+
+To **Promote** your pending changes for a future release, go back to AEM. Click **Adobe Experience Manager** at the top of the page, click the **hammer** icon and then select **Launches**.
+
+![AEM Agents](./images/aemagents79.png)
+
+You should now see a pending **Launch**. Check the checkbox in front of the pending **Launch**.
+
+![AEM Agents](./images/aemagents80.png)
+
+Click **Promote**.
+
+![AEM Agents](./images/aemagents81.png)
+
+Select **Promote full launch** and click **Next**.
+
+![AEM Agents](./images/aemagents82.png)
+
+Click **Promote**.
+
+![AEM Agents](./images/aemagents83.png)
+
+You should now see this. Your changes are in production now.
+
+![AEM Agents](./images/aemagents84.png)
+
+Refresh your page, you should now see all your changes on the published page.
+
+![AEM Agents](./images/aemagents85.png)
+
+### Content Update - Form Creation
 
 The Form Creation skill enables users to build adaptive forms through natural language prompts without dependency on development or IT teams. This capability accelerates form development while maintaining brand consistency and allowing business users to create forms without deep technical product knowledge.
 
