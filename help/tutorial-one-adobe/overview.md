@@ -106,6 +106,10 @@ In this module, you will setup your Adobe Experience Manager Cloud Service Progr
 
 In this module, you will explore AEM Assets.
 
+[1.3 Adobe Experience Manager Forms with Edge Delivery Services](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"}
+
+In this module, you will explore Adobe Experience Manager Forms with Edge Delivery Services.
+
 [1.4 Adobe Experience Manager Assets & Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
 
 In this module, you will setup AEM Assets Dynamic Media and you'll use your Dynamic Media template in Adobe Journey Optimizer.
