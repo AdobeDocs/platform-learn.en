@@ -454,7 +454,24 @@ You should then get a confirmation that changes are published.
 
 ### Content Update - Form Creation
 
-The Form Creation skill enables users to build adaptive forms through natural language prompts without dependency on development or IT teams. This capability accelerates form development while maintaining brand consistency and allowing business users to create forms without deep technical product knowledge.
+In module [Adobe Experience Manager Forms with Edge Delivery Services](./../../asset-mgmt/module1.3/aemforms.md){target="_blank"} you can find the steps involved in creation a form in a manual way.
+
+The Form Creation skill now enables users to build adaptive forms through natural language prompts without dependency on development or IT teams. This capability accelerates form development while maintaining brand consistency and allowing business users to create forms without deep technical product knowledge.
+
+Go to [https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat). 
+
+![AEM Agents](./images/aemagentsforms1.png)
+
+Enter the following prompt and click **send**.
+
+```
+Create a new adaptive form using Edge Delivery Services with the following details:
+- Form name: "citisignal-fiber-max-interest-2"
+- Form fields: 4 text input fields are needed, for "first-name", "last-name", "email" and "city"
+- When the form is submitted, send the submission to a spreadsheet, with this URL: https://docs.google.com/spreadsheets/d/1WwKrcM8mZ2d_W3sMheUAw3nFhP_OFk05TsqxhHkudfQ/edit?usp=sharing.
+```
+
+
 
 ## Next Steps
 
