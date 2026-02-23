@@ -36,6 +36,11 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 In this exercise, you'll explore **Discovery Agent** and **Experience Production Agent**.
 
+[1.6.2 AEM MCP Servers & Cursor](./ex2.md)
+
+In this exercise, you'll connect your Cursor environment to AEM using the AEM MCP Server. 
+
+
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
