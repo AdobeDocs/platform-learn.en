@@ -49,10 +49,10 @@ Additionally, in the file **editor-support.js**, the following changes need to b
 - change function declaration from **function attachEventListners(main) {** to **async function attachEventListners(main) {**
 - add lines 152 and 153:
   
-  ```
-  const module = await import('./form-editor-support.js');
-  module.attachEventListners(main);
-  ```
+```
+const module = await import('./form-editor-support.js');
+module.attachEventListners(main);
+```
   
 ![AEM Forms](./images/scripts2.png)
 
