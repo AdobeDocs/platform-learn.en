@@ -108,7 +108,7 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
     + [1.4.1 Create your assets and dynamic media template](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
     + [1.4.2 Use your dynamic media template with Adobe Journey Optimizer](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex2.md)
-  + 1.5 Adobe Commerce as a Cloud Service {#assetm3}
+  + 1.5 Adobe Commerce as a Cloud Service {#assetm5}
     + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/accs.md)
     + [1.5.1 Getting started with Adobe Commerce as a Cloud Service](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
     + [1.5.2 Connect ACCS to AEM Sites CS/EDS Storefront](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex2.md)
