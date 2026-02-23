@@ -8,13 +8,13 @@ exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## Overview
+## Overview 
 
 If you're attending one of our focused GenStudio for Content Supply Chain Technical Enablement live workshops, this is the starting point for the Tech Labs that you'll be taking.
 
 In the Tech Labs as part of this technical enablement workshop, you'll learn in a hands-on way about the following applications: 
 
-- Adobe Firefly Services
+- Adobe Firefly Services 
 - Adobe Frame I/O & Adobe Premiere Pro
 - Adobe Workfront Workflow & Adobe Workfront Planning
 - Adobe Experience Manager Cloud Service Assets
