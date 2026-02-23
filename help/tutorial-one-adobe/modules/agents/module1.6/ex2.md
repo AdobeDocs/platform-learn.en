@@ -193,7 +193,7 @@ I just created a new custom mcp server named 'aem-discovery'. what can I do with
 ![Cursor + AEM](./images/cursoraiz10.png)
 
 ```
-for the environment https://author-p185022-e1936676.adobeaemcloud.com/, list all assets tagged with 'Spring 2026'
+for the environment https://author-pXXXXXX-eXXXXXXX.adobeaemcloud.com/, list all assets tagged with 'Spring 2026'
 ```
 
 ![Cursor + AEM](./images/cursoraiz11.png)
