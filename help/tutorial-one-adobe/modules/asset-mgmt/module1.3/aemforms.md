@@ -26,7 +26,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 In this exercise, you'll ... .
 
-[1.3.2 -](./ex2.md){target="_blank"}
+[1.3.2 -](./ex1.md){target="_blank"}
 
 In this exercise, you'll ... .
 

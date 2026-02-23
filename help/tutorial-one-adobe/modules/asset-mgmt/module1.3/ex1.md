@@ -182,7 +182,7 @@ You can then fill out the form, but you can't submit it yet.
 
 ## Next Steps
 
-Next Step: [-](./ex2.md){target="_blank"}
+Next Step: [-](./ex1.md){target="_blank"}
 
 Go Back to [Adobe Experience Manager Forms with Edge Delivery Services](./aemforms.md){target="_blank"}
 

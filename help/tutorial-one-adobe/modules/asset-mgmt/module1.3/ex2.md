@@ -16,11 +16,10 @@ doc-type: tutorial
 >
 >If you have previously configured an AEM CS Program with an AEM Assets CS environment, it may be that your AEM CS sandbox was hibernated. Given that dehibernating such a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
-## 1.3.1.1 -
+## 1.3.2.1 -
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. The org you should select is `--aepImsOrgName--`. 
 
-![AEM Assets Dynamic Media](./images/aaemassdmcomp1.png)
 
 ## Next Steps
 

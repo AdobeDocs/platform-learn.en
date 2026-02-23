@@ -104,7 +104,6 @@ recommendations: noDisplay,noCatalog
   + 1.3 Adobe Experience Manager Forms with Edge Delivery Services {#assetm3}
     + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/aemforms.md)
     + [1.3.1 Create your first form](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/ex1.md)
-    + [1.3.2 -](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/ex2.md)
   + 1.4 Adobe Experience Manager Assets & Dynamic Media {#assetm4}
     + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
     + [1.4.1 Create your assets and dynamic media template](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
