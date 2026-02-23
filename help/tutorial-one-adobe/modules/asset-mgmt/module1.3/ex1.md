@@ -95,7 +95,7 @@ Please verify your Github repo configuration, specifically in the file **paths.j
 
 With these requirements in place, you can create your first form.
 
-## 1.3.1.1 Create form
+## 1.3.1.2 Create form
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. The org you should select is `--aepImsOrgName--`. Open your environment.
 
@@ -265,7 +265,7 @@ After publishing your form, it's now also available on your Edge Delivery Servic
 
 ![AEM Forms](./images/aemforms29.png)
 
-## 1.3.1.2 Submit form
+## 1.3.1.3 Submit form
 
 In order to submit your form, 2 things are required:
 

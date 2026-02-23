@@ -283,6 +283,7 @@ recommendations: noDisplay,noCatalog
   + 1.6 AEM & Agents {#agents6}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
     + [1.6.1 Getting started with AEM Agents](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+    + [1.6.2 AEM MCP Servers & Cursor](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
   + 1.7 Intelligent Developer Tools for Adobe Commerce {#agents7}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
     + [1.7.1 Setting up your development environment](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
