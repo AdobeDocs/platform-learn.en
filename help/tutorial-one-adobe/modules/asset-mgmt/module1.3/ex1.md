@@ -16,7 +16,85 @@ doc-type: tutorial
 >
 >If you have previously configured an AEM CS Program with an AEM Assets CS environment, it may be that your AEM CS sandbox was hibernated. Given that dehibernating such a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
-## 1.3.1.1 -
+## 1.3.1.1 Environment requirements for using AEM Forms with Edge Delivery Services
+
+Prior to configuring your first form, there are a number of requirements that need to be met before you can follow the below steps.
+
+### Program setup
+
+In the **Solutions & add-ons** of your Cloud Manager Program, **Forms** needs to be enabled.
+
+![AEM Forms](./images/program.png)
+
+### blocks
+
+In your Github repository, you need to have the following blocks available:
+
+- **form**
+- **embed-adaptive-form**
+
+![AEM Forms](./images/block.png)
+
+### scripts
+
+In your Github repository, you need to have the following scripts available:
+
+- **form-editor-support.css**
+- **form-editor-support.js**
+
+![AEM Forms](./images/scripts1.png)
+
+Additionally, in the file **editor-support.js**, the following changes need to be done to enable editing forms in the Universal Editor.
+
+- change function declaration from **function attachEventListners(main)** to **async function attachEventListners(main)**
+- add lines 152 and 153:
+  
+```
+const module = await import('./form-editor-support.js');
+module.attachEventListners(main);
+```
+  
+![AEM Forms](./images/scripts2.png)
+
+Also, in the file **editor-support.js**, change lines 90-92 like this:
+
+```
+if (block.dataset.aueModel === 'form') {
+        return true;
+      } else if (newBlock) {
+```
+
+![AEM Forms](./images/scripts3.png)
+
+### paths.json
+
+Please verify your Github repo configuration, specifically in the file **paths.json**. These lines need to be present in the file:
+
+- Under mappings: **"/content/forms/af/:/forms/"**
+- Under includes: **"/content/forms/af/"**
+
+```json
+{
+  "mappings": [
+    "/content/CitiSignal/:/",
+    "/content/CitiSignal/configuration:/.helix/config.json",
+    "/content/CitiSignal/headers:/.helix/headers.json",
+    "/content/CitiSignal/metadata:/metadata.json",
+    "/content/CitiSignal.resource/enrichment/enrichment.json:/enrichment/enrichment.json",
+    "/content/forms/af/:/forms/"
+  ],
+  "includes": [
+    "/content/CitiSignal/",
+    "/content/forms/af/"
+  ]
+}
+```
+
+![AEM Forms](./images/paths.png)
+
+With these requirements in place, you can create your first form.
+
+## 1.3.1.1 Create form
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. The org you should select is `--aepImsOrgName--`. Open your environment.
 
@@ -180,9 +258,107 @@ You can then fill out the form, but you can't submit it yet.
 
 ![AEM Forms](./images/aemforms28.png)
 
-## Next Steps
+After publishing your form, it's now also available on your Edge Delivery Services domain, which looks like this:
 
-Next Step: [-](./ex1.md){target="_blank"}
+`https://main--techinsidersXX-citisignal-aem-accs--woutervangeluwe.aem.page/forms/fiber-max-interest-form`
+
+![AEM Forms](./images/aemforms29.png)
+
+## 1.3.1.2 Submit form
+
+In order to submit your form, 2 things are required:
+
+- a **Submit** button
+- a **Submit** action
+
+Also, in this exercise you should use a Google spreadsheet to record submissions of this form.
+
+### Google spreadsheet
+
+Go to [https://drive.google.com](https://drive.google.com) and create a new blank spreadsheet.
+
+![AEM Forms](./images/sheet1.png)
+
+Name your file `citisignal-fiber-max-interest`.
+
+In line 1, in cells A-B-C-D, enter the following field names:
+
+- first-name
+- last-name
+- email
+- city
+
+Then, click **Share**.
+
+![AEM Forms](./images/sheet2.png)
+
+Share the file with **forms@adobe.com** with **Editor**-level access rights.
+
+Then, click **Copy link**.
+
+Click **Send**.
+
+![AEM Forms](./images/sheet3.png)
+
+You will need to use the copied link in the next step.
+
+### Submit button
+
+To configure the **Submit** button, go to **Content tree**, select **Adaptive Form**, click the **+** icon and then select **Submit**.
+
+![AEM Forms](./images/aemforms30.png)
+
+You should then see this.
+
+![AEM Forms](./images/aemforms31.png)
+
+### Submit action
+
+Submit actions are part of an extension for the Universal Editor. 
+
+>[!NOTE]
+>
+>If you don't see the **Edit Form Properties** icon, it means that this etxension isn't enabled for your environment yet. To enable this extension, go to [https://experience.adobe.com/#/aem/extension-manager](https://experience.adobe.com/#/aem/extension-manager) and enable the **Edit Form Properties** extension.
+>
+>![AEM Forms](./images/extmgr.png)
+
+Click the **Edit Form Properties** icon.
+
+![AEM Forms](./images/aemforms32.png)
+
+Select **Submit to Spreadsheet**. Paste the URL of the Google Sheet that you created earlier.
+
+Click **Save & Close**.
+
+![AEM Forms](./images/aemforms33.png)
+
+>[!NOTE]
+>
+>If you receive an error 401 - Unauthorized, it may be. because your environment hasn't been enabled to work with Google Sheets. Contact your Adobe representative to have your environment enabled.
+
+Click **Publish**.
+
+![AEM Forms](./images/aemforms34.png)
+
+Click **Publish** again.
+
+![AEM Forms](./images/aemforms35.png)
+
+You can then refresh your site, fill out the forms and click **Submit**.
+
+![AEM Forms](./images/aemforms36.png)
+
+Your submission should then be successful.
+
+![AEM Forms](./images/aemforms37.png)
+
+If you then have a look at your Google sheet, you should see the successful submission there as well.
+
+![AEM Forms](./images/aemforms38.png)
+
+You've now successfully finished this exercise.
+
+## Next Steps
 
 Go Back to [Adobe Experience Manager Forms with Edge Delivery Services](./aemforms.md){target="_blank"}
 
