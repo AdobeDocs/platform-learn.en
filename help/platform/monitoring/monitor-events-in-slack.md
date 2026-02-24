@@ -4,11 +4,9 @@ description: Learn how to receive Experience Platform notifications in Slack by 
 feature: Monitoring
 role: Developer, Admin
 level: Intermediate
-doc-type: Tutorial
-duration: 0
+duration: 519
 last-substantial-update: 2026-02-24
 jira: KT-20339
-thumbnail: KT-20339.jpeg
 ---
 
 # Monitor Experience Platform events in Slack
