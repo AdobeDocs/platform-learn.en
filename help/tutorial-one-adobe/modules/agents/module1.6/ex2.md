@@ -3,6 +3,7 @@ title: AEM MCP Servers & Cursor
 description: AEM MCP Servers & Cursor
 kt: 5342
 doc-type: tutorial
+exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
 ---
 # 1.6.2 AEM MCP Servers & Cursor
 
