@@ -10,6 +10,7 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2026-02-24
 jira: KT-20368
+exl-id: f9f43706-6d4b-49fb-aec4-773b0ccb13ec
 ---
 # Send audience data to Snowflake data share (batch)
 
