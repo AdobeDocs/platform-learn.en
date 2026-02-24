@@ -200,6 +200,8 @@ Campaigns
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
   + [Configure a social destination](/help/platform/destinations/configure-a-social-destination.md)
   + [Activate through LiveRamp destinations](/help/platform/destinations/liveramp-destinations.md)
+  + Data Warehouse {#data-warehouse}
+    + [Send audience data to Snowflake data share-batch](/help/platform/destinations/data-warehouse/send-audience-data-snowflake-batch.md)
   + Adobe Target and Custom Personalization{#target}
     + [Next-hit personalization with Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
     + [Configure the Adobe Target destination](/help/platform/destinations/target/configure-the-target-destination.md)

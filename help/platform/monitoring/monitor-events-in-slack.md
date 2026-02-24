@@ -7,8 +7,8 @@ level: Intermediate
 duration: 519
 last-substantial-update: 2026-02-24
 jira: KT-20339
+exl-id: 6d4a072c-9eef-4a38-9459-9e1cbd66bfb5
 ---
-
 # Monitor Experience Platform events in Slack
 
 Learn how to receive Experience Platform notifications in Slack by integrating with an Adobe App Builder webhook proxy. Data engineers and administrators may want to receive proactive notifications in Slack from Adobe Experience Platform to monitor the health of their Platform implementations. This tutorial outlines the architecture and implementation steps to connect Adobe I/O Events to Slack using Adobe App Builder.
