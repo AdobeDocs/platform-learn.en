@@ -75,20 +75,22 @@ Now you can configure your [!UICONTROL datastream] to send data to [!UICONTROL A
 
 1. Open the [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Select **[!UICONTROL Datastreams]** from the left navigation
-1. Open the datastream you created in the [Configure a datastream](configure-datastream.md) lesson, `Luma Web SDK`
+1. Open the datastream you created in the [Configure a datastream](configure-datastream.md) lesson, `Luma Web SDK: Development Environment`
 
     ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk-development.png)
 
 1. Select **[!UICONTROL Add Service]**
      ![Add a service to the datastream](assets/experience-platform-addService.png)
 1. Select **[!UICONTROL Adobe Experience Platform]** as the **[!UICONTROL Service]**
+1. Select **[!UICONTROL Enabled]**
 1. Select `Luma Web Event Data` as the **[!UICONTROL Event Dataset]**
+1. Enable **[!UICONTROL Edge Segmentation]**. 
 
 1. Select **[!UICONTROL Save]**. 
 
      ![Datastream Config](assets/experience-platform-datastream-config.png)
 
-As you generate traffic on the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html) mapped to your tag property, the data populates the dataset in Experience Platform!
+As you generate traffic on the [Luma Demo Site](https://newluma.enablementadobe.com) mapped to your tag property, the data populates the dataset in Experience Platform!
 
 ## Validate the dataset
 
@@ -102,15 +104,13 @@ This step is critical to make sure that the data has landed in the dataset. Ther
 
 These steps are more or less the same as what you did in the [Debugger lesson](validate-with-debugger.md). However, since data will only be sent to Platform after you have enabled it in the datastream, you must generate some more sample data:
 
-1. Open the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and select the [!UICONTROL Experience Platform Debugger] extension icon
+1. Open the [Luma demo site](https://newluma.enablementadobe.com) and select the [!UICONTROL Experience Platform Debugger] extension icon
 
 1. Configure the Debugger to map the tag property to *your* Development environment, as described in the [Validate with Debugger](validate-with-debugger.md) lesson
 
    ![Your Launch development environment shown in Debugger](assets/experience-platform-debugger-dev.png)
 
-1. Log into the Luma site using the credentials `test@test.com`/`test`
-
-1. Return to the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. Log into the Luma site using the credentials `test@test.com`/`test` (If you get a message "Invalid email or password" then create an account with those credentials)
 
 1. Within the Platform Web SDK network beacons shown by the debugger, select the "events" row to expand details in a pop-up
 

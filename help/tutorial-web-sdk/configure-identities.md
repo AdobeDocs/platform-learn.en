@@ -23,7 +23,7 @@ The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.
 
 >[!NOTE]
 >
-> For demonstration purposes, the exercises in this lesson have you capture the identity details of a fictional customer logged into the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html) using the credentials, **user: `test@test.com` / password: test**. 
+> For demonstration purposes, the exercises in this lesson have you capture the identity details of a fictional customer logged into the [Luma Demo Site](https://newluma.enablementadobe.com) using the credentials, **user: `test@test.com` / password: test**. 
 
 ## Learning objectives
 

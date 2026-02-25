@@ -12,7 +12,7 @@ Experience Platform Web SDK is a client-side JavaScript library that allows cust
 
 ![Experience Platform Web SDK architecture](assets/dc-websdk.png)
 
-This tutorial guides you through the implementation of the Platform Web SDK on a sample retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that lets you build a realistic implementation. For this tutorial, you:
+This tutorial guides you through the implementation of the Platform Web SDK on a sample retail website called Luma. The [Luma site](https://newluma.enablementadobe.com) has a rich data layer and functionality that lets you build a realistic implementation. For this tutorial, you:
 
 * Create your own tags property, in your own account, with a Platform Web SDK implementation for the Luma website.
 * Configure all data collection features for Web SDK implementations such as datastreams, schemas, and identity namespaces.
@@ -80,9 +80,9 @@ In these lessons, it is assumed that you have an Adobe account and the required 
 >
 > The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
-Load the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} in a separate browser tab and bookmark it so you can easily load it whenever needed during the tutorial. You do not require any additional access to Luma other than being able to load our hosted, production site.
+Load the [Luma website](https://newluma.enablementadobe.com){target="blank"} in a separate browser tab and bookmark it so you can easily load it whenever needed during the tutorial. You do not require any additional access to Luma other than being able to load our hosted, production site.
 
-[![Luma website](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} 
+[![Luma website](assets/old-overview-luma.png)](https://newluma.enablementadobe.com){target="blank"} 
 
 Let's get started!
 

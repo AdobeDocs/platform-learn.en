@@ -7,7 +7,7 @@ exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
 ---
 # Create data elements
 
-Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Then populate fields in your XDM schema with the Adobe Experience Platform Web SDK extension Variable data element type. 
+Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://newluma.enablementadobe.com). Then populate fields in your XDM schema with the Adobe Experience Platform Web SDK extension Variable data element type. 
 
 
 >[!WARNING]
@@ -185,7 +185,7 @@ Create these additional data elements by following the same steps:
 * **`Ecommerce Product Category`** using the **[!UICONTROL Custom Code]** **[!UICONTROL Data Element type]** and the following custom code:
 
    ```javascript
-   return adobeDataLayer.ecommerce[0].products[0].category+":"+adobeDataLayer.ecommerce[0].products[0].subcategory;
+   return adobeDataLayer[0].ecommerce.detail.products[0].category+":"+adobeDataLayer[0].ecommerce.detail.products[0].subcategory;
    ```
 
 * **`Ecommerce Cart Products`** using the following custom code:

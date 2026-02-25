@@ -22,7 +22,7 @@ If you have never used the debugger before, you might want to watch this five-mi
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-In this lesson, you use the [Adobe Experience Platform Debugger extension](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) to replace the tag property hardcoded on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) with your own property.
+In this lesson, you use the [Adobe Experience Platform Debugger extension](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) to replace the tag property hardcoded on the [Luma demo site](https://newluma.enablementadobe.com) with your own property.
 
 This technique is called environment switching and will be helpful later, when you work with tags on your own website. It allows you to to load your production website in your browser, but with your *development* tags library. This ability enables you to confidently make and validate tags changes independently from your regular code releases. After all, this separation of marketing tag releases from your regular code releases is one of the main reasons customers use tags in the first place!
 
@@ -50,7 +50,7 @@ You are familiar with Data Collection tags and the [Luma demo site](https://newl
 
 The Experience Platform Debugger has a cool feature that allows you to replace an existing tag library with a different one. This technique is useful for validation and allows us to skip many implementation steps in this tutorial.
 
-1. Make sure you have the [Luma demo website](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} open and select the Experience Platform Debugger extension icon
+1. Make sure you have the [Luma demo website](https://newluma.enablementadobe.com){target="_blank"} open and select the Experience Platform Debugger extension icon
 1. The Debugger will open and show some details of the hardcoded implementation (you may need to reload the Luma site after opening the Debugger)
 1. Confirm that the Debugger is "**[!UICONTROL Connected to Luma]**" as pictured below and then select the "**[!UICONTROL lock]**" icon to lock the Debugger to the Luma site.
 1. Select the **[!UICONTROL Sign In]** button and sign into Adobe Experience Cloud using your Adobe Id.
@@ -108,7 +108,7 @@ You can also validate the Identity Map details:
 
 1. Log in to the Luma site using the credentials `test@test.com`/`test`
 
-1. Return to the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. Return to the [Luma homepage](https://newluma.enablementadobe.com)
 
 1. Open the **[!UICONTROL Experience Platform Web SDK]** section in the left navigation 
 

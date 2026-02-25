@@ -55,7 +55,7 @@ This is the goal of Adobe's [Experience Data Model](https://business.adobe.com/p
 
 >[!NOTE]
 >
-> For demonstration purposes, the exercises in this lesson build an example schema to capture content viewed and products purchased by customers in the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html). While you can use these steps to create a different schema for your own purposes, it is recommended that you first follow along with creating the example schema to learn the capabilities of the schema editor.
+> For demonstration purposes, the exercises in this lesson build an example schema to capture content viewed and products purchased by customers in the [Luma Demo Site](https://newluma.enablementadobe.com). While you can use these steps to create a different schema for your own purposes, it is recommended that you first follow along with creating the example schema to learn the capabilities of the schema editor.
 
 To learn more about XDM schemas, watch the playlist [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) or see the [XDM System overview](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
@@ -75,7 +75,7 @@ All necessary provisioning and user permissions for Data Collection and Adobe Ex
 
 XDM schemas are the standard way to describe data in Experience Platform, allowing all data that conforms to the schemas to be reused across an organization without conflicts, or even shared between multiple organizations. To learn more, see the [basics of Schema composition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition). 
 
-In this exercise, you will create an XDM schema using the recommended baseline field groups for capturing web event data on the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
+In this exercise, you will create an XDM schema using the recommended baseline field groups for capturing web event data on the [Luma Demo Site](https://newluma.enablementadobe.com){target="_blank"}:
 
 1. Open the [Data Collection interface](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Ensure you are in the correct sandbox. Locate the sandbox in the upper right corner
