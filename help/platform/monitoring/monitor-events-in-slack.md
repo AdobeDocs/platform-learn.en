@@ -4,11 +4,9 @@ description: Learn how to receive Experience Platform notifications in Slack by 
 feature: Monitoring
 role: Developer, Admin
 level: Intermediate
-doc-type: Tutorial
-duration: 0
+duration: 519
 last-substantial-update: 2026-02-24
 jira: KT-20339
-thumbnail: KT-20339.jpeg
 exl-id: 6d4a072c-9eef-4a38-9459-9e1cbd66bfb5
 ---
 # Monitor Experience Platform events in Slack
@@ -89,7 +87,7 @@ First, create a project with the App Builder template in Adobe Developer Console
 1. Enter a Project Title, for example `Slack webhook integration`
 1. Select **[!UICONTROL Save]**
 
-### Step 2: Initialize the runtime environment
+### Initialize the runtime environment
 
 Run the following commands in your terminal to create the project structure:
 
@@ -99,7 +97,7 @@ Run the following commands in your terminal to create the project structure:
 aio login
 ```
 
-#### Initialize a new App Builder project
+#### Step 2: Initialize a new App Builder project
 
 ```
 aio app init slack-webhook-proxy
@@ -137,7 +135,7 @@ aio app add action
 2. See the **[!UICONTROL publish-events]** action in the table that is presented; press **Space** to select the action. If the circle next to the name is filled as shown in the video tutorial, press **Enter**
 3. Name the action `webhook-proxy`
 
-### Step 3: The Proxy Action Code
+### Step 3: Update the proxy action code
 
 In an IDE or text editor, create/modify the file `actions/webhook-proxy/index.js` with the following code. This implementation forwards events to Slack. Signature verification and challenge handling are automatic when using Runtime Action registration.
 
@@ -260,7 +258,7 @@ function formatDataFields(data, maxFields = 10) {
 exports.main = main;
 ```
 
-### Step 4: Configure the Action
+### Step 4: Configure the action
 
 The action configuration in `app.config.yaml` is critical. Use web: no to create a non-web action that can be registered as a Runtime Action in the Developer Console.
 
@@ -293,7 +291,7 @@ When you use a non-web action and register it via the "Runtime Action" option in
 
 This means that your code only needs to handle the business logic (forwarding to Slack).
 
-### Step 5: Environment Variables
+### Step 4: Update the environment variables
 
 To securely manage credentials, we use environment variables. Create/modify the `.env` file in the root of your project to add your Slack webhook URL. Be sure to show hidden files on your system if you don't see the `.env` file:
 
@@ -303,7 +301,7 @@ To securely manage credentials, we use environment variables. Create/modify the 
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/YOUR/WEBHOOK/URL
 ```
 
-### Step 6: Deploy
+### Step 5: Deploy the action
 
 Once the environment variables are set, deploy the action. Make sure to be in the root of your project, namely `slack-webhook-proxy`, when running this command in the terminal.
 
@@ -313,7 +311,7 @@ aio app deploy
 
 Your action is deployed to Adobe I/O Runtime and is available in the Developer Console for registration.
 
-### Step 7: Final Registration (Adobe Developer Console)
+### Step 6: Register the action in Adobe Developer Console
 
 Now that your action is deployed, register it as the destination for Adobe Events.
 
@@ -333,9 +331,9 @@ Now that your action is deployed, register it as the destination for Adobe Event
 1. Select **[!UICONTROL Save Configured Events]**.
 
 
-### Step 8: Validate with a sample event
+### Step 7: Validate with a sample event
 
-You can test the entire flow end-to-end by clicking the 'Send sample event' button next to any configured event.
+You can test the entire flow end-to-end by clicking the 'Send sample event' icon next to any configured event.
 
 The sample event is sent on the channel that you have configured when making your Slack app and creating the webhook; You should see something similar to the following:
 
