@@ -573,6 +573,30 @@ Click **Edit email body**.
 
 ![AJO OC](./images/ajooc126.png)
 
+Download the file [family_account_review.zip](./assets/family_account_review.zip) to your desktop.
+
+![AJO OC](./images/ajooc127.png)
+
+Click **Import HTML**.
+
+![AJO OC](./images/ajooc128.png)
+
+Click to select the file.
+
+![AJO OC](./images/ajooc129.png)
+
+Select the file **`family_account_review.zip`**.
+
+![AJO OC](./images/ajooc130.png)
+
+Click **Next**.
+
+![AJO OC](./images/ajooc131.png)
+
+You should then see this.
+
+![AJO OC](./images/ajooc132.png)
+
 ## Next Steps
 
 Go back to [Adobe Journey Optimizer: Orchestrated Campaigns](./ajocampaigns.md){target="_blank"}
