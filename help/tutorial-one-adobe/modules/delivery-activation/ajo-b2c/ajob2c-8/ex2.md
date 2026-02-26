@@ -560,10 +560,17 @@ Go to **Actions**.
 
 ![AJO OC](./images/ajooc124.png)
 
-
+Select the **Email channel configuration** that you created before and then click **Edit content**.
 
 ![AJO OC](./images/ajooc125.png)
 
+For the **Subject line**, paste this: 
+
+`{{target.--aepUserLdap--_citisignal_recipients.first_name}}, Your CitiSignal Family Account Summary`
+
+Click **Edit email body**.
+
+![AJO OC](./images/ajooc126.png)
 
 ## Next Steps
 
