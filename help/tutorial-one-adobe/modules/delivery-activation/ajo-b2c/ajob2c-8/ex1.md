@@ -725,6 +725,52 @@ You should then have this.
 
 ![AJO OC](./images/ajoocptd8.png)
 
+## 3.8.1.4 Email channel
+
+In the left menu, go to **Channels**. Click **Create channel configuration**.
+
+![AJO OC](./images/ajoocchannel1.png)
+
+Use the name: `--aepUserLdap---citisignal-email-oc`. Select the channel **Email**
+
+![AJO OC](./images/ajoocchannel2.png)
+
+Select an available **subdomain** and **IP pool**.
+
+![AJO OC](./images/ajoocchannel3.png)
+
+Scroll down and fill out the **Header parameters**.
+
+- **From name**: `info@techinsiders.org`
+- **From email prefix**: `info`
+- **Reply to name**: `info@techinsiders.org`
+- **Reply to email**: `info@techinsiders.org`
+- **Error email prefix**: `error`
+
+![AJO OC](./images/ajoocchannel4.png)
+
+Scroll down. Go to **Orchestrated campaign**. Check the checkbox for **Enabled**. Select **Targetng dimension**.
+
+![AJO OC](./images/ajoocchannel5.png)
+
+For **Profile Target Dimension**, select `--aepUserLdap--_citisignal_recipients - email`.
+
+Select **Target Dimension** and click the **open folder** icon.
+
+![AJO OC](./images/ajoocchannel6.png)
+
+Click `--aepUserLdap--_citisignal_recipients`.
+
+![AJO OC](./images/ajoocchannel7.png)
+
+Select the field **email** and click **Select**.
+
+![AJO OC](./images/ajoocchannel8.png)
+
+Scroll up and click **Submit**.
+
+![AJO OC](./images/ajoocchannel9.png)
+
 In the next exercise you'll start to use that data as part of an orchestrated campaign.
 
 ## Next Steps

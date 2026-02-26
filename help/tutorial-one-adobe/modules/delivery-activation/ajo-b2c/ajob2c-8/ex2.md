@@ -189,6 +189,10 @@ Select **`account_id`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc41.png)
 
+Set the **Profile mapping field** to **`--aepUserLdap--_citisignal_recipients - account_id`**.
+
+![AJO OC](./images/ajooc41a.png)
+
 ### Enrichment: Internet Subscription
 
 Click the **+** icon.
@@ -247,7 +251,7 @@ Click **Add attribute**.
 
 ![AJO OC](./images/ajooc53.png)
 
-Select **`avg_dowload_usage_gb`** and click **Confirm**.
+Select **`avg_bandwidth_usage_gb`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc54.png)
 
@@ -297,11 +301,15 @@ Drill down to **Targeting dimension**.
 
 ![AJO OC](./images/ajooc64.png)
 
-Drill down to **`citisignal_mobile_subscriptions`**.
+Drill down to **`citisignal_accounts`**.
 
 ![AJO OC](./images/ajooc65.png)
 
-Select **`account_id`** and click **Confirm**.
+Drill down to **`citisignal_mobile_subscriptions`**.
+
+![AJO OC](./images/ajooc65a.png)
+
+Select **`phone_number`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc66.png)
 
@@ -309,31 +317,59 @@ Click **Add attribute**.
 
 ![AJO OC](./images/ajooc67.png)
 
-Select **`subscription_id`** and click **Confirm**.
+Drill down to **`citisignal_equipment_subscriptions`**.
 
 ![AJO OC](./images/ajooc68.png)
+
+Select **`model`** and click **Confirm**.
+
+![AJO OC](./images/ajooc68a.png)
 
 Click **Add attribute**.
 
 ![AJO OC](./images/ajooc69.png)
 
-Select **`phone_number`** and click **Confirm**.
+Drill down to **`citisignal_equipment_subscriptions`**.
 
-![AJO OC](./images/ajooc70.png)
+![AJO OC](./images/ajooc69a.png)
+
+Select **`recommended_device_model`** and click **Confirm**.
+
+![AJO OC](./images/ajooc70.png) 
 
 Click **Add attribute**.
 
 ![AJO OC](./images/ajooc71.png)
 
-Select **`renewal_eligibility_date`** and click **Confirm**.
+Drill down to **`citisignal_equipment_subscriptions`**.
+
+![AJO OC](./images/ajooc71a.png)
+
+Select **`is_upgrade_eligible`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc72.png)
+
+You can now test your progress by doing a test run and see which data is available in your campaign.
+
+Save your changes and then click **Start**.
+
+![AJO OC](./images/ajooctest1.png)
+
+After some time, you should then see this. Click **Preview results**.
+
+![AJO OC](./images/ajooctest2.png)
+
+You should then see something similar to this. Click **Close**.
+
+![AJO OC](./images/ajooctest3.png)
+
+Go back into the node **Enrichment: Mobile Devices Subscription**.
 
 Click **Add attribute**.
 
 ![AJO OC](./images/ajooc73.png)
 
-Select **`line_user_recipient_id`** and click **Confirm**.
+Select **`account_id`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc74.png)
 
@@ -341,7 +377,7 @@ Click **Add attribute**.
 
 ![AJO OC](./images/ajooc75.png)
 
-Select **`is_upgrade_eligible`** and click **Confirm**.
+Select **`subscription_id`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc76.png)
 
@@ -349,7 +385,7 @@ Click **Add attribute**.
 
 ![AJO OC](./images/ajooc77.png)
 
-Select **`current_device_id`** and click **Confirm**.
+Select **`renewal_eligibility_date`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc78.png)
 
@@ -357,7 +393,7 @@ Click **Add attribute**.
 
 ![AJO OC](./images/ajooc79.png)
 
-Select **`contract_start_date`** and click **Confirm**.
+Select **`line_user_recipient_id`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc80.png)
 
@@ -365,25 +401,17 @@ Click **Add attribute**.
 
 ![AJO OC](./images/ajooc81.png)
 
-Drill down to **`citisignal_equipment_subscriptions`**.
+Select **`current_device_id`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc82.png)
-
-Select **`model`** and click **Confirm**.
-
-![AJO OC](./images/ajooc83.png)
 
 Click **Add attribute**.
 
 ![AJO OC](./images/ajooc86.png)
 
-Drill down to **`citisignal_equipment_subscriptions`**.
+Select **`contract_start_date`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc87.png)
-
-Select **`manufacturer`** and click **Confirm**.
-
-![AJO OC](./images/ajooc88.png)
 
 Click **Add attribute**.
 
@@ -393,7 +421,7 @@ Drill down to **`citisignal_equipment_subscriptions`**.
 
 ![AJO OC](./images/ajooc90.png)
 
-Select **`device_age_months`** and click **Confirm**.
+Select **`manufacturer`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc91.png)
 
@@ -405,7 +433,7 @@ Drill down to **`citisignal_equipment_subscriptions`**.
 
 ![AJO OC](./images/ajooc93.png)
 
-Select **`is_upgrade_eligible`** and click **Confirm**.
+Select **`device_age_months`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc94.png)
 
@@ -417,7 +445,7 @@ Drill down to **`citisignal_equipment_subscriptions`**.
 
 ![AJO OC](./images/ajooc96.png)
 
-Select **`recommended_upgrade_product_id`** and click **Confirm**.
+Select **`trade_in_value`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc97.png)
 
@@ -433,48 +461,117 @@ Select **`monthly_payment`** and click **Confirm**.
 
 ![AJO OC](./images/ajooc100.png)
 
-Click **Add attribute**.
+### Enrichment: Mobile Devices Subscription
+
+You should then have this. Click **Save**. Then, click the **+** icon to add a new node and select **Enrichment**.
 
 ![AJO OC](./images/ajooc101.png)
 
-Drill down to **`citisignal_equipment_subscriptions`**.
+You should then see this. Click **Add enrichment data**.
 
 ![AJO OC](./images/ajooc102.png)
 
-Enable the switch for **Enable Sorting**. Click the **Edit** icon.
+Drill down to **Targeting dimension**.
 
 ![AJO OC](./images/ajooc103.png)
 
-Select **`phone_number`** and click **Confirm**.
+Drill down to **`citisignal_offer_eligibility`**.
 
 ![AJO OC](./images/ajooc104.png)
 
-You should then have this.
+Drill down to **`citisignal_offers`**.
 
 ![AJO OC](./images/ajooc105.png)
 
+Select **`offer_name`** and click **Confirm**.
 
+![AJO OC](./images/ajooc106.png)
 
+Click **Add attribute**.
 
-You should then have this. Click **Save**.
+![AJO OC](./images/ajooc107.png)
 
-![AJO OC](./images/ajooc80a.png)
+Drill down to **`citisignal_offers`**.
 
+![AJO OC](./images/ajooc108.png)
 
+Select **`offer_code`** and click **Confirm**.
 
+![AJO OC](./images/ajooc109.png)
 
+Click **Add attribute**.
 
+![AJO OC](./images/ajooc110.png)
 
+Drill down to **`citisignal_offers`**.
 
+![AJO OC](./images/ajooc111.png)
 
+Select **`offer_description`** and click **Confirm**.
 
+![AJO OC](./images/ajooc112.png)
 
+Click **Add attribute**.
 
+![AJO OC](./images/ajooc110.png)
 
+Drill down to **`citisignal_offers`**.
 
+![AJO OC](./images/ajooc113.png)
 
-![AJO OC](./images/ajooc103.png)
+Select **`offer_description`** and click **Confirm**.
 
+![AJO OC](./images/ajooc114.png)
+
+Switch on **Enable sorting**.
+
+![AJO OC](./images/ajooc115.png)
+
+Drill down to **`citisignal_offers`**.
+
+![AJO OC](./images/ajooc116.png)
+
+Select **`offer_priority`** and click **Confirm**.
+
+![AJO OC](./images/ajooc117.png)
+
+You can now test your campaign. Click **Start**.
+
+![AJO OC](./images/ajooc118.png)
+
+After some time you should see this. Click the **Result** and then select **Preview results**.
+
+![AJO OC](./images/ajooc120.png)
+
+You should then see something similar to this.
+
+![AJO OC](./images/ajooc121.png)
+
+### Email activity
+
+Click the **+** icon and then select **Email**.
+
+![AJO OC](./images/ajooc122.png)
+
+Click **Edit email**.
+
+![AJO OC](./images/ajooc123.png)
+
+Go to **Actions**.
+
+![AJO OC](./images/ajooc124.png)
+
+Select the **Email channel configuration** that you created before and then click **Edit content**.
+
+![AJO OC](./images/ajooc125.png)
+
+For the **Subject line**, paste this: 
+
+`{{target.--aepUserLdap--_citisignal_recipients.first_name}}, Your CitiSignal Family Account Summary`
+
+Click **Edit email body**.
+
+![AJO OC](./images/ajooc126.png)
 
 ## Next Steps
 
