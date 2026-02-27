@@ -10,9 +10,6 @@ exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
 Learn how to install and configure the Adobe Experience Platform Web SDK tag extension. The easiest way to implement Web SDK is using Adobe's tag manager, tags (formerly known as Launch). The Platform Web SDK tag extension is the _only tag extension_ required to send data to _all Adobe Experience Cloud applications_, including [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform, and [Journey Optimizer](setup-web-channel.md)!
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ## Learning objectives
 

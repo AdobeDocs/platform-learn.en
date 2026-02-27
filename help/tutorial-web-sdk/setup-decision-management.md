@@ -1,22 +1,22 @@
 ---
-title: Set up Journey Optimizer Decision Management with Platform Web SDK
-description: Learn how to implement Decision Management using Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
+title: Set up Journey Optimizer Decisioning with Platform Web SDK
+description: Learn how to implement  Decisioning using Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
-feature: Decision Management,Offers
+feature: Decisioning,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
 ---
-# Set up Decision Management with Platform Web SDK
+# Set up Decisioning with Platform Web SDK
 
-Learn how to implement Adobe Journey Optimizer's Decision Management capability using Platform Web SDK. This guide covers the foundational Decision Management prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
+Learn how to implement Adobe Journey Optimizer's Decisioning capability using Platform Web SDK. This guide covers the foundational Decisioning prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
 
-By following this tutorial, Journey Optimizer users are equipped to use Decision Management features, enhancing the personalization and relevance of their customer interactions.
+By following this tutorial, Journey Optimizer users are equipped to use Decisioning features, enhancing the personalization and relevance of their customer interactions.
 
-
->[!WARNING]
+>[!INFO]
 >
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+> Decisioning is a similar but different capability from Decision Management in Journey Optimizer.
+
 
 ![Web SDK and Adobe Analytics diagram](assets/dc-websdk-ajo.png)  
 
@@ -24,13 +24,13 @@ By following this tutorial, Journey Optimizer users are equipped to use Decision
 
 At the end of this lesson, you are able to:
 
-* Grasp the core concepts of Decision Management within the Adobe Journey Optimizer and its integration with the Adobe Experience Platform Web SDK.
+* Grasp the core concepts of Decisioning within the Adobe Journey Optimizer and its integration with the Adobe Experience Platform Web SDK.
 
-* Learn the step-by-step process to configure the Web SDK for Offer Decisioning, ensuring seamless integration with Journey Optimizer.
+* Learn the step-by-step process to configure the Web SDK for Decisioning, ensuring seamless integration with Journey Optimizer.
 
 * Explore a detailed use case centered on loyalty status offers, gaining insights into creating and managing offers, decisions, and placements effectively.
 
-* Acquaint yourself with essential terms and their implications within the Decision Management framework.
+* Acquaint yourself with essential terms and their implications within the Decisioning framework.
 
 * Understand the significance of decision rules, collection qualifiers, and fallback offers in delivering the right offer to the right user.
 
@@ -40,27 +40,14 @@ At the end of this lesson, you are able to:
 
 To complete the lessons in this section, you must first:
 
-* Ensure that your organization has access to Adobe Journey Optimizer Ultimate (Journey Optimizer and Offer Decisioning) or Adobe Experience Platform and the Offer Decisioning add-on.
-
 * Complete all lessons for initial configuration of the Platform Web SDK.
-
-* Enable your organization for Edge Decisioning.
-
-* Understand how to configure a placement, and instantiate placement and activity IDs within your Decision Scope JSON.
-
-## Limitations
-
-Event-based offers are currently not supported in Adobe Journey Optimizer. If you create a decision rule based on an event, you are not able to apply it in an offer.
-
-## Grant access to Decision Management
-
-To grant access to the Decision Management functionality, you must create a **Product profile** and assign the corresponding permissions to your users. [Learn more on managing Journey Optimizer users and permissions in this section](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+* Permission items for Journey Optimizer as described in the permissions [prequisites](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#prerequisites).
 
 ## Configure the datastream
 
-Offer Decisioning must be enabled in the **datastream** configuration before any Decision Management activities can be delivered by Platform Web SDK.
+Decisioning must be enabled in the **datastream** configuration before any Decisioning activities can be delivered by Platform Web SDK.
 
-To configure Offer Decisioning in the datastream:
+To configure Decisioning in the datastream:
 
 1. Go to the [Data Collection](https://experience.adobe.com/#/data-collection) interface.
 
@@ -76,15 +63,15 @@ To configure Offer Decisioning in the datastream:
 
 1. Check the **Offer Decisioning** box.
 
-   ![ADD SCREENSHOT](assets/decisioning-check-offer-box.png)
+   ![Enable Offer Decisioning](assets/decisioning-check-offer-box.png)
 
 1. Select **Save**.
 
-This ensures that inbound events for Journey Optimizer are correctly handled by the **Adobe Experience Platform Edge**.
+This ensures that inbound events for Journey Optimizer are correctly handled by Adobe Experience Platform Edge Network.
 
-## Configure the SDK for Decision Management
+## Configure the SDK for Decisioning
 
-Decision Management requires additional SDK steps, depending on your Web SDK implementation type. There are two available options for configuring the SDK for Decision Management.
+Decisioning requires additional SDK steps, depending on your Web SDK implementation type. There are two available options for configuring the SDK for Decisioning.
 
 * SDK standalone installation
   1. Configure the `sendEvent` action with your `decisionScopes`.
@@ -115,7 +102,7 @@ Decision Management requires additional SDK steps, depending on your Web SDK imp
 
 ## Terminology
 
-First, you should understand the terminology used in the Decision Management interface.
+First, you should understand the terminology used in the Decisioning interface.
 
 * **Capping**: A constraint dictating how often an offer appears. Two types:
   * Total caps: Maximum times an offer can be shown across the target audience.
@@ -124,7 +111,7 @@ First, you should understand the terminology used in the Decision Management int
 * **Decision**: Logic that dictates the choice of an offer.
 * **Decision Rule**: Constraints on offers to find out a user's eligibility.
 * **Eligible Offer**: An offer that matches the pre-set constraints and can be shown to a user.
-* **Decision Management**: The system of crafting and distributing personalized offers using business logic and decision rules.
+* **Decisioning**: The system of crafting and distributing personalized offers using business logic and decision rules.
 * **Fallback Offers**: The default offer shown when a user doesn't qualify for any offers in a collection.
 * **Offer**: A marketing message with potential eligibility rules determining its viewers.
 * **Offer Library**: A central repository managing offers, decisions, and associated rules.
@@ -135,17 +122,36 @@ First, you should understand the terminology used in the Decision Management int
 
 ## Use Case Overview – Loyalty Rewards
 
-In this lesson, you implement a sample Loyalty Rewards use case to understand Decision Management using the Web SDK.
+In this lesson, you implement a sample Loyalty Rewards use case to understand Decisioning using the Web SDK.
 
-This use case enables you to better understand how Journey Optimizer can help deliver the best offer to your customers, utilizing the centralized offer library and the Decision Management decision engine.
+This use case enables you to better understand how Journey Optimizer can help deliver the best offer to your customers, utilizing the centralized offer library and the Decisioning decision engine.
 
 >[!NOTE]
 >
-> As this tutorial is aimed at implementers, it's worth noting that this lesson involves substantial interface work in Journey Optimizer. While such interface tasks are typically handled by marketers, it can be beneficial for implementers to gain insight into the process, even if they are not responsible for decision management campaign creation in the long run.
+> As this tutorial is aimed at implementers, it's worth noting that this lesson involves substantial interface work in Journey Optimizer. While such interface tasks are typically handled by marketers, it can be beneficial for implementers to gain insight into the process, even if they are not responsible for Decisioning campaign creation in the long run.
 
 ## Components
 
 Before starting to create the offers, you must define several prerequisite components.
+
+### Create a Decision Rule
+
+Businesses usually have eligibility rules associated with an offer. Do I want to extend this offer only to new customers? To customers who have made multiple purchases? To college students? In our example, we are building offers for customers participating in our loyalty program who have achieved gold status Audience membership is one way to evaluate this eligibility. Decision rules are another. To explore the decisioning capabilities, let's build a decision rule: 
+
+1. Navigate to **[!UICONTROL Strategy setup]** > **[!UICONTROL Decision rules]**
+1. Select **[!UICONTROL Create rule]**
+
+   ![Create a decision rule](assets/decisioning-create-decision-rule.png)
+
+1. The decision rule interface is very similar to the Segment Builder interface, although ExperienceEvent data is availble through the [!UICONTROL Context Data] menu and additional options are available through this menu, as well. Add the `Loyalty` > `Tier` attribute and define the rule as `Tier` equals `Gold`.
+1. Select **[!UICONTROL Create]**
+1. 
+
+   ![Configure decision rule](assets/decisioning-configure-decision-rule.png)
+
+1. 
+1. 
+1. 
 
 ### Create a Placement for Loyalty Offers
 
@@ -221,22 +227,34 @@ To create the Loyalty Rewards collection qualifier, follow these steps:
 
 Now it's time to create the Loyalty Rewards offers.
 
-The list of offers is accessible in the **Offers** menu.
+The list of offers is accessible under **[!UICONTROL Catalogs]**> **[!UICONTROL Offers]**, although at this point you might not have any in your sandbox:
 
    ![View offers menu](assets/decisioning-offers-menu.png)
 
 
 ### Creating Offers for Different Loyalty Tiers
 
-Start by creating personalized offers for the different Luma Loyalty Tiers.
+Create personalized offers for the different Luma loyalty tiers.
 
 To create the first **offer**, follow these steps:
 
-1. Click **Create offer**, then select **Personalized offer**.
-
-1. Let's name the first offer '*Luma Loyalty Tier – Gold*'. You must specify a start / end date and time for this offer. You should also associate the **collection qualifier** '*Loyalty Rewards*' to the offer, allowing you to better organize within the **Offer Library**. Afterwards, click **Next**.
+1. Click **Create item**, then select **Personalized offer**.
+1. Optionally, you can add a description and time constraings to offers
+1. Add a **[!UICONTROL tag]** `Loyalty Rewards` to help organize your offers
+1. Custom attributes are a powerful way to extend the richness of your offers which you will almost certainly use in your actual implementation, but which are beyond the scope of this tutorial.
+1. Select **[!UICONTROL Next]**.
 
    ![Add offer details](assets/decisioning-add-offer-details.png)
+
+1. Define the eligibility for this offer. In our scenario, select the `Luma Loyalty Rewards - Gold Status` audience created in the Experience Platform lesson and select **[!UICONTROL Next]**.
+
+   ![Define eligibility](assets/decisioning-define-eligibility.png)
+
+1. **[!UICONTROL Save]** and **[!UICONTROL Approve]** the offer
+
+   ![Save](assets/decisioning-save-offer.png)
+
+
 
 1. Now you must add **representations** to define where the offer displays. Let's choose the **web channel**. Let's also choose the '*Homepage Banner*' **placement** you previously configured. The selected **placement** is HTML-type, so you can add HTML, JSON, or TEXT content directly to the editor to build the offer using the **Custom** radio button.
 
@@ -245,6 +263,15 @@ To create the first **offer**, follow these steps:
 1. Edit the offer content directly with the **Expression Editor**. Remember that you can add HTML, JSON, or TEXT content to this placement. Ensure you select the correct **mode** at the bottom of the editor, depending on your content type. You can also hit **validate** to ensure there are no errors. 
 
    ![Add offer HTML](assets/decisioning-add-offer-html.png)
+
+
+   ```html
+   <div style="background-color: yellow">
+      <h2>Exclusive Offer for Gold Members!</h2>
+      <p>Enjoy a special 20% discount on your next purchase</p>
+      <a href="/gold-offer">Claim Offer</a>
+   </div>
+   ```
 
 1. Also, you can use the Expression Editor to retrieve attributes stored in Adobe Experience Platform. Let's add a profile's first name to the offer content to better personalize for the loyalty members on a 1:1 level.
 
@@ -363,7 +390,7 @@ To begin the testing, select the **Simulations** tab from the **Offers** menu.
    -->
 1. Select a different test profile, and click **View results**. Ideally, you should see a different simulated offer, corresponding with the test profile's loyalty tier.
 
-## Decision Management Validation using Adobe Experience Platform Debugger
+## Decisioning Validation using Adobe Experience Platform Debugger
 
 The **Adobe Experience Platform Debugger** extension, available for both Chrome and Firefox, analyzes your web pages to identify issues in the implementation of Adobe Experience Cloud solutions.
 
@@ -381,7 +408,7 @@ To begin validation using the debugger:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Navigate to **Summary**. Verify that the **Datastream ID** matches the **datastream** in **Adobe Data Collection** for which you enabled Offer Decisioning.
+1. Navigate to **Summary**. Verify that the **Datastream ID** matches the **datastream** in **Adobe Data Collection** for which you enabled Decisioning.
    <!--
       ![ADD SCREENSHOT](#)
    -->

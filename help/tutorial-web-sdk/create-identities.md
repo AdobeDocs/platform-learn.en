@@ -12,9 +12,6 @@ Learn how to capture identities with Adobe Experience Platform Web SDK. Capture 
 This lesson focuses on the Identity map data element available with the Adobe Experience Platform Web SDK tags extension. You map data elements containing an authenticated user ID and authentication status to XDM. 
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ## Learning objectives
 

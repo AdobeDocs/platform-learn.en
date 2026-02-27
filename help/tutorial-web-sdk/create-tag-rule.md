@@ -10,9 +10,6 @@ exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
 Learn how to send events to the Adobe Experience Platform Edge Network with your XDM object using tag rules. A tag rule is a combination of events, conditions, and actions that tells the tag property to do something. With Platform Web SDK, rules are used to send events to Platform Edge Network with the right data.
  
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ## Learning objectives
 

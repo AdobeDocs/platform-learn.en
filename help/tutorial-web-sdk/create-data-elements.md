@@ -10,9 +10,6 @@ exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
 Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://newluma.enablementadobe.com). Then populate fields in your XDM schema with the Adobe Experience Platform Web SDK extension Variable data element type. 
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ## Learning objectives
 
@@ -78,7 +75,7 @@ window.adobeDataLayer.push({
                "id":"",
                "value":"1"
             },
-            "URL":"https://luma.enablementadobe.com/",
+            "URL":"https://newluma.enablementadobe.com/",
             "isErrorPage":"",
             "isHomePage":"",
             "name":"luma:home",

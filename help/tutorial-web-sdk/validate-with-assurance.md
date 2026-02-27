@@ -10,9 +10,6 @@ exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
 Adobe Experience Platform Assurance is a feature to help you inspect, proof, simulate, and validate how you collect data or serve experiences. Read more about [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). 
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ## Learning objectives
 
@@ -64,7 +61,7 @@ Reviewing how we did this in the Debugger lesson:
     ![Create an Assurance session](assets/assurance-create-session.png)
 1. Select Start
 1. Give the session a name, for example, `Luma Web SDK validation`
-1. As the **[!UICONTROL Base URL]** enter `https://luma.enablementadobe.com/`
+1. As the **[!UICONTROL Base URL]** enter `https://newluma.enablementadobe.com/`
     ![Name the Assurance session](assets/assurance-name-session.png)
 1. On the next screen, select **[!UICONTROL Copy Link]**
 1. Select the icon to copy the link to your clipboard

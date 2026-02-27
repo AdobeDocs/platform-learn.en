@@ -11,9 +11,6 @@ Learn how to configure a datastream for Adobe Experience Platform Web SDK.
 
 [Datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) tell Adobe Experience Platform Edge Network where to send data collected by Platform Web SDK. In the datastreams configuration, you enable your Experience Cloud applications, your Experience Platform account, and event forwarding. 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ![Web SDK, datastreams, and Edge Network diagram](assets/dc-websdk-datastreams.png)
 

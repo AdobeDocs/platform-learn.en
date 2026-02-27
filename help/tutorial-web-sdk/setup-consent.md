@@ -10,9 +10,6 @@ exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
 Learn how to configure the privacy settings of the Adobe Experience Platform Web SDK tag extension. Set consent based on the visitor's interaction with a banner from a Consent Management Platform (CMP). 
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 >[!NOTE]
 > 
@@ -47,10 +44,10 @@ Before you jump into the tag configurations, learn more about the consent manage
 1. Go to **Privacy Manager** and create an instance according to the instructions.
 1. Use the **Integration Code** to inject Klaro into your tag property (instructions are in the next exercise).
 1. Skip the **Scanning** section, as it detects the tag property that is hardcoded on the Luma demo website and not the one you have built for this tutorial.
-1. Add a service called `aep web sdk` and toggle on the **Service Default State**. When turned on, the default consent value is `true`, otherwise it is `false`. This configuration is handy when you want to decide what the default consent state (before visitor's consent) is going to be for your web application. For example:
+1. Add a service called `aep-web-sdk` and toggle on the **Service Default State**. When turned on, the default consent value is `true`, otherwise it is `false`. This configuration is handy when you want to decide what the default consent state (before visitor's consent) is going to be for your web application. For example:
     * For CCPA, the default consent is commonly set to `true`. You are going to reference this scenario as **Implied opt-in** throughout this tutorial
     * For GDPR, the default consent is commonly set to `false`. You are going to reference this scenario as **Implied opt-out** throughout this tutorial.
-
+1. Activate the configuration
 <!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
 -->
@@ -105,7 +102,7 @@ Implied opt-in means the business does not need to obtain the visitor's consent 
 
 Now you will configure and implement consent for this scenario:
 
-1. In the **[!UICONTROL Privacy]** section of the Experience Platform Web SDK tag extension, make sure the  **[!UICONTROL Default consent]** is set to **[!UICONTROL In]** :
+1. In the **[!UICONTROL Consent]** section of the Experience Platform Web SDK tag extension, make sure the  **[!UICONTROL Default consent]** is set to **[!UICONTROL In]** :
 
 
     ![Consent AEP Extension Privacy Config](assets/consent-web-sdk-privacy-in.png)
@@ -121,7 +118,7 @@ Now you will configure and implement consent for this scenario:
 2. Save and build this change to your tag library 
 3. Load your tag library on the Luma Demo site
 4. Enable tags debugging while on the Luma site and reload the page. In your browser's developer console, you should see that defaultConsent is equal to **[!UICONTROL In]**
-5. With this configuration, Experience Platform Web SDK extension continues to make network requests, unless a visitor decides to reject the cookies and opt-out:
+5. With this configuration, Experience Platform Web SDK extension makes network requests to Platform Edge Network until a visitor decides to reject the cookies and opts-out:
 
      ![Consent Implied Opt In](assets/consent-Implied-optin-default.png)
 
@@ -155,13 +152,12 @@ If a visitor decides to opt out (reject the tracking cookies), you must change t
 
     ![Rule Condition user clicks "I decline"](assets/consent-optOut-clickEvent.png)
 
-1. Now, use the Experience Platform Web SDK, [!UICONTROL Set consent] [!UICONTROL action type] to set the consent as "out":
+1. As the **[!UICONTROL Action]**, use the Experience Platform Web SDK extension, [!UICONTROL Set consent] [!UICONTROL action type] to set the consent as "out":
 
     ![Consent Rule Opt-out Action](assets/consent-rule-optout-action.png)
 
-1. Select **[!UICONTROL Save to Library and Build]**:
+1. Save and rebuild your library
 
-    ![Save and build your library](assets/consent-rule-optout-saveAndBuild.png)
 
 Now, when a visitor opts-out, the rule configured in the above fashion would fire and sets the Web SDK consent as **[!UICONTROL Out]**. 
 
@@ -174,13 +170,14 @@ Implied opt-out means that the visitors should be treated as opted-out by defaul
 
 Here is how you can set up the configuration for an implied opt-out scenario:
 
-1. In Klaro, toggle off the **Service Default State** in your `aep web sdk` service and save the updated configuration.
+1. In Klaro, toggle off the **Service Default State** in your `aep-web-sdk` service and save the updated configuration.
 
-1. In **[!UICONTROL Privacy]** section of Experience Platform Web SDK extension, set default consent to **[!UICONTROL Out]** or **[!UICONTROL Pending]** as required.
-
-    ![Consent AEP Extension Privacy Config](assets/consent-implied-opt-out.png)
+1. In **[!UICONTROL Consent]** section of Experience Platform Web SDK extension, set default consent to **[!UICONTROL Out]** or **[!UICONTROL Pending]** as required.
 
 1. **Save** the updated configuration to your tag library and rebuild it.
+
+    ![AEP Extension Consent Config](assets/consent-implied-opt-out.png)
+
     
     With this configuration, Experience Platform Web SDK ensures that no request fires unless the consent permission changes to **[!UICONTROL In]**. That could happen as a result of a visitor manually accepting the cookies by opting in.
 
@@ -205,10 +202,6 @@ In case a visitor decides to opt in (accept the tracking cookies), you must chan
 
     One thing to note here is that this [!UICONTROL Set consent] action is going to be the first request that goes out and establishes identity. Because of this, it may be important to sync identities on the first request itself. The identity map can be added to [!UICONTROL Set consent] action by passing an identity type data element.
 
-1. Select **[!UICONTROL Save to Library and Build]**:
-
-    ![Consent Rule opt out](assets/consent-rule-optin-saveAndBuild.png)
-
 1. **[!UICONTROL Save]** the rule to your library and rebuild it.
 
 Once you have this rule in place, events collection should begin when a visitor opts-in.
@@ -217,6 +210,11 @@ Once you have this rule in place, events collection should begin when a visitor 
 
 
 For more information on consent in Web SDK, see [Supporting customer consent preferences](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
+
+>[!TIP]
+>
+> After completing this lesson, we recommend disabling the three new rules.
+
 
 
 For more information on the [!UICONTROL Set consent] action, see [Set consent](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).

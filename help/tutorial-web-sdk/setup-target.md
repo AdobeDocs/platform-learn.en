@@ -12,9 +12,6 @@ Learn how to implement Adobe Target using Adobe Experience Platform Web SDK. Lea
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) is the Adobe Experience Cloud application that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, and other digital channels.
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ![Web SDK and Adobe Target diagram](assets/dc-websdk-at.png)
 

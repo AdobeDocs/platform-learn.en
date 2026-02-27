@@ -12,9 +12,6 @@ Learn how to use event forwarding with Adobe Experience Platform Web SDK data.
 Event forwarding is a new type of property available in Data Collection. Event forwarding gives you the ability to send data to third-party, non-Adobe vendors straight from the Adobe Experience Platform Edge Network instead of the traditional client-side browser. Find out more about the advantages of event forwarding in the [Event Forwarding overview](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ![Web SDK and event forwarding diagram](assets/dc-websdk-eventforwarding.png)
 
@@ -288,7 +285,7 @@ Create a library and build all the changes to your event-forwarding development 
 
 Now you can validate your event-forwarding property using the Platform Debugger, and Webhook.site:
 
-1. Follow the steps to [switch the tag library](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) on the [Luma Demo site](https://luma.enablementadobe.com/content/luma/us/en/men.html) to the Web SDK tag property to which you mapped your event-forwarding property in the datastream.
+1. Follow the steps to [switch the tag library](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) on the [Luma Demo site](https://newluma.enablementadobe.com/category-men.html) to the Web SDK tag property to which you mapped your event-forwarding property in the datastream.
 
 1. Before you reload the page, on the Experience Platform Debugger open **[!UICONTROL Logs]** from the left navigation
 

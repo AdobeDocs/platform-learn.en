@@ -12,9 +12,6 @@ Learn how to set up Adobe Analytics using [Adobe Experience Platform Web SDK](ht
 [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) is an industry-leading application that empowers you to understand your customers as people and steer your business with customer intelligence.
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ![Web SDK to Adobe Analytics diagram](assets/dc-websdk-aa.png)  
 
@@ -293,7 +290,7 @@ Above you configured a datastream override for the [Luma homepage](https://newlu
 
 ### Content page views validation
 
-Go to a product page like the [Didi Sport Watch product page](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  Validate that content page views are captured by Analytics. 
+Go to a product page like the [Livingston All-Purpose Tight product page](https://newluma.enablementadobe.com/product.html?id=LLMP09).  Validate that content page views are captured by Analytics. 
 
 1. Look for `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. 
 1. Scroll down to see the `[!UICONTROL gn]` variable. It is the Analytics dynamic syntax for the `[!UICONTROL s.pageName]` variable. It captures the page name from the data layer.
@@ -332,8 +329,8 @@ Since you are already on a product page, this exercise continues to use the same
 
 **Validate the rest of e-commerce events and product strings are set for Analytics**
 
-1. Add [Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) to cart
-1. Go to the [Cart Page](https://luma.enablementadobe.com/content/luma/us/en/user/cart.html), check Edge Trace for 
+1. Add [Marco Lightweight Active Hoodie](https://newluma.enablementadobe.com/product.html?id=LLMH13) to the cart
+1. Go to the [Cart Page](https://newluma.enablementadobe.com/cart.html), check Edge Trace for 
 
     * `eventType` set to `commerce.productListViews`
     * `[!UICONTROL events: "scView"]`, and
@@ -416,6 +413,10 @@ Continue to validate your implementation by reviewing the cart and purchase even
  
 
 Congratulations! You did it! This is the end of the lesson and now you are ready to implement Adobe Analytics with Platform Web SDK for your own website.
+
+>[!TIP]
+>
+> After completing this lesson, we recommend disabling the `homepage - adobeDataLayer push - AA report suite override - 51` rule.
 
 >[!NOTE]
 >

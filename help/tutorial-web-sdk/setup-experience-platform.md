@@ -11,9 +11,6 @@ Learn how to stream web data to Adobe Experience Platform with Platform Web SDK.
 Experience Platform is the backbone of all new Experience Cloud applications, such as Adobe Real-Time Customer Data Platform, Adobe Customer Journey Analytics, and Adobe Journey Optimizer. These applications are designed to use Platform Web SDK as their optimal method of web data collection.
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ![Web SDK and Adobe Experience Platform diagram](assets/dc-websdk-aep.png)
 

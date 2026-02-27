@@ -12,9 +12,6 @@ Learn how to set up Adobe Audience Manager using the Adobe Experience Platform W
 [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) is the Adobe Experience Cloud solution that provides everything required to collect commercially relevant information about site visitors, create marketable segments, and serve targeted advertising and content to the right audience.
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ![Web SDK and Adobe Audience Manager diagram](assets/dc-websdk-aam.png)
 
