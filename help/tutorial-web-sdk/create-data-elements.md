@@ -187,22 +187,22 @@ Create these additional data elements by following the same steps:
 
 * **`Ecommerce Cart Products`** using the following custom code:
 
-    ```javascript
-    const cartProducts = adobeDataLayer
-  .flatMap(evt => Array.isArray(evt?.ecommerce?.cart?.items) ? evt.ecommerce.cart.items : [])
-  .filter(item => item && item.id && item.name && item.brand)
-  .map(({ id, name, brand }) => ({ id, name, brand }));
+   ```javascript
+   const cartProducts = adobeDataLayer
+   .flatMap(evt => Array.isArray(evt?.ecommerce?.cart?.items) ? evt.ecommerce.cart.items : [])
+   .filter(item => item && item.id && item.name && item.brand)
+   .map(({ id, name, brand }) => ({ id, name, brand }));
 
    return cartProducts;
-    ```
+   ```
 
 * **`Ecommerce Checkout Products`** using the following custom code:
 
-    ```javascript
-    const checkoutProducts = adobeDataLayer
-  .flatMap(evt => Array.isArray(evt?.ecommerce?.checkout?.products) ? evt.ecommerce.checkout.products : [])
-  .filter(item => item && item.id && item.name && item.brand)
-  .map(({ id, name, brand }) => ({ id, name, brand }));
+   ```javascript
+   const checkoutProducts = adobeDataLayer
+   .flatMap(evt => Array.isArray(evt?.ecommerce?.checkout?.products) ? evt.ecommerce.checkout.products : [])
+   .filter(item => item && item.id && item.name && item.brand)
+   .map(({ id, name, brand }) => ({ id, name, brand }));
 
    return checkoutProducts;
    ```
