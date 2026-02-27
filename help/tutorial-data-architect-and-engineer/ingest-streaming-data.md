@@ -263,7 +263,7 @@ If you've never used the Debugger before&mdash;and this one is different from th
 
 For this tutorial, we use a publicly hosted version of the Luma demo website. Let's open it and bookmark it:
 
- 1. In a new browser tab, open the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html). 
+ 1. In a new browser tab, open the [Luma website](https://newluma.enablementadobe.com). 
  1. Bookmark the page for use throughout the rest of the tutorial
 
 This hosted website is why we used `enablementadobe.com` in the [!UICONTROL Domains] field of our initial tag property configuration and why we used `data.enablementadobe.com` as our first-party domain in the [!UICONTROL Adobe Experience Platform Web SDK] extension. See, I had a plan!
@@ -450,7 +450,7 @@ There is one more data element we must update&mdash;the XDM Object data element.
 
 To validate that the CRM Id is now being sent by the Web SDK:
 
-1. Open the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. Open the [Luma website](https://newluma.enablementadobe.com)
 1. Map it to your tag property using the Debugger, as per the earlier instructions
 1. Select the **Login** link on the top right of the Luma website
 1. Log in using the credentials `test@test.com`/`test`
