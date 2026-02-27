@@ -10,9 +10,6 @@ exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
 Learn how to send events to the Adobe Experience Platform Edge Network with your XDM object using tag rules. A tag rule is a combination of events, conditions, and actions that tells the tag property to do something. With Platform Web SDK, rules are used to send events to Platform Edge Network with the right data.
  
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ## Learning objectives
 
@@ -27,7 +24,7 @@ At the end of this lesson, you are able to:
 
 ## Prerequisites
 
-You are familiar with Data Collection tags and the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and have completed the previous lessons in the tutorial:
+You are familiar with Data Collection tags and the [Luma demo site](https://newluma.enablementadobe.com) and have completed the previous lessons in the tutorial:
 
 * [Configure an XDM schema](configure-schemas.md)
 * [Configure an identity namespace](configure-identities.md)
@@ -50,20 +47,33 @@ where;
 1. **order** is the order in which the rule should fire in relation to other rules
 <!-- minor update --> 
 
+## Add Adobe Client Data Layer extension
+
+The Luma website uses an event-driven data layer called the Adobe Client Data Layer (ACDL). Whenever an event occurs it is pushed into the `adobeDataLayer` array. We will use these events to construct our rules, although many out-of-the-box options. 
+
+1. Go to **[!UICONTROL Extensions]**
+1. Filter to **[!UICONTROL Adobe Client Data Layer]**
+1. Select **[!UICONTROL Install]**
+
+    ![Add Adobe Client Data Layer extension](assets/rules-acdl-extension.png)
+
+1. Leave the default settings
+1. Select **[!UICONTROL Save]**
+
 ## Create tag rules
 
-In tags, rules are used to execute actions (fire calls) under various conditions. The Platform Web SDK tags extension includes two actions that are used in this lesson:
+In tags, rules are used to execute actions (fire calls) under various conditions. The Platform Web SDK tags extension includes two actions that are used in rules:
 
-* **[!UICONTROL Update variable]** maps data elements to properties in an XDM object
-* **[!UICONTROL Send Event]** sends the XDM object to Experience Platform Edge Network
+* **[!UICONTROL Update variable]** maps data elements to your XDM or data variables
+* **[!UICONTROL Send Event]** sends the data to Experience Platform Edge Network
 
 In the rest of this lesson we:
 
-1. Create a rule with the **[!UICONTROL Update variable]** action to define a "global configuration" of XDM fields.
+1. Use the **[!UICONTROL Update variable]** action to define a "global configuration" of XDM fields.
 
-1. Create additional rules with the **[!UICONTROL Update variable]** action that override our "global configuration" and contribute additional XDM fields under certain conditions (for example, adding product details on product pages).
+1. Use the **[!UICONTROL Update variable]** action that override our "global configuration" and contribute additional XDM fields under certain conditions (for example, adding product details on product pages).
 
-1. Create another rule with the **[!UICONTROL Send Event]** action, which will send the complete XDM object to Adobe Experience Platform Edge Network.
+1. Use the **[!UICONTROL Send Event]** action to send all the data we want to Adobe Experience Platform Edge Network.
 
 All of these rules will be sequenced properly using the "[!UICONTROL order]" option.
 
@@ -83,13 +93,13 @@ To create a tag rule for the global XDM fields:
 
     ![Create a rule](assets/rules-create.png)
     
-1. Name the rule `all pages - library loaded - set global variables - 1`
+1. Name the rule `all pages - adobeDataLayer push - set global variables - 1`
 
 1. In the **[!UICONTROL Events]** section, select **[!UICONTROL Add]**
 
-    ![Name the rule and add an event](assets/rule-name-new.png)   
+    ![Name the rule and add an event](assets/rule-name-new.png)
 
-1. Use the **[!UICONTROL Core Extension]** and select **[!UICONTROL Library Loaded (Page Top)]** as the **[!UICONTROL Event Type]** 
+1. Use the **[!UICONTROL Adobe Client Data Layer]** extension and select **[!UICONTROL Data Pushed]** as the **[!UICONTROL Event Type]** 
 
 1. Select **[!UICONTROL Advanced]** dropdown and enter `1` as the **[!UICONTROL Order]**
 
@@ -97,6 +107,7 @@ To create a tag rule for the global XDM fields:
     >
     > The lower the order number, the earlier it executes. Therefore, we give our "global configuration" a low order number.
 
+1. Listen to **[!UICONTROL All Events]** 
 1. Select **[!UICONTROL Keep Changes]** to return to the main rule screen
     ![Select Library Loaded Trigger](assets/create-tag-rule-trigger-loaded.png)
 
@@ -110,48 +121,28 @@ To create a tag rule for the global XDM fields:
 
     ![Update Variable Schema](assets/create-rule-update-variable.png)
 
-Now, map your [!UICONTROL data elements] to the [!UICONTROL schema] used by your XDM object. You can map to individual properties or entire objects. In this example, you map to individual properties:
+1. Now, specify the XDM fields by mapping them to appropriate values:
 
-1. Find the eventType field and select it 
-
-1. Enter the value `web.webpagedetails.pageViews`
- 
-    >[!TIP]
-    >
-    > To understand what values to populate in the `eventType` field, you must go to the schema page and select the `eventType` field to view the suggested values on the right rail. You can also enter a new value, if needed. 
-    > ![eventType suggested values on the schemas page](assets/create-tag-rule-eventType.png)
-
-1. Next, find the `identityMap` object in the schema and select it
- 
-1. Map to the `identityMap.loginID` data element
-
-   ![Update variable identity map](assets/create-rule-variable-identityMap.png)
+    | XDM Field | Map to |
+    |---|---|
+    | `eventType` | `Web Webpagedetails Page Views` (begin typing to see the suggested values)|
+    | `identityMap` | `Identity Map` data element |
+    | `web.webPageDetails.name` | `Page Name` data element |
+    | `web.webPageDetails.pageViews.value` | `1` |
 
 
     >[!TIP]
     >
-    > XDM fields will not be included in the network request if the data element is null. Therefore, when the user is not authenticated and the `identityMap.loginID` data element is null, the `identityMap` object will not be sent. This is why we can define it in our "global configuration". 
-
-1. Scroll down until you reach the **`web`** object
-
-1. Select to open it
-
-1. Map the following data elements to the corresponding `web` XDM variables
-
-    * **`web.webPageDetials.name`** to `%page.pageInfo.pageName%`
-    * **`web.webPageDetials.server`** to `%page.pageInfo.server%`
-    * **`web.webPageDetials.siteSection`** to `%page.pageInfo.hierarchie1%`
-
-1. Set `web.webPageDetials.pageViews.value` to `1`
-
-    ![Update variable content](assets/create-rule-xdm-variable-content.png)
+    > XDM fields will not be included in the network request if the data element is null. Therefore, when the user is not authenticated and the `Identity Map` data element is null, the `identityMap` object will not be sent. This is why we can define it in our "global configuration". 
 
     >[!TIP]
     >
     > While neither `eventType` set to `web.webpagedetails.pageViews` nor `web.webPageDetails.pageViews.value` are required for Adobe Analytics to process a beacon as a page view, it is useful to have a standard way to indicate a page view for other downstream applications.
 
+1. When you are done, your `XDM Variable` will look something like this. Note how the populated and partially populated fields are indicated with the blue circles:
+     ![XDM Variable](assets/rule-xdm-variable.png)
+1. Select **[!UICONTROL Keep Changes]** and then **[!UICONTROL Save]** the rule in the next screen to complete the rule
 
-1. Select **[!UICONTROL Keep Changes]** and then **[!UICONTROL Save]** the rule in the next screen to finish creating the rule
 
 
 ### Product page fields
@@ -166,67 +157,47 @@ Now, start to use **[!UICONTROL Update variable]** in additional, sequenced rule
 Start by tracking product views on the product detail page of Luma:
 
 1. Select **[!UICONTROL Add Rule]**
-1. Name it  [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
+1. Name it  [!UICONTROL `product detail pages - adobeDataLayer push - set product details variables - 20`]
 1. Select the ![+ symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) under Event to add a new trigger
-1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
-1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Library Loaded (Page Top)]**
-1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This order value ensures the rule runs _after_ the `all pages - library loaded - set global variables - 1` which sets the global configuration.
+1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Adobe Client Data Layer]**
+1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Data Pushed]**
+1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This order value ensures the rule runs _after_ the global variables rule.
+1. Listen to a **[!UICONTROL Specific Event]**
+1. Enter `productView` as the **[!UICONTROL Event / Key to register for]**
 1. Select **[!UICONTROL Keep changes]**
 
-    ![Analytics XDM rules](assets/set-up-analytics-pdp.png)
+    ![Analytics XDM rules](assets/rule-pdp-event.png)
 
-1. Under **[!UICONTROL Conditions]**, select to **[!UICONTROL Add]**
-1. Leave **[!UICONTROL Logic Type]** as **[!UICONTROL Regular]**
-1. Leave **[!UICONTROL Extension]** as **[!UICONTROL Core]**
-1. Select **[!UICONTROL Condition Type]** as **[!UICONTROL Path Without Query String]**
-1. On the right, enable the **[!UICONTROL Regex]** toggle
-1. Under **[!UICONTROL path equals]** set `/products/`. For the Luma demo site, it ensures the rule only triggers on product pages
-1. Select **[!UICONTROL Keep Changes]**
-
-    ![Analytics XDM rules](assets/set-up-analytics-product-condition.png)
 
 1. Under **[!UICONTROL Actions]** select **[!UICONTROL Add]**
 1. Select **[!UICONTROL Adobe Experience Platform Web SDK]** extension
 1. Select **[!UICONTROL Action Type]** as **[!UICONTROL Update variable]**
-1. Select `xdm.variable.content` as the **[!UICONTROL Data element]**  
-1. Scroll down to the `commerce` object 
-1. Open the **[!UICONTROL productViews]** object and set **[!UICONTROL value]** to `1`
+1. Select `XDM Variable` as the **[!UICONTROL Data element]**  
+1. Map these XDM fields to appropriate values:
 
-    ![set up Product View](assets/set-up-analytics-prodView.png)
-
-    >[!TIP]
-    >
-    >Setting commerce.productViews.value=1 in XDM automatically maps to the `prodView` event in Analytics
-
-1. Scroll down to `eventType` and set it to `commerce.productViews`
-
-    >[!NOTE]
-    >
-    >Because this rule has a higher order, it will overwrite the `eventType` set in the "global configuration" rule. `eventType` can only contain one value and we recommend setting it with the most valuable event.
-
-1. Scroll down to and select `productListItems` array
-1. Select **[!UICONTROL Provide individual items]**
-1. Select **[!UICONTROL Add Item]**
-    
-    ![Setting product view event](assets/set-up-analytics-xdm-individual.png)
-
-    >[!CAUTION]
-    >
-    >The **`productListItems`** is an `array` data type so it expects data to come in as a collection of elements. Because of the Luma demo site's data layer structure and because it's only possible to view one product at a time on the Luma site, you add items individually. When implementing on your own website, depending on your data layer structure, you may be able to provide an entire array.
-
-1. Select to open **[!UICONTROL Item 1]** 
-1. Map **`productListItems.item1.SKU`** to `%product.productInfo.sku%`
-
-    ![Product SKU XDM object Variable](assets/set-up-analytics-sku.png)
+    | XDM Field | Map to |
+    |---|---|
+    | `eventType` | `Commerce Product Views` (begin typing to see the suggested values)|
+    | `commerce.productViews.value` | `1` |
+    | `productListItems.name` | `Ecommerce Product Name` (Select **[!UICONTROL Provide individual items]** and **[!UICONTROL Add Item]** first ) |
+    | `productListItems.sku` | `Ecommerce Product Id` |
 
 1. Select **[!UICONTROL Keep Changes]**
 
 1. Select **[!UICONTROL Save]** to save the rule
 
+    >[!NOTE]
+    >
+    >Because this rule has a higher order, it will overwrite the `eventType` set in the "global configuration" rule. `eventType` can only contain one value and we recommend setting it with the most valuable event.
+
+    >[!TIP]
+    >
+    >Setting commerce.productViews.value=1 in XDM automatically maps to the `prodView` event in Analytics
+
 
 ### Shopping cart fields
 
-You can map entire array to an XDM object, provided the array matches the format of the XDM schema. The custom code data element `cart.productInfo` you created earlier loops through the `digitalData.cart.cartEntries` data layer object on Luma and translates it into the required format of the `productListItems` object of the XDM schema.
+You can map entire array to an XDM object, provided the array matches the format of the XDM schema. The custom code data element `Ecommerce Cart Products` you created earlier loops through the `adobeDataLayer.ecommerce.cart.items` data layer object on the Luma website and translates it into the required format of the `productListItems` object of the XDM schema.
 
 To illustrate, see the comparison below of the Luma site data layer (left) to the translated data element (right): 
 
@@ -242,33 +213,32 @@ Compare the data element to the `productListItems` structure (hint, it should ma
 Now, let's map our array to the XDM object:
 
 
-1. Create a new rule named `ecommerce - library loaded - set shopping cart variables - 20`
+1. Create a new rule named `cart page - adobeDataLayer push - set cart variables - 20`
 1. Select the ![+ symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) under Event to add a new trigger
-1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
-1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Library Loaded (Page Top)]**
-1. Select to open **[!UICONTROL Advanced Options]**, type in `20`
+1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Adobe Client Data Layer]**
+1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Data Pushed]**
+1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This order value ensures the rule runs _after_ the global variables rule.
+1. Listen to a **[!UICONTROL Specific Event]**
+1. Enter `cartView` as the **[!UICONTROL Event / Key to register for]**
 1. Select **[!UICONTROL Keep Changes]**
 
-    ![Analytics XDM rules](assets/set-up-analytics-cart-sequence.png)
 
-1. Under **[!UICONTROL Conditions]**, select to **[!UICONTROL Add]**
-1. Leave **[!UICONTROL Logic Type]** as **[!UICONTROL Regular]**
-1. Leave **[!UICONTROL Extensions]** as **[!UICONTROL Core]**
-1. Select **[!UICONTROL Condition Type]** as **[!UICONTROL Path Without Query String]**
-1. On the right, **do not** enable the **[!UICONTROL Regex]** toggle
-1. Under **[!UICONTROL path equals]** set `/content/luma/us/en/user/cart.html`. For the Luma demo site, it ensures the rule only triggers on the cart page
-1. Select **[!UICONTROL Keep Changes]**
-
-    ![Analytics XDM rules](assets/set-up-analytics-cart-condition.png)
+    ![Event for Cart rule](assets/rule-cart-event.png)
 
 1. Under **[!UICONTROL Actions]** select **[!UICONTROL Add]**
 1. Select **[!UICONTROL Adobe Experience Platform Web SDK]** extension
 1. Select **[!UICONTROL Action Type]** as **[!UICONTROL Update variable]**
-1. Select `xdm.variable.content` as the **[!UICONTROL Data element]**  
-1. Scroll down to the `commerce` object and select to open it.
-1. Open the **[!UICONTROL productListViews]** object and set **[!UICONTROL value]** to `1`
+1. Select `XDM Variable` as the **[!UICONTROL Data element]**  
+1. Map these XDM fields to appropriate values:
 
-    ![set up Product View](assets/set-up-analytics-cart-view.png)
+    | XDM Field | Map to |
+    |---|---|
+    | `eventType` | `Commerce Product List (Cart) Views` (begin typing to see the suggested values)|
+    | `commerce.productListViews.value` | `1` |
+    | `productListItems.name` | `Ecommerce Product Name` (Select **[!UICONTROL Provide individual items]** and **[!UICONTROL Add Item]** first ) |
+    | `productListItems.sku` | `Ecommerce Product Id` |
+
+
 
     >[!TIP]
     >

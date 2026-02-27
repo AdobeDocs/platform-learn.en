@@ -13,9 +13,6 @@ The [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com
 
 The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (yes, there are two!) uses the ECIDs and customer IDs to generate identity graphs, allowing you to merge attributes and behaviors into Real-Time Customer Profiles.
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 >[!NOTE]
 >
@@ -23,7 +20,7 @@ The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.
 
 >[!NOTE]
 >
-> For demonstration purposes, the exercises in this lesson have you capture the identity details of a fictional customer logged into the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html) using the credentials, **user: `test@test.com` / password: test**. 
+> For demonstration purposes, the exercises in this lesson have you capture the identity details of a fictional customer logged into the [Luma Demo Site](https://newluma.enablementadobe.com) using the credentials, **user: `test@test.com` / password: test**. 
 
 ## Learning objectives
 
@@ -63,7 +60,7 @@ Now, create a namespace for the Luma CRM ID:
    >If you are the customer of a Platform-based application like Real-Time CDP or Journey Optimizer, we recommend using a development sandbox for this tutorial. If you are not, use the **[!UICONTROL Prod]** sandbox.
    
 1. Select **[!UICONTROL Identities]** in the left navigation
-1. Select **[!UICONTROL Browse]**
+1. Select **[!UICONTROL Namespaces]**
 
    A list of identity namespaces appears in the main interface of the page, showing their names, identity symbols, last updated date, and whether they are standard or custom namespaces. The right rail contains information on [!UICONTROL Identity graph strength].
 
@@ -83,9 +80,9 @@ Now, create a namespace for the Luma CRM ID:
    ![Create Namespaces](assets/identities-create-namespace.png)
 
 
-   The Identity namespace populates in the **[!UICONTROL Identities]** screen.
+   The new identity namespace should appear in the **[!UICONTROL Namespaces]** screen.
 
-   ![Create Namespaces](assets/configure-identities-namespace-lumaCrmId.png)
+   ![Created Namespace](assets/configure-identities-namespace-lumaCrmId.png)
 
 
 >[!NOTE]

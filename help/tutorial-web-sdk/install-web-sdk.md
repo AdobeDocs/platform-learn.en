@@ -10,9 +10,6 @@ exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
 Learn how to install and configure the Adobe Experience Platform Web SDK tag extension. The easiest way to implement Web SDK is using Adobe's tag manager, tags (formerly known as Launch). The Platform Web SDK tag extension is the _only tag extension_ required to send data to _all Adobe Experience Cloud applications_, including [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform, and [Journey Optimizer](setup-web-channel.md)!
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ## Learning objectives
 
@@ -38,7 +35,7 @@ Create a new tag property for the tutorial:
 1. Select **[!UICONTROL Tags]** in the left navigation
 1. Select the **[!UICONTROL New Property]** button
     ![Add a new property](assets/websdk-property-addNewProperty.png)
-1. As the **[!UICONTROL Name]**, enter `Web SDK Course` (add your name to the end, if multiple people from your company are taking this tutorial)
+1. As the **[!UICONTROL Name]**, enter `Luma Web SDK Tutorial` (add your name to the end, if multiple people from your company are taking this tutorial)
 1. As the **[!UICONTROL Domains]**, enter `enablementadobe.com` (explained later)
 1. Select **[!UICONTROL Save]**
     ![Property details](assets/websdk-property-propertyDetails.png)
@@ -60,13 +57,10 @@ With your XDM schema, datastream, and tag property now created, you are ready to
 Leave most of the default settings and update them later, as needed. The only thing that you must do now is link the extension to your datastream:
 
 1. Under **[!UICONTROL Datastreams]**, select the **[!UICONTROL Choose from list]** input method
-1. Select the sandbox in which you created the schema, identity namespace and datastream
-1. Select the datastream that you created earlier, `Luma Web SDK`
+1. Configure the **[!UICONTROL Production Environment]**. (The other tag environments in the property will inherit the production settings): 
+    1. Select the sandbox in which you created the schema, identity namespace and datastream
+    1. Select the datastream that you created earlier, `Luma Web SDK: Development Environment`
 1. Select **[!UICONTROL Save]**
-
-    >[!NOTE]
-    >
-    > If you cannot find your datastream, go to the [Configure a datastream](configure-datastream.md) lesson and follow the steps to create one
 
     ![Datastream selection](assets/extension-luma-web-sdk-datastream-extension.png)
 

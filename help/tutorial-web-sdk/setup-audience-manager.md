@@ -12,9 +12,6 @@ Learn how to set up Adobe Audience Manager using the Adobe Experience Platform W
 [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) is the Adobe Experience Cloud solution that provides everything required to collect commercially relevant information about site visitors, create marketable segments, and serve targeted advertising and content to the right audience.
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ![Web SDK and Adobe Audience Manager diagram](assets/dc-websdk-aam.png)
 
@@ -87,7 +84,7 @@ After the Data Source is saved, set up a [trait](https://experienceleague.adobe.
 1. Select the **[!UICONTROL Data Source]** you created in the previous section.
 1. **[!UICONTROL Select a Folder]** in which to save your trait in the pane to the right. You may want to create a folder by **selecting the + icon** next to an existing parent folder. You can name this new folder `Platform Web SDK tutorial`.
 1. Expand the **[!UICONTROL Trait Expression]** caret and select **[!UICONTROL Expression Builder]** You must provide a key value pair that signifies a homepage visit.
-1. Open the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html) (mapped to your tag property) and the **Adobe Experience Platform Debugger** and refresh the page.
+1. Open the [Luma homepage](https://newluma.enablementadobe.com) (mapped to your tag property) and the **Adobe Experience Platform Debugger** and refresh the page.
 1. Look at the Network Requests and the event details for the Platform Web SDK to find the key and name value for the homepage.
    ![Adobe Experience Platform Audience Manager XDM Data](assets/xdm-keyvalue.jpg)
 1. Return to the Expression Builder in the Audience Manager UI and enter the key as **`web.webPageDetails.name`** and the value of **`content:luma:us:en`**. This step ensures that you fire a trait whenever you load the homepage. 
@@ -159,7 +156,7 @@ A few hours after the initial creation of the segment, you can validate that it 
 
 First, confirm that you can qualify for the segment
 
-1. Open the [Luma demo site homepage](https://luma.enablementadobe.com/content/luma/us/en.html) with it mapped to your tag property to qualify for your newly created segment.
+1. Open the [Luma demo site homepage](https://newluma.enablementadobe.com) with it mapped to your tag property to qualify for your newly created segment.
 1. Open your browser's **developer tools**  > **Network** tab
 1. Filter to the Platform Web SDK request using `interact` as the text filter
 1. Select a call and open the **Preview** tab to view the response details

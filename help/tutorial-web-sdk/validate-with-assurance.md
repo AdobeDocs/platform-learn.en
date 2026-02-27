@@ -10,9 +10,6 @@ exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
 Adobe Experience Platform Assurance is a feature to help you inspect, proof, simulate, and validate how you collect data or serve experiences. Read more about [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). 
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ## Learning objectives
 
@@ -23,7 +20,7 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-You are familiar with Data Collection tags and the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} and have completed the previous lessons in the tutorial:
+You are familiar with Data Collection tags and the [Luma demo site](https://newluma.enablementadobe.com){target="_blank"} and have completed the previous lessons in the tutorial:
 
 * [Configure an XDM schema](configure-schemas.md)
 * [Configure an identity namespace](configure-identities.md)
@@ -45,7 +42,7 @@ Every time you enable Edge Trace in Adobe Experience Platform Debugger, an Assur
 
 Reviewing how we did this in the Debugger lesson:
 
-1. Go to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Go to the [Luma demo site](https://newluma.enablementadobe.com) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. In the left navigation of **[!UICONTROL Experience Platform Debugger]** select **[!UICONTROL Logs]**
 1. Select the **[!UICONTROL Edge]** tab, and select **[!UICONTROL Connect]**
 
@@ -64,7 +61,7 @@ Reviewing how we did this in the Debugger lesson:
     ![Create an Assurance session](assets/assurance-create-session.png)
 1. Select Start
 1. Give the session a name, for example, `Luma Web SDK validation`
-1. As the **[!UICONTROL Base URL]** enter `https://luma.enablementadobe.com/`
+1. As the **[!UICONTROL Base URL]** enter `https://newluma.enablementadobe.com/`
     ![Name the Assurance session](assets/assurance-name-session.png)
 1. On the next screen, select **[!UICONTROL Copy Link]**
 1. Select the icon to copy the link to your clipboard

@@ -31,7 +31,6 @@ recommendations: noDisplay,noCatalog
   + [Set up Audience Manager](setup-audience-manager.md)
   + [Set up Target](setup-target.md)
   + [Set up Journey Optimizer Web Channel](setup-web-channel.md)
-  + [Set up Journey Optimizer Decision Management](setup-decision-management.md)
 
 + Consent Management {#consent-management}
   + [Set up consent](setup-consent.md)

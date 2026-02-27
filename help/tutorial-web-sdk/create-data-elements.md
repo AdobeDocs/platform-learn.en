@@ -7,12 +7,9 @@ exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
 ---
 # Create data elements
 
-Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Then populate fields in your XDM schema with the Adobe Experience Platform Web SDK extension Variable data element type. 
+Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://newluma.enablementadobe.com). Then populate fields in your XDM schema with the Adobe Experience Platform Web SDK extension Variable data element type. 
 
 
->[!WARNING]
->
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
 
 ## Learning objectives
 
@@ -35,7 +32,7 @@ You have an understanding of what a data layer is and have completed the previou
 
 >[!IMPORTANT]
 >
->The data for this lesson comes from the `[!UICONTROL digitalData]` data layer on the Luma site. To view the data layer, open your developer console and type in `[!UICONTROL digitalData]` to see the full data layer available.![digitalData data layer](assets/data-element-data-layer.png)
+>The data for this lesson comes from the `[!UICONTROL adobeDataLayer]` data layer on the Luma site. To view the data layer, open your developer console and type in `[!UICONTROL adobeDataLayer]` to see the full data layer available.![adobeDataLayer data layer](assets/data-element-data-layer-new.png)
 
 
 ## Data layer approaches
@@ -78,7 +75,7 @@ window.adobeDataLayer.push({
                "id":"",
                "value":"1"
             },
-            "URL":"https://luma.enablementadobe.com/",
+            "URL":"https://newluma.enablementadobe.com/",
             "isErrorPage":"",
             "isHomePage":"",
             "name":"luma:home",
@@ -154,14 +151,14 @@ This approach uses functionality built-into the datastream configuration called 
 
 ## Create data elements to capture the data layer
 
-Before you create the XDM object, create the following set of data elements for the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} data layer:
+Before you create the XDM object, create the following set of data elements for the [Luma demo site](https://newluma.enablementadobe.com){target="_blank"} data layer:
 
 1. Go to **[!UICONTROL Data Elements]** and select **[!UICONTROL Add Data Element]** (or **[!UICONTROL Create New Data Element]** if there are no existing data elements in the tag property)
 
     ![Create Data Element](assets/data-element-create.png)
 
-1. Name the data element `page.pageInfo.pageName`
-1. Use the **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** to point to a value in Luma's data layer: `digitalData.page.pageInfo.pageName`
+1. Name the data element `Page Name`
+1. Use the **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** to point to a value in Luma's data layer: `adobeDataLayer.0.page.name`
 
 1. Check the boxes for **[!UICONTROL Force lowercase value]** and **[!UICONTROL Clean text]** to standardize the case and remove extraneous spaces
 
@@ -173,87 +170,47 @@ Before you create the XDM object, create the following set of data elements for 
 
 Create these additional data elements by following the same steps:
 
-* **`page.pageInfo.server`**  mapped to 
-`digitalData.page.pageInfo.server`
+* **`User Id`**  mapped to 
+`adobeDataLayer.0.user.id`
 
-* **`page.pageInfo.hierarchie1`**  mapped to 
-`digitalData.page.pageInfo.hierarchie1`
+* **`User Logged In`** mapped to
+`adobeDataLayer.0.user.loggedIn`
 
-* **`user.profile.attributes.username`**  mapped to 
-`digitalData.user.0.profile.0.attributes.username`
-
-* **`user.profile.attributes.loggedIn`** mapped to
-`digitalData.user.0.profile.0.attributes.loggedIn`
-
-* **`product.productInfo.sku`** mapped to `digitalData.product.0.productInfo.sku`
-<!--digitalData.product.0.productInfo.sku
-    ```javascript
-    var cart = digitalData.product;
-    var cartItem;
-    cart.forEach(function(item){
-    cartItem = item.productInfo.sku;
-    });
-    return cartItem;
-    ```
-    -->
-* **`product.productInfo.title`** mapped to `digitalData.product.0.productInfo.title`
-* **`cart.orderId`** mapped to `digitalData.cart.orderId` 
-<!--
-    ```javascript
-    var cart = digitalData.product;
-    var cartItem;
-    cart.forEach(function(item){
-    cartItem = item.productInfo.title;
-    });
-    return cartItem;
-    ```
-    -->
-* **`product.category`** using the **[!UICONTROL Custom Code]** **[!UICONTROL Data Element type]** and the following custom code to parse the site URL for the top-level category:
+* **`Ecommerce Product Id`** mapped to `adobeDataLayer.0.ecommerce.detail.products.0.id`
+* **`Ecommerce Product Name`** mapped to `adobeDataLayer.0.ecommerce.detail.products.0.name`
+* **`Ecommerce Purchase Id`** mapped to `adobeDataLayer.0.ecommerce.purchase.actionField.id` 
+* **`Ecommerce Product Category`** using the **[!UICONTROL Custom Code]** **[!UICONTROL Data Element type]** and the following custom code:
 
    ```javascript
-   var cat = location.pathname.split(/[/.]+/);
-   if (cat[5] == 'products') {
-      return (cat[6]);
-   } else if (cat[5] != 'html') { 
-      return (cat[5]);
-   }
+   return adobeDataLayer[0].ecommerce.detail.products[0].category+":"+adobeDataLayer[0].ecommerce.detail.products[0].subcategory;
    ```
 
-* **`cart.productInfo`** using the following custom code:
+* **`Ecommerce Cart Products`** using the following custom code:
 
-    ```javascript
-    var cart = digitalData.cart.cartEntries; 
-    var cartItem = [];
-    cart.forEach(function(item, index, array){
-    cartItem.push({
-    "SKU": item.sku
-    });
-    });
-    return cartItem; 
-    ```
+   ```javascript
+   const cartProducts = adobeDataLayer
+   .flatMap(evt => Array.isArray(evt?.ecommerce?.cart?.items) ? evt.ecommerce.cart.items : [])
+   .filter(item => item && item.id && item.name && item.brand)
+   .map(({ id, name, brand }) => ({ id, name, brand }));
 
-* **`cart.productInfo.purchase`** using the following custom code:
+   return cartProducts;
+   ```
 
-    ```javascript
-    var cart = digitalData.cart.cartEntries; 
-    var cartItem = [];
-    cart.forEach(function(item, index, array){
-    var qty = parseInt(item.qty);
-    var price = parseInt(item.price);
-    cartItem.push({
-    "SKU": item.sku,
-    "quantity": qty,
-    "priceTotal": price
-    });
-    });
-    return cartItem; 
-    ```
+* **`Ecommerce Checkout Products`** using the following custom code:
 
+   ```javascript
+   const checkoutProducts = adobeDataLayer
+   .flatMap(evt => Array.isArray(evt?.ecommerce?.checkout?.products) ? evt.ecommerce.checkout.products : [])
+   .filter(item => item && item.id && item.name && item.brand)
+   .map(({ id, name, brand }) => ({ id, name, brand }));
+
+   return checkoutProducts;
+   ```
 
 
 >[!CAUTION]
 >
->The [!UICONTROL JavaScript variable] data element type treats array references as dots instead of brackets, so referencing the username data element as `digitalData.user[0].profile[0].attributes.username` **will not work**.
+>The [!UICONTROL JavaScript variable] data element type treats array references as dots instead of brackets, so referencing the username data element as `adobeDataLayer[0].page.name` **will not work**.
 
 ## Create Variable data elements for XDM and data objects
 
@@ -262,7 +219,7 @@ The data elements you just created will be used to build an XDM object (for Plat
 To create the Variable data element for XDM, you tie it to the schema you created in the [Configure a schema](configure-schemas.md) lesson:
 
 1. Select **[!UICONTROL Add Data element]**
-1. Name your Data Element `xdm.variable.content`. It is recommended you prefix with "xdm" the Data Elements specific to XDM to better organize your tag property
+1. Name your Data Element `XDM Variable`. It is recommended you prefix with "xdm" the Data Elements specific to XDM to better organize your tag property
 1. Select the **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL Extension]**
 1. Select the **[!UICONTROL Variable]** as the **[!UICONTROL Data Element Type]**
 1. Select **[!UICONTROL XDM]** as the **[!UICONTROL property]**
@@ -275,35 +232,30 @@ To create the Variable data element for XDM, you tie it to the schema you create
 Next, create the Variable data element for your data object:
 
 1. Select **[!UICONTROL Add Data element]**
-1. Name your Data Element `data.variable`. It is recommended you prefix with "data" the Data Elements specific to data object to better organize your tag property
+1. Name your Data Element `Data Variable`. 
 1. Select the **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL Extension]**
 1. Select the **[!UICONTROL Variable]** as the **[!UICONTROL Data Element Type]**
 1. Select **[!UICONTROL data]** as the **[!UICONTROL property]**
 1. Select the Experience Cloud solutions you wish to implement as part of this tutorial
 1. Select **[!UICONTROL Save]**
 
-    ![Variable data element for data object](assets/data-element-data-variable.png.png)
+    ![Variable data element for data object](assets/data-element-data-variable.png)
 
 
 At the end of these steps, you should have the following data elements created:
 
 |Core Extension Data Elements | Platform Web SDK Extension Data Elements|
 -----------------------------|-------------------------------
-| `cart.orderId` | `data.variable` |
-| `cart.productInfo`| `xdm.variable.content` |
-| `cart.productInfo.purchase`| |
-| `page.pageInfo.hierarchie1` | |
-| `page.pageInfo.pageName` | |
-| `page.pageInfo.server` | |
-| `product.category`| | 
-| `product.productInfo.sku`| | 
-| `product.productInfo.title`| |
-| `user.profile.attributes.loggedIn` | |
-| `user.profile.attributes.username` | |
-
->[!TIP]
->
->In a future [Create tag rules](create-tag-rule.md) lesson, you learn how the **[!UICONTROL Variable]** data elements allow you to stack multiple rules in tags using the **[!UICONTROL Update Variable Action type]**.
+| `Ecommerce Cart Products` | `Data Variable` |
+| `Ecommerce Checkout Products`| `XDM Variable` |
+| `Ecommerce Checkout Products`| |
+| `Ecommerce Product Category` | |
+| `Ecommerce Product Id` | |
+| `Ecommerce Product Name` | |
+| `Ecommerce Purchase Id`| | 
+| `Page Name`| | 
+| `User Id`| |
+| `User Logged In` | |
 
 With these data elements in place, you are ready to start sending data to Platform Edge Network with a tags rule. But first, learn about collecting identities with Web SDK. 
 
