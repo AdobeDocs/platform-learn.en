@@ -165,7 +165,7 @@ First, confirm that you can qualify for the segment
    ![Adobe Experience Platform Audience Manager Add Trait](assets/segment-validate-response.jpg)
 
 1. Open the **Application** tab, and open **Cookies** from the **Storage** menu. 
-1. Select the **`https://luma.enablementadobe.com`** domain and confirm that your cookie is written appropriately in the list
+1. Select the **`https://newluma.enablementadobe.com`** domain and confirm that your cookie is written appropriately in the list
 
    ![Adobe Experience Platform Audience Manager Add Trait](assets/validate-cookie.jpg)
 
