@@ -136,7 +136,7 @@ There are many types of activities that you can create in Adobe Target and imple
         { 
             "title": "Luma Anaolog Watch",
             "text": "Designed to stand up to your active lifestyle, this women's Luma Analog Watch features a tasteful brushed chrome finish and a stainless steel, water-resistant construction for lasting durability.", 
-            "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/watches/Luma_Analog_Watch.jpg" 
+            "image": "https://newluma.enablementadobe.com/images/Luma_Analog_Watch.jpg" 
         }
         ```
 
@@ -154,7 +154,7 @@ There are many types of activities that you can create in Adobe Target and imple
         { 
             "title": "Aim Analog Watch",
             "text": "The flexible, rubberized strap is contoured to conform to the shape of your wrist for a comfortable all-day fit. The face features three illuminated hands, a digital read-out of the current time, and stopwatch functions.", 
-            "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/watches/Aim_Watch.jpg" 
+            "image": "https://newluma.enablementadobe.com/images/Aim_Watch.jpg" 
         }
 
         ```
