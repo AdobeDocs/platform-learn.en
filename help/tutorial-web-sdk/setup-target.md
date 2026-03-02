@@ -52,7 +52,7 @@ Before starting, determine if an extra flicker handling solution is required dep
 
 >[!NOTE]
 >
->This tutorial uses the [Luma website](https://newluma.enablementadobe.com){target=_blank}, which has an asynchronous implementation of tags and flicker mitigation in place. This section is for reference to understand how the flicker mitigation works with the Platform Web SDK.
+>This tutorial uses the [Luma website](https://luma.enablementadobe.com){target=_blank}, which has an asynchronous implementation of tags and flicker mitigation in place. This section is for reference to understand how the flicker mitigation works with the Platform Web SDK.
 
 
 ### Asynchronous implementation
@@ -260,7 +260,7 @@ If you set up an activity, you should see your content rendered on the page. How
 >If you are using Google Chrome and have the [Visual Experience Composer (VEC) helper extension](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) installed, make sure the **Inject Target Libraries** setting is disabled. Enabling this setting will result in extra Target requests.
 
 1. Open the Adobe Experience Platform Debugger browser extension
-1. Go to the [Luma demo site](https://newluma.enablementadobe.com) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Go to the [Luma demo site](https://luma.enablementadobe.com) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Reload the page
 1. Select the **[!UICONTROL Network]** tool in the debugger
 1. Filter by **[!UICONTROL Experience Platform Web SDK]**
@@ -403,7 +403,7 @@ Now that you have a rule to manually render a custom decision scope, you can cre
 If you activated your activity, you should see your content render on the page. However even if no activities are live, you can also look at the [!UICONTROL Send Event] network call to confirm that Target is requesting content for your custom scopes.
 
 1. Open the Adobe Experience Platform debugger browser extension
-1. Go to the [Luma demo site](https://newluma.enablementadobe.com) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Go to the [Luma demo site](https://luma.enablementadobe.com) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Reload the page
 1. Select the **[!UICONTROL Network]** tool in the Debugger
 1. Filter by **[!UICONTROL Adobe Experience Platform Web SDK]**
@@ -512,7 +512,7 @@ To create the analytics-on-bottom request:
 
 Now that the rules are updated, you can validate if the data is being passed correctly using the Adobe Debugger.
 
-1. Navigate to the [Luma demo site](https://newluma.enablementadobe.com) 
+1. Navigate to the [Luma demo site](https://luma.enablementadobe.com) 
 1. Navigate to a product details page
 1. Open the Adobe Experience Platform debugger browser extension and [switch the tag property to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Reload the page

@@ -244,7 +244,7 @@ To validate Analytics is capturing data properly through Experience Platform Web
 
 ### Experience Cloud ID validation
 
-1. Go to the [Luma demo site](https://newluma.enablementadobe.com){target="_blank"}
+1. Go to the [Luma demo site](https://luma.enablementadobe.com){target="_blank"}
 1. Select the login button on the top right, and use credentials u: test@test.com p: test to authenticate 
 1. Open the Experience Platform Debugger and [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
@@ -278,7 +278,7 @@ To validate Analytics is capturing data properly through Experience Platform Web
 
 ### Report suite override validation
 
-Above you configured a datastream override for the [Luma homepage](https://newluma.enablementadobe.com).  To validate this configuration  
+Above you configured a datastream override for the [Luma homepage](https://luma.enablementadobe.com).  To validate this configuration  
 
 1. Look for a row with **[!UICONTROL Datastream config after override was applied]**. Here you find the primary report suite and the additional report suite(s) that were configured for the report suite overrides.
 
@@ -290,7 +290,7 @@ Above you configured a datastream override for the [Luma homepage](https://newlu
 
 ### Content page views validation
 
-Go to a product page like the [Livingston All-Purpose Tight product page](https://newluma.enablementadobe.com/product.html?id=LLMP09).  Validate that content page views are captured by Analytics. 
+Go to a product page like the [Livingston All-Purpose Tight product page](https://luma.enablementadobe.com/product.html?id=LLMP09).  Validate that content page views are captured by Analytics. 
 
 1. Look for `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. 
 1. Scroll down to see the `[!UICONTROL gn]` variable. It is the Analytics dynamic syntax for the `[!UICONTROL s.pageName]` variable. It captures the page name from the data layer.
@@ -329,8 +329,8 @@ Since you are already on a product page, this exercise continues to use the same
 
 **Validate the rest of e-commerce events and product strings are set for Analytics**
 
-1. Add [Marco Lightweight Active Hoodie](https://newluma.enablementadobe.com/product.html?id=LLMH13) to the cart
-1. Go to the [Cart Page](https://newluma.enablementadobe.com/cart.html), check Edge Trace for 
+1. Add [Marco Lightweight Active Hoodie](https://luma.enablementadobe.com/product.html?id=LLMH13) to the cart
+1. Go to the [Cart Page](https://luma.enablementadobe.com/cart.html), check Edge Trace for 
 
     * `eventType` set to `commerce.productListViews`
     * `[!UICONTROL events: "scView"]`, and

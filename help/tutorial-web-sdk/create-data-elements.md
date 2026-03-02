@@ -7,7 +7,7 @@ exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
 ---
 # Create data elements
 
-Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://newluma.enablementadobe.com). Then populate fields in your XDM schema with the Adobe Experience Platform Web SDK extension Variable data element type. 
+Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://luma.enablementadobe.com). Then populate fields in your XDM schema with the Adobe Experience Platform Web SDK extension Variable data element type. 
 
 
 
@@ -75,7 +75,7 @@ window.adobeDataLayer.push({
                "id":"",
                "value":"1"
             },
-            "URL":"https://newluma.enablementadobe.com/",
+            "URL":"https://luma.enablementadobe.com/",
             "isErrorPage":"",
             "isHomePage":"",
             "name":"luma:home",
@@ -151,7 +151,7 @@ This approach uses functionality built-into the datastream configuration called 
 
 ## Create data elements to capture the data layer
 
-Before you create the XDM object, create the following set of data elements for the [Luma demo site](https://newluma.enablementadobe.com){target="_blank"} data layer:
+Before you create the XDM object, create the following set of data elements for the [Luma demo site](https://luma.enablementadobe.com){target="_blank"} data layer:
 
 1. Go to **[!UICONTROL Data Elements]** and select **[!UICONTROL Add Data Element]** (or **[!UICONTROL Create New Data Element]** if there are no existing data elements in the tag property)
 

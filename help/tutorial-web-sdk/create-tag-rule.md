@@ -24,7 +24,7 @@ At the end of this lesson, you are able to:
 
 ## Prerequisites
 
-You are familiar with Data Collection tags and the [Luma demo site](https://newluma.enablementadobe.com) and have completed the previous lessons in the tutorial:
+You are familiar with Data Collection tags and the [Luma demo site](https://luma.enablementadobe.com) and have completed the previous lessons in the tutorial:
 
 * [Configure an XDM schema](configure-schemas.md)
 * [Configure an identity namespace](configure-identities.md)

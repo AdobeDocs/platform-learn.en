@@ -87,7 +87,7 @@ Now you can configure your [!UICONTROL datastream] to send data to [!UICONTROL A
 
      ![Datastream Config](assets/experience-platform-datastream-config.png)
 
-As you generate traffic on the [Luma Demo Site](https://newluma.enablementadobe.com) mapped to your tag property, the data populates the dataset in Experience Platform!
+As you generate traffic on the [Luma Demo Site](https://luma.enablementadobe.com) mapped to your tag property, the data populates the dataset in Experience Platform!
 
 ## Validate the dataset
 
@@ -101,7 +101,7 @@ This step is critical to make sure that the data has landed in the dataset. Ther
 
 These steps are more or less the same as what you did in the [Debugger lesson](validate-with-debugger.md). However, since data will only be sent to Platform after you have enabled it in the datastream, you must generate some more sample data:
 
-1. Open the [Luma demo site](https://newluma.enablementadobe.com) and select the [!UICONTROL Experience Platform Debugger] extension icon
+1. Open the [Luma demo site](https://luma.enablementadobe.com) and select the [!UICONTROL Experience Platform Debugger] extension icon
 
 1. Configure the Debugger to map the tag property to *your* Development environment, as described in the [Validate with Debugger](validate-with-debugger.md) lesson
 
