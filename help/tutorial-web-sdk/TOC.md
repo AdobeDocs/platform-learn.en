@@ -20,7 +20,7 @@ recommendations: noDisplay,noCatalog
 + Tags Configuration {#tags-configuration}
   + [Install Web SDK extension](install-web-sdk.md)
   + [Create data elements](create-data-elements.md)
-  + [Create identities](create-identities.md)
+  + [Capture identities](create-identities.md)
   + [Create tag rules](create-tag-rule.md)
   + [Validate with Debugger](validate-with-debugger.md)
   + [Validate with Assurance](validate-with-assurance.md)

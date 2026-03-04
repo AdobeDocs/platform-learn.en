@@ -27,7 +27,7 @@ You are familiar with Data Collection tags and the [Luma demo site](https://luma
 * [Configure a datastream](configure-datastream.md)
 * [Web SDK extension installed in the tag property](install-web-sdk.md)
 * [Create data elements](create-data-elements.md)
-* [Create identities](create-identities.md)
+* [Capture identities](create-identities.md)
 * [Create a tag rule](create-tag-rule.md)
 * [Validate with Debugger](validate-with-debugger.md)
 

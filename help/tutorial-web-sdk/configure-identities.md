@@ -83,7 +83,7 @@ Now, create a namespace for the Luma CRM ID:
 
 >[!NOTE]
 >
-> In the [Create Identities](create-identities.md) lesson, you will learn how to use this namespace when sending identities to Platform Edge Network. 
+> In the [Capture identities](create-identities.md) lesson, you will learn how to use this namespace when sending identities to Platform Edge Network. 
 
 Now that identities are in place, the datastream can be configured.
 
