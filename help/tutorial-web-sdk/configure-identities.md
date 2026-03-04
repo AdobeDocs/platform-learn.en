@@ -18,10 +18,6 @@ The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.
 >
 >A custom identity namespace is _not required_ to implement Adobe Analytics, Adobe Target, or Adobe Audience Manager with Web SDK (authenticated identities can be passed in the `data` object instead of the `xdm` object as you will see later). Identity namespaces are required for Platform-native applications like Journey Optimizer, Real-Time Customer Data Platform, Customer Journey Analytics. While you may decide not to use an identity namespace in your own implementation, you are expected to do so as part of this tutorial.
 
->[!NOTE]
->
-> For demonstration purposes, the exercises in this lesson have you capture the identity details of a fictional customer logged into the [Luma Demo Site](https://newluma.enablementadobe.com) using the credentials, **user: `test@test.com` / password: test**. 
-
 ## Learning objectives
 
 At the end of this lesson, you will be able to:
@@ -87,7 +83,7 @@ Now, create a namespace for the Luma CRM ID:
 
 >[!NOTE]
 >
-> In the [Create Identities](create-identities.md) lesson, you will learn how to use this namespace when sending identities to Platform Edge Network. 
+> In the [Capture identities](create-identities.md) lesson, you will learn how to use this namespace when sending identities to Platform Edge Network. 
 
 Now that identities are in place, the datastream can be configured.
 

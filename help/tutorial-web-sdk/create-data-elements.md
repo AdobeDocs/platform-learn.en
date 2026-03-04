@@ -7,7 +7,7 @@ exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
 ---
 # Create data elements
 
-Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://newluma.enablementadobe.com). Then populate fields in your XDM schema with the Adobe Experience Platform Web SDK extension Variable data element type. 
+Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://luma.enablementadobe.com). Then populate fields in your XDM schema. 
 
 
 
@@ -32,7 +32,7 @@ You have an understanding of what a data layer is and have completed the previou
 
 >[!IMPORTANT]
 >
->The data for this lesson comes from the `[!UICONTROL adobeDataLayer]` data layer on the Luma site. To view the data layer, open your developer console and type in `[!UICONTROL adobeDataLayer]` to see the full data layer available.![adobeDataLayer data layer](assets/data-element-data-layer-new.png)
+>The data for this lesson comes from the `[!UICONTROL adobeDataLayer]` data layer on the [Luma site](https://luma.enablementadobe.com). To view the data layer, open your developer console and type in `[!UICONTROL adobeDataLayer]` to see the full data layer available.![adobeDataLayer data layer](assets/data-element-data-layer-new.png)
 
 
 ## Data layer approaches
@@ -50,7 +50,7 @@ There are multiple ways to map data from your data layer to XDM using the tags f
 
 ### Implement XDM in the data layer
 
-This approach involves using the fully defined XDM object as the structure for your data layer. Then you map the entire data layer to an XDM object data element in tags. If your implementation is not using a tag manager, this approach may be ideal because you can send data to XDM directly from your application using the [XDM sendEvent command](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). If you do use tags, you can create a custom code data element capturing the entire data layer as a pass-through JSON object to the XDM. Then, you map the pass-through JSON to the XDM object field in the Send Event Action. 
+In this approach, web developers implement a fully-defined XDM object as the structure for the data layer. Then you simply map the entire data layer to an XDM object in tags. If your implementation does not use a tag manager, this approach may be ideal because you can send data to XDM directly from your application using the [XDM sendEvent command](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). If you do use tags, you can create a custom code data element capturing the entire data layer as a pass-through JSON object to the XDM. Then, you map the pass-through JSON to the XDM object field in the Send Event Action. 
 
 Below is an example of how the data layer would look like using the Adobe Client Data Layer format:
 
@@ -75,7 +75,7 @@ window.adobeDataLayer.push({
                "id":"",
                "value":"1"
             },
-            "URL":"https://newluma.enablementadobe.com/",
+            "URL":"https://luma.enablementadobe.com/",
             "isErrorPage":"",
             "isHomePage":"",
             "name":"luma:home",
@@ -96,19 +96,19 @@ window.adobeDataLayer.push({
 Pros
 
 * Eliminates additional steps remap to data layer variables to XDM
-* It may be quicker to deploy if your web development team also owns tagging digital behavior
+* It may be quicker to deploy if your web development team also owns the tagging of digital behavior
 
 Cons
 
 * Complete reliance on development team and dev cycle for updating what data goes to XDM
 * Limited flexibility as XDM receives the exact payload from the data layer 
 * Cannot use built-in tags features, such as scraping, persistence, features for quick deployments
-* Harder to use the data layer for third-party pixels (but you might want to move these pixels to [event forwarding](setup-event-forwarding.md)!
+* Harder to use the data layer for third-party pixels (but you might want to move these pixels to [event forwarding](setup-event-forwarding.md)!)
 * No ability to transform the data between the data layer and XDM
 
-### Map data layer in tags 
+### Map to XDM in tags 
 
-This approach involves mapping individual data layer variables OR data layer objects to data elements in tags and eventually to XDM. This is the traditional approach to implementation using a tag management system. 
+This approach involves mapping individual data layer variables to data elements in tags and eventually to XDM. This is the traditional approach to implementation using a tag management system. 
 
 #### Pros
 
@@ -118,7 +118,27 @@ This approach involves mapping individual data layer variables OR data layer obj
 
 #### Cons
 
-* Takes time to reconstruct the data layer as data elements
+* Takes time to reconstruct the data layer as tags data elements
+
+
+>[!IMPORTANT]
+>
+>As noted earlier, the examples in this tutorial follow the Map to XDM in tags approach.
+
+### Map to XDM in the datastream
+
+This approach uses functionality built-into the datastream configuration called [Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) and skips mapping data layer variables to XDM in tags. 
+
+#### Pros
+
+* Flexible mapping of individual variables to XDM in a point-and-click UI
+* Ability to [compute new values](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) or [transform data types](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) from a data layer before it goes to XDM 
+
+#### Cons
+
+* Cannot use data layer variables as data elements for client-side third-party pixels, but can use them with event forwarding
+* Cannot use the scraping functionality in tags
+* Maintenance complexity increases if mapping the data layer both in tags and in datastream 
 
 
 >[!TIP] 
@@ -127,38 +147,17 @@ This approach involves mapping individual data layer variables OR data layer obj
 > 
 > If your organization already uses Google Analytics and has the traditional Google dataLayer object on your website, you can use the [Google Data Layer extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in tags. This allows you to deploy Adobe technology quicker without having to request support from your IT team. Mapping the Google data layer to XDM would follow the same steps as above.
 
-### Map to XDM in the datastream
-
-This approach uses functionality built-into the datastream configuration called [Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) and skips mapping data layer variables to XDM in tags. 
-
-#### Pros
-
-* Flexible as you can map individual variables to XDM
-* Ability to [compute new values](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) or [transform data types](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) from a data layer before it goes to XDM 
-* Leverage a [Mapping UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) to map fields in your source data to XDM with a point-and-click UI
-
-#### Cons
-
-* Cannot use data layer variables as data elements for client-side third-party pixels, but can use them with event forwarding
-* Cannot use the scraping functionality of the tags feature of Adobe Experience Platform 
-* Maintenance complexity increases if mapping the data layer both in tags and in datastream 
-
-
-
->[!IMPORTANT]
->
->As noted earlier, the examples in this tutorial follow the Map to XDM in tags approach.
 
 ## Create data elements to capture the data layer
 
-Before you create the XDM object, create the following set of data elements for the [Luma demo site](https://newluma.enablementadobe.com){target="_blank"} data layer:
+Before you populate XDM fields, first capture the data points you need as tags data elements:
 
 1. Go to **[!UICONTROL Data Elements]** and select **[!UICONTROL Add Data Element]** (or **[!UICONTROL Create New Data Element]** if there are no existing data elements in the tag property)
 
     ![Create Data Element](assets/data-element-create.png)
 
 1. Name the data element `Page Name`
-1. Use the **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** to point to a value in Luma's data layer: `adobeDataLayer.0.page.name`
+1. Use the **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** to point to the value in Luma's data layer: `adobeDataLayer.0.page.name`
 
 1. Check the boxes for **[!UICONTROL Force lowercase value]** and **[!UICONTROL Clean text]** to standardize the case and remove extraneous spaces
 
@@ -196,15 +195,27 @@ Create these additional data elements by following the same steps:
    return cartProducts;
    ```
 
-* **`Ecommerce Checkout Products`** using the following custom code:
+* **`Ecommerce Purchase Products`** using the following custom code:
 
    ```javascript
-   const checkoutProducts = adobeDataLayer
-   .flatMap(evt => Array.isArray(evt?.ecommerce?.checkout?.products) ? evt.ecommerce.checkout.products : [])
-   .filter(item => item && item.id && item.name && item.brand)
-   .map(({ id, name, brand }) => ({ id, name, brand }));
+   const purchaseEvent = adobeDataLayer.find(e => e.event === "purchase");
 
-   return checkoutProducts;
+   const currencyCode = purchaseEvent?.ecommerce?.currencyCode ?? "USD";
+
+   const purchasedProducts = (purchaseEvent?.ecommerce?.purchase?.products || []).map(p => {
+      const unitPrice = parseFloat(String(p.price).replace(/[^0-9.-]/g, "")) || 0;
+      const qty = Number(p.quantity) || 0;
+
+      return {
+      SKU: p.id,                       // id -> SKU
+      name: p.name,                    // name -> name
+      quantity: qty,                   // quantity -> quantity
+      priceTotal: unitPrice * qty,     // price -> priceTotal (unit price × quantity)
+      currencyCode                     // "USD" -> currencyCode (from ecommerce.currencyCode)
+      };
+   });
+
+   return(purchasedProducts);
    ```
 
 
@@ -219,7 +230,7 @@ The data elements you just created will be used to build an XDM object (for Plat
 To create the Variable data element for XDM, you tie it to the schema you created in the [Configure a schema](configure-schemas.md) lesson:
 
 1. Select **[!UICONTROL Add Data element]**
-1. Name your Data Element `XDM Variable`. It is recommended you prefix with "xdm" the Data Elements specific to XDM to better organize your tag property
+1. Name your Data Element `XDM Variable`. It is recommended you prefix with "XDM" the Data Elements specific to XDM to better organize your tag property
 1. Select the **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL Extension]**
 1. Select the **[!UICONTROL Variable]** as the **[!UICONTROL Data Element Type]**
 1. Select **[!UICONTROL XDM]** as the **[!UICONTROL property]**
@@ -247,12 +258,11 @@ At the end of these steps, you should have the following data elements created:
 |Core Extension Data Elements | Platform Web SDK Extension Data Elements|
 -----------------------------|-------------------------------
 | `Ecommerce Cart Products` | `Data Variable` |
-| `Ecommerce Checkout Products`| `XDM Variable` |
-| `Ecommerce Checkout Products`| |
-| `Ecommerce Product Category` | |
+| `Ecommerce Product Category`| `XDM Variable` |
 | `Ecommerce Product Id` | |
 | `Ecommerce Product Name` | |
 | `Ecommerce Purchase Id`| | 
+| `Ecommerce Purchase Products`| | 
 | `Page Name`| | 
 | `User Id`| |
 | `User Logged In` | |

@@ -27,7 +27,7 @@ You must have completed the previous lessons in this tutorial:
 
 ### Add a tag property
 
-First you must have a tag property. A property is a container for all the JavaScript, rules, and other features required to collect details from a web page and send it to various locations.
+A tag property is a container for all the JavaScript, rules, and other features required to collect details from a web page and send it to various locations.
 
 Create a new tag property for the tutorial:
 
@@ -47,6 +47,7 @@ With your XDM schema, datastream, and tag property now created, you are ready to
 1. Open your new tag property
 1. Go to **[!UICONTROL Extensions]** > **[!UICONTROL Catalog]**
 1. Search for `Adobe Experience Platform Web SDK`
+1. Select the `Adobe Experience Platform Web SDK` extension so the sidebar opens
 1. Select **[!UICONTROL Install]**
 
     ![Install Web SDK Extension](assets/extension-platform-web-sdk.png)
@@ -54,7 +55,7 @@ With your XDM schema, datastream, and tag property now created, you are ready to
 
 ## Link the extension to your datastream 
 
-Leave most of the default settings and update them later, as needed. The only thing that you must do now is link the extension to your datastream:
+Leave most of the default settings and update them later, as needed. The only thing that you must do now is link the extension to your datastream. This adds the correct datastream/config id to the network calls made from the browser, so the calls are routed to the correct datastream when they arrive in the Platform Edge Network:
 
 1. Under **[!UICONTROL Datastreams]**, select the **[!UICONTROL Choose from list]** input method
 1. Configure the **[!UICONTROL Production Environment]**. (The other tag environments in the property will inherit the production settings): 

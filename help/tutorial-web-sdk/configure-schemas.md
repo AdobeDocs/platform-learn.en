@@ -52,7 +52,7 @@ This is the goal of Adobe's [Experience Data Model](https://business.adobe.com/p
 
 >[!NOTE]
 >
-> For demonstration purposes, the exercises in this lesson build an example schema to capture content viewed and products purchased by customers in the [Luma demo webite](https://newluma.enablementadobe.com). Follow along to create this example schema to learn the capabilities of the schema editor and you will be more prepared to build a schema for your own business afterwards.
+> For demonstration purposes, the exercises in this lesson build an example schema to capture content viewed and products purchased by customers in the [Luma demo webite](https://luma.enablementadobe.com). Follow along to create this example schema to learn the capabilities of the schema editor and you will be more prepared to build a schema for your own business afterwards.
 
 To learn more about XDM schemas, watch the playlist [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) or see the [XDM System overview](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
@@ -72,7 +72,7 @@ All necessary provisioning and user permissions for Data Collection and Adobe Ex
 
 XDM schemas are the standard way to describe data in Experience Platform, allowing data that conforms to the schemas to be reused across an organization without conflicts, or even shared between multiple organizations. 
 
-In this exercise, you will create an XDM schema using the recommended baseline field groups for capturing web event data on the [Luma demo webite](https://newluma.enablementadobe.com){target="_blank"}:
+In this exercise, you will create an XDM schema using the recommended baseline field groups for capturing web event data on the [Luma demo webite](https://luma.enablementadobe.com){target="_blank"}:
 
 1. Open the [Data Collection interface](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Ensure you are in the correct sandbox. Locate the sandbox in the upper right corner

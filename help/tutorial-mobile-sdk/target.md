@@ -134,7 +134,7 @@ There are many types of activities that you can create in Adobe Target and imple
 
         ```json
         { 
-            "title": "Luma Anaolog Watch",
+            "title": "Luma Analog Watch",
             "text": "Designed to stand up to your active lifestyle, this women's Luma Analog Watch features a tasteful brushed chrome finish and a stainless steel, water-resistant construction for lasting durability.", 
             "image": "https://newluma.enablementadobe.com/images/Luma_Analog_Watch.jpg" 
         }

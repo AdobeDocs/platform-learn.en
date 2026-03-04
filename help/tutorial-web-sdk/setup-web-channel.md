@@ -162,7 +162,7 @@ To create the sample campaign:
     1. **[!UICONTROL Web]** as the **[!UICONTROL Channel]**.
     1. **[!UICONTROL Onsite Personalization]** as the **[!UICONTROL Marketing action]**.
     1. **[!UICONTROL Single page]** as the **[!UICONTROL Web settings]**.
-    1. `https://newluma.enablementadobe.com/index.html` as the **[!UICONTROL Page URL]**.
+    1. `https://luma.enablementadobe.com/index.html` as the **[!UICONTROL Page URL]**.
 1. **[!UICONTROL Submit]** the new channel configuration
 
     ![Configure the Web Channel](assets/web-channel-configuration.png)
@@ -285,7 +285,7 @@ To simulate the experience:
 
 1. Select the [!UICONTROL Content] tab
 
-1. Choose the **[!UICONTROL Page URL]** web surface option to deploy the experience on one page for this campaign. Enter the URL for the Luma page, `https://newluma.enablementadobe.com`
+1. Choose the **[!UICONTROL Page URL]** web surface option to deploy the experience on one page for this campaign. Enter the URL for the Luma page, `https://luma.enablementadobe.com`
 
 1. Once the web surface is defined, select **[!UICONTROL Create]**.
 
