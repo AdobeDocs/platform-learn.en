@@ -98,6 +98,10 @@ To create the [!UICONTROL Identity Map] data element:
 >
 > Additionally, for customers of Platform applications, Adobe recommends implementing [identity graph linking rules](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) to prevent graph collapse.
 
+>[!NOTE]
+>
+> You do not need to take any action to capture the ECID in a Web SDK implementation. It is captured automatically.
+
 
 At the end of these steps, you should have the following data elements created:
 
