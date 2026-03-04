@@ -108,11 +108,11 @@ At the end of these steps, you should have the following data elements created:
 |Core Extension Data Elements | Platform Web SDK Extension Data Elements|
 -----------------------------|-------------------------------
 | `Ecommerce Cart Products` | `Data Variable` |
-| `Ecommerce Checkout Products` | `Identity Map` |
-| `Ecommerce Product Category` | `XDM Variable` |
-| `Ecommerce Product Id` | |
+| `Ecommerce Product Category` | `Identity Map` |
+| `Ecommerce Product Id` | `XDM Variable` |
 | `Ecommerce Product Name` | |
 | `Ecommerce Purchase Id`| | 
+| `Ecommerce Purchase Products` |  |
 | `Page Name`| | 
 | `User Id`| |
 | `User Logged In` | |

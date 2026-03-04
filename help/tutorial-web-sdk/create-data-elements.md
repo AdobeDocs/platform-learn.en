@@ -195,15 +195,27 @@ Create these additional data elements by following the same steps:
    return cartProducts;
    ```
 
-* **`Ecommerce Checkout Products`** using the following custom code:
+* **`Ecommerce Purchase Products`** using the following custom code:
 
    ```javascript
-   const checkoutProducts = adobeDataLayer
-   .flatMap(evt => Array.isArray(evt?.ecommerce?.checkout?.products) ? evt.ecommerce.checkout.products : [])
-   .filter(item => item && item.id && item.name && item.brand)
-   .map(({ id, name, brand }) => ({ id, name, brand }));
+   const purchaseEvent = adobeDataLayer.find(e => e.event === "purchase");
 
-   return checkoutProducts;
+   const currencyCode = purchaseEvent?.ecommerce?.currencyCode ?? "USD";
+
+   const purchasedProducts = (purchaseEvent?.ecommerce?.purchase?.products || []).map(p => {
+      const unitPrice = parseFloat(String(p.price).replace(/[^0-9.-]/g, "")) || 0;
+      const qty = Number(p.quantity) || 0;
+
+      return {
+      SKU: p.id,                       // id -> SKU
+      name: p.name,                    // name -> name
+      quantity: qty,                   // quantity -> quantity
+      priceTotal: unitPrice * qty,     // price -> priceTotal (unit price × quantity)
+      currencyCode                     // "USD" -> currencyCode (from ecommerce.currencyCode)
+      };
+   });
+
+   return(purchasedProducts);
    ```
 
 
@@ -246,11 +258,11 @@ At the end of these steps, you should have the following data elements created:
 |Core Extension Data Elements | Platform Web SDK Extension Data Elements|
 -----------------------------|-------------------------------
 | `Ecommerce Cart Products` | `Data Variable` |
-| `Ecommerce Checkout Products`| `XDM Variable` |
-| `Ecommerce Product Category` | |
+| `Ecommerce Product Category`| `XDM Variable` |
 | `Ecommerce Product Id` | |
 | `Ecommerce Product Name` | |
 | `Ecommerce Purchase Id`| | 
+| `Ecommerce Purchase Products`| | 
 | `Page Name`| | 
 | `User Id`| |
 | `User Logged In` | |
