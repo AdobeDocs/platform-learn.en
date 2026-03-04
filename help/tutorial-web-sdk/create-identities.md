@@ -1,11 +1,11 @@
 ---
-title: Create identities for Platform Web SDK
-description: Learn how to create identities in XDM and use the Identity Map data element to capture user IDs. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
+title: Capture identities for Platform Web SDK
+description: Learn how to capture identities in XDM and use the Identity Map data element to capture user IDs. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
 ---
-# Create identities
+# Capture identities
 
 Learn how to capture identities with Adobe Experience Platform Web SDK. Capture both unauthenticated and authenticated identity data on the [Luma demo site](https://luma.enablementadobe.com). Learn how to use the data elements you created earlier for collecting authenticated data with a Platform Web SDK data element type called Identity map. 
 
@@ -73,7 +73,7 @@ To create the [!UICONTROL Identity Map] data element:
 
 1. Go to **[!UICONTROL Data Elements]** and select **[!UICONTROL Add Data Element]**
 
-1. **[!UICONTROL Name]** the Data Element `Identity Map`
+1. **[!UICONTROL Name]** the data element `Identity Map`
 
 1. As the **[!UICONTROL Extension]**, select `Adobe Experience Platform Web SDK`
 
@@ -90,38 +90,22 @@ To create the [!UICONTROL Identity Map] data element:
    
     ![Data Collection interface](assets/identity-id-namespace.png)
 
->[!TIP]
+>[!IMPORTANT]
 >
 > Adobe recommends sending identities that represent a person, such as `Luma CRM Id`, as the [!UICONTROL primary] identity.
 >
 > If the identity map contains the person identifier (for example, `Luma CRM Id`), then the person identifier becomes the [!UICONTROL primary] identity. Otherwise, `ECID` becomes the [!UICONTROL primary] identity.
+>
+> Additionally, for customers of Platform applications, Adobe recommends implementing [identity graph linking rules](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) to prevent graph collapse.
 
-
-
-
-<!--
-1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
-   
-   
-   ```
-   _satellite.getVar('identityMap.loginID')
-   ```  
-
-   ![Data Collection interface](assets/identity-consoleIdentityDataElement.png)
-   
-   >[!NOTE]
-   >
-   >ECID identifier will NOT populate in the Data Element, as this is configured already with Platform Web SDK.   
--->
 
 At the end of these steps, you should have the following data elements created:
 
 |Core Extension Data Elements | Platform Web SDK Extension Data Elements|
 -----------------------------|-------------------------------
 | `Ecommerce Cart Products` | `Data Variable` |
-| `Ecommerce Checkout Products`| `Identity Map` |
-| `Ecommerce Checkout Products`| `XDM Variable` |
-| `Ecommerce Product Category` | |
+| `Ecommerce Checkout Products` | `Identity Map` |
+| `Ecommerce Product Category` | `XDM Variable` |
 | `Ecommerce Product Id` | |
 | `Ecommerce Product Name` | |
 | `Ecommerce Purchase Id`| | 
