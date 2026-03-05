@@ -170,7 +170,9 @@ To pre-emptively address the graph collapse issue, use the identity graph linkin
 
 >[!WARNING]
 >
-> These steps are typically configured by a data architect managing the entire Platform implementation. There is a lot more to the feature than what is shown here.  Only complete these steps if you are completing this tutorial in a dedicated sandbox which can be deleted later. These changes to the sandbox cannot be reversed. Please see the [identity graph linking rules tutorials](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) to learn more.
+> These steps are typically configured by a data architect managing the entire Platform implementation. There is a lot more to the feature than what is shown here and many complex scenarios which should be carefully simulated first.  
+>
+> Only complete these steps if you are completing this tutorial in a dedicated development sandbox which can be deleted after you complete this tutorial. These changes to the sandbox cannot be reversed. Please see the [identity graph linking rules tutorials](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) to learn more.
 
 To enable the identity graph linking rules:
 
@@ -185,11 +187,17 @@ To enable the identity graph linking rules:
    ![Make sure Luma CRM ID is first and unique](assets/profile-open-identity-settings.png)
 1. Review the modal and **[!UICONTROL Confirm]**
 1. Select **[!UICONTROL Next]** to skip the simulation step
+
+    >[!WARNING]
+    >
+    > Again, do not complete this workflow to enable these identity settings if you are not working in your own dedicated development sandbox.
+
 1. Enter the sandbox name and select **[!UICONTROL Confirm]**
+
+   ![Open Identity settings](assets/profile-confirm-settings.png)
 
 Come back to the site in 24 hours, log back in as either `test@test.com` or `spouse@test.com` and see if your profiles have been separated.
 
-   ![Open Identity settings](assets/profile-confirm-settings.png)
 
 ## Create an Edge-evaluated audience
 
