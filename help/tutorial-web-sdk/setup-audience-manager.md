@@ -156,7 +156,7 @@ A few hours after the initial creation of the segment, you can validate that it 
 
 First, confirm that you can qualify for the segment
 
-1. Open the [Luma demo site homepage](https://luma.enablementadobe.com) with it mapped to your tag property to qualify for your newly created segment.
+1. Open the [Luma demo website homepage](https://luma.enablementadobe.com) with it mapped to your tag property to qualify for your newly created segment.
 1. Open your browser's **developer tools**  > **Network** tab
 1. Filter to the Platform Web SDK request using `interact` as the text filter
 1. Select a call and open the **Preview** tab to view the response details

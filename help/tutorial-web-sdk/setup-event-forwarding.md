@@ -285,7 +285,7 @@ Create a library and build all the changes to your event-forwarding development 
 
 Now you can validate your event-forwarding property using the Platform Debugger, and Webhook.site:
 
-1. Follow the steps to [switch the tag library](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) on the [Luma Demo site](https://luma.enablementadobe.com/category-men.html) to the Web SDK tag property to which you mapped your event-forwarding property in the datastream.
+1. Follow the steps to [switch the tag library](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) on the [Luma demo website](https://luma.enablementadobe.com/category-men.html) to the Web SDK tag property to which you mapped your event-forwarding property in the datastream.
 
 1. Before you reload the page, on the Experience Platform Debugger open **[!UICONTROL Logs]** from the left navigation
 

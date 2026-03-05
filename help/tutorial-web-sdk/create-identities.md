@@ -7,7 +7,7 @@ exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
 ---
 # Capture identities
 
-Learn how to capture identities with Adobe Experience Platform Web SDK. Capture both unauthenticated and authenticated identity data on the [Luma demo site](https://luma.enablementadobe.com). Learn how to use the data elements you created earlier for collecting authenticated data with a Platform Web SDK data element type called Identity map. 
+Learn how to capture identities with Adobe Experience Platform Web SDK. Capture both unauthenticated and authenticated identity data on the [Luma demo website](https://luma.enablementadobe.com). Learn how to use the data elements you created earlier for collecting authenticated data with a Platform Web SDK data element type called Identity map. 
 
 This lesson focuses on the Identity map data element available with the Adobe Experience Platform Web SDK tags extension. You map data elements containing an authenticated user ID and authentication status to XDM. 
 
@@ -23,7 +23,7 @@ At the end of this lesson, you are able to:
 
 ## Prerequisites 
 
-You have an understanding of what a data layer is, gotten familiar with the [Luma demo site](https://luma.enablementadobe.com){target="_blank"} data layer, and know how to reference data elements in tags. You must have completed the previous lessons in the tutorial:
+You have an understanding of what a data layer is, gotten familiar with the [Luma demo website](https://luma.enablementadobe.com){target="_blank"} data layer, and know how to reference data elements in tags. You must have completed the previous lessons in the tutorial:
 
 * [Configure an XDM schema](configure-schemas.md)
 * [Configure an identity namespace](configure-identities.md)

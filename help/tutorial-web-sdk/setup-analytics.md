@@ -187,7 +187,7 @@ Let's create a rule to send an additional page view call to a different report s
 
 1. On the right, leave the **[!UICONTROL Regex]** toggle disabled
 
-1. Under **[!UICONTROL path equals]** set `/` `OR` `/index.html`. For the Luma demo site, it ensures the rule only triggers on the home page
+1. Under **[!UICONTROL path equals]** set `/` `OR` `/index.html`. For the Luma demo website, it ensures the rule only triggers on the home page
 
 1. Select **[!UICONTROL Keep Changes]**
 
@@ -244,7 +244,7 @@ To validate Analytics is capturing data properly through Experience Platform Web
 
 ### Experience Cloud ID validation
 
-1. Go to the [Luma demo site](https://luma.enablementadobe.com){target="_blank"}
+1. Go to the [Luma demo website](https://luma.enablementadobe.com){target="_blank"}
 1. Select the login button on the top right, and use credentials u: test@test.com p: test to authenticate 
 1. Open the Experience Platform Debugger and [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 

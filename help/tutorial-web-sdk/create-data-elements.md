@@ -7,7 +7,7 @@ exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
 ---
 # Create data elements
 
-Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://luma.enablementadobe.com). Then populate fields in your XDM schema. 
+Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo website](https://luma.enablementadobe.com). Then populate fields in your XDM schema. 
 
 
 
