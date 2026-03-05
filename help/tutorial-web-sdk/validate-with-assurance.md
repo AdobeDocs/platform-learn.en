@@ -23,7 +23,7 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-You are familiar with Data Collection tags and the [Luma demo site](https://luma.enablementadobe.com){target="_blank"} and have completed the previous lessons in the tutorial:
+You are familiar with Data Collection tags and the [Luma demo website](https://luma.enablementadobe.com){target="_blank"} and have completed the previous lessons in the tutorial:
 
 * [Configure an XDM schema](configure-schemas.md)
 * [Configure an identity namespace](configure-identities.md)
@@ -44,7 +44,7 @@ There are several ways to start an Assurance session.
 
 To enable Edge Trace:
 
-1. Go to the [Luma demo site](https://luma.enablementadobe.com) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Go to the [Luma demo website](https://luma.enablementadobe.com) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Make sure you are signed into the Debugger with your Org name showing. If your username is showing instead, sign out and try signing back in.
 1. In the left navigation of **[!UICONTROL Experience Platform Debugger]** select **[!UICONTROL Logs]**
 1. Select the **[!UICONTROL Edge]** tab, and select **[!UICONTROL Connect]**

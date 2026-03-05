@@ -19,7 +19,7 @@ If you have never used the Debugger before, you might want to watch this five-mi
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-In this lesson, you use the [Adobe Experience Platform Debugger extension](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) to replace the tag property hardcoded on the [Luma demo site](https://luma.enablementadobe.com) with your own property.
+In this lesson, you use the [Adobe Experience Platform Debugger extension](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) to replace the tag property hardcoded on the [Luma demo website](https://luma.enablementadobe.com) with your own property.
 
 This technique is called environment switching and will be helpful later, when you work with tags on your own website. It allows you to to load your production website in your browser, but with your *development* tags library. This ability enables you to confidently make and validate tags changes independently from your regular code releases. After all, this separation of marketing tag releases from your regular code releases is one of the main reasons customers use tags in the first place!
 
@@ -33,7 +33,7 @@ At the end of this lesson, you will be able to use the debugger to:
 
 ## Prerequisites
 
-You are familiar with Data Collection tags and the [Luma demo site](https://luma.enablementadobe.com/){target="_blank"} and have completed the previous lessons in the tutorial:
+You are familiar with Data Collection tags and the [Luma demo website](https://luma.enablementadobe.com/){target="_blank"} and have completed the previous lessons in the tutorial:
 
 * [Configure an XDM schema](configure-schemas.md)
 * [Configure an identity namespace](configure-identities.md)

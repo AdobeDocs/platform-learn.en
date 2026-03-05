@@ -27,10 +27,11 @@ recommendations: noDisplay,noCatalog
 
 + Applications Setup {#applications-setup}
   + [Set up Experience Platform](setup-experience-platform.md)
+  + [Set up Profile and Edge Segmentation](setup-profile-and-edge-segmentation.md)
+  + [Set up Journey Optimizer Web Channel](setup-web-channel.md)
   + [Set up Adobe Analytics](setup-analytics.md)
   + [Set up Audience Manager](setup-audience-manager.md)
   + [Set up Target](setup-target.md)
-  + [Set up Journey Optimizer Web Channel](setup-web-channel.md)
 
 + Consent Management {#consent-management}
   + [Set up consent](setup-consent.md)

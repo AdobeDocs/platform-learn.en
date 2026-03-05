@@ -116,7 +116,7 @@ Now you will configure and implement consent for this scenario:
 
 
 2. Save and build this change to your tag library 
-3. Load your tag library on the Luma Demo site
+3. Load your tag library on the Luma demo website
 4. Enable tags debugging while on the Luma site and reload the page. In your browser's developer console, you should see that defaultConsent is equal to **[!UICONTROL In]**
 5. With this configuration, Experience Platform Web SDK extension makes network requests to Platform Edge Network until a visitor decides to reject the cookies and opts-out:
 
@@ -161,7 +161,7 @@ If a visitor decides to opt out (reject the tracking cookies), you must change t
 
 Now, when a visitor opts-out, the rule configured in the above fashion would fire and sets the Web SDK consent as **[!UICONTROL Out]**. 
 
-Validate by going to the Luma Demo site, reject cookies, and confirm that no Web SDK request fires after opting out. 
+Validate by going to the Luma demo website, reject cookies, and confirm that no Web SDK request fires after opting out. 
 
 ### Scenario 2: Implied Opt-out
 
