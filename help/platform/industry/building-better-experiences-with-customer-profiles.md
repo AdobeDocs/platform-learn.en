@@ -2,7 +2,7 @@
 title: Building better experiences with customer profiles
 description: Providing an excellent customer experience requires us to know about our customers. Merging everything that we know about a customer into a real-time customer profile allows us to give them an experience that will keep them coming back for more.
 feature: Profiles
-role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
+role: User, Developer, Admin, Leader
 level: Beginner, Intermediate, Experienced
 thumbnail: 336939.jpg
 jira: KT-8866

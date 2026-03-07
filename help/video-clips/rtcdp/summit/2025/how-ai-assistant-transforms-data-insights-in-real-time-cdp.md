@@ -3,7 +3,7 @@ title: How AI Assistant Transforms Data Insights in Real-Time CDP
 description: Discover how Adobe's AI Assistant revolutionizes data insights with natural language queries, delivering instant, actionable results for marketers.
 doc-type: Video Clips
 duration: 58
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

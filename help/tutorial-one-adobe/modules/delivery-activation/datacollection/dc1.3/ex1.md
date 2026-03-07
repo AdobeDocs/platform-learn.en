@@ -61,15 +61,15 @@ You'll then see this. Copy the below query and paste it in Snowflake. Make sure 
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS (
-	PERSON_ID NUMBER(38,0) NOT NULL,
-	NAME VARCHAR(255),
-	AGE NUMBER(38,0),
-	EMAIL VARCHAR(255),
-	PHONE_NUMBER VARCHAR(20),
-	GENDER VARCHAR(10),
-	OCCUPATION VARCHAR(100),
-	ISMOBILESUB BOOLEAN,
-	primary key (PERSON_ID)
+    PERSON_ID NUMBER(38,0) NOT NULL,
+    NAME VARCHAR(255),
+    AGE NUMBER(38,0),
+    EMAIL VARCHAR(255),
+    PHONE_NUMBER VARCHAR(20),
+    GENDER VARCHAR(10),
+    OCCUPATION VARCHAR(100),
+    ISMOBILESUB BOOLEAN,
+    primary key (PERSON_ID)
 );
 ```
 
@@ -91,16 +91,16 @@ You'll then see this. Copy the below query and paste it in Snowflake. Make sure 
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS (
-	HOUSEHOLD_ID NUMBER(38,0) NOT NULL,
-	ADDRESS VARCHAR(255),
-	CITY VARCHAR(100),
-	STATE VARCHAR(50),
-	POSTAL_CODE VARCHAR(20),
-	COUNTRY VARCHAR(100),
-	ISELIGIBLEFORFIBER BOOLEAN,
-	PRIMARY_PERSON_ID NUMBER(38,0),
-	ISFIBREENABLED BOOLEAN,
-	primary key (HOUSEHOLD_ID)
+    HOUSEHOLD_ID NUMBER(38,0) NOT NULL,
+    ADDRESS VARCHAR(255),
+    CITY VARCHAR(100),
+    STATE VARCHAR(50),
+    POSTAL_CODE VARCHAR(20),
+    COUNTRY VARCHAR(100),
+    ISELIGIBLEFORFIBER BOOLEAN,
+    PRIMARY_PERSON_ID NUMBER(38,0),
+    ISFIBREENABLED BOOLEAN,
+    primary key (HOUSEHOLD_ID)
 );
 ```
 
@@ -122,12 +122,12 @@ You'll then see this. Copy the below query and paste it in Snowflake. Make sure 
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_USERS (
-	USER_ID NUMBER(38,0) NOT NULL,
-	PERSON_ID NUMBER(38,0),
-	HOUSEHOLD_ID NUMBER(38,0),
-	primary key (USER_ID),
-	foreign key (PERSON_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS(PERSON_ID),
-	foreign key (HOUSEHOLD_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS(HOUSEHOLD_ID)
+    USER_ID NUMBER(38,0) NOT NULL,
+    PERSON_ID NUMBER(38,0),
+    HOUSEHOLD_ID NUMBER(38,0),
+    primary key (USER_ID),
+    foreign key (PERSON_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS(PERSON_ID),
+    foreign key (HOUSEHOLD_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS(HOUSEHOLD_ID)
 );
 ```
 
@@ -149,11 +149,11 @@ You'll then see this. Copy the below query and paste it in Snowflake. Make sure 
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MONTHLY_DATA_USAGE (
-	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
-	USER_ID NUMBER(38,0),
-	MONTH DATE,
-	DATA_USAGE_GB NUMBER(10,2),
-	primary key (USAGE_ID)
+    USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
+    USER_ID NUMBER(38,0),
+    MONTH DATE,
+    DATA_USAGE_GB NUMBER(10,2),
+    primary key (USAGE_ID)
 );
 ```
 
@@ -176,16 +176,16 @@ You'll then see this. Copy the below query and paste it in Snowflake. Make sure 
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MOBILE_DATA_USAGE (
-	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
-	USER_ID NUMBER(38,0),
-	DATE DATE,
-	TIME TIME(9),
-	APP_NAME VARCHAR(255),
-	DATA_USAGE_MB NUMBER(10,2),
-	NETWORK_TYPE VARCHAR(50),
-	DEVICE_TYPE VARCHAR(50),
-	COUNTRY_CODE VARCHAR(10),
-	primary key (USAGE_ID)
+    USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
+    USER_ID NUMBER(38,0),
+    DATE DATE,
+    TIME TIME(9),
+    APP_NAME VARCHAR(255),
+    DATA_USAGE_MB NUMBER(10,2),
+    NETWORK_TYPE VARCHAR(50),
+    DEVICE_TYPE VARCHAR(50),
+    COUNTRY_CODE VARCHAR(10),
+    primary key (USAGE_ID)
 );
 ```
 

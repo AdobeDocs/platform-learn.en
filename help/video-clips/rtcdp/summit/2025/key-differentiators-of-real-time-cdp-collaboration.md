@@ -3,7 +3,7 @@ title: Key Differentiators of Real-Time CDP Collaboration
 description: Explore the unique features of Adobe's Real-Time CDP Collaboration, including its marketer-friendly UI, interoperability, and privacy-centric design.
 doc-type: Video Clips
 duration: 76
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

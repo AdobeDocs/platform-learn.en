@@ -3,7 +3,7 @@ title: AI Assistant for Audiences - Optimizing Audience Strategies
 description: See how AI Assistant for Audiences helps identify high-value segments, optimize audience strategies, and save time.
 doc-type: Video Clips
 duration: 110
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

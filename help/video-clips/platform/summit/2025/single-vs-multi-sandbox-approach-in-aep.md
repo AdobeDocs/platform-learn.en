@@ -3,7 +3,7 @@ title: Single vs Multi-Sandbox Approach in AEP
 description: Explore the trade-offs between single and multi-sandbox strategies for managing data and workflows in Adobe Experience Platform.
 doc-type: Video Clips
 duration: 180
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

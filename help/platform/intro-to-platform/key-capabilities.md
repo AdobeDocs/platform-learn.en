@@ -1,7 +1,7 @@
 ---
 title: Key Capabilities
 description: Learn about the key capabilities of Experience Platform and how they bring value to your business.
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+role: User, Developer, Admin, Leader
 level: Beginner
 last-substantial-update: 2023-10-24
 jira: KT-4332

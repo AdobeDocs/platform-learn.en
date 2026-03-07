@@ -51,7 +51,7 @@ Tag extensions installed when using the Target extension:
 The Target extension has [configurable settings](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) which with the Decision extension are [configured in the datastream](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup).
 
 | Target extension | Offer Decisioning and Target extension | Notes |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Client Code | n/a | Set automatically by the edge using the IMS Org details |
 | Environment ID | Target Environment ID | Configured in the datastream |
 | Target Workspace Property | Property Token | Configured in the datastream |

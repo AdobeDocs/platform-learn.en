@@ -48,9 +48,11 @@ Before you jump into the tag configurations, learn more about the consent manage
     * For CCPA, the default consent is commonly set to `true`. You are going to reference this scenario as **Implied opt-in** throughout this tutorial
     * For GDPR, the default consent is commonly set to `false`. You are going to reference this scenario as **Implied opt-out** throughout this tutorial.
 1. Activate the configuration
-<!--
+
+    <!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
--->
+    -->
+
     >[!NOTE]
     > 
     >Generally, the above mentioned steps are done and taken care by the team or individual who is responsible for handling the CMP such as OneTrust or TrustArc. 

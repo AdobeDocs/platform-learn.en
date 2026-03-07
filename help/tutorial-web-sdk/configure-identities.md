@@ -66,11 +66,11 @@ Now, create a namespace for the Luma CRM ID:
 
 1. Provide details as follows and select **[!UICONTROL Create]**.
    
-   | Field         |  Value    |  
+   | Field         |  Value    |
    |---------------|-----------|
-   | Display name  | Luma CRM ID   | 
-   | Identity symbol| lumaCrmId    |  
-   | Type           | Individual cross-device ID |  
+   | Display name  | Luma CRM ID   |
+   | Identity symbol| lumaCrmId    |
+   | Type           | Individual cross-device ID |
 
 
    ![Create Namespaces](assets/identities-create-namespace.png)

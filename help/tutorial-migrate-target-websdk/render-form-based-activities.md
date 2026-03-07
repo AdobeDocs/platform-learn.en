@@ -191,6 +191,8 @@ The example page below builds upon the implementation outlined in the previous s
 </html>
 ```
 
++++
+
 Next, learn how to [pass Target parameters using the Platform Web SDK](send-parameters.md).
 
 >[!NOTE]

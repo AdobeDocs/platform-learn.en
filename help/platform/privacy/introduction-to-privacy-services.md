@@ -2,7 +2,7 @@
 title: Introduction to Privacy Service
 description: Learn about privacy regulations and their effect on data operations. Also, learn how Privacy Service handles these challenges.
 feature: Privacy
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7713
 thumbnail: 336074.png

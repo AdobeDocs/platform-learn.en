@@ -13,8 +13,8 @@ exl-id: 2f9a3eef-16ef-497c-97f7-377ff9ed2f82
 
 The following are the main Workfront objects and concepts:
 
-| Name                   | Last Update | 
-| ---------------------- | ------------ | 
+| Name                   | Last Update |
+| ---------------------- | ------------ |
 | Portfolio | A collection of projects that have unifying characteristics. Those projects usually compete for the same resources, budget, or time slot.   |
 | Program | A subset within a portfolio, where similar projects can be grouped together in order to achieve a well-defined benefit. |
 | Project | A large amount of work that must be completed within a specific timeframe and must use a specific budget and number of resources. To make it manageable, you divide the project into a series of tasks. Completing all the tasks results in the completion of the project. |

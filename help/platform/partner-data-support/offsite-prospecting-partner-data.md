@@ -4,7 +4,7 @@ description: Learn about the workflow used to ingest new prospects from partners
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
-role: Architect, Data Architect, User
+role: Developer, User
 level: Intermediate
 jira: KT-13827
 thumbnail: 3423071.jpg

@@ -2,7 +2,7 @@
 title: Connect and configure Federated Audience Composition
 description: Learn how to connect to your data warehouse and configure that connection for Federated Audience Composition.
 feature: Audiences
-role: Admin, Data Architect, Data Engineer
+role: Admin, Developer
 level: Intermediate
 doc-type: Feature Video
 duration: 0

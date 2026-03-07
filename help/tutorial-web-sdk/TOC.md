@@ -3,7 +3,7 @@ user-guide-title: Implement Adobe Experience Cloud with Web SDK tutorial
 breadcrumb-title: Web SDK Tutorial
 solution: Data Collection
 feature: Web SDK,Tags
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog

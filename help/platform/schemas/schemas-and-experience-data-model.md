@@ -2,7 +2,7 @@
 title: Schemas and Experience Data Model (XDM) overview
 description: Learn about Experience Data Model (XDM), the standard data model to describe customer experiences.
 feature: Schemas
-role: Data Architect, Data Engineer, Developer, User
+role: Developer, User
 level: Beginner
 jira: KT-2696
 thumbnail: 27105.jpg

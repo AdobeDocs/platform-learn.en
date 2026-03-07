@@ -3,7 +3,7 @@ title: Enable Real-Time Customer Profiles
 seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Enable Real-Time Customer Profiles
 description: In this lesson, you will enable your schemas and datasets for Real-Time Customer Profile. 
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg

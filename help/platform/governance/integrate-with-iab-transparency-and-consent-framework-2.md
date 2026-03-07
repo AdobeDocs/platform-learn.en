@@ -3,7 +3,7 @@ title: Integrate IAB's Transparency and Consent Framework 2.0 with Adobe Real-Ti
 description: This video shows how Adobe's Real-Time Customer Data Platform helps brands honor consumers' consent as they engage on digital properties. Through the support of IAB's Transparency & Consent Framework 2.0, brands gain greater flexibility over how they can engage with consumers while providing consumers increased control of their consent to do so.
 solution: Real-Time Customer Data Platform
 feature: Destinations
-role: Data Architect, Data Engineer, Data Architect
+role: Developer
 level: Beginner
 jira: KT-5950
 thumbnail: 38346.jpg

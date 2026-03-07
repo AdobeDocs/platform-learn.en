@@ -18,8 +18,8 @@ Below is an overview of the status of the content in this tutorial.
 
 | Name                   | Last Update | Working 100% | Remarks | Time Investment |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-[1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 02/08/2025  | Yes         | - | 45min |
-| [1.2 Workflow Management with Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025  | Yes         | Content not finished yet | 1h 30min |
+| [1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 02/08/2025 | Yes | - | 45min |
+| [1.2 Workflow Management with Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025 | Yes | Content not finished yet | 1h 30min |
 
 ## Creation & Production
 

@@ -1,7 +1,7 @@
 ---
 title: Overview of Adobe Experience Platform
 description: Get an overview of what Experience Platform is and the business challenges it solves.
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+role: User, Developer, Admin, Leader
 level: Beginner
 last-substantial-update: 2023-11-14
 jira: KT-4804

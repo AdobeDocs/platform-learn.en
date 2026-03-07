@@ -3,7 +3,7 @@ title: Conclusion
 seo-title: Conclusion | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Conclusion
 description: In this lesson, you will configure Adobe Experience Platform user permissions using Adobe's Admin Console. 
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
 ---

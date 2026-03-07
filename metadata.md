@@ -12,7 +12,7 @@ tutorials-title: Tutorials
 tutorials-url: /content/help/en/platform-learn/tutorials/overview.html
 git-repo: https://github.com/AdobeDocs/platform-learn.en
 feature-set: Experience Platform
-index: yes
+index: true
 mini-toc-levels: 2
 type: Tutorial
 ---

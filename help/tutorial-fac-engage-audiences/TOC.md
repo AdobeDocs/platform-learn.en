@@ -2,7 +2,7 @@
 user-guide-title: Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Federated Audience Composition
 user-guide-description: A guide to minimize data copy by capitalizing on your existing tech stack to build and enrich audiences using Federated Audience Composition.
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog

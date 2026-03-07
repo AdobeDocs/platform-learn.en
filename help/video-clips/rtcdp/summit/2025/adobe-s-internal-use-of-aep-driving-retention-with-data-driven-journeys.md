@@ -3,7 +3,7 @@ title: Adobe's Internal Use of AEP - Driving Retention with Data-Driven Journeys
 description: Explore how Adobe uses AEP to drive retention and engagement by leveraging data-driven insights and personalized customer journeys.
 doc-type: Video Clips
 duration: 62
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

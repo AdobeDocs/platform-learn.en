@@ -37,21 +37,21 @@ After reviewing the information below and assessing your current technical Targe
 
 ## Feature comparison
 
-| Feature | Target extension | Offer Decisioning and Target extension (Target via Edge) | 
+| Feature | Target extension | Offer Decisioning and Target extension (Target via Edge) |
 |---|---|---|
-| Prefetch mode | Supported | Supported | 
-| Execute mode | Supported | Not supported |  
-| Custom parameters | Supported | Supported* | 
-| Profile parameters | Supported | Supported* | 
-| Entity parameters | Supported | Supported* | 
-| Target audiences | Supported | Supported | 
-| Real-Time CDP audiences | Not Supported | Supported | 
-| Real-Time CDP attributes | Not Supported | Supported | 
-| Lifecycle metrics | Supported | Supported via Data Collection rules | 
-| thirdPartyId (mbox3rdPartyId) | Supported | Supported via Identity Map and Target Third Party ID Namespace in the datastream | 
-| Notifications (display, click) | Supported | Supported | 
-| Response tokens | Supported | Supported |  
-| Mobile previews (QA mode) | Supported | Limited Support with Assurance | 
+| Prefetch mode | Supported | Supported |
+| Execute mode | Supported | Not supported |
+| Custom parameters | Supported | Supported* |
+| Profile parameters | Supported | Supported* |
+| Entity parameters | Supported | Supported* |
+| Target audiences | Supported | Supported |
+| Real-Time CDP audiences | Not Supported | Supported |
+| Real-Time CDP attributes | Not Supported | Supported |
+| Lifecycle metrics | Supported | Supported via Data Collection rules |
+| thirdPartyId (mbox3rdPartyId) | Supported | Supported via Identity Map and Target Third Party ID Namespace in the datastream |
+| Notifications (display, click) | Supported | Supported |
+| Response tokens | Supported | Supported |
+| Mobile previews (QA mode) | Supported | Limited Support with Assurance |
 
 >[!IMPORTANT]
 >

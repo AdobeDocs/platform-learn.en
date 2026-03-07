@@ -3,7 +3,7 @@ title: Three-Phased Approach to Audience-Driven Marketing
 description: Discover a simple three-phased framework for building, scaling, and optimizing audience strategies using Real-Time CDP.
 doc-type: Video Clips
 duration: 214
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

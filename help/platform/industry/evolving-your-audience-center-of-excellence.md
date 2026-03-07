@@ -2,7 +2,7 @@
 title: Evolving Your Audience Center of Excellence
 description: As the platforms that facilitate the management of customer data, audiences and activation programs must also evolve. So too do the people and processes that support these platforms. An Audience Center of Excellence (COE) model has long been established as the optimal way to support Data Management Platforms (DMPs).
 feature: Data Governance
-role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
+role: User, Developer, Admin, Leader
 level: Beginner, Intermediate, Experienced
 thumbnail: 336938.jpg
 jira: KT-8864

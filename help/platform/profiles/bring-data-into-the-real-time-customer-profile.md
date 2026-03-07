@@ -2,7 +2,7 @@
 title: Bring Data into Real-Time Customer Profile
 description: Real-Time Customer Profile powers cross channel personalization at scale through each phase of the customer journey. Batch or Streaming data can be enabled for the Real-Time Customer Profile by enabling both the schema and corresponding dataset.
 feature: Profiles
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-2702
 thumbnail: 27301.jpg

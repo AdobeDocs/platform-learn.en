@@ -334,7 +334,7 @@ There are 2 fields in the below code that you need to update:
 <script src="/scripts/styleconfigurations.js"></script>
 
 <script>
-		!function (n, o) {
+    !function (n, o) {
       o.forEach(function (o) {
         n[o] || ((n.__alloyNS = n.__alloyNS ||
           []).push(o), n[o] = function () {
@@ -344,14 +344,14 @@ There are 2 fields in the below code that you need to update:
       })
     }
       (window, ["alloy"]);
-	</script>
+    </script>
 
 
 <script src="/scripts/alloy.js"></script>
 
 <script>
-	alloy("configure", {
-		defaultConsent: "in",
+    alloy("configure", {
+        defaultConsent: "in",
         edgeDomain: "edge.adobedc.net",
         edgeBasePath: "ee",
         datastreamId: "XXXXX", // replace datastreamId

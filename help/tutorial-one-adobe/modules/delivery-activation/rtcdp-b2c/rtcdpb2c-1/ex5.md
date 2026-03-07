@@ -42,7 +42,7 @@ Next, you need to select one of your identities and the according namespace, and
 | Experience Cloud ID (ECID)          | 79943948563923140522865572770524243489 |
 | Experience Cloud ID (ECID)          | 70559351147248820114888181867542007989 |
 | Email ID          | woutervangeluwe+18112024-01@gmail.com|
-| Mobile Number ID          | +32473622044+18112024-01| 
+| Mobile Number ID          | +32473622044+18112024-01|
 
 ![Demo](./images/19.png)
 

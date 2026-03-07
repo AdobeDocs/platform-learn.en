@@ -59,8 +59,8 @@ You now need to configure the variables that are needed to authenticate against 
 
 The following variables need to be defined:
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | `CONST_client_id`         | your Adobe I/O project Client ID |
 | `CONST_client_secret`         | your Adobe I/O project Client Secret|
 | `CONST_scope`        | your Adobe I/O project Scope |
@@ -117,8 +117,8 @@ Select **Make a request**.
 
 ![WF Fusion](./images/wffusion20.png)
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | `URL`         | `https://ims-na1.adobelogin.com/ims/token/v3` |
 | `Method`         | `POST` |
 | `Body Type`         | `x-www-form-urlencoded` |
@@ -129,8 +129,8 @@ Select **Add item**.
 
 Add items for each of the below values:
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | `client_id`         | your predefined variable for `CONST_client_id` |
 | `client_secret`         | your predefined variable for `CONST_client_secret` |
 | `scope`         | your predefined variable for `CONST_scope` |

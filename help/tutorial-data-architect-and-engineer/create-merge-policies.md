@@ -3,7 +3,7 @@ title: Create merge policies
 seo-title: Create merge policies | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Create merge policies
 description: In this lesson, you will create merge policies to determine how data merges into profiles. 
-role: Data Architect, Data Engineer
+role: Developer
 feature: Profiles
 jira: KT-4348
 audience: data architect

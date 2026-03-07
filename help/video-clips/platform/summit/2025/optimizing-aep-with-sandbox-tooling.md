@@ -3,7 +3,7 @@ title: Optimizing AEP with Sandbox Tooling
 description: Learn how to use sandbox tooling to streamline workflows and enable collaboration across teams in Adobe Experience Platform.
 doc-type: Video Clips
 duration: 176
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

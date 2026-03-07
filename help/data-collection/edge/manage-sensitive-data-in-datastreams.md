@@ -2,7 +2,7 @@
 title: Manage sensitive data in datastreams
 description: Learn how to manage sensitive data in datastreams.
 feature: Datastreams, Data Governance
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Intermediate
 jira: KT-11176
 last-substantial-update: 2022-09-28

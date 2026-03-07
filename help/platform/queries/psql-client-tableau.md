@@ -2,7 +2,7 @@
 title: Connect Tableau to Query Service
 description: Learn how to connect to Query Service from a variety of desktop client applications that supports PostgreSQL protocol and how to use PostgreSQL tools and drivers to connect and write queries.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate
 jira: KT-7688
 thumbnail: 333702.jpg

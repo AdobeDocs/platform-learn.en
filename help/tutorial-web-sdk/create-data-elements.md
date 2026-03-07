@@ -256,15 +256,15 @@ Next, create the Variable data element for your data object:
 At the end of these steps, you should have the following data elements created:
 
 |Core Extension Data Elements | Platform Web SDK Extension Data Elements|
------------------------------|-------------------------------
+| ----------------------------- | ------------------------------- |
 | `Ecommerce Cart Products` | `Data Variable` |
-| `Ecommerce Product Category`| `XDM Variable` |
+| `Ecommerce Product Category` | `XDM Variable` |
 | `Ecommerce Product Id` | |
 | `Ecommerce Product Name` | |
-| `Ecommerce Purchase Id`| | 
-| `Ecommerce Purchase Products`| | 
-| `Page Name`| | 
-| `User Id`| |
+| `Ecommerce Purchase Id` | |
+| `Ecommerce Purchase Products` | |
+| `Page Name` | |
+| `User Id` | |
 | `User Logged In` | |
 
 With these data elements in place, you are ready to start sending data to Platform Edge Network with a tags rule. But first, learn about collecting identities with Web SDK. 

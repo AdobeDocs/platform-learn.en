@@ -48,7 +48,7 @@ Name your project following this naming convention. Click **CREATE**.
 
 | Convention         |
 | ----------------- |
-| `--aepUserLdap---googlecloud` | 
+| `--aepUserLdap---googlecloud` |
 
 ![demo](./images/ex13.png)
 
@@ -92,7 +92,7 @@ Click to open the table `ga_sessions`.
 
 Before you continue with the next exercise, please write down the following things in a separate text file on your computer:
 
-| Credential         | Naming| Example|   
+| Credential         | Naming| Example|
 | ----------------- |-------------| -------------|
 | Project Name | `--aepUserLdap---googlecloud` | vangeluw-googlecloud  |
 | Project ID | random | possible-bee-447102-h3 |

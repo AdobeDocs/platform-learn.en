@@ -2,7 +2,7 @@
 title: Validate data with Query Service
 description: Learn how to validate ingested data using SQL functions.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-7684
 last-substantial-update: 2025-09-23

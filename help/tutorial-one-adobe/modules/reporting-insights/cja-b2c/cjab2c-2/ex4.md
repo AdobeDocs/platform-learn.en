@@ -61,33 +61,33 @@ Scroll down. You now need to map every **Source Field** from Google Analytics/Bi
 
 Use the below mapping table for this exercise.
 
-| Source Field        | Target Field |   
-| ----------------- |-------------| 
-| `_id` | `_id` | 
-| `_id` | channel._id | 
-| `timeStamp` | timestamp | 
-| `GA_ID` | ``--aepTenantId--``.identification.core.gaid | 
-| `customerID` | ``--aepTenantId--``. identification.core.crmId | 
-| `Page` | web.webPageDetails.name | 
-| `Device` | device.type | 
-| `Browser` | environment.browserDetails.vendor| 
-| `MarketingChannel` | marketing.trackingCode | 
-| `TrafficSource` | channel.typeAtSource | 
-| `TrafficMedium` | channel.mediaType | 
-| `TransactionID` | commerce.order.payments.transactionID | 
-| `Ecommerce_Action_Type` | eventType | 
-| `Pageviews` | web.webPageDetails.pageViews.value| 
+| Source Field        | Target Field |
+| ----------------- |-------------|
+| `_id` | `_id` |
+| `_id` | channel._id |
+| `timeStamp` | timestamp |
+| `GA_ID` | ``--aepTenantId--``.identification.core.gaid |
+| `customerID` | ``--aepTenantId--``. identification.core.crmId |
+| `Page` | web.webPageDetails.name |
+| `Device` | device.type |
+| `Browser` | environment.browserDetails.vendor|
+| `MarketingChannel` | marketing.trackingCode |
+| `TrafficSource` | channel.typeAtSource |
+| `TrafficMedium` | channel.mediaType |
+| `TransactionID` | commerce.order.payments.transactionID |
+| `Ecommerce_Action_Type` | eventType |
+| `Pageviews` | web.webPageDetails.pageViews.value|
 
 
 For some fields, you need to remove the original mapping and create a new one, for a **Calculated Field**.
 
-| Calculated Field        | Target Field |   
-| ----------------- |-------------| 
-| `iif(Unique_Purchases == null, 0, Unique_Purchases)` | commerce.purchases.value | 
-| `iif(Product_Detail_Views == null, 0, Product_Detail_Views)` | commerce.productViews.value | 
-| `iif(Adds_To_Cart == null, 0, Adds_To_Cart)` | commerce.productListAdds.value | 
-| `iif(Product_Removes_From_Cart == null, 0, Product_Removes_From_Cart), 1, 0)` | commerce.productListRemovals.value | 
-| `iif(Product_Checkouts == null, 0, Product_Checkouts)` | commerce.checkouts.value | 
+| Calculated Field        | Target Field |
+| ----------------- |-------------|
+| `iif(Unique_Purchases == null, 0, Unique_Purchases)` | commerce.purchases.value |
+| `iif(Product_Detail_Views == null, 0, Product_Detail_Views)` | commerce.productViews.value |
+| `iif(Adds_To_Cart == null, 0, Adds_To_Cart)` | commerce.productListAdds.value |
+| `iif(Product_Removes_From_Cart == null, 0, Product_Removes_From_Cart), 1, 0)` | commerce.productListRemovals.value |
+| `iif(Product_Checkouts == null, 0, Product_Checkouts)` | commerce.checkouts.value |
 
 To create a **Calculated Field**, click **+ New field type** and then click **Calculated field**.
 

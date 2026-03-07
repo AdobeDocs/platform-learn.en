@@ -5,7 +5,7 @@ user-guide-description: How-to videos and tutorials to make you a power-user of 
 solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
-role: Developer, Data Engineer
+role: Developer
 ---
 
 # Data Collection tutorials{#data-collection}

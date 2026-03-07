@@ -3,7 +3,7 @@ title: Federated Audience Composition - Unifying Data for Real-Time Marketing
 description: Learn how Federated Audience Composition in Adobe Real-Time CDP enables seamless integration of external data warehouses for in-the-moment marketing activation.
 doc-type: Video Clips
 duration: 88
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

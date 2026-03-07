@@ -5,7 +5,7 @@ solution: Real-Time Customer Data Platform
 feature: Sources
 topic: Integrations
 badgeIntegration: label="Integration" type="positive"
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9259, KT-13303
 last-substantial-update: 2023-05-24

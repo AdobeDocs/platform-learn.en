@@ -25,8 +25,8 @@ exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
 
 The following are the main Workfront objects and concepts:
 
-| Name                   | Last Update | 
-| ---------------------- | ------------ | 
+| Name                   | Last Update |
+| ---------------------- | ------------ |
 | Portfolio | A collection of projects that have unifying characteristics. Those projects usually compete for the same resources, budget, or time slot.   |
 | Program | A subset within a portfolio, where similar projects can be grouped together in order to achieve a well-defined benefit. |
 | Project | A large amount of work that must be completed within a specific timeframe and must use a specific budget and number of resources. To make it manageable, you divide the project into a series of tasks. Completing all the tasks results in the completion of the project. |
@@ -64,14 +64,14 @@ Open the **Experience Manager repository** dropdown and select your AEM CS insta
 Under **Metadata**, configure the following mapping:
 
 | Workfront Field | Experience Manager Assets field|
-| --------------- | ------------------------------ | 
-| **Document** > **Name** | **wm:documentName** | 
-| **Project** > **Name** | **wm:projectName** | 
-| **Project** > **Description** | **wm:projectDescription** | 
-| **Document Request** > **Status** | **wm:wm:documentStatus** | 
-| **Task** > **Name** | **wm:taskName** | 
-| **Task** > **Description** | **wm:taskDescription** | 
-| **Project** > **ID** | **wm:projectId** | 
+| --------------- | ------------------------------ |
+| **Document** > **Name** | **wm:documentName** |
+| **Project** > **Name** | **wm:projectName** |
+| **Project** > **Description** | **wm:projectDescription** |
+| **Document Request** > **Status** | **wm:wm:documentStatus** |
+| **Task** > **Name** | **wm:taskName** |
+| **Task** > **Description** | **wm:taskDescription** |
+| **Project** > **ID** | **wm:projectId** |
 
 Enable the switch for **Sync object metadata**.
 

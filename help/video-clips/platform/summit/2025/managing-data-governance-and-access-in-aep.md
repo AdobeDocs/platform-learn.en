@@ -3,7 +3,7 @@ title: Managing Data Governance and Access in AEP
 description: Discover how to govern data effectively in Adobe Experience Platform using role-based and attribute-based access controls.
 doc-type: Video Clips
 duration: 118
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

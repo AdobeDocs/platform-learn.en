@@ -2,7 +2,7 @@
 title: Ingest Data using Cloud Storage Source Connectors
 description: This video shows how to easily batch ingest data from cloud storage services into Adobe Experience Platform's Real-Time Customer Profile and data lake, in a seamless and scalable manner.
 feature: Sources
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-3827
 thumbnail: 29695.jpg

@@ -46,10 +46,10 @@ First, make sure to select the correct Data View in the upper right corner of yo
 
 Next, you'll save your project and give it a name. You can use the following command to save:
 
-|  OS        | Short cut   | 
-| ----------------- |-------------| 
-| Windows | Control + S          | 
-| Mac | Command + S          | 
+|  OS        | Short cut   |
+| ----------------- |-------------|
+| Windows | Control + S          |
+| Mac | Command + S          |
 
 You'll see this popup: 
 
@@ -57,8 +57,8 @@ You'll see this popup:
 
 Please use this naming convention:
 
-|  Name       | Description   | 
-| ----------------- |-------------| 
+|  Name       | Description   |
+| ----------------- |-------------|
 | `--aepUserLdap-- - Omnichannel Analysis`| `--aepUserLdap-- - Omnichannel Analysis`|
 
 Next, click **Save**.
@@ -103,8 +103,8 @@ The conversion rate is commonly represented in percentage. So, let's change the 
 
 Finally, Change the name and description of the calculated metric:
 
-| Title         | Description| External ID|    
-| ----------------- |-------------| -------------| 
+| Title         | Description| External ID|
+| ----------------- |-------------| -------------|
 | Conversion Rate | Conversion Rate      | conversionRate|
 
 You will then have this. Click **Save**.

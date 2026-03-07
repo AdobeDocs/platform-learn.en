@@ -97,11 +97,11 @@ You'll then see this. Click the **personalization** icon for the **Title** field
 
 You'll then see this. You can now select any profile attribute from the Real-time Customer Profile directly.
 
-Search for the field **First Name**, then click the **+** icon next to the field **First Name**. You'll then see the personalization token for First Name being added: **{{profile.person.name.firstName}}**.
+Search for the field **First Name**, then click the **+** icon next to the field **First Name**. You'll then see the personalization token for First Name being added: **`{{profile.person.name.firstName}}`**.
 
 ![Push](./images/bp9.png)
 
-Next, add the text **, welcome to our store!** behind **{{profile.person.name.firstName}}**.
+Next, add the text **, welcome to our store!** behind **`{{profile.person.name.firstName}}`**.
 
 Click **Save**.
 
