@@ -2,6 +2,8 @@
 cloud: Experience Platform 
 product: experience platform
 solution: Experience Platform
+landing-page-name: experience-platform
+landing-page-breadcrumb-title: Experience Platform
 solution-title: Documentation
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-platform/landing/home.html
 getting-started-title: Experience League
