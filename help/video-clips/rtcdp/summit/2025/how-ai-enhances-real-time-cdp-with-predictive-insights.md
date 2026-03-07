@@ -3,7 +3,7 @@ title: How AI Enhances Real-Time CDP with Predictive Insights
 description: Discover how Adobe's predictive AI capabilities in Real-Time CDP help marketers optimize segmentation, personalization, and audience insights.
 doc-type: Video Clips
 duration: 66
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

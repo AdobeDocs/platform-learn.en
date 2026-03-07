@@ -1,7 +1,7 @@
 ---
 title: Integrations with Experience Cloud applications
 description: Learn about how Experience Platform integrates with Experience Cloud applications.
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+role: User, Developer, Admin, Leader
 level: Beginner
 last-substantial-update: 2023-10-19
 jira: KT-4334

@@ -1,7 +1,7 @@
 ---
 title: Key Use Cases
 description: Get an overview of the five key use cases of Experience Platform&mdash;Intelligent Re-engagement, Don't Lose Campaigns, Customer Conversion Optimization, Contextual Recognition, and One-Time Value to Lifetime Value.
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+role: User, Developer, Admin, Leader
 level: Beginner
 last-substantial-update: 2023-11-01
 jira: KT-4337

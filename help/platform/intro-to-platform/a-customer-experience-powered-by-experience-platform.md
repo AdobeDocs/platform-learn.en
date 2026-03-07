@@ -1,7 +1,7 @@
 ---
 title: A Customer Experience Powered by Adobe Experience Platform
 description: See a hypothetical experience built with Adobe Experience Platform, as seen from the perspective of a customer. Learn how Experience Platform creates a rich, relevant, and real-time experience.
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+role: Leader, Developer, Admin, User
 level: Beginner
 jira: KT-4339
 thumbnail: 27361.jpg

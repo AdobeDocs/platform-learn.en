@@ -3,7 +3,7 @@ title: End-to-End Use Case Activation Process
 description: Understand the six phases of Adobe's end-to-end use case activation process, from ideation to optimization.
 doc-type: Video Clips
 duration: 213
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

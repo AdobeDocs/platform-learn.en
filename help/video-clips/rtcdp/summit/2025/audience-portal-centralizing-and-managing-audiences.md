@@ -3,7 +3,7 @@ title: Audience Portal - Centralizing and Managing Audiences
 description: Explore how the Audience Portal in Real-Time CDP helps unify customer data, manage audiences, and enable real-time activation.
 doc-type: Video Clips
 duration: 102
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

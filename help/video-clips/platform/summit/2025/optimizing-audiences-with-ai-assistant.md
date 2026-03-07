@@ -3,7 +3,7 @@ title: Optimizing Audiences with AI Assistant
 description: Learn how AI Assistant helps create top-performing audiences by minimizing campaign size while maintaining high conversion rates.
 doc-type: Video Clips
 duration: 113
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

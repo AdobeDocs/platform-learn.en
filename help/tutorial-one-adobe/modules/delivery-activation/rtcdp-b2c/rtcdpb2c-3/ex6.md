@@ -64,7 +64,7 @@ To do that, open your Postman application and go to **Destination Authoring API*
 >
 >If you don't have that Postman collection, go back to [Exercise 3 in Module 2.1](../rtcdpb2c-1/ex3.md) and follow the instructions there to setup Postman with the provided Postman collections.
 
-You'll then see this. Under **Headers**, you need to manually update the value for the key **x-sandbox-name** and set it to `--aepSandboxName--`. Select the value **{{SANDBOX_NAME}}**.
+You'll then see this. Under **Headers**, you need to manually update the value for the key **x-sandbox-name** and set it to `--aepSandboxName--`. Select the value **`{{SANDBOX_NAME}}`**.
 
 ![Data Ingestion](./images/sdkpm1.png)
 
@@ -118,7 +118,7 @@ After clicking **Send**, your server template will be created, and as part of th
 
 ## Create your destination configuration
 
-In Postman, under **Destination Authoring API**, go to **Destination configurations** and click to open the request **POST - Create a destination configuration**. You'll then see this. Under **Headers**, you need to manually update the value for the key **x-sandbox-name** and set it to `--aepSandboxName--`. Select the value **{{SANDBOX_NAME}}** and replace it by `--aepSandboxName--`.
+In Postman, under **Destination Authoring API**, go to **Destination configurations** and click to open the request **POST - Create a destination configuration**. You'll then see this. Under **Headers**, you need to manually update the value for the key **x-sandbox-name** and set it to `--aepSandboxName--`. Select the value **`{{SANDBOX_NAME}}`** and replace it by `--aepSandboxName--`.
 
 ![Data Ingestion](./images/sdkpm7.png)
 

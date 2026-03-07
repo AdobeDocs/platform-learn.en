@@ -3,7 +3,7 @@ title: Data warehouse connection
 seo-title: Configure a data warehouse connection | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Data warehouse connection
 description: In this exercise, we configure a connection between Adobe Experience Platform and your enterprise Data Warehouse to enable Federated Audience Composition.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59

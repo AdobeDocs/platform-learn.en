@@ -2,7 +2,7 @@
 title: Data governance overview
 description: Learn how to take complete control over your data from the point it's collected at data sources to when it's syndicated to destinations outside Adobe Experience Platform.
 feature: Data Governance
-role: User, Developer, Data Architect, Admin
+role: User, Developer, Admin
 level: Beginner
 jira: KT-3991
 thumbnail: 29708.jpg

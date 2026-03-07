@@ -114,10 +114,10 @@ window["alloy"]("sendEvent", {
         console.log("Conversation experience fetched", result);
         window["alloy"]("bootstrapConversationalExperience", {
             selector: "#brand-concierge-mount",
-						// src: "main.js",
+                       // src: "main.js",
             src: "https://experience-stage.adobe.net/solutions/experience-platform-brand-concierge-web-agent/static-assets/main.js",
             stylingConfigurations: window.styleConfiguration,
-						stickySession: true
+                        stickySession: true
         })
     });
 ```

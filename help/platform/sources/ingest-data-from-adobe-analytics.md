@@ -4,7 +4,7 @@ description: The Adobe Analytics Source connector allows you to easily stream, m
 feature: Sources
 topic: Integrations
 badgeIntegration: label="Integration" type="positive"
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Intermediate
 last-substantial-update: 2023-02-23
 jira: KT-3824

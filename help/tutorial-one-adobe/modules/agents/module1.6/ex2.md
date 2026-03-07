@@ -63,8 +63,8 @@ Add the following MCP server to the file **mcp.json**. There may be other MCP Se
 
 ```json
 "aem": {
-	"url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
-	}
+    "url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
+    }
 ```
 
 ![Cursor + AEM](./images/cursorai7.png)
@@ -171,7 +171,7 @@ Add the following MCP server to the file **mcp.json**. There may be other MCP Se
 ```
 ,
 "aem-discovery": {
-	"url": "https://mcp.adobeaemcloud.com/adobe/mcp/discovery"
+    "url": "https://mcp.adobeaemcloud.com/adobe/mcp/discovery"
 }
 ```
 

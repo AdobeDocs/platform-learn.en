@@ -2,7 +2,7 @@
 title: Update schemas
 description: Basic things to be aware of when updating existing schemas in Adobe Experience Platform.
 feature: Schemas
-role: Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7938
 thumbnail: 333612.jpg

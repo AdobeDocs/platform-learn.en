@@ -2,7 +2,7 @@
 title: Create data types
 description: This video shows how to create your own data types in Adobe Experience Platform for use in Experience Data Model (XDM) schemas.
 feature: Schemas
-role: Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7934
 thumbnail: 333537.jpg

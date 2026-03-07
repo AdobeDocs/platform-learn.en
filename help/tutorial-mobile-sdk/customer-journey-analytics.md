@@ -159,12 +159,12 @@ To create your data view:
       | Trigger | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset | Integer | _experience.decisioning.<br/>propositionEventType.trigger | Component Name: `Trigger` |
       | Display | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset | Integer | _experience.decisioning.<br/>propositionEventType.display | Component Name: `Display` |
       | Send | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset | Integer | _experience.decisioning.<br/>propositionEventType.send | Component Name: `Send` |
-      | Interact | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset | Integer | _experience.decisioning.<br/>propositionEventType.interact | Component Name: `Interact` | 
+      | Interact | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset | Integer | _experience.decisioning.<br/>propositionEventType.interact | Component Name: `Interact` |
       | Location Events | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset, ODE DecisionEvents - mobile-and-web-sdk-courses decisioning | String | Event Type | Component Name: `Location Events`<br/><br/>![Include/exclude](assets/cja-dataview-include-exclude.png){zoomable="yes"} |
-      | Product Views | Luma Mobile App Event Dataset | Double | commerce.productViews.value | Component Name: `Product Views` | 
-      | Product Add To Lists | Luma Mobile App Event Dataset | Double | commerce.productListAdds.value | Component Name: `Product Add To Lists` | 
-      | Purchases | Luma Mobile App Event Dataset | Double | commerce.purchases.value | Component Name: `Purchases` | 
-      | Save For Laters | Luma Mobile App Event Dataset | Double | commerce.saveForLaters.value | Component Name: `Save For Laters` | 
+      | Product Views | Luma Mobile App Event Dataset | Double | commerce.productViews.value | Component Name: `Product Views` |
+      | Product Add To Lists | Luma Mobile App Event Dataset | Double | commerce.productListAdds.value | Component Name: `Product Add To Lists` |
+      | Purchases | Luma Mobile App Event Dataset | Double | commerce.purchases.value | Component Name: `Purchases` |
+      | Save For Laters | Luma Mobile App Event Dataset | Double | commerce.saveForLaters.value | Component Name: `Save For Laters` |
       | App Interactions | Luma Mobile App Event Dataset | Double | _techmarketingdemos.appInformation.<br/>appInteraction.appAction.value | Component Name: `App Interactions` |
       | Screen Views | Luma Mobile App Event Dataset | Double | _techmarketingdemos.appInformation.<br/>appStateDetails.screenView.value | Component Name: `Screen Views` |
 
@@ -185,11 +185,11 @@ To create your data view:
       |---|---|---|---|---|
       | City | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset | String | placeContext.geo.city | Component Name: `City` |
       | Event Types | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset, ODE DecisionEvents - mobile-and-web-sdk-courses decisioning | String | eventType | Component Name: `Event Types` |
-      | Decision Option Name | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset, ODE DecisionEvents - mobile-and-web-sdk-courses decisioning | String | _experience.decisioning.<br/>propositions.items.name | Component Name: `Decision Option Name` | 
-      | App Interaction Name | Luma Mobile App Event Dataset | String | _techmarketingdemos.appInformation.<br/>appInteraction.name | Component Name: `App Interaction Name` | 
-      | Screen Name | Luma Mobile App Event Dataset | String | _techmarketingdemos.appInformation.<br/>appStateDetails.screenName | Component Name: `Screen Name` | 
-      | Activity Name | ODE DecisionEvents - mobile-and-web-sdk-courses decisioning | String | _experience.decisioning.<br/>propositionDetails.activity.name | Component Name: `Activity Name` | 
-      | Offer Name | ODE DecisionEvents - mobile-and-web-sdk-courses decisioning | String | _experience.decisioning.<br/>propositionDetails.selections.name | Component Name: `Offer Name` | 
+      | Decision Option Name | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset, ODE DecisionEvents - mobile-and-web-sdk-courses decisioning | String | _experience.decisioning.<br/>propositions.items.name | Component Name: `Decision Option Name` |
+      | App Interaction Name | Luma Mobile App Event Dataset | String | _techmarketingdemos.appInformation.<br/>appInteraction.name | Component Name: `App Interaction Name` |
+      | Screen Name | Luma Mobile App Event Dataset | String | _techmarketingdemos.appInformation.<br/>appStateDetails.screenName | Component Name: `Screen Name` |
+      | Activity Name | ODE DecisionEvents - mobile-and-web-sdk-courses decisioning | String | _experience.decisioning.<br/>propositionDetails.activity.name | Component Name: `Activity Name` |
+      | Offer Name | ODE DecisionEvents - mobile-and-web-sdk-courses decisioning | String | _experience.decisioning.<br/>propositionDetails.selections.name | Component Name: `Offer Name` |
 
       {style="table-layout:auto"}
 

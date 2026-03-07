@@ -2,7 +2,7 @@
 title: Delete datasets and batches
 description: Learn how to delete datasets and batches in Adobe Experience Platform.
 feature: Data Hygiene, Datasets
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate
 doc-type: Feature Video
 duration: 356

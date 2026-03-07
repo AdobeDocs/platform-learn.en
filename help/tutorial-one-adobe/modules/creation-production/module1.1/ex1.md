@@ -241,8 +241,8 @@ The request you'll be using here is a **asynchronous** request, which provides y
 
 Select the request named **POST - Firefly - T2I V3 async** from the **FF - Firefly Services Tech Insiders** collection. Go to **Headers** and verify the key/value pair combinations.
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | `x-api-key`          | `{{API_KEY}}` |
 | `Authorization`          | `Bearer {{ACCESS_TOKEN}}` |
 

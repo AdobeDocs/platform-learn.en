@@ -3,7 +3,7 @@ title: Adobe's Internal Use of AEP - Driving Experience-Led Growth
 description: Learn how Adobe uses AEP internally to unify customer profiles, drive engagement, and scale operations across teams.
 doc-type: Video Clips
 duration: 256
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

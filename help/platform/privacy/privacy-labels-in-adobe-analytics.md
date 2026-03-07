@@ -2,7 +2,7 @@
 title: Labeling Analytics data for privacy requests
 description: Learn the process of adding Data Privacy labels to Analytics variables, including a breakdown of what each label type means and when to use them.
 feature: Privacy
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7718
 thumbnail: 336077.png

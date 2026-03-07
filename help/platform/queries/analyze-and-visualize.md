@@ -2,7 +2,7 @@
 title: Analyze and visualize omni-channel insights in Tableau using Query Service
 description: Learn how you can use Adobe Experience Platform's Query Service with external data visualization tools using a churn analysis example.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate
 jira: KT-10191
 thumbnail: 342115.jpeg

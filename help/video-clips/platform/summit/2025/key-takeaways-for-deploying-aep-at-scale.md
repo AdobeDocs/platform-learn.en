@@ -3,7 +3,7 @@ title: Key Takeaways for Deploying AEP at Scale
 description: Understand the critical considerations for deploying Adobe Experience Platform, including governance, growth planning, and architecture.
 doc-type: Video Clips
 duration: 73
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

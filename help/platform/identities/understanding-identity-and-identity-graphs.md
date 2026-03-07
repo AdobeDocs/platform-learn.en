@@ -2,7 +2,7 @@
 title: Identity and identity graphs overview
 description: Learn about the key capabilities of identity resolution in Adobe Experience Platform&mdash;identity collection, identity graphs, and the APIs. Learn how the Identity Service links disconnected identities to deliver a consistent connected experience by constructing a unified profile.
 feature: Identities
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-3039
 thumbnail: 27841.jpg

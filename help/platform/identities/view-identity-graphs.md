@@ -2,7 +2,7 @@
 title: View Identity Graphs
 description: Learn how to use the identity graph viewer feature to search, explore, and filter identity graphs for validation and debugging. 
 feature: Identities
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-7046
 thumbnail: 331030.jpg

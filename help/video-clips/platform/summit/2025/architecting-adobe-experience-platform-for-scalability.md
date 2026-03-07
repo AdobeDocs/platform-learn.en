@@ -3,7 +3,7 @@ title: Architecting Adobe Experience Platform for Scalability
 description: Learn how to structure Adobe Experience Platform for efficient implementation, balancing centralized and decentralized approaches.
 doc-type: Video Clips
 duration: 177
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

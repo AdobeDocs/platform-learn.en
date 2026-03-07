@@ -54,15 +54,15 @@ Target allows profile synching across devices and systems using a single custome
 | `profile.gender` | `data.__adobe.target.profile.gender` | All Target profile parameters must be passed as part of the `data` object and prefixed with `profile.` to be mapped appropriately. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Reserved parameter used for Target's Category Affinity feature which must be passed as part of the `data` object. |
 | `entity.id` | `data.__adobe.target.entity.id` <br>OR<br> `xdm.productListItems[0].SKU` | Entity IDs are used for Target Recommendations behavioral counters. These entity IDs can either be passed as part of the `data` object or automatically mapped from the first item in the `xdm.productListItems` array if your implementation uses that field group.|
-| `entity.categoryId` | `data.__adobe.target.entity.categoryId` | Entity category IDs can be passed as part of the `data` object. | 
-| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Custom entity parameters are used for updating the Recommendations product catalog. These custom parameters must be passed as part of the `data` object. | 
-| `cartIds` | `data.__adobe.target.cartIds` | Used for Target's cart-based recommendations algorithms. | 
-| `excludedIds` | `data.__adobe.target.excludedIds` | Used to prevent specific entity IDs from returning in a recommendations design. | 
-| `mbox3rdPartyId` | Set in the `xdm.identityMap` object | Used for synching Target profiles across devices and Customer Attributes. The namespace to use for the customer ID must be specified in the [Target configuration of the datastream](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid). | 
-| `orderId` | `xdm.commerce.order.purchaseID`<br> (when `commerce.purchases.value` is set to `1`)<br> or<br> `data.__adobe.target.orderId`| Used for identifying a unique order for Target conversion tracking. | 
-| `orderTotal` | `xdm.commerce.order.priceTotal`<br> (when `commerce.purchases.value` is set to `1`)<br> or<br> `data.__adobe.target.orderTotal` | Used for tracking order totals for Target conversion and optimization goals. | 
-| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (when `commerce.purchases.value` is set to `1`) <br>OR<br> `data.__adobe.target.productPurchasedId` | Used for Target conversion tracking and recommendations algorithms. | 
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Used for the [custom scoring](https://experienceleague.adobe.com/en/docs/target/using/activities/success-metrics/capture-score) activity goal. | 
+| `entity.categoryId` | `data.__adobe.target.entity.categoryId` | Entity category IDs can be passed as part of the `data` object. |
+| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Custom entity parameters are used for updating the Recommendations product catalog. These custom parameters must be passed as part of the `data` object. |
+| `cartIds` | `data.__adobe.target.cartIds` | Used for Target's cart-based recommendations algorithms. |
+| `excludedIds` | `data.__adobe.target.excludedIds` | Used to prevent specific entity IDs from returning in a recommendations design. |
+| `mbox3rdPartyId` | Set in the `xdm.identityMap` object | Used for synching Target profiles across devices and Customer Attributes. The namespace to use for the customer ID must be specified in the [Target configuration of the datastream](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid). |
+| `orderId` | `xdm.commerce.order.purchaseID`<br> (when `commerce.purchases.value` is set to `1`)<br> or<br> `data.__adobe.target.orderId`| Used for identifying a unique order for Target conversion tracking. |
+| `orderTotal` | `xdm.commerce.order.priceTotal`<br> (when `commerce.purchases.value` is set to `1`)<br> or<br> `data.__adobe.target.orderTotal` | Used for tracking order totals for Target conversion and optimization goals. |
+| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (when `commerce.purchases.value` is set to `1`) <br>OR<br> `data.__adobe.target.productPurchasedId` | Used for Target conversion tracking and recommendations algorithms. |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Used for the [custom scoring](https://experienceleague.adobe.com/en/docs/target/using/activities/success-metrics/capture-score) activity goal. |
 
 {style="table-layout:auto"}
 

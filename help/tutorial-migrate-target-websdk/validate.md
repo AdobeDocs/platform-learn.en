@@ -21,10 +21,10 @@ Every Target implementation is different depending on site architecture and feat
 |---|---|
 | The at.js prehiding snippet is no longer present on the page | The Platform Web SDK does not automatically remove the style with ID `at-body-style`. Leaving this old snippet on the page results in hidden content until the snippet timeout is reached. |
 | The at.js library is no longer present on the page | Check that there is no "adobe.target" object in your browser's developer tools console. Including both Platform Web SDK and at.js results in unintended rendering behavior |
-| Expected parameters are in the XDM and data objects of the `sendEvent` request | | 
+| Expected parameters are in the XDM and data objects of the `sendEvent` request | |
 | Recommendations catalog is updated as expected if using page requests to populate the catalog | |
 | Profile parameters are successfully passed to Target | View Edge traces in the Debugger |
-| Parameters mapped to XDM in the datastream mapper are passed correctly to Target | Validate using the Edge Trace feature of the Debugger and/or Assurance | 
+| Parameters mapped to XDM in the datastream mapper are passed correctly to Target | Validate using the Edge Trace feature of the Debugger and/or Assurance |
 | Target content returns in the applicable `sendEvent` responses | Expected when `renderDecisions` option is set to `true` or scopes are requested and the user qualifies for a particular Target activity |
 | A `decisioning.propositionDisplay` event fires after VEC-based activities render | Activities rendered automatically and on-demand are expected to have separate event calls |
 | A `decisioning.propositionDisplay` event fires after form-based activities render | Only applicable for certain implementations. Requires custom code to execute this call. |
@@ -65,7 +65,7 @@ Every Target implementation is different depending on site architecture and feat
 |---|---|
 | Audiences used in live activities are compatible with Platform Web SDK | Audiences that use the "Custom" (mbox parameter) component must be updated to include XDM attributes |
 | All profile scripts are compatible with Platform Web SDK | Any profile scripts that use mbox parameters must be updated to include XDM attributes |
-| Activities return for Target audiences | It's best to perform end-to-end validation on audiences you modify to make compatible with Platform Web SDK |  
+| Activities return for Target audiences | It's best to perform end-to-end validation on audiences you modify to make compatible with Platform Web SDK |
 | Profile scripts evaluate as expected | View Edge traces in the Debugger |
 
 ## Integrations with Adobe applications
@@ -73,7 +73,7 @@ Every Target implementation is different depending on site architecture and feat
 | Validation item | Notes |
 |---|---|
 | Activities return for Experience Cloud audiences | For example, a segment published from Adobe Analytics |
-| Activities return for Experience Platform audiences | Only applies if you have a license for an Experience Platform-based application like RTCDP |  
+| Activities return for Experience Platform audiences | Only applies if you have a license for an Experience Platform-based application like RTCDP |
 | Activities return for Audience Manager audiences | For example, a segment based on visiting a specific page |
 | Target activity data displays in Analysis Workspace | Applies to activities that use Adobe Analytics as the reporting source |
 

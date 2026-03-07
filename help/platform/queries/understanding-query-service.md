@@ -2,7 +2,7 @@
 title: Query Service and Data Distiller overview
 description: Adobe Experience Platform Query Service enables users to explore, validate, and transform customer experience data stored in the data lake using SQL, with enhanced capabilities like data output and scheduling available through the Data Distiller add-on. This video provides an overview of core features to help users understand how to leverage Query Service across various Platform-based applications.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-3139
 last-substantial-update: 2025-06-23

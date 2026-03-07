@@ -2,7 +2,7 @@
 title: Set up customer-managed keys (CMK)
 description: Manage data-at-rest encryption using your own encryption keys.
 feature: Privacy
-role: Admin, Data Architect, Data Engineer, Developer
+role: Admin, Developer, Developer
 level: Experienced
 jira: KT-11382
 thumbnail: 3410673.jpeg

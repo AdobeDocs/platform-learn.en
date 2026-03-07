@@ -3,7 +3,7 @@ title: Map identities
 seo-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Map identities
 description: In this lesson, we will create identity namespaces and add identity fields to our schemas.
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
@@ -54,11 +54,11 @@ Let's start by creating a namespace for the Luma Loyalty Schema:
 1. You will notice that there are several out-of-the-box identity namespaces available. Select the **[!UICONTROL Create identity namespace]** button
 1. Provide details as following
    
-    | Field         |  Value    |  
+    | Field         |  Value    |
     |---------------|-----------|
-    | Display name  | Luma Loyalty Id    | 
-    | Identity symbol| lumaLoyaltyId    |  
-    | Type           | Cross-Device      |  
+    | Display name  | Luma Loyalty Id    |
+    | Identity symbol| lumaLoyaltyId    |
+    | Type           | Cross-Device      |
 
 1. Select **[!UICONTROL Create]**
 
@@ -66,11 +66,11 @@ Let's start by creating a namespace for the Luma Loyalty Schema:
 
 Now set up another namespace for the Luma Product Catalog Schema with the following details:
    
-| Field         |  Value    |  
+| Field         |  Value    |
 |---------------|-----------|
-| Display name  | Luma Product SKU   | 
-| Identity symbol| lumaProductSKU    |  
-| Type           | Non-people identifier      |  
+| Display name  | Luma Product SKU   |
+| Identity symbol| lumaProductSKU    |
+| Type           | Non-people identifier      |
 
 
 

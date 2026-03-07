@@ -28,7 +28,7 @@ So far you only have the first one, the **Project ID**. This **Project ID** valu
 
 Please copy project id in a separated text file.
 
-| Credential         | Naming| Example|   
+| Credential         | Naming| Example|
 | ----------------- |-------------| -------------|
 | Project ID | random | possible-bee-447102-h3 |
 
@@ -62,9 +62,9 @@ You'll now see the **Google Auth Platform** homepage. Click **GET STARTED**.
 
 For the **App name**, use this:
 
-| Naming         | Example|    
-| ----------------- |-------------| 
-| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery Connector | 
+| Naming         | Example|
+| ----------------- |-------------|
+| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery Connector |
 
 Seledct your email address for the field **User support email**.
 
@@ -102,8 +102,8 @@ Several new fields will pop up. You now need to enter the **Name** of the OAuth 
 
 FOr the field **Name**, use this:
 
-| Field         | Value  | Example  |   
-| ----------------- |-------------| -------------| 
+| Field         | Value  | Example  |
+| ----------------- |-------------| -------------|
 | Name | ldap - AEP BigQuery Connector  |  vangeluw - Platform BigQuery Connector  |
 
 ![demo](./images/ex2122.png)
@@ -111,9 +111,9 @@ FOr the field **Name**, use this:
 
 Click **+ ADD URI** under **Authorised redirect URIs**. Add the below new URI. 
 
-| Field         | Value  |   
-| ----------------- |-------------| 
-| Authorised redirect URIs | https://developers.google.com/oauthplayground | 
+| Field         | Value  |
+| ----------------- |-------------|
+| Authorised redirect URIs | https://developers.google.com/oauthplayground |
 
 The **Authorised redirect URIs** field is a very important field because you'll need it later to get the RefreshToken you need to finish the setup of the BigQuery Source Connector in Adobe Experience Platform.
 
@@ -131,10 +131,10 @@ Please copy these two fields and paste them in a text file on your desktop. You 
 
 As recap for your BigQuery Source Connector setup in Adobe Experience Platform, you now have these values already available:
 
-| BigQuery Connector Credentials         | Value |  
-| ----------------- |-------------| 
-| Project ID | your own Project ID (ex.: possible-bee-447102-h3)| 
-| clientid | yourclientid| 
+| BigQuery Connector Credentials         | Value |
+| ----------------- |-------------|
+| Project ID | your own Project ID (ex.: possible-bee-447102-h3)|
+| clientid | yourclientid|
 | cilentsecret | yourclientsecret |
 
 ![demo](./images/ex2200.png)
@@ -170,10 +170,10 @@ Two fields will appear.
 
 Please fill the fields following this table:
 
-| Playground API settings         | Your Google API credentials |  
-| ----------------- |-------------| 
-| OAuth Client ID | your own Client ID (in the text file on your desktop) | 
-| OAuth Client Secret | your own Client Secret (in the text file on your desktop) | 
+| Playground API settings         | Your Google API credentials |
+| ----------------- |-------------|
+| OAuth Client ID | your own Client ID (in the text file on your desktop) |
+| OAuth Client Secret | your own Client Secret (in the text file on your desktop) |
 
 Once you've fill out your credentials, please click **Close**.
 
@@ -227,12 +227,12 @@ You'll now see the **Refresh token**.
 
 Copy the **Refresh token** and paste it in the text file on your desktop along with the other BigQuery Source Connector Credentials:
 
-| BigQuery Source Connector Credentials         | Value |  
-| ----------------- |-------------| 
-| Project ID | your own random Project ID (ex.: apt-summer-273608)| 
-| clientid | yourclientid| 
-| cilentsecret | yourclientsecret | 
-| refreshtoken | yourrefreshtoken | 
+| BigQuery Source Connector Credentials         | Value |
+| ----------------- |-------------|
+| Project ID | your own random Project ID (ex.: apt-summer-273608)|
+| clientid | yourclientid|
+| cilentsecret | yourclientsecret |
+| refreshtoken | yourrefreshtoken |
 
 Next, let's setup your Source Connector in Adobe Experience Platform.
 
@@ -262,10 +262,10 @@ Let's start by naming the connection:
 
 Please use this naming convention:
 
-| BigQuery Connector Credentials         | Value  | Example  |   
-| ----------------- |-------------| -------------| 
+| BigQuery Connector Credentials         | Value  | Example  |
+| ----------------- |-------------| -------------|
 | Account Name | `--aepUserLdap-- - BigQuery Connection`  |  vangeluw - BigQuery Connection  |
-| Description | `--aepUserLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection  | 
+| Description | `--aepUserLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection  |
 
 You'll then have this:
 
@@ -273,12 +273,12 @@ You'll then have this:
 
 Next, fill out the GCP and BigQuery API **Account Authentication**-details that you stored in a text-file on your desktop:
 
-| BigQuery Connector Credentials         | Value |  
-| ----------------- |-------------| 
-| Project ID | your own random Project ID (ex.: possible-bee-447102-h3)| 
-| clientId | ...| 
-| cilentSecret | ... | 
-| refreshToken | ... | 
+| BigQuery Connector Credentials         | Value |
+| ----------------- |-------------|
+| Project ID | your own random Project ID (ex.: possible-bee-447102-h3)|
+| clientId | ...|
+| cilentSecret | ... |
+| refreshToken | ... |
 
 Your **Account Authentication**-details should now look like this. Click **Connect to source**.
 

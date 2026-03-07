@@ -3,7 +3,7 @@ title: Build segments
 seo-title: Build segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Build segments
 description: In this lesson, we will build some segments based on the profile data we have ingested in the previous lessons.
-role: Data Architect
+role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg

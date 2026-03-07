@@ -2,7 +2,7 @@
 title: Create schema field groups
 description: This video shows how to create schema field groups in Adobe Experience Platform. Schema field groups are reusable components that define most fields in Experience Data Model (XDM) schemas. 
 feature: Schemas
-role: Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-2698
 thumbnail: 27013.jpg

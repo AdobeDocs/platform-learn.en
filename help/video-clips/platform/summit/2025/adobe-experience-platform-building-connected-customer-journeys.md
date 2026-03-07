@@ -3,7 +3,7 @@ title: Adobe Experience Platform - Building Connected Customer Journeys
 description: Discover how Adobe Experience Platform enables connected customer journeys through data, content, and cross-channel activation.
 doc-type: Video Clips
 duration: 52
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

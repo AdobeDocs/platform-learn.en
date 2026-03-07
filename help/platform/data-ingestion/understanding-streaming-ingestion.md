@@ -2,7 +2,7 @@
 title: Streaming data ingestion overview
 description: Using Experience Platform's streaming ingestion you can be sure that any data you send will be available in the Real-Time Customer Profile. This data can be captured from CRM and ERP systems or from any other source which is able to communicate over HTTP or public cloud streaming infrastructure.
 feature: Data Ingestion
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-2711
 thumbnail: 28425.jpg

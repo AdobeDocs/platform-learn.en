@@ -4,7 +4,7 @@ description: Learn how to use the Audience Manager data connector to bring trait
 feature: Sources
 topic: Integrations
 badgeIntegration: label="Integration" type="positive"
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111

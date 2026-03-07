@@ -2,7 +2,7 @@
 title: Enforce consent
 description: Learn how to enforce consent
 feature: Consent
-role: User, Developer, Data Architect, Admin
+role: User, Developer, Admin
 level: Beginner
 jira: KT-10362
 thumbnail: 345677.jpeg

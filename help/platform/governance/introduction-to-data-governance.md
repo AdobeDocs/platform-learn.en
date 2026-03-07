@@ -2,7 +2,7 @@
 title: Data governance end-to-end demo
 description: Learn how Adobe Experience Platform's Data Governance capabilities and how it helps brands deliver personalized experiences to their customers while providing complete control over customer data.
 feature: Data Governance
-role: User, Developer, Data Architect, Admin
+role: User, Developer, Admin
 level: Beginner
 jira: KT-5802
 thumbnail: 36653.jpg

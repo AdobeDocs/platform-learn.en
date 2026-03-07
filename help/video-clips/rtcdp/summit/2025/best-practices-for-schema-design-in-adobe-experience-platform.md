@@ -3,7 +3,7 @@ title: Best Practices for Schema Design in Adobe Experience Platform
 description: Avoid costly mistakes in schema design with these best practices for extensibility, validation, and alignment with Adobe Experience Platform's data model.
 doc-type: Video Clips
 duration: 261
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

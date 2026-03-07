@@ -3,7 +3,7 @@ title: Create a federated audience
 seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Create a federated audience
 description: In this exercise, we create an audience from the Snowflake data warehouse using Federated Audience Composition.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
