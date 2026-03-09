@@ -8,6 +8,7 @@ level: Beginner
 last-substantial-update: 2025-03-09
 jira: KT-20299
 hide: no
+exl-id: fdf0d808-377e-4f72-bf55-94e52b69ebe8
 ---
 # Monitor AI credit usage
 
