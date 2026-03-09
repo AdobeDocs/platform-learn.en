@@ -41,6 +41,9 @@ In this exercise, you'll explore **Discovery Agent** and **Experience Production
 
 In this exercise, you'll connect your Cursor environment to AEM using the AEM MCP Server. 
 
+[1.6.3 Scale Content Fragments with ChatGPT & MCP Server](./ex3.md)
+
+In this exercise, you'll create, manage and translate COntent Fragments using ChatGPT and custom MCP server functionality. 
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
