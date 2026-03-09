@@ -26,7 +26,7 @@ Enter the name: `Final Deliverables` and hit **enter**. This folder will be used
 
 ![WF](./images/wffio3.png)
 
-## 1.8.2.2 Create a new asset with Adobe Firefly Services and Adobe Express
+## 1.8.2.2 Create a new asset with Adobe Firefly and Adobe Express
 
 >[!NOTE]
 >

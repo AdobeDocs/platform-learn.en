@@ -204,6 +204,8 @@ You should then see something like this.
 
 ## Next Steps
 
+Go to [1.6.3 Scale Content Fragments with ChatGPT & MCP Server](./ex3.md){target="_blank"}
+
 Go Back to [AEM & Agents](./aemagents.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}
