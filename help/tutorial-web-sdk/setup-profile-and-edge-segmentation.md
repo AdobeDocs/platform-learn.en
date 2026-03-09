@@ -2,6 +2,7 @@
 title: Real-time Customer Profile and Edge segmentation
 description: Learn how to enable streaming data for Profile and build edge segmentation. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 jira: KT-15407
+exl-id: 48031924-054c-4a0a-b600-3809e6de30ec
 ---
 # Real-time Customer Profiles and Edge segmentation
 
