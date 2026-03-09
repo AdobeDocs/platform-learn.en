@@ -99,6 +99,7 @@ Campaigns
   + [Find unused audiences](/help/platform/ai-assistant/find-unused-audiences.md)
   + [Operational insights](/help/platform/ai-assistant/operational-insights.md)
   + [Impact analysis](/help/platform/ai-assistant/impact-analysis.md)
+  + [AI credits](/help/platform/ai-assistant/ai-credits.md)
   + [Security overview](/help/platform/ai-assistant/security-overview.md)
 + APIs {#api}
   + [Authenticate to Experience Platform APIs](/help/platform/api/platform-api-authentication.md)
