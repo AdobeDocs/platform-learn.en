@@ -2,7 +2,7 @@
 title: Sources overview
 description: Learn how to easily ingest data from Adobe, first-party, and third-party applications into Platform's Real-Time Customer Profile and data lake.
 feature: Sources
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-3800
 thumbnail: 29694.jpg

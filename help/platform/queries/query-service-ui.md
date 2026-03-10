@@ -2,7 +2,7 @@
 title: Query Service UI
 description: Learn how to write and execute queries, view previously executed queries, and access queries saved by others users within your IMS Organization in Adobe Experience Platform Query Service.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-7680
 thumbnail: 333403.jpg

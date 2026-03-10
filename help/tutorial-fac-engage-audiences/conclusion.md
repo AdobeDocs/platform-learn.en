@@ -3,7 +3,7 @@ title: Conclusion
 seo-title: Conclusion | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Conclusion
 description: In conclusion, we summarize learnings and key takeaways.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 exl-id: 19f3065a-c439-44b6-9888-664c9a5cb33c
 ---

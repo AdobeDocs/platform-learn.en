@@ -3,6 +3,7 @@ title: Adobe Analytics & Claude.ai with MCP server
 description: Adobe Analytics & Claude.ai with MCP server
 kt: 5342
 doc-type: tutorial
+exl-id: f821898d-b5d1-4de9-94ff-19b8aa81fe67
 ---
 # 1.5.3 Adobe Analytics & Claude.ai with MCP server
 

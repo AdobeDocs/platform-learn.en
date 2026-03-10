@@ -2,7 +2,7 @@
 title: Schema building blocks
 description: This video reviews the key building block elements of Experience Data Model (XDM) schemas, including fields, datatypes, schema field groups, classes, and behavior.
 feature: Schemas
-role: Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7937
 thumbnail: 333469.jpg

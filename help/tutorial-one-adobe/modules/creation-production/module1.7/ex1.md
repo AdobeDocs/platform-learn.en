@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 7d9ad7ec-7744-4ba6-9c11-c434e6cdef09
 ---
 # 1.7.1 Getting started with Firefly Custom Workflows
 

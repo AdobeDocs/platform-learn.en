@@ -26,7 +26,7 @@ The migration process involves the following key steps:
 > * **Optimize SDK** implements the **Offer Decisioning and Target extension**
 
 
-Next, review the detailed [comparison of the Target extension and the Offer Decisioning and Target extension](detailed-comparison.md) to gain a better understanding of the technical differences and identify areas requiring additional focus. 
+Next, review the detailed <!--[comparison of the Target extension and the Offer Decisioning and Target extension](detailed-comparison.md)--> to gain a better understanding of the technical differences and identify areas requiring additional focus. 
 
 >[!NOTE]
 >

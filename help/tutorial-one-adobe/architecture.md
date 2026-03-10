@@ -2,6 +2,7 @@
 title: One Adobe Tutorial - Architecture Overview
 description: One Adobe Tutorial - Architecture Overview
 doc-type: multipage-overview
+exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
 ---
 # One Adobe Tutorial - Architecture Overview
 

@@ -2,7 +2,7 @@
 title: Pseudonymous profile and Experience Event expirations
 description: Learn how to configure expiration settings for pseudonymous profiles and events in Experience Platform and the benefits.
 feature: Data Hygiene
-role: Admin, Data Engineer, Data Architect
+role: Admin, Developer
 level: Beginner
 jira: KT-15319
 thumbnail: 3428361.jpeg

@@ -203,10 +203,10 @@ After a couple of seconds, you should see a response displayed in the **Body** s
 
 If your configuration was successful, you should see a similar response that contains the following information:
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | token_type          | **bearer** |
-| access_token    | **eyJhbGciOiJSU...jrNZ6mdaQ** | 
+| access_token    | **eyJhbGciOiJSU...jrNZ6mdaQ** |
 | expires_in          | **86399** |
 
 Adobe I/O has given you a **bearer**-token, with a specific value (the very long access_token) and an expiration window.
@@ -228,17 +228,17 @@ In **1. Unified Profile Service**, click the first request with the name **UPS -
 For this request, there are three required variables:
 
 | Key     | Value     | Definition |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | entityId          | **id** | the specific customer ID |
 | entityIdNS    | **namespace** | the specific namespace that is applicable to the ID |
 | schema.name          | **_xdm.context.profile** | the specific schema for which you want to receive information |
 
 So, if you want to ask Adobe Experience Platform's APIs to give you back all Profile information for your own ECID, you will need to configure the request as follows:
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | entityId          | **yourECID** |
-| entityIdNS    | **ecid** | 
+| entityIdNS    | **ecid** |
 | schema.name          | **_xdm.context.profile** |
 
 ![Postman](./images/callecid.png)
@@ -391,10 +391,10 @@ Let's go back to Postman and pretend we're the call center, and send a request t
 
 So, if you want to ask Platform's APIs to give you back all Profile information for a specific Phone, you will need to configure the request as follows:
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | entityId          | **your phone number** |
-| entityIdNS    | **phone** (replace ecid by phone) | 
+| entityIdNS    | **phone** (replace ecid by phone) |
 | schema.name          | **_xdm.context.profile** |
 
 If your phone number contains special symbols like **+**, you have to select your full phone number, do a right-click and click **EncodeURIComponent**.
@@ -426,10 +426,10 @@ Let's do the same thing for your email address by specifying the namespace of **
 
 So, if you want to ask Platform's APIs to give you back all Profile information for a specific email address, you will need to configure the request as follows:
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | entityId          | **youremail** |
-| entityIdNS    | **email** (replace Phone with email) | 
+| entityIdNS    | **email** (replace Phone with email) |
 | schema.name          | **_xdm.context.profile** |
 
 If your email address contains special symbols like **+**, you have to select your full email address, do a right-click and click **EncodeURIComponent**.
@@ -480,21 +480,21 @@ In **1. Unified Profile Service**, select the second request with the name **UPS
 
 For this request, there are four required variables:
 
-| Key     | Value     | Definition | 
-|:-------------:| :---------------:|  :---------------:| 
-| schema.name          | **_xdm.context.experienceevent** | the specific schema for which you want to receive information. In this case, we're looking for data that is mapped against the ExperienceEvent schema. | 
+| Key     | Value     | Definition |
+|:-------------:| :---------------:|  :---------------:|
+| schema.name          | **_xdm.context.experienceevent** | the specific schema for which you want to receive information. In this case, we're looking for data that is mapped against the ExperienceEvent schema. |
 | relatedSchema.name          | **_xdm.context.profile** | While we're looking for data that is mapped against the ExperienceEvent schema, we need to specify an identity for which we want to receive that data. The schema that has access to identity is the Profile-schema, so the relatedSchema here is the Profile-schema. |
 | relatedEntityId          | **id** | the specific customer I D|
-| relatedEntityIdNS    | **namespace** | the specific namespace that is applicable to the ID | 
+| relatedEntityIdNS    | **namespace** | the specific namespace that is applicable to the ID |
 
 So, if you want to ask Platform's APIs to give you back all Profile information for your own ecid, you will need to configure the request as follows:
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | schema.name          | **_xdm.context.experienceevent** |
 | relatedSchema.name          | **_xdm.context.profile** |
 | relatedEntityId          | **yourECID** |
-| relatedEntityIdNS    | **ecid** | 
+| relatedEntityIdNS    | **ecid** |
 
 ![Postman](./images/eecallecid.png)
 

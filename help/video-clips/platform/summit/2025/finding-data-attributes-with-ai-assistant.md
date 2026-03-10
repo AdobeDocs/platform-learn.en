@@ -3,7 +3,7 @@ title: Finding Data Attributes with AI Assistant
 description: See how AI Assistant helps users quickly locate data attributes and XDM fields, saving hours of manual effort.
 doc-type: Video Clips
 duration: 103
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

@@ -99,6 +99,7 @@ Campaigns
   + [Find unused audiences](/help/platform/ai-assistant/find-unused-audiences.md)
   + [Operational insights](/help/platform/ai-assistant/operational-insights.md)
   + [Impact analysis](/help/platform/ai-assistant/impact-analysis.md)
+  + [AI credits](/help/platform/ai-assistant/ai-credits.md)
   + [Security overview](/help/platform/ai-assistant/security-overview.md)
 + APIs {#api}
   + [Authenticate to Experience Platform APIs](/help/platform/api/platform-api-authentication.md)
@@ -200,6 +201,8 @@ Campaigns
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
   + [Configure a social destination](/help/platform/destinations/configure-a-social-destination.md)
   + [Activate through LiveRamp destinations](/help/platform/destinations/liveramp-destinations.md)
+  + Data Warehouse {#data-warehouse}
+    + [Send audience data to Snowflake data share-batch](/help/platform/destinations/data-warehouse/send-audience-data-snowflake-batch.md)
   + Adobe Target and Custom Personalization{#target}
     + [Next-hit personalization with Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
     + [Configure the Adobe Target destination](/help/platform/destinations/target/configure-the-target-destination.md)
@@ -230,6 +233,7 @@ Campaigns
   + [Monitor segment activation](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
   + [Monitor dataflows](/help/platform/monitoring/data-monitoring.md)
   + [Streaming capacity management](monitoring/streaming-management.md)
+  + [Integrate with Slack](monitoring/monitor-events-in-slack.md)
 + Partner data support {#partner-data-support}
   + [Partner data support overview](/help/platform/partner-data-support/partner-data-support-overview.md)
   + [Support offsite prospecting](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)

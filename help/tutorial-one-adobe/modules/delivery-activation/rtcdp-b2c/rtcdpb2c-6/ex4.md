@@ -192,7 +192,7 @@ You should then have something like this:
 
 ![Kafka](./images/kc21.png)
 
-Next, copy your full experience event to your clipboard. The whitespace of your JSON payload needs to be stripped and we'll use an online tool to do that. Go to [http://jsonviewer.stack.hu/](http://jsonviewer.stack.hu/) to do that.
+Next, copy your full experience event to your clipboard. The whitespace of your JSON payload needs to be stripped and we'll use an online tool to do that. Go to [https://jsonviewer.stack.hu/](https://jsonviewer.stack.hu/) to do that.
 
 Paste your experience event into the editor and click **Remove white space**.
 

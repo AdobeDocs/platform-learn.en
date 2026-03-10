@@ -3,7 +3,7 @@ title: Create datasets
 seo-title: Create datasets | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Create datasets
 description: In this lesson, you will create datasets to receive your data.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg

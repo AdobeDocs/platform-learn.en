@@ -2,7 +2,7 @@
 title: Using the Privacy Service API
 description: Learn how to make calls to API endpoints, including lists and lookups, creating a job request, and creating a consent request.
 feature: Privacy
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-8189
 thumbnail: 336080.png

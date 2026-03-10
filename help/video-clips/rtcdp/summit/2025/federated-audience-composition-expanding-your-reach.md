@@ -3,7 +3,7 @@ title: Federated Audience Composition - Expanding Your Reach
 description: Understand how Federated Audience Composition enables real-time marketing by integrating external data sources into Real-Time CDP.
 doc-type: Video Clips
 duration: 88
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

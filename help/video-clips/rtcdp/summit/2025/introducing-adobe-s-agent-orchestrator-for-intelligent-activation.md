@@ -3,7 +3,7 @@ title: Introducing Adobe's Agent Orchestrator for Intelligent Activation
 description: Learn about the next era of GenAI innovation with Adobe's Agent Orchestrator, enabling real-time, hyper-personalized customer experiences.
 doc-type: Video Clips
 duration: 68
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

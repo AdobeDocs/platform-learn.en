@@ -3,7 +3,7 @@ title: Deliver "in-the moment" personalization using Edge Network
 seo-title: Deliver "in-the moment" personalization using Edge Network | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Deliver "in-the moment" personalization using Edge Network
 description: In this exercise, the federated audience is evaluated on the Edge for instant "in-the-moment" retargeting.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-drive-in-the-moment-personalization.jpg
 exl-id: 20bfafb1-1d1b-48d8-84eb-97d4c9e03b76

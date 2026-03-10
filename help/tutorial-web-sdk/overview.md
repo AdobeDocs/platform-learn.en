@@ -12,10 +12,10 @@ Experience Platform Web SDK is a client-side JavaScript library that allows cust
 
 ![Experience Platform Web SDK architecture](assets/dc-websdk.png)
 
-This tutorial guides you through the implementation of the Platform Web SDK on a sample retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that lets you build a realistic implementation. For this tutorial, you:
+This tutorial guides you through the implementation of the Platform Web SDK on a sample retail website called Luma. The [Luma site](https://luma.enablementadobe.com) has a rich data layer and functionality that lets you build a realistic implementation. In this tutorial, you:
 
 * Create your own tags property, in your own account, with a Platform Web SDK implementation for the Luma website.
-* Configure all data collection features for Web SDK implementations such as datastreams, schemas, and identity namespaces.
+* Configure major data collection features used in Web SDK implementations such as datastreams, schemas, and identity namespaces.
 * Add the following Adobe Experience Cloud applications:
   * **[Adobe Experience Platform](setup-experience-platform.md)** (and applications built on Platform such as Adobe Real-Time Customer Data Platform, Adobe Journey Optimizer, and Adobe Customer Journey Analytics)
   * **[Adobe Analytics](setup-analytics.md)**
@@ -29,13 +29,13 @@ After completing this tutorial, you should be ready to start implementing all of
 
 >[!NOTE]
 >
->A similar multi-solution tutorial is available for [Mobile SDK](../tutorial-mobile-sdk/overview.md).
+>A similar tutorial is also available for [Mobile SDK](../tutorial-mobile-sdk/overview.md).
 
 ## Prerequisites
 
 All Experience Cloud customers can use Platform Web SDK. It is not a requirement to license a Platform-based application like Real-Time Customer Data Platform or Journey Optimizer to use Web SDK.
 
-In these lessons, it is assumed that you have an Adobe account and the required permissions to complete the lessons. If not, you must reach out to an Experience Cloud Administrator at your company to obtain access.
+In these lessons, it is assumed that you have an Adobe user account and the required permissions to complete the lessons. If not, you must reach out to an Experience Cloud Administrator at your company to obtain access.
 
 * For **Data Collection**, you must have:
   * **[!UICONTROL Platforms]**&mdash;permission for **[!UICONTROL Web]** and, if licensed, **[!UICONTROL Edge]**
@@ -58,6 +58,12 @@ In these lessons, it is assumed that you have an Adobe account and the required 
 
     For more information on Platform access control, see [the documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).  
 
+* For the optional **Journey Optimizer** lesson, you must have permission items to **[!UICONTROL Manage campaigns]**, **[!UICONTROL Publish campaigns]**, and **[!UICONTROL View campaigns report]**.
+  <!--
+  * For the optional **Decisioning** lesson, you must have permission items to **[!UICONTROL Manage decisions]**, **[!UICONTROL View decisions]**, **[!UICONTROL Manage offers]**, **[!UICONTROL Manage ranking strategies]**.
+  * See the documentation for more information on [Journey Optimizer permission configuration](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#campaign-capability).
+  -->
+
 * For the optional **Adobe Analytics** lesson, you must have [admin access to Report Suite Settings, Processing Rules, and Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 * For the optional **Adobe Target** lesson, you must have [Editor or Approver](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) access.
@@ -71,16 +77,19 @@ In these lessons, it is assumed that you have an Adobe account and the required 
 
 ## Updates
 
+* February 27, 2026: New Luma website with an event-driven data layer.
 * April 24, 2024: Major updates including addition of Set Variable/Update Variable, split personalization and analytics requests, Journey Optimizer lessons
 
 ## Load the Luma website
 
-Load the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} in a separate browser tab and bookmark it so you can easily load it whenever needed during the tutorial. You do not require any additional access to Luma other than being able to load our hosted, production site.
 
-[![Luma website](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} 
 
-Let's get started!
+Load the [Luma website](https://luma.enablementadobe.com){target="blank"} in a separate browser tab and bookmark it so you can easily load it whenever needed during the tutorial. You do not require any additional access to Luma other than being able to load our hosted, production site.
+
+[![Luma website](assets/overview-luma.png)](https://luma.enablementadobe.com){target="blank"} 
+
+Let's get started! Next: [Create an XDM schema for web data](configure-schemas.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

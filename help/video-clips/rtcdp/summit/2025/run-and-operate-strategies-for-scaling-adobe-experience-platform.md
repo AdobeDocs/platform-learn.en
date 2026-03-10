@@ -3,7 +3,7 @@ title: Run and Operate Strategies for Scaling Adobe Experience Platform
 description: Learn how Adobe ensures scalable and reliable operations for AEP with clear processes and tooling strategies.
 doc-type: Video Clips
 duration: 135
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

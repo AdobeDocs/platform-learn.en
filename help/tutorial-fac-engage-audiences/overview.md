@@ -2,7 +2,7 @@
 title: Engage with Audiences Using Federated Audience Composition
 description: Learn about Federated Audience Composition (FAC) and how it enables data architects and data engineers to curate and activate high-value audiences directly from supported data warehouses.
 breadcrumb-title: Overview
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-overview.jpg
 recommendations: catalog, noDisplay

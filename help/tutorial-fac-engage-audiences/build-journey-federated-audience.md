@@ -3,7 +3,7 @@ title: Build a journey with a Federated Audience
 seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Build a journey with a Federated Audience
 description: In this exercise, a federated audience is used in a Journey Optimizer journey.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0

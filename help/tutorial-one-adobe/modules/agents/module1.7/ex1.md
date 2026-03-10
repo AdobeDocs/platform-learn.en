@@ -3,6 +3,7 @@ title: Setting up your development environment
 description: Setting up your development environment
 kt: 5342
 doc-type: tutorial
+exl-id: c9bfb327-362f-4475-89da-8e9788940d56
 ---
 # 1.7.1 Setting up your development environment
 

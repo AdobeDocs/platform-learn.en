@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: ebd87a10-b96c-4543-82d7-ee924d4f4109
 ---
 # 1.8 Unified Review & Approval with Workfront, Frame.io and Enterprise Storage Management
 

@@ -73,9 +73,9 @@ What are the top 5 products viewed?
 
 Remember to save project every now and then.
 
-|  OS        | Short cut   | 
-| ----------------- |-------------| 
-| Windows | Control + S          | 
+|  OS        | Short cut   |
+| ----------------- |-------------|
+| Windows | Control + S          |
 | Mac | Command + S          |
 
 Let's start finding the top 5 products viewed. In the left side menu, find the **Product Name** - Dimension.
@@ -234,9 +234,9 @@ Let's first segment the data to get only users with **positive** calls. In CJA, 
 
 Inside the Filter builder, give a name to the filter
 
-|  Name        | Description    | 
-| ----------------- |-------------| 
-| Call Feeling - Positive | Call Feeling - Positive          | 
+|  Name        | Description    |
+| ----------------- |-------------|
+| Call Feeling - Positive | Call Feeling - Positive          |
 
 ![demo](./images/pro47.png)
 

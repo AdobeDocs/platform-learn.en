@@ -3,7 +3,7 @@ title: Ingest streaming data
 seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Ingest streaming data
 description: In this lesson, you will stream data into Experience Platform using the Web SDK.
-role: Data Engineer
+role: Developer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
@@ -15,11 +15,18 @@ exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 
 In this lesson, you will stream data using the Adobe Experience Platform Web SDK.
 
+Other common ways to stream data into Platform 
+
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 There are two main tasks we must complete in the Data Collection interface:
 
-* We must implement Web SDK on the Luma website to send data about visitor activity from the website to the Adobe Edge network. We will do a simple implementation using tags (formerly Launch)
+* We must implement Web SDK on the Luma website to send data about visitor activity from the website to the Experience Platform Edge network. We will do a simple implementation using tags (formerly Launch)
 
-* We must configure a datastream, which tells the Edge network where to forward the data. We will configure it to send the data to our `Luma Web Events` dataset in our Platform sandbox.
+* We must configure a datastream, which tells the Edge network where to forward the data. We will configure it to send the data to the `Luma Web Events` dataset in our Platform sandbox.
 
 **Data Engineers** will need to ingest streaming data outside of this tutorial. When implementing Adobe Experience Platform's Web or Mobile SDKs, typically a web or mobile developer is involved in the data layer creation and tag property configuration.
 
@@ -31,7 +38,7 @@ Before you begin the exercises, watch these two short videos to learn more about
 
 >[!NOTE]
 >
->While this tutorial focuses on streaming ingestion from websites with Web SDK, you can also stream data using the [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect), and other mechanisms.
+>While this tutorial focuses on streaming ingestion from websites with Web SDK, you can also stream data using the [Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview), and the [HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Permissions required
 
@@ -72,7 +79,9 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
 ## Configure the datastream
 
-First we will configure the datastream. A datastream tells the Adobe Edge network where to send the data after receiving it from the Web SDK call. For example, do you want to send the data to Experience Platform, Adobe Analytics, or Adobe Target? Datastreams are managed in the Data Collection user interface (formerly Launch) and are critical to data collection with Web SDK.
+First we will configure the datastream. A datastream tells Experience Platform Edge Network where to send the data after receiving it from the Web SDK call. For example, do you want to send the data to Experience Platform, Adobe Analytics, or Adobe Target? Datastreams are managed in the Data Collection user interface (formerly Launch) and are critical to data collection with Web SDK.
+
+![Web SDK, datastreams, and Edge Network diagram](assets/dc-websdk-datastreams.png)
 
 To create your [!UICONTROL datastream]:
 
@@ -254,7 +263,7 @@ If you've never used the Debugger before&mdash;and this one is different from th
 
 For this tutorial, we use a publicly hosted version of the Luma demo website. Let's open it and bookmark it:
 
- 1. In a new browser tab, open the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html). 
+ 1. In a new browser tab, open the [Luma website](https://newluma.enablementadobe.com). 
  1. Bookmark the page for use throughout the rest of the tutorial
 
 This hosted website is why we used `enablementadobe.com` in the [!UICONTROL Domains] field of our initial tag property configuration and why we used `data.enablementadobe.com` as our first-party domain in the [!UICONTROL Adobe Experience Platform Web SDK] extension. See, I had a plan!
@@ -441,7 +450,7 @@ There is one more data element we must update&mdash;the XDM Object data element.
 
 To validate that the CRM Id is now being sent by the Web SDK:
 
-1. Open the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. Open the [Luma website](https://newluma.enablementadobe.com)
 1. Map it to your tag property using the Debugger, as per the earlier instructions
 1. Select the **Login** link on the top right of the Luma website
 1. Log in using the credentials `test@test.com`/`test`

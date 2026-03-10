@@ -131,8 +131,8 @@ Next, click **+ Add item** under **Query String**.
 
 Enter these values and click **Add**.
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | `include`         | `media_links.original` |
 
 ![Frame IO](./images/aemf21b.png)

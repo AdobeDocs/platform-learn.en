@@ -3,6 +3,7 @@ title: Getting started with AEM Agents
 description: Getting started with AEM Agents
 kt: 5342
 doc-type: tutorial
+exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
 ---
 # 1.6.1 Getting started with AEM Agents
 

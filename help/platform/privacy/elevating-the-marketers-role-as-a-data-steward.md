@@ -2,7 +2,7 @@
 title: Elevating the Marketer’s Role as a Data Steward
 description: Volatile market forces and disparate consumer privacy requirements can present daunting scenarios for the digital marketer. To keep campaigns on the right side of regulations, marketing teams need their IT counterparts to have a streamlined process for future-proofing the data governance process — one that ideally empowers everyone to follow and enforce rules of responsible usage of consumer data. Hear from Adobe and Scotiabank Digital on key considerations for responsible data management.
 feature: Privacy
-role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
+role: User, Developer, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 338292.jpg

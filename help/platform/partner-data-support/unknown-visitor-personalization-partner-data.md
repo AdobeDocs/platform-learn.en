@@ -4,7 +4,7 @@ description: Learn how to collect third-party attributes from the [!DNL Adobe Ex
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
-role: Architect, Data Architect, User
+role: Developer, User
 level: Intermediate
 jira: KT-13831
 thumbnail: 3423076.jpg

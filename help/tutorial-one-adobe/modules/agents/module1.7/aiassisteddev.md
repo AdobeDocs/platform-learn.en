@@ -3,6 +3,7 @@ title: Intelligent Developer Tools for Adobe Commerce
 description: Intelligent Developer Tools for Adobe Commerce
 kt: 5342
 doc-type: tutorial
+exl-id: d6ff0907-260f-4f83-98e2-d22954a03678
 ---
 # 1.7 Intelligent Developer Tools for Adobe Commerce
 

@@ -3,7 +3,7 @@ title: Discover, Activate, and Measure with Real-Time CDP Collaboration
 description: Dive into the core capabilities of Adobe's Real-Time CDP Collaboration for audience discovery, secure activation, and performance measurement.
 doc-type: Video Clips
 duration: 180
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

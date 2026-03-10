@@ -9,6 +9,8 @@ exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
 
 Learn how to install and configure the Adobe Experience Platform Web SDK tag extension. The easiest way to implement Web SDK is using Adobe's tag manager, tags (formerly known as Launch). The Platform Web SDK tag extension is the _only tag extension_ required to send data to _all Adobe Experience Cloud applications_, including [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform, and [Journey Optimizer](setup-web-channel.md)!
 
+
+
 ## Learning objectives
 
 At the end of this lesson, you will be able to:
@@ -25,7 +27,7 @@ You must have completed the previous lessons in this tutorial:
 
 ### Add a tag property
 
-First you must have a tag property. A property is a container for all the JavaScript, rules, and other features required to collect details from a web page and send it to various locations.
+A tag property is a container for all the JavaScript, rules, and other features required to collect details from a web page and send it to various locations.
 
 Create a new tag property for the tutorial:
 
@@ -33,7 +35,7 @@ Create a new tag property for the tutorial:
 1. Select **[!UICONTROL Tags]** in the left navigation
 1. Select the **[!UICONTROL New Property]** button
     ![Add a new property](assets/websdk-property-addNewProperty.png)
-1. As the **[!UICONTROL Name]**, enter `Web SDK Course` (add your name to the end, if multiple people from your company are taking this tutorial)
+1. As the **[!UICONTROL Name]**, enter `Luma Web SDK Tutorial` (add your name to the end, if multiple people from your company are taking this tutorial)
 1. As the **[!UICONTROL Domains]**, enter `enablementadobe.com` (explained later)
 1. Select **[!UICONTROL Save]**
     ![Property details](assets/websdk-property-propertyDetails.png)
@@ -45,6 +47,7 @@ With your XDM schema, datastream, and tag property now created, you are ready to
 1. Open your new tag property
 1. Go to **[!UICONTROL Extensions]** > **[!UICONTROL Catalog]**
 1. Search for `Adobe Experience Platform Web SDK`
+1. Select the `Adobe Experience Platform Web SDK` extension so the sidebar opens
 1. Select **[!UICONTROL Install]**
 
     ![Install Web SDK Extension](assets/extension-platform-web-sdk.png)
@@ -52,16 +55,13 @@ With your XDM schema, datastream, and tag property now created, you are ready to
 
 ## Link the extension to your datastream 
 
-Leave most of the default settings and update them later, as needed. The only thing that you must do now is link the extension to your datastream:
+Leave most of the default settings and update them later, as needed. The only thing that you must do now is link the extension to your datastream. This adds the correct datastream/config id to the network calls made from the browser, so the calls are routed to the correct datastream when they arrive in the Platform Edge Network:
 
 1. Under **[!UICONTROL Datastreams]**, select the **[!UICONTROL Choose from list]** input method
-1. Select the sandbox in which you created the schema, identity namespace and datastream
-1. Select the datastream that you created earlier, `Luma Web SDK`
+1. Configure the **[!UICONTROL Production Environment]**. (The other tag environments in the property will inherit the production settings): 
+    1. Select the sandbox in which you created the schema, identity namespace and datastream
+    1. Select the datastream that you created earlier, `Luma Web SDK: Development Environment`
 1. Select **[!UICONTROL Save]**
-
-    >[!NOTE]
-    >
-    > If you cannot find your datastream, go to the [Configure a datastream](configure-datastream.md) lesson and follow the steps to create one
 
     ![Datastream selection](assets/extension-luma-web-sdk-datastream-extension.png)
 
@@ -79,4 +79,4 @@ Now that you have installed Platform Web SDK and associated it with the datastre
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

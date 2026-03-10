@@ -3,7 +3,7 @@ title: Accelerating Your Audience Strategy with Real-Time CDP
 description: Learn how to accelerate your audience strategy by leveraging Real-Time CDP to unify data, personalize experiences, and drive engagement.
 doc-type: Video Clips
 duration: 46
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

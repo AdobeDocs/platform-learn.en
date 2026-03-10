@@ -70,55 +70,66 @@ Now you can configure your [!UICONTROL datastream] to send data to [!UICONTROL A
 
 1. Open the [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Select **[!UICONTROL Datastreams]** from the left navigation
-1. Open the datastream you created in the [Configure a datastream](configure-datastream.md) lesson, `Luma Web SDK`
+1. Open the datastream you created in the [Configure a datastream](configure-datastream.md) lesson, `Luma Web SDK: Development Environment`
 
     ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk-development.png)
 
 1. Select **[!UICONTROL Add Service]**
      ![Add a service to the datastream](assets/experience-platform-addService.png)
 1. Select **[!UICONTROL Adobe Experience Platform]** as the **[!UICONTROL Service]**
+1. Select **[!UICONTROL Enabled]**
 1. Select `Luma Web Event Data` as the **[!UICONTROL Event Dataset]**
 
-1. Select **[!UICONTROL Save]**. 
+1. Select **[!UICONTROL Save]**
 
      ![Datastream Config](assets/experience-platform-datastream-config.png)
 
-As you generate traffic on the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html) mapped to your tag property, the data populates the dataset in Experience Platform!
+As you generate traffic on the [Luma demo website](https://luma.enablementadobe.com) mapped to your tag property, the data populates the dataset in Experience Platform!
 
 ## Validate the dataset
 
-This step is critical to make sure that the data has landed in the dataset. There are two aspects of validating data sent to the dataset. 
+This step is critical to make sure that the data has landed in the dataset. There are multiple ways to validate the path of data sent to the dataset. 
 
 * Validate using [!UICONTROL Experience Platform Debugger]
+* Validate using [!UICONTROL Experience Platform Assurance]
 * Validate using [!UICONTROL Preview Dataset]
 * Validate using [!UICONTROL Query Service]
 
-### Experience Platform Debugger
+### Debugger
 
 These steps are more or less the same as what you did in the [Debugger lesson](validate-with-debugger.md). However, since data will only be sent to Platform after you have enabled it in the datastream, you must generate some more sample data:
 
-1. Open the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and select the [!UICONTROL Experience Platform Debugger] extension icon
+1. Open the [Luma demo website](https://luma.enablementadobe.com) and select the [!UICONTROL Experience Platform Debugger] extension icon
 
 1. Configure the Debugger to map the tag property to *your* Development environment, as described in the [Validate with Debugger](validate-with-debugger.md) lesson
 
-   ![Your Launch development environment shown in Debugger](assets/experience-platform-debugger-dev.png)
+   ![Your Org Id shown in Debugger](assets/experience-platform-debugger-dev.png)
 
-1. Log into the Luma site using the credentials `test@test.com`/`test`
+1. Browse the website. View some products and add some to your shopping cart
 
-1. Return to the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. In the Debugger, open the "events" row to look for some of your XDM variables
 
-1. Within the Platform Web SDK network beacons shown by the debugger, select the "events" row to expand details in a pop-up
+You have validated that data has left the browser and sent to the datastream!
 
-   ![Web SDK in Debugger](assets/experience-platform-debugger-dev-eventType.png)
+### Assurance
 
-1. Search for the "identityMap" within the pop-up. Here you should see lumaCrmId with three keys of authenticatedState, id, and primary
-   ![Web SDK in Debugger](assets/experience-platform-debugger-dev-idMap.png)
+Since we have now enabled a service in the datastream, there is more we can see in Assurance:
 
-Now, data should be populated in the `Luma Web Event Data` dataset and ready for 'Preview Dataset' validation.
+1. Open your Assurance session or start a new one
+1. Open the **[!UICONTROL datastream]** event
+1. Here you can view the configuration of the Platform service, including the id of the datastream you created earlier in this lesson.
+
+   ![datastream config for Platform in Assurance](assets/platform-assurance-datastream.png)
+
+1. Open the **[!UICONTROL generic]** event belonging to the **[!UICONTROL com.adobe.streaming.validation]** vendor. This shows that the request has been sent to the dataset with the accompanying XDM data
+
+   ![Validation in Assurance](assets/platform-assurance-generic.png)
+
+You have validated that the request was received by Platform Edge Network and forwarded to the Platform dataset.
 
 ### Preview the dataset
 
-To confirm that the data has landed in Platform's data lake, a quick option is to use the **[!UICONTROL Preview dataset]** feature. Web SDK data is micro-batched to the data lake and refreshed in the Platform interface on a periodic basis. It might take 10-15 minutes to see the data that you generated.
+Now, let's actually look in the dataset! A quick option is to use the **[!UICONTROL Preview dataset]** feature. Web SDK data is micro-batched to the data lake and refreshed in the Platform interface on a periodic basis. It might take 10-15 minutes to see the data that you generated.
 
 1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Data Management > Datasets]** in the left-navigation to open the **[!UICONTROL Datasets]** dashboard. 
 
@@ -129,24 +140,30 @@ To confirm that the data has landed in Platform's data lake, a quick option is t
     ![Dataset Luma Web Event](assets/experience-platform-dataset-validation-lumaSDK.png)
 
     The activity screen includes a graph visualizing the rate of messages being consumed as well as a list of successful and failed batches.
+1. Since this is a new dataset, if you see even one batch with records ingested, that is a positive sign:
 
 1. From the **[!UICONTROL Dataset activity]** screen, select **[!UICONTROL Preview dataset]** near the top-right corner of your screen to preview up to 100 rows of data. If the dataset is empty, the preview link is deactivated.
 
-    ![Dataset Preview](assets/experience-platform-dataset-preview.png)
+    ![Dataset Preview](assets/experience-platform-dataset-batches.png)
 
-    In the preview window, the hierarchical view of the schema for the dataset is shown on the right.
+1. A query will run to pull 100 recent rows of data from your dataset. You can drill into individual XDM fields, such as web.webPageDetails.name:
 
-    ![Dataset Preview 1](assets/experience-platform-dataset-preview-1.png)
+    ![Dataset Preview ](assets/experience-platform-dataset-preview.png)
 
 
 ### Query the data
 
-1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Data Management > Queroes]** in the left-navigation to open the **[!UICONTROL Queries]** screen.
+You can run custom queries on the data as well to validate data ingestion:
+
+1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Data Management > Queries]** in the left-navigation to open the **[!UICONTROL Queries]** screen.
 1. Select **[!UICONTROL Create query]** 
 1. First, run a query to see all of the names of the tables in the data lake. Enter `SHOW TABLES` in the query editor and click the play icon to rn the query.
-1. In the results, notice how the name of the table is something like `luma_web_event_data`
+1. In the results, notice how the name of the table is  `luma_web_event_data`
 1. Now query the table with a simple query referencing your table (note that by default the query will be limited to 100 results): `SELECT * FROM "luma_web_event_data"`
 1. After a few moments you should see sample records of your web data.
+
+
+    ![Dataset query](assets/experience-platform-dataset-query.png)
 
 >[!ERROR]
 >
@@ -154,184 +171,9 @@ To confirm that the data has landed in Platform's data lake, a quick option is t
 
 >[!INFO]
 >
->  For more details about Adobe Experience Platform's query service, see [Explore data](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in the Platform tutorials section.
-
-
-## Enable the dataset and schema for Real-Time Customer Profile
-
-For customers of Real-Time Customer Data Platform and Journey Optimizer, the next step is to enable the dataset and schema for Real-Time Customer Profile. Data streaming from Web SDK will be one of many data sources flowing into Platform and you want to join your web data with other data sources to build 360-degree customer profiles. To learn more about Real-Time Customer Profile, watch this short video:
-
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
-
->[!CAUTION]
->
->When working with your own website and data, we recommend more robust validation of data before enabling it for Real-Time Customer Profile.
-
-
-**To enable the dataset:**
-
-1. Open the dataset you created, `Luma Web Event Data`
-
-1. Select the **[!UICONTROL Profile Toggle]** to turn it on
-    
-    ![Profile Toggle](assets/setup-experience-platform-profile.png)
-
-1. Confirm you want to **[!UICONTROL Enable]** the dataset
-
-   ![Profile Enable Toggle](assets/setup-experience-platform-profile-enable.png)
-
-**To enable the schema:**
-
-1. Open the schema you created, `Luma Web Event Data`
-
-1. Select the **[!UICONTROL Profile Toggle]** to turn it on
-    
-    ![Profile Toggle](assets/setup-experience-platform-profile-schema.png)
-
-1. Select **[!UICONTROL Data for this schema will contain a primary identity in the identityMap field.]**
-
-    >[!IMPORTANT]
-    >
-    >    Primary identities are required in every record sent to Real-Time Customer Profile. Typically, identity fields are labeled within the schema. When using identity maps, however, the identity fields are not visible within the schema. This dialog is to confirm that you have a primary identity in mind and that you will specify it in an identity map when sending your data. As you know, Web SDK uses an identity map with the Experience Cloud Id (ECID) as the default primary identity and an authenticated id as the primary identity when available.
-
-
-1. Select **[!UICONTROL Enable]**
-
-   ![Profile Enable Toggle](assets/setup-experience-platform-profile-schema-enable.png)
-
-1. Select **[!UICONTROL Save]** to save the updated schema
-
-Now the schema is also enabled for profile.
-
->[!IMPORTANT]
->
->    Once a schema is enabled for Profile, it cannot be disabled or deleted without resetting or deleting the entire sandbox. Also, fields cannot be removed from the schema after this point.
->
->   
-> When working with your own data, we recommend you do things in the following order:
-> 
-> * First, ingest some data into your datasets.
-> * Address any issues that arise during the data ingestion process (for example, data validation or mapping issues).
-> * Enable your datasets and schemas for Profile
-> * Re-ingest the data, if needed
-
-
-### Validate a profile
-
-You can look up a customer profile in the Platform interface (or Journey Optimizer interface) to confirm that the data has landed in Real-Time Customer Profile. As the name suggests, profiles populate in real-time, so there is no delay like there was with validating data in the dataset.
-
-First you must generate more sample data. Repeat the steps from earlier in this lesson to log into the Luma website when it is mapped to your tag property. Inspect the Platform Web SDK request to make sure it sends data with the `lumaCRMId`.
-
-1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in the left-navigation
-
-1. As the **[!UICONTROL Identity namespace]** use `lumaCRMId`
-1. Copy & paste the value of the `lumaCRMId` passed in the call that you inspected in the Experience Platform Debugger, in this case `b642b4217b34b1e8d3bd915fc65c4452`.
-
-    ![Profile](assets/experience-platform-validate-dataset-profile.png)
-
-1. If there is a valid value in the Profile for `lumaCRMId`, a Profile ID populates in the console:
-
-    ![Profile](assets/experience-platform-validate-dataset-profile-set.png)
-
-1. To view the full **[!UICONTROL Customer Profile]** for each ID, select the **[!UICONTROL Profile ID]** in the main window. 
-
-    >[!NOTE]
-    >
-    >Note you can select the hyperlink of the Profile ID, or if you select the row then a right menu opens where you can select the Profile ID hyperlink 
-    > ![Customer profile](assets/experience-platform-select-profileId.png)
-
-    Here you can see all the identities linked to the `lumaCRMId`, such as the `ECID`. 
-
-    ![Customer profile](assets/experience-platform-validate-dataset-custProfile.png)
-
-You have now enabled Platform Web SDK for Experience Platform (And Real-Time CDP! And Journey Optimizer! And Customer Journey Analytics!).
-
-## Create an Edge-evaluated audience
-
-Completion of this exercise is recommended for customers of Real-Time Customer Data Platform and Journey Optimizer. 
-
-When Web SDK data is ingested into Adobe Experience Platform, it can be enriched by other data sources you have ingested into Platform. For example, when a user logs into the Luma site, an identity graph is constructed in Experience Platform and all other profile-enabled datasets can potentially be joined together to build Real-Time Customer Profiles. To see this in action, you will quickly create another dataset in Adobe Experience Platform with some sample loyalty data so that you can use Real-Time Customer Profiles with Real-Time Customer Data Platform and Journey Optimizer. You will then build an audience based on this data.
-
-### Create a Loyalty schema and ingest sample data
-
-Since you have already done similar exercises, the instructions will be brief.
-
-Create the loyalty schema:
-
-1. Create a new schema 
-1. Choose **[!UICONTROL Individual Profile]** as the [!UICONTROL base class]
-1. Name the schema `Luma Loyalty Schema`
-1. Add the [!UICONTROL Loyalty Details] field group
-1. Add the [!UICONTROL Demographic Details] field group
-1. Select the `Person ID` field and mark it as an [!UICONTROL Identity] and [!UICONTROL Primary identity] using the `Luma CRM Id` [!UICONTROL Identity namespace].
-1. Enable the schema for [!UICONTROL Profile]. If you can't find the Profile toggle, try clicking on the schema name on the top left.
-1. Save the schema
-
-   ![Loyalty schema](assets/web-channel-loyalty-schema.png)
-
-To create the dataset and ingest the sample data:
-
-1. Create a new dataset from the `Luma Loyalty Schema`
-1. Name the dataset `Luma Loyalty Dataset`
-1. Enable the dataset for [!UICONTROL Profile]
-1. Download the sample file [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
-1. Drag-and-drop the file into your dataset
-1. Confirm that the data successfully ingested
-   
-    ![Loyalty schema](assets/web-channel-loyalty-dataset.png)
-
-
-### Set an Active-on-Edge Merge Policy
-
-All audiences are created with a merge policy. Merge policies create different "views" of a profile, can contain a subset of datasets, and prescribe a priority order when different datasets contribute the same profile attributes. To be evaluated on the edge, an audience must use a merge policy with has the **[!UICONTROL Active-On-Edge Merge Policy]** setting.
-
-
->[!IMPORTANT]
->
->Only one merge policy per sandbox can have the **[!UICONTROL Active-On-Edge Merge Policy]** setting
-
-
-1. Open the Experience Platform or Journey Optimizer interface and make sure you are in the development environment you are using for the tutorial.
-1. Navigate to **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** page
-1. Open the **[!UICONTROL Default Merge Policy]** (probably named `Default Timebased`)
-   ![Create an audience](assets/merge-policy-open-default.png)
-1. Enable the **[!UICONTROL Active-On-Edge Merge Policy]** setting
-1. Select **[!UICONTROL Next]**
-
-   ![Create an audience](assets/merge-policy-set-active-on-edge.png)
-1. Keep selecting **[!UICONTROL Next]** to continue through the other steps of the workflow and select **[!UICONTROL Finish]** to save your settings
-   ![Create an audience](assets/merge-policy-finish.png)
-
-You are now able to create audiences which will evaluate on the Edge.
-
-### Create an audience
-
-Audiences group profiles together around common traits. Build a simple audience you can use in in Real-Time CDP or Journey Optimizer:
-
-1. In the Experience Platform or Journey Optimizer interface, go to **[!UICONTROL Customer]** > **[!UICONTROL Audiences]** in the left navigation
-1. Select **[!UICONTROL Create audience]**
-1. Select **[!UICONTROL Build rule]**
-1. Select **[!UICONTROL Create]**
-
-   ![Create an audience](assets/web-campaign-create-audience.png)
-
-1. Select **[!UICONTROL Attributes]**
-1. Find the **[!UICONTROL Loyalty]** > **[!UICONTROL Tier]** field and drag it onto the **[!UICONTROL Attributes]** section
-1. Define the audience as users whose `tier` is `gold`
-1. Name the audience `Luma Loyalty Rewards – Gold Status`
-1. Select **[!UICONTROL Edge]** as the **[!UICONTROL Evaluation method]**
-1. Select **[!UICONTROL Save]**
-
-   ![Define the audience](assets/web-campaign-define-audience.png)
-
->[!NOTE]
->
-> Since we set the default merge policy as **[!UICONTROL Active-On-Edge Merge Policy]** the audience you created is automatically associated with this merge policy.
-
-
-Since this is a very simple audience, we can use the Edge evaluation method. Edge audiences evaluate on the edge, so in the same request made by the Web SDK to Platform Edge Network, we can evaluate the audience definition and confirm immediately if the user will qualify.
+>  Query service is a very powerful tool for data engineers and analysts. For more details about Adobe Experience Platform's query service, see [Explore data](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in the Platform tutorials section.
 
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

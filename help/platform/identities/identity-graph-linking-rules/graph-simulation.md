@@ -2,7 +2,7 @@
 title: Identity graph linking rules - Graph Simulation
 description: Learn how to use the graph simulator to test out identity graph linking rules in Adobe Experience Platform. Experiment with different scenarios and play with "unique per graph" and priority settings to verify what rules you need for your business to avoid graph collapse.
 feature: Identities
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Feature Video
 duration: 355

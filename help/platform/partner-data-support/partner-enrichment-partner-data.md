@@ -4,7 +4,7 @@ description: Learn how to add partner attributes to your first-party profiles to
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
-role: Architect, Data Architect, User
+role: Developer, User
 level: Intermediate
 jira: KT-13830
 thumbnail: 3423075.jpg

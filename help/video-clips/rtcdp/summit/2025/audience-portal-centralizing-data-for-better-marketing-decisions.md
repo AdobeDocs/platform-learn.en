@@ -3,7 +3,7 @@ title: Audience Portal Centralizing Data for Better Marketing Decisions
 description: Explore how the Audience Portal in Adobe Real-Time CDP unifies customer data, enabling advanced audience management and real-time activation.
 doc-type: Video Clips
 duration: 83
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

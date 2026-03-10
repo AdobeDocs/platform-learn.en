@@ -12,6 +12,7 @@ Learn how to use event forwarding with Adobe Experience Platform Web SDK data.
 Event forwarding is a new type of property available in Data Collection. Event forwarding gives you the ability to send data to third-party, non-Adobe vendors straight from the Adobe Experience Platform Edge Network instead of the traditional client-side browser. Find out more about the advantages of event forwarding in the [Event Forwarding overview](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
+
 ![Web SDK and event forwarding diagram](assets/dc-websdk-eventforwarding.png)
 
 To use event forwarding in Adobe Experience Platform, data must be sent to Adobe Experience Platform Edge Network first using one or more of the following three options:
@@ -57,7 +58,7 @@ At this end of this lesson, you will be able to:
 
     * [Install Web SDK extension](install-web-sdk.md)
     * [Create data elements](create-data-elements.md)
-    * [Create identities](create-identities.md)
+    * [Capture identities](create-identities.md)
     * [Create tag rules](create-tag-rule.md)
     * [Validate with Adobe Experience Platform debugger](validate-with-debugger.md)
 
@@ -284,7 +285,7 @@ Create a library and build all the changes to your event-forwarding development 
 
 Now you can validate your event-forwarding property using the Platform Debugger, and Webhook.site:
 
-1. Follow the steps to [switch the tag library](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) on the [Luma Demo site](https://luma.enablementadobe.com/content/luma/us/en/men.html) to the Web SDK tag property to which you mapped your event-forwarding property in the datastream.
+1. Follow the steps to [switch the tag library](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) on the [Luma demo website](https://luma.enablementadobe.com/category-men.html) to the Web SDK tag property to which you mapped your event-forwarding property in the datastream.
 
 1. Before you reload the page, on the Experience Platform Debugger open **[!UICONTROL Logs]** from the left navigation
 
@@ -317,4 +318,4 @@ Congratulations! You have configured event forwarding!
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
