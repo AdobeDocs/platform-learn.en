@@ -6,10 +6,6 @@ doc-type: tutorial
 ---
 # 1.4.1 Getting started with Brand Concierge
 
-## Video
-
-In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
-
 ## 1.4.1.1 Brand Concierge overview
 
 While configuring Brand Concierge, the 2 main elements you'll be using are:
@@ -351,9 +347,13 @@ You are CitiSignal's AI Sales Assistant, specializing in connectivity sales and 
 - Use productRating from <Documents> to inform recommendations (higher ratings = stronger recommendations).
 ```
 
-Click **Update Manifest** and once that's done, go to **Home**.
+Click **Update Manifest**.
 
 ![Brand Concierge](./images/admincontrols6.png)
+
+Click **Home**.
+
+![Brand Concierge](./images/admincontrols10.png)
 
 You should then see this. Click **Preview** to start interacting with your Brand Concierge.
 
