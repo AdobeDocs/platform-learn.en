@@ -42,7 +42,7 @@ In this exercise, you'll connect your Cursor environment to AEM using the AEM MC
 
 [1.6.3 Scale Content Fragments with ChatGPT & MCP Server](./ex3.md)
 
-In this exercise, you'll create, manage and translate COntent Fragments using ChatGPT and custom MCP server functionality. 
+In this exercise, you'll create, manage and translate Content Fragments using ChatGPT and custom MCP server functionality.
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
@@ -50,4 +50,4 @@ In this exercise, you'll create, manage and translate COntent Fragments using Ch
 >
 >If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.
 
-[Go Back to All Modules](../../../overview.md){target="_blank"} AEM
+[Go Back to All Modules](../../../overview.md){target="_blank"}

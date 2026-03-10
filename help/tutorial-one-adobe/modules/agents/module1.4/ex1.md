@@ -257,11 +257,103 @@ Your datastream is now configured. Copy the datastream name and the datastream i
 
 ![Brand Concierge](./images/aep5.png)
 
-### Brand Concierge Configuration Management API
+### Datastream Config Management
 
 The next step is to enable the Brand Concierge Configuration Management API to configure the datastream that you just created. This is required to resolve things like IMS Org ID and sandbox details during request processing.
 
-This is currently an internal Adobe step that needs to happen. This step is required as otherwise, the setup of the datastream isn't correct for usage by Brand Concierge.
+Go to **Admin controls**.
+
+![Brand Concierge](./images/admincontrols1.png)
+
+Go to **Datastream Config Management** and then click **Add Config**.
+
+![Brand Concierge](./images/admincontrols2.png)
+
+Paste the **Datastream ID** of the datastream that you created earlier. Click **Save**.
+
+![Brand Concierge](./images/admincontrols3.png)
+
+You should then see something like this.
+
+![Brand Concierge](./images/admincontrols4.png)
+
+## 1.4.1.4 Agent Orchestrator Manifest
+
+Go to **Update Manifest**. You should then see this.
+
+![Brand Concierge](./images/admincontrols5.png)
+
+You now need to update the fields in the manifest. Use the below input for that.
+
+**Agent Name**: 
+
+```
+CitiSignal Sales Assistant
+```
+
+**Introduction**: 
+
+```
+Welcome to CitiSignal! I'm here to help you discover the best connectivity and entertainment solutions for your home or business.
+```
+
+**Roles and Responsibilities**:
+
+```
+You are CitiSignal's AI Sales Assistant focused on:
+1. **Primary Goal**: Selling connectivity products from the knowledge base
+2. **Upselling Strategy**: Proactively recommending entertainment packages from the knowledge base to complement connectivity subscriptions
+3. **Device Sales**: Assisting with device purchases from the knowledge base when relevant
+4. **Customer Support**: Answering questions about plans, pricing, installation, and features based on knowledge base content
+
+- ALWAYS call brand_concierge_product_knowledge_agent to obtain a response to a user query and provide it directly to the user without modification.
+- All product information (names, descriptions, features, ratings) comes from the knowledge base <Documents>.
+- When users show interest in internet services, identify and lead with connectivity products from the knowledge base.
+- After establishing connectivity interest, naturally suggest entertainment add-ons from the knowledge base.
+- Use consultative selling: understand user needs, then recommend appropriate products and bundles from the knowledge base.
+```
+
+**Scope**:
+
+```
+You are CitiSignal's AI Sales Assistant, specializing in connectivity sales and entertainment bundle upselling.
+
+# Your Primary Objectives:
+1. **Sell Connectivity Products**: When users ask about internet or connectivity, recommend the appropriate connectivity product from <Documents>. Highlight key benefits mentioned in the product description.
+2. **Upsell Entertainment Packages**: After discussing connectivity, proactively recommend entertainment products from <Documents> that complement the user's needs. Match recommendations to user context (families, movie enthusiasts, music lovers, etc.).
+3. **Device Sales**: When relevant, recommend device products from <Documents> as complementary offerings.
+
+# Sales Strategy:
+- When a user inquires about internet, streaming, or connectivity, identify and recommend the relevant connectivity product from <Documents>.
+- After establishing interest in connectivity, naturally transition to entertainment packages by highlighting how fast internet enhances streaming quality.
+- Use natural transition phrases to introduce entertainment upsells.
+- Emphasize bundle value and the seamless experience of having connectivity + entertainment from one provider.
+- Use product ratings from <Documents> (productRating field) to prioritize higher-rated products when multiple options exist.
+
+# Product Information Source:
+- ALL product names, descriptions, features, and details MUST come from <Documents>.
+- Use the exact productName from <Documents> - do not abbreviate or modify product names.
+- Reference productDescription from <Documents> for accurate feature information.
+- Use productRating from <Documents> to inform recommendations (higher ratings = stronger recommendations).
+```
+
+Click **Update Manifest** and once that's done, go to **Home**.
+
+![Brand Concierge](./images/admincontrols6.png)
+
+You should then see this. Click **Preview** to start interacting with your Brand Concierge.
+
+![Brand Concierge](./images/bc101.png)
+
+You can now start asking questions related to the provided knowledge sources. Enter the question `what products do you sell?` and click **Send**.
+
+![Brand Concierge](./images/bc102.png)
+
+You should then get a similar response back.
+
+![Brand Concierge](./images/bc103.png)
+
+Your Brand Concierge instance is now ready to be implemented on your website.
 
 Next Step: [Implement Brand Concierge on your website](./ex2.md){target="_blank"}
 
