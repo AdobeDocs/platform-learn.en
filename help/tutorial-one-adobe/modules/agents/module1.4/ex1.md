@@ -277,7 +277,21 @@ You should then see something like this.
 
 ![Brand Concierge](./images/admincontrols4.png)
 
-## 1.4.1.4 Agent Orchestrator Manifest
+## 1.4.1.4 Styling Config Management
+
+Go to **Styling Config Management**. Click **Initialize style config**.
+
+![Brand Concierge](./images/admincontrols7.png)
+
+Enter the **Brand Name** `CitiSignal` and then click **Initialize style config**.
+
+![Brand Concierge](./images/admincontrols8.png)
+
+You should then see this.
+
+![Brand Concierge](./images/admincontrols9.png)
+
+## 1.4.1.5 Agent Orchestrator Manifest
 
 Go to **Update Manifest**. You should then see this.
 
