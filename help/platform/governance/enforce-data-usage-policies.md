@@ -2,7 +2,7 @@
 title: Enforce data usage policies
 description: Learn how to enforce data usage policies when activating an audience to a destination. Learn how to add marketing actions to destinations, how to analyze a policy violation during activation and how to use the data lineage to understand and remediate policy violations. 
 feature: Data Governance
-role: User, Developer, Data Architect, Admin
+role: User, Developer, Admin
 level: Beginner
 jira: KT-4380
 thumbnail: 33631.jpg

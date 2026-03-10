@@ -3,7 +3,7 @@ title: Customer-Centric Approach vs Campaign-Centric Approach
 description: Learn how to transition from a campaign-centric to a customer-centric approach to drive sustainable growth and improve customer experiences.
 doc-type: Video Clips
 duration: 126
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

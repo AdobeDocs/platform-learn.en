@@ -2,7 +2,7 @@
 title: Schedule dataset deletes
 description: Learn how to delete datasets using Adobe Experience Platform's Data Hygiene feature.
 feature: Data Hygiene
-role: Data Engineer, Data Architect
+role: Developer
 level: Experienced
 jira: KT-10697
 thumbnail: 345065.jpeg

@@ -8,6 +8,11 @@ exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
 
 In this lesson, you will implement the [Adobe Analytics extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) and create rules to send data to Adobe Analytics.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
 >[!NOTE]

@@ -2,7 +2,7 @@
 title: Run Queries with Query Service
 description: Learn how to use the Adobe Experience Platform Query Editor to create, run, and manage SQL queries efficiently. Viewers will learn how to use features like the object browser, autocomplete, parameterized queries, and scheduling tools to streamline data workflows and generate actionable insights across their organization.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-3140
 thumbnail: 29796.jpg

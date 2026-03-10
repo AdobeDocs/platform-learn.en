@@ -10,6 +10,11 @@ This lesson will guide your through the steps required to implement the [Adobe E
 
 The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions. You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
@@ -150,7 +155,7 @@ By knowing the authentication state of the user, you know when a customer id sho
 
 ### Add a Rule to Send the Customer IDs
 
-The Adobe Experience Platform Identity Service passes the Customer IDs in rules using an action called “Set Customer IDs.”  You will now create a rule to trigger this action when the visitor is authenticated.
+The Adobe Experience Platform Identity Service passes the Customer IDs in rules using an action called "Set Customer IDs."  You will now create a rule to trigger this action when the visitor is authenticated.
 
 **To create a rule to send the Customer IDs**
 
@@ -163,7 +168,7 @@ The Adobe Experience Platform Identity Service passes the Customer IDs in rules 
   
    >[!TIP]
    >
-   >This naming convention indicates you are firing this rule at the top of all pages when the user is authenticated and it will have an order of “10”. Using a naming convention like this&mdash;instead of naming it for the solutions triggered in the actions&mdash;will allow you to minimize the overall number of rules needed by your implementation.
+   >This naming convention indicates you are firing this rule at the top of all pages when the user is authenticated and it will have an order of "10". Using a naming convention like this&mdash;instead of naming it for the solutions triggered in the actions&mdash;will allow you to minimize the overall number of rules needed by your implementation.
 
 1. Under **[!UICONTROL Events]** click **[!UICONTROL Add]**
 
@@ -189,7 +194,7 @@ The Adobe Experience Platform Identity Service passes the Customer IDs in rules 
         ![set the authentication state](images/idservice-customerId-authStateCondition.png)
 
 1. Make sure `Equals` is the operator
-1. Type "logged in" in the text field, causing the rule to fire whenever the Data Element “Authentication State” has a value of “logged in”
+1. Type "logged in" in the text field, causing the rule to fire whenever the Data Element "Authentication State" has a value of "logged in"
 
 1. Click **[!UICONTROL Keep Changes]**
 

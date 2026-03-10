@@ -104,11 +104,11 @@ Enter the same value for the description: `--aepUserLdap-- - GA + Loyalty Data V
 Before doing any analysis or visualization we need to create a data view with all the fields, dimensions and metrics and their attribution settings.
 
 | Field      | Naming Convention|
-| ----------------- |-------------|  
-| Name Connection | `--aepUserLdap-- - GA + Loyalty Data View`| vangeluw - GA + Loyalty Data View |
+| ----------------- |-------------|
+| Name Connection | `--aepUserLdap-- - GA + Loyalty Data View` \| vangeluw - GA + Loyalty Data View |
 | Description | `--aepUserLdap-- - GA + Loyalty Data View` |
 | External ID | `--aepUserLdap--GA`|
- 
+
 Click **Save and continue**.
  
 ![demo](./images/22.png)
@@ -123,7 +123,7 @@ You can now add components to your data view. As you can see, some metrics and d
 
 Add the below components to the data view. Also make sure to update the field names to friendly names. To do that, select the metric or dimension and update the **Component name** field in the right menu.
 
-| Component Type | Component Original Name   | Display Name       | Component Path        | 
+| Component Type | Component Original Name   | Display Name       | Component Path        |
 | -----------------| -----------------|-----------------|-----------------|
 | Metric | commerce.checkouts.value | Checkouts |`commerce.checkouts.value`|
 | Metric| commerce.productListRemovals.value | Cart Removals |`commerce.productListRemovals.value`|
@@ -154,14 +154,14 @@ Next, you need to make some changes to the Person and Session context for some o
 
 Please change the **Attribution Settings** for the below components:
 
-| Component        |   
+| Component        |
 | -----------------|
-| Traffic Source | 
-| Marketing Channel | 
-| Browser | 
-| Traffic Medium | 
-| Device Type | 
-| Google Analytics ID | 
+| Traffic Source |
+| Marketing Channel |
+| Browser |
+| Traffic Medium |
+| Device Type |
+| Google Analytics ID |
 
 To do that, select the component, click **Use custom attribution model** and set the **Model** to **Most Recent**, and the **Expiration** to **Person Reporting Window**. Repeat this for all of the above mentioned components.
 
@@ -193,15 +193,15 @@ You now have a blank project:
 
 First, save your project and give it a name. You can use the following command to save:
 
-|  OS        | Short cut   | 
-| ----------------- |-------------| 
-| Windows | Control + S          | 
-| Mac | Command + S          | 
+|  OS        | Short cut   |
+| ----------------- |-------------|
+| Windows | Control + S          |
+| Mac | Command + S          |
 
 You'll see this popup. Please use this naming convention:
 
-|  Name       | Description    | 
-| ----------------- |-------------| 
+|  Name       | Description    |
+| ----------------- |-------------|
 | `--aepUserLdap-- – GA + Loyalty Workspace`| `--aepUserLdap-- – GA + Loyalty Workspace`|
 
 Next, click **Save**.

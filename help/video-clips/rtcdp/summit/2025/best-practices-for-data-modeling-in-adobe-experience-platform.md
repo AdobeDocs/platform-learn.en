@@ -3,7 +3,7 @@ title: Best Practices for Data Modeling in Adobe Experience Platform
 description: Understand the importance of schema design, extensibility, and avoiding costly mistakes in Adobe Experience Platform.
 doc-type: Video Clips
 duration: 277
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

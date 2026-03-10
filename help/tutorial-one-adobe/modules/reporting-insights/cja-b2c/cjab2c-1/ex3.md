@@ -48,8 +48,8 @@ Next, give your Data View a name following this naming convention: `--aepUserLda
 
 Enter the same value for the description: `--aepUserLdap-- – Omnichannel Data View`.
 
-| Name         | Description| External ID| 
-| ----------------- |-------------|-------------| 
+| Name         | Description| External ID|
+| ----------------- |-------------|-------------|
 | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View`         |  `--aepUserLdap--123`|
 
 ![demo](./images/1v2.png)
@@ -106,9 +106,9 @@ If you aren't familiar with eVars and Props, you can [read more about them in th
 
 Let's leave the Page Name as a Prop. As such, you don't need to change any **Persistence Settings**.
 
-| Component Name to Search           | New Name   | Persistence Settings  | 
-| ----------------- |-------------| --------------------| 
-| Name (web.webPageDetails.name) | Page Name          |          | 
+| Component Name to Search           | New Name   | Persistence Settings  |
+| ----------------- |-------------| --------------------|
+| Name (web.webPageDetails.name) | Page Name          |          |
 
 Next, pick the dimension **phoneNumber** and drop it on the canvas. The new name should be **Phone Number**. 
 
@@ -122,9 +122,9 @@ To change the Persistence, scroll down in the right menu and open the **Persiste
 
 Check the checkbox to modify the persistence settings. Select **Most Recent** and the **Person (Reporting window)** scope, as we only care about the last mobile number of that person. If the customer doesn't fill out the mobile in future visits, you'll still see this value populated.
 
-| Component Name to Search           | New Name    | Persistence Settings  | 
-| ----------------- |-------------| --------------------| 
-| phoneNumber | Phone Number          |    Most Recent, Person Reporting Window     | 
+| Component Name to Search           | New Name    | Persistence Settings  |
+| ----------------- |-------------| --------------------|
+| phoneNumber | Phone Number          |    Most Recent, Person Reporting Window     |
 
 ![demo](./images/6v2.png)
 
@@ -134,9 +134,9 @@ In the left side menu, search for `web.webPageDetails.pageViews.value`. Drag and
 
 Change the name to be **Page Views** under the **Component settings**.
 
-| Component Name to Search           | New Name    | Attribution Settings  | 
-| ----------------- |-------------| --------------------| 
-| web.webPageDetails.pageViews.value | Page Views          |         | 
+| Component Name to Search           | New Name    | Attribution Settings  |
+| ----------------- |-------------| --------------------|
+| web.webPageDetails.pageViews.value | Page Views          |         |
 
 ![demo](./images/7v2.png)
 
@@ -149,29 +149,29 @@ Next, you'll have to configure a lot of Dimensions and Metrics, as indicated in 
 ### DIMENSIONS
 
 
-| Component Name to Search           | New Name      | Persistence Settings  | 
-| ----------------- |-------------| --------------------| 
-| brandName | Brand Name          | Most Recent, Session         | 
-| callfeeling | Call Feeling          |          | 
-| call ID | Call Interaction Type          |          | 
-| callTopic | Call Topic          | Most Recent, Session   | 
-| ecid  | ECID          | Most Recent, Person Reporting Window        | 
-| email | Email ID          | Most Recent, Person Reporting Window         | 
-| Payment Type | Payment Type          |          | 
-| Product add method | Product add method          | Most Recent, Session         | 
-| Event Type | Event Type         |         | 
-| Name (productListItems.name) | Product Name          |         | 
-| SKU | SKU (Session)          | Most Recent, Session         | 
-| Transaction ID | Transaction ID          |         | 
-| URL (web.webPageDetails.URL) | URL          |         | 
+| Component Name to Search           | New Name      | Persistence Settings  |
+| ----------------- |-------------| --------------------|
+| brandName | Brand Name          | Most Recent, Session         |
+| callfeeling | Call Feeling          |          |
+| call ID | Call Interaction Type          |          |
+| callTopic | Call Topic          | Most Recent, Session   |
+| ecid  | ECID          | Most Recent, Person Reporting Window        |
+| email | Email ID          | Most Recent, Person Reporting Window         |
+| Payment Type | Payment Type          |          |
+| Product add method | Product add method          | Most Recent, Session         |
+| Event Type | Event Type         |         |
+| Name (productListItems.name) | Product Name          |         |
+| SKU | SKU (Session)          | Most Recent, Session         |
+| Transaction ID | Transaction ID          |         |
+| URL (web.webPageDetails.URL) | URL          |         |
 | User Agent | User Agent          | Most Recent, Session         |
 
 ### METRICS
 
-| Component Name to Search           | New Name    | Attribution Settings  | 
-| ----------------- |-------------| --------------------| 
-| Quantity | Quantity          |          | 
-| commerce.order.priceTotal | Revenue          |         | 
+| Component Name to Search           | New Name    | Attribution Settings  |
+| ----------------- |-------------| --------------------|
+| Quantity | Quantity          |          |
+| commerce.order.priceTotal | Revenue          |         |
 
 Your configuration should then look like this. Don't forget to **Save** your Data View. So click **Save** now.
 
@@ -194,9 +194,9 @@ Click to select the new metric **Event Type**.
 
 Now change the component name and description to the following values:
 
-| Component Name         | Component Description|    
-| ----------------- |-------------| 
-| Product Views | Product Views     |  
+| Component Name         | Component Description|
+| ----------------- |-------------|
+| Product Views | Product Views     |
 
 ![demo](./images/calcmetr3.png)
 
@@ -226,7 +226,7 @@ Now, follow the same process as we did for the metric Product Views:
 - First change the name and descritpion. 
 - Finally add **commerce.productListAdds** as criteria to count only Add To Cart
 
-| Name | Descritpion         | Criteria| 
+| Name | Descritpion         | Criteria|
 | ----------------- |-------------| -------------|
 | Add to Cart|Add to Cart | commerce.productListAdds     |
 
@@ -246,7 +246,7 @@ Now, follow the same process as we did for the metrics Product Views and Add to 
 - First change the name and descritpion. 
 - Finally add **commerce.purchases** as criteria to count only Add To Carts
 
-| Name | Descritpion         | Criteria| 
+| Name | Descritpion         | Criteria|
 | ----------------- |-------------| -------------|
 | Purchases|Purchases | commerce.purchases     |
 

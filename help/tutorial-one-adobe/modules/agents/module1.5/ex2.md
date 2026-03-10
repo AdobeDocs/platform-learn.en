@@ -3,6 +3,7 @@ title: CJA & Claude.ai with MCP server
 description: CJA & Claude.ai with MCP server
 kt: 5342
 doc-type: tutorial
+exl-id: 12ca8641-9358-4b27-ac81-bf3f7cf584c6
 ---
 # 1.5.2 CJA & Claude.ai with MCP server
 

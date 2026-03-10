@@ -1,15 +1,17 @@
 ---
-title: Create identities for Platform Web SDK
-description: Learn how to create identities in XDM and use the Identity Map data element to capture user IDs. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
+title: Capture identities for Platform Web SDK
+description: Learn how to capture identities in XDM and use the Identity Map data element to capture user IDs. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
 ---
-# Create identities
+# Capture identities
 
-Learn how to capture identities with Adobe Experience Platform Web SDK. Capture both unauthenticated and authenticated identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Learn how to use the data elements you created earlier for collecting authenticated data with a Platform Web SDK data element type called Identity map. 
+Learn how to capture identities with Adobe Experience Platform Web SDK. Capture both unauthenticated and authenticated identity data on the [Luma demo website](https://luma.enablementadobe.com). Learn how to use the data elements you created earlier for collecting authenticated data with a Platform Web SDK data element type called Identity map. 
 
 This lesson focuses on the Identity map data element available with the Adobe Experience Platform Web SDK tags extension. You map data elements containing an authenticated user ID and authentication status to XDM. 
+
+
 
 ## Learning objectives
 
@@ -21,7 +23,7 @@ At the end of this lesson, you are able to:
 
 ## Prerequisites 
 
-You have an understanding of what a data layer is, gotten familiar with the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} data layer, and know how to reference data elements in tags. You must have completed the previous lessons in the tutorial:
+You have an understanding of what a data layer is, gotten familiar with the [Luma demo website](https://luma.enablementadobe.com){target="_blank"} data layer, and know how to reference data elements in tags. You must have completed the previous lessons in the tutorial:
 
 * [Configure an XDM schema](configure-schemas.md)
 * [Configure an identity namespace](configure-identities.md)
@@ -71,26 +73,15 @@ To create the [!UICONTROL Identity Map] data element:
 
 1. Go to **[!UICONTROL Data Elements]** and select **[!UICONTROL Add Data Element]**
 
-1. **[!UICONTROL Name]** the Data Element `identityMap.loginID`
+1. **[!UICONTROL Name]** the data element `Identity Map`
 
 1. As the **[!UICONTROL Extension]**, select `Adobe Experience Platform Web SDK`
 
 1. As the **[!UICONTROL Data Element Type]**, select `Identity map`
 
-1. This prompts a screen area to the right within the **[!UICONTROL Data Collection interface]** for you to configure the identity:
-   
-   ![Data Collection interface](assets/identity-identityMap-setup.png)
+1. As the  **[!UICONTROL Namespace]**, select the `lumaCrmId` namespace created in the [Configure Identities](configure-identities.md) lesson. If it does not appear in the dropdown, type it in.
 
-1. As the  **[!UICONTROL Namespace]**, select the `lumaCrmId` namespace that you previously created in the [Configure Identities](configure-identities.md) lesson. If it does not appear in the dropdown, type it in.
-
-1. After the **[!UICONTROL Namespace]** is selected, an ID must be set. Select the `user.profile.attributes.username` data element created earlier in the [Create data elements](create-data-elements.md#create-data-elements-to-capture-the-data-layer) lesson, which captures an ID when users are logged into the Luma site. 
-
-    <!--  >[!TIP]
-    >
-    >You can verify the **[!UICONTROL Luma CRM ID]** is collected in a data element on the web property by going to the [Luma Demo site](https://luma.enablementadobe.com/content/luma/us/en.html), logging in, [switching the tag environment](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) to your own, and typing `_satellite.getVar("user.profile.attributes.username")` in the web browser developer console.
-    >
-    >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
-    -->
+1. As the **[!UICONTROL ID]**, select the `User Id` data element created in the [Create data elements](create-data-elements.md#create-data-elements-to-capture-the-data-layer) lesson. 
 
 1. As the **[!UICONTROL Authenticated state]**, select **[!UICONTROL Authenticated]**
 1. Select **[!UICONTROL Primary]**
@@ -99,48 +90,35 @@ To create the [!UICONTROL Identity Map] data element:
    
     ![Data Collection interface](assets/identity-id-namespace.png)
 
->[!TIP]
+>[!IMPORTANT]
 >
 > Adobe recommends sending identities that represent a person, such as `Luma CRM Id`, as the [!UICONTROL primary] identity.
 >
 > If the identity map contains the person identifier (for example, `Luma CRM Id`), then the person identifier becomes the [!UICONTROL primary] identity. Otherwise, `ECID` becomes the [!UICONTROL primary] identity.
+>
+> Additionally, for customers of Platform applications, Adobe recommends implementing [identity graph linking rules](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) to prevent graph collapse.
 
+>[!NOTE]
+>
+> You do not need to take any action to capture the ECID in a Web SDK implementation. It is captured automatically.
 
-
-
-<!--
-1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
-   
-   
-   ```
-   _satellite.getVar('identityMap.loginID')
-   ```  
-
-   ![Data Collection interface](assets/identity-consoleIdentityDataElement.png)
-   
-   >[!NOTE]
-   >
-   >ECID identifier will NOT populate in the Data Element, as this is configured already with Platform Web SDK.   
--->
 
 At the end of these steps, you should have the following data elements created:
 
 |Core Extension Data Elements | Platform Web SDK Extension Data Elements|
------------------------------|-------------------------------
-| `cart.orderId` | `data.variable` |
-| `cart.productInfo` | `identityMap.loginID` |
-| `cart.productInfo.purchase`| `xdm.variable.content`|
-| `page.pageInfo.hierarchie1` | |
-| `page.pageInfo.pageName` | |
-| `page.pageInfo.server` | |
-| `product.category`| | 
-| `product.productInfo.sku`| | 
-| `product.productInfo.title`| |
-| `user.profile.attributes.loggedIn` | |
-| `user.profile.attributes.username` | |
+|-----------------------------|-------------------------------|
+| `Ecommerce Cart Products` | `Data Variable` |
+| `Ecommerce Product Category` | `Identity Map` |
+| `Ecommerce Product Id` | `XDM Variable` |
+| `Ecommerce Product Name` | |
+| `Ecommerce Purchase Id`| |
+| `Ecommerce Purchase Products` |  |
+| `Page Name`| |
+| `User Id`| |
+| `User Logged In` | |
 
 With these data elements in place, you are ready to start sending data to Platform Edge Network by creating a rule in tags.
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

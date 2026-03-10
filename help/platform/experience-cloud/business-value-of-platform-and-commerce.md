@@ -5,7 +5,7 @@ solution: Experience Platform, Commerce
 feature: Integrations
 topic: Integrations
 badgeIntegration: label="Integration" type="positive"
-role: User, Leader, Architect
+role: User, Leader, Developer
 level: Beginner
 jira: KT-6242
 thumbnail: 40376.jpg

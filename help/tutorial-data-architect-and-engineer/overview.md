@@ -2,7 +2,7 @@
 title: Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 description: Get started with Adobe Experience Platform for Data Architects and Data Engineers.
 breadcrumb-title: Overview
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay

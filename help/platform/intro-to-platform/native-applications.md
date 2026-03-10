@@ -1,7 +1,7 @@
 ---
 title: Applications built on Adobe Experience Platform
 description: Learn about the applications built natively on top of Adobe Experience Platform.
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+role: User, Developer, Admin, Leader
 level: Beginner
 last-substantial-update: 2023-11-03
 jira: KT-4333

@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 413ef49f-f307-4a9f-9867-e5d7499ffc98
 ---
 # 1.8.3 Adobe Express & ESM
 

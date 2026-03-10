@@ -3,6 +3,7 @@ title: Create your orchestrated campaign
 description: Create your orchestrated campaign
 kt: 5342
 doc-type: tutorial
+exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
 ---
 # 3.8.2 Create your orchestrated campaign
 

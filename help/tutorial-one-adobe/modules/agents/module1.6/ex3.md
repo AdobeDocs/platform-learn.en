@@ -3,6 +3,7 @@ title: Scale Content Fragments with ChatGPT & MCP Server
 description: Scale Content Fragments with ChatGPT & MCP Server
 kt: 5342
 doc-type: tutorial
+exl-id: b7105351-e9de-4b2c-b3d7-2d4c8627f852
 ---
 # 1.6.3 Scale Content Fragments with ChatGPT & MCP Server
 

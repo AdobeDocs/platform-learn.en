@@ -3,7 +3,7 @@ title: Expanding High-Value Audiences with Look-Alike Models
 description: Learn how look-alike audience models in Real-Time CDP help marketers expand their reach by identifying similar high-value customers.
 doc-type: Video Clips
 duration: 59
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

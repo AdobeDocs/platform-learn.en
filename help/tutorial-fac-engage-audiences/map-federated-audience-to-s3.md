@@ -3,7 +3,7 @@ title: Map a Federated Audience to an S3 Destination
 seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Map a Federated Audience to S3
 description: In this exercise, we will map a federated audience to a downstream Real-Time CDP destination to support a personalized offline experience.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444

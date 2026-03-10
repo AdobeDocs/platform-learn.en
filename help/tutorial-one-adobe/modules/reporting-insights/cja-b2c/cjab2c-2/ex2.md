@@ -40,9 +40,9 @@ On the right side of your screen, you'll see the **Create dataset** menu.
 
 For the **Dataset ID**, use the below naming convention. For the other fields, please leave the default settings.
 
-| Naming         | Example |    
-| ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |  
+| Naming         | Example |
+| ----------------- | ------------- |
+| `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
 Click **CREATE DATA SET**.
 
@@ -246,15 +246,15 @@ As the location for your output, select **BigQuery table**.
 
 You'll then see a new popup, where your **Project Name** and **Dataset Name** are pre-populated. The dataset name should be the dataset that you created in the beginning of this exercise, with this naming convention:
 
-| Naming         | Example |    
-| ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |  
+| Naming         | Example |
+| ----------------- | ------------- |
+| `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 You now need to enter a Table name. Please use this naming convention:
 
-| Naming         | Example |    
-| ----------------- |------------- | 
-| `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |  
+| Naming         | Example |
+| ----------------- |------------- |
+| `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 Click **SAVE**.
 

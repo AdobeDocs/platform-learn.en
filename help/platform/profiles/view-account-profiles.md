@@ -3,7 +3,7 @@ title: View account profiles
 description: Learn how to view account profiles in Real-Time CDP B2B Edition.
 solution: Real-Time Customer Data Platform
 feature: Profiles
-role: User, Data Engineer, Data Architect
+role: User, Developer
 level: Beginner
 jira: KT-9260
 thumbnail: 338251.jpg

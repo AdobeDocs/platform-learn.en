@@ -2,7 +2,7 @@
 title: Identity graph linking rules - Identity settings
 description: Learn how to enable and configure identity graph linking rules in Adobe Experience Platform to build accurate customer profiles.
 feature: Identities
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Feature Video
 duration: 292

@@ -30,10 +30,10 @@ Make sure the **toggle** for this plugin is set to **Enabled**. Then, click the 
 You'll see an **Extension configuration** popup. Configure the following fields to use this plugin.
 
 | Key | Value|
-| --------------- | ------------------------------ | 
-| **`IMS_ENV`** | **PROD** | 
-| **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** | 
-| **`SHOW_CUSTOM_FORMS`** | **'{"previewUrl": true, "publishUrl": true}'** | 
+| --------------- | ------------------------------ |
+| **`IMS_ENV`** | **PROD** |
+| **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** |
+| **`SHOW_CUSTOM_FORMS`** | **'{"previewUrl": true, "publishUrl": true}'** |
 
 Click **Save**.
 

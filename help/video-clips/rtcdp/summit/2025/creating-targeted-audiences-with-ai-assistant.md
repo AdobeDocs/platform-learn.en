@@ -3,7 +3,7 @@ title: Creating Targeted Audiences with AI Assistant
 description: Watch how AI Assistant helps marketers build predictive models and create highly targeted audiences for campaigns.
 doc-type: Video Clips
 duration: 176
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

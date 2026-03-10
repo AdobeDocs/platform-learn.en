@@ -11,6 +11,8 @@ Learn how to implement Adobe Target using Adobe Experience Platform Web SDK. Lea
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) is the Adobe Experience Cloud application that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, and other digital channels.
 
+
+
 ![Web SDK and Adobe Target diagram](assets/dc-websdk-at.png)
 
 ## Learning objectives
@@ -50,7 +52,7 @@ Before starting, determine if an extra flicker handling solution is required dep
 
 >[!NOTE]
 >
->This tutorial uses the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}, which has an asynchronous implementation of tags and flicker mitigation in place. This section is for reference to understand how the flicker mitigation works with the Platform Web SDK.
+>This tutorial uses the [Luma website](https://luma.enablementadobe.com){target=_blank}, which has an asynchronous implementation of tags and flicker mitigation in place. This section is for reference to understand how the flicker mitigation works with the Platform Web SDK.
 
 
 ### Asynchronous implementation
@@ -102,7 +104,7 @@ The pre-hiding style for synchronous implementations can be configured as follow
 1. Select the **[!UICONTROL Configure]** button for the Platform Web SDK extension
 1. Select the **[!UICONTROL Edit pre-hiding style]** button
 
-   ![Target pre-hiding snippet for asynchronous implementations](assets/target-flicker-sync.png)
+   ![Target pre-hiding snippet for synchronous implementations](assets/target-flicker-sync.png)
 
 1. Modify the CSS to include the selectors and hiding methods you would like to use, for example: `body { opacity: 0 !important }` if you would like to pre-hide the entire body of the page. 
 1. Save your changes and build to a library
@@ -190,7 +192,7 @@ Visual personalization decisions refer to the experiences created in Adobe Targe
 Visual personalization decisions from Target are delivered by the Platform Web SDK, if Target is enabled in the datastream. However, _they are not rendered automatically_. You must update the [!UICONTROL Send event] action to enable automatic rendering.
 
 1. In the [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface, open the tag property you are using for this tutorial
-1. Open the `all pages - library loaded - send event - 50` rule
+1. Open the `all pages - adobeDataLayer push - send event - 50` rule
 1. Select the `Adobe Experience Platform Web SDK - Send event` action
 1. Enable **[!UICONTROL Render visual personalization decisions]** with the checkbox
 
@@ -210,7 +212,7 @@ The render visual personalization decisions setting makes the Platform Web SDK a
 >
 >Typically, the [!UICONTROL Render visual personalization decisions] setting should only be enabled for a single Send Event action per full page load. If multiple Send Event actions have this setting enabled, then subsequent render requests are ignored.
 
-If you prefer to render or action on these decisions yourself using custom code, you can leave the [!UICONTROL Render visual personalization decisions] setting disabled. Platform Web SDK is flexible and provides this capability to give you complete control. You can refer to the guide for more information about [manually rendering personalized content](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content).
+If you prefer to render or action on these decisions yourself using custom code, you can leave the [!UICONTROL Render visual personalization decisions] setting disabled. Platform Web SDK is flexible and provides this capability to give you complete control. You can refer to the guide for more information about [manually rendering personalized content](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/personalization/render-manual-propositions).
 
 
 ### Set up a Target activity with the Visual Experience Composer
@@ -222,7 +224,7 @@ Now that the basic implementation portion is complete, create an Experience Targ
 >If you are using Google Chrome as your browser, the [Visual Experience Composer (VEC) helper extension](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) is required to load the site properly for editing in the VEC.
 
 1. Navigate to the Adobe Target interface
-1. Create an Experience Targeting (XT) activity using the Luma homepage for the activity URL
+1. Create an Experience Targeting (XT) activity using the Luma homepage for the activity URL and your Target workspace, if any:
 
    ![Create a new XT activity](assets/target-xt-create-activity.png)
 
@@ -230,7 +232,7 @@ Now that the basic implementation portion is complete, create an Experience Targ
 
    ![Target VEC modification](assets/target-xt-vec-modification.png)
 
-1. Update the event name, then select **[!UICONTROL Next]**.
+1. Update the Activity name, then select **[!UICONTROL Next]**.
 
    ![Target VEC update event](assets/target-xt-vec-updateevent.png)
 
@@ -258,7 +260,7 @@ If you set up an activity, you should see your content rendered on the page. How
 >If you are using Google Chrome and have the [Visual Experience Composer (VEC) helper extension](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) installed, make sure the **Inject Target Libraries** setting is disabled. Enabling this setting will result in extra Target requests.
 
 1. Open the Adobe Experience Platform Debugger browser extension
-1. Go to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Go to the [Luma demo website](https://luma.enablementadobe.com) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Reload the page
 1. Select the **[!UICONTROL Network]** tool in the debugger
 1. Filter by **[!UICONTROL Experience Platform Web SDK]**
@@ -283,7 +285,7 @@ Custom decision scopes (formerly known as "mboxes") can be used to deliver HTML 
 
 Modify your page load rule to add a custom decision scope:
 
-1. Open the `all pages - library loaded - send event - 50` rule
+1. Open the `all pages - adobeDataLayer push - send event - 50` rule
 1. Select the `Adobe Experience Platform Web SDK - Send Event` action
 1. Add one or more scopes you would like to use. For this example, use `homepage-hero`.
 
@@ -301,7 +303,7 @@ Now that you have configured the Platform Web SDK to request content for the `ho
 
 1. Create a rule called `homepage - send event complete - render homepage-hero`.
 1. Add an event to the rule. Use the **Adobe Experience Platform Web SDK** extension and the **[!UICONTROL Send event complete]** event type.
-1. Add a condition to restrict the rule to the Luma homepage (path without query string equals `/content/luma/us/en.html`).
+1. Add a condition to restrict the rule to the Luma homepage (path without query string equals `/` or `/index.html`).
 1. Add an action to the rule. Use the **Adobe Experience Platform Web SDK** extension and **Apply propositions** action type.
 
    ![Render homepage hero rule](assets/target-rule-render-hero.png)
@@ -341,7 +343,7 @@ Now that you have configured the Platform Web SDK to request content for the `ho
    if (heroProposition !== undefined){
       alloy("sendEvent", {
          xdm: {
-            eventType: "display",
+            eventType: "decisioning.propositionDisplay",
             _experience: {
                decisioning: {
                   propositions: [{
@@ -372,7 +374,6 @@ Now that you have configured the Platform Web SDK to request content for the `ho
 Now that you have a rule to manually render a custom decision scope, you can create another Experience Targeting (XT) activity in Target. This time use the Form-Based Experience Composer.
 
 1. Open [Adobe Target](https://experience.adobe.com/target)
-1. Deactivate the activity used for the previous lesson
 1. Create an Experience Targeting (XT) activity using the Form-based Experience Composer option
 
    ![Create a new XT activity](assets/target-xt-create-form-activity.png)
@@ -381,22 +382,13 @@ Now that you have a rule to manually render a custom decision scope, you can cre
 
    ![Create a new XT activity](assets/target-xt-form-activity.png)
 
-1. Paste the following code in the content box. This code is a basic hero banner with a different background image:
+1. Paste the following code in the content box to make a change to the call-to-action in the hero:
 
    ```html
-   <div class="we-HeroImage jumbotron" style="background-image: url('/content/luma/us/en/women/_jcr_content/root/hero_image.coreimg.jpeg');">
-      <div class="container cq-dd-image">
-         <div class="we-HeroImage-wrapper">
-            <p class="h3">New Luma Yoga Collection</p>
-            <strong class="we-HeroImage-title h1">Be active with style&nbsp;</strong>
-            <p>
-               <a class="btn btn-primary btn-action" href="/content/luma/us/en/products.html" role="button">Shop Now</a>
-            </p>
-         </div>
-      </div>
-   </div>
+   New collections
    ```
 
+1. Name the activity
 1. On the [!UICONTROL Goals & Settings] step, choose Adobe Target as the reporting source and [!UICONTROL Engagement] > [!UICONTROL Page Views] as the goal
 1. Save the activity
 1. If you are comfortable with your changes, then you can activate your activity. Otherwise, if you would like to preview the experience without activating you can copy the [QA Preview URL](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa).
@@ -411,7 +403,7 @@ Now that you have a rule to manually render a custom decision scope, you can cre
 If you activated your activity, you should see your content render on the page. However even if no activities are live, you can also look at the [!UICONTROL Send Event] network call to confirm that Target is requesting content for your custom scopes.
 
 1. Open the Adobe Experience Platform debugger browser extension
-1. Go to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Go to the [Luma demo website](https://luma.enablementadobe.com) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Reload the page
 1. Select the **[!UICONTROL Network]** tool in the Debugger
 1. Filter by **[!UICONTROL Adobe Experience Platform Web SDK]**
@@ -442,7 +434,7 @@ You can also add page parameters using the data object.
 
 ### Special parameters and the data object
 
-There are some data points that may be useful to Target that are not mapped from the XDM object. These special Target parameters include:
+There are parameters useful to Target that are not mapped from the XDM object. These special Target parameters include:
 
 * [Profile attributes](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes) 
 * [Recommendations entity attributes](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
@@ -453,76 +445,74 @@ These parameters must be sent in the `data` object instead of in the `xdm` objec
 
 To populate the data object, create the following data element, reusing data elements created in the [Create data elements](create-data-elements.md) lesson:
 
-* **`data.content`** using the following custom code: 
-
-   ```javascript
-   var data = {
-      __adobe: {
-         target: {
-            "entity.id": _satellite.getVar("product.productInfo.sku"),
-            "entity.name": _satellite.getVar("product.productInfo.title"),
-            "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
-            "user.categoryId": _satellite.getVar("product.category")
-         }
-      }
-   }
-   return data;
-   ```
-
-
+1. Open the tag rule `product detail pages - adobeDataLayer push - set product details variables - 20`
+1. Add a new **[!UICONTROL Action]**
+1. Select **[!UICONTROL Adobe Experience Platform Web SDK]** extension
+1. Select **[!UICONTROL Action Type]** as **[!UICONTROL Update variable]**
+1. Select `Data Variable` as the **[!UICONTROL Data element]**
+1. Select the **[!UICONTROL target]** object
+1. Set `entity.id` as the `Ecommerce Product Id` data element
+1. Set `entity.name` as the `Ecommerce Product Name` data element
+1. Set `user.categoryId` as the `Ecommerce Product Category` data element
+1. Select **[!UICONTROL Keep Changes]**
+1. Select **[!UICONTROL Save]**
 
 ### Update the page load rule
 
 Passing additional data for Target outside of the XDM object requires updating any applicable rules. For this example, the only modification you must make is to include the new **data.content** data element to the generic page load rule and product page view rule. 
 
-1. Open the `all pages - library loaded - send event - 50` rule
+1. Open the `all pages - adobeDataLayer push - send event - 50` rule
 1. Select the `Adobe Experience Platform Web SDK - Send event` action
-1. Add the `data.content` data element to the Data field
+1. Add the `Data Variable` data element to the Data field, if it isn't already added
 
    ![Add Target Data to Rule](assets/target-rule-data.png)
 
 1. Save your changes and build to your library
 
->[!NOTE]
->
->The example above uses a `data` object that is not completely populated on all page types. Tags handles this situation appropriately and omits keys that have an undefined value. For example, `entity.id` and `entity.name` would not be passed on any pages aside from product details.
-
+   
    
 ## Splitting Personalization and Analytics requests
 
-The data layer on the Luma site is completely defined before the tags embed code. This allows us to use a single call to both fetch personalized content (e.g. from Adobe Target) and send analytics data (e.g. to Adobe Analytics). 
+On the Luma site, the data layer loads quickly and is completely defined before the Send Event call fires. This allows us to use a single call to both fetch personalized content (e.g. from Adobe Target) and send analytics data (e.g. to Adobe Analytics). 
 
-On many websites, however, the data layer cannot be loaded early enough or quickly enough to use a single call for both applications. In those situations, you can use two [!UICONTROL Send event] actions on a single page load and use the first for personalization and the second for analytics. Breaking up the events this way allows the personalization event to fire as early as possible, while waiting for the data layer to load completely before sending the Analytics event. This is similar to many pre-Web SDK implementations, where Adobe Target would fire the `target-global-mbox` at the top of the page and Adobe Analytics would fire the `s.t()` call at the bottom of the page
+On many websites, however, the data layer cannot be loaded early enough or quickly enough to use a single call for both applications. In those situations, you can use two [!UICONTROL Send event] actions on a single page load and use the first for personalization and the second for analytics. Breaking up the events this way allows the personalization event to fire as early as possible, while waiting for the data layer to load completely before sending the Analytics event. This is similar to many pre-Web SDK implementations, where Adobe Target would fire the `target-global-mbox` at the top of the page and Adobe Analytics would fire the `s.t()` call at the bottom of the page. 
+
+The second call will also be responsibile for reporting up all views of personalized content and replace any `decisioning.propositionDisplay` calls.
 
 To create the personalization-on-top request:
 
-1. Open the `all pages - library loaded - send event - 50` rule
+1. Open the `all pages - adobeDataLayer push - send event - 50` rule
 1. Open the **Send event** action
 1. Select **[!UICONTROL Use guided events]** and then select **[!UICONTROL Request personalization]**
 1. This locks the **Type** as **[!UICONTROL Decisioning Proposition Fetch]**
+1. Select **[!UICONTROL Keep Changes]**
+1. **[!UICONTROL Save]** the rule
 
    ![send_decision_request_alone](assets/target-decision-request.png)
 
 To create the analytics-on-bottom request:
 
-1. Create a new rule called `all pages - page bottom - send event - 50`
-1. Add an event to the rule. Use the **Core** extension and the **[!UICONTROL Page Bottom]** event type
+1. Create a new rule called `all pages - window loaded - send event - 50`
+1. Add an event to the rule. Use the **Core** extension and the **[!UICONTROL Window Loaded]** event type
 1. Add an action to the rule. Use the **Adobe Experience Platform Web SDK** extension and **Send event** action type
 1. Select **[!UICONTROL Use guided events]** and then select **[!UICONTROL Collect analytics]**
-1. This locks the **[!UICONTROL Include pending display notifications]** checkbox selected so the queued display notification from the decisioning request will be sent.
+1. This locks the **[!UICONTROL Include rendered propositions]** checkbox selected so the queued display notifications from the decisioning request will be sent.
+1. Select **[!UICONTROL Keep Changes]**
+1. **[!UICONTROL Save]** the rule
+1. Update and rebuild your library
 
  ![send_decision_request_alone](assets/target-aa-request-guided.png)
 
    >[!TIP]
    >
-   >If the event you're fetching a Decisioning Proposition for doesn't have an Adobe Analytics event following it use the **Guided event style** **[!UICONTROL Unguided - show all fields]**. You'll need to select all the options manually, but it unlocks the option to **[!UICONTROL automatically send a display notification]** along with your fetch request.
+   >If the event you're fetching a Decisioning Proposition with doesn't have an Adobe Analytics event following it leave **[!UICONTROL Use guided events]** unchecked. You'll need to select all the options manually, but it unlocks the option to **[!UICONTROL Include rendered propositions]** along with your fetch request.
 
 
 ### Validate with the Debugger
 
 Now that the rules are updated, you can validate if the data is being passed correctly using the Adobe Debugger.
 
-1. Navigate to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and login with the email `test@test.com` and password `test`
+1. Navigate to the [Luma demo website](https://luma.enablementadobe.com) 
 1. Navigate to a product details page
 1. Open the Adobe Experience Platform debugger browser extension and [switch the tag property to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Reload the page
@@ -591,4 +581,4 @@ Now that you have completed this lesson you should have a working implementation
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

@@ -2,7 +2,7 @@
 title: Adobe Defined Functions
 description: Learn how to use Adobe-defined functions in Adobe Experience Platform Query Service to perform common business-related tasks on Experience Event data.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-7685
 thumbnail: 333701.jpg

@@ -182,7 +182,7 @@ const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
-    await loadSection(main.querySelector('.section'), waitForFirstImage);	
+    await loadSection(main.querySelector('.section'), waitForFirstImage);    
   }
 ```
 
@@ -238,7 +238,7 @@ Next, search for and go to the line that contains `window.adobeDataLayer.push`.
 You'll see the object `pageContext` being defined like this. You now need to add two objects under `pageContext`.
 
 ```javascript
-	pageContext: {
+    pageContext: {
       pageType,
       pageName: document.title,
       eventType: 'visibilityHidden',
@@ -252,7 +252,7 @@ You'll see the object `pageContext` being defined like this. You now need to add
 This is the code that needs to be added:
 
 ```javascript
-	,
+    ,
     _experienceplatform: {
       identification:{
         core:{

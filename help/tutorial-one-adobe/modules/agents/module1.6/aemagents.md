@@ -3,6 +3,7 @@ title: Adobe Experience Manager & Agents
 description: Adobe Experience Manager & Agents
 kt: 5342
 doc-type: tutorial
+exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
 ---
 # 1.6 Adobe Experience Manager & Agents
 

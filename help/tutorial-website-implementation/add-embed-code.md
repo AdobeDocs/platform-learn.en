@@ -7,6 +7,11 @@ exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 
 In this lesson, you will implement the asynchronous embed code of your tag property's Development environment. Along the way, you will learn about two main concepts of tags&mdash;Environments and Embed Codes.
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:

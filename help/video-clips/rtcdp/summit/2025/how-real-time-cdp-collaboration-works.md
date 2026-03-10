@@ -3,7 +3,7 @@ title: How Real-Time CDP Collaboration Works
 description: Learn the step-by-step process of onboarding audiences, collaborating with publishers, and activating campaigns using Adobe's Real-Time CDP Collaboration.
 doc-type: Video Clips
 duration: 62
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

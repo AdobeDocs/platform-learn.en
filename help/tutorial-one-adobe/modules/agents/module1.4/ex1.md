@@ -3,6 +3,7 @@ title: Getting started with Brand Concierge
 description: Getting started with Brand Concierge
 kt: 5342
 doc-type: tutorial
+exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
 ---
 # 1.4.1 Getting started with Brand Concierge
 

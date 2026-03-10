@@ -75,11 +75,11 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 Please have a look a these schemas and datasets in Adobe Experience Platform.
 
-| Dataset         | Schema|    
-| ----------------- |-------------| 
-| Demo System - Event Dataset for Website (Global v1.1) | Demo System - Event Schema for Website (Global v1.1) |   
-| Demo System - Event Dataset for Call Center (Global v1.1) | Demo System - Event Schema for Call Center (Global v1.1) |   
-| Demo System - Event Dataset for Voice Assistants (Global v1.1)| Demo System - Event Schema for Voice Assistants (Global v1.1)|    
+| Dataset         | Schema|
+| ----------------- |-------------|
+| Demo System - Event Dataset for Website (Global v1.1) | Demo System - Event Schema for Website (Global v1.1) |
+| Demo System - Event Dataset for Call Center (Global v1.1) | Demo System - Event Schema for Call Center (Global v1.1) |
+| Demo System - Event Dataset for Voice Assistants (Global v1.1)| Demo System - Event Schema for Voice Assistants (Global v1.1)|
 
 Make sure to have at least checked things like:
 

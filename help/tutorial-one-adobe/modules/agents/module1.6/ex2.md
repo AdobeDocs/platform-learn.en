@@ -3,6 +3,7 @@ title: AEM MCP Servers & Cursor
 description: AEM MCP Servers & Cursor
 kt: 5342
 doc-type: tutorial
+exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
 ---
 # 1.6.2 AEM MCP Servers & Cursor
 
@@ -62,8 +63,8 @@ Add the following MCP server to the file **mcp.json**. There may be other MCP Se
 
 ```json
 "aem": {
-	"url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
-	}
+    "url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
+    }
 ```
 
 ![Cursor + AEM](./images/cursorai7.png)
@@ -170,7 +171,7 @@ Add the following MCP server to the file **mcp.json**. There may be other MCP Se
 ```
 ,
 "aem-discovery": {
-	"url": "https://mcp.adobeaemcloud.com/adobe/mcp/discovery"
+    "url": "https://mcp.adobeaemcloud.com/adobe/mcp/discovery"
 }
 ```
 

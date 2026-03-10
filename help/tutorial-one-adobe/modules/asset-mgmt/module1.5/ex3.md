@@ -271,8 +271,8 @@ Scroll up, go to the **Commerce** tab and then click **Add** under **Product sku
 
 Add the following SKU's for this product:
 
-| Key     | Value     | Usage     | 
-|:-------------:| :---------------:| :---------------:| 
+| Key     | Value     | Usage     |
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Light-Gold`| `1` |`thumbnail, image, swatch_image, small_image`|
 | `iPhone-Air-Light-Gold-256GB`| `1` |`thumbnail, image, swatch_image, small_image`|
 | `iPhone-Air-Light-Gold-512GB`| `1` |`thumbnail, image, swatch_image, small_image`|
@@ -296,8 +296,8 @@ Scroll up, go to the **Commerce** tab and then click **Add** under **Product sku
 
 Add the following SKU's for this product:
 
-| Key     | Value     | Usage     | 
-|:-------------:| :---------------:| :---------------:| 
+| Key     | Value     | Usage     |
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Space-Black`| `1` |`thumbnail, image, swatch_image, small_image`|
 | `iPhone-Air-Space-Black-256GB`| `1` |`thumbnail, image, swatch_image, small_image`|
 | `iPhone-Air-Space-Black-512GB`| `1` |`thumbnail, image, swatch_image, small_image`|
@@ -322,8 +322,8 @@ Scroll up, go to the **Commerce** tab and then click **Add** under **Product sku
 
 Add the following SKU's for this product:
 
-| Key     | Value     | Usage     | 
-|:-------------:| :---------------:| :---------------:| 
+| Key     | Value     | Usage     |
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Sky-Blue`| `1` |`thumbnail, image, swatch_image, small_image`|
 | `iPhone-Air-Sky-Blue-256GB`| `1` |`thumbnail, image, swatch_image, small_image`|
 | `iPhone-Air-Sky-Blue-512GB`| `1` |`thumbnail, image, swatch_image, small_image`|
@@ -347,8 +347,8 @@ Scroll up, go to the **Commerce** tab and then click **Add** under **Product sku
 
 Add the following SKU's for this product:
 
-| Key     | Value     | Usage     | 
-|:-------------:| :---------------:| :---------------:| 
+| Key     | Value     | Usage     |
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Cloud-White`| `1` |`thumbnail, image, swatch_image, small_image`|
 | `iPhone-Air-Cloud-White-256GB`| `1` |`thumbnail, image, swatch_image, small_image`|
 | `iPhone-Air-Cloud-White-512GB`| `1` |`thumbnail, image, swatch_image, small_image`|

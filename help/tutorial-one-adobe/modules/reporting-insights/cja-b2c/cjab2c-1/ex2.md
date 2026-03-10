@@ -90,10 +90,10 @@ Go to each dataset to update the Person ID. Now fill the field Person ID choosin
 
 Once you have stitched the two datasets, you're ready to continue. 
 
-|  dataset       | Person ID | 
-| ----------------- |-------------| 
-| Demo System - Event Dataset for Website (Global v1.1) | email         | 
-| Demo System - Event Dataset for Call Center (Global v1.1) | email         | 
+|  dataset       | Person ID |
+| ----------------- |-------------|
+| Demo System - Event Dataset for Website (Global v1.1) | email         |
+| Demo System - Event Dataset for Call Center (Global v1.1) | email         |
 
 You also need to ensure that for both datasets, these options are enabled:
 

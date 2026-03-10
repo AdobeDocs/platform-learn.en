@@ -3,6 +3,7 @@ title: Getting started with Agent Orchestrator
 description: Getting started with Agent Orchestrator
 kt: 5342
 doc-type: tutorial
+exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
 ---
 # 1.1.1 Getting started with Agent Orchestrator
 

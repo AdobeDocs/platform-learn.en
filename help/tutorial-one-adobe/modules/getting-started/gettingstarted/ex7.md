@@ -108,10 +108,10 @@ If successful, a response containing a bearer token, an access token, and an exp
 
 You should see a similar response containing the following information:
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | token_type          | **bearer** |
-| access_token    | **eyJhbGciOiJSUz...** | 
+| access_token    | **eyJhbGciOiJSUz...** |
 | expires_in          | **86399** |
 
 The Adobe I/O **bearer-token** has a specific value (the very long access_token) and an expiration window and is now valid for 24 hours. This means that after 24 hours, if you want to use Postman to interact with Adobe APIs, you will have to generate a new token by running this request again.

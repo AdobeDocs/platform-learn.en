@@ -3,7 +3,7 @@ title: AI Assistant - Boosting Productivity in Audience Management
 description: See how Adobe's AI Assistant simplifies audience management tasks, provides insights, and forecasts trends for marketers.
 doc-type: Video Clips
 duration: 159
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

@@ -3,7 +3,7 @@ title: Defining Customer Experience Use Cases
 description: Discover Adobe's five-question framework for defining customer experience use cases to align teams and drive business outcomes.
 doc-type: Video Clips
 duration: 48
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

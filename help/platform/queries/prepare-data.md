@@ -2,7 +2,7 @@
 title: Derive data with Data Distiller
 description: Learn how data engineers can use query service to transform data and output new datasets. Run these queries on a schedule to to power automated dashboards and segmentation.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-8005
 last-substantial-update: 2025-09-23

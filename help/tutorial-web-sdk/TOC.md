@@ -3,7 +3,7 @@ user-guide-title: Implement Adobe Experience Cloud with Web SDK tutorial
 breadcrumb-title: Web SDK Tutorial
 solution: Data Collection
 feature: Web SDK,Tags
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
@@ -20,18 +20,18 @@ recommendations: noDisplay,noCatalog
 + Tags Configuration {#tags-configuration}
   + [Install Web SDK extension](install-web-sdk.md)
   + [Create data elements](create-data-elements.md)
-  + [Create identities](create-identities.md)
+  + [Capture identities](create-identities.md)
   + [Create tag rules](create-tag-rule.md)
   + [Validate with Debugger](validate-with-debugger.md)
   + [Validate with Assurance](validate-with-assurance.md)
 
 + Applications Setup {#applications-setup}
   + [Set up Experience Platform](setup-experience-platform.md)
+  + [Set up Profile and Edge Segmentation](setup-profile-and-edge-segmentation.md)
+  + [Set up Journey Optimizer Web Channel](setup-web-channel.md)
   + [Set up Adobe Analytics](setup-analytics.md)
   + [Set up Audience Manager](setup-audience-manager.md)
   + [Set up Target](setup-target.md)
-  + [Set up Journey Optimizer Web Channel](setup-web-channel.md)
-  + [Set up Journey Optimizer Decision Management](setup-decision-management.md)
 
 + Consent Management {#consent-management}
   + [Set up consent](setup-consent.md)

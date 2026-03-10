@@ -3,7 +3,7 @@ title: Run and Operate Strategies for AEP at Scale
 description: Understand the importance of run and operate strategies, including governance, monitoring, and ROI measurement, for scaling AEP effectively.
 doc-type: Video Clips
 duration: 290
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

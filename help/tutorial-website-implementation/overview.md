@@ -67,6 +67,11 @@ Tags is also a platform that allows third-party vendors to create extensions to 
 
 ## About the Lessons
 
+
+>[!WARNING]
+>
+> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+
 In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own tag property, in your own Experience Cloud organization, and map it to our hosted Luma site using the Experience Cloud Debugger.
 
 [![Luma website](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)

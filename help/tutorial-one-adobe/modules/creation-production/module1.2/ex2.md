@@ -24,8 +24,8 @@ Go back to your first node, select **Initialize Constants** and then choose **Ad
 
 ![WF Fusion](./images/wffusion69.png)
 
-| Key     | Example Value     | 
-|:-------------:| :---------------:| 
+| Key     | Example Value     |
+|:-------------:| :---------------:|
 | `AZURE_STORAGE_URL`| `https://vangeluw.blob.core.windows.net` |
 | `AZURE_STORAGE_CONTAINER`| `vangeluw` |
 | `AZURE_STORAGE_SAS_READ`| `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |

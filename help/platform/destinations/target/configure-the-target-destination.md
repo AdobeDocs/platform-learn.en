@@ -6,7 +6,7 @@ feature-set: Experience Platform,Target
 feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experience Targeting
 topic: Integrations
 badgeIntegration: label="Integration" type="positive"
-role: Admin, Architect, User
+role: Admin, Developer, User
 level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03

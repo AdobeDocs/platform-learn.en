@@ -14,6 +14,8 @@ Learn how to implement the Adobe Journey Optimizer [web channel](https://experie
 
 By following this lesson, Journey Optimizer users are equipped to use the web channel for advanced online personalization using the Journey Optimizer web designer.
 
+
+
 ![Web SDK and Adobe Analytics diagram](assets/dc-websdk-ajo.png)  
 
 ## Learning Objectives
@@ -34,8 +36,9 @@ To complete the lessons in this section, you must first:
 
 * Complete all lessons for initial configuration of the Platform Web SDK, including setting up data elements and rules.
 * Ensure that your Adobe Experience Platform Web SDK tags extension version is 2.16 or above.
+* Complete the Set up Experience Platform lesson, including the exercise to create the `Luma Loyalty Rewards – Gold Status` audience.
+* Downloaded and enable the [Adobe Experience Cloud Visual Editing Helper browser extension](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 * If you are using the Journey Optimizer web designer to author your web channel experience, ensure you are using either the Google Chrome or Microsoft&reg; Edge browsers.
-* Also ensure you have downloaded and enabled the [Adobe Experience Cloud Visual Editing Helper browser extension](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 * Ensure that third-party cookies are allowed in your browser. It may be necessary to disable any ad blockers in your browser as well.
 
     >[!CAUTION]
@@ -95,9 +98,10 @@ To configure Adobe Journey Optimizer in the datastream:
 
 1. Check the **[!UICONTROL Adobe Journey Optimizer]** box.
 
+1. **[!UICONTROL Save]** the updated configuration.
+
     ![Check AJO box](assets/web-channel-check-ajo-box.png)
 
-1. Select **[!UICONTROL Save]**.
 
 This ensures that inbound events for Journey Optimizer are correctly handled by the Adobe Experience Platform Edge Network.
 
@@ -108,6 +112,7 @@ Ensure that a merge policy is defined with the **[!UICONTROL Active-On-Edge Merg
 To configure the option in the merge policy:
 
 1. Go to the **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** page in either the Experience Platform or Journey Optimizer interface.
+1. Make sure you are in the sandbox used for the  tutorial
 1. Select the **[!UICONTROL Merge Policies]** tab.
 1. Select your policy (it's usually best to use the [!UICONTROL Default Timebased] policy), and toggle the **[!UICONTROL Active-On-Edge Merge Policy]** option within the **[!UICONTROL Configure]** step.
 
@@ -141,43 +146,36 @@ To create the sample campaign:
 
 1. Navigate to **[!UICONTROL Journey Management]** > **[!UICONTROL Campaigns]** in the left navigation
 1. Click **[!UICONTROL Create campaign]** in the upper right.
-1. In the **[!UICONTROL Properties]** section, specify how you want to execute the campaign. For the Loyalty Rewards use case, choose **Scheduled**.
+1. Choose the type of campaign. For the Loyalty Rewards use case, choose **Scheduled - Marketing**.
 
     ![Scheduled campaign](assets/web-channel-campaign-properties-scheduled.png)
 
-1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL Web channel]**. As the  **[!UICONTROL Web surface]**, select **[!UICONTROL Page URL]**.
-
-    >[!NOTE]
-    >
-    >A web surface refers to a web property identified by a URL where content is delivered. It can correspond to a single page URL or encompass multiple pages, enabling you to apply modifications across one or multiple web pages.
-
-1. Choose the **[!UICONTROL Page URL]** web surface option to deploy the experience on one page for this campaign. Enter the URL for the Luma page, `https://luma.enablementadobe.com/content/luma/us/en.html`
-
-1. Once the web surface is defined, select **[!UICONTROL Create]**.
-
-    ![Select web surface](assets/web-channel-web-surface.png)
-
-1. Now add some additional details to the new web channel campaign. First, name the campaign. Call it `Luma Loyalty Rewards – Gold Status`. Optionally, you can add a description to the campaign. Also add **[!UICONTROL Tags]** to improve the overall campaign taxonomy.
+1. Add some additional details to the new web channel campaign. First, name the campaign. Call it `Luma Loyalty Rewards – Gold Status`. Optionally, you can add a description to the campaign. Also add **[!UICONTROL Tags]** to improve the overall campaign taxonomy.
 
     ![Name the campaign](assets/web-channel-campaign-name.png)
 
-1. By default, the campaign is active for all site visitors. For the purposes of this use case, only gold status reward members should see the experience. To enable this, click **[!UICONTROL Select audience]** and choose the `Luma Loyalty Rewards – Gold Status` audience.
+1. Go to the **[!UICONTROL Actions]** tab 
+1. Choose the **[!UICONTROL Web]** as the **[!UICONTROL Action name]**.
+1. Select **[!UICONTROL Create new configuration]** as the **[!UICONTROL Web configuration]**.
+1. As the Channel Configuration details, enter the following:
+    1. `LumaHomepage` as the **[!UICONTROL Name]**.
+    1. **[!UICONTROL Web]** as the **[!UICONTROL Channel]**.
+    1. **[!UICONTROL Onsite Personalization]** as the **[!UICONTROL Marketing action]**.
+    1. **[!UICONTROL Single page]** as the **[!UICONTROL Web settings]**.
+    1. `https://luma.enablementadobe.com/index.html` as the **[!UICONTROL Page URL]**.
+1. **[!UICONTROL Submit]** the new channel configuration
 
-1. In the **[!UICONTROL Identity namespace]** field, select the namespace for identifying individuals within the chosen segment. Since you are deploying the campaign on the Luma site, you can choose the ECID namespace. Profiles within the `Luma Loyalty Rewards – Gold Status` audience lacking the ECID namespace among their various identities are not targeted by the web channel campaign.
+    ![Configure the Web Channel](assets/web-channel-configuration.png)
+1. In the browser tab with your Campaign, select the new `LumaHomepage` configuration
 
-    ![Choose identity type](assets/web-channel-indentity-type.png)
+    >[!TIP]
+    >
+    > If the new configuration doesn't appear in the dropdown, go to the [!UICONTROL Properties] tab and then return to the [!UICONTROL Actions] tab and check the dropdown again.
 
-1. Schedule the campaign to begin on today's date using the **[!UICONTROL Campaign start]** option, and end in a week using the **[!UICONTROL Campaign end]** option.
 
-    ![Campaign schedule](assets/web-channel-campaign-schedule.png)
+## Experiment with Loyalty Rewards Content
 
->[!NOTE]
->
->Keep in mind that for web channel campaigns, the web experience is shown when the visitor opens the page. Therefore, unlike other types of campaigns in Adobe Journey Optimizer, the **[!UICONTROL Action triggers]** section is not configurable.
-
-### Experiment with Loyalty Rewards Content
-
-If you scroll back up, in the **[!UICONTROL Action]** section, you can optionally create an experiment to test out which content works better for the `Luma Loyalty Rewards – Gold Status` audience. Let's create and test two treatments as a component of the campaign configuration.
+Now that you have selected your [!UICONTROL Web configuration], in the **[!UICONTROL Action]** section, you can optionally create an experiment to test out which content works better for the `Luma Loyalty Rewards – Gold Status` audience. Let's create and test two treatments as a component of the campaign configuration.
 
 To create the content experiment:
 
@@ -185,27 +183,32 @@ To create the content experiment:
 
     ![Create experiment](assets/web-channel-create-content-experiment.png)
 
-1. First choose a **[!UICONTROL Success metric]**. This is the metric for determining content effectiveness. Choose **[!UICONTROL Unique Inbound Clicks]**, to see which content treatment generates more clicks on the web experience CTA.
-
-    ![Choose success metric](assets/web-channel-content-experiment-metric.png)
-
-1. When setting up an experiment using web channel and choosing the **[!UICONTROL Inbound Clicks]**, **[!UICONTROL Unique Inbound Clicks]**, **[!UICONTROL Page Views]**, or **[!UICONTROL Unique Page Views]** metrics, the **[!UICONTROL Click Action]** drop-down enables you to precisely track and monitor clicks and views on specific pages.
+1. First choose a **[!UICONTROL Success metric]**. This is the metric for determining content effectiveness. Choose **[!UICONTROL Unique Clicks]**, to see which content treatment generates more clicks on the web experience CTA.
 
 1. Optionally, you can designate a **[!UICONTROL Holdout]** that does not receive either of the two treatments. Leave this unchecked for now.
 
 1. Also optionally, choose to **[!UICONTROL Distribute evenly]**. Check this option to ensure the treatment splits are always evenly split.
 
+1. Select **[!UICONTROL Add treatment]** so you have two treatments in the experiment.
+
+1. Select **[!UICONTROL Create]**.
+
+    ![Choose success metric](assets/web-channel-content-experiment-metric.png)
+
+
 [Learn more about content experiments in Adobe Journey Optimizer web channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment).
+
+
 
 ### Edit Content using the Visual Helper
 
-Now, let's author the web channel experience. To do so, use the Adobe Experience Cloud **[!UICONTROL Visual Helper]**. This tool is a browser extension compatible with Google Chrome and Microsoft&reg; Edge. Make sure you have downloaded the extension before attempting to build your experiences. Also ensure that the web page includes the Web SDK.
+Now, let's author the web channel experience. First, install the [Adobe Experience Cloud Visual Editing Helper](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) browser extension for Google Chrome and Microsoft&reg; Edge, if you haven't already. Once installed, proceed with the steps in the Journey Optimizer interface:
 
-1. Within the **[!UICONTROL Action]** tab of the campaign, click **[!UICONTROL Edit content]**. Since you entered a single page URL as the surface, you should be ready to begin working in the composer.
+1. Select **[!UICONTROL Edit Content]** (or navigate to the Cotnent tab of the campaign). Since you entered a single page URL as the surface, you should be ready to begin working in the composer.
 
     ![Edit content](assets/web-channel-edit-content.png)
 
-1. Now, click **[!UICONTROL Edit web page]** to begin authoring.
+1. Now, click **[!UICONTROL Edit web page]** to begin authoring Treatment A of your experiement.
 
     ![Edit web page](assets/web-channel-edit-web-page.png)
 
@@ -213,28 +216,31 @@ Now, let's author the web channel experience. To do so, use the Adobe Experience
 
     ![Add contextual edits](assets/web-channel-some-contextual-edit.png)
 
-1. Also add personalization to the container using the **[!UICONTROL Expression editor]**.
 
+
+1. Also add personalization to the container using the **[!UICONTROL Expression editor]**.
+    
+    ![Open the expression editor](assets/web-channel-open-expression-editor.png)
     ![Add personalization](assets/web-channel-add-basic-personalization.png)
 
 1. Ensure that the experience is properly tracked for clicks. Choose **[!UICONTROL Click track element]** from the contextual menu.
 
     ![Click track](assets/web-channel-click-tracking.png)
 
-1. Use the **[!UICONTROL Offer decision component]** to insert offers in the web page. This component uses **[!UICONTROL Decision Management]** to pick the best offer to deliver to Luma visitors.
-
+There are many options available to personalize the messaging.
 
 ### HTML Design Changes
 
-There are a few methods available if you want to make more advanced, or custom changes to the site as a component of the Loyalty Rewards campaign.
+There are a few methods available if you want to make more advanced, or custom changes to the site as a component of the Loyalty Rewards campaign. Explore some of these in Treatment B.
 
 Use the **[!UICONTROL Components]** pane to add HTML, or other content directly to the Luma site.
 
 ![Explore the components pane](assets/web-channel-components-pane.png)
 
-Add a new HTML component at the top of the page. Edit the HTML within the component from the design interface or **[!UICONTROL Contextual]** pane.
+Add a new HTML component at the top of the page. Open the **[!UICONTROL expression editor]** again to edit the HTML.
 
-![Add custom HTML](assets/web-channel-add-html-component.png)
+![Open the expression editor](assets/web-channel-open-expression-editor-html.png)
+
 
 Alternatively, add HTML edits from the **[!UICONTROL Modifications]** pane. This pane allows you to select a component on the page and edit it from the designer interface.
 
@@ -244,18 +250,25 @@ Within the editor, add the HTML for the `Luma Loyalty Rewards – Gold Status` a
 
 Now, review the new custom HTML component for fit and feel.
 
-![Review custom HTML](assets/web-channel-review-custom-html.png)
+### Target the campaign to an audience
 
-Edit a specific component using the **[!UICONTROL CSS selector type]** modification.
+By default, the campaign is active for all site visitors. For the purposes of this use case, only gold status reward members should see the experience. To target the content to this audience:
 
-![Modify CSS](assets/web-channel-css-selector.png)
+1. Navigate to the **[!UICONTROL Audience]** tab
 
-Add custom code using the **Page `<head>` type** modification.
+1. In the **[!UICONTROL Identity namespace]** field, select the namespace for identifying individuals within the chosen segment. Since you are deploying the campaign on the Luma site, you can choose the ECID namespace. Profiles within the `Luma Loyalty Rewards – Gold Status` audience lacking the ECID namespace among their various identities are not targeted by the web channel campaign.
 
-![Modify head](assets/web-channel-page-head-modification.png)
+1. **[!UICONTROL Select audience]**
 
-The possibilities are endless using the **[!UICONTROL Visual Helper]**.
+    ![Select audience](assets/web-channel-select-audience.png)
 
+1. Choose the `Luma Loyalty Rewards - Gold Status` audience you created in the [Set up Experience Platform](setup-experience-platform.md) lesson.
+1. **[!UICONTROL Save]** the audience to the campaign
+
+    ![Save audience](assets/web-channel-save-audience.png)
+
+
+<!--
 ### Simulate Loyalty Rewards Content
 
 Look at a preview of the modified web page before activating the campaign. Keep in mind that you must have test profiles configured to simulate web channel experiences.
@@ -270,23 +283,42 @@ To simulate the experience:
 
 1. The preview is displayed for the test profile.
 
+1. Select the [!UICONTROL Content] tab
+
+1. Choose the **[!UICONTROL Page URL]** web surface option to deploy the experience on one page for this campaign. Enter the URL for the Luma page, `https://luma.enablementadobe.com`
+
+1. Once the web surface is defined, select **[!UICONTROL Create]**.
+
+    ![Select web surface](assets/web-channel-web-surface.png)
+-->
+
+### Schedule the campaign
+
+By default, campaigns will start and stop when you manually activate and deactivat them. However you have the option to schedule them to start and stop on specific dates and times. Leave the default settings and select **Review to activate**:
+
+![Campaign schedule](assets/web-channel-campaign-schedule.png)
+
+>[!NOTE]
+>
+>Keep in mind that for web channel campaigns, the web experience is shown when the visitor opens the page. Therefore, unlike other types of campaigns in Adobe Journey Optimizer, the **[!UICONTROL Action triggers]** section is not configurable.
+
+
+
 ### Activating the Loyalty Rewards Campaign
 
-Finally, activate the web channel campaign.
+You are prompted to confirm the campaign details one final time. Select **[!UICONTROL Activate]**. It can take up to 15 minutes for the campaign to become live on the site.
 
-1. Select **Review to activate**.
-
-1. You are prompted to confirm the campaign details one final time. Select **[!UICONTROL Activate]**. It can take up to 15 minutes for the campaign to become live on the site.
+![Activate the campaign](assets/web-channel-campaign-activate.png)
 
 ### Loyalty Rewards QA
 
-There are a few logins you can use to simulate "gold status" users and qualify for your campaign:
+There are a few logins you can use to simulate "gold status" users and qualify for your campaign. You must have uploaded the sample data in the [Set up Experience Platform](setup-experience-platform.md) and create accounts using these credentials on the website for these to work.
 
 1. `cleavlandeuler@emailsim.io`/`test`
 1. `leftybeagen@emailsim.io`/`test`
 1. `jenimartinho@emailsim.io`/`test`
 
-As a best practice, monitor the **[!UICONTROL Web]** tab of the campaign live and global reports for the campaign-specific KPIs. For this campaign, monitor experience impressions, and click rate.
+As a best practice, monitor the **[!UICONTROL Web]** campaign statistics on the campaign overview screen after launching or click **[!UICONTROL Reports]** for deeper reporting:
 
 ![View web report](assets/web-channel-web-report.png)
 
@@ -331,4 +363,4 @@ To begin validation using the debugger:
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

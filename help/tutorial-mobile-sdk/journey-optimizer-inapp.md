@@ -232,7 +232,7 @@ The SDK event hub publishes and receives event data from registered extensions t
       1. Enable **[!UICONTROL Advanced formatting]**.
       1. Select **[!UICONTROL Modal]** as the **[!UICONTROL Messaging layout]**. In the **[!UICONTROL Switch layout]** dialog, select **[!UICONTROL Change layout]**.
       1. In the **[!UICONTROL Content]** tab.
-         1. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` for the **[!UICONTROL Media URL]**.
+         1. Enter `https://newluma.enablementadobe.com/images/logo.png` for the **[!UICONTROL Media URL]**.
          1. Enter a **[!UICONTROL Header]**, for example `Welcome to this Luma In-App Message` and enter a **[!UICONTROL Body]**, for example `Triggered by pushing that button in the app...`.
 
          ![In-app message content](assets/in-app-message-content.png){zoomable="yes"}

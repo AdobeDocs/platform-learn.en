@@ -3,7 +3,7 @@ title: Enrich Audiences with warehouse data
 seo-title: Enrich Audiences with warehouse data | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Enrich Audiences with warehouse data
 description: In this exercise, an Experience Platform audience is enriched with warehouse data.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
 exl-id: 3f6aa121-0dbd-4ad9-b136-d1455eed03ca

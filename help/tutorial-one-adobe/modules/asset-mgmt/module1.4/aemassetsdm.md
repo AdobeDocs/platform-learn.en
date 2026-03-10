@@ -3,6 +3,7 @@ title: Adobe Experience Manager Assets & Dynamic Media
 description: Adobe Experience Manager Assets & Dynamic Media
 kt: 5342
 doc-type: tutorial
+exl-id: f287d101-2ebc-480a-adad-9fc180cf614e
 ---
 # 1.4 Adobe Experience Manager Assets & Dynamic Media
 

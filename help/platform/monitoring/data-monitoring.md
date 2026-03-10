@@ -2,7 +2,7 @@
 title: Monitor data flows in Adobe Experience Platform
 description: Learn how to monitor and track batch and streaming data ingested into Adobe Experience Platform using the user-interface and APIs
 feature: Data Ingestion
-role: Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-6547
 thumbnail: 330549.jpg

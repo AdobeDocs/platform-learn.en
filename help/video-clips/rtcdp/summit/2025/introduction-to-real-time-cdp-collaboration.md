@@ -3,7 +3,7 @@ title: Introduction to Real-Time CDP Collaboration
 description: Discover how Adobe's Real-Time CDP Collaboration simplifies data clean rooms for marketers, enabling seamless audience discovery, activation, and measurement.
 doc-type: Video Clips
 duration: 35
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

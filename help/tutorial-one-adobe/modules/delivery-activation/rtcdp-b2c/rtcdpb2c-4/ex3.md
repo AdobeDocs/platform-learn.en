@@ -58,10 +58,10 @@ At this point you should have identified all the values needed to define the Azu
 
 | Destination Attribute Name |  Destination Attribute Value | Example Value |
 |---|---|---|
-|sasKeyName|SAS Key Name|RootManageSharedAccessKey|  
+|sasKeyName|SAS Key Name|RootManageSharedAccessKey|
 |sasKey|SAS Key Value|pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY=|
 |namespace|Event Hubs Namespace|`--aepUserLdap---aep-enablement`|
-|eventHubName|Event Hub|`--aepUserLdap---aep-enablement-event-hub`| 
+|eventHubName|Event Hub|`--aepUserLdap---aep-enablement-event-hub`|
 
 ## Create Azure Event Hub Destination in Adobe Experience Platform
 

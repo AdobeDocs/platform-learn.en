@@ -77,31 +77,31 @@ Copy the below environment placeholder and paste it in the **Base Environment**,
 
 ```json
 {
-	"CLIENT_SECRET": "",
-	"API_KEY": "",
-	"ACCESS_TOKEN": "",
-	"SCOPES": [
-		"openid",
-		"AdobeID",
-		"read_organizations", 
-		"additional_info.projectedProductContext", 
-		"session",
-		"ff_apis",
-		"firefly_api",
-		"frame.s2s.all"
-	],
-	"TECHNICAL_ACCOUNT_ID": "",
-	"IMS": "ims-na1.adobelogin.com",
-	"IMS_ORG": "",
-	"access_token": "",
-	"IMS_TOKEN": "",
-	"AZURE_STORAGE_URL": "",
-	"AZURE_STORAGE_CONTAINER": "",
-	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": "",
-	"FRAME_IO_BASE_URL": "https://api.frame.io",
-	"FRAME_IO_ACCOUNT_ID": "",
-	"FRAME_IO_WORKSPACE_ID": ""
+    "CLIENT_SECRET": "",
+    "API_KEY": "",
+    "ACCESS_TOKEN": "",
+    "SCOPES": [
+        "openid",
+        "AdobeID",
+        "read_organizations", 
+        "additional_info.projectedProductContext", 
+        "session",
+        "ff_apis",
+        "firefly_api",
+        "frame.s2s.all"
+    ],
+    "TECHNICAL_ACCOUNT_ID": "",
+    "IMS": "ims-na1.adobelogin.com",
+    "IMS_ORG": "",
+    "access_token": "",
+    "IMS_TOKEN": "",
+    "AZURE_STORAGE_URL": "",
+    "AZURE_STORAGE_CONTAINER": "",
+    "AZURE_STORAGE_SAS_READ": "",
+    "AZURE_STORAGE_SAS_WRITE": "",
+    "FRAME_IO_BASE_URL": "https://api.frame.io",
+    "FRAME_IO_ACCOUNT_ID": "",
+    "FRAME_IO_WORKSPACE_ID": ""
 }
 ```
 
@@ -130,8 +130,8 @@ You now need to copy the following values from your Adobe I/O project and paste 
 
 Copy the above variables one by one, and paste them in your **Base Environment** in PostBuster.
 
-| Variable Name in Adobe I/O     | Variable Name in PostBuster Base Environment      | 
-|:-------------:| :---------------:| 
+| Variable Name in Adobe I/O     | Variable Name in PostBuster Base Environment      |
+|:-------------:| :---------------:|
 | Client ID          | `API_KEY` |
 | Client Secret          | `CLIENT_SECRET` |
 | Technical Account ID    | `TECHNICAL_ACCOUNT_ID`|
@@ -149,10 +149,10 @@ In the **Adobe IO - OAuth** collection, select the request named **POST - Get Ac
 
 You should see a similar response containing the following information:
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | token_type          | **bearer** |
-| access_token    | **eyJhbGciOiJS...** | 
+| access_token    | **eyJhbGciOiJS...** |
 | expires_in          | **86399** |
 
 The Adobe I/O **bearer-token** has a specific value (the very long access_token) and an expiration window and is now valid for 24 hours. This means that after 24 hours, if you want to use Postman to interact with Adobe APIs, you will have to generate a new token by running this request again.

@@ -2,7 +2,7 @@
 title: Connect with publishers in Real-Time CDP Collaboration
 description: As an advertiser, learn how to make a connection with a publisher in order to collaborate with them.
 feature: Collaboration
-role: Architect, User
+role: Developer, User
 level: Beginner
 doc-type: Feature Video
 duration: 0

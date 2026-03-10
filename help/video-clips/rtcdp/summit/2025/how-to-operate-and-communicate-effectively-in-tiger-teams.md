@@ -3,7 +3,7 @@ title: How to Operate and Communicate Effectively in Tiger Teams
 description: Learn best practices for structuring and communicating within Tiger Teams to improve collaboration and reduce inefficiencies in AEP projects.
 doc-type: Video Clips
 duration: 156
-index: no
+index: false
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay

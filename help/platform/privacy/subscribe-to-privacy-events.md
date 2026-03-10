@@ -2,7 +2,7 @@
 title: Subscribe to Privacy Events
 description: Learn how to subscribe to Privacy Events to automate job status-based workflows.
 feature: Privacy
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7721
 thumbnail: 336073.png

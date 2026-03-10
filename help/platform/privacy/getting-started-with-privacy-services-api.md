@@ -2,7 +2,7 @@
 title: Getting started with the Privacy Service API
 description: Learn how to set up and authenticate to the Privacy Service API.
 feature: Privacy
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7720
 thumbnail: 336075.png

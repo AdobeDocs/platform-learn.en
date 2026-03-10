@@ -3,6 +3,7 @@ title: Brand Concierge
 description: Brand Concierge
 kt: 5342
 doc-type: tutorial
+exl-id: c4e11f55-dc39-4e54-ac0c-0f43934b26e5
 ---
 # 1.4 Brand Concierge
 

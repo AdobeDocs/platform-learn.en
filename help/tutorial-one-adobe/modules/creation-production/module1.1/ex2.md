@@ -265,8 +265,8 @@ Change the file name to `gradient2-p.jpg`, and change the URL to include the fil
 
 Next, go to **Headers** to add a new header manually like this:
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
+| Key     | Value     |
+|:-------------:| :---------------:|
 | `x-ms-blob-type`          | `BlockBlob` |
 
 

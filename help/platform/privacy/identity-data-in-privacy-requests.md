@@ -2,7 +2,7 @@
 title: Auditing your stored personal data
 description: Learn key concepts and decisions related to auditing personal data and prepping according to the privacy needs of the business.
 feature: Privacy
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7717
 thumbnail: 336076.png
