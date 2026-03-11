@@ -9,7 +9,6 @@ recommendations: noDisplay,noCatalog
 # One Adobe Technical Tutorial {#tutorial-one-adobe}
 
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
-+ [GenStudio for Content Supply Chain Technical Enablement](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + [Architecture](/help/tutorial-one-adobe/architecture.md)
 
@@ -25,6 +24,35 @@ recommendations: noDisplay,noCatalog
     + [Option 1: Postman setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
     + [Option 2: PostBuster setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
     + [Applications to install](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
+
++ Agentic AI {#agents}
+  + 1.1 Agent Orchestrator {#agents1}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
+    + [1.1.1 Getting started with Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+    + [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+    + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
+    + [1.1.4 Adobe Marketing Agent for Google Gemini](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+  + 1.2 Getting Started with Agents and AI {#agents2}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
+    + [1.2.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+  + 1.4 Brand Concierge {#agents4}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
+    + [1.4.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
+    + [1.4.2 Implement Brand Concierge on your website](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+  + 1.5 Analytics & Agents {#agents5}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+    + [1.5.1 CJA & ChatGPT with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+    + [1.5.2 CJA & Claude.ai with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+    + [1.5.3 Adobe Analytics & Claude.ai with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+  + 1.6 AEM & Agents {#agents6}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
+    + [1.6.1 Getting started with AEM Agents](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+    + [1.6.2 AEM MCP Servers & Cursor](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
+    + [1.6.3 Scale Content Fragments with ChatGPT & MCP Server](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
+  + 1.7 Intelligent Developer Tools for Adobe Commerce {#agents7}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
+    + [1.7.1 Setting up your development environment](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
+    + [1.7.2 Use Cursor to develop your project](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)
 
 + Workflow and planning {#wfplanning}
   + 1.1 Workfront Planning {#wfpl1}
@@ -260,32 +288,3 @@ recommendations: noDisplay,noCatalog
       + [Overview](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
       + [3.1.1 Getting started with Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-
-+ Agents {#agents}
-  + [Agentic AI Overview](/help/tutorial-one-adobe/ai.md)
-  + 1.1 Agent Orchestrator {#agents1}
-    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
-    + [1.1.1 Getting started with Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
-    + [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
-    + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
-  + 1.2 Getting Started with Agents and AI {#agents2}
-    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
-    + [1.2.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-  + 1.4 Brand Concierge {#agents4}
-    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
-    + [1.4.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
-    + [1.4.2 Implement Brand Concierge on your website](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
-  + 1.5 Analytics & Agents {#agents5}
-    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
-    + [1.5.1 CJA & ChatGPT with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
-    + [1.5.2 CJA & Claude.ai with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
-    + [1.5.3 Adobe Analytics & Claude.ai with MCP server](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
-  + 1.6 AEM & Agents {#agents6}
-    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
-    + [1.6.1 Getting started with AEM Agents](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
-    + [1.6.2 AEM MCP Servers & Cursor](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
-    + [1.6.3 Scale Content Fragments with ChatGPT & MCP Server](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
-  + 1.7 Intelligent Developer Tools for Adobe Commerce {#agents7}
-    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
-    + [1.7.1 Setting up your development environment](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
-    + [1.7.2 Use Cursor to develop your project](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)

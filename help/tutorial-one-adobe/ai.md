@@ -21,30 +21,6 @@ Learn how to use Adobe Experience Platform Agents and Agent Orchestrator to:
 - Validate journey performance
 - Create a new journey for the CitiSignal Fiber Max rollout
 
-[1.2 Getting Started with Agents and AI](./modules/agents/module1.2/agenticai.md)
-
->[!NOTE]
->
->This module hasn't been released yet.
-
-**Goal** 
-
-Build your own agent. 
-
-Learners will build their own agent that uses a LLM to analyze requests. The analysis of the request will then be used to build a plan that contains instructions, which well then be executed one-by-one. To make this possible, the agent needs to understand what skills are available. Learners will build a number of skills themselves, skills which will each be built using a MCP server and that will consume Adobe product API's such as Adobe Firefly Services, Workfront Fusion and others.
-
-- Image GenAI
-- Text GenAI
-
-What's the architecture behind an agent?
-
-Technical elements:
-
-- Azure AI Foundry, LLM, Co-pilot
-- n8n
-- MCP Server, Python Notebook
-- Adobe API's
-
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Goal**

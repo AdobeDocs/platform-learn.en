@@ -275,6 +275,10 @@ You should then see this.
 
 You've now completed this lab.
 
+## Next Steps
+
+Go to [Adobe Marketing Agent for Google Gemini](./ex4.md){target="_blank"}
+
 Go Back to [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}
