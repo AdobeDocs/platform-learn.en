@@ -3,6 +3,7 @@ title: Adobe Marketing Agent for Google Gemini
 description: Adobe Marketing Agent for Google Gemini
 kt: 5342
 doc-type: tutorial
+exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
 ---
 # 1.1.4 Adobe Marketing Agent for Google Gemini
 

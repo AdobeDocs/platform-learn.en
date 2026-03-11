@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 04110531-c248-4a7c-b7b1-406908388c73
 ---
 # 1.9 Firefly Boards
 
