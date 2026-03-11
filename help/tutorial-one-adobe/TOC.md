@@ -115,7 +115,10 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
     + [1.8.1 Getting started with Workfront, Frame.io & ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
     + [1.8.2 Create a new asset, review & approve it](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
-
+  + 1.9 Firefly Boards {#crpr9}
+    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.9/fireflyboards.md)
+    + [1.9.1 Getting started with Firefly Boards](/help/tutorial-one-adobe/modules/creation-production/module1.9/ex1.md)
+    
 + Asset Management {#assetmgmt}
   + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
     + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
