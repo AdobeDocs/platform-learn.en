@@ -243,8 +243,20 @@ After a couple of minutes, you should see the assets that are created become ava
 
 ![Firefly Custom Workflows](./images/ffcw58.png)
 
+Go back to your workflow. Click **Publish**.
+
+![Firefly Custom Workflows](./images/ffcw59.png)
+
+You should then see this.
+
+![Firefly Custom Workflows](./images/ffcw60.png)
+
+Your workflow is now published, and can now be executed programmatically as part of the next exercise.
+
 ## Next Steps
 
-Go back to [Workflow Builder](./workflowbuilder.md){target="_blank"}
+Go to [1.7.2 Execute your custom workflow programmatically](./ex2.md){target="_blank"}
+
+Go back to [Firefly Custom Workflows](./workflowbuilder.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}
