@@ -141,17 +141,64 @@ Here's the image that was generated.
 
 ![Firefly Custom Workflows](./images/ffcw76.png)
 
-Here's the video that was generated.
-
-![Firefly Custom Workflows](./images/ffcw77.png)
-
 ## 1.7.2.2 Execute your custom workflow with Workfront Fusion
 
+Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **Workfront Fusion**.
 
+![WF Fusion](./images/wffusion1.png)
 
+Go to **Scenarios**. If you don't have a folder yet, create a folder and for the folder name, use: `--aepUserLdap--`. Select your folder, and then select **Create new scenario**.
+
+![WF Fusion](./images/wffusion2.png)
+
+You should then see this. 
+
+![WF Fusion](./images/wffusion3.png)
+
+After publishing your workflow in the previous exercise, you should see something like this. Click the **Copy** button to copy the sample payload.
+
+![Firefly Custom Workflows](./images/ffcw61.png)
+
+Go back to your Workfront Fusion scenario. Use **CMD + V** or **CTRL + V** to paste the payload that you copied into the scenario. Workfront Fusion will automatically detect the cURL request and will create a new **HTTP - Make a request** module automatically.
+
+Drag the **clock** icon onto the **HTTP - Make a request** module.
+
+![WF Fusion](./images/wffusion5.png)
+
+You should then see this. Click the **HTTP - Make a request** module to open it.
+
+![WF Fusion](./images/wffusion6.png)
+
+You should then see that the **Header** variables are available already.
+
+![WF Fusion](./images/wffusion7.png)
+
+Scroll down to see the default payload. Click the **icon** as indicated to beautify the JSON payload.
+
+![WF Fusion](./images/wffusion8.png)
+
+Go back to Postman, to the first **POST** request. Copy the payload.
+
+![WF Fusion](./images/wffusion9.png)
+
+Go back to your Workfront Fusion scenario. Replace the existing default payload by the payload you copied from Postman. Click the **icon** as indicated to beautify the JSON payload.
+
+Check the checkbox for **Parse response**. 
+
+Click **OK**.
+
+![WF Fusion](./images/wffusion10.png)
+
+Save your changes and then click **Run once**.
+
+![WF Fusion](./images/wffusion11.png)
+
+Once your scenario has run, you can see a similar response as what you got in Postman. With this information available in Workfront Fusion, you can now build on that to poll the **status** URL until the status is completed, and once that has happened you can use the **results** URL to collect the image and video that were generated.
+
+![WF Fusion](./images/wffusion12.png)
 
 ## Next Steps
 
-Go back to [Workflow Builder](./workflowbuilder.md){target="_blank"}
+Go back to [Firefly Custom Workflows](./workflowbuilder.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}

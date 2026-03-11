@@ -257,6 +257,6 @@ Your workflow is now published, and can now be executed programmatically as part
 
 Go to [1.7.2 Execute your custom workflow programmatically](./ex2.md){target="_blank"}
 
-Go back to [Workflow Builder](./workflowbuilder.md){target="_blank"}
+Go back to [Firefly Custom Workflows](./workflowbuilder.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}
