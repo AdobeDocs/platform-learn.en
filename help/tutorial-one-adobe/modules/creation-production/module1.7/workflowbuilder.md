@@ -41,6 +41,10 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 In this exercise, you'll start using Workflow Builder.
 
+[1.7.2 Execute your custom workflow programmatically](./ex2.md){target="_blank"}
+
+In this exercise, you'll execute your custom workflow programmatically using Postman and Workfront Fusion.
+
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
