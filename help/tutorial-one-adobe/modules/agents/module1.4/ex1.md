@@ -370,7 +370,9 @@ You should then get a similar response back.
 
 Your Brand Concierge instance is now ready to be implemented on your website.
 
-Next Step: [Implement Brand Concierge on your website](./ex2.md){target="_blank"}
+## Next Steps
+
+Go to [Implement Brand Concierge on your website](./ex2.md){target="_blank"}
 
 Go Back to [Brand Concierge](./brandconcierge.md){target="_blank"}
 

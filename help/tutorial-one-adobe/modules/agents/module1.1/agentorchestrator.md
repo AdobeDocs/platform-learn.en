@@ -42,6 +42,10 @@ In this exercise, you'll explore Agent Orchestrator's abilities against the back
 
 In this exercise, you'll explore Agent Orchestrator's abilities against the background of the CitiSignal launch campaign for Fiber Max, by using Adobe Marketing Agent with Microsoft Copilot.
 
+[1.1.4 Adobe Marketing Agent for Google Gemini](./ex4.md){target="_blank"}
+
+In this exercise, you'll explore Agent Orchestrator's abilities against the background of the CitiSignal launch campaign for Fiber Max, by using Adobe Marketing Agent with Google Gemini.
+
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

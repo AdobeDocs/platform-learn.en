@@ -276,6 +276,34 @@ You can now see your new variation in the AEM UI as well.
 
 ![Agent Orchestrator](./images/chatgpt17.png)
 
+Next, use ChatGPT to translate your content fragment into more variations. Enter the following prompt and click **Send**.
+
+```
+now do the same thing for the 5 top country's languages that CitiSignal does business with
+```
+
+![Agent Orchestrator](./images/chatgpt18.png)
+
+Confirm your language choice.
+
+![Agent Orchestrator](./images/chatgpt23.png)
+
+Click **CreateFragmentVariation**.
+
+![Agent Orchestrator](./images/chatgpt22.png)
+
+Click **UpdateFragment**.
+
+![Agent Orchestrator](./images/chatgpt24.png)
+
+Repeat this process for each of the languages you selected. Once done, you should see something like this.
+
+![Agent Orchestrator](./images/chatgpt26.png)
+
+Go back to your AEM UI and refresh your screen. You can now see your new variations in your content fragment.
+
+![Agent Orchestrator](./images/chatgpt27.png)
+
 ## Next Steps
 
 Go Back to [AEM & Agents](./aemagents.md){target="_blank"}

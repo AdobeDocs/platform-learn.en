@@ -19,7 +19,7 @@ Below is an overview of the status of the content in this tutorial.
 | Name                   | Last Update | Working 100% | Remarks | Time Investment |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 02/08/2025 | Yes | - | 45min |
-| [1.2 Workflow Management with Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025 | Yes | Content not finished yet | 1h 30min |
+| [1.2 Workflow Management with Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025 | Yes | - | 1h 30min |
 
 ## Creation & Production
 
@@ -31,8 +31,9 @@ Below is an overview of the status of the content in this tutorial.
 | [1.4 Adobe Express and Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025  | Yes         | - |  45min |
 | [1.5 Streamline your workflow with Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}| 02/08/2025  | Yes         | - | 1h |
 | [1.6 GenStudio for Performance Marketing - Extensibility](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}| 21/08/2025  | Yes       | - | 1h 30min |
-| [1.7 Firefly Custom Workflows](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}| 17/02/2026  | Yes       | - | - |
-| [1.8 Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"}| 17/02/2026  | Yes       | - | - |
+| [1.7 Firefly Custom Workflows](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}| 17/02/2026  | Yes       | - | 45min |
+| [1.8 Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"}| 17/02/2026  | Yes       | - | 45min |
+| [1.9 Firefly Boards](./modules/creation-production/module1.9/fireflyboards.md){target="_blank"}| 11/03/2026  | No       | Content in development | - |
 
 
 ## Asset Management
@@ -84,7 +85,7 @@ Below is an overview of the status of the content in this tutorial.
 | [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"}      | 02/02/2026        | No | Content being developed | TBD |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"}      | 23/01/2026        | Yes | - | 90min |
 | [1.5 Analytics & Agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"}      | 02/02/2026        | Yes        | - | 45min |
-| [1.6 Adobe Experience Manager & Agents](./modules/agents/module1.6/aemagents.md){target="_blank"}      | 17/02/2026        | No        | Content being developed  | TBD |
+| [1.6 Adobe Experience Manager & Agents](./modules/agents/module1.6/aemagents.md){target="_blank"}      | 11/03/2026        | Yes        | - | 90min |
 | [1.7 Intelligent Developer Tools for Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md){target="_blank"}      | 17/02/2026        | Yes        | - | 45min |
 
 {style="table-layout:auto"}
