@@ -1,16 +1,16 @@
 ---
-title: Adobe Marketing Agent for Google Gemini
-description: Adobe Marketing Agent for Google Gemini
+title: Adobe Marketing Agent for Google Gemini Enterprise
+description: Adobe Marketing Agent for Google Gemini Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
 ---
-# 1.1.4 Adobe Marketing Agent for Google Gemini
+# 1.1.4 Adobe Marketing Agent for Google Gemini Enterprise
 
 [!BADGE Beta]
 
 +++Beta Details
-By using the Adobe Marketing Agent with Google Gemini Beta, You hereby acknowledge that the Beta is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any “Feedback” (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
+By using the Adobe Marketing Agent with Google Gemini Enterprise Beta, You hereby acknowledge that the Beta is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any “Feedback” (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
 
 +++
 
