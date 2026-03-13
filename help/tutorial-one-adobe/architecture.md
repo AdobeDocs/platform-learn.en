@@ -8,19 +8,29 @@ exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## GenStudio Architecture Overview
+## One Adobe Architecture Overview
+
+In this video, you'll learn about the architecture behind the full end-to-end One Adobe tutorial.
+
+![Tech Insiders](./assets/images/architecture_all.jpg)
+
+## Agentic AI Architecture Overview
+
+In this video, you'll learn about the architecture behind the Agentic AI part of the One Adobe tutorial.
+
+![Tech Insiders](./assets/images/architecture_agentic.jpg)
+
+## Content Architecture Overview
 
 In this video, you'll learn about the architecture behind the GenStudio part of this tutorial.
 
-## AEP+Apps Architecture Overview
+![Tech Insiders](./assets/images/architecture_content.jpg)
+
+## Data Architecture Overview
 
 In this video, you'll learn about the architecture behind the Adobe Experience Platform and Applications part of this tutorial.
 
-## One Adobe Architecture Overview
-
-In this video, you'll learn about the architecture behind the full end-to-end tutorial.
-
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/architecture_data.jpeg)
 
 >[!NOTE]
 >
