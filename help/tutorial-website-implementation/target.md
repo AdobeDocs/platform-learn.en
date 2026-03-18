@@ -13,7 +13,7 @@ In this lesson, we will implement the [Adobe Target extension](https://experienc
 
 >[!WARNING]
 >
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+> This tutorial and its Luma website exercises are no longer maintained and rely on older JavaScript libraries. To learn the current best practice, please use the [Implement Adobe Experience Cloud with Web SDK tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview).
 
 >[!NOTE]
 >

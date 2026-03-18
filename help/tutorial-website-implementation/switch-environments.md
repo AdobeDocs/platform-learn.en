@@ -10,17 +10,10 @@ In this lesson you will use the [Adobe Experience Platform Debugger extension](h
 
 >[!WARNING]
 >
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+> This tutorial and its Luma website exercises are no longer maintained and rely on older JavaScript libraries. To learn the current best practice, please use the [Implement Adobe Experience Cloud with Web SDK tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview).
 
 This technique is called environment switching and will be helpful later, when you work with tags on your own website. You will be able to load your production website in your browser, but with your *development* tag environment. This enables you to confidently make and validate tags changes independently from your regular code releases.  After all, this separation of marketing tag releases from your regular code releases is one of the main reasons customers use tags in the first place!
 
->[!NOTE]
->
->Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
->
-> * Platform Launch (Client Side) is now **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)** 
-> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)** 
-> * Edge configurations  are now **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## Learning Objectives
 
