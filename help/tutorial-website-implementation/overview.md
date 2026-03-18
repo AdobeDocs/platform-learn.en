@@ -10,9 +10,9 @@ _Implement the Experience Cloud in Websites with Tags_ is the perfect starting p
 
 Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through tags on your own website.
 
->[!INFO]
+>[!WARNING]
 >
->This tutorial uses application-specific extensions and libraries (AppMeasurement.js for Adobe Analytics, at.js for Adobe Target). If you are looking to implement Adobe Experience Platform Web SDK, please see the [Implement Adobe Experience Cloud with Web SDK](/help/tutorial-web-sdk/overview.md) tutorial.
+> This tutorial and its Luma website exercises are no longer maintained and rely on older JavaScript libraries. To learn the current best practice, please use the [Implement Adobe Experience Cloud with Web SDK tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview).
 
 
 After completing this you will be able to:
@@ -33,13 +33,6 @@ After completing this you will be able to:
 
 * Publish changes through development, staging, and production environments
 
->[!NOTE]
->
->Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
->
-> * Platform Launch (Client Side) is now **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)** 
-> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)** 
-> * Edge configurations  are now **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 >[!NOTE]
 >
@@ -70,7 +63,7 @@ Tags is also a platform that allows third-party vendors to create extensions to 
 
 >[!WARNING]
 >
-> The Luma website used in this tutorial is expected to be replaced during the week of February 16, 2026. Work done as part of this tutorial might not be applicable to the new website.
+> This tutorial and its Luma website exercises are no longer maintained and rely on older JavaScript libraries. To learn the current best practice, please use the [Implement Adobe Experience Cloud with Web SDK tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview).
 
 In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own tag property, in your own Experience Cloud organization, and map it to our hosted Luma site using the Experience Cloud Debugger.
 
