@@ -1,17 +1,17 @@
 ---
-title: Firefly Custom Workflows
-description: Firefly Custom Workflows
+title: Firefly Creative Production for Enterprise
+description: Firefly Creative Production for Enterprise
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
 ---
-# 1.7 Firefly Custom Workflows
+# 1.7 Firefly Creative Production for Enterprise
 
-Firefly Custom Workflows's primary focus is on creative technologists and solution builders who create and configure workflows.   
+Firefly Creative Production for Enterprise's primary focus is on creative technologists and solution builders who create and configure workflows.   
 
-With Firefly Custom Workflows, you can:
+With Firefly Creative Production for Enterprise, you can:
 
 - Build Workflows: Create multi-step production workflows using a visual interface with manual or AI assistance.
 - Run Workflows: Execute workflows at scale, including batch processing, with a robust runtime that operates outside the browser.
@@ -27,7 +27,7 @@ The primary use cases that are supported include things like:
 
 ## Prerequisites
 
-- Access to Firefly Custom Workflows
+- Access to Firefly Creative Production for Enterprise
 
 ## Video
 
@@ -37,7 +37,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 ## Exercises
 
-[1.7.1 Getting started with Firefly Custom Workflows](./ex1.md){target="_blank"}
+[1.7.1 Getting started with Firefly Creative Production for Enterprise](./ex1.md){target="_blank"}
 
 In this exercise, you'll start using Workflow Builder.
 
