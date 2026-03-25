@@ -331,9 +331,9 @@ There are 2 fields in the below code that you need to update:
 >- **orgId** needs to be replaced by the IMS Org ID of your Adobe Experience Cloud instance.
 
 ```javascript
-<script src="/scripts/styleconfigurations.js"></script>
+<script nonce="aem" src="/scripts/styleconfigurations.js"></script>
 
-<script>
+<script nonce="aem">
     !function (n, o) {
       o.forEach(function (o) {
         n[o] || ((n.__alloyNS = n.__alloyNS ||
@@ -347,9 +347,9 @@ There are 2 fields in the below code that you need to update:
     </script>
 
 
-<script src="/scripts/alloy.js"></script>
+<script nonce="aem" src="/scripts/alloy.js"></script>
 
-<script>
+<script nonce="aem">
     alloy("configure", {
         defaultConsent: "in",
         edgeDomain: "edge.adobedc.net",
