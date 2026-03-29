@@ -58,7 +58,22 @@ The One Adobe tutorial is organized around the 5 phases of the content supply ch
 
 There are 3 learning paths:
 
-### [GenStudio](./genstudiocsc.md){target="_blank"}
+### Agentic AI Labs
+
+Start here: [Agentic AI Labs](./ai.md){target="_blank"}
+
+Applications included in this learning path: 
+
+  - Adobe Experience Manager Cloud Service
+  - Adobe Experience Platform
+  - Adobe Real-Time CDP
+  - Adobe Journey Optimizer
+  - Adobe Customer Journey Analytics
+  - Adobe AEP Agent Orchestrator, Adobe Marketing Agent, Brand Concierge
+
+### GenStudio Labs
+
+Start here: [GenStudio Labs](./genstudiocsc.md){target="_blank"}
 
 In this learning path, you'll focus on learning about Adobe's GenStudio offering which is centered around optimizing your Content Supply Chain. Marketers face increasing pressure to deliver more campaigns at an unprecedented speed and scale. This requires a tremendous amount of content. Most organizations are struggling to keep pace with the demand that is only expected to grow as the need to personalize across regions, audiences, and channels increases.
 
@@ -72,7 +87,9 @@ Applications included in this learning path:
   - Adobe Experience Manager Assets Dynamic Media, Content Hub
   - Adobe Commerce as a Cloud Service
 
-### [AEP & Apps](./aepapps.md){target="_blank"}
+### AEP & Apps Labs
+
+Start here: [AEP & Apps Labs](./aepapps.md){target="_blank"}
 
 Applications included in this learning path: 
 
@@ -80,17 +97,6 @@ Applications included in this learning path:
   - Adobe Real-Time CDP
   - Adobe Journey Optimizer
   - Adobe Customer Journey Analytics
-
-### [Agentic AI](./ai.md){target="_blank"}
-
-Applications included in this learning path: 
-
-  - Adobe Experience Manager Cloud Service
-  - Adobe Experience Platform
-  - Adobe Real-Time CDP
-  - Adobe Journey Optimizer
-  - Adobe Customer Journey Analytics
-  - Adobe AEP Agent Orchestrator, Adobe Marketing Agent, Brand Concierge
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 

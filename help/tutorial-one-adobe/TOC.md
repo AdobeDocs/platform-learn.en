@@ -9,8 +9,10 @@ recommendations: noDisplay,noCatalog
 # One Adobe Technical Tutorial {#tutorial-one-adobe}
 
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
-+ [Content Status](/help/tutorial-one-adobe/status.md)
 + [Architecture](/help/tutorial-one-adobe/architecture.md)
++ [Agentic AI Labs](/help/tutorial-one-adobe/ai.md)
++ [GenStudio Labs](/help/tutorial-one-adobe/genstudiocsc.md)
++ [AEP & Apps Labs](/help/tutorial-one-adobe/aepapps.md)
 
 + Getting started {#gettingstarted}
   + Getting started {#gettingstarted}
@@ -32,6 +34,7 @@ recommendations: noDisplay,noCatalog
     + [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
     + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
     + [1.1.4 Adobe Marketing Agent for Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+    + [1.1.5 Adobe Marketing Agent for Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
   + 1.2 Getting Started with Agents and AI {#agents2}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
     + [1.2.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -292,3 +295,5 @@ recommendations: noDisplay,noCatalog
       + [Overview](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
       + [3.1.1 Getting started with Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+      
++ [Content Status](/help/tutorial-one-adobe/status.md)

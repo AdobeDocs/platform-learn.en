@@ -46,6 +46,10 @@ In this exercise, you'll explore Agent Orchestrator's abilities against the back
 
 In this exercise, you'll explore Agent Orchestrator's abilities against the background of the CitiSignal launch campaign for Fiber Max, by using Adobe Marketing Agent with Google Gemini.
 
+[1.1.5 Adobe Marketing Agent for Claude](./ex5.md){target="_blank"}
+
+In this exercise, you'll explore Agent Orchestrator's abilities against the background of the CitiSignal launch campaign for Fiber Max, by using Adobe Marketing Agent with Claude.
+
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

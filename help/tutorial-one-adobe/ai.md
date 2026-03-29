@@ -37,6 +37,8 @@ Learn how to use Adobe Experience Platform Agents and Agent Orchestrator to:
 - Validate journey performance
 - Create a new journey for the CitiSignal Fiber Max rollout
 
+You'll also learn how to use Adobe Marketing Agent in combination with tools such as Microsoft 365 Copilot, ChatGPT for Enterprise, Google Gemini Enterprise and Claude.
+
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Goal**
