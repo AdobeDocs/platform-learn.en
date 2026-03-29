@@ -28,9 +28,7 @@ In this video, you'll learn about the architecture behind the GenStudio part of 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481414?quality=12&learn=on)
 
-Download the architecture overview image below:
-
-![Tech Insiders](./assets/images/architecture_content.jpg)
+Download the architecture overview image [here](./assets/images/architecture_content.jpg).
 
 ## GenStudio Tech Labs
 
