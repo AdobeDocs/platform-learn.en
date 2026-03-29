@@ -13,9 +13,7 @@ In this video, you'll learn about the architecture behind the Adobe Experience P
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
 
-Download the architecture overview image below:
-
-![Tech Insiders](./assets/images/architecture_data.jpeg)
+Download the architecture overview image [here](./assets/images/architecture_data.jpeg).
 
 ### Getting Started
 

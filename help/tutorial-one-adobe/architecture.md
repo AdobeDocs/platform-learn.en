@@ -14,9 +14,11 @@ In this video, you'll learn about the architecture behind the full end-to-end On
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
 
-Download the architecture overview image below:
+Download the architecture overview image [here](./assets/images/architecture_all.jpg).
 
-![Tech Insiders](./assets/images/architecture_all.jpg)
+## Script
+
+Script will be available here soon.
 
 >[!NOTE]
 >

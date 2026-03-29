@@ -14,9 +14,7 @@ In this video, you'll learn about the architecture behind the Agentic AI part of
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
 
-Download the architecture overview image below:
-
-![Tech Insiders](./assets/images/architecture_agentic.jpg)
+Download the architecture overview image [here](./assets/images/architecture_agentic.jpg).
 
 ### Getting Started
 
