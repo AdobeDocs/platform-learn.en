@@ -149,7 +149,7 @@ Get a toplevel pulse on category demandâ€”Mobile, Landline, Internet, TV, Fiberâ
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me purchases by mainCategory over the last 2 months.
+Show me purchases by mainCategory over the last 7 months.
 ```
 
 ![Agent Orchestrator](./images/chatgpt18.png)
@@ -161,7 +161,7 @@ You should then see this:
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 2 months per week
+Show me purchases by mainCategory = Fiber over the last 7 months per week
 ```
 
 ![Agent Orchestrator](./images/chatgpt20.png)
@@ -195,7 +195,7 @@ With that information, you can start drilling down in the purchase data.
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 2 months
+Show me ordersYTD by preferredGenre for the last 7 months
 ```
 
 ![Agent Orchestrator](./images/chatgpt24.png)
