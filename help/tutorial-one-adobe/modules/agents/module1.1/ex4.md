@@ -29,8 +29,6 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481322?quality=12&learn=on)
 
-This lab is in development.
-
 ## 1.1.4.1 Access to Google Gemini Enterprise
 
 Go to [https://cloud.google.com/gemini-enterprise](https://cloud.google.com/gemini-enterprise). Click **Start 30-day free trial**.
@@ -355,6 +353,10 @@ You should then see this.
 
 You've now completed this lab.
 
-Go Back to [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
+## Next Steps
+
+Go to [1.1.5 Adobe Marketing Agent for Claude](./ex5.md){target="_blank"}
+
+Go back to [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}

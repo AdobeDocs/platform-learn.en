@@ -1,6 +1,6 @@
 ---
-title: Overview Agentic AI Tech Labs
-description: Overview Agentic AI Tech Labs
+title: Agentic AI Tech Labs
+description: Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
 ---
@@ -8,7 +8,23 @@ exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## Overview - Work In Progress
+## Agentic AI Architecture
+
+In this video, you'll learn about the architecture behind the Agentic AI part of the One Adobe tutorial.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
+
+Download the architecture overview image below:
+
+![Tech Insiders](./assets/images/architecture_agentic.jpg)
+
+### Getting Started
+
+[Getting started](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+
+In this foundational module, you will prepare everything so that you can access and use the demo environment.
+
+### Agentic AI Tech Labs
 
 [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
@@ -20,6 +36,8 @@ Learn how to use Adobe Experience Platform Agents and Agent Orchestrator to:
 - Identify high-propensity audiences
 - Validate journey performance
 - Create a new journey for the CitiSignal Fiber Max rollout
+
+You'll also learn how to use Adobe Marketing Agent in combination with tools such as Microsoft 365 Copilot, ChatGPT for Enterprise, Google Gemini Enterprise and Claude.
 
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
