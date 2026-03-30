@@ -3,6 +3,7 @@ title: Adobe Marketing Agent for Claude
 description: Adobe Marketing Agent for Claude
 kt: 5342
 doc-type: tutorial
+exl-id: 2563ca77-699b-4cd3-af51-1105cea03c79
 ---
 # 1.1.5 Adobe Marketing Agent for Claude
 
