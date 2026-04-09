@@ -409,6 +409,6 @@ You should then see this Brand Concierge where you can enter your prompt.
 
 ## Next Steps
 
-Go Back to [Brand Concierge](./brandconcierge.md){target="_blank"}
+Go back to [Brand Concierge](./brandconcierge.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}
