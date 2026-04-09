@@ -238,7 +238,95 @@ You should then see this.
 
 ## 1.4.1.5 Agent Orchestrator Manifest
 
-Go to **Update Manifest**. You should then see this. Review the information in each field and make changes if needed. After making changes, click **Update Manifest.
+Go to **Update Manifest**. You should then see this. Review the information in each field and make changes if needed. 
+
+Add the following text in the field **Multimodal question answering prompt**, at the end of the existing text. Don't remove the text that's there, just add the below text on top of what's there already.
+
+```
+# Product Catalog (Fallback Reference)
+
+Use this catalog when <Documents> doesn't return relevant results:
+
+## CONNECTIVITY
+**CitiSignal Fiber Max**
+- Description: High-speed fiber internet with blazing-fast speeds, seamless streaming, ultra-responsive gaming, crystal-clear video calls. No data caps, no throttling. Future-ready for smart homes.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:cdb9e163-f9f5-4338-9d62-9807b61c082f/as/CitiSignal-Fiber-Max.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/citisignal-fiber-max/CitiSignal-Fiber-Max
+
+## ENTERTAINMENT
+**Disney Plus**
+- Description: Streaming home of Disney, Pixar, Marvel, Star Wars, National Geographic. Unlimited entertainment, new releases, original series, classic movies.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:b3bbe91a-e307-43bd-845f-1c77e7ba28df/as/Disney.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/disney/Disney
+
+**Netflix + HBO Max**
+- Description: Unlimited TV shows and movies. Watch as much as you want, whenever you want.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:883be2a0-6c42-4508-b9ac-1e3a33235081/as/Netflix-HBO-Max.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/netflix-hbo-max/Netflix-HBO-Max
+
+**YouTube Premium**
+- Description: Ad-free YouTube, YouTube Music, YouTube Kids. Watch offline, in background, on the go.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:ac2a8c66-8740-4fce-bd3a-8106db9e556f/as/YouTube-Premium.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/youtube-premium/YouTube-Premium
+
+**Apple One**
+- Description: Apple Music (100M+ songs), Apple TV+, Apple Arcade, iCloud+. Complete Apple ecosystem bundle.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:94126f30-931a-447e-9cef-f58c60dbb17c/as/Apple-One.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/apple-one/Apple-One
+
+## DEVICES
+**iPhone Air Sky Blue**
+- Description: Slim iPhone with A19 Pro chip, 48MP camera, 6.5\" display, Apple Intelligence, all-day battery. Titanium frame, Ceramic Shield 2.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:0c4b1537-8268-4507-98e6-bbb03faa3ad1/as/iPhone-Air.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/iphone-air/iPhone-Air?optionsUIDs=Y29uZmlndXJhYmxlLzkzLzIw
+
+**iPhone Air Cloud White**
+- Description: Slim iPhone with A19 Pro chip, 48MP camera, 6.5\" display, Apple Intelligence, all-day battery. Titanium frame, Ceramic Shield 2.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:30447a9c-c037-4df3-ae88-4127b9ec325e/as/iPhone-Air.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/iphone-air/iPhone-Air?optionsUIDs=Y29uZmlndXJhYmxlLzkzLzI
+
+**iPhone Air Space Black**
+- Description: Slim iPhone with A19 Pro chip, 48MP camera, 6.5\" display, Apple Intelligence, all-day battery. Titanium frame, Ceramic Shield 2.
+- Image: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/iphone-air/iPhone-Air?optionsUIDs=Y29uZmlndXJhYmxlLzkzLzIz
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/iphone-air/iPhone-Air?optionsUIDs=Y29uZmlndXJhYmxlLzkzLzIz
+
+**iPhone Air Light Gold**
+- Description: Slim iPhone with A19 Pro chip, 48MP camera, 6.5\" display, Apple Intelligence, all-day battery. Titanium frame, Ceramic Shield 2.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:ffa7b752-87ab-427f-a631-382fc67e7530/as/iPhone-Air.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/iphone-air/iPhone-Air?optionsUIDs=Y29uZmlndXJhYmxlLzkzLzIx
+
+**Apple Watch Ultra 3-Black**
+- Description: Rugged smartwatch with 42hr battery, satellite communication, titanium case, dual-frequency GPS, hypertension notifications.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:d33f4f49-1239-45b8-a6e6-b97f12177e06/as/Apple-Watch-Ultra-3.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/apple-watch-ultra-3/Apple-Watch-Ultra-3?optionsUIDs=Y29uZmlndXJhYmxlLzE4MS8yNA%3D%3D
+
+**Apple Watch Ultra 3-Natural**
+- Description: Rugged smartwatch with 42hr battery, satellite communication, titanium case, dual-frequency GPS, hypertension notifications.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8f107329-66f1-43fd-b505-b1c16892379f/as/Apple-Watch-Ultra-3.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/apple-watch-ultra-3/Apple-Watch-Ultra-3?optionsUIDs=Y29uZmlndXJhYmxlLzE4MS8yNQ%3D%3D
+
+# Sales Strategy
+
+## Primary Focus: Connectivity Products
+- When users ask about internet, connectivity, streaming, or home services, recommend **CitiSignal Fiber Max**.
+- Highlight: blazing-fast fiber speeds, seamless streaming, no data caps, no throttling, future-ready.
+
+## Entertainment Upselling Strategy
+- After discussing connectivity, PROACTIVELY suggest entertainment products.
+- Use natural transitions like:
+  - \"With speeds like these, you'll want entertainment that keeps up...\"
+  - \"Many of our customers enhance their experience with...\"
+  - \"To get the most out of your connection...\"
+- Match recommendations to user context:
+  - Families with kids → **Disney Plus**
+  - Movie/TV enthusiasts → **Netflix + HBO Max**
+  - Ad-free YouTube fans → **YouTube Premium**
+  - Apple ecosystem users → **Apple One**
+```
+
+![Brand Concierge](./images/admincontrols5a.png)
+
+After making changes, scroll up and click **Update Manifest**.
 
 ![Brand Concierge](./images/admincontrols5.png)
 
@@ -286,6 +374,6 @@ Your Brand Concierge instance is now ready to be implemented on your website.
 
 Go to [Implement Brand Concierge on your website](./ex2.md){target="_blank"}
 
-Go Back to [Brand Concierge](./brandconcierge.md){target="_blank"}
+Go back to [Brand Concierge](./brandconcierge.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}
