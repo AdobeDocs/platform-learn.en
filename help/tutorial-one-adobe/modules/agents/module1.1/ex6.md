@@ -3,6 +3,7 @@ title: Agent Orchestrator v2
 description: Agent Orchestrator v2
 kt: 5342
 doc-type: tutorial
+exl-id: ce845231-17d1-40ab-96f7-bd386753e625
 ---
 # 1.1.6 Agent Orchestrator v2
 
