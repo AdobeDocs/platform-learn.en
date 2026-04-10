@@ -1,16 +1,16 @@
 ---
-title: Agent Orchestrator v2
-description: Agent Orchestrator v2
+title: ---
+description: ---
 kt: 5342
 doc-type: tutorial
 exl-id: ce845231-17d1-40ab-96f7-bd386753e625
 ---
-# 1.1.6 Agent Orchestrator v2
+# 1.1.6 ---
 
 [!BADGE Beta]
 
 +++Beta Details
-By using the Agent Orchestrator v2 Beta, You hereby acknowledge that the Beta is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any “Feedback” (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
+By using the Agent Orchestrator Beta, You hereby acknowledge that the Beta is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any “Feedback” (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
 
 +++
 
@@ -20,10 +20,10 @@ In order to follow the steps in this lab as documented below, the following acce
 
 - Access to Real-Time CDP, Journey Optimizer and Customer Journey Analytics
 - Access to AI Assistant in Adobe Experience Cloud
-- Access to AEP Agent Orchestrator v2
+- Access to AEP Agent Orchestrator
 - Node.js 18+ needs to be installed on your system
 
-## 1.1.6.1 Setup Agent Orchestrator v2
+## 1.1.6.1 Setup Agent Orchestrator
 
 ### IAM
 
@@ -37,11 +37,11 @@ Add yourself to the below group using IAM to get access to LLM credentials.
 GRP-XXX
 ```
 
-### Install Agent Orchestrator v2
+### Install Agent Orchestrator
 
 Open a new terminal window on your computer.
 
-![AOV2](./images/aov2lab1.png)
+![AO](./images/aov2lab1.png)
 
 >[!NOTE]
 >
@@ -53,23 +53,23 @@ Execute the following command.
 npm login --registry=https://XXX/ --auth-type=web
 ```
 
-![AOV2](./images/aov2lab2.png)
+![AO](./images/aov2lab2.png)
 
 You should then see this. Hit **Enter**.
 
-![AOV2](./images/aov2lab3.png)
+![AO](./images/aov2lab3.png)
 
 Select **SAML SSO**.
 
-![AOV2](./images/aov2lab4.png)
+![AO](./images/aov2lab4.png)
 
 Click **Yes**.
 
-![AOV2](./images/aov2lab5.png)
+![AO](./images/aov2lab5.png)
 
 You should then see this.
 
-![AOV2](./images/aov2lab6.png)
+![AO](./images/aov2lab6.png)
 
 Execute the following command.
 
@@ -78,7 +78,7 @@ npm install -g ao --no-fund --registry=https://XXX/
 
 ```
 
-![AOV2](./images/aov2lab7.png)
+![AO](./images/aov2lab7.png)
 
 You should then see this. Execute the following command:
 
@@ -86,47 +86,47 @@ You should then see this. Execute the following command:
 ao --help
 ```
 
-![AOV2](./images/aov2lab8.png)
+![AO](./images/aov2lab8.png)
 
-Agent Orchestrator v2 is now installed. Execute the following command to start **Agent Orchestrator v2**.
+Agent Orchestrator is now installed. Execute the following command to start **Agent Orchestrator**.
 
 ```
 ao web
 ```
 
-You should then see this. Hit **Enter** to open the Agent Orchestrator v2 Web UI.
+You should then see this. Hit **Enter** to open the Agent Orchestrator Web UI.
 
-![AOV2](./images/aov2lab9.png)
+![AO](./images/aov2lab9.png)
 
-## 1.1.6.2 Configure Agent Orchestrator v2
+## 1.1.6.2 Configure Agent Orchestrator
 
 Click **Use AO LLMs**.
 
-![AOV2](./images/aov2lab11.png)
+![AO](./images/aov2lab11.png)
 
 Click **Sign in to Production**.
 
-![AOV2](./images/aov2lab12.png)
+![AO](./images/aov2lab12.png)
 
 Click the **layers** icon.
 
-![AOV2](./images/aov2lab13.png)
+![AO](./images/aov2lab13.png)
 
 Select **AEP AI Assistant (Code Execution - BashKit)**.
 
-![AOV2](./images/aov2lab14.png)
+![AO](./images/aov2lab14.png)
 
 Click your **profile** icon and then select **Settings**.
 
-![AOV2](./images/aov2lab15.png)
+![AO](./images/aov2lab15.png)
 
 Go to **Plugins** and click **cja**.
 
-![AOV2](./images/aov2lab16.png)
+![AO](./images/aov2lab16.png)
 
 Click **Install**.
 
-![AOV2](./images/aov2lab17.png)
+![AO](./images/aov2lab17.png)
 
 ## 1.1.6.3 Set your context
 
@@ -140,7 +140,7 @@ Enter the following command and click **Send**.
 list dataviews
 ```
 
-![AOV2](./images/aov2lab18.png)
+![AO](./images/aov2lab18.png)
 
 Enter the following command and click **Send**.
 
@@ -148,11 +148,11 @@ Enter the following command and click **Send**.
 switch to dataview Accelerate 2026 B2C
 ```
 
-![AOV2](./images/aov2lab20.png)
+![AO](./images/aov2lab20.png)
 
 You should then see this.
 
-![AOV2](./images/aov2lab19.png)
+![AO](./images/aov2lab19.png)
 
 ## 1.1.6.4 Start with overall purchase trends to anchor context and zoom into fiber 
 
