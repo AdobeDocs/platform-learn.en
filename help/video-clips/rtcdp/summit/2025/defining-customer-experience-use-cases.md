@@ -4,7 +4,7 @@ description: Discover Adobe's five-question framework for defining customer expe
 doc-type: Video Clips
 duration: 48
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: 2f74b038-f2c2-4c63-bfa4-e554d5522316

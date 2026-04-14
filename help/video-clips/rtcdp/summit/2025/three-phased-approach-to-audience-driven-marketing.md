@@ -4,7 +4,7 @@ description: Discover a simple three-phased framework for building, scaling, and
 doc-type: Video Clips
 duration: 214
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: d9dbfe17-c6b1-4320-b0cd-a2e8e0aa6987

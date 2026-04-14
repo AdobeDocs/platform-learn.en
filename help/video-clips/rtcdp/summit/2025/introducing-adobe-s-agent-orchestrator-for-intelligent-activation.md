@@ -4,7 +4,7 @@ description: Learn about the next era of GenAI innovation with Adobe's Agent Orc
 doc-type: Video Clips
 duration: 68
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: d165fce1-972b-4e3c-abce-bc04d9d227a3

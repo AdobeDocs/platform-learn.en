@@ -4,7 +4,7 @@ description: Understand the critical considerations for deploying Adobe Experien
 doc-type: Video Clips
 duration: 73
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: 493c93e1-2e19-4d34-b361-d5c642ce8d6a

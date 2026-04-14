@@ -4,7 +4,7 @@ description: Explore how the Audience Portal in Adobe Real-Time CDP unifies cust
 doc-type: Video Clips
 duration: 83
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: ffa91fcc-4cb0-4597-a7dc-9dc8c0850a06

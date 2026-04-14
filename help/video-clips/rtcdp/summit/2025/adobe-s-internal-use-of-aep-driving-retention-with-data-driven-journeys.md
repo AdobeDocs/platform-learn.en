@@ -4,7 +4,7 @@ description: Explore how Adobe uses AEP to drive retention and engagement by lev
 doc-type: Video Clips
 duration: 62
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: 0c3d299d-134c-447a-af0b-1a3d60d834de

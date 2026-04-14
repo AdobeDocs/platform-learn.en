@@ -31,7 +31,8 @@ holistic fashion.
 
 The data prep feature helps you ingest only the fields you need from a data source.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * data-prep-for-data-hygiene.md
 -->
@@ -66,7 +67,8 @@ The data prep feature helps you ingest only the fields you need from a data sour
 ## Removal of data in the system
 
 Many capabilties exist to help you remove the data from the system. You can delete entire datasets on-demand or on a schedule, expire records and profiles with time-to-live settings, delete individual profiles, and honor privacy requests.
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * delete-datasets-and-batches.md
 * ../data-lifecycle/expire-datasets.md
@@ -200,7 +202,8 @@ Many capabilties exist to help you remove the data from the system. You can dele
 
 ## Adjustment of data in the system
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * ../profiles/update-a-specific-attribute-with-upsert.md
 -->

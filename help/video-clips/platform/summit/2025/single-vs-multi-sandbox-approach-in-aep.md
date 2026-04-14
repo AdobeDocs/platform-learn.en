@@ -4,7 +4,7 @@ description: Explore the trade-offs between single and multi-sandbox strategies 
 doc-type: Video Clips
 duration: 180
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: fa1b2945-f4cf-46e5-8bb5-914ef58be4c0

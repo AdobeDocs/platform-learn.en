@@ -16,7 +16,8 @@ This video explains how Adobe Experience Platform assembles and updates Real-Tim
 
 ## Architecture and features
 
-<!-- CARDS
+<!--
+CARDS
 * overview-diagram.md
 * create-merge-policies.md
 * union-schemas-overview.md
@@ -121,7 +122,8 @@ This video explains how Adobe Experience Platform assembles and updates Real-Tim
 
 ## Ingesting and managing profile data
 
-<!-- CARDS
+<!--
+CARDS
 * bring-data-into-the-real-time-customer-profile.md
 * delete-profiles.md
 * update-a-specific-attribute-with-upsert.md
@@ -202,7 +204,8 @@ This video explains how Adobe Experience Platform assembles and updates Real-Tim
 
 ## Account profiles
 
-<!-- CARDS
+<!--
+CARDS
 * view-account-profiles.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->

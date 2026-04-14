@@ -16,7 +16,8 @@ Adobe Experience Platform Query Service enables users to explore, validate, and 
 
 ## Basic usage
 
-<!-- CARDS
+<!--
+CARDS
 * run-queries.md
 * explore-data.md
 * prepare-data.md
@@ -99,7 +100,8 @@ Adobe Experience Platform Query Service enables users to explore, validate, and 
 
 ## Data visualization in external tools
 
-<!-- CARDS
+<!--
+CARDS
 * psql-client-tableau.md
 * analyze-and-visualize.md
 * recharge-your-customer-data.md

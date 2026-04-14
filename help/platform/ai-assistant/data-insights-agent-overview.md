@@ -6,7 +6,7 @@ role: User, Developer, Leader, Admin
 level: Beginner
 last-substantial-update: 2025-09-25
 jira: KT-19280
-hide: no
+hide: false
 exl-id: ce57175e-3c31-4125-9166-5c2eea988357
 ---
 # Data Insights Agent overview

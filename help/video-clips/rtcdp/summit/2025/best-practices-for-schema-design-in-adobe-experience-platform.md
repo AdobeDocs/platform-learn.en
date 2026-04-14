@@ -4,7 +4,7 @@ description: Avoid costly mistakes in schema design with these best practices fo
 doc-type: Video Clips
 duration: 261
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: 65895927-16ca-443b-897f-fc771b342d2c

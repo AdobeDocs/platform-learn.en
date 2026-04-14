@@ -4,7 +4,7 @@ description: Learn how to transition from a campaign-centric to a customer-centr
 doc-type: Video Clips
 duration: 126
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: a703ad4a-4484-4b06-87b3-a2698a07ea52

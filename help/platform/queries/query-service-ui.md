@@ -6,7 +6,7 @@ role: Developer
 level: Beginner
 jira: KT-7680
 thumbnail: 333403.jpg
-hide: yes
+hide: true
 hidefromtoc: true
 exl-id: 63de8b83-5da2-4f24-a47d-70c14bdfe437
 ---

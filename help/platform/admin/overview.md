@@ -15,7 +15,8 @@ Learn about the adminisitrative features in Adobe Experience Platform allows you
 
 Learn how to manage user permissions.
 
-<!-- CARDS
+<!--
+CARDS
 * add-users.md{title=Add users}
 * add-developers.md{title=Add developers}
 * add-product-administrators.md{title=Add administrators}
@@ -146,7 +147,8 @@ Learn how to manage user permissions.
 
 Learn how to manage sandbox environments.
 
-<!-- CARDS
+<!--
+CARDS
 * use-sandboxes.md
 * copy-objects-between-sandboxes.md
 * share-packages-across-orgs.md
@@ -227,7 +229,8 @@ Learn how to manage sandbox environments.
 
 ## License Usage
 
-<!-- CARDS
+<!--
+CARDS
 * https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -260,7 +263,8 @@ Learn how to manage sandbox environments.
 
 ## Alerts
 
-<!-- CARDS
+<!--
+CARDS
 {cta = Watch}
 * use-alerts.md
 -->
@@ -294,7 +298,8 @@ Learn how to manage sandbox environments.
 
 ## Tags
 
-<!-- CARDS
+<!--
+CARDS
 * https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->

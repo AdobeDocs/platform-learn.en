@@ -4,7 +4,7 @@ description: Watch how AI Assistant helps marketers build predictive models and 
 doc-type: Video Clips
 duration: 176
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: 563a73b1-15c3-4d89-b9c4-d97383e65190

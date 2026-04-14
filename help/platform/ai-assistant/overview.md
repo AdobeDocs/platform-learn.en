@@ -20,7 +20,8 @@ Learn what you can do with AI Assistant in Adobe Experience Platform-based appli
 
 Get set up with AI Assistant and learn its basic features.
 
-<!-- CARDS
+<!--
+CARDS
 * access.md
 * discoverability-panel.md
 * validate-responses.md
@@ -101,7 +102,8 @@ Get set up with AI Assistant and learn its basic features.
 
 ## Agent Orchestrator and agents
 
-<!-- CARDS
+<!--
+CARDS
 
     {cta = Watch}
 
@@ -332,7 +334,8 @@ Get set up with AI Assistant and learn its basic features.
 
 There are many other use cases where AI Assistant can help you to manage your Platform account or improve your marketing tactics.
 
-<!-- CARDS
+<!--
+CARDS
 * operational-insights.md
 * find-unused-audiences.md
 * impact-analysis.md
@@ -416,7 +419,8 @@ There are many other use cases where AI Assistant can help you to manage your Pl
 
 The AI Assistant is a useful tool to learn new products or to get quick answers on familiar products.
 
-<!-- CARDS
+<!--
+CARDS
 * product-knowledge.md
 * onboard.md
 -->
@@ -475,7 +479,8 @@ The AI Assistant is a useful tool to learn new products or to get quick answers 
 
 Troubleshoot and open customer care tickets.
 
-<!-- CARDS
+<!--
+CARDS
 * product-support-agent.md
 * https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25
 -->
@@ -534,7 +539,8 @@ Troubleshoot and open customer care tickets.
 
 Learn about the security features in AI Assistant.
 
-<!-- CARDS
+<!--
+CARDS
 * security-overview.md
 * ai-credits.md
 -->
