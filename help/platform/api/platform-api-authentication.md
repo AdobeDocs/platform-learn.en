@@ -29,7 +29,8 @@ Learn how to get started with Adobe Experience Platform APIs. The first step is 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
 
-<!-- CARDS
+<!--
+CARDS
 * generate-an-access-token.md
 * use-apis-with-postman.md
 -->

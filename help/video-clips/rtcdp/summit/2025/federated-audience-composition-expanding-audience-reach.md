@@ -4,7 +4,7 @@ description: Learn how Federated Audience Composition allows you to connect exte
 doc-type: Video Clips
 duration: 88
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: 49539d09-b5cc-48bd-b8e2-899af4967355

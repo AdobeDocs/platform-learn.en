@@ -16,7 +16,8 @@ Adobe Experience Platform's data ingestion capabilities let you bring your data 
 
 ## Methods of data ingestion
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/overview.md
 * ../../data-collection/web-sdk/overview.md
@@ -75,7 +76,8 @@ Adobe Experience Platform's data ingestion capabilities let you bring your data 
 
 ## Speeds of data ingestion
 
-<!-- CARDS
+<!--
+CARDS
 
 * batch-ingestion-overview.md
 * understanding-streaming-ingestion.md
@@ -158,7 +160,8 @@ Adobe Experience Platform's data ingestion capabilities let you bring your data 
 
 ## Ingesting data from common third party sources
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/ingest-data-from-crm.md
 * ../sources/ingest-data-from-cloud-storage.md
@@ -264,7 +267,8 @@ Adobe Experience Platform's data ingestion capabilities let you bring your data 
 
 ## Ingesting data from common Adobe sources
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/ingest-data-from-adobe-analytics.md
 * ../sources/ingest-data-from-marketo.md

@@ -4,7 +4,7 @@ description: Learn how AI Assistant helps create top-performing audiences by min
 doc-type: Video Clips
 duration: 113
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: 1dc6dc1b-e051-48cd-9e9c-b07a3b745c3e

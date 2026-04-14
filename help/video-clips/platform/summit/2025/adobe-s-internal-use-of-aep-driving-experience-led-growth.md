@@ -4,7 +4,7 @@ description: Learn how Adobe uses AEP internally to unify customer profiles, dri
 doc-type: Video Clips
 duration: 256
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: c37dd3da-9bab-4c52-b61b-f4a479d16a10

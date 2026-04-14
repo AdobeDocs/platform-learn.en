@@ -22,7 +22,8 @@ In this lesson, you will:
 
 <!--
 * Add lifecycle field group to the schema.
-* -->
+* 
+-->
 * Enable accurate lifecycle metrics by correctly starting/pausing as the app moves between foreground and background.
 * Send data from the app to Platform Edge Network.
 * Validate in Assurance.

@@ -19,7 +19,8 @@ A high-level introduction to Intelligent Services, which empower marketing analy
 
 Learn how to build customer propensity and churn scores which get added to Real-time Customer Profiles for use in segmentation and personalization.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-customer-ai.md
 * configure-customer-ai.md
@@ -127,7 +128,8 @@ Learn how to build customer propensity and churn scores which get added to Real-
 
 Learn how to use models to understand the impact of your marketing.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-attribution-ai.md
 * configure-attribution-ai.md

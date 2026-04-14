@@ -4,7 +4,7 @@ description: Learn how AI Assistant in Adobe Experience Platform serves as a pro
 doc-type: Video Clips
 duration: 54
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: cd1c2d9d-c8f1-4b62-a80f-5606ee27df20

@@ -21,7 +21,8 @@ For more information, see the Real-Time CDP Collaboration [documentation](https:
 
 ## Getting started
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * real-time-cdp-collaboration-intro.md
 * rtcdp-overview-for-agency-practitioners.md
@@ -108,7 +109,8 @@ For more information, see the Real-Time CDP Collaboration [documentation](https:
 
 To get started, contact your Adobe Experience Platform administrator to ensure you have appropriate access to set up Real-Time CDP Collaboration permissions as outlined in the subsequent tutorials. If you are unable to identify your Experience Platform administrator please reach out to your Adobe Account Team.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * ../admin/add-product-administrators.md
 * set-permissions-for-collaboration.md
@@ -191,7 +193,8 @@ To get started, contact your Adobe Experience Platform administrator to ensure y
 
 ## Advertiser Workflow
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * reference-audiences-as-an-advertiser.md
 * connect-with-publishers.md

@@ -4,7 +4,7 @@ description: Discover how Adobe Experience Platform enables connected customer j
 doc-type: Video Clips
 duration: 52
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: d60e5d52-7545-409a-90a7-e2d80b1193a5

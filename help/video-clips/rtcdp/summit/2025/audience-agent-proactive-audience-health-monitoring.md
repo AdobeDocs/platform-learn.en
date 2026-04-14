@@ -4,7 +4,7 @@ description: See how Adobe's Audience Agent proactively monitors audience health
 doc-type: Video Clips
 duration: 54
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: 8be40d80-8209-4e0b-bddd-acfd9cdee40a

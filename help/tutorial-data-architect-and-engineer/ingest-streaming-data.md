@@ -57,7 +57,8 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 * User-role access to the `Luma Tutorial Platform` product profile
 -->  
 
-<!--## Create a streaming source
+<!--
+## Create a streaming source
 
 1. Log into the [Experience Platform  user interface](https://experience.adobe.com/platform/)
 1. Go to **[!UICONTROL Sources]** in the left navigation
@@ -71,8 +72,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
     ![Select your dataset](assets/websdk-source-selectDataset.png)
 1. On the **[!UICONTROL Dataflow detail]** step, select the **[!UICONTROL Next]** button:
     ![Select Next](assets/websdk-source-dataflowName.png)
-    <!--What is a good practice for naming the data flow vs the source-->
-<!--
+    What is a good practice for naming the data flow vs the source
 1. On the **[!UICONTROL Review]** step, review your source details and select the **[!UICONTROL Finish]** button:
     ![Select Finish](assets/websdk-source-review.png)
 -->

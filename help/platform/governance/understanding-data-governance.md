@@ -18,7 +18,8 @@ Learn how to take complete control over your data from the point it's collected 
 
 See and end-to-end demo of data governance capability in Adobe Experience Platform.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-data-governance.md
 -->
@@ -54,7 +55,8 @@ See and end-to-end demo of data governance capability in Adobe Experience Platfo
 
 Learn about how labels, policies, and marketing actions come together to automate data governenace in Experience Platform.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * classify-data-using-labels.md
 * create-data-usage-policies.md{description=Learn how to create and manage data usage policies.}
@@ -138,7 +140,8 @@ Learn about how labels, policies, and marketing actions come together to automat
 
 Learn about how Experience Platform honors customer consent.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * integrate-with-iab-transparency-and-consent-framework-2.md{title=Integrate IAB's Transparency and Consent Framework 2.0}{description=See a demo of how Adobe's Real-Time Customer Data Platform helps brands honor consumers' consent as they engage on digital properties.}
 * enforce-consent.md{description=Learn how to enforce consent in Adobe Experience Platform.}

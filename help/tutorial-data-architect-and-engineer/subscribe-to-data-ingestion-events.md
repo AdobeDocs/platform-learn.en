@@ -22,8 +22,7 @@ In this lesson, you will subscribe to data ingestion events by setting up a webh
 
 In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson, specifically:
 
-<!--* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
--->
+<!--* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
 
 >[!IMPORTANT]
 >

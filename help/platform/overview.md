@@ -87,7 +87,8 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <p>
     <em>Build segments based on your data.</em>
     <p>
-  </td>-->
+  </td>
+  -->
 </tr>
 </table>
 

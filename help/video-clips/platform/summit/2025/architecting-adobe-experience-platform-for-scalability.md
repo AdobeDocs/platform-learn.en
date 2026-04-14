@@ -4,7 +4,7 @@ description: Learn how to structure Adobe Experience Platform for efficient impl
 doc-type: Video Clips
 duration: 177
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: 375b9072-fbb8-4f99-ba8f-968dd9256c06

@@ -4,7 +4,7 @@ description: Explore how Adobe uses data-driven insights and AJO to enhance memb
 doc-type: Video Clips
 duration: 36
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: ae9e4173-ebcf-4520-85a4-90b7fd19936f

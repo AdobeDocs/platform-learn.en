@@ -25,7 +25,8 @@ Before you begin the exercises, watch this short video to learn more about Query
 
 In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson.
 
-<!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
+<!-- 
+Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
@@ -66,13 +67,15 @@ Let's start with some simple queries:
     ![Saving the query](assets/queries-loyaltySelect-save.png)
 
 
-<!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
+<!--
+SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
 
 
 SELECT _techmarketingdemos.systemIdentifier.loyaltyId, COUNT(_techmarketingdemos.systemIdentifier.loyaltyId)
 FROM luma_loyalty_dataset 
 GROUP BY _techmarketingdemos.systemIdentifier.loyaltyId
-HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;-->
+HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;
+-->
 
 ## Additional Exercises
 

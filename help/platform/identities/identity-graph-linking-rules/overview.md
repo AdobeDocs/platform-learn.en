@@ -20,7 +20,8 @@ Get an overview of how identity graph linking rules help data architects maintai
 
 Learn how to simulate and apply your rules.
 
-<!-- CARDS
+<!--
+CARDS
 * graph-simulation.md
 * identity-settings.md
 -->

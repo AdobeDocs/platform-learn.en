@@ -4,7 +4,7 @@ description: Discover how AAA Northeast uses AI Assistant to optimize workflows,
 doc-type: Video Clips
 duration: 34
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: fb187c57-49e8-4893-bb45-d9891f3549f6

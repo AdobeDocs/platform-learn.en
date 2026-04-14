@@ -16,7 +16,8 @@ Learn about the key capabilities of identity resolution in Adobe Experience Plat
 
 ## Configuring identities
 
-<!-- CARDS
+<!--
+CARDS
 * label-ingest-and-verify-identity-data.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -49,7 +50,8 @@ Learn about the key capabilities of identity resolution in Adobe Experience Plat
 
 ## Identity graph linking rules
 
-<!-- CARDS
+<!--
+CARDS
 * identity-graph-linking-rules/graph-simulation.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -82,7 +84,8 @@ Learn about the key capabilities of identity resolution in Adobe Experience Plat
 
 ## Identity graphs
 
-<!-- CARDS
+<!--
+CARDS
 * view-identity-graphs.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->

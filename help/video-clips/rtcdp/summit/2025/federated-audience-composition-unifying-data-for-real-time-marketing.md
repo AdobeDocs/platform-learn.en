@@ -4,7 +4,7 @@ description: Learn how Federated Audience Composition in Adobe Real-Time CDP ena
 doc-type: Video Clips
 duration: 88
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: 3bb56992-4fcd-45db-84d4-919c835d3c21

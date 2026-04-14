@@ -12,7 +12,8 @@ Learn about audiences in Adobe Experience Platform.
 
 ## Audience portal
 
-<!-- CARDS
+<!--
+CARDS
 * introduction-to-audience-portal-and-composition.md
 * upload-audiences.md
 -->
@@ -69,7 +70,8 @@ Learn about audiences in Adobe Experience Platform.
 
 ## Audience builder
 
-<!-- CARDS
+<!--
+CARDS
 * audience-builder/create-audiences.md
 * audience-builder/audience-builder/create-audiences-with-b2b-data.md
 * audience-builder/audience-builder/create-audiences-from-existing-audiences.md
@@ -272,7 +274,8 @@ Learn about audiences in Adobe Experience Platform.
 
 ## Federated Audience Composition
 
-<!-- CARDS
+<!--
+CARDS
 * fac/overview-of-federated-audience-composition.md
 * fac/connect-and-configure-federated-audience-composition.md
 * fac/create-a-federated-audience-composition.md
@@ -353,7 +356,8 @@ Learn about audiences in Adobe Experience Platform.
 
 ## Demos
 
-<!-- CARDS
+<!--
+CARDS
 * streaming-segmentation-demo.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -386,7 +390,8 @@ Learn about audiences in Adobe Experience Platform.
 
 ## Segment Match
 
-<!-- CARDS
+<!--
+CARDS
 * ../segments/segment-match-configuration-flow.md
 * ../segments/segment-match-connection-setup.md
 * ../segments/segment-match-data-governance.md

@@ -20,7 +20,8 @@ Learn how Use Case Playbooks can help customers of Real-Time Customer Data Platf
 
 Learn how to configure your Platform account for Use Case Playbooks and then  create and publish your first instance of a playbook.
 
-<!-- CARDS
+<!--
+CARDS
 * configure-a-playbook-sandbox.md
 * create-and-publish-a-playbook-instance.md
 -->

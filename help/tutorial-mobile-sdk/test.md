@@ -4,7 +4,7 @@ description: Test inline images
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
-hide: yes
+hide: true
 hidefromtoc: yes
 exl-id: abf0611e-f977-4e34-a5dc-006b0cc99bf4
 ---

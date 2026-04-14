@@ -4,7 +4,7 @@ description: Dive into the core capabilities of Adobe's Real-Time CDP Collaborat
 doc-type: Video Clips
 duration: 180
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: e80c4314-da35-43a4-aaee-3a0e1691e270

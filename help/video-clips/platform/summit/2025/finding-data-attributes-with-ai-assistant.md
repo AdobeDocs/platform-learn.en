@@ -4,7 +4,7 @@ description: See how AI Assistant helps users quickly locate data attributes and
 doc-type: Video Clips
 duration: 103
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: f82b79dd-7d6c-449a-884b-67023ef9b027

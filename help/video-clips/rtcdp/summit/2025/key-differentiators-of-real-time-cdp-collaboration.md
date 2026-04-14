@@ -4,7 +4,7 @@ description: Explore the unique features of Adobe's Real-Time CDP Collaboration,
 doc-type: Video Clips
 duration: 76
 index: false
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: d71025d9-1aa0-4b84-a802-ceb7f67c6a0f

@@ -1,7 +1,7 @@
 ---
 user-guide-title: One Adobe Technical Tutorial
 breadcrumb-title: One Adobe Technical Tutorial
-hide: yes
+hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
 ---

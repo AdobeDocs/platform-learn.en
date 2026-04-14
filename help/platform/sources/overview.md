@@ -18,7 +18,8 @@ Learn how to use sources, or source connectors, in the Adobe Experience Platform
 
 ## Ingesting data from common types of third-party Adobe sources
 
-<!-- CARDS
+<!--
+CARDS
 * ingest-data-from-crm.md
 * ingest-data-from-cloud-storage.md
 * ingest-data-from-databases.md
@@ -147,7 +148,8 @@ Learn how to use sources, or source connectors, in the Adobe Experience Platform
 
 ## Ingesting data from Adobe sources
 
-<!-- CARDS
+<!--
+CARDS
 * ingest-data-from-adobe-analytics.md
 * ingest-data-from-marketo.md
 * ingest-data-from-aam.md
@@ -228,7 +230,8 @@ Learn how to use sources, or source connectors, in the Adobe Experience Platform
 
 ## Troubleshooting
 
-<!-- CARDS
+<!--
+CARDS
 * troubleshoot-sftp-connector.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
