@@ -36,7 +36,8 @@ You have an understanding of what a data layer is, gotten familiar with the [Lum
 
 The [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) is a shared identity namespace used across Adobe Experience Platform and Adobe Experience Cloud applications. ECID provides the foundation for customer identity and is the default identity for digital properties. ECID is the ideal identifier for tracking unauthenticated user behavior because it is always present.
 
-<!-- FYI I commented this out because it was breaking the build - Jack
+<!-- 
+FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
 >
 > When you use the Experience Platform Web SDK to set up Adobe applications on your digital properties, the ECID is generated at the Adobe Edge server level. As such, ECID is not viewable on the client-side network request payload. You can view the ECID by seeing the Preview tab of the network request, or by using the [Adobe Experience Platform Debugger Edge Trace](set-up-analytics.md#experience-cloud-id-validation).

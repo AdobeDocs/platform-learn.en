@@ -47,12 +47,14 @@ Before you begin the exercises, watch this short video to learn more about schem
 
 In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson. 
 
-<!--, specifically:
+<!--
+, specifically:
 
 * Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+-->
 
 
 <!--

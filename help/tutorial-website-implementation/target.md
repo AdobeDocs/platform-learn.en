@@ -270,9 +270,11 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
    
 ![pageName parameter in the debugger](images/target-debugger-pageName-browser.png)
 
-<!--Now go to the **[!UICONTROL Target]** tab in the Debugger. Expand your client code and look at the requests. You should see the new `pageName` parameter passed in the request:
+<!--
+Now go to the **[!UICONTROL Target]** tab in the Debugger. Expand your client code and look at the requests. You should see the new `pageName` parameter passed in the request:
 
-![pageName parameter in the debugger](images/target-debugger-pageName.png)-->
+![pageName parameter in the debugger](images/target-debugger-pageName.png)
+-->
 
 ### Profile Parameters
 
@@ -414,7 +416,8 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 1. Expand your client code
 1. You should see the parameter for "at_property" in every page load request request as you browse the site:
 
-![The Property Token should be visible as the at_property parameter in every request](images/target-debugger-atProperty.png)-->
+![The Property Token should be visible as the at_property parameter in every request](images/target-debugger-atProperty.png)
+-->
 
 ## Add Custom Requests
 

@@ -25,13 +25,15 @@ We'll stick to the user interface for this lesson, but API options also exist fo
 **Data Architects** will need to create merge policies outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about merge policies:
+
 >[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson.
 
-<!--* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Merge Policies]** and **[!UICONTROL Manage Merge Policies]**
+<!--
+* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Merge Policies]** and **[!UICONTROL Manage Merge Policies]**
 * Permission item **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
