@@ -35,10 +35,6 @@ In this exercise, you'll link your ACCS backend to your AEM Sites Storefront.
 
 In this exercise, you'll link your ACCS backend to your AEM Assets CS environment.
 
-[Summary and benefits](./summary.md){target="_blank"}
-
-Summary of this module and overview of the benefits.
-
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

@@ -25,7 +25,11 @@ After completing the previous exercise, you could see a product being returned b
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. The org you should select is `--aepImsOrgName--`. 
 
-Click to open your Cloud Manager Program, which should be called `--aepUserLdap-- - CitiSignal AEM+ACCS`.
+Click to open your Cloud Manager Program, which should be named like one of the below:
+
+-  `--aepUserLdap-- - CitiSignal AEM+ACCS`
+-  For in-person tech lab sessions: **Tech Insiders - AEM + ACCS XX** (replace XX by the number that was assigned to you)
+-  For guided on-demand sessions: **Tech Insiders On Demand - AEM + ACCS XX** (replace XX by the number that was assigned to you)
 
 ![ACCS+AEM Assets](./images/accsaemassets1.png)
 
@@ -101,7 +105,7 @@ Next, open **Microsoft Visual Studio Code** and open the folder that contains yo
 
 ![ACCS+AEM Assets](./images/accsaemassets18.png)
 
-Go to **Search** in the left menu and search for `<my-app>`. You need to replace all occurences of `<my-app>` by `--aepUserLdap--citisignalaemaccs`.
+Go to **Search** in the left menu and search for `<my-app>`. You need to replace all occurences of `<my-app>` by `techinsiderscitisignalaemaccs`.
 
 Click the **replace all** icon.
 
@@ -115,15 +119,27 @@ The new files are now ready to be uploaded back to the Git Repo that is linked t
 
 ![ACCS+AEM Assets](./images/accsaemassets21.png)
 
-You should then see this. Paste the command `git add .` and hit **enter**.
+You should then see this. Paste the following command and hit **enter**.
+
+```
+git add .
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets22.png)
 
-You should then see this. Paste the command `git commit -m "add assets integration"` and hit **enter**.
+You should then see this. Paste the following command and hit **enter**.
+
+```
+git commit -m "add assets integration"
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets23.png)
 
-You should then see this. Paste the command `git push origin main` and hit **enter**.
+You should then see this. Paste the following command and hit **enter**.
+
+```
+git push origin main
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets24.png)
 
@@ -153,19 +169,14 @@ Scroll down in the menu to **ADOBE SERVICES** and then open **AEM Assets Integra
 
 ![ACCS+AEM Assets](./images/accsaemassets50.png)
 
-Fill out the following variables:
+From the dropdown list for **AEM Environment**, select your environment.
 
-- **AEM Assets Program ID**: You can take the Program ID from the AEM CS Author URL. In this example, the Program ID is `166717`.
+Then, set **Visualization Owner** to `AEM Assets`  (disable the **use system value** checkbox if needed).
 
-![ACCS+AEM Assets](./images/accsaemassets50a.png)
+Then, set **Synchronization enabled** to `Yes` (disable the **use system value** checkbox if needed).
 
-- **AEM Assets Environment ID**: You can take the Environment ID from the AEM CS Author URL. In this example, the Environment ID is `1786231`.
+Ensure that these settings are set as follows:
 
-![ACCS+AEM Assets](./images/accsaemassets50b.png)
-
-- **Asset Selector IMS Client ID**: set to `1`
-- **Synchronization enabled**: set to `Yes`
-- **Visualization Owner**: set to `AEM Assets`
 - **Asset matching rule**: `Match by product SKU`
 - **Match by product SKU attribute name**: `commerce:skus`
 
@@ -179,29 +190,19 @@ You should then see this.
 
 ## 1.5.3.3 Update config.json
 
-Go to the GitHub repository that was created when setting up your AEM Sites CS/EDS environment. That repository was created in the exercise [1.1.2 Setup your AEM CS environment](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} and should be named **citisignal-aem-accs**.
+Go to the GitHub repository that was created when setting up your AEM Sites CS/EDS environment. 
 
-In the root directory, scroll down and click to open the file **config.json**. Click the **edit** icon to make changes to the file.
+In the root directory, scroll down and click to open the file **config.json**. 
 
-![ACCS+AEM Assets](./images/accsaemassets101.png)
-
-Add the below code snippet under line 5 `"commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/XXX/graphql",`:
+You should see the below line in your **config.json** file (line 17 in this image), make sure it is set to **true**.
 
 ```json
  "commerce-assets-enabled": "true",
 ```
 
-Click **Commit Changes...**.
+![ACCS+AEM Assets](./images/accsaemassets101.png)
 
-![ACCS+AEM Assets](./images/accsaemassets102.png)
-
-Click **Commit Changes**.
-
-![ACCS+AEM Assets](./images/accsaemassets103.png)
-
-Your change is now saved and will be published soon. It may take a couple of minutes before the change is visible on the storefront.
-
-![ACCS+AEM Assets](./images/accsaemassets104.png)
+If the value of **commerce-assets-enabled** is set to **false**, update your file and set the value to **true**. Then, commit your changes.
 
 ## 1.5.3.4 Verify Commerce Fields in AEM Assets CS
 
@@ -362,6 +363,22 @@ Every **iPhone Air** image should now have a **green thumbs up**, indicating tha
 
 ![ACCS+AEM Assets](./images/accsaemassets250.png)
 
+You should now repeat these steps for the remaining products, using the table below. Don't forget to approve each image, and then configure the. below SKU settings in the **Commerce** tab.
+
+| Product Name | Key     | Value     | Usage     |
+|:-------------:|:-------------:| :---------------:| :---------------:|
+|Apple Watch Ultra 3-Black| `Apple-Watch-Ultra-3-Black`| `1` |`thumbnail, image, swatch_image, small_image`|
+|Apple Watch Ultra 3-Natural| `Apple-Watch-Ultra-3-Natural`| `1` |`thumbnail, image, swatch_image, small_image`|
+|CitiSignal Fiber Max| `CitiSignal-Fiber-Max`| `1` |`thumbnail, image, swatch_image, small_image`|
+|Apple One| `Apple-One`| `1` |`thumbnail, image, swatch_image, small_image`|
+|YouTube Premium| `YouTube-Premium`| `1` |`thumbnail, image, swatch_image, small_image`|
+|Disney Plus| `Disney`| `1` |`thumbnail, image, swatch_image, small_image`|
+|Netflix + HBO Max| `Netflix-HBO-Max`| `1` |`thumbnail, image, swatch_image, small_image`|
+
+All your images should then be approved.
+
+![ACCS+AEM Assets](./images/accsaemassets251.png)
+
 ## 1.5.3.5 Verify Product Images on AEM Sites CS/EDS Storefront
 
 >[!NOTE]
@@ -369,11 +386,6 @@ Every **iPhone Air** image should now have a **green thumbs up**, indicating tha
 >It may take up to 15 minutes before the changes you made above are successfully deployed. If you don't see your image being shown yet, wait 15 minutes and then try again.
  
 To verify that the integration is working, you need to open your CitiSignal website.
-
-To acces your website, go to `main--citisignal-aem-accs--XXX.aem.page` and/or `main--citisignal-aem-accs--XXX.aem.live`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
-
-So in this example, the full URL becomes this:
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` and/or `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
 
 You should then see this. Go to **Phones**.
 
@@ -390,8 +402,6 @@ You should then see this. Make a change to the color and storage options, and yo
 Here's an example of changing the color to **Light-Gold** and the storage size to **256GB**.
 
 ![ACCS+AEM Assets](./images/accsaemassets153.png)
-
-Next Step: [Summary & Benefits](./summary.md){target="_blank"}
 
 Go Back to [Adobe Commerce as a Cloud Service](./accs.md){target="_blank"}
 
