@@ -30,9 +30,9 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 ## Exercises
 
-[1.1.1 Getting started with Agent Orchestrator](./ex1.md){target="_blank"}
+[1.1.1 AI Assistant and Agent Orchestrator](./ex1.md){target="_blank"}
 
-In this exercise, you'll explore Agent Orchestrator's abilities against the background of the CitiSignal launch campaign for Fiber Max.
+In this exercise, you'll explore AI Assistant and Agent Orchestrator against the background of the CitiSignal launch campaign for Fiber Max.
 
 [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](./ex2.md){target="_blank"}
 
