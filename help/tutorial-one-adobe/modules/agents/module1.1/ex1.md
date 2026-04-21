@@ -17,7 +17,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
-You should then see this. Make sure you're in the org **Experience Platform International**.
+You should then see this. Make sure you're in the org `--aepImsOrgName--`.
 
 ![Agent Orchestrator](./images/ao1.png)
 
@@ -31,11 +31,11 @@ Set the context to:
 
 The Documentation Source setting helps to give preference to which set of experience league documents to check for questions that relate to product knowledge/Experience League.
 
-- **Sandbox**: **Prod - Accelerate (VA7)**
+- **Sandbox**: **Prod - One Adobe (VA7)**
 
 The Sandbox setting helps to identify which sandbox AI Assistant should look at when asking questions.
 
-- **Dataview**: **Accelerate 2026 B2C**
+- **Dataview**: **AdobeOne Unified Customer Data View**
 
 The Dataview setting helps to identify which dataview AI Assistant should look at when asking questions.
 
@@ -52,7 +52,7 @@ Get a toplevel pulse on category demandâ€”Mobile, Landline, Internet, TV, Fiberâ
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/ao4.png)
@@ -64,7 +64,7 @@ You should then see this:
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months per week
+Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
 ![Agent Orchestrator](./images/ao6.png)
@@ -89,7 +89,7 @@ Which field is used to store the preferred genre?
 
 ![Agent Orchestrator](./images/ao7a.png)
 
-You should then see this, which shows that the field used for genre is **_experienceplatform.individualCharacteristics.preferences.preferredGenre**.
+You should then see this, which shows that the field used for genre is **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![Agent Orchestrator](./images/ao7b.png)
 
@@ -98,7 +98,7 @@ With that information, you can start drilling down in the purchase data.
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me ordersYTD by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -125,7 +125,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-You should then see this. Click **Show more**.
+You should then see this. Click **Show all results**.
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -145,7 +145,19 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/ao14.png)
 
-You should then see this. Click the link on one of the journeys and select **Journey Details**.
+You should then see something like this.
+
+![Agent Orchestrator](./images/ao14a.png)
+
+Enter the following **Prompt** and click the **send** button.
+
+```javascript
+give more details about the first one
+```
+
+![Agent Orchestrator](./images/ao14b.png)
+
+You should then see this. Click the link to open the journey.
 
 ![Agent Orchestrator](./images/ao15.png)
 

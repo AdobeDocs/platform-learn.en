@@ -19,7 +19,7 @@ exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
 
 In this exercise, you'll link the AEM Sites CS/EDS Storefront to the ACCS backend. At the moment, when you open your AEM Sites CS/EDS Storefront and go to the **Phones** product list page, you don't see any products yet.
 
-At the end of this exercise, you should see the products that you configured in the previous exercise appear on the **Phones** product list page on your AEM Sites CS/EDS Storefront.
+At the end of this exercise, you should see the products that you configured in the previous exercise appear on the **Phones/Watches/Plans/Entertainment** product list page on your AEM Sites CS/EDS Storefront.
 
 ![ACCS+AEM Sites](./images/accsaemsites0.png)
 
@@ -43,11 +43,11 @@ Click **Generate**.
 
 ![ACCS+AEM Sites](./images/accsaemsites4.png)
 
-Copy the full generated JSON payload.
+Click **Copy** to copy the full generated JSON payload.
 
 ![ACCS+AEM Sites](./images/accsaemsites5.png)
 
-Go to the GitHub repository that was created when setting up your AEM Sites CS/EDS environment. That repository was created in the exercise [1.1.2 Setup your AEM CS environment](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} and should be named **citisignal-aem-accs**.
+Go to the GitHub repository that was created when setting up your AEM Sites CS/EDS environment. That repository was created in the exercise [1.1.2 Setup your AEM CS environment](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} and should be named **citisignal-aem-accs** or **techinsidersodXX-citisignal-aem-accs** or, in case you're attending a live in-person training, should be named **techinsidersXX-citisignal-aem-accs**.
 
 ![ACCS+AEM Sites](./images/accsaemsites6.png)
 
@@ -61,24 +61,33 @@ Click the **Edit** icon.
 
 Remove all the current text and replace it by pasting the JSON payload you copied on the **Config Generator** page.
 
-Click **Commmit changes...**.
+Click **Commit changes...**.
 
 ![ACCS+AEM Sites](./images/accsaemsites9.png)
 
-Click **Commmit changes**.
+Click **Commit changes**.
 
 ![ACCS+AEM Sites](./images/accsaemsites10.png)
 
 The **config.json** file was now updated. You should see your changes on the website within a couple of minutes. The way to verify if the changes were picked up successfully is to go to the **Phones** product page. You should now see the **iPhone Air** appear on the page.
 
-To acces your website, you need to go to `main--citisignal-aem-accs--XXX.aem.page` and/or `main--citisignal-aem-accs--XXX.aem.live`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
-
-In this example, the full URL becomes this:
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` and/or `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
+Open your website by using the **.page** or **.live** URLs, and then go to **Phones**. You should see this.
 
 ![ACCS+AEM Sites](./images/accsaemsites11.png)
 
-While the product is now showing successfully, there isn't an image available for the product just yet. You will set up the link with AEM Assets CS for product images in the next exercise.
+Go to **Watches**. You should see this.
+
+![ACCS+AEM Sites](./images/accsaemsites12.png)
+
+Go to **Plans**. You should see this.
+
+![ACCS+AEM Sites](./images/accsaemsites13.png)
+
+Go to **Entertainment**. You should see this.
+
+![ACCS+AEM Sites](./images/accsaemsites14.png)
+
+While the products are now showing successfully, there isn't an image available for these products just yet. You will set up the link with AEM Assets CS for product images in the next exercise.
 
 Next Step: [Connect ACCS to AEM Assets CS](./ex3.md){target="_blank"}
 
