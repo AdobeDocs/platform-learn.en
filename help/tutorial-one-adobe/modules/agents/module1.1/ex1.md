@@ -15,7 +15,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 ## 1.1.1.1 Set Context in Agent Orchestrator 
 
-Go to [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Go to [https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat).
 
 You should then see this. Make sure you're in the org `--aepImsOrgName--`.
 
@@ -26,10 +26,6 @@ Click the **context** window.
 ![Agent Orchestrator](./images/ao2.png)
 
 Set the context to:
-
-- **Documentation Source**: **Journey Optimizer**
-
-The Documentation Source setting helps to give preference to which set of experience league documents to check for questions that relate to product knowledge/Experience League.
 
 - **Sandbox**: **Prod - One Adobe (VA7)**
 
@@ -98,7 +94,7 @@ With that information, you can start drilling down in the purchase data.
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me ordersYTD by preferred genre for the last 2 months
+Show me purchases by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -125,7 +121,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-You should then see this. Click **Show all results**.
+You should then see this. Click the **preview** icon.
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -174,7 +170,7 @@ Understand the seed definition of the “CitiSignal - Fiber Max Launch Promotion
 Enter the following **Prompt**:
 
 ```javascript
-What was the initial audience in the journey named 
+Which audiences are used by the journey named
 ```
 
 Then manually type in `+CitiSignal fib` to enable autocomplete. Select the journey **CitiSignal - Fiber Max Launch Promotion**.
@@ -211,11 +207,11 @@ Scroll down a little bit. You can now review the table by inspecting each node a
 
 AI Assistant provides you with observations and recommendations. 
 
-Click the sentence **Here is how I got the results**.
+Click the sentence **Explanation**.
 
 ![Agent Orchestrator](./images/ao21.png)
 
-You can then see the steps followed by AI Assistant to get to the results.
+You can then see some additional information and context.
 
 ![Agent Orchestrator](./images/ao22.png)
 
@@ -241,7 +237,7 @@ Review the plan. Enter `yes` and click **send**.
 
 ![Agent Orchestrator](./images/ao33.png)
 
-Review the segment query expression. Enter `yes` and click the **send** button.
+Review the **Audience Definition**. Enter `yes` and click the **send** button.
 
 ![Agent Orchestrator](./images/ao34.png)
 
@@ -253,17 +249,21 @@ Click **Review**.
 
 ![Agent Orchestrator](./images/ao36.png)
 
-Review the segment definition. Click **Create**.
+Review the **Audience Proposal**. Click **Create**.
 
 ![Agent Orchestrator](./images/ao37.png)
 
-Your audience has now been created.
+Your audience has now been created. Click the link to open the audience.
 
 ![Agent Orchestrator](./images/ao38.png)
 
 >[!NOTE]
 >
 >When creating a new audience, it will take 24 hours before the audience is available to AI Assistant for further usage.
+
+You should then see this.
+
+![Agent Orchestrator](./images/ao38a.png)
 
 ## 1.1.1.8 Find existing audiences aligned to high usage and check if they are in use
 
@@ -283,17 +283,21 @@ Is there an audience that has "heavy downloaders" in the title?
 
 ![Agent Orchestrator](./images/ao30.png)
 
-You should then see this. You now want to see all your audiences and how much they have changed over the last few days.
+You should then see this. 
+
+![Agent Orchestrator](./images/ao30a.png)
+
+You now want to see all your audiences and how much they have changed over the last few days.
 
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-List how much these audiences changed over the last few days.
+List how much all my audiences changed over the last few days.
 ```
 
 ![Agent Orchestrator](./images/ao31.png)
 
-You should then see this. Click **Show more**.
+You should then see this. Click **Show all results**.
 
 ![Agent Orchestrator](./images/ao31a.png)
 
@@ -349,25 +353,21 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 ![Agent Orchestrator](./images/aocj1.png)
 
-You should then see this. Enter `yes` and click generate.
+You should then see this. Enter `yes` and click send.
 
 ![Agent Orchestrator](./images/aocj2.png)
 
-You should then see this. Enter `yes` and click generate.
+You should then see this. Enter `yes` and click send.
 
 ![Agent Orchestrator](./images/aocj3.png)
 
-You should then see this. Enter `The first one` and click send.
+You should then see this. Enter `the first one` and click send.
 
 ![Agent Orchestrator](./images/aocj4.png)
 
 You should then see this. Enter `yes` and click send.
 
 ![Agent Orchestrator](./images/aocj5.png)
-
-Review the response. Enter `yes` and click send.
-
-![Agent Orchestrator](./images/aocj6.png)
 
 Click **Review**.
 
@@ -377,9 +377,13 @@ Update the journey name with your LDAP to make it unique. Click **Save**.
 
 ![Agent Orchestrator](./images/aocj8.png)
 
-Your journey has now been created in draft mode.
+Your journey has now been created in draft mode. Click your journey to open it.
 
 ![Agent Orchestrator](./images/aocj9.png)
+
+You should then see this.
+
+![Agent Orchestrator](./images/aocj10.png)
 
 ## 1.1.1.10 Journey Conflict Management
 
@@ -413,13 +417,9 @@ You should then see this. Click **send**.
 
 ![Agent Orchestrator](./images/aocj70a.png)
 
-Review the journey conflict information.
+Review the potential journey conflict information.
 
 ![Agent Orchestrator](./images/aocj71.png)
-
-Scroll down to find more journey conflict details.
-
-![Agent Orchestrator](./images/aocj72.png)
 
 ## 1.1.1.11 Experiments
 
