@@ -190,11 +190,11 @@ Before interacting further with Adobe Marketing Agent through Copilot, the conte
 
 For this exercise, the context needs to be set to use:
 
-- **Sandbox**: **Prod - Accelerate (VA7)**
+- **Sandbox**: **Prod - One Adobe (VA7)**
 
   The sandbox setting helps to identify which sandbox AI Assistant should look at when asking questions.
 
-- **Dataview**: **Accelerate 2026 B2C**
+- **Dataview**: **AdobeOne - Unified Customer Data View**
   
 The dataview setting helps to identify which dataview AI Assistant should look at when asking questions.
 
@@ -206,19 +206,27 @@ list sandboxes
 
 ![Agent Orchestrator](./images/gemini28.png)
 
-You should then see something similar to this. Enter the command `switch to sandbox accelerate` and click the **Send** button.
+You should then see something similar to this. Enter the following command and click the **Send** button.
+
+```
+switch to sandbox One Adobe
+```
 
 ![Agent Orchestrator](./images/geminilab10.png)
 
 You should then see this. To change the dataview, enter the following command and click the **send** button.
 
-```javascript
+```
 list dataviews
 ```
 
 ![Agent Orchestrator](./images/geminilab11.png)
 
-You should then see something similar to this. Enter the command `switch dataview to Accelerate 2026 B2C` and click the **Send** button.
+You should then see something similar to this. Enter the following command and click the **Send** button.
+
+```
+switch to AdobeOne - Unified Customer Data View
+```
 
 ![Agent Orchestrator](./images/geminilab12.png)
 
@@ -235,7 +243,7 @@ Get a toplevel pulse on category demandâ€”Mobile, Landline, Internet, TV, Fiberâ
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab18.png)
@@ -247,7 +255,7 @@ You should then see this:
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+Show me purchases by mainCategory = Fiber over the last 2 months until today, broken down by week
 ```
 
 ![Agent Orchestrator](./images/geminilab20.png)
@@ -272,7 +280,7 @@ Which field is used to store the preferred genre
 
 ![Agent Orchestrator](./images/geminilab22.png)
 
-You should then see this, which shows that the field used for genre is **_experienceplatform.individualCharacteristics.preferences.preferredGenre**.
+You should then see this, which shows that the field used for genre is **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![Agent Orchestrator](./images/geminilab23.png)
 
@@ -281,7 +289,7 @@ With that information, you can start drilling down in the purchase data.
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab24.png)
