@@ -47,7 +47,7 @@ Get a toplevel pulse on category demand—Mobile, Landline, Internet, TV, Fiber�
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Show me purchases by mainCategory over the last 2 months.
 ```
 
@@ -59,7 +59,7 @@ You should then see this:
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
@@ -79,7 +79,7 @@ First, you need to find out which field is used to store the genre preference.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Which field is used to store the preferred genre?
 ```
 
@@ -93,7 +93,7 @@ With that information, you can start drilling down in the purchase data.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Show me purchases by preferred genre for the last 2 months
 ```
 
@@ -115,7 +115,7 @@ Discover which active or recently concluded journeys include “Fiber” in the 
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -135,7 +135,7 @@ This will generate a CSV file for you that contains all the output from the AI A
 
 Click to close the right pane. Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -147,7 +147,7 @@ You should then see something like this.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 give more details about the first one
 ```
 
@@ -169,7 +169,7 @@ Understand the seed definition of the “CitiSignal - Fiber Max Launch Promotion
 
 Enter the following **Prompt**:
 
-```javascript
+```
 Which audiences are used by the journey named
 ```
 
@@ -193,7 +193,7 @@ You want to understand journey performance fallout to know if there are any node
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
@@ -223,7 +223,7 @@ Based on the above findings and research, there's a correlation between customer
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
@@ -277,7 +277,7 @@ Locate any audience named with "heavy downloaders", defined by monthly data usag
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Is there an audience that has "heavy downloaders" in the title?
 ```
 
@@ -291,7 +291,7 @@ You now want to see all your audiences and how much they have changed over the l
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 List how much all my audiences changed over the last few days.
 ```
 
@@ -313,7 +313,7 @@ There are some existing audiences already for "heavy downloaders". Let's see if 
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Which of the above are used in a journey? 
 ```
 
@@ -325,7 +325,7 @@ You should then see something similar to this.
 
 You should now verify if that journey is active. Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Are these journeys active? 
 ```
 
@@ -347,8 +347,8 @@ Heavy Downloaders ∩ SciFi Preference.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
-Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
+```
+Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
 ![Agent Orchestrator](./images/aocj1.png)
@@ -389,7 +389,7 @@ You should then see this.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 How can I manage journey conflicts?
 ```
 
@@ -405,7 +405,7 @@ Scroll down and select the **Sources** to find that the information is sourced f
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 List any conflicts for the journey +CitiSignal Fiber Max
 ```
 
@@ -425,7 +425,7 @@ Review the potential journey conflict information.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 

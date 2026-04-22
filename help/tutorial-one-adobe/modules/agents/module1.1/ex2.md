@@ -7,13 +7,6 @@ exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
 ---
 # 1.1.2 Adobe Marketing Agent for ChatGPT Enterprise
 
-[!BADGE Beta]
-
-+++Beta details
-By using the Adobe Marketing Agent for ChatGPT Enterprise Beta, You hereby acknowledge that the Beta is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any “Feedback” (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
-
-+++
-
 ## Video
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
@@ -51,7 +44,7 @@ Click **Create app**.
 Fill out the fields like this:
 
 - **Name**: `Adobe Marketing Agent`
-- **MCP Server URL**: check with your Adobe representative
+- **MCP Server URL**: `https://aep-ai-ama.adobe.io/mcp`
 - **Authentication**: `OAuth`
 
 Check the checkbox for **I understand and want to continue**.
@@ -82,63 +75,29 @@ Before interacting further with Adobe Marketing Agent through ChatGPT, the conte
 
 For this exercise, the context needs to be set to use:
 
-- **Sandbox**: **Prod - Accelerate (VA7)**
+- **IMS Org**: `--aepImsOrgName--`.
+
+- **Sandbox**: **Prod - One Adobe**
 
 The Sandbox setting helps to identify which sandbox ChatGPT should look at when asking questions.
 
-- **Dataview**: **Accelerate 2026 B2C**
+- **Dataview**: **AdobeOne - Unified Customer Data View**
 
 The Dataview setting helps to identify which dataview ChatGPT should look at when asking questions.
 
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-list sandboxes
+change context
 ```
 
 ![Agent Orchestrator](./images/chatgpt11.png)
 
-You should then see a similar list of available sandboxes. The current sandbox in this example is set to **prod**. 
-
-To change that to the sandbox that needs to be used, enter the following **Prompt** and click the **send** button.
-
-```javascript
-switch to sandbox accelerate
-```
+You should then see a similar window, showing the current Org, Sandbox and Dataview selection. Change these fields to the correct Org, Sandbox and Dataview based on the above information.
 
 ![Agent Orchestrator](./images/chatgpt12.png)
 
-You should then see this. Click **Set Context**.
-
-![Agent Orchestrator](./images/chatgpt13.png)
-
-You should then see this. Enter the following **Prompt** and click the **send** button to set the dataview to use.
-
-```javascript
-list dataviews
-```
-
-![Agent Orchestrator](./images/chatgpt14.png)
-
-You should then see a similar list of available dataviews.
-
-To set the dataview that needs to be used, enter the following **Prompt** and click the **send** button.
-
-```javascript
-switch to Accelerate 2026 B2C
-```
-
-![Agent Orchestrator](./images/chatgpt15.png)
-
-You should then see this. Click **Set Context**.
-
-![Agent Orchestrator](./images/chatgpt16.png)
-
-You should then see this.
-
-![Agent Orchestrator](./images/chatgpt17.png)
-
-Your context is now propermy set, so you can start sending specific prompts next.
+Your context is now properly set, so you can start sending specific prompts next.
 
 ## 1.1.2.3 Start with overall purchase trends to anchor context and zoom into fiber 
 
@@ -149,7 +108,7 @@ Get a toplevel pulse on category demand—Mobile, Landline, Internet, TV, Fiber�
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/chatgpt18.png)
@@ -161,7 +120,7 @@ You should then see this:
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months per week
+Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
 ![Agent Orchestrator](./images/chatgpt20.png)
@@ -181,12 +140,12 @@ First, you need to find out which field is used to store the genre preference.
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Which field is used to store the preferred genre in the sandbox accelerate?
+Which field is used to store the preferred genre?
 ```
 
 ![Agent Orchestrator](./images/chatgpt22.png)
 
-You should then see this, which shows that the field used for genre is **_experienceplatform.individualCharacteristics.preferences.preferredGenre**.
+You should then see this, which shows that the field used for genre is **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![Agent Orchestrator](./images/chatgpt23.png)
 
@@ -195,22 +154,14 @@ With that information, you can start drilling down in the purchase data.
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by favouriteGenre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/chatgpt24.png)
 
-You should then see this. Click **Research**.
-
-![Agent Orchestrator](./images/chatgpt25.png)
-
 You should then see this.
 
-![Agent Orchestrator](./images/chatgpt26.png)
-
-Scroll down to see more information.
-
-![Agent Orchestrator](./images/chatgpt27.png)
+![Agent Orchestrator](./images/chatgpt25.png)
 
 ## 1.1.2.5 Identify Existing Fiber Journeys
 
@@ -226,13 +177,9 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/chatgpt28.png)
 
-You should then see this. Click **Research**.
+You should then see this.
 
 ![Agent Orchestrator](./images/chatgpt29.png)
-
-You should then see a list of journeys.
-
-![Agent Orchestrator](./images/chatgpt30.png)
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -242,17 +189,9 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/chatgpt31.png)
 
-You should then see this. Click **Research**.
-
-![Agent Orchestrator](./images/chatgpt32.png)
-
 You should then see this.
 
-![Agent Orchestrator](./images/chatgpt33.png)
-
-Scroll down to see more details.
-
-![Agent Orchestrator](./images/chatgpt34.png)
+![Agent Orchestrator](./images/chatgpt32.png)
 
 Enter the following **Prompt** and click the **send** button.
 
