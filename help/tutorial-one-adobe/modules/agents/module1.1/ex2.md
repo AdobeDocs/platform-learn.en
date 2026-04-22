@@ -87,7 +87,7 @@ The Dataview setting helps to identify which dataview ChatGPT should look at whe
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 change context
 ```
 
@@ -107,7 +107,7 @@ Get a toplevel pulse on category demand—Mobile, Landline, Internet, TV, Fiber�
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Show me purchases by mainCategory over the last 2 months.
 ```
 
@@ -119,7 +119,7 @@ You should then see this:
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
@@ -139,7 +139,7 @@ First, you need to find out which field is used to store the genre preference.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Which field is used to store the preferred genre?
 ```
 
@@ -153,7 +153,7 @@ With that information, you can start drilling down in the purchase data.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Show me purchases by favouriteGenre for the last 2 months
 ```
 
@@ -171,7 +171,7 @@ Discover which active or recently concluded journeys include “Fiber” in the 
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -183,7 +183,7 @@ You should then see this.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -195,7 +195,7 @@ You should then see this.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
@@ -213,7 +213,7 @@ You want to understand journey performance fallout to know if there are any node
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 

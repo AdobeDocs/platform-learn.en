@@ -7,13 +7,6 @@ exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
 ---
 # 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
 
-[!BADGE Beta]
-
-+++Beta Details
-By using the Adobe Marketing Agent with Microsoft 365 Copilot Beta, You hereby acknowledge that the Beta is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any “Feedback” (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
-
-+++
-
 ## Prerequisites
 
 In order to follow the steps in this lab as documented below, the following access is required:
@@ -77,10 +70,6 @@ A new window will open up, asking you to login using your Adobe account credenti
 
 ![ChatGPT](./images/copilotlogin3.png)
 
-After successful authentication, you may need to select the specific instance you want to use. If you see this screen, please select the instance --aepImsOrgName--.
-
-![ChatGPT](./images/copilotlogin4.png)
-
 You will then see a similar code being generated. Click **Copy** to copy the code.
 
 ![ChatGPT](./images/copilotlogin5.png)
@@ -99,39 +88,21 @@ Before interacting further with Adobe Marketing Agent through Copilot, the conte
 
 For this exercise, the context needs to be set to use:
 
-- **Sandbox**: **Prod - Accelerate (VA7)**
+- **Sandbox**: **Prod - One Adobe (VA7)**
 
   The sandbox setting helps to identify which sandbox AI Assistant should look at when asking questions.
 
-- **Dataview**: **Accelerate 2026 B2C**
+- **Dataview**: **AdobeOne - Unified Customer Data View**
   
   The dataview setting helps to identify which dataview AI Assistant should look at when asking questions.
 
-![Agent Orchestrator](./images/copilotlogin7.png)
+First, change the sandbox to the correct sandbox and then click **Refresh dataviews**.
 
-To change the sandbox, enter the following command and click the **send** button.
+![Agent Orchestrator](./images/copilotlogin7a.png)
 
-```javascript
-change sandbox
-```
+Then, select the correct dataview and click **Update**.
 
 ![Agent Orchestrator](./images/copilot9.png)
-
-You should then see something similar to this. Select the sandbox you need to use and click **select**.
-
-![Agent Orchestrator](./images/copilot10.png)
-
-You should then see this. To change the dataview, enter the following command and click the **send** button.
-
-```javascript
-change dataview
-```
-
-![Agent Orchestrator](./images/copilot11.png)
-
-You should then see something similar to this. Select the dataview you need to use and click **select**.
-
-![Agent Orchestrator](./images/copilot12.png)
 
 You should then see this. The context is now set correctly so you can start sending specific prompts next.
 
@@ -145,8 +116,8 @@ Get a toplevel pulse on category demand—Mobile, Landline, Internet, TV, Fiber�
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
-Show me purchases by mainCategory over the last 7 months.
+```
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/copilot18.png)
@@ -157,8 +128,8 @@ You should then see this:
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+```
+Show me purchases by mainCategory = Fiber over the last 2 months broken down by week
 ```
 
 ![Agent Orchestrator](./images/copilot20.png)
@@ -177,13 +148,13 @@ First, you need to find out which field is used to store the genre preference.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Which field is used to store the preferred genre
 ```
 
 ![Agent Orchestrator](./images/copilot22.png)
 
-You should then see this, which shows that the field used for genre is **_experienceplatform.individualCharacteristics.preferences.preferredGenre**.
+You should then see this, which shows that the field used for genre is **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![Agent Orchestrator](./images/copilot23.png)
 
@@ -191,8 +162,8 @@ With that information, you can start drilling down in the purchase data.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+```
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/copilot24.png)
@@ -213,7 +184,7 @@ Discover which active or recently concluded journeys include “Fiber” in the 
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -225,7 +196,7 @@ You should then see a list of journeys.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -237,7 +208,7 @@ You should then see this.
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
@@ -255,7 +226,7 @@ You want to understand journey performance fallout to know if there are any node
 
 Enter the following **Prompt** and click the **send** button.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
@@ -265,13 +236,9 @@ You should then see this.
 
 ![Agent Orchestrator](./images/copilot38.png)
 
-Scroll down a little bit more to see observations and recommendations. Click the 3 dots **...** and then select **Journey Details** to open the specific journey in Adobe Journey Optimizer.
+Scroll down a little bit more to see observations and recommendations. 
 
 ![Agent Orchestrator](./images/copilot40.png)
-
-You should then see this.
-
-![Agent Orchestrator](./images/copilot41.png)
 
 You've now completed this lab.
 
