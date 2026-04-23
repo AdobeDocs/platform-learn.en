@@ -44,7 +44,7 @@ Click **Create app**.
 Fill out the fields like this:
 
 - **Name**: `Adobe Marketing Agent`
-- **MCP Server URL**: `https://aep-ai-ama.adobe.io/mcp`
+- **MCP Server URL**: ask your Adobe representative
 - **Authentication**: `OAuth`
 
 Check the checkbox for **I understand and want to continue**.
