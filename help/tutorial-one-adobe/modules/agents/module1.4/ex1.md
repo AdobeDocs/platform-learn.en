@@ -130,15 +130,38 @@ You should then see this. Enter `CitiSignal website` as name for your knowledge 
 
 You now need to upload a csv file that contains the links of your website. Download [CitiSignal website links CSV file](./assets/citisignal-website-links.csv) to your desktop.
 
+![Brand Concierge](./images/bc8z.png)
+
 Click **Browse Files**.
 
 ![Brand Concierge](./images/bc8.png)
 
 Open the file **citisignal-website-links.csv** and update the links to point to your own CitiSignal website.
 
+If you're doing this tech lab as part of the Tech Insiders Tech Lab deliveries, you have been given access to an existing demo website based on an assigned number. These demo websites come with a custom domain that looks like this, whereby XX stand for the number that has been given to you:
+
+**https://techinsidersXX.adobedemosystem.com/** (for in-person training)
+
+or
+
+**https://techinsidersodXX.adobedemosystem.com/** (for on-demand training)
+
+In the below image, you need to replace the base URL by your website's URL.
+
+The links to the products in the file below are related to the products that you configured as part of exercise 1 in the module 
+[1.5 Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md){target="_blank"}. 
+
 ![Brand Concierge](./images/bc8a.png)
 
-Select the file **citisignal-website-links.csv** that you just downloaded and edited. Click **Open**.
+If your number is **1**, your file should look like this:
+
+![Brand Concierge](./images/bc8b.png)
+
+If your number is **90**, your file should look like this:
+
+![Brand Concierge](./images/bc8c.png)
+
+Once you've updated the file as instructed above, select that file **citisignal-website-links.csv** next. Click **Open**.
 
 ![Brand Concierge](./images/bc9.png)
 
