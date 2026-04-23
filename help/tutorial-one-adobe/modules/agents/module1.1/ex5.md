@@ -56,7 +56,7 @@ Click **+** and then select **Add custom connector**.
 Fill out the fields like this:
 
 - **Name**: `Adobe Marketing Agent`
-- **MCP Server URL**: check with your Adobe representative
+- **MCP Server URL**: ask your Adobe representative
 
 Click **Add**.
 
@@ -66,7 +66,7 @@ You should then see this. Click **+** to start a new chat.
 
 ![Claude.ai](./images/claude5.png)
 
-Click the **+** icon, go to **Connectors** and make sure **Adobe Marketing Agent** is enabled**.
+Click the **+** icon, go to **Connectors** and make sure **Adobe Marketing Agent** is enabled.
 
 ![Claude.ai](./images/claude6.png)
 
