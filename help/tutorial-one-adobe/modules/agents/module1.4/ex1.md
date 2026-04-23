@@ -148,9 +148,7 @@ or
 
 In the below image, you need to replace the base URL by your website's URL.
 
->[!NOTE]
->
->The links to the products in the file below are related to the products that you configured as part of exercise 1 in the module 
+The links to the products in the file below are related to the products that you configured as part of exercise 1 in the module 
 [1.5 Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md){target="_blank"}. 
 
 ![Brand Concierge](./images/bc8a.png)
