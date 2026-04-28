@@ -34,9 +34,9 @@ Download the architecture overview image [here](./assets/images/architecture_con
 
 Below are the Tech Labs that you'll be taking as part of this technical enablement workshop.
 
-### Getting Started
+### Getting Started - GenStudio
 
-[Getting started](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[Getting started](./modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md){target="_blank"}
 
 In this foundational module, you will prepare everything so that you can access and use the demo environment.
 
