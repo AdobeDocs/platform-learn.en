@@ -26,6 +26,11 @@ recommendations: noDisplay,noCatalog
     + [Option 1: Postman setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
     + [Option 2: PostBuster setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
     + [Applications to install](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
+  + Getting started - Agentic AI {#gettingstartedagenticai}
+    + [Overview](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md)
+    + [Install the Chrome extension for the Experience League documentation](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)    
+    + [Applications to install](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
+    + [Use the website](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
 
 + Agentic AI {#agents}
   + 1.1 Agent Orchestrator {#agents1}
