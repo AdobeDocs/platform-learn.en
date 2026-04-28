@@ -16,9 +16,9 @@ In this video, you'll learn about the architecture behind the Agentic AI part of
 
 Download the architecture overview image [here](./assets/images/architecture_agentic.jpg).
 
-### Getting Started
+### Getting Started - Agentic AI
 
-[Getting started](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[Getting started](./modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md){target="_blank"}
 
 In this foundational module, you will prepare everything so that you can access and use the demo environment.
 

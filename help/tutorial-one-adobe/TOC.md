@@ -15,7 +15,7 @@ recommendations: noDisplay,noCatalog
 + [AEP & Apps Labs](/help/tutorial-one-adobe/aepapps.md)
 
 + Getting started {#gettingstarted}
-  + Getting started {#gettingstarted}
+  + Getting started - AEP & Apps {#gettingstarted}
     + [Overview](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
     + [Install the Chrome extension for the Experience League documentation](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
     + [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -31,6 +31,13 @@ recommendations: noDisplay,noCatalog
     + [Install the Chrome extension for the Experience League documentation](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)    
     + [Applications to install](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
     + [Use the website](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
+  + Getting started - GenStudio {#gettingstartedgenstudio}
+    + [Overview](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md)
+    + [Install the Chrome extension for the Experience League documentation](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex1.md)
+    + [Configure your Adobe I/O project](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex2.md)
+    + [Option 1: Postman setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex3.md)
+    + [Option 2: PostBuster setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex4.md)
+    + [Applications to install](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex5.md)
 
 + Agentic AI {#agents}
   + 1.1 Agent Orchestrator {#agents1}

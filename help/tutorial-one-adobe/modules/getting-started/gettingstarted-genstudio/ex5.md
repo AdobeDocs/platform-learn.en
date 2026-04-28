@@ -1,0 +1,84 @@
+---
+title: Getting Started - Applications to install
+description: Getting Started - Applications to install
+doc-type: multipage-overview
+---
+# Applications to install
+
+Below is an overview of the applications you will need to have installed on your computer before starting the tutorial.
+
+## Adobe Creative Cloud
+
+Go to [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}. 
+
+![Adobe I/O New Integration](./images/cc.png)
+
+## Adobe Photoshop
+
+Open the **Adobe Creative Cloud** app, go to **Apps**. Install Photoshop on your computer.
+
+![Adobe I/O New Integration](./images/psd.png)
+
+## Adobe Illustrator
+
+Open the **Adobe Creative Cloud** app, go to **Apps**. Install Illustrator on your computer.
+
+![Adobe I/O New Integration](./images/psd.png)
+
+## Adobe Premiere Pro
+
+Install Adobe Premiere Pro Beta version on your computer from [https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)
+
+![Adobe I/O New Integration](./images/prpro.png)
+
+Click **Open Creative Cloud Desktop App**.
+
+![Adobe I/O New Integration](./images/prpro1.png)
+
+Click **Install** on the card for the **Premiere Pro (Beta)** app.
+
+![Adobe I/O New Integration](./images/prpro2.png)
+
+## Frame.io Transfer app
+
+Go to [https://frame.io/transfer](https://frame.io/transfer) and download the version for your computer.
+
+![Frame.io](./images/frameio11.png)
+
+## Visual Studio Code
+
+Go to [https://code.visualstudio.com/](https://code.visualstudio.com/){target="_blank"}, download and install **Visual Studio Code**.
+
+![Block](./images/vsc1.png)
+
+## Text Editor
+
+If you don't have a Text Editor app, you can go to [https://www.sublimetext.com/](https://www.sublimetext.com/){target="_blank"} and download and install this Text Editor.
+
+![Block](./images/text1.png)
+
+## GitHub Account
+
+If you don't have a GitHub account yet, go to [https://github.com/](https://github.com/){target="_blank"}, and click **Sign Up**. Use your personal email address and create your account.
+
+![Block](./images/git.png)
+
+## GitHub Desktop
+
+Go to [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, download and install **Github Desktop**.
+
+![Block](./images/block1.png)
+
+## Azure Storage Explorer
+
+[Download Microsoft Azure Storage Explorer to manage your files](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Select the correct version for your specific OS, download and install it.
+
+![Azure Storage](./images/az10.png){zoomable="yes"}
+
+You've now finished the Getting Started module.
+
+## Next Steps
+
+Go back to [Getting Started - GenStudio](./getting-started-genstudio.md){target="_blank"}
+
+Go back to [All modules](./../../../overview.md){target="_blank"}./images
