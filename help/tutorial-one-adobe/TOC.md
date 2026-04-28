@@ -32,7 +32,7 @@ recommendations: noDisplay,noCatalog
     + [Applications to install](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
     + [Use the website](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
   + Getting started - GenStudio {#gettingstartedgenstudio}
-    + [Overview](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/getting-started.md)
+    + [Overview](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md)
     + [Install the Chrome extension for the Experience League documentation](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex1.md)
     + [Configure your Adobe I/O project](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex2.md)
     + [Option 1: Postman setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex3.md)
