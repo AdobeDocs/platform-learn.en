@@ -2,6 +2,7 @@
 title: Getting Started - Agentic AI - Applications to install
 description: Getting Started - Agentic AI - Applications to install
 doc-type: multipage-overview
+exl-id: a08945e8-1b21-49a3-962f-9ebd6ce8ea6f
 ---
 # Applications to install
 

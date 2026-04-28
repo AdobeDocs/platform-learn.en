@@ -2,6 +2,7 @@
 title: Getting Started - Agentic AI - Use your AEM website & AEP sandbox
 description: Getting Started - Agentic AI - Use your AEM website & AEP sandbox
 doc-type: multipage-overview
+exl-id: bace13f5-51e4-4b1f-99fa-88f4756e79d3
 ---
 # Use your AEM website & AEP sandbox
 

@@ -3,6 +3,7 @@ title: Getting Started - Agentic AI
 description: Getting Started - Agentic AI
 kt: 5342
 doc-type: tutorial
+exl-id: bc4a2fb8-8849-4315-8cbd-af05aab66381
 ---
 # Getting started - GenStudio
 

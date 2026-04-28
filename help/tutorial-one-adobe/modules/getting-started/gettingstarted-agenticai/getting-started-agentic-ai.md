@@ -3,6 +3,7 @@ title: Getting Started - Agentic AI
 description: Getting Started - Agentic AI
 kt: 5342
 doc-type: tutorial
+exl-id: 1847dfe7-c82c-4977-bcc1-24bc92bf2022
 ---
 # Getting started - Agentic AI
 
