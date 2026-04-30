@@ -17,7 +17,7 @@ An example of such values can be found below. Currently, these values can't be u
 | Name     | Key | Example |
 |:-------------:| :---------------:| :---------------:|
 | IMS Org ID         | `--aepImsOrgId--` |`907075E95BF479EC0A495C73@AdobeOrg`|
-| IMS Org Name         | `--aepImsOrgName--` |`Experience Platform International`|
+| IMS Org Name         | `--aepImsOrgName--` |`Adobe Tech Insiders`|
 | AEP Tenant ID         | `--aepTenantId--` | `_experienceplatform` |
 | AEP Sandbox Name         | `--aepSandboxName--` | `one-adobe` |
 | Learner Profile LDAP        | `--aepUserLdap--` | `vangeluw`|
@@ -64,9 +64,21 @@ Enter the values as indicated below, which are all related to your Adobe Experie
 
 ![DSN](./images/c8.png)
 
-**Your LDAP**
+If you're attending one of the below events, please use the below values as indicated.
 
-This is the username that will be used as part of the tutorial. In this example, the LDAP is based off of the email address of this user. The email address is **vangeluw@adobe.com** so the LDAP becomes **vangeluw**.
+| Name     | Partner Tech Labs New Orleans | Tech Insiders In-Person Workshop | Tech Insiders On-Demand Enablement |
+|:-------------:| :---------------:| :---------------:|:---------------:|
+| IMS Org ID            |`907075E95BF479EC0A495C73@AdobeOrg`|`907075E95BF479EC0A495C73@AdobeOrg`|`0B6930256441790E0A495FFE@AdobeOrg`|
+| IMS Org Name          |`Adobe Tech Insiders`|`Adobe Tech Insiders`|`CXO Enablement Training LAB`|
+| AEP Tenant ID         | `_experienceplatform` |`_experienceplatform` |`_acsultimatesupport` |
+| AEP Sandbox Name      | `one-adobe` |`one-adobe` |`one-adobe` |
+| Learner Profile LDAP  | `XXX`|`XXX`|`XXX`|
+
+**Your Learner Profile LDAP**
+
+This is the username that will be used as part of the tutorial. In this example, the LDAP is based off of the email address of this user. If the email address is **vangeluw@adobe.com**, the LDAP becomes **vangeluw**.
+
+If you're attending the Partner Tech Labs event in New Orleans, please apply the same logic and use the first part of your email address as the LDAP.
 
 The LDAP is used to ensure that the configuration you'll be doing will be linked to you, and won't conflict with other users that may be using the same instance and sandbox that you're using.
 

@@ -24,9 +24,11 @@ When you got access to the enablement environment, a number was assigned to you.
 >
 >All of the below screenshots are using the number 1 for illustration purposes only. You need to  use the number that was assigned to you as part of the email you received while going through the below steps.
 
-Your AEM program uses the number that was assigned to you in its name. The name of your AEM program should be:
+Your AEM program uses the number that was assigned to you in its name. The name of your AEM program should be one of the below:
 
-- **Tech Insiders - AEM + ACCS X** whereby X stands for the number that was assigned to you.
+- **`Tech Insiders - AEM + ACCS X`** whereby X stands for the number that was assigned to you.
+- **`Tech Insiders On Demand - AEM + ACCS X`** whereby X stands for the number that was assigned to you.
+- **`--aepUserLdap-- - CitiSignal AEM+ACCS`**, in this case you don't have a number as you're using your own AEM program that you created yourself.
 
 ![DSN](./images/aem1.png)
 
@@ -64,14 +66,14 @@ As part of the onboarding process before the start of your Tech Lab sessions, yo
 
 To access your website, you can use these default URLs:
 
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/**
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/`**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/`**
 
 You need to replace the X in these URLs by the number that was assigned to you.
 
 Additionally, a custom domain name has been created for each website, which you can access using this URL:
 
-- **https://techinsidersX.adobedemosystem.com/**
+- **`https://techinsidersX.adobedemosystem.com/`**
 
 You need to replace the X in these URLs by the number that was assigned to you.
 
