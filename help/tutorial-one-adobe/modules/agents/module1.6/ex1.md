@@ -9,13 +9,7 @@ exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
 
 >[!IMPORTANT]
 >
->In order to complete this exercise, you need to have access to a working AEM Sites and Assets CS with EDS environment and the various AEM Agents need to be enabled for the IMS Org you're using.
->
->If you don't have such an environment yet, go to exercise [Adobe Experience Manager Cloud Service & Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Follow the instructions there, and you'll have access to such an environment.
-
->[!IMPORTANT]
->
->If you have previously configured an AEM CS Program with an AEM Sites and Assets CS environment, it may be that your AEM CS sandbox was hibernated. Given that dehibernating such a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
+>Your AEM CS sandbox may be hibernated. Given that dehibernating a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
 ## 1.6.1.1 Discovery Agent
 
@@ -27,7 +21,13 @@ Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){tar
 
 ### Create and use Tags with Assets
 
-Click to open your Cloud Manager Program, which should be called `--aepUserLdap-- - CitiSignal AEM+ACCS`.
+Click to open your Cloud Manager Program, which should use of the below naming options:
+
+- **`Tech Insiders - AEM + ACCS X`** whereby X stands for the number that was assigned to you.
+- **`Tech Insiders On Demand - AEM + ACCS X`** whereby X stands for the number that was assigned to you.
+- **`--aepUserLdap-- - CitiSignal AEM+ACCS`**, in this case you don't have a number as you're using your own AEM program that you created yourself.
+
+In this example, the program **Tech Insiders - AEM + ACCS 100** will be used. You should use your own program.
 
 ![AEM Agents](./images/aemagents1.png)
 
@@ -35,7 +35,7 @@ Click the URL of your environment to open it.
 
 ![AEM Agents](./images/aemagents2.png)
 
-Click the **hammer** icon.
+Click the **tools** icon.
 
 ![AEM Agents](./images/aemagents3.png)
 
@@ -47,23 +47,23 @@ You should then see this. Click **Create** and then select **Create Namespace**.
 
 ![AEM Agents](./images/aemagents5.png)
 
-In the field **Title**, enter: `CitiSignal`. Click **Create**.
+In the field **Title**, enter: `--aepUserLdap-- - CitiSignal`. Click **Create**.
 
 ![AEM Agents](./images/aemagents6.png)
 
-Drill down into the namespace **CitiSignal** by clicking it. Click **Create** and then select **Create Tag**.
+Drill down into the namespace **`--aepUserLdap-- - CitiSignal`** by clicking it. Click **Create** and then select **Create Tag**.
 
 ![AEM Agents](./images/aemagents7.png)
 
-In the field **Title**, enter: `Campaign`. Click **Submit**.
+In the field **Title**, enter: `--aepUserLdap-- - Campaign`. Click **Submit**.
 
 ![AEM Agents](./images/aemagents8.png)
 
-Select the tag **Campaign** by clicking it. Click **Create** and then select **Create Tag**.
+Select the tag **`--aepUserLdap-- - Campaign`** by clicking it. Click **Create** and then select **Create Tag**.
 
 ![AEM Agents](./images/aemagents9.png)
 
-In the field **Title**, enter: `Winter 2026`. Click **Submit**.
+In the field **Title**, enter: `--aepUserLdap-- - Winter 2026`. Click **Submit**.
 
 ![AEM Agents](./images/aemagents10.png)
 
@@ -71,7 +71,7 @@ Select the tag **Campaign** by clicking it. Click **Create** and then select **C
 
 ![AEM Agents](./images/aemagents11.png)
 
-In the field **Title**, enter: `Spring 2026`. Click **Submit**.
+In the field **Title**, enter: `--aepUserLdap-- - Spring 2026`. Click **Submit**.
 
 ![AEM Agents](./images/aemagents12.png)
 
@@ -87,7 +87,7 @@ Click **Files**.
 
 ![AEM Agents](./images/aemagents15.png)
 
-Double-click the folder **CitiSignal** to open it.
+Click the folder **CitiSignal** to open it.
 
 ![AEM Agents](./images/aemagents16.png)
 
@@ -99,7 +99,7 @@ Download the file [citisignal-images-campaign.zip](./assets/citisignal-images-ca
 
 ![AEM Agents](./images/aemagents17a.png)
 
-Select. the 3 files that you just downloaded and click **open**.
+Select the 3 files that you just downloaded and click **open**.
 
 ![AEM Agents](./images/aemagents18.png)
 
@@ -111,7 +111,7 @@ You should then see this.
 
 ![AEM Agents](./images/aemagents20.png)
 
-Select the first image and then click **Properties**.
+Select the first image (citisignal_lion.png) and then click **Properties**.
 
 ![AEM Agents](./images/aemagents21.png)
 
@@ -119,28 +119,33 @@ Click the **folder**-icon under Tags.
 
 ![AEM Agents](./images/aemagents22.png)
 
-Select the tag **Spring 2026** and click **Select**. Repeat that process for these images:
-
-- citisignal_lion.png
-- citisignal_leopard.png
-- citisignal_gorilla.png
-- citisignal_rabbit.png
+Select the tag **`--aepUserLdap-- - Spring 2026`** and click **Select**. 
 
 ![AEM Agents](./images/aemagents23.png)
+
+Click **Save & Close**.
+
+![AEM Agents](./images/aemagents23a.png)
+
+Repeat these for these images:
+
+- `citisignal_leopard.png`
+- `citisignal_gorilla.png`
+- `citisignal_neon_rabbit.png`
 
 Once you've selected that tag for all images, go to **Experience Manager Assets**.
 
 ![AEM Agents](./images/aemagents24.png)
 
-Select the repo you're using.
+Click the **profile** icon at the top right of your screen. Click **Switch view**.
 
 ![AEM Agents](./images/aemagents25.png)
 
-Go to **Assets** and open the folder **CitiSignal**.
+You should then see this.
 
 ![AEM Agents](./images/aemagents26.png)
 
-Open the first image.
+Doubmle-click to open the first image.
 
 ![AEM Agents](./images/aemagents27.png)
 
@@ -163,7 +168,7 @@ Next, go to **My workspace** and click to open **AI Assistant**.
 Enter the following prompt and click **Send**.
 
 ```javascript
-find all assets tagged with 'Spring 2026'
+find all assets tagged with '--aepUserLdap-- - Spring 2026'
 ```
 
 ![AEM Agents](./images/aemagents32.png)
@@ -180,17 +185,13 @@ Review the answers.
 
 ![AEM Agents](./images/aemagents36.png)
 
-From within the AI Assistant window, you can click to view any of these assets.
+Click the **View information** icon on any of the assets.
 
 ![AEM Agents](./images/aemagents37.png)
 
-You will then be taken directly into AEM Assets CS, to that specific image.
+You will then see an enlarged view of the asset you selected, with some metadata.
 
 ![AEM Agents](./images/aemagents38.png)
-
-You can then also review any of the other available metadata.
-
-![AEM Agents](./images/aemagents39.png)
 
 ## 1.6.1.2 Experience Production Agent
 
@@ -198,13 +199,13 @@ You can then also review any of the other available metadata.
 
 The Content Update skill updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
 
-Go back to the AI Assistant screen.
+Go back to the AI Assistant screen. Close the side panel.
 
 ![AEM Agents](./images/aemagents40.png)
 
-Enter the following prompt and click **Send**.
+Select one of the proposed prompts and click **Send**.
 
-`Generate multiple social media formats (Instagram 1080x1920, Facebook 1200x630, Twitter 1200x675) for the third image`
+`For the first image, generate renditions for Instagram and LinkedIn posts`
 
 ![AEM Agents](./images/aemagents40a.png)
 
@@ -215,6 +216,16 @@ After a couple of minutes, you should see a similar response.
 Review the images that were generated.
 
 ![AEM Agents](./images/aemagents42.png)
+
+Feel free to experiment with other prompts. Scroll up and select one of the other proposed prompts, or enter your own, and click **Send**.
+
+`For the first image, generate a mirrored image`
+
+![AEM Agents](./images/aemagents42a.png)
+
+Review the images that were generated.
+
+![AEM Agents](./images/aemagents42b.png)
 
 ### Content Update - Pages
 

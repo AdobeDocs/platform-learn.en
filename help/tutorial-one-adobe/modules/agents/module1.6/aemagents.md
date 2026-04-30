@@ -17,6 +17,12 @@ Adobe Experience Manager now includes several purpose-built agents, each designe
 
 Together, these agents move AEM far beyond traditional CMS capabilities and into automated experience operations. Every one of these agents is designed with humans in control, ensuring accuracy, trust, and oversight.
 
+>[!IMPORTANT]
+>
+>In order to complete this exercise, you need to have access to a working AEM Sites and Assets CS with EDS environment and the various AEM Agents need to be enabled for the IMS Org you're using.
+>
+>If you don't have such an environment yet, go to exercise [Adobe Experience Manager Cloud Service & Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Follow the instructions there, and you'll have access to such an environment.
+
 ## Learning Objectives
 
 - Learn how to use the various available AEM Agents
