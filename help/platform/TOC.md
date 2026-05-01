@@ -152,6 +152,7 @@ Campaigns
   + [Discover audience overlaps](collaboration/discover-audience-overlaps-in-projects.md)
   + [Activate audiences to collaborators](collaboration/activate-audiences-in-projects.md)
   + [Brand to Brand](collaboration/brand-to-brand-collaboration.md)
+  + [Invite partners to use Collaboration](collaboration/rtcdp-collaboration-in-product-invitations.md)
 + Dashboards {#dashboards}
   + [Create a dashboard](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
