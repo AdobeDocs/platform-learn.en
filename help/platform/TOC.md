@@ -151,6 +151,7 @@ Campaigns
   + [Create a project](collaboration/create-a-project.md)
   + [Discover audience overlaps](collaboration/discover-audience-overlaps-in-projects.md)
   + [Activate audiences to collaborators](collaboration/activate-audiences-in-projects.md)
+  + [Collaboration measurement - setup and report creation](collaboration/collaboration-measurement-setup-and-report-creation.md)
   + [Brand to Brand](collaboration/brand-to-brand-collaboration.md)
   + [Invite partners to use Collaboration](collaboration/rtcdp-collaboration-in-product-invitations.md)
 + Dashboards {#dashboards}
