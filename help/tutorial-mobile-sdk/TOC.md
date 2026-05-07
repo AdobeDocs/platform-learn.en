@@ -36,6 +36,6 @@ recommendations: noDisplay,noCatalog
     + [Decision Management](journey-optimizer-offers.md)
   + [Target](target.md)
   + [Customer Journey Analytics](customer-journey-analytics.md)
-  + [Test](test.md)
+  + {hide-from-toc} [Test](test.md)
 + [Conclusion](conclusion.md)
   
