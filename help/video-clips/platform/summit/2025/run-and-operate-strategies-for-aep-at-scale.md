@@ -5,7 +5,6 @@ doc-type: Video Clips
 duration: 290
 index: false
 hide: true
-hidefromtoc: yes
 recommendations: noCatalog, noDisplay
 exl-id: 357b95ed-4f76-4870-8fca-6b0df5519302
 ---
