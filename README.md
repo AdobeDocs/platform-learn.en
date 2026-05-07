@@ -1,2 +1,6 @@
 # platform-learn.en
-Experience Platform tutorials
+
+Collaborative tutorials and enablement materials for Platform.
+
+cleaned repo to reduce size
+...
