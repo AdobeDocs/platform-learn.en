@@ -14,11 +14,9 @@ In this video, you'll learn about the architecture behind the full end-to-end On
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
 
-Download the architecture overview image [here](./assets/images/architecture_all.jpg).
+Reuse the LucidChart diagram [here](https://lucid.app/lucidchart/701cdd58-203c-4190-be85-1947119c4b09/view).
 
-## Script
-
-Script will be available here soon.
+![Tech Insiders](./assets/images/architecture_lucid.png)
 
 >[!NOTE]
 >
