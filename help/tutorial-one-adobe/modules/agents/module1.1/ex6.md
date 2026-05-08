@@ -1,11 +1,11 @@
 ---
-title: AI Harness
-description: AI Harness
+title: Coworker Harness
+description: Coworker Harness
 kt: 5342
 doc-type: tutorial
 exl-id: ce845231-17d1-40ab-96f7-bd386753e625
 ---
-# 1.1.6 AI Harness
+# 1.1.6 Coworker Harness
 
 ## Prerequisites
 
