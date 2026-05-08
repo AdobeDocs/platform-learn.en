@@ -5,8 +5,7 @@ doc-type: multipage-overview
 ---
 # Partner Labs New Orleans Agenda
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
-
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >
