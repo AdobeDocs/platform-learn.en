@@ -44,7 +44,7 @@ In this exercise, you'll configure an HTTP API Source Connector in Adobe Experie
 
 In this exercise, you'll use Kafka Connect to install and use the Adobe Experience Platform Sink Connector and you'll send events into Adobe Experience Platform manually.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

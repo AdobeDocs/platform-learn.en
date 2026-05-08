@@ -44,7 +44,7 @@ In this exercise, you will configure and use Campaigns in Adobe Journey Optimize
 
 In this exercise, you will create your orchestrated campaign.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

@@ -45,7 +45,7 @@ In this exercise, you'll start using Workflow Builder.
 
 In this exercise, you'll execute your custom workflow programmatically using Postman and Workfront Fusion.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

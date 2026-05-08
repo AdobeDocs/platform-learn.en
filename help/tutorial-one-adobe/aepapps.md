@@ -122,7 +122,7 @@ In this module, you'll learn how to use Adobe Experience Platform Query Service.
 
 In this module, you'll learn how to implement and use Adobe Content Analytics.
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

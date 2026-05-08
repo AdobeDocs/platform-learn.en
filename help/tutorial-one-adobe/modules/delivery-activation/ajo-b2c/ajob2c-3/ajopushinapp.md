@@ -39,7 +39,7 @@ In this exercise you'll configure your own journey which will deliver push notif
 
 In this exercise you'll configure a campaign that delivers in-app messages to your customers.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

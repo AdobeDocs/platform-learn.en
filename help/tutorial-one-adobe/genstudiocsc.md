@@ -6,7 +6,7 @@ exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
 ---
 # Overview - GenStudio Tech Labs
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 ## Overview 
 
@@ -114,7 +114,7 @@ In this module, you will create your Adobe Commerce as a Cloud Service instance.
 
 In this module, you'll learn how to implement and use Adobe Content Analytics.
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

@@ -6,7 +6,7 @@ exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
 ---
 # Overview - Agentic AI Tech Labs
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 ## Agentic AI Architecture
 
@@ -79,7 +79,7 @@ In this exercise you'll learn how to use these agents using both AI Assistant an
 
 In this module you'll use intelligent developer tools such as Cursor to develop an extension to your Adobe Commerce as a Cloud Service environment. The goal of that extension is to forward incoming order events to a 3rd party endpoint. Event forwarding in Adobe Commerce as a Cloud Service relies on Adobe I/O App Builder, Adobe I/O Events and Adobe I/O Runtime. The configuration of all these services will be assisted by Cursor.
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

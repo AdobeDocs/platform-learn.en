@@ -43,7 +43,7 @@ In this exercise, learn how to use Firefly Customer Models API.
 
 Learn about a summary and benefits of Firefly Services.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

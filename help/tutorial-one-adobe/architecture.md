@@ -6,7 +6,7 @@ exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
 ---
 # One Adobe Tutorial - Architecture Overview
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 ## One Adobe Architecture Overview
 

@@ -39,7 +39,7 @@ In this exercise, you'll configure a traditional email campaign.
 
 In this exercise, you'll use segment memberships to define what content will be shown inside an email.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

@@ -53,7 +53,7 @@ Use the audience you created to configure an Experience Targeting Activity in Ad
 
 Configure your own destination using Destinations SDK.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

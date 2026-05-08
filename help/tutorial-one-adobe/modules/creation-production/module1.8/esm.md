@@ -40,7 +40,7 @@ In this exercise, you'll use walk through the various configurations needed in A
 
 In this exercise, a new asset will be created using Adobe Express, and the new asset will then be uploaded in Frame.io, to start the review and approval process.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

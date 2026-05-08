@@ -50,7 +50,7 @@ In this exercise, you'll go on the website and mobile app and behave like a cust
 
 Setup your Data Landing Zone Source connector with Azure Blob storage.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

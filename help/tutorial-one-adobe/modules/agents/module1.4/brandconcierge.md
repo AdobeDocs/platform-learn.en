@@ -38,7 +38,7 @@ In this exercise, you'll explore Brand Concierge's abilities.
 
 In this exercise, you'll implement your Brand Concierge instance on your website.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

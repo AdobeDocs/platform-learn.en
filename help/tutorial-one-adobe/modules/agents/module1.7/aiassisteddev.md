@@ -36,7 +36,7 @@ In this exercise you'll create your Adobe I/O App Builder project, and you'll do
 
 In this exercise, you'll use Adobe's integration starter kit that uses Adobe Developer App Builder to improve real-time connection reliability and reduce the time-to-market for integrations between Adobe Commerce and other back-office systems, such as ERPs, CRMs, and PIMs
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >
