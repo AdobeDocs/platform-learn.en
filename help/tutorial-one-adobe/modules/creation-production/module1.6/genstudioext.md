@@ -50,7 +50,7 @@ In this exercise, you'll publish your app privately.
 
 Summary of this module and overview of the benefits.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

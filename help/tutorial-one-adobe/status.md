@@ -92,7 +92,7 @@ Below is an overview of the status of the content in this tutorial.
 
 >[!NOTE]
 >
->![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+>![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 >
 >If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.
 

@@ -42,7 +42,7 @@ In this exercise you'll configure your own personalized offers and your own deci
 
 In this exercise you'll use the demo website to test your decision.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

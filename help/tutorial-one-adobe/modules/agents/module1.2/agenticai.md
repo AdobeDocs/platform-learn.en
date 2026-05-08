@@ -21,7 +21,7 @@ In this module, you will create your own agent and explore the various architect
 
 In this exercise, ...
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

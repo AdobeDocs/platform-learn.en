@@ -30,7 +30,7 @@ In this exercise, you will configure your Translations Provider using Microsoft 
 
 In this exercise, you will add languages to the email in your campaign.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

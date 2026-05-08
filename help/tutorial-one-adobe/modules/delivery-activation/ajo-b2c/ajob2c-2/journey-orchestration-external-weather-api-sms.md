@@ -55,7 +55,7 @@ Combine events, data sources and actions into an intelligent and contextual jour
 
 Trigger your specific journey.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

@@ -31,7 +31,7 @@ In this exercise, you'll ... .
 
 In this exercise, you'll ... .
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

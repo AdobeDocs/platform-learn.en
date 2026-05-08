@@ -30,7 +30,7 @@ In this exercise, you'll set up a custom MCP server in Claude.ai to connect Clau
 
 In this exercise, you'll set up a custom MCP server in Claude.ai to connect Claude.ai directly to Adobe Analytics and you'll start analyzing your data that is hosted in Adobe Analytics (AA) directly from Claude.ai.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

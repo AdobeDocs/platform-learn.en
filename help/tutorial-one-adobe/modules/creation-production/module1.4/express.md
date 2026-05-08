@@ -13,7 +13,9 @@ With a well-oiled content supply chain, marketing teams can keep up with the ins
 
 You'll learn how to:
 
-- Leverage locked Express templates and Brand Kits to create and iterate brand-approved content for local and seasonal campaigns- Use Firefly Custom Models trained to your unique brand style to create new backgrounds and content on the fly with Adobe Express- Search approved assets from Adobe Experience Manager to edit and personalize campaigns.
+- Leverage locked Express templates and Brand Kits to create and iterate brand-approved content for local and seasonal campaigns
+- Use Firefly Custom Models trained to your unique brand style to create new backgrounds and content on the fly with Adobe Express
+- Search approved assets from Adobe Experience Manager to edit and personalize campaigns.
 
 ## Prerequisites
 
@@ -35,7 +37,7 @@ In this exercise, you'll work with Adobe Express to create multiple versions of 
 
 [Summary and benefits](./summary.md){target="_blank"}
 
-Summary of this module and overview of the benefits.
+Summary of this module and overview of the benefits.{width="50px"}
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

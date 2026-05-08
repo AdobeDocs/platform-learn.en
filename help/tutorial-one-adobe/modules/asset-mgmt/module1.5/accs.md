@@ -35,7 +35,7 @@ In this exercise, you'll link your ACCS backend to your AEM Sites Storefront.
 
 In this exercise, you'll link your ACCS backend to your AEM Assets CS environment.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

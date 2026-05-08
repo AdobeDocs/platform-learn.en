@@ -31,7 +31,7 @@ In this exercise, you will configure and use Landing Pages in Adobe Journey Opti
 
 In this exercise, you will import a Brand template from GenStudio for Performance Marketing and use it in Adobe Journey Optimizer, and you'll use Generative AI in GenStudio for Performance Marketing to create an email experience, and you'll then use that in Adobe Journey Optimizer.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

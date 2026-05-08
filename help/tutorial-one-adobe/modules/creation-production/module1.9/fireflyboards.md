@@ -27,7 +27,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 In this exercise, you'll start using Firefly Boards.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

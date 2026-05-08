@@ -20,7 +20,7 @@ In this module, the agent you created before will start to work together with va
 
 In this exercise, ...
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

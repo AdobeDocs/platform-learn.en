@@ -51,7 +51,7 @@ In this exercise, you'll connect your Cursor environment to AEM using the AEM MC
 
 In this exercise, you'll create, manage and translate Content Fragments using ChatGPT and custom MCP server functionality.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

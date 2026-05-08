@@ -45,7 +45,7 @@ In this exercise, you'll further refine your setup, so that your approved asset 
 
 Summary of this module and overview of the benefits.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

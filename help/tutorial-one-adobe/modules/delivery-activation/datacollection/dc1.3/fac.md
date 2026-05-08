@@ -42,7 +42,7 @@ In this exercise, you'll configure your data model in AEP for the federated data
 
 In this exercise, you'll configure your data model in AEP for the federated data.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

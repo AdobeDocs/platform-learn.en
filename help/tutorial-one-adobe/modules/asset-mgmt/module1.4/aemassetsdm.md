@@ -33,7 +33,7 @@ In this exercise, you'll use Adobe Photoshop to create various images, which you
 
 In this exercise, you'll use the template you created with AEM Assets Dynamic Media in Adobe Journey Optimizer to hyper-personalize emails.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

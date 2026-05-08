@@ -6,7 +6,7 @@ exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
 ---
 # Comprehensive Technical Tutorial - One Adobe
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 ## Overview
 
@@ -98,7 +98,7 @@ Applications included in this learning path:
   - Adobe Journey Optimizer
   - Adobe Customer Journey Analytics
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

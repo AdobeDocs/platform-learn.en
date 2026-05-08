@@ -38,7 +38,7 @@ The marketing analyst configures the desired predictions by specifying business 
 
 After the models have finished training and scoring, the scores are written back into Platform. You can decide what actions to take with the predictions, such as defining segments, building custom dashboards etc.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

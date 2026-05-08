@@ -31,7 +31,7 @@ In this exercise, you'll find instructions on how to install all the application
 
 In this exercise you'll setup the website so you can use it for demonstrations and enablement.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >
