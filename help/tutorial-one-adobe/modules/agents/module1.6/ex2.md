@@ -203,6 +203,7 @@ You should then see something like this.
 
 ![Cursor + AEM](./images/cursoraiz12.png)
 
+
 ## Next Steps
 
 Go to [1.6.3 Scale Content Fragments with ChatGPT & MCP Server](./ex3.md){target="_blank"}

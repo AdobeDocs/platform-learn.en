@@ -487,6 +487,8 @@ Create a new adaptive form using Edge Delivery Services and the existing CitiSig
 - When the form is submitted, send the submission to a spreadsheet, with this URL: https://docs.google.com/spreadsheets/d/1WwKrcM8mZ2d_W3sMheUAw3nFhP_OFk05TsqxhHkudfQ/edit?usp=sharing.
 ```
 
+
+
 ## Next Steps
 
 Go to [1.6.2 AEM MCP Servers & Cursor](./ex2.md){target="_blank"}
