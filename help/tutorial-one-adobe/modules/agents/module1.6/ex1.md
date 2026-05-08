@@ -383,6 +383,10 @@ Copy the URL of the page as you'll need it next.
 
 The URL should be similar to this: `https://author-pXXXXXX-eXXXXXXX.adobeaemcloud.com/content/CitiSignal/fiber-max.html`.
 
+>[!NOTE]
+>
+>You will need to use this URL again at a later time so please write it down in a separate word document, or keep it open in a separate tab in your browser.
+
 ![AEM Agents](./images/aemagents70.png)
 
 Go to [https://experience.adobe.com/#/experiencemanager/](https://experience.adobe.com/#/experiencemanager/). Click to open **AI Assistant**.
