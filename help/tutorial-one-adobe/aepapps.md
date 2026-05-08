@@ -64,7 +64,7 @@ In this module, you'll forward data server-side to several endpoints, such as Go
 
 In this module, you'll learn how to setup your own Apache Kafka cluster and stream data into Adobe Experience Platform.
 
-### Adobe Journey Optimizer B2C
+#### Adobe Journey Optimizer B2C
 
 [3.1 Adobe Journey Optimizer: Orchestration](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
 

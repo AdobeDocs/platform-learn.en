@@ -121,10 +121,10 @@ You should then see this.
 
 ![Cursor + AEM](./images/cursorai17.png)
 
-Paste the following prompt and click **send**. Replace XXX in this prompt by the URL that you copied in the previous exercise.
+Paste the following prompt and click **send**. Replace XXX in this prompt by the URL of the **fiber-max.html**-page that you copied in the previous exercise.
 
 ```
-On the page https://author-p185022-e1936676.adobeaemcloud.com/content/CitiSignal/fiber-max.html, please make the following changes:
+On the page XXX, please make the following changes:
 
 - change the word 'winter' to 'summer'
 - change the text 'be as fast as a leopard' to 'dominate your internet like a gorilla'

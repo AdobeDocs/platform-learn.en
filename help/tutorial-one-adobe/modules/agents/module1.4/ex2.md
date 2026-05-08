@@ -147,7 +147,7 @@ Click **Add file** and select **Create new file**.
 
 ![Block](./images/js1.png)
 
-In the text box, enter `brandconcierge.js`. The file can remain empty for now. Click **Commit changes...**.
+In the text box, enter `brandconcierge.js`. Copy the below text and then paste it in the file **brandconcierge.js**. Click **Commit changes...**.
 
 ```javascript
 export default function decorate(block) {
