@@ -6,6 +6,19 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 9837c076-e6ca-47a0-96b9-5fa5fdba3fd2
+TQID: https://experienceleague.adobe.com/g-0ZfVSR7Ka995P-U4-WTT4OP2-HEeU3YiLpwjiJYd4
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # 1.3.4 Create Email Experience for AJO
 

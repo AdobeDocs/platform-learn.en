@@ -4,6 +4,18 @@ description: Customer Journey Analytics - Visualization using Customer Journey A
 kt: 5342
 doc-type: tutorial
 exl-id: 40498a6d-c306-47db-ae12-4cfea6983f03
+TQID: https://experienceleague.adobe.com/A5i7A6MMNfa-MTGkssg-lMPEUL2KT6yum1g-5t4cAtU
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
+    internal-label: Reporting
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # 1.1.5 Visualization using Customer Journey Analytics
 

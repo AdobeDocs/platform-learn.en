@@ -4,6 +4,15 @@ description: Adobe Marketing Agent for Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
+TQID: https://experienceleague.adobe.com/h0AmTknGhymQ1wR4RWpSRIgYMzW3aajVoU1lIpSr0jw
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: f8e8ea8a-6020-40da-99f7-6504fe599cb1
+    internal-label: AI Assistant
 ---
 # 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
 

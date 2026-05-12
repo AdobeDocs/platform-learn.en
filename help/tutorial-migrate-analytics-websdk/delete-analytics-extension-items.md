@@ -5,6 +5,22 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16766
 exl-id: 37189f28-afb9-4310-a176-cf26c0f51dee
+TQID: https://experienceleague.adobe.com/mogZenqPGgkvplOsxchS-h2OYoghh49BFc5iypIFifs
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # Delete the Adobe Analytics extension items
 

@@ -4,6 +4,13 @@ description: Real-time CDP - Build an audience and take action - Configure an Ad
 kt: 5342
 doc-type: tutorial
 exl-id: 2498c80f-8ba8-4563-ac37-52f461f706f4
+TQID: https://experienceleague.adobe.com/g3DHBhgoidlsl-M9Mhc6wVMKcE8FJfsZmFbhIuezf9k
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
 ---
 # 2.3.2 Configure an Advertising Destination like Google DV360
 

@@ -4,6 +4,13 @@ description: Getting started with AJO Translation Services
 kt: 5342
 doc-type: tutorial
 exl-id: ec032c58-c5c2-48d2-bdd3-ff860bc4a35a
+TQID: https://experienceleague.adobe.com/g9MO6w9rZCFxwwDpbWixwynaehbo7I5FqnPFjm-H4sA
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 3.5.1 Translations Provider
 

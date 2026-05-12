@@ -4,6 +4,20 @@ description: Query Service - Summary
 kt: 5342
 doc-type: tutorial
 exl-id: 9d8c453e-1b96-4b7e-8a34-4392c0102735
+TQID: https://experienceleague.adobe.com/keYU2mhgwlaZSK1cahr4YlIcqJS0JkNskRiSCC0LQa8
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
+    internal-label: Reporting
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+    internal-label: Integrations
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Summary & benefits
 

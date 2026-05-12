@@ -6,6 +6,22 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
+TQID: https://experienceleague.adobe.com/4RxlP0Ty8WPkm-FKPsxXandpgzG4crH0K2IZViSDklA
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: e4bd5f48-22a4-465d-a046-5ffb52e27856
+    internal-label: Content production
 ---
 # 1.1.1 Getting started with Firefly Services
 

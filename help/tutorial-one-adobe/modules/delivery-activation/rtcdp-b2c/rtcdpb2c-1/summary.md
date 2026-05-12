@@ -4,6 +4,20 @@ description: Foundation - Real-time Customer Profile - Summary
 kt: 5342
 doc-type: tutorial
 exl-id: 20885554-bc03-485c-9133-11f1bb93a5a2
+TQID: https://experienceleague.adobe.com/OVtPsu7m6rsU-iVat-p0BhkBp2uvJ51XCeUfx1x9ofM
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: a37e4ecd-c740-426a-addf-cb1b483c5c5a
+    internal-label: Segmentation
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+subfeature_v2:
+  - id: b784da9a-7978-4766-bf1f-5ab2b23d894a
+    internal-label: Federated Audience Composition
+  - id: cbd4a8d8-97a6-4ac9-b8d6-b6c1f28d3342
+    internal-label: Segments
 ---
 # Summary & benefits
 

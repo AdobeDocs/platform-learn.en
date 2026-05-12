@@ -4,6 +4,10 @@ description: Real-time CDP - Build an audience and take action - Send your audie
 kt: 5342
 doc-type: tutorial
 exl-id: 5cdb1f66-580c-4b3f-ada6-e224762eab59
+TQID: https://experienceleague.adobe.com/ipZjKTlUlqLqhDdsdC2hXyCXOi8aK-OBnnV077r8-SA
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 2.3.3 Take Action: send your audience to DV360
 

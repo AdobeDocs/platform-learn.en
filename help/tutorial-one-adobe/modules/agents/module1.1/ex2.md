@@ -4,6 +4,13 @@ description: Adobe Marketing Agent for ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
+TQID: https://experienceleague.adobe.com/bhr52i5WxFzscir6csaGcX7rXddKgCmuBrhGruz-P0A
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 1.1.2 Adobe Marketing Agent for ChatGPT Enterprise
 

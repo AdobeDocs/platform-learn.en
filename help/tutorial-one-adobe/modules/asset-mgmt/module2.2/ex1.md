@@ -4,6 +4,13 @@ description: Getting started with AEM Assets
 kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
+TQID: https://experienceleague.adobe.com/WMjPHKPcMKo2wz33hCO8shAdZXwrzR7agd4GxPTEdZQ
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
 ---
 # 1.2.1 Getting started with AEM Assets
 

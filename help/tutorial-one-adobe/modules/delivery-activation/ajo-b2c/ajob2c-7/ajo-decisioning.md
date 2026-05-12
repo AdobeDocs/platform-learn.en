@@ -6,6 +6,15 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 42f69ae8-114a-4195-b343-c143638d9d34
+TQID: https://experienceleague.adobe.com/uc-dEZX0iOoOCw0sO360WXMAdtq4H1-4fIYsMG26okU
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+    internal-label: Web experience
 ---
 # 3.7 Adobe Journey Optimizer: Decisioning
 

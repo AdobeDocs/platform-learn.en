@@ -3,6 +3,10 @@ title: Completion - One Adobe Tutorial
 description: How is completion measured?
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
+TQID: https://experienceleague.adobe.com/82ms-ZB--yzgTkvl6m-e3U6xcKEJylEmhmcMFKHlwnM
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # How is Completion Measured?
 

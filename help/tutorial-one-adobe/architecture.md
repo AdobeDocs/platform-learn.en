@@ -3,6 +3,10 @@ title: One Adobe Tutorial - Architecture Overview
 description: One Adobe Tutorial - Architecture Overview
 doc-type: multipage-overview
 exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
+TQID: https://experienceleague.adobe.com/F6f4fwVECyYp0zRt26LnT7hF8QyJO4wbNsspZBEw0l8
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # One Adobe Tutorial - Architecture Overview
 

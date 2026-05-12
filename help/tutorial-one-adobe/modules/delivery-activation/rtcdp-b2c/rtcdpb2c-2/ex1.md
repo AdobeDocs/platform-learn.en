@@ -4,6 +4,18 @@ description: Customer AI - Data Preparation (Ingest)
 kt: 5342
 doc-type: tutorial
 exl-id: 2b49d86a-af75-4ecd-ab3f-0182f3b8da2f
+TQID: https://experienceleague.adobe.com/8zDtPKPJ5ZmPfXkxRvUFb4PJmcnfXbFo9-d353wb088
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # 2.2.1 Customer AI - Data Preparation (Ingest)
 

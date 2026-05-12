@@ -4,6 +4,13 @@ description: This exercise explains how to use segment personalization within an
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
+TQID: https://experienceleague.adobe.com/YMWWzI2xi8Ojr7YTbRSD2ipw4GZXPKXYDA9s-nKn-WI
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # 3.4.3 Apply segment-based personalization in an email message
 

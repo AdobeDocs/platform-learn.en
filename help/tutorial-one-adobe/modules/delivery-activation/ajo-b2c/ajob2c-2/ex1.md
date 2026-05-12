@@ -4,6 +4,13 @@ description: Adobe Journey Optimizer - External Weather API, SMS Action & more
 kt: 5342
 doc-type: tutorial
 exl-id: bde4290a-59d1-4471-83a7-1cad69f94ff1
+TQID: https://experienceleague.adobe.com/ZjSF87I1KoYs6JrvULHr7p49A6njGB1Lo9rYAIaID3s
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 3.2.1 Define an event
 

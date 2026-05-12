@@ -4,6 +4,13 @@ description: Audience Activation to Microsoft Azure Event Hub - Setup the Event 
 kt: 5342
 doc-type: tutorial
 exl-id: e48b7b50-c95b-46da-b696-494da3926325
+TQID: https://experienceleague.adobe.com/jfEt0VGIOse2x1iJSiaX5Ar101u2bO8kwC-2u0DG9uY
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
 ---
 # 2.4.3 Configure your Azure Event Hub Destination in Adobe Experience Platform
 
