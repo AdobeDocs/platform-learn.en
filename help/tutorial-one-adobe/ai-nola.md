@@ -11,7 +11,7 @@ doc-type: multipage-overview
 
 >[!TAB Day 1 - June 2, 2026]
 
-| Start Time | End Time | Session | Resource | 
+| Start Time | End Time | Session | Resource |
 |--- |--- |--- |--- |
 | 09.00 AM | 10.45 AM | Opening keynote - Agentic Building Blocks & Architecture | - |
 | 10.45 AM | 11.00 AM | Break | - |
