@@ -216,6 +216,7 @@ CARDS
 CARDS
 {cta=Watch}
 * reference-audiences-as-an-advertiser.md
+* upload-and-source-a-csv-audience.md
 * connect-with-publishers.md
 * create-a-project.md
 * discover-audience-overlaps-in-projects.md
