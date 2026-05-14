@@ -173,6 +173,6 @@ Switch back to Workfront and refresh the page, you'll now see that the status he
 
 ## Next Steps
 
-Go back to [Unified Review & Approval with Workfront, Frame.io and Enterprise Storage Management](./esm.md){target="_blank"}
+Go back to [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](./esm.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}
