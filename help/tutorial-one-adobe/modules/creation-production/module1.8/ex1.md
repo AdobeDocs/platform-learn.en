@@ -1,13 +1,13 @@
 ---
-title: Getting started with Workfront, Frame.io & ESM
-description: Getting started with Workfront, Frame.io & ESM
+title: Getting started with Workfront, Frame.io & Adobe Cloud Storage
+description: Getting started with Workfront, Frame.io & Adobe Cloud Storage
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2f9a3eef-16ef-497c-97f7-377ff9ed2f82
 ---
-# 1.8.1 Getting started with Workfront, Frame.io & ESM
+# 1.8.1 Getting started with Workfront, Frame.io & Adobe Cloud Storage
 
 ## 1.8.1.1 Workfront Workflow Terminology
 
@@ -119,9 +119,9 @@ The tasks and dependencies in the project have been created based on the templat
 
 Go to [https://next.frame.io/](https://next.frame.io/){target="_blank"}. Log in, and select the instance to use, in this example **Experience Platform International ESM**. You'll notice that a folder already exists in Frame.io for the project that you just created. The folder is named after the project name that you entered earlier.
 
-This is a feature of Enterprise Storage Management, a cloud-based storage solution that serves as the central repository for assets across Adobe enterprise products, including Workfront and Frame.io.
+This is a feature of Adobe Cloud Storage, a cloud-based storage solution that serves as the central repository for assets across Adobe enterprise products, including Workfront and Frame.io.
 
-Key benefits of Adobe enterprise storage include:
+Key benefits of Adobe Cloud Storage include:
 
 - Unified storage layer for creative and work management assets
 - Centralized permissions via Adobe Identity Management system (IMS) for secure access control
@@ -207,6 +207,6 @@ With the reference images in place, the designer can now create the new asset fo
 
 Next Step: [Create a new asset, review & approve it](./ex2.md){target="_blank"}
 
-Go back to [Unified Review & Approval with Workfront, Frame.io and Enterprise Storage Management](./esm.md){target="_blank"}
+Go back to [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](./esm.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}

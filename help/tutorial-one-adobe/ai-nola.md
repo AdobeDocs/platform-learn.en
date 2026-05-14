@@ -11,16 +11,16 @@ doc-type: multipage-overview
 
 >[!TAB Day 1 - June 2, 2026]
 
-| Start Time | End Time | Session | Resource | Resource |
-|--- |--- |--- |--- |--- |
-| 09.00 AM | 10.45 AM | Opening keynote - Agentic Building Blocks & Architecture | - | - |
-| 10.45 AM | 11.00 AM | Break | - | - |
-| 11.00 AM | 12.00 PM | Lab - [Coworker Harness](./modules/agents/module1.1/ex6.md){target="_blank"} | - | - |
-| 12.00 PM | 01.00 PM | Lunch | - | - |
-| 01.00 PM | 02.15 PM | Lab - [Adobe Marketing Agent for ChatGPT Enterprise](./modules/agents/module1.1/ex2.md){target="_blank"} and [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](./modules/agents/module1.1/ex3.md){target="_blank"} | **AMA MCP Server URL**: https://aep-ai-ama.adobe.io/mcp | [M365 Copilot Manifest](./assets/manifest/manifestv1.1.1.zip) |
-| 02.15 PM | 02.30 PM | Break | - | - |
-| 02.30 PM | 04.15 PM | Lab - [AEM & Agents](./modules/agents/module1.6/aemagents.md){target="_blank"} | - | - |
-| 04.15 PM | 05.00 PM | Lab - [Analytics & Agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} (Optional) | **AA MCP Server**: https://mcp-gateway.adobe.io/aa/mcp | **CJA MCP Server**: https://mcp-gateway.adobe.io/cja/mcp  |
+| Start Time | End Time | Session | Resource |
+|--- |--- |--- |--- |
+| 09.00 AM | 10.45 AM | Opening keynote - Agentic Building Blocks & Architecture | - |
+| 10.45 AM | 11.00 AM | Break | - |
+| 11.00 AM | 12.00 PM | Lab - [Coworker Harness](./modules/agents/module1.1/ex6.md){target="_blank"} | - |
+| 12.00 PM | 01.00 PM | Lunch | - |
+| 01.00 PM | 02.15 PM | Lab - [Adobe Marketing Agent for ChatGPT Enterprise](./modules/agents/module1.1/ex2.md){target="_blank"} <br><br>Lab - [Adobe Marketing Agent for Microsoft 365 Copilot](./modules/agents/module1.1/ex3.md){target="_blank"} | **AMA MCP Server URL**: <br>https://aep-ai-ama.adobe.io/mcp <br> <br>[M365 Copilot Manifest](./assets/manifest/manifestv1.1.1.zip) |
+| 02.15 PM | 02.30 PM | Break | - |
+| 02.30 PM | 04.15 PM | Lab - [AEM & Agents](./modules/agents/module1.6/aemagents.md){target="_blank"} | - |
+| 04.15 PM | 05.00 PM | Lab - [Analytics & Agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} (Optional) | **AA MCP Server**: <br>https://mcp-gateway.adobe.io/aa/mcp<br><br>**CJA MCP Server**: <br>https://mcp-gateway.adobe.io/cja/mcp  |
 
 >[!TAB Day 2 - June 3, 2026]
 
