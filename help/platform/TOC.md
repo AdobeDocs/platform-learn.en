@@ -92,6 +92,10 @@ Campaigns
   + [Experimentation Agent](/help/platform/ai-assistant/experimentation-agent-overview.md)
   + [Data Insights Agent](/help/platform/ai-assistant/data-insights-agent-overview.md)
   + [Product Support Agent](/help/platform/ai-assistant/product-support-agent.md)
+  + Adobe Marketing Agent{#adobe-marketing-agent}
+    + [Get started with Adobe Marketing Agent](/help/platform/ai-assistant/adobe-marketing-agent/adobe-marketing-agent-get-started.md)
+    + [Adobe Marketing Agent in action](/help/platform/ai-assistant/adobe-marketing-agent/adobe-marketing-agent-in-action.md)
+    + [Marketing workflows with Adobe Marketing Agent](/help/platform/ai-assistant/adobe-marketing-agent/adobe-marketing-agent-workflows.md)
   + [Onboard with a new product](/help/platform/ai-assistant/onboard.md)
   + [Learn about products](/help/platform/ai-assistant/product-knowledge.md)
   + [Validate responses](/help/platform/ai-assistant/validate-responses.md)
