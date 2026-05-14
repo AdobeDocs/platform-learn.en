@@ -147,6 +147,7 @@ Campaigns
   + [Set permissions](collaboration/set-permissions-for-collaboration.md)
   + [Set up an Advertiser account](collaboration/set-up-an-advertiser-account.md)
   + [Reference audiences as an advertiser](collaboration/reference-audiences-as-an-advertiser.md)
+  + [Upload and Source a CSV Audience](collaboration/upload-and-source-a-csv-audience.md)
   + [Connect with publishers](collaboration/connect-with-publishers.md)
   + [Create a project](collaboration/create-a-project.md)
   + [Discover audience overlaps](collaboration/discover-audience-overlaps-in-projects.md)
