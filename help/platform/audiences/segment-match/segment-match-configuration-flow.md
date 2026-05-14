@@ -7,6 +7,26 @@ level: Intermediate
 jira: KT-10248
 thumbnail: 342336.jpeg
 exl-id: 0f73c316-ed55-4a33-9603-a58e90dd205a
+TQID: https://experienceleague.adobe.com/GxAFDxqq0BDyg54wezAITsnKboyXIvn2vN-8JHiwBJg
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
+    internal-label: Reporting
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Segment Match configuration flow
 

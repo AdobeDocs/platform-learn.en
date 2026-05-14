@@ -4,6 +4,15 @@ description: AI Assistant and Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
+TQID: https://experienceleague.adobe.com/vQxArjiFwPHZdwF-9F4fxJtSwzUOkvr0vFGQwZPWOT4
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: f8e8ea8a-6020-40da-99f7-6504fe599cb1
+    internal-label: AI Assistant
 ---
 # 1.1.1 AI Assistant and Agent Orchestrator
 

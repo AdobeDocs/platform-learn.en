@@ -4,6 +4,10 @@ description: Adobe Journey Optimizer Campaigns
 kt: 5342
 doc-type: tutorial
 exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
+TQID: https://experienceleague.adobe.com/q4andSFHWz45jy07byUoo4VXQCQvBc-6GN9Zp2-peks
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 3.8 Adobe Journey Optimizer: Orchestrated Campaigns 
 

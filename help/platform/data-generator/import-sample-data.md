@@ -5,8 +5,30 @@ feature: API
 role: Developer
 level: Experienced
 jira: KT-7349
-last-substantial-update: 2023-06-21
+last-substantial-update: 2023-06-21T00:00:00.000Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
+TQID: https://experienceleague.adobe.com/WBu4ngVlKgiFd1jC62Fme-hTbpdkLrIzipyqQyhxryQ
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+    internal-label: Implementation
+subfeature_v2:
+  - id: e0c8953a-a203-4291-bef3-3560160d3041
+    internal-label: Get started
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Import sample data to Adobe Experience Platform
 

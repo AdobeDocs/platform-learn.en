@@ -7,6 +7,10 @@ index: false
 hide: true
 recommendations: noCatalog, noDisplay
 exl-id: 03e30005-608f-40c1-b9bf-e4a34db5c827
+TQID: https://experienceleague.adobe.com/H8qpPL6HsVTIj8Ito8LwgcsEdxaMGKk7RyzBS7W5i30
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Optimizing AEP with Sandbox Tooling
 

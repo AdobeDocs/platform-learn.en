@@ -4,6 +4,16 @@ description: Foundation - Real-time Customer Profile - Create an audience - UI
 kt: 5342
 doc-type: tutorial
 exl-id: 4870ea42-810b-400b-8285-ab1f89c6a018
+TQID: https://experienceleague.adobe.com/ZugFaT9Y6MgvnF04Guqq9IrPMjywDWgxz4LoFC2PA5o
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+topic_v2:
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # 2.1.4 Create an audience - UI
 

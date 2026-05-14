@@ -7,6 +7,18 @@ index: false
 hide: true
 recommendations: noCatalog, noDisplay
 exl-id: 37fc48ef-bc99-46f5-bcb9-bc626c6cdf9e
+TQID: https://experienceleague.adobe.com/YvKPNcWLmKOZ1UPPrJWN5mJtFWI8z-QINWfu54uTAyI
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+    internal-label: Implementation
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Adobe's Internal Use of Unified Profiles for Creative Cloud
 

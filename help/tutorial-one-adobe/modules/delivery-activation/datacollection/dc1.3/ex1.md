@@ -4,6 +4,23 @@ description: Foundation - FAC - Setup your Snowflake account
 kt: 5342
 doc-type: tutorial
 exl-id: 2c614917-de00-4fce-a4e0-1c2037a74740
+TQID: https://experienceleague.adobe.com/yXKfIhBgV5aPkFwIbLs-5gwXZEVYTYIJF170gM1Ylks
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+subfeature_v2:
+  - id: ae2cba0e-54f2-464b-a3b3-ad371e8a886a
+    internal-label: Catalog
+  - id: de9975b2-c43a-4287-9698-4f4cad92b83f
+    internal-label: Schemas
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # 1.3.1 Setup your Snowflake environment
 

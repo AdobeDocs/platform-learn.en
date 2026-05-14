@@ -4,6 +4,18 @@ description: Real-time CDP - Destinations SDK
 kt: 5342
 doc-type: tutorial
 exl-id: c18acbf5-92f5-4cd2-a5aa-a5e9debb98c9
+TQID: https://experienceleague.adobe.com/pZ-mnuXo6KkfUgD-NNEtHvhIH0pZ-Guo55rOLJbSYjw
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
 ---
 # 2.3.6 Destinations SDK
 

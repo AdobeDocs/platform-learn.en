@@ -7,6 +7,13 @@ index: false
 hide: true
 recommendations: noCatalog, noDisplay
 exl-id: bbf82c32-44a5-4c17-aacf-48f7c0bf0ed8
+TQID: https://experienceleague.adobe.com/A3qo-SM31UVZMrR2xuUY1-uygJHJ-A9MhgD9e1YbiEI
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # Adobe's Approach to Audience Strategy and Activation
 

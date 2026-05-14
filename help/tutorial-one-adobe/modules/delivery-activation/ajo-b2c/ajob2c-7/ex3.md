@@ -4,6 +4,21 @@ description: Offer Decisioning - Test your Decision
 kt: 5342
 doc-type: tutorial
 exl-id: 8cfe3d33-9451-46f4-b468-b93cd37d0806
+TQID: https://experienceleague.adobe.com/EoU1ziMKubuudkPCYlHukKw6C4Ks2P-EvJIYQpM70bg
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+subfeature_v2:
+  - id: d9830f6f-ceb6-4faa-9744-f281fe4439f9
+    internal-label: Tags
+  - id: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+    internal-label: Properties
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # 3.7.3 Web SDK setup for Experience Decisioning
 

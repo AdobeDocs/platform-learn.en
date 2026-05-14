@@ -7,6 +7,19 @@ level: Beginner
 jira: KT-4173
 thumbnail: 32669.jpg
 exl-id: 3e3ede4b-baf4-4118-921a-6661d37f1a33
+TQID: https://experienceleague.adobe.com/UWIoJFliwgUVVHrzvQNSVNEgoEl5AcPdLmt7ThI4BPE
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Use Attribution AI Scores and Insights
 

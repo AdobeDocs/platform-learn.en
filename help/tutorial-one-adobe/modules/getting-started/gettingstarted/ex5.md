@@ -4,6 +4,18 @@ description: Getting Started - Use the mobile app
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
+TQID: https://experienceleague.adobe.com/y6z9D2Rxz-DoIXs-r-2jCgWvCKU6D9BJoHDfiti9nY8
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+    internal-label: Integrations
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # Use the mobile app
 

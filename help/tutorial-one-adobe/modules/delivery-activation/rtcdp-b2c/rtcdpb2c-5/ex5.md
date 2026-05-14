@@ -4,6 +4,39 @@ description: Forward events towards the AWS ecosystem
 kt: 5342
 doc-type: tutorial
 exl-id: 9b5f1466-d173-40a0-beed-d4e859e64e40
+TQID: https://experienceleague.adobe.com/FpbUvv0SFvHCRnj-xN30swp-yhghwbGyWl364u5MgRE
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
+    internal-label: Reporting
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+subfeature_v2:
+  - id: abc02dd6-664f-446a-9aaa-675bc0f2fe4a
+    internal-label: Sources
+  - id: acc16deb-1d7f-4ec9-9ce3-6cdf355afde6
+    internal-label: XDM
+  - id: ae2cba0e-54f2-464b-a3b3-ad371e8a886a
+    internal-label: Catalog
+  - id: b3ddd7c3-4e07-4269-8660-8dd1e8139d74
+    internal-label: Monitoring
+  - id: d1a87129-ba05-4f15-98b1-233618f1774a
+    internal-label: Data ingestion
+  - id: dc6ebdf7-9a94-43eb-9184-759cfdd0cf1c
+    internal-label: Event forwarding
+  - id: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+    internal-label: Properties
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # 2.5.5 Forward events to AWS Kinesis & AWS S3
 

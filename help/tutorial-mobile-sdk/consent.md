@@ -4,6 +4,41 @@ description: Learn how to implement consent in a mobile app.
 feature: Mobile SDK,Consent
 jira: KT-14629
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
+TQID: https://experienceleague.adobe.com/uYfRNO0ba-jyc-ukQ3mDV-HcBeFq0KKKuwCTca4j3mw
+product_v2:
+  - id: c1d6d0bd-4149-4f38-bb95-1a1a6a87cf56
+    internal-label: AI training
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+    internal-label: Implementation
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+subfeature_v2:
+  - id: ae2cba0e-54f2-464b-a3b3-ad371e8a886a
+    internal-label: Catalog
+  - id: b572b7ff-a413-4173-b2b4-d7d3874f1b9b
+    internal-label: Best practices
+  - id: c1f1ac67-ccab-4be9-a93a-b7faba1192c4
+    internal-label: Assurance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Implement consent
 

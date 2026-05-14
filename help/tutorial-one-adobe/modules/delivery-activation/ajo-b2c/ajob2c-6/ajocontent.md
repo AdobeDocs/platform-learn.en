@@ -4,6 +4,10 @@ description: Adobe Journey Optimizer Content Management
 kt: 5342
 doc-type: tutorial
 exl-id: 43161ace-b2bc-418c-8f2b-a8fe0e3d0ebf
+TQID: https://experienceleague.adobe.com/rpZXTjgplqAOk5RzTW6myDr3RN6Fb364TwnG-3YWke8
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 3.6 Adobe Journey Optimizer: Content Management 
 

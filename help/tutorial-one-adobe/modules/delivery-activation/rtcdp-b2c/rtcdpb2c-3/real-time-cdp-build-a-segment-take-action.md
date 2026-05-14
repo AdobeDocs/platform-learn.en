@@ -6,6 +6,13 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: f427235f-a7ee-49fb-af46-c0e8baf47789
+TQID: https://experienceleague.adobe.com/NHJXYD8-sqB37EOJT--0doMx4JO5TLsRyDWq2ceIxBs
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
 ---
 # 2.3 Real-time CDP - Build an audience and take action
 

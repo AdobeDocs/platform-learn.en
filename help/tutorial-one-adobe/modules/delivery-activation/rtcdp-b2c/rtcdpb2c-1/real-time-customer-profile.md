@@ -5,6 +5,13 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
+TQID: https://experienceleague.adobe.com/8pTX4487QKpcWlHy9ce0u-Hjky9pXFVLEA7STsIcmBo
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 2.1 Real-time Customer Profile
 

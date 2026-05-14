@@ -8,6 +8,24 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
 exl-id: f4b90832-4415-476f-b496-2f079b4fcbbc
+TQID: https://experienceleague.adobe.com/LWPAKBUc8weMomJkUTmOoUUjp9OejztX3Kdp2QNXn-k
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Subscribe to data ingestion events
 

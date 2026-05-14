@@ -4,6 +4,27 @@ description: Create an Adobe Experience Platform Data Collection Event Forwardin
 kt: 5342
 doc-type: tutorial
 exl-id: ac6d09dd-ae8f-4b8a-b543-e4b96aed2c38
+TQID: https://experienceleague.adobe.com/IxYp9G-g185KmmAfkMyu2XgJXiXsxTAvnVKg6awLDVc
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+subfeature_v2:
+  - id: abc02dd6-664f-446a-9aaa-675bc0f2fe4a
+    internal-label: Sources
+  - id: ae2cba0e-54f2-464b-a3b3-ad371e8a886a
+    internal-label: Catalog
+  - id: dc6ebdf7-9a94-43eb-9184-759cfdd0cf1c
+    internal-label: Event forwarding
+  - id: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+    internal-label: Properties
+  - id: f9a2105e-7a47-4e85-9193-31a519a2cb83
+    internal-label: Data elements
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # 2.5.1 Create an Adobe Experience Platform Data Collection Event Forwarding property
 

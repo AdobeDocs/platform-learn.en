@@ -4,6 +4,10 @@ description: Getting started with Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 4d431d9d-2e4b-41a4-a31d-b641e2369ced
+TQID: https://experienceleague.adobe.com/hSycIHKBOA4j-EVWGyBsqin0oZz96WAV-HFssaBoRG4
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.2.4 Workfront + AEM Sites
 

@@ -4,6 +4,15 @@ description: Getting started with Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
+TQID: https://experienceleague.adobe.com/mIhNVdt39pkUvUDVjCpWmg6FUk1u8xMpYizQMiScj7s
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
 ---
 # 1.2.1 Workfront + AEM Assets CS Metadata Integration
 

@@ -7,6 +7,19 @@ level: Beginner
 jira: KT-10247
 thumbnail: 342212.jpeg
 exl-id: d822868e-1765-4203-a700-3487460dd3a0
+TQID: https://experienceleague.adobe.com/Ah3GvdtC5fN70fIHOEt-3snd7iHNGstuhkO8TB2SP78
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
 ---
 # Segment Match data governance
 

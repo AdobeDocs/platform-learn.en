@@ -4,6 +4,10 @@ description: Audience Activation to Microsoft Azure Event Hub - Activate Audienc
 kt: 5342
 doc-type: tutorial
 exl-id: e6bac0ce-4a1e-4458-af3e-3d6ac40b9cb5
+TQID: https://experienceleague.adobe.com/qcEKh5PrwtlkOwEhDcIt4Hrb4ft2E7Ku-2-RcefnSSI
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 2.4.5 Activate your audience
 
