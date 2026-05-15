@@ -87,9 +87,9 @@ Campaigns
   + [Agent Orchestrator](/help/platform/ai-assistant/agent-orchestrator-overview.md)
   + [Agent Orchestrator interface](/help/platform/ai-assistant/agent-orchestrator-ui.md)
   + [Get access](/help/platform/ai-assistant/access.md)
-  + Adobe Marketing Agent{#adobe-marketing-agent}
-    + [Marketing workflows with Adobe Marketing Agent](/help/platform/ai-assistant/adobe-marketing-agent/adobe-marketing-agent-workflows.md)
-    + [Get started with Adobe Marketing Agent](/help/platform/ai-assistant/adobe-marketing-agent/adobe-marketing-agent-get-started.md)
+  + Marketing Agent for Microsoft 365 Copilot{#adobe-marketing-agent}
+    + [Marketing workflows](/help/platform/ai-assistant/adobe-marketing-agent/adobe-marketing-agent-workflows.md)
+    + [Get started](/help/platform/ai-assistant/adobe-marketing-agent/adobe-marketing-agent-get-started.md)
     + [Adobe Marketing Agent in action](/help/platform/ai-assistant/adobe-marketing-agent/adobe-marketing-agent-in-action.md)
   + [Audience Agent](/help/platform/ai-assistant/audience-agent-overview.md)
   + [Journey Agent](/help/platform/ai-assistant/journey-agent-overview.md)
