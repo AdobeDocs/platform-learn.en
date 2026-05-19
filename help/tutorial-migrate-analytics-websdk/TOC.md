@@ -8,6 +8,7 @@ product_v2:
     internal-label: "Experience Platform"
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
     internal-label: "Analytics"
+usetq: true
 feature-set: Analytics,Experience Platform
 feature: Web SDK
 role: Developer
