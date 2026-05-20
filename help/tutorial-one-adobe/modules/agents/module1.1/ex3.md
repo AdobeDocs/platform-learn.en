@@ -30,11 +30,11 @@ Click **Apps**.
 
 ![ChatGPT](./images/copilot1.png)
 
-Select **Manage your apps**.
+Search for **Adobe Marketing Agent** and then select **Adobe Marketing Agent**.
 
 ![ChatGPT](./images/copilot2.png)
 
-Select **Upload an app**.
+Click **Add**.
 
 ![ChatGPT](./images/copilot3.png)
 
@@ -42,25 +42,13 @@ Select **Upload a custom app**.
 
 ![ChatGPT](./images/copilot4.png)
 
-Select the manifest file that was given to you by your instructor and click **Open**.
-
-![ChatGPT](./images/copilot5.png)
-
-Click **Add**.
-
-![ChatGPT](./images/copilot6.png)
-
 Click **Open with Copilot**.
 
 ![ChatGPT](./images/copilot7.png)
 
-Adobe Marketing Agent is now loaded successfully.
+Adobe Marketing Agent is now loaded successfully. Enter the prompt `login` and click the **send** button.
 
 ![ChatGPT](./images/copilot8.png)
-
-Enter the prompt `login` and click the **send** button.
-
-![ChatGPT](./images/copilotlogin1.png)
 
 Click **Sign in to Adobe Marketing Agent**.
 
