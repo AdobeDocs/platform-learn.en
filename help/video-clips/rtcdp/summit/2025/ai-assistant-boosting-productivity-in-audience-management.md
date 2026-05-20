@@ -7,6 +7,16 @@ index: false
 hide: true
 recommendations: noCatalog, noDisplay
 exl-id: a61ae818-289d-4e28-9419-d4f094d146b4
+TQID: https://experienceleague.adobe.com/-WH6ssWNU8cBzTQXSWT3gsdZdhimcKRjk0QJ-6gIshI
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: f8e8ea8a-6020-40da-99f7-6504fe599cb1
+    internal-label: AI Assistant
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # AI Assistant - Boosting Productivity in Audience Management
 

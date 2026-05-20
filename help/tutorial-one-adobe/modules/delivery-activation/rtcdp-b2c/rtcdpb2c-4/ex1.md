@@ -4,6 +4,10 @@ description: Segment Activation to Microsoft Azure Event Hub - Configure your Mi
 kt: 5342
 doc-type: tutorial
 exl-id: 568ba33f-cdde-48d9-9991-78d4e29be7e7
+TQID: https://experienceleague.adobe.com/MGqRwhs3xbYfWIIST2OH3dYCAaQVZwZOfcjI8HZt5Dc
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 2.4.1 Configure your environment
 

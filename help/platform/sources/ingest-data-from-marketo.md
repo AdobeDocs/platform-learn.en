@@ -8,9 +8,25 @@ badgeIntegration: label="Integration" type="positive"
 role: Developer
 level: Intermediate
 jira: KT-9259, KT-13303
-last-substantial-update: 2023-05-24
+last-substantial-update: 2023-05-24T00:00:00.000Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
+TQID: https://experienceleague.adobe.com/ywR1UTjuU1QaLPLmsUtmAFnAmwaT7suFiXDkIKcFYp4
+product_v2:
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+feature_v2:
+  - id: ba929a52-9339-4154-9487-317dc875a3c7
+    internal-label: Use cases
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Ingest data from Marketo Engage
 

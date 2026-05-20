@@ -4,6 +4,16 @@ description: Intelligent Services
 kt: 5342
 doc-type: tutorial
 exl-id: 1ef4a5e6-bfe2-4213-8262-4d1c7930758c
+TQID: https://experienceleague.adobe.com/awweSpJ3wH9Zvj6TV1ijR5wZDuEpxoWGYlUW2ZgeNIs
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: a37e4ecd-c740-426a-addf-cb1b483c5c5a
+    internal-label: Segmentation
+subfeature_v2:
+  - id: cbd4a8d8-97a6-4ac9-b8d6-b6c1f28d3342
+    internal-label: Segments
 ---
 # 2.2 Intelligent Services
 
@@ -38,7 +48,7 @@ The marketing analyst configures the desired predictions by specifying business 
 
 After the models have finished training and scoring, the scores are written back into Platform. You can decide what actions to take with the predictions, such as defining segments, building custom dashboards etc.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

@@ -6,6 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
+TQID: https://experienceleague.adobe.com/bvOcTNtmtAEY8uD10OgPVJSA4y2yupU6lVUfJyEkRTM
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # 1.7 Firefly Creative Production for Enterprise
 
@@ -45,7 +55,7 @@ In this exercise, you'll start using Workflow Builder.
 
 In this exercise, you'll execute your custom workflow programmatically using Postman and Workfront Fusion.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

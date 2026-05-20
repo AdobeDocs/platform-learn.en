@@ -4,6 +4,13 @@ description: Adobe Marketing Agent for ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
+TQID: https://experienceleague.adobe.com/bhr52i5WxFzscir6csaGcX7rXddKgCmuBrhGruz-P0A
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 1.1.2 Adobe Marketing Agent for ChatGPT Enterprise
 
@@ -21,55 +28,31 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 >- a paid version of OpenAI's ChatGPT Enterprise
 >- using the ChatGPT Enterprise web client
 
-Go to [https://chatgpt.com/](https://chatgpt.com/){target="_blank"} and log in using your account details. Once you're logged in, you should see this. Click your username.
+Go to [https://chatgpt.com/](https://chatgpt.com/) and log in using your account details. Once you're logged in, you should see this. Go to **Apps**.
 
 ![ChatGPT](./images/chatgpt1.png)
 
-Select **Settings**.
+Search for **Adobe Marketing Agent** and then click **Adobe Marketing Agent**.
 
 ![ChatGPT](./images/chatgpt2.png)
 
-Go to **Apps** and then select **Advanced settings**.
+Click **Connect**.
 
 ![ChatGPT](./images/chatgpt3.png)
 
-Turn on **Developer mode** and then click **Back**.
+Click **Sign in with Adobe Marketing Agent**.
 
 ![ChatGPT](./images/chatgpt4.png)
 
-Click **Create app**.
+ChatGPT will now attempt to connect to your Adobe account. Select **Allow Access** and then you'll have to log in with your Adobe account.
 
 ![ChatGPT](./images/chatgpt5.png)
 
-Fill out the fields like this:
-
-- **Name**: `Adobe Marketing Agent`
-- **MCP Server URL**: ask your Adobe representative
-- **Authentication**: `OAuth`
-
-Check the checkbox for **I understand and want to continue**.
-
-Click **Create**.
-
-![ChatGPT](./images/chatgpt6.png)
-
-ChatGPT will now attempt to connect to your Adobe account. Select **Allow Access** and then you'll have to log in with your Adobe account.
-
-![ChatGPT](./images/chatgpt7.png)
-
-Once you've logged in successfully, you should see that your Adobe Marketing Agent is now connected successfully.
+Once you've logged in successfully, you should see that your Adobe Marketing Agent is now connected successfully. Click **Start chat**.
 
 ![ChatGPT](./images/chatgpt8.png)
 
-## 1.1.2.2 Set context in Adobe Marketing Agent 
-
-Close this window.
-
-![Agent Orchestrator](./images/chatgpt9.png)
-
-You should then see this. Click the **+** icon, go to **More** and then select **Adobe Marketing Agent**.
-
-![Agent Orchestrator](./images/chatgpt10.png)
+## 1.1.2.2 Set context in Adobe Marketing Agentd
 
 Before interacting further with Adobe Marketing Agent through ChatGPT, the context needs to be set.
 
@@ -93,7 +76,7 @@ change context
 
 ![Agent Orchestrator](./images/chatgpt11.png)
 
-You should then see a similar window, showing the current Org, Sandbox and Dataview selection. Change these fields to the correct Org, Sandbox and Dataview based on the above information.
+You should then see a similar window, showing the current organization, sandbox and dataview selection. Change these fields to the correct organization, sandbox and dataview based on the above information.
 
 ![Agent Orchestrator](./images/chatgpt12.png)
 

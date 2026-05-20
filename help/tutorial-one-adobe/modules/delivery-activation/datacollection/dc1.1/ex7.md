@@ -4,6 +4,25 @@ description: Foundation - Setup of Adobe Experience Platform Data Collection and
 kt: 5342
 doc-type: tutorial
 exl-id: 124c9c54-27f1-4784-9a5c-2c9d8ba620d5
+TQID: https://experienceleague.adobe.com/tIvnAGebM-HEoS6c-wEdD4-zFAr3q0HKBfp6Nedmzf8
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+subfeature_v2:
+  - id: acc16deb-1d7f-4ec9-9ce3-6cdf355afde6
+    internal-label: XDM
+  - id: ae2cba0e-54f2-464b-a3b3-ad371e8a886a
+    internal-label: Catalog
+  - id: d1a87129-ba05-4f15-98b1-233618f1774a
+    internal-label: Data ingestion
+  - id: de9975b2-c43a-4287-9698-4f4cad92b83f
+    internal-label: Schemas
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # 1.1.7 XDM schema requirements in Adobe Experience Platform
 

@@ -11,23 +11,45 @@ exl-id: 39854816-4572-46e5-8fe4-861da1eb41cf
 
 ## 1.8.2.1 Verify reference images in Frame.io
 
-Go to [https://next.frame.io/](https://next.frame.io/){target="_blank"}. Click to open the folder of your project.
+Go to [https://next.frame.io/](https://next.frame.io/). Click to open the folder of your project.
 
 ![WF](./images/wffio1.png)
+
+Click to open the folder of your task.
+
+![WF](./images/wffio1a.png)
 
 You should now see all the reference images that were provided in Workfront. The designer now has access to all files that were uploaded in Workfront, in a secure environment, automatically.
 
 ![WF](./images/wffio2.png)
 
-Click **+** and then select **New Folder**.
+## 1.8.2.2 Adobe Cloud Drive
 
-![WF](./images/wffio3.png)
+>[!NOTE]
+>
+>Adobe Cloud Drive isn't generally available yet. Contact your instructor for installation instructions.
 
-Enter the name: `Final Deliverables` and hit **enter**. This folder will be used to upload the final document that will be created by the designerL
+After installing Adobe Cloud Drive, you need to sign in. Click the **Adobe Cloud Drive** icon in your task bar and then click **Sign in**.
 
-![WF](./images/wffio3.png)
+![WF](./images/acd1.png)
 
-## 1.8.2.2 Create a new asset with Adobe Firefly and Adobe Express
+Use the email address linked to your Adobe account to log in.
+
+![WF](./images/acd2.png)
+
+When prompted, ensure you select the organization **`--aepImsOrgName--`**.
+
+![WF](./images/acd3.png)
+
+You should then see this. Click **Open**.
+
+![WF](./images/acd4.png)
+
+You should now see the folder for your project and task being synchronized to your computer.
+
+![WF](./images/acd5.png)
+
+## 1.8.2.3 Create a new asset with Adobe Firefly and Adobe Express
 
 >[!NOTE]
 >
@@ -173,6 +195,6 @@ Switch back to Workfront and refresh the page, you'll now see that the status he
 
 ## Next Steps
 
-Go back to [Unified Review & Approval with Workfront, Frame.io and Enterprise Storage Management](./esm.md){target="_blank"}
+Go back to [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](./esm.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}

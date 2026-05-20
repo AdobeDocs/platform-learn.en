@@ -3,10 +3,28 @@ title: GenStudio Tech Labs
 description: GenStudio Tech Labs
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
+TQID: https://experienceleague.adobe.com/4CV7cfPpqPsfWpqwduZHOJazhSv6jHRyNsCI3-EqZsk
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
+    internal-label: Reporting
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+    internal-label: Integrations
+  - id: f8e8ea8a-6020-40da-99f7-6504fe599cb1
+    internal-label: AI Assistant
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Overview - GenStudio Tech Labs
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 ## Overview 
 
@@ -114,7 +132,7 @@ In this module, you will create your Adobe Commerce as a Cloud Service instance.
 
 In this module, you'll learn how to implement and use Adobe Content Analytics.
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

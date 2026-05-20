@@ -45,7 +45,7 @@ In this exercise you'll prepare your PostBuster environment to interact with var
 
 In this exercise, you'll find instructions on how to install all the applications you will need to have on your computer before starting the tutorial.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

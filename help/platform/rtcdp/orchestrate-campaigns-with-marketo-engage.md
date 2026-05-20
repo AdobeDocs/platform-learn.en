@@ -8,6 +8,16 @@ level: Intermediate
 jira: KT-9263
 thumbnail: 338254.jpg
 exl-id: 1e5b951a-2b14-4e28-a2f2-818db7a8b376
+TQID: https://experienceleague.adobe.com/jLp-hulwkdAj3XXurEKhpKUMHTkt07sWu-H0OtfSYUo
+product_v2:
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Orchestrate campaigns with Marketo Engage and Real-Time Customer Data Platform (CDP), B2B Edition.
 

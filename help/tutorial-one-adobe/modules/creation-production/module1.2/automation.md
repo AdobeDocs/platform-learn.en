@@ -6,6 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
+TQID: https://experienceleague.adobe.com/3mMLmNDoretelDqm3h6RUxOZQdbK7vBV4-mCjyG5kC4
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # 1.2 Creative Workflow Automation with Workfront Fusion
 
@@ -45,7 +55,7 @@ In this exercise, you'll further refine your setup, so that your approved asset 
 
 Summary of this module and overview of the benefits.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

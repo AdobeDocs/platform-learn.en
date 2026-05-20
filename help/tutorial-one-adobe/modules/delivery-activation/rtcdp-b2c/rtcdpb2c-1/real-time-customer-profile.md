@@ -5,6 +5,13 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
+TQID: https://experienceleague.adobe.com/8pTX4487QKpcWlHy9ce0u-Hjky9pXFVLEA7STsIcmBo
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 2.1 Real-time Customer Profile
 
@@ -48,7 +55,7 @@ In this exercise, you'll create a segment by making use of Adobe Experience Plat
 
 In this exercise, you'll impersonate a call center employee who receives a call from a customer. In order to really make an impact on this customer's experience, you'll need access to all available information in real-time.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

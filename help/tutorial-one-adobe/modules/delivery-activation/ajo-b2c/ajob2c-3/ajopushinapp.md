@@ -6,6 +6,16 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: fcf4fd2d-8225-408c-b394-539860ee2997
+TQID: https://experienceleague.adobe.com/16WFeBLMajGRgd8OHrcltSq4opAiXik8pFWh1OM5h0g
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+    internal-label: Implementation
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # 3.3 Adobe Journey Optimizer: Push and In-app Messages
 
@@ -39,7 +49,7 @@ In this exercise you'll configure your own journey which will deliver push notif
 
 In this exercise you'll configure a campaign that delivers in-app messages to your customers.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

@@ -3,6 +3,10 @@ title: Agent Collaboration
 description: Agent Collaboration
 kt: 5342
 doc-type: tutorial
+TQID: https://experienceleague.adobe.com/IpgkUrnDRnHXPBh0kq4Ib5HplNGE5yTkykkiRTsmvK4
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.3 Agent Collaboration
 
@@ -20,7 +24,7 @@ In this module, the agent you created before will start to work together with va
 
 In this exercise, ...
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

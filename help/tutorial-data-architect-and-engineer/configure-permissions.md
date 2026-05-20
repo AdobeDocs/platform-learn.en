@@ -2,12 +2,65 @@
 title: Configure permissions
 seo-title: Configure permissions | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Configure permissions
-description: In this lesson, you will configure Adobe Experience Platform user permissions using Adobe's Admin Console. 
+description: In this lesson, you will configure Adobe Experience Platform user permissions using Adobe's Admin Console.
 role: Developer
 feature: Access Control
 jira: KT-4348
 thumbnail: 4348-configure-permissions.jpg
 exl-id: ca01f99e-f10c-4bf0-bef2-b011ac29a565
+TQID: https://experienceleague.adobe.com/GWWEjcIp8RZY-PeLiKSbxskxc7EBffI7LAT1quubOrw
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: adf04a6a-050f-44bc-a52c-db79ccb22ebf
+    internal-label: Administration
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+subfeature_v2:
+  - id: a16ec9c0-4484-4842-b9a0-5504cde38e6a
+    internal-label: Access control
+  - id: a230274e-7e6e-49eb-b817-514495a710ac
+    internal-label: query service
+  - id: a7150a74-b8a9-4042-b066-147c5f0ca505
+    internal-label: Alerts
+  - id: a9b953c0-98db-499b-97f5-a0dc3290bda3
+    internal-label: Adobe Admin Console
+  - id: a9eb38d5-9d89-492f-af4e-b968a07f2d91
+    internal-label: Permissions
+  - id: abc02dd6-664f-446a-9aaa-675bc0f2fe4a
+    internal-label: Sources
+  - id: d175cb4c-5781-454e-a826-bf6dff786265
+    internal-label: Roles
+  - id: d1a87129-ba05-4f15-98b1-233618f1774a
+    internal-label: Data ingestion
+  - id: f5efb499-54f9-432b-ac5c-599dbac103af
+    internal-label: Data management
+  - id: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+    internal-label: Properties
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+    internal-label: Data modeling
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Configure permissions
 

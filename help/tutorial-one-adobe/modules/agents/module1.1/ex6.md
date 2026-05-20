@@ -1,11 +1,11 @@
 ---
-title: AI Harness
-description: AI Harness
+title: Coworker Harness
+description: Coworker Harness
 kt: 5342
 doc-type: tutorial
 exl-id: ce845231-17d1-40ab-96f7-bd386753e625
 ---
-# 1.1.6 AI Harness
+# 1.1.6 Coworker Harness
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ In order to follow the steps in this lab as documented below, the following acce
 
 ## 1.1.6.1 Access Agent Orchestrator
 
-Go to [https://ao.adobe.io/](https://ao.adobe.io/). Log in using your Adobe account. After logging in, make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
+Go to [https://ao.adobe.io/](https://ao.adobe.io/){target="_blank"}. Log in using your Adobe account. After logging in, make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
 
 ![AO](./images/aov2lab1.png)
 
@@ -252,7 +252,7 @@ You should then see this. Click to close the right pane.
 
 ![Agent Orchestrator](./images/ao31b.png)
 
-Scroll down a little bit to review the steps taken by AI Assistant.
+Scroll down a little bit to review the steps taken.
 
 ![Agent Orchestrator](./images/ao31c.png)
 

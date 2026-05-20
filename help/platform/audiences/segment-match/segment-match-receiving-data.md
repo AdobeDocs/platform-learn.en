@@ -7,6 +7,24 @@ level: Intermediate
 jira: KT-10250
 thumbnail: 344419.jpeg
 exl-id: ef3dc334-f733-4ffa-94a5-1ff7ef3999cb
+TQID: https://experienceleague.adobe.com/hKC9jDffAN9NRfZOqsaHXQzMm661qcYSpzRMuKoXKUo
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Segment Match receiving data
 

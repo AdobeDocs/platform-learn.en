@@ -4,18 +4,19 @@ description: Implement Brand Concierge on your website
 kt: 5342
 doc-type: tutorial
 exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
+TQID: https://experienceleague.adobe.com/WBDhu7MqGLGVrHpwFtwm8lEtQKDjnJ3rTJc1xalZF5c
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # 1.4.2 Implement Brand Concierge on your website
 
 >[!IMPORTANT]
 >
->In order to complete this exercise, you need to have access to a working AEM Assets CS Author environment and  an AEM CS/EDS website. 
->
->If you don't have such an environment, go to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Follow the instructions there, and you'll have access to such an environment.
-
->[!IMPORTANT]
->
->If you have previously configured an AEM CS Program with an AEM Assets CS environment, it may be that your AEM CS sandbox was hibernated. Given that dehibernating such a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
+>Your AEM CS sandbox may be hibernated. Given that dehibernating a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
 ## 1.4.2.1 Configure your website to show Brand Concierge - AEM Author
 
@@ -147,7 +148,7 @@ Click **Add file** and select **Create new file**.
 
 ![Block](./images/js1.png)
 
-In the text box, enter `brandconcierge.js`. The file can remain empty for now. Click **Commit changes...**.
+In the text box, enter `brandconcierge.js`. Copy the below text and then paste it in the file **brandconcierge.js**. Click **Commit changes...**.
 
 ```javascript
 export default function decorate(block) {
@@ -392,10 +393,18 @@ You've now updated the required code to load the libraries on your website.
 
 ## 1.4.2.3 Test your configuration
 
-You will now be able to test your changes on your website by going to `main--citisignal-aem-accs--XXX.aem.page` or `main--citisignal-aem-accs--XXX.aem.live`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
+You will now be able to test your changes on your website .
 
-In this example, the full URL becomes this:
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` and/or `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
+To access your website, you can use these default URLs:
+
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/`**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/`**
+
+You need to replace the X in these URLs by the number that was assigned to you.
+
+Additionally, a custom domain name has been created for each website, which you can access using this URL:
+
+- **`https://techinsidersX.adobedemosystem.com/`**
 
 It may take some time before all the assets are shown correctly, as they need to be published first.
 

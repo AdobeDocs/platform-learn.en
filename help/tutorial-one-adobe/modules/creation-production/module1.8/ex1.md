@@ -1,13 +1,17 @@
 ---
-title: Getting started with Workfront, Frame.io & ESM
-description: Getting started with Workfront, Frame.io & ESM
+title: Getting started with Workfront, Frame.io & Adobe Cloud Storage
+description: Getting started with Workfront, Frame.io & Adobe Cloud Storage
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2f9a3eef-16ef-497c-97f7-377ff9ed2f82
 ---
-# 1.8.1 Getting started with Workfront, Frame.io & ESM
+# 1.8.1 Getting started with Workfront, Frame.io & Adobe Cloud Storage
+
+>[!IMPORTANT]
+>
+>Your AEM CS sandbox may be hibernated. Given that dehibernating a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
 ## 1.8.1.1 Workfront Workflow Terminology
 
@@ -41,27 +45,49 @@ For CitiSignal's use case, the blueprint **Integrated Campaign Execution** is th
 
 In order to install that blueprint, open the menu and select **Blueprints**.
 
-![WF](./images/blueprint1.png)
+![WF](./images/blueprint1a.png)
 
 Select the filter **Marketing** and then scroll down to find the blueprint **Integrated Campaign Execution**. Click **Install**.
 
-![WF](./images/blueprint2.png)
+![WF](./images/blueprint1.png)
 
 Click **Continue**.
 
-![WF](./images/blueprint3.png)
+![WF](./images/blueprint2.png)
 
 Change the **Project Template Name** to `--aepUserLdap-- - Integrated Campaign Execution`.
 
 Click **Install Blueprint**.
 
-![WF](./images/blueprint4.png)
+![WF](./images/blueprint3.png)
 
 After a couple of minutes, the blueprint will be installed.
 
 ![WF](./images/blueprint6.png)
 
-## 1.8.1.3 Create a new Project
+## 1.8.1.3 Configure your AEM Assets Integration
+
+Click the **menu** icon and then select **Setup**.
+
+![WF](./images/wfb2.png)
+
+In the left menu, scroll down to **Documents** and then click **Experience Manager Assets**. Click **+ Add Experience Manager integration**.
+
+![WF](./images/wfb3.png)
+
+For the name of your integration, use `--aepUserLdap-- - CitiSignal AEM + ACCS`.
+
+Open the **Experience Manager repository** dropdown and select your AEM CS instance, which should be named `Tech Insiders - AEM + ACCS --userNumber-- dev author`.
+
+Click **Save**.
+
+![WF](./images/wfb5.png)
+
+Your integration from Workfront to AEM Assets CS is now configured.
+
+![WF](./images/wfb7.png)
+
+## 1.8.1.4 Create a new Project
 
 Open the **menu** and go to **Porftolios**.
 
@@ -115,13 +141,13 @@ The tasks and dependencies in the project have been created based on the templat
 
 ![WF](./images/wfp7z.png)
 
-## 1.8.1.4 Project view in Frame.io
+## 1.8.1.5 Project view in Frame.io
 
-Go to [https://next.frame.io/](https://next.frame.io/){target="_blank"}. Log in, and select the instance to use, in this example **Experience Platform International ESM**. You'll notice that a folder already exists in Frame.io for the project that you just created. The folder is named after the project name that you entered earlier.
+Go to [https://next.frame.io/](https://next.frame.io/). Log in, and select the instance to use, in this example **Adobe Tech Insiders**. You'll notice that a folder already exists in Frame.io for the project that you just created. The folder is named after the project name that you entered earlier.
 
-This is a feature of Enterprise Storage Management, a cloud-based storage solution that serves as the central repository for assets across Adobe enterprise products, including Workfront and Frame.io.
+This is a feature of Adobe Cloud Storage, a cloud-based storage solution that serves as the central repository for assets across Adobe enterprise products, including Workfront and Frame.io.
 
-Key benefits of Adobe enterprise storage include:
+Key benefits of Adobe Cloud Storage include:
 
 - Unified storage layer for creative and work management assets
 - Centralized permissions via Adobe Identity Management system (IMS) for secure access control
@@ -130,9 +156,9 @@ Key benefits of Adobe enterprise storage include:
 
 ![WF](./images/fio1.png)
 
-## 1.8.1.5 Create a new Task
+## 1.8.1.6 Create a new Task
 
-Gop back to Workfront. Go to **Tasks**, hover over the task **Begin to Create Design Templates** and click the 3 dots **...**.
+Go back to Workfront. Go to **Tasks**, hover over the task **Begin to Create Design Templates** and click the 3 dots **...**.
 
 ![WF](./images/wfp7a.png)
 
@@ -145,7 +171,6 @@ Enter this name for your task: `Create layout using approved assets and copy`.
 Set the field **Assignments** to the role **Designer**.
 Set the field **Duration** to **5 days**.
 Set the field predecessor to **9**.
-Enter a date for the fields **Start on** and **Due on** (the start date of this task should be scheduled after the end date of the previous task).
 
 Click somewhere else in the screen to save the new task.
 
@@ -155,7 +180,7 @@ You should then see this. Click the task to open it.
 
 ![WF](./images/wfp9.png)
 
-Go to **task Details** and set the field **Description** to: `This task is used to track the progress of the creation of the assets for the CitiSignal Fiber Launch Campaign.`
+Go to **Task Details** and set the field **Description** to: `This task is used to track the progress of the creation of the assets for the CitiSignal Fiber Launch Campaign.`
 
 Click **Save Changes**.
 
@@ -179,15 +204,11 @@ You should then see this.
 
 As part of this task, a new asset needs to be created. In the next step, first you'll provide reference images in Workfront so that the designer knows what is expected. Then, you'll change into the role of Designer and create that asset yourself using Adobe Express.
 
-## 1.8.1.6 Upload reference images
+## 1.8.1.7 Upload reference images
 
 Download the reference images [here](./assets/reference_images.zip) to your desktop and unzip them.
 
 ![WF](./images/wfrefimg1.png)
-
-In Workfront, navigate to the **Project** level.
-
-![WF](./images/wfrefimg2.png)
 
 Go to **Documents**, click **+ Add new** and then select **Document**.
 
@@ -197,16 +218,32 @@ Navigate to the folder that you downloaded which contains the reference images. 
 
 ![WF](./images/wfrefimg4.png)
 
-After a couple of minutes, all images will be uploaded and attached to the project.
+After a couple of minutes, all images will be uploaded and a new folder will be created using the name of the task. Click that new folder to open it.
 
 ![WF](./images/wfrefimg5.png)
 
 With the reference images in place, the designer can now create the new asset for this campaign.
 
+You should then see this.
+
+![WF](./images/wfrefimg6.png)
+
+Next, click **+** and then select **New Folder**.
+
+![WF](./images/wfrefimg7.png)
+
+Enter the name `Final Deliverables` and click **Create**.
+
+![WF](./images/wfrefimg8.png)
+
+You should then see this. This folder will be used to store the final images for approval.
+
+![WF](./images/wfrefimg9.png)
+
 ## Next Steps
 
 Next Step: [Create a new asset, review & approve it](./ex2.md){target="_blank"}
 
-Go back to [Unified Review & Approval with Workfront, Frame.io and Enterprise Storage Management](./esm.md){target="_blank"}
+Go back to [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](./esm.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}

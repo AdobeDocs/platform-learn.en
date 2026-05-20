@@ -4,6 +4,16 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: d5eb2a8d-f6cb-4f35-b8d7-ac0b92ba9f85
+TQID: https://experienceleague.adobe.com/FK1C-cWd5J7gy-rhfNnUPTi-XIglY9w5gFIDcU2oQ6E
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # 3.1 Adobe Journey Optimizer: Orchestration
 
@@ -41,7 +51,7 @@ In this exercise, you'll learn how to configure an email message.
 
 This will guide you through the configuration of Launch to trigger your event and provide the right payload and finally, you'll be able to send yourself an email.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

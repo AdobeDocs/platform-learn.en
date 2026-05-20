@@ -6,6 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c580ac9b-ded1-4b86-b7db-1c38649f50a4
+TQID: https://experienceleague.adobe.com/eb2X-cZzWyRg2u8wdH10RJI3FTL5GsAiALE3Lgssp7A
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # 1.4.3 Bulk Create Assets in Adobe Express
 

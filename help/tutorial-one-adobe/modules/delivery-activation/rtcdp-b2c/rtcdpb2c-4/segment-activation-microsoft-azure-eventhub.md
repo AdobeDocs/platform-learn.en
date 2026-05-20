@@ -4,6 +4,13 @@ description: Audience Activation to Microsoft Azure Event Hub
 kt: 5342
 doc-type: tutorial
 exl-id: c1f5566d-0f57-4554-95ee-950d66373716
+TQID: https://experienceleague.adobe.com/-WcCZm3JQdz-We7lv1DJXw9fgu1tEMPPyLzDf9WpE64
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+    internal-label: Data pipelines
 ---
 # 2.4 Real-Time CDP: Audience Activation to Microsoft Azure Event Hub
 
@@ -62,7 +69,7 @@ In this exercise you will create an Azure function that will be triggered in rea
 
 At this point, everything is setup. You can now do some browsing on your demo website and get audience qualifications delivered to your Microsoft Azure Event Hub Trigger function.  
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

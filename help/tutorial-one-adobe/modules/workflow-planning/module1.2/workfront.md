@@ -4,6 +4,15 @@ description: Workflow Management with Adobe Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
+TQID: https://experienceleague.adobe.com/ER2keXRUIuijuJDw1IZ9OmK7izQvcNH064x7ExDk7as
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
 ---
 # 1.2 Workflow Management with Adobe Workfront Workflow
 
@@ -43,7 +52,7 @@ In this exercise, you'll set up and start using the plugin that connects Adobe P
 
 Summary of this module and overview of the benefits.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

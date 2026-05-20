@@ -47,7 +47,7 @@ recommendations: noDisplay,noCatalog
     + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
     + [1.1.4 Adobe Marketing Agent for Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
     + [1.1.5 Adobe Marketing Agent for Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-    + [1.1.6 AI Harness](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
+    + [1.1.6 Coworker Harness](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
   + 1.2 Getting Started with Agents and AI {#agents2}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
     + [1.2.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -128,9 +128,9 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
     + [1.7.1 Getting started with Firefly Creative Production for Enterprise](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
     + [1.7.2 Execute your custom workflow programmatically](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex2.md)
-  + 1.8 Unified Review & Approval with Workfront, Frame.io and Enterprise Storage Management {#crpr8}
+  + 1.8 Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage {#crpr8}
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
-    + [1.8.1 Getting started with Workfront, Frame.io & ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+    + [1.8.1 Getting started with Workfront, Frame.io & Adobe Cloud Storage](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
     + [1.8.2 Create a new asset, review & approve it](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
   + 1.9 Firefly Boards {#crpr9}
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.9/fireflyboards.md)
@@ -309,3 +309,4 @@ recommendations: noDisplay,noCatalog
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
       
 + [Content Status](/help/tutorial-one-adobe/status.md)
++ {hide-from-toc} [Partner Labs New Orleans Agenda](/help/tutorial-one-adobe/ai-nola.md)

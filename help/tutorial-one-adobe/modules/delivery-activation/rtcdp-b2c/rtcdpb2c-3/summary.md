@@ -4,6 +4,10 @@ description: Real-time CDP - Build an audience and take action - Summary
 kt: 5342
 doc-type: tutorial
 exl-id: cc71f600-fe16-4254-ac64-fbdb24896f64
+TQID: https://experienceleague.adobe.com/gHEnjjRzoAU1EB2Te-g7nSojiCLjIXjAwiQNFffPAag
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Summary & benefits
 

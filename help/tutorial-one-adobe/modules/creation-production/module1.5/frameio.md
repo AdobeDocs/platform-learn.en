@@ -6,6 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2b22fc2b-ce95-4860-8ba6-71163bacf5e7
+TQID: https://experienceleague.adobe.com/527th20AXue-Cf-qUCxb9YfUI6ChApWrZWAeSGpgAS8
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # 1.5 Streamline your workflow with Frame.io
 
@@ -33,7 +43,7 @@ In this exercise, you'll discover the integration between Frame.io and Adobe Pre
 
 Summary of this module and overview of the benefits.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

@@ -3,10 +3,43 @@ title: Overview - Comprehensive Technical Tutorial - One Adobe
 description: Comprehensive Technical Tutorial - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
+TQID: https://experienceleague.adobe.com/Q8lroi-OqTLEZoiZGE7dGwx649LFMeaYGqMRb5M93nE
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
+    internal-label: Reporting
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+    internal-label: Integrations
+  - id: f8e8ea8a-6020-40da-99f7-6504fe599cb1
+    internal-label: AI Assistant
+subfeature_v2:
+  - id: a230274e-7e6e-49eb-b817-514495a710ac
+    internal-label: query service
+  - id: abc02dd6-664f-446a-9aaa-675bc0f2fe4a
+    internal-label: Sources
+  - id: d1a87129-ba05-4f15-98b1-233618f1774a
+    internal-label: Data ingestion
+  - id: dc6ebdf7-9a94-43eb-9184-759cfdd0cf1c
+    internal-label: Event forwarding
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Comprehensive Technical Tutorial - One Adobe
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 ## Overview
 
@@ -98,7 +131,7 @@ Applications included in this learning path:
   - Adobe Journey Optimizer
   - Adobe Customer Journey Analytics
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

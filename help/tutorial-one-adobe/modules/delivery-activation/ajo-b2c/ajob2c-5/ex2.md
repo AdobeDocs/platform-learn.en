@@ -4,6 +4,13 @@ description: Create your Campaign with AJO Translation Services
 kt: 5342
 doc-type: tutorial
 exl-id: 536caf45-c614-48e8-adbb-6dc67d1a9606
+TQID: https://experienceleague.adobe.com/isW7Iy7nybiEWqMIwmjZPikvKctT5emvincbk7TZhps
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 3.5.2 Create your Campaign
 

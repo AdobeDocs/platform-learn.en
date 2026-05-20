@@ -4,6 +4,18 @@ description: Real-time CDP - Build an audience and take action - Send your audie
 kt: 5342
 doc-type: tutorial
 exl-id: 2a9a982b-0ffd-468d-9b71-77224e2c7e1d
+TQID: https://experienceleague.adobe.com/7L21vMNxhpAu92fukNjv56vR8k4y-Z7ca8JrWS-87pI
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # 2.3.5 Take Action: send your audience to Adobe Target
 

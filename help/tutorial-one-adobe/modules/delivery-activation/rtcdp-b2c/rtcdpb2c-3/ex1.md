@@ -4,6 +4,10 @@ description: Real-time CDP - Build an audience and take action - Build an audien
 kt: 5342
 doc-type: tutorial
 exl-id: fddcf394-b775-40f6-98d8-509ff9bd1c83
+TQID: https://experienceleague.adobe.com/1scYd1eZajuBW6O5N7Ga0dhJ4FarA8eYSYP5VJYsff4
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 2.3.1 Create an audience
 

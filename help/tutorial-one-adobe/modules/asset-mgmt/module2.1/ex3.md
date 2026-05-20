@@ -4,6 +4,10 @@ description: AEM CS - Basic Custom Block
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
+TQID: https://experienceleague.adobe.com/njhVJKWPS9tqiENmktXQCeddCFVWwpcZbfnKHtGYvkw
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.1.3 Develop a basic custom block
 

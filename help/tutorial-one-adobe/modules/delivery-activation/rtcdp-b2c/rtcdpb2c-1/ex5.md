@@ -4,6 +4,22 @@ description: See your Real-time Customer Profile in action in the Call Center
 kt: 5342
 doc-type: tutorial
 exl-id: d3bd34a1-5577-4da7-a5a5-0f186b1a73c2
+TQID: https://experienceleague.adobe.com/az-zZ0jr6mmBtRbpEN1FTmQ6bjrrCVxueQHXlPfYd44
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+    internal-label: Integrations
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # 2.1.5 See your Real-time Customer Profile in action in the Call Center
 

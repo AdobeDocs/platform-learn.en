@@ -4,6 +4,20 @@ description: Customer Journey Analytics - Build a dashboard using Analysis Works
 kt: 5342
 doc-type: tutorial
 exl-id: 7c7a4017-bed4-4210-81fb-1c1e2fa8d17d
+TQID: https://experienceleague.adobe.com/x3GMc0lYjVa96R8J12ZhWL5eoqB1eqQkpOkA6CArEv4
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
+    internal-label: Reporting
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # 1.1 Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
 
@@ -55,7 +69,7 @@ Learn how to visualize Adobe Experience Platform data using Customer Journey Ana
 
 Summary of this module and overview of the benefits.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

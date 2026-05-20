@@ -4,6 +4,10 @@ description: In this module, you'll learn how to setup your own Apache Kafka clu
 kt: 5342
 doc-type: tutorial
 exl-id: 28c63675-272e-46ff-88fc-6cd4096d66ca
+TQID: https://experienceleague.adobe.com/XkyUqIfNh9GpiK60k3xD8s8KlD51k-bWtbPYoCJf04M
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 2.6 Stream data from Apache Kafka into Adobe Experience Platform
 
@@ -44,7 +48,7 @@ In this exercise, you'll configure an HTTP API Source Connector in Adobe Experie
 
 In this exercise, you'll use Kafka Connect to install and use the Adobe Experience Platform Sink Connector and you'll send events into Adobe Experience Platform manually.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

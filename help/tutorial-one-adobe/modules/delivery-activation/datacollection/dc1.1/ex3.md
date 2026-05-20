@@ -4,6 +4,31 @@ description: Foundation - Setup of Adobe Experience Platform Data Collection and
 kt: 5342
 doc-type: tutorial
 exl-id: 450712f1-11b6-4f91-846c-4777be662e7b
+TQID: https://experienceleague.adobe.com/KJKHcR0cWrE96-NEOdZqC43t1S2cpa4O2--JOwyWszU
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+subfeature_v2:
+  - id: abc02dd6-664f-446a-9aaa-675bc0f2fe4a
+    internal-label: Sources
+  - id: acc16deb-1d7f-4ec9-9ce3-6cdf355afde6
+    internal-label: XDM
+  - id: ae2cba0e-54f2-464b-a3b3-ad371e8a886a
+    internal-label: Catalog
+  - id: ca3d6bf4-a4af-4944-936b-8de1eb09f149
+    internal-label: Datastreams
+  - id: d9830f6f-ceb6-4faa-9744-f281fe4439f9
+    internal-label: Tags
+  - id: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+    internal-label: Properties
+  - id: f9a2105e-7a47-4e85-9193-31a519a2cb83
+    internal-label: Data elements
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # 1.1.3 Introduction to Adobe Experience Platform Data Collection
 

@@ -4,6 +4,13 @@ description: Foundation - Data Ingestion
 kt: 5342
 doc-type: tutorial
 exl-id: 0fa38179-637b-4dda-a4e4-754a4cdd61a8
+TQID: https://experienceleague.adobe.com/E461LLPs-ijDuyOqbSmqlPZX9UppDryi5B6FMdx263Y
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 1.2 Data Ingestion
 
@@ -50,7 +57,7 @@ In this exercise, you'll go on the website and mobile app and behave like a cust
 
 Setup your Data Landing Zone Source connector with Azure Blob storage.
 
-![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

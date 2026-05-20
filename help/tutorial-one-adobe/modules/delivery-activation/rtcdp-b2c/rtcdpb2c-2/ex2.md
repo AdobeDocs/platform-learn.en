@@ -4,6 +4,18 @@ description: Customer AI - Create a New Instance (Configure)
 kt: 5342
 doc-type: tutorial
 exl-id: faf84607-39fc-4e02-b38b-8fb0c64699e7
+TQID: https://experienceleague.adobe.com/F-pdp5YfOFddcydHe95fxiTHZkrLmdhh7vZ6u8CY7V4
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: a37e4ecd-c740-426a-addf-cb1b483c5c5a
+    internal-label: Segmentation
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # 2.2.2 Customer AI - Create a New Instance (Configure)
 

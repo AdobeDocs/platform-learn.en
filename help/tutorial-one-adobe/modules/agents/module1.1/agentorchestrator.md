@@ -4,6 +4,10 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
+TQID: https://experienceleague.adobe.com/FZA8nQst9c7xJUYkHx6vQo-DFXyEWDwfIE6ZhWT4ItA
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.1 Agent Orchestrator
 
@@ -50,11 +54,11 @@ In this exercise, you'll explore Agent Orchestrator's abilities against the back
 
 In this exercise, you'll explore Agent Orchestrator's abilities against the background of the CitiSignal launch campaign for Fiber Max, by using Adobe Marketing Agent with Claude.
 
-[1.1.6 AI Harness](./ex5.md){target="_blank"}
+[1.1.6 Coworker Harness](./ex6.md){target="_blank"}
 
 In this exercise, you'll explore Agent Orchestrator's abilities using the new AI Harness, against the background of the CitiSignal launch campaign for Fiber Max.
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >

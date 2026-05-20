@@ -3,6 +3,11 @@ user-guide-title: Adobe Analytics to Web SDK using Tags
 breadcrumb-title: Adobe Analytics to Web SDK using Tags
 user-guide-description: A hands-on tutorial for Analytics customers covering how to successfully migrate Adobe Analytics to Web SDK using Adobe Experience Platform Tags
 solution: Analytics,Data Collection,Experience Platform
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    label: "Experience Platform"
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    label: "Analytics"
 feature-set: Analytics,Experience Platform
 feature: Web SDK
 role: Developer
