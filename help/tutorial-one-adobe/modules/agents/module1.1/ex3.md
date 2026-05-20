@@ -38,10 +38,6 @@ Click **Add**.
 
 ![ChatGPT](./images/copilot3.png)
 
-Select **Upload a custom app**.
-
-![ChatGPT](./images/copilot4.png)
-
 Click **Open with Copilot**.
 
 ![ChatGPT](./images/copilot7.png)
