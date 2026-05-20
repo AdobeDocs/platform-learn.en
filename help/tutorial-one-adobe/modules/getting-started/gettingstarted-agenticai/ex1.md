@@ -17,11 +17,12 @@ An example of such values can be found below. Currently, these values can't be u
 
 | Name     | Key | Example |
 |:-------------:| :---------------:| :---------------:|
-| IMS Org ID         | `--aepImsOrgId--` |`907075E95BF479EC0A495C73@AdobeOrg`|
-| IMS Org Name         | `--aepImsOrgName--` |`Adobe Tech Insiders`|
+| CX Enterprise IMS Org Name         | `--aepImsOrgName--` |`Adobe Tech Insiders`|
+| CX Enterprise IMS Org ID         | `--aepImsOrgId--` |`907075E95BF479EC0A495C73@AdobeOrg`|
 | AEP Tenant ID         | `--aepTenantId--` | `_experienceplatform` |
 | AEP Sandbox Name         | `--aepSandboxName--` | `one-adobe` |
 | Learner Profile LDAP        | `--aepUserLdap--` | `vangeluw`|
+| User Number        | `--userNumber--` | `1`|
 
 As an example, in the below screenshot you can see a reference to `aepImsOrgName`.
 
@@ -33,7 +34,7 @@ Once the extension is installed, that same text will be changed automatically to
 
 ## Install the Chrome extension
 
-To install that Chrome extension, open your Chrome browser and go to: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"}. You'll then see this. 
+To install that Chrome extension, open your Chrome browser and go to: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). You'll then see this. 
 
 Click **Add to Chrome**.
 
@@ -47,13 +48,13 @@ The extension will then be installed, and you'll see a similar notification.
 
 ![DSN](./images/c4.png)
 
-In the **extensions** menu, click the **puzzle piece** icon and pin the **Platform Learn - Configuration** extension to the extension menu.
+In the **extensions** menu, click the **puzzle piece** icon and pin the **Tech Insiders Learning** extension to the extension menu.
 
 ![DSN](./images/c6.png)
 
 ## Configure the Chrome extension
 
-Go to [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} and then click the extension icon to open it.
+Go to [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/overview) and then click the extension icon to open it.
 
 ![DSN](./images/tuthome.png)
 
@@ -61,7 +62,7 @@ You'll then see this popup. Click the **+** icon.
 
 ![DSN](./images/c7.png)
 
-Enter the values as indicated below, which are all related to your Adobe Experience Platform instance. 
+Enter the values as indicated below, which are all related to your CX Enterprise organisation. 
 
 ![DSN](./images/c8.png)
 
@@ -69,11 +70,12 @@ If you're attending one of the below events, please use the below values as indi
 
 | Name     | Partner Tech Labs New Orleans | Tech Insiders In-Person Workshop | Tech Insiders On-Demand Enablement |
 |:-------------:| :---------------:| :---------------:|:---------------:|
-| IMS Org ID            |`907075E95BF479EC0A495C73@AdobeOrg`|`907075E95BF479EC0A495C73@AdobeOrg`|`0B6930256441790E0A495FFE@AdobeOrg`|
-| IMS Org Name          |`Adobe Tech Insiders`|`Adobe Tech Insiders`|`CXO Enablement Training LAB`|
+| CX Enterprise IMS Org Name          |`Adobe Tech Insiders`|`Adobe Tech Insiders`|`CXO Enablement Training LAB`|
+| CX Enterprise IMS Org ID            |`907075E95BF479EC0A495C73@AdobeOrg`|`907075E95BF479EC0A495C73@AdobeOrg`|`0B6930256441790E0A495FFE@AdobeOrg`|
 | AEP Tenant ID         | `_experienceplatform` |`_experienceplatform` |`_acsultimatesupport` |
 | AEP Sandbox Name      | `one-adobe` |`one-adobe` |`one-adobe` |
 | Learner Profile LDAP  | `XXX`|`XXX`|`XXX`|
+| User Number  | `XX`|`XX`|`XX`|
 
 **Your Learner Profile LDAP**
 
@@ -82,6 +84,11 @@ This is the username that will be used as part of the tutorial. In this example,
 If you're attending the Partner Tech Labs event in New Orleans, please apply the same logic and use the first part of your email address as the LDAP.
 
 The LDAP is used to ensure that the configuration you'll be doing will be linked to you, and won't conflict with other users that may be using the same instance and sandbox that you're using.
+
+**Your User Number**
+
+If you have been assigned a user number, enter it here. 
+If you haven't been assigned a user number yet, use the value `XX` for now.
 
 Your values should look similar to these.
 Finally, click **Create New**.
