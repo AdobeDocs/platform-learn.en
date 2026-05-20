@@ -70,34 +70,6 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <em>Easily ingest your data</em>
     <p>
   </td>
-  <!--
-  <td>
-    <a href="data-ingestion/create-datasets-and-ingest-data.md">
-      <img alt="thumbnail image for the 'Create Datasets and Ingest Data' video" src="assets/thumb_Create-Datasets-and-Ingest-Data.png" />
-    </a>
-    <div>
-      <a href="data-ingestion/create-datasets-and-ingest-data.md">
-    <strong>Create Datasets and Ingest Data</strong>
-    </a>
-    </div>
-    <p>
-    <em>Ingest your dataset.</em>
-    <p>
-  </td>
-  <td>
-    <a href="segments/create-segments.md">
-      <img alt="thumbnail image for the 'Create Segments' video" src="assets/thumb_Create-Segments.png" />
-    </a>
-    <div>
-      <a href="segments/create-segments.md">
-    <strong>Create Segments</strong>
-    </a>
-    </div>
-    <p>
-    <em>Build segments based on your data.</em>
-    <p>
-  </td>
-  -->
 </tr>
 </table>
 
