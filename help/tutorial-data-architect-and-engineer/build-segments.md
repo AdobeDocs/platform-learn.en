@@ -11,7 +11,6 @@ exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
 ---
 # Build audiences
 
-<!-- 30 min-->
 In this lesson, we will build audiences based on the profile data we ingested in the previous lessons.
 
 Once you have Real-Time Customer Profiles, you can create audiences of individuals who share similar traits and might respond similarly to marketing strategies. The building blocks of these audiences are the XDM fields which you created earlier.
@@ -49,7 +48,6 @@ Let's create a simple audience for loyalty program customers with a Gold or Plat
 1. Select **[!UICONTROL Publish]**
    ![Segment](assets/segment-goldOrAbove.png)
 
-<!--## Build a sequential segment-->
 
 ## Build a dynamic segment
 
