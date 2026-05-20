@@ -21,7 +21,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 >- a paid version of OpenAI's ChatGPT Enterprise
 >- using the ChatGPT Enterprise web client
 
-Go to [https://chatgpt.com/](https://chatgpt.com/){target="_blank"} and log in using your account details. Once you're logged in, you should see this. Go to **Apps**.
+Go to [https://chatgpt.com/](https://chatgpt.com/) and log in using your account details. Once you're logged in, you should see this. Go to **Apps**.
 
 ![ChatGPT](./images/chatgpt1.png)
 
