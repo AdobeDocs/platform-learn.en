@@ -36,11 +36,12 @@ An example of such values can be found below. Currently, these values can't be u
 
 | Name     | Key | Example |
 |:-------------:| :---------------:| :---------------:|
-| IMS Org ID         | `--aepImsOrgId--` |`907075E95BF479EC0A495C73@AdobeOrg`|
-| IMS Org Name         | `--aepImsOrgName--` |`Experience Platform International`|
+| CX Enterprise IMS Org Name         | `--aepImsOrgName--` |`Adobe Tech Insiders`|
+| CX Enterprise IMS Org ID         | `--aepImsOrgId--` |`907075E95BF479EC0A495C73@AdobeOrg`|
 | AEP Tenant ID         | `--aepTenantId--` | `_experienceplatform` |
 | AEP Sandbox Name         | `--aepSandboxName--` | `one-adobe` |
 | Learner Profile LDAP        | `--aepUserLdap--` | `vangeluw`|
+| User Number        | `--userNumber--` | `1`|
 
 As an example, in the below screenshot you can see a reference to `aepSandboxName`.
 
@@ -52,7 +53,7 @@ Once the extension is installed, that same text will be changed automatically to
 
 ## Install the Chrome extension
 
-To install that Chrome extension, open your Chrome browser and go to: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"}. You'll then see this. 
+To install that Chrome extension, open your Chrome browser and go to: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). You'll then see this. 
 
 Click **Add to Chrome**.
 
@@ -66,13 +67,13 @@ The extension will then be installed, and you'll see a similar notification.
 
 ![DSN](./images/c4.png)
 
-In the **extensions** menu, click the **puzzle piece** icon and pin the **Platform Learn - Configuration** extension to the extension menu.
+In the **extensions** menu, click the **puzzle piece** icon and pin the **Tech Insiders Learning** extension to the extension menu.
 
 ![DSN](./images/c6.png)
 
 ## Configure the Chrome extension
 
-Go to [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} and then click the extension icon to open it.
+Go to [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/overview) and then click the extension icon to open it.
 
 ![DSN](./images/tuthome.png)
 
@@ -80,59 +81,33 @@ You'll then see this popup. Click the **+** icon.
 
 ![DSN](./images/c7.png)
 
-Enter the values as indicated below, which are all related to your Adobe Experience Platform instance. 
+Enter the values as indicated below, which are all related to your CX Enterprise organisation. 
 
 ![DSN](./images/c8.png)
 
-If you aren't sure what values to enter for these fields, follow the below guidance.
+If you're attending one of the below events, please use the below values as indicated.
 
-**AEP IMS Org Name**
+| Name     | Partner Tech Labs New Orleans | Tech Insiders In-Person Workshop | Tech Insiders On-Demand Enablement |
+|:-------------:| :---------------:| :---------------:|:---------------:|
+| CX Enterprise IMS Org Name          |`Adobe Tech Insiders`|`Adobe Tech Insiders`|`CXO Enablement Training LAB`|
+| CX Enterprise IMS Org ID            |`907075E95BF479EC0A495C73@AdobeOrg`|`907075E95BF479EC0A495C73@AdobeOrg`|`0B6930256441790E0A495FFE@AdobeOrg`|
+| AEP Tenant ID         | `_experienceplatform` |`_experienceplatform` |`_acsultimatesupport` |
+| AEP Sandbox Name      | `one-adobe` |`one-adobe` |`one-adobe` |
+| Learner Profile LDAP  | `XXX`|`XXX`|`XXX`|
+| User Number  | `XX`|`XX`|`XX`|
 
-When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, you'll find the name of your instance in the top right corner of your screen.
+**Your Learner Profile LDAP**
 
-![DSN](./images/aepname.png)
+This is the username that will be used as part of the tutorial. In this example, the LDAP is based off of the email address of this user. If the email address is **vangeluw@adobe.com**, the LDAP becomes **vangeluw**.
 
-**AEP IMS Org ID**
-
-The IMS Org ID is the unique identifier for your Adobe Experience Cloud instance, and it's referenced in multiple locations throughout this tutorial.
-
-Finding your IMS Org ID can be done in multiple ways. If you're not sure, check with one of the system administrators of your instance to find the ID.
-
-You may be able to find it by going to [Admin Console](https://adminconsole.adobe.com/){target="_blank"}, where you can find it as part of the URL.
-
-![DSN](./images/aepid1.png)
-
-You may also be able to find it by going to **Data Management > Queries** in your AEP menu, where you can find it under **Username**.
-
-![DSN](./images/aepid2.png)
-
-Please ensure to copy and paste the **@AdobeOrg** part along with the ID.
-
-**AEP Tenant ID**
-
-Your Tenant ID is the unique identifier for your organisation's AEP instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, you'll find the tenant id in the URL.
-
-![DSN](./images/aeptenantid.png)
-
-When you enter it in the Chrome extension, you should ensure that an underscore is added as a prefix, so in this example **experienceplatform** becomes **_experienceplatform**.
-
-**AEP Sandbox Name**
-
-Your sandbox name is the name of the environment you'll be using in your AEP instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, you'll find the tenant id in the URL. 
-
-Before taking the sandbox name from the URL, you should ensure you're in the sandbox that you should use for this tutorial. You can switch to the right sandbox by clicking the sandbox switcher menu in the top right corner of your screen.
-
-![DSN](./images/aepsandboxsw.png)
-
-In this example, the AEP Sandbox Name is **one-adobe**.
-
-![DSN](./images/aepsname.png)
-
-**Your LDAP**
-
-This is the username that will be used as part of the tutorial. In this example, the LDAP is based off of the email address of this user. The email address is **vangeluw@adobe.com** so the LDAP becomes **vangeluw**.
+If you're attending the Partner Tech Labs event in New Orleans, please apply the same logic and use the first part of your email address as the LDAP.
 
 The LDAP is used to ensure that the configuration you'll be doing will be linked to you, and won't conflict with other users that may be using the same instance and sandbox that you're using.
+
+**Your User Number**
+
+If you have been assigned a user number, enter it here. 
+If you haven't been assigned a user number yet, use the value `XX` for now.
 
 Your values should look similar to these.
 Finally, click **Create New**.
@@ -149,7 +124,7 @@ After activating your configuration, you'll see a green dot next to the initials
 
 ## Verify tutorial content
 
-As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
+As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
 
 You should now see that all **Environment Variables** on this page have been replaced by their true values, based on the activated environment in the chrome extension.
 
