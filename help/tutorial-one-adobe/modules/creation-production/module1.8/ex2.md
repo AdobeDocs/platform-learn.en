@@ -181,6 +181,22 @@ In Workfront, select your asset and click **Send to**.
 
 ![WF](./images/wffio16.png)
 
+Select the AEM Assets environment that you created in the previous exercise. Clck **Send**.
+
+![WF](./images/aemas1.png)
+
+Select the folder **citisignal** and then click **Select Folder**.
+
+![WF](./images/aemas2.png)
+
+After a couple of minutes, your asset is now sent to AEM Assets.
+
+![WF](./images/aemas3.png)
+
+You can now find your assets in AEM Assets.
+
+![WF](./images/aemas4.png)
+
 ## Next Steps
 
 Go back to [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](./esm.md){target="_blank"}
