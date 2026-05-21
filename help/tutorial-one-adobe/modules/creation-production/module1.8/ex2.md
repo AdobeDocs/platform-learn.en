@@ -49,149 +49,137 @@ You should now see the folder for your project and task being synchronized to yo
 
 ![WF](./images/acd5.png)
 
-## 1.8.2.3 Create a new asset with Adobe Firefly and Adobe Express
+## 1.8.2.3 Create a new asset with Adobe Firefly and Adobe Photshop
 
 >[!NOTE]
 >
 >In case you prefer not to create the new asset yourself, you can download the finished version [here](./images/timetravelnow.png).
 
-Go to [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}. Enter the prompt `a neon rabbit running very fast through space` and click **Generate**.
+Open **Adobe Photoshop**. Click **New File**.
 
-![GSPeM](./../../workflow-planning/module1.2/images/gsasset1.png)
+![WF](./images/ps1.png)
 
-You will then see several images being generated. Choose the image you like the most, click the **Share** icon on the image and then select **Open in Adobe Express**.
+Go to **Web** and then select **Web Most Common**. Click **Create**.
 
-![GSPeM](./../../workflow-planning/module1.2/images/gsasset2.png)
+![WF](./images/ps2.png)
 
-You will then see the image you just generated become available in Adobe Express for editing. You now need to add the CitiSignal logo on the image. To do that, go to **Brands**.
+Click **Generate image**.
 
-![GSPeM](./../../workflow-planning/module1.2/images/gsasset3.png)
+![WF](./images/ps3.png)
 
-You should then see a CitiSignal brand template. that was created in GenStudio for Performance Marketing appear in Adobe Express. Click to select a brand template which has `CitiSignal` in its name.
+Enter the prompt `a neon rabbit running very fast through space` and click **Generate**.
 
-![GSPeM](./../../workflow-planning/module1.2/images/gsasset4.png)
+![WF](./images/ps4.png)
 
-Go to **Logos** and click the **white** Citisignal logo to drop it on the image.
+You should then see something like this.
 
-![GSPeM](./../../workflow-planning/module1.2/images/gsasset5.png)
+![WF](./images/ps5.png)
 
-Position the CitiSignal logo at the top of your image, not too far from the middle.
+Click the **text** icon.
 
-![GSPeM](./../../workflow-planning/module1.2/images/gsasset6.png)
+![WF](./images/ps6.png)
 
-Go to **Text**.
+Add a text field onto your image.
 
-![GSPeM](./../../workflow-planning/module1.2/images/gsasset6a.png)
+![WF](./images/ps7.png)
 
-Click **Add your text**.
+Chaneg the text to `Timetravel now!`.
 
-![GSPeM](./../../workflow-planning/module1.2/images/gsasset6b.png)
+![WF](./images/ps8.png)
 
-Enter the text `Timetravel now!`, change the font color and font size, set the text to **Bold** so that you have an image similar to this one.
+Add the CitiSignal logo, which you can download [here](./assets/Logo-White.png).
 
-![GSPeM](./../../workflow-planning/module1.2/images/gsasset6c.png)
+![WF](./images/ps9.png)
 
-Next, click **Share**.
+Go to **File** and then select **Save as...**.
 
-![GSPeM](./../../workflow-planning/module1.2/images/gsasset7.png)
+![WF](./images/ps10.png)
 
-Click **... Show All**.
+Use the following name for the file. Click **Save**.
 
-![Frame.io](./images/frameioasset1.png)
+```
+CitiSignal-Fiber-Campaign-Winter-2026.psd
+```
 
-Scroll down and select **Download**.
+![WF](./images/ps11.png)
 
-![Frame.io](./images/frameioasset2.png)
+Click **Allow**.
 
-Click **Download**.
+![WF](./images/ps12.png)
 
-![Frame.io](./images/frameioasset3.png)
+Click **OK**.
 
-You'll then have your asset on your local machine.
+![WF](./images/ps14.png)
 
-![Frame.io](./images/frameioasset4.png)
+Go to **File**, select **Export** and then choose **Save for Web...**.
 
-Change the name of the file to `timetravelnow.png`.
+![WF](./images/ps15.png)
 
-![Frame.io](./images/frameioasset5.png)
+Click **Save...**.
 
-## 1.8.2.3 Review the asset in Frame.io
+![WF](./images/ps16.png)
 
-Go back to [https://next.frame.io/](https://next.frame.io/){target="_blank"} and open the folder of your project.
+Use the following name for the file. Click **Save**.
 
-![WF](./images/wffio5.png)
+```
+CitiSignal-Fiber-Campaign-Winter-2026.png
+```
 
-Click **Upload**.
+![WF](./images/ps17.png)
 
-![WF](./images/wffio6.png)
+Go back to your **Adobe Cloud Drive** folder, you should now see both files in the **Final Deliverables** folder.
 
-Select the file **timetravelnow.png** and click **Open**.
+![WF](./images/ps18.png)
 
-![WF](./images/wffio7.png)
+## 1.8.2.4 Approve the asset 
+
+Go back to Workfront, to your Task, to the **Documents** folder. You should now see both files in Workfront.
+
+Select the file **CitiSignal-Fiber-Campaign-Winter-2026.png** and choose **Request approval**.
+
+![WF](./images/ps19.png)
+
+Add yourself as an approver and then click **Request approval**.
+
+![WF](./images/ps20.png)
+
+You should then see this. Click the **approval** icon and then click **Open review**.
+
+![WF](./images/ps21.png)
 
 You should then see this.
 
-![WF](./images/wffio8.png)
+![WF](./images/ps22.png)
 
-Change the status to **Needs Review** and then double-click the image to open it.
+You can also see that same asset in **Frame.io** by going to [https://next.frame.io/](https://next.frame.io/). Click to open the folder of your project.
 
-![WF](./images/wffio9.png)
+![WF](./images/ps23.png)
 
-Tag one of the reviewers in your environment and add a message like: `ready for your feedback on this one`.
+Click to open the folder of your task.
 
-![WF](./images/wffio10.png)
+![WF](./images/ps24.png)
 
-The reviewer can then comment to either make changes or confirming it looks good.
+Click to open the folder **Final Deliverables**.
 
-![WF](./images/wffio11.png)
+![WF](./images/ps25.png)
 
-## 1.8.2.4 Consult the asset in Workfront
+You should then see this.
 
-While the design team is iterating over the asset that they're creating, the project manager in Workfront can follow along with what's happening. Go back to Workfront. Refresh the page.
+![WF](./images/ps26.png)
 
-![WF](./images/wffio12.png)
+Go back to the approval and click **Approved**.
 
-You'll now see the folder that was created in Frame.io appear in Workfront. Click it to open it.
+![WF](./images/ps27.png)
 
-![WF](./images/wffio13.png)
+Your asset will now be marked as approved in Workfront.
 
-You should then see this. Hover over the file **timetravelnow.png** and click **Document Details**.
+![WF](./images/ps28.png)
 
-![WF](./images/wffio14.png)
+## 1.8.2.5 Send the asset to AEM Assets CS 
 
-As the project manager, you can now see the current version of that image so you know what's happening and that this is actively being worked on. Click **Open in Frame.io**.
-
-![WF](./images/wffio15.png)
-
-A new window will then open up, showing the asset in Frame.io.
-
-![WF](./images/wffio15a.png)
-
-## 1.8.2.5 Approve the asset 
-
-In Workfront, go to **Approvals** and click **Add**.
+In Workfront, select your asset and click **Send to**.
 
 ![WF](./images/wffio16.png)
-
-Add yourself as an approver and then click **Submit Request**.
-
-![WF](./images/wffio17.png)
-
-You should then see this. Click **Open review**, which will take you to Frame.io.
-
-![WF](./images/wffio18.png)
-
-In Frame.io, you can see all the comments and review the asset. Click to open the **Your decision** field. 
-
-![WF](./images/wffio19.png)
-
-Select **Approved**.
-
-![WF](./images/wffio20.png)
-
-Switch back to Workfront and refresh the page, you'll now see that the status here is changed as well. The asset is approved and can be used for delivery and activation next.
-
-![WF](./images/wffio21.png)
 
 ## Next Steps
 
