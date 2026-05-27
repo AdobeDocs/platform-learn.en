@@ -5,9 +5,10 @@ user-guide-description: A hands-on tutorial for Analytics customers covering how
 solution: Analytics,Data Collection,Experience Platform
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
-    label: "Experience Platform"
+    internal-label: "Experience Platform"
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-    label: "Analytics"
+    internal-label: "Analytics"
+usetq: true
 feature-set: Analytics,Experience Platform
 feature: Web SDK
 role: Developer
