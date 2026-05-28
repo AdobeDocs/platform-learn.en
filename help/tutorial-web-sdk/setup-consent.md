@@ -150,7 +150,7 @@ Now you will configure and implement consent for this scenario:
 
     >[!NOTE]
     > 
-    >For a dynamic solution, select the "Provide a data element" option and pass a data element that returns the value of ```klaro.getManager().consents```
+    >For a dynamic solution, select the "Provide a data element" option and pass a data element that returns the value of `klaro.getManager().consents`
     >
     >This option is used if the CMP is injected in the source code *before* the tag embed code so that the default consent is available before Experience Platform Web SDK extension starts to load. In our example, we cannot use this option as the CMP is loaded with tags and not before tags.
 

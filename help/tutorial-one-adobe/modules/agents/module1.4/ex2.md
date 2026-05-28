@@ -18,6 +18,21 @@ topic_v2:
 >
 >Your AEM CS sandbox may be hibernated. Given that dehibernating a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
+>[!IMPORTANT]
+>
+>Before you begin, read the below instructions!
+
+## Instructions: Partner Lab New Orleans
+
+For this exercise, you need to use:
+
+- **Instance**: **Adobe Tech Insiders**
+- **Sandbox**: **One Adobe**
+- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Password**: use the password that was shared with you
+- **AEM Program**: **Tech Insiders - AEM + ACCS --userNumber--** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+- **GitHub repository**: [https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs](https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs)
+
 ## 1.4.2.1 Configure your website to show Brand Concierge - AEM Author
 
 In order for Brand Concierge to appear on your website, you need to create a new custom block that needs to be added to a new page, and you'll need to ensure that your new page is added to the navigation of your website.

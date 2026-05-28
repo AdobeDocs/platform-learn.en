@@ -7,9 +7,7 @@ doc-type: multipage-overview
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
 
->[!BEGINTABS]
-
->[!TAB Day 1 - June 2, 2026]
+## Day 1 - June 2, 2026
 
 | Start Time | End Time | Session | Resource |
 |--- |--- |--- |--- |
@@ -22,7 +20,7 @@ doc-type: multipage-overview
 | 02.30 PM | 04.15 PM | Lab - [AEM & Agents](./modules/agents/module1.6/aemagents.md){target="_blank"} | - |
 | 04.15 PM | 05.00 PM | Lab - [Analytics & Agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} (Optional) | **AA MCP Server**: <br>https://mcp-gateway.adobe.io/aa/mcp<br><br>**CJA MCP Server**: <br>https://mcp-gateway.adobe.io/cja/mcp  |
 
->[!TAB Day 2 - June 3, 2026]
+## Day 2 - June 3, 2026
 
 | Start Time | End Time | Session | Resources |
 |--- |--- |--- |--- |
@@ -34,7 +32,7 @@ doc-type: multipage-overview
 | 02.45 PM | 04.30 PM | Lab - [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](./modules/creation-production/module1.8/esm.md){target="_blank"} | - |
 | 04.30 PM | 05.00 PM | Q&A & Wrap-up | - |
 
->[!TAB Day 3 - June 4, 2026]
+## Day 3 - June 4, 2026
 
 | Start Time | End Time | Session | Resources |
 |--- |--- |--- |--- |
@@ -43,8 +41,6 @@ doc-type: multipage-overview
 | 11.00 PM | 11.30 AM | Break | - |
 | 11.30 AM | 12.30 PM | Closing Keynote - Adobe's Agentic Future | - |
 | 12.30 PM | - | Event ends | - |
-
->[!ENDTABS]
 
 >[!NOTE]
 >

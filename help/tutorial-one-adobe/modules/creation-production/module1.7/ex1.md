@@ -19,6 +19,24 @@ level_v2:
 ---
 # 1.7.1 Getting started with Firefly Creative Production for Enterprise
 
+>[!IMPORTANT]
+>
+>Your AEM CS sandbox may be hibernated. Given that dehibernating a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
+
+>[!IMPORTANT]
+>
+>Before you begin, read the below instructions!
+
+## Instructions: Partner Lab New Orleans
+
+For this exercise, you need to use:
+
+- **Instance**: **Adobe Tech Insiders**
+- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Password**: use the password that was shared with you
+
+## 1.7.1.1 Remove background
+
 Go to [https://firefly.adobe.com](https://firefly.adobe.com). Click the profile icon in the top right corner and verify you've select the correct instance, which should be `--aepImsOrgName--`.
 
 Go to **Production**.
@@ -28,8 +46,6 @@ Go to **Production**.
 You should then see this. Click **Create workflow (beta)**.
 
 ![Firefly Creative Production for Enterprise](./images/ffcw2.png)
-
-## 1.7.1.1 Remove background
 
 To get to know Firefly Creative Production for Enterprise, you'll now implement a basic use case which is focused on removing the background of a specific image.
 

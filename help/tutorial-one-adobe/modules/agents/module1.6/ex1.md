@@ -11,13 +11,27 @@ exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
 >
 >Your AEM CS sandbox may be hibernated. Given that dehibernating a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
+>[!IMPORTANT]
+>
+>Before you begin, read the below instructions!
+
+## Instructions: Partner Lab New Orleans
+
+For this exercise, you need to use:
+
+- **Instance**: **Adobe Tech Insiders**
+- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Password**: use the password that was shared with you
+- **AEM Program**: **Tech Insiders - AEM + ACCS --userNumber--** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+- **GitHub repository**: [https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs](https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs)
+
 ## 1.6.1.1 Discovery Agent
 
 The Adobe Experience Manager (AEM) Discovery Agent is an AI-powered tool within AEM as a Cloud Service that enables users to find, retrieve, and utilize content—including Assets, Content Fragments, and Adaptive Forms—using natural language prompts. It eliminates the need for manual, click-heavy, or complex filtering by understanding intent and searching across the repository.
 
 In order to use **Discovery Agent**, you will first create some Tags in Adobe Experience Manager, and you will then tag some assets using those tags. Once that's done, you'll be able to use AI Assistant to discover assets in an easy and business-friendly way.
 
-Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. The org you should select is `--aepImsOrgName--`. 
+Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). The org you should select is `--aepImsOrgName--`. 
 
 ### Create and use Tags with Assets
 
@@ -486,8 +500,6 @@ Create a new adaptive form using Edge Delivery Services and the existing CitiSig
 - Form fields: 4 text input fields are needed, for "first-name", "last-name", "email" and "city"
 - When the form is submitted, send the submission to a spreadsheet, with this URL: https://docs.google.com/spreadsheets/d/1WwKrcM8mZ2d_W3sMheUAw3nFhP_OFk05TsqxhHkudfQ/edit?usp=sharing.
 ```
-
-
 
 ## Next Steps
 

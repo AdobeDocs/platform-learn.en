@@ -188,7 +188,7 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/jo12.png)
 
-You can find the field by navigating to ```--aepUserLdap--GeofenceEntry.placeContext.geo.city```. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In this case you will simulate this using the data collection property of the demo website. Click **OK**.
+You can find the field by navigating to `--aepUserLdap--GeofenceEntry.placeContext.geo.city`. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In this case you will simulate this using the data collection property of the demo website. Click **OK**.
 
 ![Demo](./images/jo13.png)
 

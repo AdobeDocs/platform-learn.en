@@ -9,6 +9,20 @@ exl-id: 39854816-4572-46e5-8fe4-861da1eb41cf
 ---
 # 1.8.2 Create a new asset, review & approve it
 
+>[!IMPORTANT]
+>
+>Before you begin, read the below instructions!
+
+## Instructions: Partner Lab New Orleans
+
+For this exercise, you need to use:
+
+- **Instance**: **Adobe Tech Insiders**
+- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Password**: use the password that was shared with you
+- **AEM Program**: **Tech Insiders - AEM + ACCS --userNumber--** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+- **Workfront URL**: [https://experience.adobe.com/#/@experienceplatform/so:experienceplatformworkfrontplanningv2-Production/workfront](https://experience.adobe.com/#/@experienceplatform/so:experienceplatformworkfrontplanningv2-Production/workfront)
+
 ## 1.8.2.1 Verify reference images in Frame.io
 
 Go to [https://next.frame.io/](https://next.frame.io/). Click to open the folder of your project.
