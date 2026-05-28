@@ -7,6 +7,26 @@ exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
 ---
 # 1.4.1 Getting started with Brand Concierge
 
+>[!IMPORTANT]
+>
+>Before you begin, read the below instructions!
+
+## Instructions: Partner Lab New Orleans
+
+IF YOUR NUMBER IS BETWEEN **1** and **95**, you need to use the following environment details for setting up Brand Concierge:
+
+- **Instance**: **Adobe Tech Insiders**
+- **Sandbox**: **techinsidersXXX** and replace XXX by the number that was assigned to you
+- **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
+- **Password**: use the password that was shared with you
+
+IF YOUR NUMBER IS BETWEEN **95** and **180**, you need to use:
+
+- **Instance**: **Adobe Tech Insiders 2**
+- **Sandbox**: **techinsidersXXX** and replace XXX by the number that was assigned to you
+- **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
+- **Password**: use the password that was shared with you
+
 ## 1.4.1.1 Brand Concierge overview
 
 While configuring Brand Concierge, the 2 main elements you'll be using are:

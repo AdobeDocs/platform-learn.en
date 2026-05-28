@@ -9,13 +9,23 @@ exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
 
 >[!IMPORTANT]
 >
->In order to complete this exercise, you need to have access to a working AEM Sites and Assets CS with EDS environment. 
->
->If you don't have such an environment yet, go to exercise [Adobe Experience Manager Cloud Service & Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Follow the instructions there, and you'll have access to such an environment.
+>Your AEM CS sandbox may be hibernated. Given that dehibernating a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
 >[!IMPORTANT]
 >
->If you have previously configured an AEM CS Program with an AEM Sites and Assets CS environment, it may be that your AEM CS sandbox was hibernated. Given that dehibernating such a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
+>Before you begin, read the below instructions!
+
+## Instructions: Partner Lab New Orleans
+
+For this exercise, you need to use:
+
+- **Instance**: **Adobe Tech Insiders**
+- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Password**: use the password that was shared with you
+- **AEM Program**: **Tech Insiders - AEM + ACCS --userNumber--** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+- **GitHub repository**: [https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs](https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs)
+
+## Configure the link between ACCS and AEM CS
 
 In this exercise, you'll link the AEM Sites CS/EDS Storefront to the ACCS backend. At the moment, when you open your AEM Sites CS/EDS Storefront and go to the **Phones** product list page, you don't see any products yet.
 

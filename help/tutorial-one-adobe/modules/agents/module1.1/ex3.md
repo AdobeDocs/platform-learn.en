@@ -22,7 +22,21 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479158?quality=12&learn=on)
 
-## 1.1.3.1 Add Adobe Marketing Agent to Microsoft 365 Teams & Copilot
+>[!IMPORTANT]
+>
+>Before you begin, read the below instructions!
+
+## Instructions: Partner Lab New Orleans
+
+For this exercise, you need to use:
+
+- **Instance**: **Adobe Tech Insiders**
+- **Sandbox**: **One Adobe**
+- **Dataview**: **AdobeOne - Unified Customer Data View**
+- **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
+- **Password**: use the password that was shared with you
+
+## 1.1.3.1 Install the Adobe Marketing Agent Connector
 
 Open Microsoft Teams and log in using your account details. Once you're logged in, you should see this. 
 

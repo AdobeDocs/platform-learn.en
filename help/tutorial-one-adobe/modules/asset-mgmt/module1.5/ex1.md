@@ -7,11 +7,23 @@ exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
 ---
 # 1.5.1 Getting started with Adobe Commerce as a Cloud Service
 
+>[!IMPORTANT]
+>
+>Before you begin, read the below instructions!
+
+## Instructions: Partner Lab New Orleans
+
+For this exercise, you need to use:
+
+- **Instance**: **Adobe Tech Insiders**
+- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Password**: use the password that was shared with you
+
+## 1.5.1.1 Create your ACCS instance
+
 Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Ensure you're in the correct environment, which should be named `--aepImsOrgName--`. Click **Commerce**.
 
 ![AEM Assets](./images/accs1.png)
-
-## 1.5.1.1 Create your ACCS instance
 
 You should then see this. Click **+ Add Instance**.
 

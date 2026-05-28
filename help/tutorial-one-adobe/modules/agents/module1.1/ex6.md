@@ -16,6 +16,20 @@ In order to follow the steps in this lab as documented below, the following acce
 - Access to AEP Agent Orchestrator
 - Node.js 18+ needs to be installed on your system
 
+>[!IMPORTANT]
+>
+>Before you begin, read the below instructions!
+
+## Instructions: Partner Lab New Orleans
+
+For this exercise, you need to use:
+
+- **Instance**: **Adobe Tech Insiders**
+- **Sandbox**: **One Adobe**
+- **Dataview**: **AdobeOne - Unified Customer Data View**
+- **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
+- **Password**: use the password that was shared with you
+
 ## 1.1.6.1 Access Agent Orchestrator
 
 Go to [https://ao.adobe.io/](https://ao.adobe.io/){target="_blank"}. Log in using your Adobe account. After logging in, make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
