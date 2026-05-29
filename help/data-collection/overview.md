@@ -27,6 +27,7 @@ topic_v2:
     internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
+nudge: true
 ---
 # Data Collection Tutorials
 
@@ -152,3 +153,4 @@ Data Collection is the next generation of website tag and mobile SDK management 
 </div>
 
 *Apple, the Apple logo, iPad, iPhone, iPod, and iPod touch are trademarks of Apple Inc., registered in the U.S. and other countries. Swift and the Swift logo are trademarks of Apple Inc.*
+
