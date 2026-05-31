@@ -4,6 +4,13 @@ description: Foundation - Real-time Customer Profile - Visualize your own Real-t
 kt: 5342
 doc-type: tutorial
 exl-id: 66cb9b20-46e0-4b4a-af38-aa152bba342a
+TQID: https://experienceleague.adobe.com/97gJe72aXpfpAHlTfVR3a2-HqaJOlbLqychtF0lsSaQ
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 2.1.2 Visualize your own Real-time Customer Profile - UI
 

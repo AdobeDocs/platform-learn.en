@@ -4,6 +4,13 @@ description: Foundation - Data Ingestion - Data Ingestion from Offline Sources
 kt: 5342
 doc-type: tutorial
 exl-id: 9fce6ece-f454-45de-9c95-35d604b3ae95
+TQID: https://experienceleague.adobe.com/yNR8aogb5FZ0REUnmxeRyrmEX2N0MK8JOqrQzyLnuuU
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # 1.2.5 Data Landing Zone
 

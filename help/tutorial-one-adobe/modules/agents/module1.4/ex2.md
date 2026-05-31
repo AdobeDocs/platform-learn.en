@@ -4,6 +4,13 @@ description: Implement Brand Concierge on your website
 kt: 5342
 doc-type: tutorial
 exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
+TQID: https://experienceleague.adobe.com/WBDhu7MqGLGVrHpwFtwm8lEtQKDjnJ3rTJc1xalZF5c
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # 1.4.2 Implement Brand Concierge on your website
 

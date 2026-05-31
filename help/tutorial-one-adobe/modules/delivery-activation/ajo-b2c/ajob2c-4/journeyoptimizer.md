@@ -4,6 +4,13 @@ description: In this module, you'll learn everything there is to know about Jour
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
+TQID: https://experienceleague.adobe.com/ENpe0r3kb7wKML8-YUGxS11iPNdv4oDAa-tfOE-MKsw
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # 3.4 Adobe Journey Optimizer: Order Confirmation journey and Campaigns
 

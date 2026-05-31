@@ -6,8 +6,34 @@ role: Developer
 jira: KT-18743
 thumbnail: 18743-overview.jpg
 recommendations: catalog, noDisplay
-last-substantial-update: 2025-08-11
+last-substantial-update: 2025-08-11T00:00:00.000Z
 exl-id: 9d5a2e40-6cda-4164-87db-1bfffe3438e3
+TQID: https://experienceleague.adobe.com/wrAmqb7fOOgSeI3DVRYktdGgdOuB8AxN3gUOBYn0Bds
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Engage with audiences from data warehouse using Federated Audience Composition
 

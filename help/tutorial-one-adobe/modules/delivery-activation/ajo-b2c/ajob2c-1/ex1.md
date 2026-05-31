@@ -4,6 +4,13 @@ description: Journey Optimizer Create your event
 kt: 5342
 doc-type: tutorial
 exl-id: 2c03cc8d-0106-4fa5-80c6-e25712ca2eab
+TQID: https://experienceleague.adobe.com/oe0-r9V6WXFRZ6SvpdOhvtVvK5LWh6ZS0BcTVKKphtM
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 3.1.1 Create your event
 

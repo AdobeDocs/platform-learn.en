@@ -7,6 +7,16 @@ level: Intermediate
 jira: KT-7891
 thumbnail: 333304.jpg
 exl-id: a98e43e1-4b5e-42fa-8806-aab702947da5
+TQID: https://experienceleague.adobe.com/yvQC2QBhCmL6NW3nfI6Cyz1KcaSfRgZ-qK6z2WagEDA
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Create audiences from existing audiences
 

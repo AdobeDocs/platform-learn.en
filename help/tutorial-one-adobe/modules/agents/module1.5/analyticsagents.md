@@ -4,6 +4,10 @@ description: Analytics & Agents
 kt: 5342
 doc-type: tutorial
 exl-id: 5fc65b46-fd55-44c0-a49e-b2a787cabf68
+TQID: https://experienceleague.adobe.com/gVEXPBnS-djSU3ZLGxgDUSweX777VUuBUUfr2OjuPTc
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Analytics & Agents
 

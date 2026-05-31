@@ -7,6 +7,21 @@ level: Beginner
 jira: KT-10246
 thumbnail: 342211.jpeg
 exl-id: bf3c7297-ea60-45fc-a784-5c576e7935cf
+TQID: https://experienceleague.adobe.com/Ljilosm9wYYijG5BZtSO3DvwHnYVTxRdjsG6y5d8cQU
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Segment Match connection setup
 

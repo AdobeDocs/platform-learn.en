@@ -4,6 +4,10 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
+TQID: https://experienceleague.adobe.com/FZA8nQst9c7xJUYkHx6vQo-DFXyEWDwfIE6ZhWT4ItA
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.1 Agent Orchestrator
 

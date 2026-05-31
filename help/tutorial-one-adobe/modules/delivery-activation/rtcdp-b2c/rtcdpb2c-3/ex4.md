@@ -4,6 +4,20 @@ description: Real-time CDP - Build an audience and take action - Send your audie
 kt: 5342
 doc-type: tutorial
 exl-id: 4f858d5d-773e-4aee-949c-6031b7d5ca45
+TQID: https://experienceleague.adobe.com/mD3ZNbgM--6JRo0pcPDCvlL-8flcguYFfgNlnEM4g08
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+topic_v2:
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # 2.3.4 Take Action: send your audience to an S3-destination
 

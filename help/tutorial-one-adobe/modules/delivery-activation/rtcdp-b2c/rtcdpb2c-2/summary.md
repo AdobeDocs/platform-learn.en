@@ -5,6 +5,22 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 exl-id: 6248cb4e-05da-4eda-bea2-b28a9df2b96a
+TQID: https://experienceleague.adobe.com/e9PuOTTYt2NoekLcpq-fMgLg29hm1pnIN9bHnZyIGFg
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: a37e4ecd-c740-426a-addf-cb1b483c5c5a
+    internal-label: Segmentation
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 ---
 # Summary and benefits
 

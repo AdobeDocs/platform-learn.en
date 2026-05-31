@@ -4,6 +4,18 @@ description: Foundation - Data Ingestion - Data Ingestion from Offline Sources
 kt: 5342
 doc-type: tutorial
 exl-id: d0e6b5d4-0d03-4e80-965f-ee583373a2ad
+TQID: https://experienceleague.adobe.com/TfkTWtqzZftLS8Q-63yvI8QEUsCXv6tiIbgwh1EjgT8
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
 ---
 # 1.2.4 Data Ingestion from Offline Sources
 

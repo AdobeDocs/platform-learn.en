@@ -6,9 +6,19 @@ role: User
 level: Beginner
 doc-type: Feature Video
 duration: 0
-last-substantial-update: 2025-03-18
+last-substantial-update: 2025-03-18T00:00:00.000Z
 jira: KT-17318
 exl-id: b9e362a6-5efd-424f-a2fa-80175ad688fd
+TQID: https://experienceleague.adobe.com/qoYMQpUUuzRMBZUYquYKSl-QdNc7TiszFRlM9Q2VJKc
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Set up an Advertiser account in Real-Time CDP Collaboration
 

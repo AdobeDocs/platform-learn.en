@@ -4,6 +4,20 @@ description: Foundation - Data Ingestion - From unknown to known on the website
 kt: 5342
 doc-type: tutorial
 exl-id: 0971dc78-f45d-41b0-a588-ae3c5c6588d8
+TQID: https://experienceleague.adobe.com/4z1KDIoHKP7MyOjUv6M3ZxB04wTzRHRCae7gB1pSJDk
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+    internal-label: Implementation
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 ---
 # 1.2.1 From unknown to known on the website
 

@@ -4,6 +4,18 @@ description: Customer Journey Analytics - Data preparation in Analysis Workspace
 kt: 5342
 doc-type: tutorial
 exl-id: 0bc05318-154a-425c-9e8c-3ddcfe8ad19c
+TQID: https://experienceleague.adobe.com/3HEL-EEIUJ0foq1YCIFoSuMxxw-hM8LV5NA9gP8T6PI
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
+    internal-label: Reporting
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # 1.1.4 Data preparation in Analysis Workspace
 

@@ -3,6 +3,11 @@ user-guide-title: Migrate your mobile app from the Adobe Target to the Offer Dec
 user-guide-description: A hands-on tutorial for Target customers covering how to successfully migrate Mobile SDK implementatoins from the Target extension to the Optimie extension
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: "Experience Platform"
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: "Target"
 feature: Implement Client-side,Implement Mobile,APIs/SDKs, Mobile SDK
 role: Developer
 level: Intermediate,Experienced

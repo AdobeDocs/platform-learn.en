@@ -4,6 +4,13 @@ description: Connect ACCS to AEM Assets CS
 kt: 5342
 doc-type: tutorial
 exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
+TQID: https://experienceleague.adobe.com/7nbnobK82CId--bLR4u-R60lO7eAsuwWWFFeVeuuxbY
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
 ---
 # 1.5.3 Connect ACCS to AEM Assets CS
 

@@ -87,6 +87,10 @@ Campaigns
   + [Agent Orchestrator](/help/platform/ai-assistant/agent-orchestrator-overview.md)
   + [Agent Orchestrator interface](/help/platform/ai-assistant/agent-orchestrator-ui.md)
   + [Get access](/help/platform/ai-assistant/access.md)
+  + Marketing Agent for Microsoft 365 Copilot{#adobe-marketing-agent}
+    + [Marketing workflows](/help/platform/ai-assistant/adobe-marketing-agent/adobe-marketing-agent-workflows.md)
+    + [Get started](/help/platform/ai-assistant/adobe-marketing-agent/adobe-marketing-agent-get-started.md)
+    + [Adobe Marketing Agent in action](/help/platform/ai-assistant/adobe-marketing-agent/adobe-marketing-agent-in-action.md)
   + [Audience Agent](/help/platform/ai-assistant/audience-agent-overview.md)
   + [Journey Agent](/help/platform/ai-assistant/journey-agent-overview.md)
   + [Experimentation Agent](/help/platform/ai-assistant/experimentation-agent-overview.md)
@@ -147,6 +151,7 @@ Campaigns
   + [Set permissions](collaboration/set-permissions-for-collaboration.md)
   + [Set up an Advertiser account](collaboration/set-up-an-advertiser-account.md)
   + [Reference audiences as an advertiser](collaboration/reference-audiences-as-an-advertiser.md)
+  + [Upload and Source a CSV Audience](collaboration/upload-and-source-a-csv-audience.md)
   + [Connect with publishers](collaboration/connect-with-publishers.md)
   + [Create a project](collaboration/create-a-project.md)
   + [Discover audience overlaps](collaboration/discover-audience-overlaps-in-projects.md)
