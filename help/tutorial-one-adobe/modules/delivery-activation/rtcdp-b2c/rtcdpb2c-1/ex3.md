@@ -4,6 +4,22 @@ description: Foundation - Real-time Customer Profile - Visualize your own real-t
 kt: 5342
 doc-type: tutorial
 exl-id: dd80f379-76f2-4023-b958-6ee558e23e88
+TQID: https://experienceleague.adobe.com/7ZM3SBEXKlXtcIntuCA4xu4BSGHr2HImZRo-NNeOCpI
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+    internal-label: Implementation
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # 2.1.3 Visualize your own real-time customer profile - API
 

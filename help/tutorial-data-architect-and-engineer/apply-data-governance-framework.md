@@ -2,12 +2,27 @@
 title: Apply the data governance framework
 seo-title: Apply the data governance framework | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Apply the data governance framework
-description: In this lesson, you will apply the data governance framework to the data you've ingested into your sandbox. 
+description: In this lesson, you will apply the data governance framework to the data you've ingested into your sandbox.
 role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
+TQID: https://experienceleague.adobe.com/cJ5tEIVSaDxjO-11dh7dc1wNQe9jTHrXX-Ouz58JsRo
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
 ---
 # Apply the data governance framework
 

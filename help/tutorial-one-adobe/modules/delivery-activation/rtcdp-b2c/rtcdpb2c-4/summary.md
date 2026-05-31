@@ -4,6 +4,16 @@ description: Audience Activation to Microsoft Azure Event Hub - Summary & benefi
 kt: 5342
 doc-type: tutorial
 exl-id: f081af11-3ea0-47cc-ae74-24a0e0231d66
+TQID: https://experienceleague.adobe.com/Z4vjvW0rMuZwLhOxB-8titYag-C8HvDN0GRQE1kzVwE
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Summary & benefits
 

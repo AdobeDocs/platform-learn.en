@@ -4,6 +4,20 @@ description: Foundation - Data Ingestion - Summary
 kt: 5342
 doc-type: tutorial
 exl-id: d3e6a5b7-4ad6-4f47-ad49-b77d74845346
+TQID: https://experienceleague.adobe.com/DZRNBzMIo1GeVCY4kSTbtZjBEVr-HC-59Gh65kok3-I
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+topic_v2:
+  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+    internal-label: Data modeling
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Summary & benefits
 

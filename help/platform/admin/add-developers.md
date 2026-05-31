@@ -6,8 +6,25 @@ role: Admin, Developer
 level: Beginner
 doc-type: Feature Video
 jira: KT-14689
-last-substantial-update: 2023-12-15
+last-substantial-update: 2023-12-15T00:00:00.000Z
 exl-id: 4bd28867-b664-4a45-8892-91af821cbbcc
+TQID: https://experienceleague.adobe.com/YFECUhqc5G6lJbuWw-uuN33JLMv68c7n944BzOhVmKY
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+    internal-label: Integrations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Add developers and give permissions to API credentials
 

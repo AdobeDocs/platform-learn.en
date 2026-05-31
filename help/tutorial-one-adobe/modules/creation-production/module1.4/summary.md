@@ -4,6 +4,10 @@ description: Adobe Express and Adobe Experience Cloud - Summary
 kt: 5342
 doc-type: tutorial
 exl-id: d1d0462a-a2aa-4d16-bb4d-3d639ebd9c29
+TQID: https://experienceleague.adobe.com/6mh4Seqh5pYdALVEnF8u8MUiP6XJ3JfO0KY5nuT8-to
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Summary & benefits
 

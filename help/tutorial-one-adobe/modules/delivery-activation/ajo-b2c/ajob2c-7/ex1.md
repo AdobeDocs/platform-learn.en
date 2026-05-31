@@ -5,6 +5,13 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 89fd2293-f8cc-4a0b-a200-d1ebecbd1cfb
+TQID: https://experienceleague.adobe.com/tx1YkNvzssYcNvSs89Zm5cefFxy72I4KHAKUUQRa4tU
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 3.7.1 Experience Decisioning 101
 

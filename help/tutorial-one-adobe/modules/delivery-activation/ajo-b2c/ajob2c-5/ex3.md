@@ -4,6 +4,10 @@ description: AJO Translation Services
 kt: 5342
 doc-type: tutorial
 exl-id: fff315ce-88d2-407f-b8c4-c24517688e60
+TQID: https://experienceleague.adobe.com/j-Tq-xQl4klKo2HQaA55XSHWu1gCWyd0THjo4n9Mig0
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 3.5.3 Add Languages to your Email
 

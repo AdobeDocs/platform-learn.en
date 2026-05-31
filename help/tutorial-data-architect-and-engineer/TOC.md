@@ -24,5 +24,5 @@ recommendations: noDisplay,noCatalog
 + [11. Create merge policies](create-merge-policies.md)
 + [12. Apply data governance framework](apply-data-governance-framework.md)
 + [13. Run queries](run-queries.md)
-+ [14. Build segments](build-segments.md)
++ [14. Build audiences](build-segments.md)
 + [Conclusion](conclusion.md)

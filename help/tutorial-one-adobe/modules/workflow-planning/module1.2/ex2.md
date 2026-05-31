@@ -4,6 +4,15 @@ description: Proofing with Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
+TQID: https://experienceleague.adobe.com/PCB60QWb4hLG-smeoiI7lYZf6hyTqip4rUbtAYzcTO8
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
 ---
 # 1.2.2 Proofing with Workfront
 

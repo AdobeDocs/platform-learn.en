@@ -4,6 +4,13 @@ description: AJO and GenStudio for Performance Marketing
 kt: 5342
 doc-type: tutorial
 exl-id: 1424f649-d004-4b14-b8af-927ca1d47de5
+TQID: https://experienceleague.adobe.com/9A33gd1VQJDvgNUTmge1kDN16MqqThUiY-ID60KMAuw
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 3.6.3 AJO and GenStudio for Performance Marketing
 

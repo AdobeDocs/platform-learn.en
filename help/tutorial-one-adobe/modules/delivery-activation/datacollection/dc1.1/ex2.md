@@ -4,6 +4,25 @@ description: Foundation - Setup of Adobe Experience Platform Data Collection and
 kt: 5342
 doc-type: tutorial
 exl-id: f805b2a6-c813-4734-8a78-f8588ecd0683
+TQID: https://experienceleague.adobe.com/-9LYdnJpgpaI1JmCwlgbed1cO-7HTObpsa3bNvWB-hs
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+subfeature_v2:
+  - id: ae2cba0e-54f2-464b-a3b3-ad371e8a886a
+    internal-label: Catalog
+  - id: ca3d6bf4-a4af-4944-936b-8de1eb09f149
+    internal-label: Datastreams
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # 1.1.2 Edge Network, Datastreams and Server Side Data Collection
 

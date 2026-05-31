@@ -4,6 +4,13 @@ description: Getting Started - Postman setup
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
+TQID: https://experienceleague.adobe.com/U9rhbAtWuePCRjnK53w2jh3cAeGMT-I823a7FrQbUu8
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Option 1: use Postman
 

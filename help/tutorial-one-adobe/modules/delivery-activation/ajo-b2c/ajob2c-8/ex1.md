@@ -4,6 +4,10 @@ description: Setting up your relational data foundation
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
+TQID: https://experienceleague.adobe.com/YaQbkryJ35pRvdsuL5085Y07lMJ1q5cbKFFCPkMqHT8
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 3.8.1 Setting up your relational data foundation
 

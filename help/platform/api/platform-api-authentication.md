@@ -1,14 +1,32 @@
 ---
 title: Authenticate and access Experience Platform APIs
-description: Learn how to access to Adobe Experience Platform APIs. 
+description: Learn how to access to Adobe Experience Platform APIs.
 feature: API
 role: Developer
 level: Beginner,Intermediate
 doc-type: Technical Video
 duration: 226
-last-substantial-update: 2023-06-21
+last-substantial-update: 2023-06-21T00:00:00.000Z
 jira: KT-3688
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
+TQID: https://experienceleague.adobe.com/roEYelq7u89B0seaG2J5P5-7Q4hDBnCApX-Aq93Lbp0
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Authenticate and access [!DNL Experience Platform] APIs
 

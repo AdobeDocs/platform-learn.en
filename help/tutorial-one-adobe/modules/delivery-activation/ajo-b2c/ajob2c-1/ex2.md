@@ -4,6 +4,10 @@ description: Journey Optimizer - Create your fragments
 kt: 5342
 doc-type: tutorial
 exl-id: 4e71164d-9e25-46aa-a4b8-a2f6535c491e
+TQID: https://experienceleague.adobe.com/IueZFGL21ufdr153fQJpOgggxIwjU4pByc2Z3vUlimo
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 3.1.2 Create fragments to be used in your message
 

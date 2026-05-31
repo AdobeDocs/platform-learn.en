@@ -4,6 +4,10 @@ description: Summary and Benefits of GenStudio for Performance Marketing - Exten
 kt: 5342
 doc-type: tutorial
 exl-id: f5b9f7bf-ea95-410f-a2ae-e244641e2412
+TQID: https://experienceleague.adobe.com/ZdlKoroFDMv8ZD6XtNpSrtNsKqApe2kUFsdTTdljI-0
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Summary & benefits
 

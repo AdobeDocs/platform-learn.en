@@ -4,6 +4,13 @@ description: Audience Activation to Microsoft Azure Event Hub - Action
 kt: 5342
 doc-type: tutorial
 exl-id: bff4d2ee-eaff-4b56-9fa0-4ffc3c368141
+TQID: https://experienceleague.adobe.com/F-pP38TvrRatHrdkGmptZTqLpMJTMejQt2mofSHn-iM
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 2.4.7 End-to-end scenario
 

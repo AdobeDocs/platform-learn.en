@@ -4,6 +4,15 @@ description: Learn about Adobe Experience Platform
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
+TQID: https://experienceleague.adobe.com/gbKDYt4z1e0D4Fa8MRIRjQPkk5BBczmyIS0Zc6Q29hk
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 ---
 # Adobe Experience Platform Tutorials
 
@@ -61,34 +70,6 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <em>Easily ingest your data</em>
     <p>
   </td>
-  <!--
-  <td>
-    <a href="data-ingestion/create-datasets-and-ingest-data.md">
-      <img alt="thumbnail image for the 'Create Datasets and Ingest Data' video" src="assets/thumb_Create-Datasets-and-Ingest-Data.png" />
-    </a>
-    <div>
-      <a href="data-ingestion/create-datasets-and-ingest-data.md">
-    <strong>Create Datasets and Ingest Data</strong>
-    </a>
-    </div>
-    <p>
-    <em>Ingest your dataset.</em>
-    <p>
-  </td>
-  <td>
-    <a href="segments/create-segments.md">
-      <img alt="thumbnail image for the 'Create Segments' video" src="assets/thumb_Create-Segments.png" />
-    </a>
-    <div>
-      <a href="segments/create-segments.md">
-    <strong>Create Segments</strong>
-    </a>
-    </div>
-    <p>
-    <em>Build segments based on your data.</em>
-    <p>
-  </td>
-  -->
 </tr>
 </table>
 

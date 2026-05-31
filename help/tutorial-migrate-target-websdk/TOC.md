@@ -4,6 +4,11 @@ breadcrumb-title: Migrate Target from at.js 2.x to Web SDK
 user-guide-description: A hands-on tutorial for Target customers covering how to successfully migrate from an at.js to Web SDK implementation.
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: "Experience Platform"
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: "Target"
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
 role: Developer
 level: Intermediate,Experienced

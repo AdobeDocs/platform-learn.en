@@ -4,6 +4,16 @@ description: In this section you will configure a batch email journey to send a 
 kt: 5342
 doc-type: tutorial
 exl-id: 40ca710d-63c8-41bd-bd4e-f02186509345
+TQID: https://experienceleague.adobe.com/tEMMLCq7-CGG9LA6S6gTYpQTzqWSonjPNQ2CN8nqKT4
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # 3.4.2 Configure a Campaign 
 

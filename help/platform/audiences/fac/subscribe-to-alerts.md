@@ -6,9 +6,19 @@ role: User
 level: Intermediate
 doc-type: Feature Video
 duration: 72
-last-substantial-update: 2025-07-28
+last-substantial-update: 2025-07-28T00:00:00.000Z
 jira: KT-18639
 exl-id: 476b841c-e9a8-4813-abda-f223339e175f
+TQID: https://experienceleague.adobe.com/MFO4CkX0Fx1PlwyOsle0Sa6NgHHTH1c5CRXPSLjIzSE
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Subscribe to Federated Audience Composition alerts
 

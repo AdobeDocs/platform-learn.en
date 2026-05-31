@@ -4,6 +4,13 @@ description: Introduction to Apache Kafka
 kt: 5342
 doc-type: tutorial
 exl-id: e0209ffc-621b-4e8d-aaa7-ac92eef3f86a
+TQID: https://experienceleague.adobe.com/u0Z9yFr-CUhGONJdwHPSmrCKMQHCsPCh8C65UgjlZj0
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+    internal-label: Integrations
 ---
 # 2.6.1 Introduction to Apache Kafka
 

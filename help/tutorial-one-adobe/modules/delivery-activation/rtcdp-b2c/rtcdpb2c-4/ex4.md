@@ -4,6 +4,13 @@ description: Audience Activation to Microsoft Azure Event Hub - Create an audien
 kt: 5342
 doc-type: tutorial
 exl-id: d9450e18-7c9b-4a6c-8317-19baf99d43a3
+TQID: https://experienceleague.adobe.com/Jk98cQMQ-AocPARApe6V4EZtNJsn8Li6kx2fsbDidw8
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
 ---
 # 2.4.4 Create an audience
 
