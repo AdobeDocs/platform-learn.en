@@ -20,9 +20,9 @@ exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
 For this exercise, you need to use:
 
 - **Instance**: **Adobe Tech Insiders**
-- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Username**: adobetechinsiders---userNumber--@adobeeventlab.com
 - **Password**: use the password that was shared with you
-- **AEM Program**: **Tech Insiders - AEM + ACCS --userNumber--** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+- **AEM Program**: Tech Insiders - AEM + ACCS --userNumber-- which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 - **GitHub repository**: [https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs](https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs)
 
 ## 1.6.1.1 Discovery Agent
@@ -483,8 +483,6 @@ You should then get a confirmation that changes are published.
 ![AEM Agents](./images/aemagents87.png)
 
 ### Content Update - Form Creation
-
-In module [Adobe Experience Manager Forms with Edge Delivery Services](./../../asset-mgmt/module1.3/aemforms.md){target="_blank"} you can find the steps involved in creation a form in a manual way.
 
 The Form Creation skill now enables users to build adaptive forms through natural language prompts without dependency on development or IT teams. This capability accelerates form development while maintaining brand consistency and allowing business users to create forms without deep technical product knowledge.
 

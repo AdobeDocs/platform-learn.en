@@ -32,7 +32,7 @@ For this exercise, you need to use:
 
 ## 1.1.6.1 Access Agent Orchestrator
 
-Go to [https://ao.adobe.io/](https://ao.adobe.io/){target="_blank"}. Log in using your Adobe account. After logging in, make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
+Go to [https://ao.adobe.io/](https://ao.adobe.io/). Log in using your Adobe account. After logging in, make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
 
 ![AO](./images/aov2lab1.png)
 
@@ -50,7 +50,7 @@ You may get this request. Provide the required permissions.
 
 ![AO](./images/aov2lab19.png)
 
-You may get this request. Provide the required permissions. 
+You may get this second request. Provide the required permissions. 
 
 ![AO](./images/aov2lab19a.png)
 
