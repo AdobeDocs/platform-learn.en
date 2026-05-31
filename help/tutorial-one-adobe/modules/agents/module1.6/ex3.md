@@ -20,9 +20,9 @@ exl-id: b7105351-e9de-4b2c-b3d7-2d4c8627f852
 For this exercise, you need to use:
 
 - **Instance**: **Adobe Tech Insiders**
-- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Username**: adobetechinsiders---userNumber--@adobeeventlab.com
 - **Password**: use the password that was shared with you
-- **AEM Program**: **Tech Insiders - AEM + ACCS --userNumber--** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+- **AEM Program**: Tech Insiders - AEM + ACCS --userNumber-- which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 - **GitHub repository**: [https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs](https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs)
 
 ## 1.6.3.1 Create Content Fragment Model
