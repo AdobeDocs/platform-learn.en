@@ -10,7 +10,7 @@ exl-id: 2563ca77-699b-4cd3-af51-1105cea03c79
 [!BADGE Beta]
 
 +++Beta Details
-By using the Adobe Marketing Agent with Claude Beta, You hereby acknowledge that the Beta is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any “Feedback” (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
+By using the Adobe Marketing Agent with Claude Beta, You hereby acknowledge that the Beta is provided "as is" without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any "Feedback" (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
 
 +++
 
@@ -36,9 +36,10 @@ This lab is in development.
 >[!NOTE]
 >
 >Using Adobe Marketing Agent in Claude.ai requires the following:
+>
 >- a paid version of Claude.ai
 
-Go to [https://claude.ai/](https://claude.ai/){target="_blank"} and log in using your account details. Once you're logged in, you should see this. 
+Go to [https://claude.ai](https://claude.ai/){target="_blank"} and log in using your account details. Once you're logged in, you should see this. 
 
 ![Claude.ai](./images/claude1.png)
 
