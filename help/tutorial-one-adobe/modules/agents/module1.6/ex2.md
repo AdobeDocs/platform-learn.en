@@ -20,9 +20,9 @@ exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
 For this exercise, you need to use:
 
 - **Instance**: **Adobe Tech Insiders**
-- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Username**: adobetechinsiders---userNumber--@adobeeventlab.com
 - **Password**: use the password that was shared with you
-- **AEM Program**: **Tech Insiders - AEM + ACCS --userNumber--** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+- **AEM Program**: Tech Insiders - AEM + ACCS --userNumber-- which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 - **GitHub repository**: [https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs](https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs)
 
 ## AEM MCP Servers

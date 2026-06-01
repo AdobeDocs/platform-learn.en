@@ -220,7 +220,7 @@ Next, go to **Contents** and drag and drop an **HTML** component on the fifth ro
 
 In the **Edit HTML** popup, paste this HTML:
 
-```
+```html
 <table><tbody><tr><td><b>Items purchased</b></td><td></td><td><b>Quantity</b></td><td><b>Subtotal</b></td></tr><tr><td colspan="4" width="500"><hr></td></tr></tbody></table>
 ```
 
@@ -238,7 +238,7 @@ Go to **Contents** and drag and drop an **HTML** component on the sixth row. Cli
 
 In the **Edit HTML** popup, paste this HTML:
 
-```
+```javascript
 {{#each xxx as |item|}}<table width="500"><tbody><tr><td><img src="{{item.--aepTenantId--.core.imageURL}}" width="100"></td><td><table><tbody><tr><td><b>{{item.name}}</b><br>{{item.--aepTenantId--.core.subCategory}}<br><b>{{item.priceTotal}}</b><br>&nbsp;<br>Article no: {{item.SKU}}</td></tr></tbody></table></td><td>{{item.quantity}}</td><td><b>{{item.priceTotal}}</b></td></tr></tbody></table>{{/each}}
 ```
 
@@ -290,7 +290,7 @@ Next, go to **Contents** and drag and drop an **HTML** component on the seventh 
 
 In the **Edit HTML** popup, paste this HTML:
 
-```
+```html
 <table><tbody><tr><td><b>Subtotal</b><br>Delivery charge (included)</td><td align="right"><b>xxx</b><br><b>5</b></td></tr><tr><td colspan="2" width="500"><hr></td></tr><tr><td><b>Total including VAT</b></td><td align="right"><b>xxx</b></td></tr></tbody></table>
 ```
 

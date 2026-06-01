@@ -32,7 +32,7 @@ For this exercise, you need to use:
 
 ## 1.1.6.1 Access Agent Orchestrator
 
-Go to [https://ao.adobe.io/](https://ao.adobe.io/){target="_blank"}. Log in using your Adobe account. After logging in, make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
+Go to [https://ao.adobe.io/](https://ao.adobe.io/). Log in using your Adobe account. After logging in, make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
 
 ![AO](./images/aov2lab1.png)
 
@@ -50,7 +50,7 @@ You may get this request. Provide the required permissions.
 
 ![AO](./images/aov2lab19.png)
 
-You may get this request. Provide the required permissions. 
+You may get this second request. Provide the required permissions. 
 
 ![AO](./images/aov2lab19a.png)
 
@@ -151,12 +151,12 @@ You should then see something like this.
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Which of these journeys has 'Fiber' in its name?
+Show me the journeys that have 'Fiber' in their name.
 ```
 
 ![Agent Orchestrator](./images/aotechlab14.png)
 
-You should then see this. Click the link on one of the journeys.
+You should then see this. Click the link to open the deployed journey **CitiSignal - Fiber Max Launch Promotion**.
 
 ![Agent Orchestrator](./images/aotechlab15.png)
 
@@ -200,6 +200,19 @@ You should then see this.
 
 ![Agent Orchestrator](./images/aotechlab20.png)
 
+Let's see if another data view has more data baout this journey. Enter the following **Prompt** and click the **send** button.
+
+```
+can you try using the AJO Enabled Data View to see if there is more data about this journey there?
+```
+
+![Agent Orchestrator](./images/aotechlab20a.png)
+
+You should then see this.
+
+![Agent Orchestrator](./images/aotechlab20b.png)
+
+
 ## 1.1.6.8 Create a new audience
 
 **Intent**
@@ -214,21 +227,33 @@ Create an audience that combines people with an average download usage per month
 
 ![Agent Orchestrator](./images/aotechlab32.png)
 
-If similar, already existing audiences are already available, you should see a similar message.
+If similar, already existing audiences are already available, you should see a similar message. Select **Create a new one anyway** and click **Submit**.
 
 ![Agent Orchestrator](./images/aotechlab32a.png)
 
-Review the plan. Click **Approve plan**.
+Select the name for your audience.
 
-![Agent Orchestrator](./images/aotechlab33.png)
+![Agent Orchestrator](./images/aotechlab33a.png)
+
+Select **Batch**.
+
+![Agent Orchestrator](./images/aotechlab33b.png)
+
+Click **Submit**.
+
+![Agent Orchestrator](./images/aotechlab33c.png)
+
+Review the plan, and then click **Approve Plan**.
+
+![Agent Orchestrator](./images/aotechlab33d.png)
+
+If prompted, provide the permissions to perform this task.
+
+![Agent Orchestrator](./images/aotechlab33e.png)
 
 Your audience has now been created.
 
 ![Agent Orchestrator](./images/aotechlab38.png)
-
->[!NOTE]
->
->When creating a new audience, it will take 24 hours before the audience is available to AI Assistant for further usage.
 
 ## 1.1.6.9 Find existing audiences aligned to high usage and check if they are in use
 
@@ -258,24 +283,16 @@ List how much these audiences changed over the last few days.
 
 ![Agent Orchestrator](./images/ao31.png)
 
-You should then see this. Click **Show more**.
+You should then see this.
 
 ![Agent Orchestrator](./images/ao31a.png)
-
-You should then see this. Click to close the right pane.
-
-![Agent Orchestrator](./images/ao31b.png)
-
-Scroll down a little bit to review the steps taken.
-
-![Agent Orchestrator](./images/ao31c.png)
 
 There are some existing audiences already for "heavy downloaders". Let's see if they are in use already.
 
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Which of the above are used in a journey? 
+Which of the above audiences are used in a journey?
 ```
 
 ![Agent Orchestrator](./images/ao50.png)
@@ -283,18 +300,6 @@ Which of the above are used in a journey?
 You should then see something similar to this.
 
 ![Agent Orchestrator](./images/ao51.png)
-
-You should now verify if that journey is active. Enter the following **Prompt** and click the **send** button.
-
-```javascript
-Are these journeys active? 
-```
-
-![Agent Orchestrator](./images/ao52.png)
-
-You should then see something similar to this. None of these journeys are currently running.
-
-![Agent Orchestrator](./images/ao53.png)
 
 For the upcoming launch of Fiber Max, you should now create a new journey.
 
@@ -309,38 +314,22 @@ Heavy Downloaders ∩ SciFi Preference.
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
+Create a  journey using the audience I created before. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
 ![Agent Orchestrator](./images/aocj1.png)
 
-You should then see this. Enter `yes` and click generate.
+You should then see this. Review the plan, and then click **Approve Plan**.
 
 ![Agent Orchestrator](./images/aocj2.png)
 
-You should then see this. Enter `yes` and click generate.
+You should then see this. Enter `it looks fine, go ahead` and click generate.
 
 ![Agent Orchestrator](./images/aocj3.png)
 
-You should then see this. Enter `The first one` and click send.
+If prompted, provide the permissions to perform this task.
 
 ![Agent Orchestrator](./images/aocj4.png)
-
-You should then see this. Enter `yes` and click send.
-
-![Agent Orchestrator](./images/aocj5.png)
-
-Review the response. Enter `yes` and click send.
-
-![Agent Orchestrator](./images/aocj6.png)
-
-Click **Review**.
-
-![Agent Orchestrator](./images/aocj7.png)
-
-Update the journey name with your LDAP to make it unique. Click **Save**.
-
-![Agent Orchestrator](./images/aocj8.png)
 
 Your journey has now been created in draft mode.
 
@@ -360,31 +349,21 @@ Review the information.
 
 ![Agent Orchestrator](./images/aocj81.png)
 
-Scroll down and select the **Sources** to find that the information is sourced from Experience League.
+Scroll down and review the **Sources** to find that the information is sourced from Experience League.
 
 ![Agent Orchestrator](./images/aocj82.png)
 
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-List any conflicts for the journey +CitiSignal Fiber Max
+List any conflicts for the journey "CitiSignal - Fiber Max Launch Promotion".
 ```
-
-Then manually select the journey **CitiSignal - Fiber Max Launch Promotion** from the list.
 
 ![Agent Orchestrator](./images/aocj70.png)
 
-You should then see this. Click **send**.
+You should then see this. Review the journey conflict information.
 
 ![Agent Orchestrator](./images/aocj70a.png)
-
-Review the journey conflict information.
-
-![Agent Orchestrator](./images/aocj71.png)
-
-Scroll down to find more journey conflict details.
-
-![Agent Orchestrator](./images/aocj72.png)
 
 ## 1.1.6.12 Experiments
 
@@ -398,19 +377,7 @@ How are the experiments performing for the journey named 'CitiSignal - Fiber Max
 
 You should then see this:
 
-![Agent Orchestrator](./images/aoea1.png)
-
-Scroll down and click one of the suggestions. Click **send**.
-
->[!NOTE]
->
->Suggestions are dynamic so you should expect to see different suggestions each time a response is generated. Your suggestions will likely be different than the suggestions shown in this screenshot.
-
-![Agent Orchestrator](./images/aoea2.png)
-
-You should then see a detailed answer related to the suggestion that was chosen.
-
-![Agent Orchestrator](./images/aoea4.png)
+![Agent Orchestrator](./images/aoea1.png) 
 
 You've now completed this lab.
 

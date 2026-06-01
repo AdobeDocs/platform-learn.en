@@ -158,7 +158,7 @@ Select **Website links** and click **Continue**.
 
 You should then see this. Enter `CitiSignal website` as name for your knowledge source. 
 
-You now need to upload a csv file that contains the links of your website. Download [CitiSignal website links CSV file](./assets/citisignal-website-links.csv) to your desktop.
+You now need to upload a csv file that contains the links of your website. Download [CitiSignal website links CSV file](./assets/citisignal-website-links.csv.zip) to your desktop.
 
 ![Brand Concierge](./images/bc8z.png)
 
@@ -227,7 +227,7 @@ You'll then be back here. Processing will take 10-20 minutes so you'll have to c
 
 ![Brand Concierge](./images/bc25.png)
 
-## 1.4.1.3 AEP onboarding steps
+## 1.4.1.3 Data Collection onboarding steps
 
 Brand Concierge uses Adobe Experience Platform to store interaction data from conversations. The connection between Brand Concierge and Experience Platform requires a datastream to be configured and used by Brand Concierge.
 
