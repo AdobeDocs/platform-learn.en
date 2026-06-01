@@ -134,7 +134,7 @@ You should then see this.
 
 **Intent** 
 
-Discover which active or recently concluded journeys include “Fiber” in the title—e.g., “Fiber Upgrade NYC – Sept”, “Fiber Trial – Streaming Bundle”. 
+Discover which active or recently concluded journeys include "Fiber" in the title—e.g., "Fiber Upgrade NYC – Sept", "Fiber Trial – Streaming Bundle". 
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -168,7 +168,7 @@ A new window will be opened, and you'll be taken to the journey details overview
 
 **Intent**:
 
-Understand the seed definition of the “CitiSignal - Fiber Max Launch Promotion” journey—what traits drove targeting (e.g., “SciFi Genre Preference,” “4+ devices,” “stream ≥ 300GB/month”). 
+Understand the seed definition of the "CitiSignal - Fiber Max Launch Promotion" journey—what traits drove targeting (e.g., "SciFi Genre Preference," "4+ devices," "stream ≥ 300GB/month"). 
 
 Enter the following **Prompt** and click the **send** button.
 

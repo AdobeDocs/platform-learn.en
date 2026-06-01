@@ -178,7 +178,7 @@ Unmatched Speed: Enjoy lightning-fast downloads and uploads powered by cutting-e
 Reliable Performance: Consistent connectivity for work, entertainment, and everything in between.
 Future-Ready: Built to handle the growing demands of smart homes and digital lifestyles.
 Unlimited Potential: No data caps, no throttling—just pure speed.
-Why Choose CitiSignal Fiber Max? Stay ahead with internet that works as hard as you do. Whether you’re powering a remote office or streaming in 4K, Fiber Max ensures you never miss a beat.
+Why Choose CitiSignal Fiber Max? Stay ahead with internet that works as hard as you do. Whether you're powering a remote office or streaming in 4K, Fiber Max ensures you never miss a beat.
 ```
 
 **CTA Text**: `Upgrade now by signing your new contract!`
@@ -317,3 +317,4 @@ Go back to your AEM UI and refresh your screen. You can now see your new variati
 Go Back to [AEM & Agents](./aemagents.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}
+
