@@ -1,6 +1,6 @@
 ---
-title: Partner Labs New Orleans Agenda
-description: Partner Labs New Orleans Agenda
+title: Partner Labs New Orleans Attendees
+description: Partner Labs New Orleans Attendees
 doc-type: multipage-overview
 ---
 # Partner Labs New Orleans Attendees
