@@ -22,9 +22,9 @@ exl-id: 2f9a3eef-16ef-497c-97f7-377ff9ed2f82
 For this exercise, you need to use:
 
 - **Instance**: **Adobe Tech Insiders**
-- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Username**: **adobetechinsiders-XXX@adobeeventlab.com**
 - **Password**: use the password that was shared with you
-- **AEM Program**: **Tech Insiders - AEM + ACCS --userNumber--** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+- **AEM Program**: **Tech Insiders - AEM + ACCS XXX** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 - **Workfront URL**: [https://experience.adobe.com/#/@experienceplatform/so:experienceplatformworkfrontplanningv2-Production/workfront](https://experience.adobe.com/#/@experienceplatform/so:experienceplatformworkfrontplanningv2-Production/workfront)
 
 ## 1.8.1.1 Workfront Workflow Terminology
@@ -91,7 +91,7 @@ In the left menu, scroll down to **Documents** and then click **Experience Manag
 
 For the name of your integration, use `--aepUserLdap-- - CitiSignal AEM + ACCS`.
 
-Open the **Experience Manager repository** dropdown and select your AEM CS instance, which should be named `Tech Insiders - AEM + ACCS --userNumber-- dev author`.
+Open the **Experience Manager repository** dropdown and select your AEM CS instance, which should be named `Tech Insiders - AEM + ACCS XXX dev author`.
 
 Click **Save**.
 

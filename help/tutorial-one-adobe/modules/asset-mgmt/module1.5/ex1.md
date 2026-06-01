@@ -20,7 +20,7 @@ product_v2:
 For this exercise, you need to use:
 
 - **Instance**: **Adobe Tech Insiders**
-- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Username**: **adobetechinsiders-XXX@adobeeventlab.com**
 - **Password**: use the password that was shared with you
 
 ## 1.5.1.1 Create your ACCS instance

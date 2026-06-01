@@ -18,9 +18,9 @@ exl-id: 39854816-4572-46e5-8fe4-861da1eb41cf
 For this exercise, you need to use:
 
 - **Instance**: **Adobe Tech Insiders**
-- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Username**: **adobetechinsiders-XXX@adobeeventlab.com**
 - **Password**: use the password that was shared with you
-- **AEM Program**: **Tech Insiders - AEM + ACCS --userNumber--** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+- **AEM Program**: **Tech Insiders - AEM + ACCS XXX** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 - **Workfront URL**: [https://experience.adobe.com/#/@experienceplatform/so:experienceplatformworkfrontplanningv2-Production/workfront](https://experience.adobe.com/#/@experienceplatform/so:experienceplatformworkfrontplanningv2-Production/workfront)
 
 ## 1.8.2.1 Verify reference images in Frame.io

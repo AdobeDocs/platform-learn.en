@@ -32,7 +32,7 @@ level_v2:
 For this exercise, you need to use:
 
 - **Instance**: **Adobe Tech Insiders**
-- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Username**: **adobetechinsiders-XXX@adobeeventlab.com**
 - **Password**: use the password that was shared with you
 
 ## 1.7.1.1 Remove background

@@ -27,10 +27,10 @@ topic_v2:
 For this exercise, you need to use:
 
 - **Instance**: **Adobe Tech Insiders**
-- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Username**: **adobetechinsiders-XXX@adobeeventlab.com**
 - **Password**: use the password that was shared with you
-- **AEM Program**: **Tech Insiders - AEM + ACCS --userNumber--** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
-- **GitHub repository**: [https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs](https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs)
+- **AEM Program**: **Tech Insiders - AEM + ACCS XXX** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+- **GitHub repository**: [https://github.com/woutervangeluwe/techinsidersXXX-citisignal-aem-accs](https://github.com/woutervangeluwe/techinsidersXXX-citisignal-aem-accs)
 
 ## Introduction
 
@@ -45,8 +45,8 @@ Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){tar
 Click to open your Cloud Manager Program, which should be named like one of the below:
 
 -  `--aepUserLdap-- - CitiSignal AEM+ACCS`
--  For in-person tech lab sessions: **Tech Insiders - AEM + ACCS --userNumber--** --userNumber--
--  For guided on-demand sessions: **Tech Insiders On Demand - AEM + ACCS --userNumber--**
+-  For in-person tech lab sessions: **Tech Insiders - AEM + ACCS XXX** XXX
+-  For guided on-demand sessions: **Tech Insiders On Demand - AEM + ACCS XXX**
 
 ![ACCS+AEM Assets](./images/accsaemassets1.png)
 

@@ -14,7 +14,6 @@ In order to follow the steps in this lab as documented below, the following acce
 - Access to Real-Time CDP, Journey Optimizer and Customer Journey Analytics
 - Access to AI Assistant in Adobe Experience Cloud
 - Access to AEP Agent Orchestrator
-- Node.js 18+ needs to be installed on your system
 
 >[!IMPORTANT]
 >
