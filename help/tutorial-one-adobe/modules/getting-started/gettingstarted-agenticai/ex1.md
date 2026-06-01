@@ -22,7 +22,7 @@ An example of such values can be found below. Currently, these values can't be u
 | AEP Tenant ID         | `--aepTenantId--` | `_experienceplatform` |
 | AEP Sandbox Name         | `--aepSandboxName--` | `one-adobe` |
 | Learner Profile LDAP        | `--aepUserLdap--` | `vangeluw`|
-| User Number        | `--userNumber--` | `1`|
+| User Number        | `XXX` | `1`|
 
 As an example, in the below screenshot you can see a reference to `aepImsOrgName`.
 

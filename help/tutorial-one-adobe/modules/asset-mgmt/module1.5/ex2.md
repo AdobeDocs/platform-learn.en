@@ -24,10 +24,10 @@ product_v2:
 For this exercise, you need to use:
 
 - **Instance**: **Adobe Tech Insiders**
-- **Username**: **adobetechinsiders---userNumber--@adobeeventlab.com**
+- **Username**: **adobetechinsiders-XXX@adobeeventlab.com**
 - **Password**: use the password that was shared with you
-- **AEM Program**: **Tech Insiders - AEM + ACCS --userNumber--** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
-- **GitHub repository**: [https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs](https://github.com/woutervangeluwe/techinsiders--userNumber---citisignal-aem-accs)
+- **AEM Program**: **Tech Insiders - AEM + ACCS XXX** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+- **GitHub repository**: [https://github.com/woutervangeluwe/techinsidersXXX-citisignal-aem-accs](https://github.com/woutervangeluwe/techinsidersXXX-citisignal-aem-accs)
 
 ## Configure the link between ACCS and AEM CS
 
