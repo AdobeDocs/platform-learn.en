@@ -17,7 +17,7 @@ Find your credentials to log in here: [Partner Labs New Orleans Attendees](./ai-
 | 10.45 AM | 11.00 AM | Break | - |
 | 11.00 AM | 12.00 PM | Lab - [Coworker Harness](./modules/agents/module1.1/ex6.md){target="_blank"} | - |
 | 12.00 PM | 01.00 PM | Lunch | - |
-| 01.00 PM | 02.15 PM | Lab - [Adobe Marketing Agent for ChatGPT Enterprise](./modules/agents/module1.1/ex2.md){target="_blank"} <br><br>Lab - [Adobe Marketing Agent for Microsoft 365 Copilot](./modules/agents/module1.1/ex3.md){target="_blank"} | **AMA MCP Server URL**: <br>https://aep-ai-ama.adobe.io/mcp <br> <br>[M365 Copilot Manifest](./assets/manifest/manifestv1.1.1.zip) |
+| 01.00 PM | 02.15 PM | Lab - [Adobe Marketing Agent for ChatGPT Enterprise](./modules/agents/module1.1/ex2.md){target="_blank"} <br><br>Lab - [Adobe Marketing Agent for Microsoft 365 Copilot](./modules/agents/module1.1/ex3.md){target="_blank"} | **AMA MCP Server URL**: <br>https://aep-ai-ama.adobe.io/mcp <br>  |
 | 02.15 PM | 02.30 PM | Break | - |
 | 02.30 PM | 04.15 PM | Lab - [AEM & Agents](./modules/agents/module1.6/aemagents.md){target="_blank"} | - |
 | 04.15 PM | 05.00 PM | Lab - [Analytics & Agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} (Optional) | **AA MCP Server**: <br>https://mcp-gateway.adobe.io/aa/mcp<br><br>**CJA MCP Server**: <br>https://mcp-gateway.adobe.io/cja/mcp  |
@@ -31,7 +31,7 @@ Find your credentials to log in here: [Partner Labs New Orleans Attendees](./ai-
 | 12.00 PM | 01.00 PM | Lunch | - |
 | 01.00 PM | 02.30 PM | Lab - [Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | - |
 | 02.30 PM | 02.45 PM | Break | - |
-| 02.45 PM | 04.30 PM | Lab - [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](./modules/creation-production/module1.8/esm.md){target="_blank"} | - |
+| 02.45 PM | 04.30 PM | Lab - [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](./modules/creation-production/module1.8/esm.md){target="_blank"} | <br>[MacArm.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/ACD/MacArm.zip)<br>[MacIntel.dmg](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/ACD/MacIntel.dmg)<br>[Winx64.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/ACD/Winx64.zip)<br>[WinArm64.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/ACD/WinArm64.zip) |
 | 04.30 PM | 05.00 PM | Q&A & Wrap-up | - |
 
 ## Day 3 - June 4, 2026
