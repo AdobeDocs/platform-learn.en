@@ -29,7 +29,7 @@ Find your credentials to log in here: [Partner Labs New Orleans Attendees](./ai-
 | 09.00 AM | 09.20 AM | Welcome & Recap | - |
 | 09.20 AM | 12.00 PM | Lab - [Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | - |
 | 12.00 PM | 01.00 PM | Lunch | - |
-| 01.00 PM | 02.30 PM | Lab - [Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | - |
+| 01.00 PM | 02.30 PM | Lab - [Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | Adobe Tech Insiders 2 IMS Org ID: **450981EE69FC3BD80A495FAD@AdobeOrg** |
 | 02.30 PM | 02.45 PM | Break | - |
 | 02.45 PM | 04.30 PM | Lab - [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](./modules/creation-production/module1.8/esm.md){target="_blank"} | <br>[MacArm.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/ACD/MacArm.zip)<br>[MacIntel.dmg](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/ACD/MacIntel.dmg)<br>[Winx64.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/ACD/Winx64.zip)<br>[WinArm64.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/ACD/WinArm64.zip) |
 | 04.30 PM | 05.00 PM | Q&A & Wrap-up | - |
