@@ -32,6 +32,10 @@ For this exercise, you need to use:
 - **Password**: use the password that was shared with you
 - **AEM Program**: **Tech Insiders - AEM + ACCS XXX** which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 - **GitHub repository**: [https://github.com/woutervangeluwe/techinsidersXXX-citisignal-aem-accs](https://github.com/woutervangeluwe/techinsidersXXX-citisignal-aem-accs)
+- Access your website here:
+  - **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/`** (replace X by your number)
+  - **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/`** (replace X by your number)
+  - **`https://techinsidersX.adobedemosystem.com/`**  (replace X by your number)
 
 ## 1.4.2.1 Configure your website to show Brand Concierge - AEM Author
 

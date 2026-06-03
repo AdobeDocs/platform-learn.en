@@ -22,6 +22,10 @@ For this exercise, you need to use:
 - **Instance**: **Adobe Tech Insiders**
 - **Username**: **adobetechinsiders-XXX@adobeeventlab.com**
 - **Password**: use the password that was shared with you
+- Access your website here:
+  - **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/`** (replace X by your number)
+  - **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/`** (replace X by your number)
+  - **`https://techinsidersX.adobedemosystem.com/`**  (replace X by your number)
 
 ## 1.5.1.1 Create your ACCS instance
 
