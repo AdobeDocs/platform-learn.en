@@ -62,49 +62,41 @@ Click **Generate Password** again.
 
 ![ACCS+AEM Assets](./images/accsaemassets4.png)
 
-You should then have a password available. Next, click the **copy** icon next to the **Git command line** field.
+You should then have a password available. Next, click the **copy** icon next to the **URL** field.
 
 ![ACCS+AEM Assets](./images/accsaemassets5.png)
 
-Create a new directory in a location of choice on your computer and name it **AEM Pipeline GitHub**.
+Open **GitHub Desktop**. Go to **File** and select **Clone Repository...**.
 
-![ACCS+AEM Assets](./images/accsaemassets6.png)
+![ACCS+AEM Assets](./images/ghdskt1.png)
 
-Right-click your folder and then select **New Terminal at Folder**.
+Paste the URL that you copied before in the field **Repository URL** and then click **Clone**.
 
-![ACCS+AEM Assets](./images/accsaemassets7.png)
+![ACCS+AEM Assets](./images/ghdskt2.png)
 
-You should then see this.
+First, copy the **Username** value and then second, copy the **Password** value.
 
-![ACCS+AEM Assets](./images/accsaemassets8.png)
+![ACCS+AEM Assets](./images/ghdskt4.png)
 
-Paste the **Git command line** command that you copied before in the Terminal window.
+Paste the **Username** and **Password** here. Click **Ok**.
 
-![ACCS+AEM Assets](./images/accsaemassets9.png)
+![ACCS+AEM Assets](./images/ghdskt3.png)
 
-You need to enter a user name. Copy the user name from the Cloud Manager's Program Pipeline **Access Repo Info** and hit **enter**.
+You should then see this. Click **Show in Finder**.
 
-![ACCS+AEM Assets](./images/accsaemassets10.png)
+![ACCS+AEM Assets](./images/ghdskt5.png)
 
-Next, you need to enter the password. Copy the password from the Cloud Manager's Program Pipeline **Access Repo Info** and hit **enter**.
+You should then see a folder like this one. Open it.
 
-![ACCS+AEM Assets](./images/accsaemassets11.png)
+![ACCS+AEM Assets](./images/ghdskt6.png)
 
-This maye take a minute. Once completed, you'll have a local opy of the Git Repo that is linked to your Program's Pipeline.
+Select all the files and then delete them.
 
-![ACCS+AEM Assets](./images/accsaemassets12.png)
+![ACCS+AEM Assets](./images/ghdskt7.png)
 
-You'll see a new directory in the **AEM Pipeline GitHub** directory. Open that directory.
+You should then have an empty folder.
 
-![ACCS+AEM Assets](./images/accsaemassets13.png)
-
-Select all the files in that directory and delete all of them. 
-
-![ACCS+AEM Assets](./images/accsaemassets14.png)
-
-Make sure the directory is empty.
-
-![ACCS+AEM Assets](./images/accsaemassets15.png)
+![ACCS+AEM Assets](./images/ghdskt8.png)
 
 Go to [https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce). Click **<> Code** and then select **Download ZIP**. Download the file and then drop it on your desktop.
 
@@ -114,11 +106,19 @@ Next, copy the file **assets-commerce-main.zip** to your desktop and unzip it. O
 
 ![ACCS+AEM Assets](./images/accsaemassets16.png)
 
-Copy all the files from the directory **assets-commerce-main** to the empty directory of your Program's Pipeline Repository directory.
+Copy all the files from the directory **assets-commerce-main** to the empty directory of your GitHub Desktop's Repository directory.
 
 ![ACCS+AEM Assets](./images/accsaemassets17.png)
 
-Next, open **Microsoft Visual Studio Code** and open the folder that contains your Program's Pipeline Repository in **Microsoft Visual Studio Code**.
+You should then see this.
+
+![ACCS+AEM Assets](./images/accsaemassets17a.png)
+
+Next, open **Microsoft Visual Studio Code** and click **Open...**.
+
+![ACCS+AEM Assets](./images/accsaemassets17b.png)
+
+Open the folder that contains your Program's Pipeline Repository in **Microsoft Visual Studio Code**.
 
 ![ACCS+AEM Assets](./images/accsaemassets18.png)
 
@@ -132,37 +132,21 @@ Click **Replace**.
 
 ![ACCS+AEM Assets](./images/accsaemassets20.png)
 
-The new files are now ready to be uploaded back to the Git Repo that is linked to your Program's Pipeline Repository. To do that, open the folder **AEM Pipeline GitHub** and right-click on the folder that contains the new files. Select **New Terminal at Folder**.
+The new files are now ready to be uploaded back to the Git Repo that is linked to your Program's Pipeline Repository. To do that, go back to **GitHub Desktop**. You should see something similar, with changed files waiting to be committed.
 
 ![ACCS+AEM Assets](./images/accsaemassets21.png)
 
-You should then see this. Paste the following command and hit **enter**.
-
-```
-git add .
-```
+Enter `add assets integration` and then click **Commit 13 files to main**.
 
 ![ACCS+AEM Assets](./images/accsaemassets22.png)
 
-You should then see this. Paste the following command and hit **enter**.
-
-```
-git commit -m "add assets integration"
-```
+You should then see this. Click **Push origin**.
 
 ![ACCS+AEM Assets](./images/accsaemassets23.png)
 
-You should then see this. Paste the following command and hit **enter**.
-
-```
-git push origin main
-```
-
-![ACCS+AEM Assets](./images/accsaemassets24.png)
-
 You should then see this. Your changes have now been deployed to your Program's Pipeline Git Repo.
 
-![ACCS+AEM Assets](./images/accsaemassets25.png)
+![ACCS+AEM Assets](./images/accsaemassets24.png)
 
 Go back to Cloud Manager and click **Close**.
 
