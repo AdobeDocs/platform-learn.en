@@ -34,6 +34,6 @@ Learn how to use multi-entity targeting in Adobe Journey Optimizer to move beyon
 
 This video demonstrates how to target journeys by subscription ID, account ID, or order ID, enabling more precise audience activation and personalized engagement when a single customer is associated with multiple business entities.
 
-For more information, please visit [the documentation](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/supplemental-identifier){target="_blank"}.
+For more information about this feature, please visit [the documentation](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/supplemental-identifier){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3491835/?learn=on)
