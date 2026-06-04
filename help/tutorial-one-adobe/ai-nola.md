@@ -9,6 +9,7 @@ doc-type: multipage-overview
 
 Find your credentials to log in here: [Partner Labs New Orleans Attendees](./ai-nola-attendees.md)
 
+
 ## Day 1 - June 2, 2026 
 
 | Start Time | End Time | Session | Resource |
@@ -17,7 +18,7 @@ Find your credentials to log in here: [Partner Labs New Orleans Attendees](./ai-
 | 10.45 AM | 11.00 AM | Break | - |
 | 11.00 AM | 12.00 PM | Lab - [Coworker Harness](./modules/agents/module1.1/ex6.md){target="_blank"} | [Slides](./assets/pdf/Coworker.pdf) |
 | 12.00 PM | 01.00 PM | Lunch | - |
-| 01.00 PM | 02.15 PM | Lab - [Adobe Marketing Agent for ChatGPT Enterprise](./modules/agents/module1.1/ex2.md){target="_blank"} <br><br>Lab - [Adobe Marketing Agent for Microsoft 365 Copilot](./modules/agents/module1.1/ex3.md){target="_blank"} | [Slides](./assets/pdf/AMA.pdf)  |
+| 01.00 PM | 02.15 PM | Lab - [Adobe Marketing Agent for ChatGPT Enterprise](./modules/agents/module1.1/ex2.md)<br><br>Lab - [Adobe Marketing Agent for Microsoft 365 Copilot](./modules/agents/module1.1/ex3.md){target="_blank"} | [Slides](./assets/pdf/AMA.pdf)  |
 | 02.15 PM | 02.30 PM | Break | - |
 | 02.30 PM | 04.15 PM | Lab - [AEM & Agents](./modules/agents/module1.6/aemagents.md){target="_blank"} | [Slides](./assets/pdf/AEMAgents.pdf) |
 | 04.15 PM | 05.00 PM | Lab - [Analytics & Agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} (Optional) | |
