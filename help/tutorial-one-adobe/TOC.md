@@ -310,4 +310,3 @@ recommendations: noDisplay,noCatalog
       
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + {hide-from-toc} [Partner Labs New Orleans Agenda](/help/tutorial-one-adobe/ai-nola.md)
-+ {hide-from-toc} [Partner Labs New Orleans Attendees](/help/tutorial-one-adobe/ai-nola-attendees.md)
