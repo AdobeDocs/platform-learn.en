@@ -9,7 +9,7 @@ doc-type: multipage-overview
 
 Find your credentials to log in here: [Partner Labs New Orleans Attendees](./ai-nola-attendees.md)
 
-## Day 1 - June 2, 2026
+## Day 1 - June 2, 2026 
 
 | Start Time | End Time | Session | Resource |
 |--- |--- |--- |--- |
