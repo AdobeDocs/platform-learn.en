@@ -5,7 +5,7 @@ doc-type: multipage-overview
 ---
 # Partner Labs New Orleans Agenda
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px"} 
 
 ## Day 1 - June 2, 2026 
 
