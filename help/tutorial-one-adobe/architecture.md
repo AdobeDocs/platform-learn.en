@@ -14,9 +14,19 @@ product_v2:
 
 ## One Adobe Architecture Overview
 
-In this video, you'll learn about the architecture behind the full end-to-end One Adobe tutorial.
+In these 3 videos, you'll learn about the architecture behind the full end-to-end One Adobe tutorial.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
+## Part 1: Content
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481414?quality=12&learn=on)
+
+## Part 2: Data
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
+
+## Part 3: Agentic AI
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
 
 Reuse the LucidChart diagram [here](https://lucid.app/lucidchart/701cdd58-203c-4190-be85-1947119c4b09/view).
 

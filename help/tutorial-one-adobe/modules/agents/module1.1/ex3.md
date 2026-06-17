@@ -31,11 +31,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479158?quality=12&learn=on)
 
->[!IMPORTANT]
->
->Before you begin, read the below instructions!
-
-## Instructions: Partner Lab New Orleans
+## Instructions for live workshops
 
 For this exercise, you need to use:
 

@@ -15,11 +15,7 @@ In order to follow the steps in this lab as documented below, the following acce
 - Access to AI Assistant in Adobe Experience Cloud
 - Access to AEP Agent Orchestrator
 
->[!IMPORTANT]
->
->Before you begin, read the below instructions!
-
-## Instructions: Partner Lab New Orleans
+## Instructions for live workshops
 
 For this exercise, you need to use:
 

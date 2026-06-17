@@ -21,7 +21,7 @@ subfeature_v2:
 >
 >Before you begin, read the below instructions!
 
-## Instructions: Partner Lab New Orleans
+## Instructor-Led Training (ILT) Instructions
 
 IF YOUR NUMBER IS BETWEEN **1** and **95**, you need to use the following environment details for setting up Brand Concierge:
 
@@ -36,6 +36,7 @@ IF YOUR NUMBER IS BETWEEN **95** and **180**, you need to use:
 - **Sandbox**: **techinsidersXXX** and replace XXX by the number that was assigned to you
 - **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
 - **Password**: use the password that was shared with you
+
 
 ## 1.4.1.1 Brand Concierge overview
 
