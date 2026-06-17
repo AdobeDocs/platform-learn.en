@@ -199,7 +199,7 @@ You should then see this.
 
 ![Agent Orchestrator](./images/aotechlab20.png)
 
-Let's see if another data view has more data baout this journey. Enter the following **Prompt** and click the **send** button.
+Let's see if another data view has more data about this journey. Enter the following **Prompt** and click the **send** button.
 
 ```
 can you try using the AJO Enabled Data View to see if there is more data about this journey there?
