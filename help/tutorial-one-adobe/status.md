@@ -110,8 +110,9 @@ Below is an overview of the status of the content in this tutorial.
 
 | Name                   | Last Update | Working 100% | Remarks | Time Investment |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"}      | 02/02/2026        | Yes | - | 60min |
-| [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"}      | 02/02/2026        | No | Content being developed | TBD |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"}      | 17/06/2026        | Yes | - | 120min |
+| [1.2 CX Enterprise Coworker](./modules/agents/module1.2/coworker.md){target="_blank"}      | 17/06/2026         | Yes | - | 60min |
+| [1.3 Agentic Composer](./modules/agents/module1.3/composer.md){target="_blank"}      | 17/06/2026        | No | Content being developed | TBD |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"}      | 23/01/2026        | Yes | - | 90min |
 | [1.5 Analytics & Agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"}      | 02/02/2026        | Yes        | - | 45min |
 | [1.6 Adobe Experience Manager & Agents](./modules/agents/module1.6/aemagents.md){target="_blank"}      | 11/03/2026        | Yes        | - | 90min |

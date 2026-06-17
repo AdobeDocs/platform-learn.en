@@ -11,13 +11,10 @@ product_v2:
 ---
 # 1.2 CX Enterprise Coworker
 
-## Learning Objectives
+CX Enterprise Coworker is an enterprise AI-powered teammate built for customer experience and marketing work.
+Whether you’re launching campaigns or responding to new signals, CX Enterprise Coworker keeps work moving.
 
-In this module, you will explore CX Enterprise Coworker.
-
-## Prerequisites
-
-- ...
+Grounded in your brand, business processes, and customer context, it continuously evaluates outcomes, routes approvals at the right moments, and drives coordinated actions across workflows to deliver the right experiences.
 
 ## Exercises
 

@@ -29,6 +29,7 @@ For this exercise, you need to use:
 - **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
 - **Password**: use the password that was shared with you
 
+
 ## 1.2.1.1 Access Agent Orchestrator
 
 Go to [https://ao.adobe.io/](https://ao.adobe.io/). Log in using your Adobe account. After logging in, click your user initials in the bottom left part of the screen and make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
