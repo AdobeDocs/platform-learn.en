@@ -24,7 +24,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 >
 >Before you begin, read the below instructions!
 
-## Instructions: Partner Lab New Orleans
+## Instructions for live workshops
 
 For this exercise, you need to use:
 

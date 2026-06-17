@@ -22,7 +22,7 @@ topic_v2:
 >
 >Before you begin, read the below instructions!
 
-## Instructions: Partner Lab New Orleans
+## Instructor-Led Training (ILT) Instructions
 
 For this exercise, you need to use:
 
