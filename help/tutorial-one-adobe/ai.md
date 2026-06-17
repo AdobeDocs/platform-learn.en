@@ -47,6 +47,23 @@ Learn how to use Adobe Experience Platform Agents and Agent Orchestrator to:
 
 You'll also learn how to use Adobe Marketing Agent in combination with tools such as Microsoft 365 Copilot, ChatGPT for Enterprise, Google Gemini Enterprise and Claude.
 
+[1.2 CX Enterprise Coworker](./modules/agents/module1.2/coworker.md)
+
+**Goal** 
+
+Learn how to use CX Enterprise Coworker to: 
+
+- Analyze purchase trends
+- Identify high-propensity audiences
+- Validate journey performance
+- Create a new journey for the CitiSignal Fiber Max rollout
+
+[1.3 Agent Composer](./modules/agents/module1.3/composer.md)
+
+**Goal** 
+
+Learn how to use Agent Composer.
+
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Goal**

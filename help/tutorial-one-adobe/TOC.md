@@ -48,9 +48,12 @@ recommendations: noDisplay,noCatalog
     + [1.1.4 Adobe Marketing Agent for Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
     + [1.1.5 Adobe Marketing Agent for Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
     + [1.1.6 Coworker Harness](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
-  + 1.2 Getting Started with Agents and AI {#agents2}
-    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
-    + [1.2.1 Getting started with Agentic AI](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+  + 1.2 CX Enterprise Coworker {#agents2}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/coworker.md)
+    + [1.2.1 Getting started with CX Enterprise Coworker](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+  + 1.3 Agent Composer {#agents3}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.3/composer.md)
+    + [1.2.1 Getting started with Agent Composer](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
   + 1.4 Brand Concierge {#agents4}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
     + [1.4.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
