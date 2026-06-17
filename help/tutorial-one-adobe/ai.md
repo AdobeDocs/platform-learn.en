@@ -58,6 +58,12 @@ Learn how to use CX Enterprise Coworker to:
 - Validate journey performance
 - Create a new journey for the CitiSignal Fiber Max rollout
 
+[1.3 Agent Composer](./modules/agents/module1.3/composer.md)
+
+**Goal** 
+
+Learn how to use Agent Composer.
+
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Goal**

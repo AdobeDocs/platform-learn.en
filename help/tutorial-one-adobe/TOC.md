@@ -51,6 +51,9 @@ recommendations: noDisplay,noCatalog
   + 1.2 CX Enterprise Coworker {#agents2}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/coworker.md)
     + [1.2.1 Getting started with CX Enterprise Coworker](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+  + 1.3 Agent Composer {#agents3}
+    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.3/composer.md)
+    + [1.2.1 Getting started with Agent Composer](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
   + 1.4 Brand Concierge {#agents4}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
     + [1.4.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
