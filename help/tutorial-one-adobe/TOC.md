@@ -310,6 +310,6 @@ recommendations: noDisplay,noCatalog
       + [Overview](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
       + [3.1.1 Getting started with Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-      
+
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + {hide-from-toc} [Partner Labs New Orleans Agenda](/help/tutorial-one-adobe/ai-nola.md)
