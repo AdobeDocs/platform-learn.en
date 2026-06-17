@@ -56,7 +56,7 @@ Learn how to use CX Enterprise Coworker to:
 - Analyze purchase trends
 - Identify high-propensity audiences
 - Validate journey performance
-- Create a new journey for the CitiSignal Fiber Max rollout
+- Create a new journey for the CitiSignal Fiber Max rollout 
 
 [1.3 Agent Composer](./modules/agents/module1.3/composer.md)
 
