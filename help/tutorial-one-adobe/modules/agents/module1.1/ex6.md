@@ -27,7 +27,7 @@ For this exercise, you need to use:
 
 ## 1.1.6.1 Access Agent Orchestrator
 
-Go to [https://ao.adobe.io/](https://ao.adobe.io/). Log in using your Adobe account. After logging in, make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
+Go to [https://coworker.experience.adobe.io/chat](https://coworker.experience.adobe.io/chat). Sign in using your Adobe account. After logging in, make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
 
 ![AO](./images/aov2lab1.png)
 
