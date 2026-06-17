@@ -28,7 +28,7 @@ Download the architecture overview image [here](./assets/images/architecture_age
 
 ### Getting Started - Agentic AI
 
-[Getting started](./modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md){target="_blank"}
+[Getting started](./modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md){target="_blank"} 
 
 In this foundational module, you will prepare everything so that you can access and use the demo environment.
 
