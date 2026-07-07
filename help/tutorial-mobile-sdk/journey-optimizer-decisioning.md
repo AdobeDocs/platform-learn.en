@@ -1,11 +1,10 @@
 ---
-title: Create And Display Offers With Journey Optimizer Experience Decision Management
-description: Learn how to create and display offers with Platform Mobile SDK and Adobe Journey Optimizer Decision Management.
+title: Create And Display Offers With Journey Optimizer Experience Decisioning 
+description: Learn how to create and display offers with Platform Mobile SDK and Adobe Journey Optimizer Decisioning.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 jira: KT-14640
-exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
 TQID: https://experienceleague.adobe.com/cogzxUba6Z6ZCQ3ZOu3oXXSuxqe05OAP5FICWPs-Jhc
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
@@ -35,17 +34,17 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 ---
-# Create and display offers with Decision Management
+# Create and display offers with Decisioning
 
-Learn how to show offers from Journey Optimizer Decision Management in your mobile apps with Experience Platform Mobile SDK.
+Learn how to show offers from Journey Optimizer Decisioning in your mobile apps with Experience Platform Mobile SDK.
 
-Journey Optimizer Decision Management helps you to deliver the best offer and experience to your customers across all touchpoints  at the right time. Once designed, target your audience with personalized offers.
+Journey Optimizer Decisioning is the next generation of offer management and successor of Decision Management. The Decisioning feature empowers you to deliver personalized marketing offers by combining a centralized catalog of decision items with a powerful decision engine. Whether you're tailoring content for individual audiences or optimizing strategies with AI-powered rankings, Decisioning provides the tools to make data-driven decisions at scale. Dive into the key concepts such as decision items, rules, and policies, and explore how these elements work together to select and prioritize the best content for your campaigns. From managing collections and placements to leveraging Adobe Experience Platform data, this comprehensive guide helps you unlock smarter personalization and drive impactful customer experiences.
 
 ![Architecture](assets/architecture-ajo.png){zoomable="yes"}
 
-Decision management makes personalization easy with a central library of marketing offers and a decision engine that applies rules and constraints to rich, real-time profiles created by Adobe Experience Platform. As a result, it enables you to send your customers the right offer at the right time. See [About Decision Management](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning) for more information. 
+Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual. These decision items are seamlessly integrated into messages and experiences across Adobe Journey Optimizer channels: code-based experience, email, SMS, push notifications, and more. 
 
-
+In this lesson, the focus is on the use of the code-based experience channel to deliver offers in the mobile app. See [Decisioning](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/experience-decisioning-landing-page) for more information. 
 
 
 >[!NOTE]
@@ -57,7 +56,7 @@ Decision management makes personalization easy with a central library of marketi
 
 * Successfully built and run app with SDKs installed and configured.
 * Set up the app for Adobe Experience Platform.
-* Access to Journey Optimizer - Decision Management with the [proper permissions to manage offers and decisions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
+* Access to Journey Optimizer - Decisioning with the [proper permissions to manage offers and decisions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 
 ## Learning objectives
