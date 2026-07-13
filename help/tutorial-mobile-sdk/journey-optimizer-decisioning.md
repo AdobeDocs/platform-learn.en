@@ -38,7 +38,7 @@ topic_v2:
 
 Learn how to show offers from Journey Optimizer Decisioning in your mobile apps with Experience Platform Mobile SDK.
 
-Journey Optimizer Decisioning is the next generation of offer management and successor of Decision Management. The Decisioning feature empowers you to deliver personalized marketing offers by combining a centralized catalog of decision items with a powerful decision engine. Whether you're tailoring content for individual audiences or optimizing strategies with AI-powered rankings, Decisioning provides the tools to make data-driven decisions at scale. Dive into the key concepts such as decision items, rules, and policies, and explore how these elements work together to select and prioritize the best content for your campaigns. From managing collections and placements to leveraging Adobe Experience Platform data, this comprehensive guide helps you unlock smarter personalization and drive impactful customer experiences.
+Journey Optimizer Decisioning is the next generation of offer management and successor of [Decision Management](./journey-optimizer-offers.md). The Decisioning feature empowers you to deliver personalized marketing offers by combining a centralized catalog of decision items with a powerful decision engine. Whether you're tailoring content for individual audiences or optimizing strategies with AI-powered rankings, Decisioning provides the tools to make data-driven decisions at scale. Dive into the key concepts such as decision items, rules, and policies, and explore how these elements work together to select and prioritize the best content for your campaigns. From managing collections and placements to leveraging Adobe Experience Platform data, this comprehensive guide helps you unlock smarter personalization and drive impactful customer experiences.
 
 ![Architecture](assets/architecture-ajo.png){zoomable="yes"}
 
@@ -63,13 +63,12 @@ In this lesson, the focus is on the use of the code-based experience channel to 
 
 In this lesson, you will
 
-* Update your Edge configuration for Decision Management.
-* Update your tag property with the Offer Decisioning and Target extension.
+* Update your Edge configuration for Decisioning.
 * Update your schema to capture proposition events.
+* Configure a code-based experience channel configuration.
 * Validate setup in Assurance.
-* Create an offer decision, based on offers in Journey Optimizer - Decision Management.
-* Update your app to register the Optimizer extension.
-* Implement offers from Decision Management in your app.
+* Create a code-based experience campaign, based on offers in Journey Optimizer - Decision Management.
+* Implement offers from Decisioning in your app.
 
 
 ## Setup
@@ -84,32 +83,26 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
 
 1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
 1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
-1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Adobe Journey Optimizer]** are selected. If you do the Target lesson, select **[!UICONTROL Personalization Destinations]**, too. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) for more information.
+1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Adobe Journey Optimizer]** are enabled. 
+   * If you plan to only do the Decisioning lesson and not the Decision management lesson, you do not need to enable **[!UICONTROL Offer Decisioning]**.
+   * If you do the Target lesson, select **[!UICONTROL Personalization Destinations]**, too. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) for more information.
 1. To save your datastream configuration, select **[!UICONTROL Save]** .
 
    ![AEP datastream configuration](assets/datastream-aep-configuration-offers.png){zoomable="yes"}
 
 
-### Install Offer Decisioning and Target tags extension
-
-1. Navigate to **[!UICONTROL Tags]** and find your mobile tag property and open the property.
-1. Select **[!UICONTROL Extensions]**.
-1. Select **[!UICONTROL Catalog]**.
-1. Search for the **[!UICONTROL Offer Decisioning and Target]** extension.
-1. Install the extension. The extension does not require additional configuration.
-
-    ![Add Offer Decisioning and Target extension](assets/tag-add-decisioning-extension.png){zoomable="yes"}
-
-
-### Update your schema
+### Define your schema
 
 1. Navigate to the Data Collection interface and select **[!UICONTROL Schemas]** from the left rail.
 1. Select **[!UICONTROL Browse]** from the top bar.
-1. Select your schema to open it.
-1. In the schema editor, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to Field groups.
-1. In the **[!UICONTROL Add fields groups]** dialog, ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**. This field group collects the experience event data relevant to offers, like what offer is presented, as part of which collection, decision, and other parameters (see later in this lesson)? But also what is happening with the offer? Is it displayed, interacted with, dismissed, and so forth?
-   ![Proposition](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
-1. Select **[!UICONTROL Save]** to save the changes to your schema.
+1. Open the **[!UICONTROL Personalized Offer Items - Experience Decisioning]** schema. This schema is the dedicated schema to configure your offer items, their attributes and metadata.
+1. Add additional field groups to your schema that represent how you want to use offers in Decisioning. Refer to [Create schema](./create-schema.md) to understand how you can create schemas. For this lesson, two field groups are created as part of the sandbox configuration: **[!UICONTROL Offer]** and **[!UICONTROL Offer Metadata]**. You can see the full structure of the schema below. All **[!UICONTROL mediaAssets]** fields, like **[!UICONTROL image]** or **[!UICONTROL imageLowRes]** are of type **[!UICONTROL DesignAssets]**. All other fields are either of type **[!UICONTROL Object]** or **[!UICONTROL String]**.
+   
+   ![Schema experience decisioning](assets/schema-experience-decisioning.png)
+
+   You can define your **[!UICONTROL Personalized Offer Items - Experience Decisioning]** schema any way you want. The above is just an example that is used in the remainder of this lesson.
+
+1. Ensure you select **[!UICONTROL Save]** to save any changes you make to the **[!UICONTROL Personalized Offer Items - Experience Decisioning]** schema.
 
 
 ## Validate setup in Assurance

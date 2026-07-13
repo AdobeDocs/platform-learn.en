@@ -34,6 +34,7 @@ recommendations: noDisplay,noCatalog
     + [Push notifications](journey-optimizer-push.md)
     + [In-app messages](journey-optimizer-inapp.md)
     + [Decision Management](journey-optimizer-offers.md)
+    + [Decisioning](journey-optimizer-decisioning.md)
   + [Target](target.md)
   + [Customer Journey Analytics](customer-journey-analytics.md)
   + {hide-from-toc} [Test](test.md)
