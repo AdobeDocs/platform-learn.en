@@ -20,7 +20,7 @@ Grounded in your brand, business processes, and customer context, it continuousl
 
 [1.2.1 Getting started with CX Enterprise Coworker](./ex1.md){target="_blank"}
 
-In this exercise, ...
+In this exercise, you'll use CX Enterprise Coworker to explore your analytics data to find hidden insights which you'll then put into action by creating audiences and journeys.
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 

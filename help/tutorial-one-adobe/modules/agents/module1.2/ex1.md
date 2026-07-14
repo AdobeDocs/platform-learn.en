@@ -16,8 +16,7 @@ product_v2:
 In order to follow the steps in this lab as documented below, the following access is required:
 
 - Access to Real-Time CDP, Journey Optimizer and Customer Journey Analytics
-- Access to AI Assistant in Adobe Experience Cloud
-- Access to AEP Agent Orchestrator
+- Access to CX Enterprise Coworker
 
 ## Instructions for live workshops
 
@@ -29,8 +28,13 @@ For this exercise, you need to use:
 - **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
 - **Password**: use the password that was shared with you
 
+## Video
 
-## 1.2.1.1 Access Agent Orchestrator
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3495927?quality=12&learn=on)
+
+## 1.2.1.1 Access CX Enterprise Coworker
 
 Go to [https://coworker.experience.adobe.io/chat](https://coworker.experience.adobe.io/chat). Sign in using your Adobe account. After logging in, click your user initials in the bottom left part of the screen and make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
 
@@ -78,11 +82,11 @@ Enter the following **Prompt** and click the **send** button.
 Show me purchases by mainCategory over the last 2 months.
 ```
 
-![Agent Orchestrator](./images/aotechlab4.png)
+![Coworker](./images/aotechlab4.png)
 
 You should then see this:
 
-![Agent Orchestrator](./images/aotechlab5.png)
+![Coworker](./images/aotechlab5.png)
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -90,11 +94,11 @@ Enter the following **Prompt** and click the **send** button.
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
-![Agent Orchestrator](./images/aotechlab6.png)
+![Coworker](./images/aotechlab6.png)
 
 You should then see this, which drills down into Fiber-specific trends. 
 
-![Agent Orchestrator](./images/aotechlab7.png)
+![Coworker](./images/aotechlab7.png)
 
 ## 1.2.1.4 Correlate Orders with Content Preferences 
 
@@ -110,11 +114,11 @@ Enter the following **Prompt** and click the **send** button.
 Which field is used to store the favourite genre?
 ```
 
-![Agent Orchestrator](./images/aotechlab7a.png)
+![Coworker](./images/aotechlab7a.png)
 
 You should then see this, which shows that the field used for genre is **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
-![Agent Orchestrator](./images/aotechlab7b.png)
+![Coworker](./images/aotechlab7b.png)
 
 With that information, you can start drilling down in the purchase data.
 
@@ -124,11 +128,11 @@ Enter the following **Prompt** and click the **send** button.
 Show me purchases by favourite genre for the last 2 months
 ```
 
-![Agent Orchestrator](./images/aotechlab8.png)
+![Coworker](./images/aotechlab8.png)
 
 You should then see this.
 
-![Agent Orchestrator](./images/aotechlab9.png)
+![Coworker](./images/aotechlab9.png)
 
 ## 1.2.1.5 Identify Existing Fiber Journeys
 
@@ -142,11 +146,11 @@ Enter the following **Prompt** and click the **send** button.
 What journeys exist? 
 ```
 
-![Agent Orchestrator](./images/aotechlab12.png)
+![Coworker](./images/aotechlab12.png)
 
 You should then see something like this. 
 
-![Agent Orchestrator](./images/aotechlab13.png)
+![Coworker](./images/aotechlab13.png)
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -154,15 +158,15 @@ Enter the following **Prompt** and click the **send** button.
 Show me the journeys that have 'Fiber' in their name.
 ```
 
-![Agent Orchestrator](./images/aotechlab14.png)
+![Coworker](./images/aotechlab14.png)
 
 You should then see this. Click the link to open the deployed journey **CitiSignal - Fiber Max Launch Promotion**.
 
-![Agent Orchestrator](./images/aotechlab15.png)
+![Coworker](./images/aotechlab15.png)
 
 A new window will be opened, and you'll be taken to the journey details overview immediately.
 
-![Agent Orchestrator](./images/aotechlab15a.png)
+![Coworker](./images/aotechlab15a.png)
 
 ## 1.2.1.6 Check which audience is used
 
@@ -176,11 +180,11 @@ Enter the following **Prompt** and click the **send** button.
 What was the initial audience in the journey named CitiSignal - Fiber Max Launch Promotion?
 ```
 
-![Agent Orchestrator](./images/aotechlab16.png)
+![Coworker](./images/aotechlab16.png)
 
 You should then see this.
 
-![Agent Orchestrator](./images/aotechlab18.png)
+![Coworker](./images/aotechlab18.png)
 
 ## 1.2.1.7 Validate journey performance via fallout analysis 
 
@@ -194,11 +198,11 @@ Enter the following **Prompt** and click the **send** button.
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
-![Agent Orchestrator](./images/aotechlab19.png)
+![Coworker](./images/aotechlab19.png)
 
 You should then see this.
 
-![Agent Orchestrator](./images/aotechlab20.png)
+![Coworker](./images/aotechlab20.png)
 
 Let's see if another data view has more data about this journey. Enter the following **Prompt** and click the **send** button.
 
@@ -206,11 +210,11 @@ Let's see if another data view has more data about this journey. Enter the follo
 can you try using the AJO Enabled Data View to see if there is more data about this journey there?
 ```
 
-![Agent Orchestrator](./images/aotechlab20a.png)
+![Coworker](./images/aotechlab20a.png)
 
 You should then see this.
 
-![Agent Orchestrator](./images/aotechlab20b.png)
+![Coworker](./images/aotechlab20b.png)
 
 
 ## 1.2.1.8 Create a new audience
@@ -225,35 +229,35 @@ Enter the following **Prompt** and click the **send** button.
 Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
-![Agent Orchestrator](./images/aotechlab32.png)
+![Coworker](./images/aotechlab32.png)
 
 If similar, already existing audiences are already available, you should see a similar message. Select **Create a new one anyway** and click **Submit**.
 
-![Agent Orchestrator](./images/aotechlab32a.png)
+![Coworker](./images/aotechlab32a.png)
 
 Select the name for your audience.
 
-![Agent Orchestrator](./images/aotechlab33a.png)
+![Coworker](./images/aotechlab33a.png)
 
 Select **Batch**.
 
-![Agent Orchestrator](./images/aotechlab33b.png)
+![Coworker](./images/aotechlab33b.png)
 
 Click **Submit**.
 
-![Agent Orchestrator](./images/aotechlab33c.png)
+![Coworker](./images/aotechlab33c.png)
 
 Review the plan, and then click **Approve Plan**.
 
-![Agent Orchestrator](./images/aotechlab33d.png)
+![Coworker](./images/aotechlab33d.png)
 
 If prompted, provide the permissions to perform this task.
 
-![Agent Orchestrator](./images/aotechlab33e.png)
+![Coworker](./images/aotechlab33e.png)
 
 Your audience has now been created.
 
-![Agent Orchestrator](./images/aotechlab38.png)
+![Coworker](./images/aotechlab38.png)
 
 ## 1.2.1.9 Find existing audiences aligned to high usage and check if they are in use
 
@@ -271,7 +275,7 @@ Enter the following **Prompt** and click the **send** button.
 Is there an audience that has "heavy downloaders" in the title?
 ```
 
-![Agent Orchestrator](./images/ao30.png)
+![Coworker](./images/ao30.png)
 
 You should then see this. You now want to see all your audiences and how much they have changed over the last few days.
 
@@ -281,11 +285,11 @@ Enter the following **Prompt** and click the **send** button.
 List how much these audiences changed over the last few days.
 ```
 
-![Agent Orchestrator](./images/ao31.png)
+![Coworker](./images/ao31.png)
 
 You should then see this.
 
-![Agent Orchestrator](./images/ao31a.png)
+![Coworker](./images/ao31a.png)
 
 There are some existing audiences already for "heavy downloaders". Let's see if they are in use already.
 
@@ -295,11 +299,11 @@ Enter the following **Prompt** and click the **send** button.
 Which of the above audiences are used in a journey?
 ```
 
-![Agent Orchestrator](./images/ao50.png)
+![Coworker](./images/ao50.png)
 
 You should then see something similar to this.
 
-![Agent Orchestrator](./images/ao51.png)
+![Coworker](./images/ao51.png)
 
 For the upcoming launch of Fiber Max, you should now create a new journey.
 
@@ -317,23 +321,23 @@ Enter the following **Prompt** and click the **send** button.
 Create a  journey using the audience I created before. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
-![Agent Orchestrator](./images/aocj1.png)
+![Coworker](./images/aocj1.png)
 
 You should then see this. Review the plan, and then click **Approve Plan**.
 
-![Agent Orchestrator](./images/aocj2.png)
+![Coworker](./images/aocj2.png)
 
 You should then see this. Enter `it looks fine, go ahead` and click generate.
 
-![Agent Orchestrator](./images/aocj3.png)
+![Coworker](./images/aocj3.png)
 
 If prompted, provide the permissions to perform this task.
 
-![Agent Orchestrator](./images/aocj4.png)
+![Coworker](./images/aocj4.png)
 
 Your journey has now been created in draft mode.
 
-![Agent Orchestrator](./images/aocj9.png)
+![Coworker](./images/aocj9.png)
 
 ## 1.2.1.11 Journey Conflict Management
 
@@ -343,15 +347,15 @@ Enter the following **Prompt** and click the **send** button.
 How can I manage journey conflicts?
 ```
 
-![Agent Orchestrator](./images/aocj80.png)
+![Coworker](./images/aocj80.png)
 
 Review the information.
 
-![Agent Orchestrator](./images/aocj81.png)
+![Coworker](./images/aocj81.png)
 
 Scroll down and review the **Sources** to find that the information is sourced from Experience League.
 
-![Agent Orchestrator](./images/aocj82.png)
+![Coworker](./images/aocj82.png)
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -359,11 +363,11 @@ Enter the following **Prompt** and click the **send** button.
 List any conflicts for the journey "CitiSignal - Fiber Max Launch Promotion".
 ```
 
-![Agent Orchestrator](./images/aocj70.png)
+![Coworker](./images/aocj70.png)
 
 You should then see this. Review the journey conflict information.
 
-![Agent Orchestrator](./images/aocj70a.png)
+![Coworker](./images/aocj70a.png)
 
 ## 1.2.1.12 Experiments
 
@@ -373,11 +377,11 @@ Enter the following **Prompt** and click the **send** button.
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 
-![Agent Orchestrator](./images/aoea0.png)
+![Coworker](./images/aoea0.png)
 
 You should then see this:
 
-![Agent Orchestrator](./images/aoea1.png) 
+![Coworker](./images/aoea1.png) 
 
 You've now completed this lab.
 
