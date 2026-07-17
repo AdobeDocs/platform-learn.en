@@ -160,6 +160,7 @@ Campaigns
   + [Collaboration measurement - setup and report creation](collaboration/collaboration-measurement-setup-and-report-creation.md)
   + [Brand to Brand](collaboration/brand-to-brand-collaboration.md)
   + [Invite partners to use Collaboration](collaboration/rtcdp-collaboration-in-product-invitations.md)
+  + [Collaboration Starter - Initial Access and Permissions Setup](collaboration/rtcdp-collaboration-starter-initial-access-and-permissions-setup.md)
 + Dashboards {#dashboards}
   + [Create a dashboard](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
