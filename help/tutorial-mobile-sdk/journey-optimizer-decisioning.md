@@ -222,13 +222,15 @@ To create a code-based experience channel.
 
 ## Create offers
 
+In this section you create offers for Decisioning. 
+
 1. In the Journey Optimizer UI, select ![DecisionItems](/help/assets/icons2/DecisionItems.svg) **[!UICONTROL Catalogs]** from **[!UICONTROL Decisioning]** in the left rail.
-1. Select Offers from Catalogs to see the list of Offers.
+1. Select **[!UICONTROL Offers]** from **[!UICONTROL Catalogs]** to see the list of **[!UICONTROL Offers]**.
 1. Select **[!UICONTROL Create item]**.
 
    1. In the ➊ **[!UICONTROL Attributes]** step of creating an offer (decision item):
 
-      ![Attributes for an offer in Decisioning](assets/ajo-decisioning-offer-attributes.png)
+      ![Attributes for an offer in Decisioning](assets/ajo-decisioning-offer-attributes.png){zoomable="yes"}
 
       * In the **[!UICONTROL Standard attributes]** section:
         1. Enter an **[!UICONTROL Offer name]**. For example: `Luma - Desiree Fitness Tee`.
@@ -246,32 +248,63 @@ To create a code-based experience channel.
       1. Select **[!UICONTROL Next]**.
    1. In the ➋ **[!UICONTROL Elgibility]** step of the creation of an offer (decision item):
 
-      ![Create offer item - Eligibility](assets/ajo-decisioning-offer-eligibility.png)
+      ![Create offer item - Eligibility](assets/ajo-decisioning-offer-eligibility.png){zoomable="yes"}
+
       1. In **[!UICONTROL Eligibility]**, ensure **[!UICONTROL All visitors]** is selected.
       1. You do not need to create a capping in the **[!UICONTROL Capping]** section.
       1. Select **[!UICONTROL Next]**.
    1. In the ➌ Review step op the creation of an offer (decision item):
+      
+      ![Create offer item - Review](assets/ajo-decisioning-offer-review.png){zoomable="yes"}
+
       1. Review the offer. You can use ![Edit](/help/assets/icons/Edit.svg) to change **[!UICONTROL Standard attributes]**, **[!UICONTROL Customer attributes]**, or **[!UICONTROL Profile constraints]**.
       1. Select **[!UICONTROL Save]**.
-1. 
+
+1. Repeat step 3 for the following additional offers:
+
+   | Name | Title | Full description | Image and Image (high resolution) |
+   |---|---|---|---|
+   | `Luma - Affirm Water Bottle` | `Affirm Water Bottle` | `You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.` | `https://newluma.enablementadobe.com/images/ug06-lb-0.jpg` |
+   | `Luma - Aero Daily Fitness Tee` | `Aero Daily Fitness Tee` | `Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.` | `https://newluma.enablementadobe.com/images/ms01-black_main.jpg` |
+   | `Luma - Adrienne Trek Jacket` | `Adrienne Trek Jacket` | `You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.` | `https://newluma.enablementadobe.com/images/wj08-gray_main.jpg` |
+   | `Luma - Juno Jacket` | `Juno Jacket` | `On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performanc Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.` | `https://newluma.enablementadobe.com/images/wj06-purple_main.jpg` | 
+
+   All other values, like **[!UICONTROL Start date]**, **[!UICONTROL End date]**, **[!UICONTROL Priority]**, **[!UICONTROL Capping]**, **[!UICONTROL Eligibility]**, and more should be the same across all offers.
 
 You should now have the following list of offers:
-![Offers list](assets/ajo-offers-list.png){zoomable="yes"}
+
+![Offers list](assets/ajo-decisioning-offers-list.png){zoomable="yes"}
 
 
 ## Create a collection
 
-To present an offer to your mobile app user, you must define an offer collection, consisting of one or more of the offers you created.
+To present an offer to your mobile app user, you must create an offer collection, consisting of one or more of the offers you created. You use rules to select which offers belong to a collection. 
 
-1. In the Journey Optimizer UI, select **[!UICONTROL Offers]** from the left rail.
-1. Select **[!UICONTROL Collections]** from the top bar.
-1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Create collection]**.
-1. In the **[!UICONTROL New collection]** dialog, enter a **[!UICONTROL Name]** for your collection, for example `Luma - Mobile App Collection`, select **[!UICONTROL Create static collection]**, and click **[!UICONTROL Next]**.
-1. In **[!DNL Luma - Mobile App Collection]**, select the offers you want to include in the collection. For this tutorial, pick the five offers you created. You can easily filter the list using the search field, for example by typing **[!DNL Luma]**.
-1. Select **[!UICONTROL Save]**.
+1. In the Journey Optimizer UI, select ![DecisionItems](/help/assets/icons2/DecisionItems.svg) **[!UICONTROL Catalogs]** from **[!UICONTROL Decisioning]** in the left rail.
+1. Select **[!UICONTROL Collections]** from **[!UICONTROL Catalogs]** to see the list of **[!UICONTROL Collections]**.
+1. Select **[!UICONTROL Create collection]**.
 
-    ![Offers - Collection](assets/ajo-collection-offersselected.png){zoomable="yes"}
+   ![Create a decisioning collection]
+1. In the **[!UICONTROL Details]** section:
+   1. Enter a **[!UICONTROL Name]** for the collection. For example: `Luma - Mobile App Collection`.
+   1. Enter a **[!UICONTROL Description]** for the collection. For example:  `Collection of Luma mobile app offers`.
+1. In the **[!UICONTROL Collection rules]** section, underneath **[!UICONTROL NUMBER OF ITEMS]**:
+   1. Select C**[!UICONTROL lick to create a decision item…]**
+   1. Use **[!UICONTROL Select attribute]** to select an attribute. 
+      1. In the **[!UICONTROL Select an attribute]** dialog select a **[!UICONTROL Decision attribute]**. For example **[!UICONTROL Offer name]**.
+      1. Select **[!UICONTROL Save]**.
+   1. Use the **[!UICONTROL Equals]** drop-down menu to select a condition. For example **[!UICONTROL Starts with]**.
+   1. In the textfield enter the value for the condition. For example: `Luma -`. Thi value will select all offers which name starts with `Luma -` to be part of the collection. You can create any kind of rule and also combine rules, using ![AddCircle](/help/assets/icons/AddCircle.svg) Add rule.
+1. Select **[!UICONTROL Create]** to create the collection.
 
+
+    ![Offers - Collection](assets/ajo-decisioning-collecton-create.png){zoomable="yes"}
+
+## Create a campaign
+
+You now create a campaign that uses both your offer collection and your code-based experience configuration channel.
+
+1. In the Journey Optimizer UI, select ![Claxon](/help/assets/icons2/Claxon.svg) **[!UICONTROL Campaigns]** from **[!UICONTROL Journey management]** in the left rail.
 
 ## Create a decision
 
