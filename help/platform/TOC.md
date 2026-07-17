@@ -130,6 +130,7 @@ Campaigns
     + [Configure a federated connection](audiences/fac/connect-and-configure-federated-audience-composition.md)
     + [Connect to Oracle](audiences/fac/connect-to-oracle.md)
     + [Create a federated audience](audiences/fac/create-a-federated-audience-composition.md)
+    + [Use multi-entity targeting in AJO](audiences/fac/use-multi-entity-targeting-in-ajo.md)
     + [Subscribe to alerts](audiences/fac/subscribe-to-alerts.md)
   + Segment Match{#segment-match}
     + [Segment Match connection setup](/help/platform/audiences/segment-match/segment-match-connection-setup.md)

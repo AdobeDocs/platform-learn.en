@@ -49,7 +49,7 @@ In this exercise, you'll work with Adobe Express to create multiple versions of 
 
 Summary of this module and overview of the benefits.{width="50px"}
 
-![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
 >
