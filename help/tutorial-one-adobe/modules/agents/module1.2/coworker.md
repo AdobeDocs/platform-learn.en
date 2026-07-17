@@ -20,7 +20,19 @@ Grounded in your brand, business processes, and customer context, it continuousl
 
 [1.2.1 Getting started with CX Enterprise Coworker](./ex1.md){target="_blank"}
 
-In this exercise, you'll use CX Enterprise Coworker to explore your analytics data to find hidden insights which you'll then put into action by creating audiences and journeys.
+In this exercise, you'll provide specific prompts to CX Enterprise Coworker to explore your analytics data to find hidden insights which you'll then put into action by creating audiences and journeys.
+
+[1.2.2 Using CX Enterprise Coworker for insights](./ex2.md){target="_blank"}
+
+In this exercise, you'll start providing open-ended prompts to CX Enterprise Coworker to help you understand what's happening and how to optimize your marketing campaigns.
+
+[1.2.3 Business Context in CX Enterprise Coworker](./ex3.md){target="_blank"}
+
+In this exercise, you'll setup business context in CX Enterprise Coworker which will provide more contextual responses.
+
+[1.2.4 CX Enterprise Coworker with Microsoft 365 Copilot](./ex4.md){target="_blank"}
+
+In this exercise, you'll explore CX Enterprise Coworker's capabilities against the background of the CitiSignal launch campaign for Fiber Max, by using Adobe Marketing Agent with Microsoft 365 Copilot.
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 

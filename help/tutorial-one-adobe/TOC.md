@@ -47,10 +47,12 @@ recommendations: noDisplay,noCatalog
     + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
     + [1.1.4 Adobe Marketing Agent for Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
     + [1.1.5 Adobe Marketing Agent for Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-    + [1.1.6 Coworker Harness](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
   + 1.2 CX Enterprise Coworker {#agents2}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/coworker.md)
     + [1.2.1 Getting started with CX Enterprise Coworker](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+    + [1.2.2 Using CX Enterprise Coworker for insights](/help/tutorial-one-adobe/modules/agents/module1.2/ex2.md)
+    + [1.2.3 Business Context in CX Enterprise Coworker](/help/tutorial-one-adobe/modules/agents/module1.2/ex3.md)
+    + [1.2.4 CX Enterprise Coworker with Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.2/ex4.md)
   + 1.3 Agent Composer {#agents3}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.3/composer.md)
     + [1.2.1 Getting started with Agent Composer](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)

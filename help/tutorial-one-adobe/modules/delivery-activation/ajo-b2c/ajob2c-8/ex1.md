@@ -55,7 +55,7 @@ Select **Upload DDL file** and then click **Choose files**.
 
 ![AJO OC](./images/ajoocdata3.png)
 
-Download the file [citisignal_ddl_tables_only.sql](./assets/citisignal_ddl_tables_only.sql) to your desktop. 
+Download the file [citisignal_ddl_tables_only.sql.zip](./assets/citisignal_ddl_tables_only.sql.zip) and export it to your desktop. 
 
 ![AJO OC](./images/ajoocdata4.png)
 
