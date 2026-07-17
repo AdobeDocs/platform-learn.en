@@ -54,10 +54,6 @@ In this exercise, you'll explore Agent Orchestrator's abilities against the back
 
 In this exercise, you'll explore Agent Orchestrator's abilities against the background of the CitiSignal launch campaign for Fiber Max, by using Adobe Marketing Agent with Claude.
 
-[1.1.6 Coworker Harness](./ex6.md){target="_blank"}
-
-In this exercise, you'll explore Agent Orchestrator's abilities using the new AI Harness, against the background of the CitiSignal launch campaign for Fiber Max.
-
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]

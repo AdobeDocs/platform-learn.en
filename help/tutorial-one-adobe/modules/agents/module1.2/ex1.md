@@ -36,27 +36,37 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 ## 1.2.1.1 Access CX Enterprise Coworker
 
-Go to [https://coworker.experience.adobe.io/chat](https://coworker.experience.adobe.io/chat). Sign in using your Adobe account. After logging in, click your user initials in the bottom left part of the screen and make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
+Go to [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat). Sign in using your Adobe account. After logging in, click your user initials in the bottom left part of the screen and make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
 
 ![AO](./images/aov2lab1.png)
 
-## 1.2.1.2 Set your context
+Before continuing, the selected instance and sandbox should look like this.
 
-Enter the following command and click **Send**.
+![AO](./images/aov2lab1a.png)
+
+## 1.2.1.2 Enable CJA plugin
+
+To install the CJA plugin, go to **Configurations**.
+
+![AO](./images/cwcjaplugin1.png)
+
+Search for `cja` and then click **Install**.
+
+![AO](./images/cwcjaplugin2.png)
+
+You should then see this.
+
+![AO](./images/cwcjaplugin3.png)
+
+## 1.2.1.3 Set your context
+
+Click the **+** icon to start a new chat. Enter the following command and click **Send**.
 
 ```
 list dataviews
 ```
 
 ![AO](./images/aov2lab18.png)
-
-You may get this request. Provide the required permissions. 
-
-![AO](./images/aov2lab19.png)
-
-You may get this second request. Provide the required permissions. 
-
-![AO](./images/aov2lab19a.png)
 
 You should then see this. Enter the following command and click **Send**.
 
@@ -70,7 +80,7 @@ You should then see this.
 
 ![AO](./images/aov2lab21.png)
 
-## 1.2.1.3 Start with overall purchase trends to anchor context and zoom into fiber 
+## 1.2.1.4 Start with overall purchase trends to anchor context and zoom into fiber 
 
 **Intent**
 
@@ -100,7 +110,7 @@ You should then see this, which drills down into Fiber-specific trends.
 
 ![Coworker](./images/aotechlab7.png)
 
-## 1.2.1.4 Correlate Orders with Content Preferences 
+## 1.2.1.5 Correlate Orders with Content Preferences 
 
 **Intent**
 
@@ -134,7 +144,7 @@ You should then see this.
 
 ![Coworker](./images/aotechlab9.png)
 
-## 1.2.1.5 Identify Existing Fiber Journeys
+## 1.2.1.6 Identify Existing Fiber Journeys
 
 **Intent** 
 
@@ -143,7 +153,7 @@ Discover which active or recently concluded journeys include “Fiber” in the 
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-What journeys exist? 
+What journeys exist in the sandbox one-adobe?
 ```
 
 ![Coworker](./images/aotechlab12.png)
@@ -155,36 +165,26 @@ You should then see something like this.
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Show me the journeys that have 'Fiber' in their name.
+Give me an overview of the journeys that have 'Fiber' in their name.
 ```
 
 ![Coworker](./images/aotechlab14.png)
 
-You should then see this. Click the link to open the deployed journey **CitiSignal - Fiber Max Launch Promotion**.
+You should then see this. 
 
-![Coworker](./images/aotechlab15.png)
-
-A new window will be opened, and you'll be taken to the journey details overview immediately.
-
-![Coworker](./images/aotechlab15a.png)
-
-## 1.2.1.6 Check which audience is used
-
-**Intent**:
-
-Understand the seed definition of the “CitiSignal - Fiber Max Launch Promotion” journey—what traits drove targeting (e.g., “SciFi Genre Preference,” “4+ devices,” “stream ≥ 300GB/month”). 
+![Coworker](./images/aotechlab14a.png)
 
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-What was the initial audience in the journey named CitiSignal - Fiber Max Launch Promotion?
+Give me more details of the journey CitiSignal - Fiber Max Launch Promotion
 ```
 
-![Coworker](./images/aotechlab16.png)
+![Coworker](./images/aotechlab15.png)
 
 You should then see this.
 
-![Coworker](./images/aotechlab18.png)
+![Coworker](./images/aotechlab15b.png)
 
 ## 1.2.1.7 Validate journey performance via fallout analysis 
 
@@ -204,19 +204,6 @@ You should then see this.
 
 ![Coworker](./images/aotechlab20.png)
 
-Let's see if another data view has more data about this journey. Enter the following **Prompt** and click the **send** button.
-
-```
-can you try using the AJO Enabled Data View to see if there is more data about this journey there?
-```
-
-![Coworker](./images/aotechlab20a.png)
-
-You should then see this.
-
-![Coworker](./images/aotechlab20b.png)
-
-
 ## 1.2.1.8 Create a new audience
 
 **Intent**
@@ -226,28 +213,52 @@ Based on the above findings and research, there's a correlation between customer
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
+Create an audience with the name --aepUserLdap-- - Heavy Downloaders - Sci-Fi or Fantasy that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
 ![Coworker](./images/aotechlab32.png)
 
-If similar, already existing audiences are already available, you should see a similar message. Select **Create a new one anyway** and click **Submit**.
+If similar, already existing audiences are already available, you should see a similar message. Enter the following **Prompt** and click the **send** button.
+
+```javascript
+create a new one
+```
 
 ![Coworker](./images/aotechlab32a.png)
 
-Select the name for your audience.
+You should then see this. Enter the following **Prompt** and click the **send** button.
+
+```javascript
+use these fields
+```
 
 ![Coworker](./images/aotechlab33a.png)
 
-Select **Batch**.
+You should then see this. Enter the following **Prompt** and click the **send** button.
+
+```javascript
+yes
+```
 
 ![Coworker](./images/aotechlab33b.png)
 
-Click **Submit**.
+You should then see this. Enter the following **Prompt** and click the **send** button.
+
+```javascript
+proceed
+```
 
 ![Coworker](./images/aotechlab33c.png)
 
-Review the plan, and then click **Approve Plan**.
+Approve the request for permissions.
+
+![Coworker](./images/aotechlab33ca.png)
+
+You should then see this. Enter the following **Prompt** and click the **send** button.
+
+```javascript
+publish the audience
+```
 
 ![Coworker](./images/aotechlab33d.png)
 
@@ -259,7 +270,37 @@ Your audience has now been created.
 
 ![Coworker](./images/aotechlab38.png)
 
-## 1.2.1.9 Find existing audiences aligned to high usage and check if they are in use
+## 1.2.1.9 Activate audience to destination
+
+Enter the following **Prompt** and click the **send** button.
+
+```javascript
+Which destinations exist?
+```
+
+![Coworker](./images/cwdest1.png)
+
+You should then see this.
+
+![Coworker](./images/cwdest2.png)
+
+Enter the following **Prompt** and click the **send** button.
+
+```javascript
+Activate the audience I just created to the Meta destination and set the field customer_file_source to USER_PROVIDED_ONLY.
+```
+
+![Coworker](./images/cwdest3.png)
+
+If prompted, provide the permissions to perform this task.
+
+![Coworker](./images/cwdest4.png)
+
+You should then see this.
+
+![Coworker](./images/cwdest5.png)
+
+## 1.2.1.10 Find existing audiences aligned to high usage and check if they are in use
 
 **Intent**: 
 
@@ -307,7 +348,7 @@ You should then see something similar to this.
 
 For the upcoming launch of Fiber Max, you should now create a new journey.
 
-## 1.2.1.10 Create New Journey for Fiber Max Launch 
+## 1.2.1.11 Create New Journey for Fiber Max Launch 
 
 **Intent**: 
 
@@ -318,18 +359,14 @@ Heavy Downloaders ∩ SciFi Preference.
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Create a  journey using the audience I created before. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
+Create a journey with the name --aepUserLdap-- CitiSignal Fiber Journey using the audience I created before. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
 ![Coworker](./images/aocj1.png)
 
-You should then see this. Review the plan, and then click **Approve Plan**.
+You should then see this. Review the proposal, and then select **Sabe to AJO**.
 
 ![Coworker](./images/aocj2.png)
-
-You should then see this. Enter `it looks fine, go ahead` and click generate.
-
-![Coworker](./images/aocj3.png)
 
 If prompted, provide the permissions to perform this task.
 
@@ -339,7 +376,7 @@ Your journey has now been created in draft mode.
 
 ![Coworker](./images/aocj9.png)
 
-## 1.2.1.11 Journey Conflict Management
+## 1.2.1.12 Journey Conflict Management
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -349,13 +386,9 @@ How can I manage journey conflicts?
 
 ![Coworker](./images/aocj80.png)
 
-Review the information.
+Review the information. Scroll down and review the **Sources** to find that the information is sourced from Experience League.
 
 ![Coworker](./images/aocj81.png)
-
-Scroll down and review the **Sources** to find that the information is sourced from Experience League.
-
-![Coworker](./images/aocj82.png)
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -369,7 +402,7 @@ You should then see this. Review the journey conflict information.
 
 ![Coworker](./images/aocj70a.png)
 
-## 1.2.1.12 Experiments
+## 1.2.1.13 Experiments
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -381,9 +414,13 @@ How are the experiments performing for the journey named 'CitiSignal - Fiber Max
 
 You should then see this:
 
-![Coworker](./images/aoea1.png) 
+![Coworker](./images/aoea1.png)
 
 You've now completed this lab.
+
+## Next Steps
+
+Go to [Using CX Enterprise Coworker for insights](./ex2.md){target="_blank"}
 
 Go Back to [CX Enterprise Coworker](./coworker.md){target="_blank"}
 

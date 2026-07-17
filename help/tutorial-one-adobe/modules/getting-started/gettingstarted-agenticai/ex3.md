@@ -6,6 +6,10 @@ exl-id: bace13f5-51e4-4b1f-99fa-88f4756e79d3
 ---
 # Use your AEM website & AEP sandbox
 
+>[!IMPORTANT]
+>
+>If you've signed up for the on-demand access to CX Enterprise Coworker, then you don't need to follow the below steps as they aren't relevant to the CX Enterprise Coworker exercise.
+
 When taking the Agentic AI Tech Labs, you will be using an existing AEM as a Cloud Service program using Edge Delivery Services. This AEM as a Cloud Service program using Edge Delivery Services has been created for you and is already available at the start of the Tech Labs.
 
 ## Your number
