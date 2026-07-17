@@ -64,9 +64,10 @@ In this lesson, the focus is on the use of the code-based experience channel to 
 In this lesson, you will
 
 * Update your Edge configuration for Decisioning.
-* Update your schema to capture proposition events.
-* Configure a code-based experience channel configuration.
+* Create a schema to represent offers.
 * Validate setup in Assurance.
+* Configure a code-based experience channel configuration.
+* 
 * Create a code-based experience campaign, based on offers in Journey Optimizer - Decision Management.
 * Implement offers from Decisioning in your app.
 
@@ -98,128 +99,161 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
 1. Open the **[!UICONTROL Personalized Offer Items - Experience Decisioning]** schema. This schema is the dedicated schema to configure your offer items, their attributes and metadata.
 1. Add additional field groups to your schema that represent how you want to use offers in Decisioning. Refer to [Create schema](./create-schema.md) to understand how you can create schemas. For this lesson, two field groups are created as part of the sandbox configuration: **[!UICONTROL Offer]** and **[!UICONTROL Offer Metadata]**. You can see the full structure of the schema below. All **[!UICONTROL mediaAssets]** fields, like **[!UICONTROL image]** or **[!UICONTROL imageLowRes]** are of type **[!UICONTROL DesignAssets]**. All other fields are either of type **[!UICONTROL Object]** or **[!UICONTROL String]**.
    
-   ![Schema experience decisioning](assets/schema-experience-decisioning.png)
+   ![Schema experience decisioning](assets/schema-experience-decisioning.png){zoomable="yes"}
 
-   You can define your **[!UICONTROL Personalized Offer Items - Experience Decisioning]** schema any way you want. The above is just an example that is used in the remainder of this lesson.
+   You can define your **[!UICONTROL Personalized Offer Items - Experience Decisioning]** schema any way you want. The above is just an example that is used for the remainder of this lesson.
 
 1. Ensure you select **[!UICONTROL Save]** to save any changes you make to the **[!UICONTROL Personalized Offer Items - Experience Decisioning]** schema.
 
 
+### Install Journey Optimizer tags extension
+
+For your app to work with Journey Optimizer, you must update your tag property.
+
+1. Navigate to **[!UICONTROL Tags]** > **[!UICONTROL Extensions]** > **[!UICONTROL Catalog]**. 
+1. Open your property, for example **[!DNL Luma Mobile App Tutorial]**.
+1. Select **[!UICONTROL Catalog]**.
+1. Search for the **[!UICONTROL Adobe Journey Optimizer]** extension.
+1. Install the extension.
+
+When *only* using offers based on Decisioning in your app, in **[!UICONTROL Install Extension]** or **[!UICONTROL Configure Extension]**, you do not need to configure anything. If you already have followed the [Push notifications](journey-optimizer-push.md) lesson in the tutorial, you see that for the **[!UICONTROL Development]** environment, the **[!UICONTROL AJO Push Tracking Experience Event Dataset]** dataset is selected from the **[!UICONTROL Event Dataset]** list.
+
+
+### Implement Journey Optimizer in the app
+
+As discussed in previous lessons, installing a mobile tag extension only provides the configuration. Next you must install and register the Messaging SDK. If these steps aren't clear, review the [Install SDKs](install-sdks.md) section.
+
+>[!NOTE]
+>
+>If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
+>
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
+1. In Xcode, ensure that [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
+1. Ensure `AEPMessaging` is part of your list of imports.
+
+    `import AEPMessaging`
+
+1. Ensure `Messaging.self` is part of the array of extensions that you are registering.
+
+    ```swift
+    let extensions = [
+        AEPIdentity.Identity.self,
+        Lifecycle.self,
+        Signal.self,
+        Edge.self,
+        AEPEdgeIdentity.Identity.self,
+        Consent.self,
+        UserProfile.self,
+        Places.self,
+        Messaging.self,
+        Optimize.self,
+        Assurance.self
+    ]
+    ```
+
+>[!TAB Android]
+
+1. In Android Studio, ensure that [aepsdk-messaging-android](https://github.com/adobe/aepsdk-messaging-android) is part of the dependencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
+1. Ensure `com.adobe.marketing.mobile.Messaging` is part of your list of imports.
+
+    `import import com.adobe.marketing.mobile.Messaging`
+
+1. Ensure `Messaging.EXTENSION` is part of the array of extensions that you are registering.
+
+    ```kotlin
+    val extensions = listOf(
+        Identity.EXTENSION,
+        Lifecycle.EXTENSION,
+        Signal.EXTENSION,
+        Edge.EXTENSION,
+        Consent.EXTENSION,
+        UserProfile.EXTENSION,
+        Places.EXTENSION,
+        Messaging.EXTENSION,
+        Optimize.EXTENSION,
+        Assurance.EXTENSION
+    )
+    ```
+
+>[!ENDTABS]
+
 ## Validate setup in Assurance
 
-To validate your setup in Assurance:
-
-1. Go to the Assurance UI.
-1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Validate Setup]** underneath **[!UICONTROL OFFER DECISIONING AND TARGET]**.
-1. Select **[!UICONTROL Save]**.
-1. Select **[!UICONTROL Validate Setup]** in the left rail. Both datastream setup and the SDK setup in your application are validated.
-   ![AJO Decisioning validation](assets/ajo-decisioning-validation.png){zoomable="yes"}
+You do not need to validate the setup for Decisioning in Assurance. Decisioning does not use a specific Experience Platform Data Collection Tag extension, nor does Decisioning require an additional package for your app. Decisioning relies on the Messaging extension in your app, which you already should have added as part of the [Install Adobe Experience Platform Mobile SDKs](./install-sdks.md) and [Create and send in-app messagesless](./journey-optimizer-inapp.md) lessons in this tutorial.
 
 
-## Create placement
+## Create code-based experience channel configuration
 
-Before you can actually create offers, you have to define how and where these offers can be placed in the mobile app. In Decision Management, you define placements for this purpose and you define a placement for the mobile channel that supports a JSON payload:
+To display offers in the screens of your app, you need to configure a dedicated code-based experience channel. This code-based experience channel defines the surface (the location) where you render your offers.
 
-1. In the Journey Optimizer UI, select ![Components](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Components]** from **[!UICONTROL DECISION MANAGEMENT]** in the left rail.
+To create a code-based experience channel.
 
-1. Select **[!UICONTROL Placements]** from the top bar. 
-   
-1. If no placement with name **[!UICONTROL Mobile JSON]**,  **[!UICONTROL Mobile]** as **[!UICONTROL Channel type]** and **[!UICONTROL JSON]** as **[!UICONTROL Content type]** is  listed, you must create a placement. Otherwise, continue to [Create offers](#create-offers).
+1. In the Journey Optimizer UI, select ![Channel](/help/assets/icons2/Channel.svg) **[!UICONTROL Channels]** from **[!UICONTROL Administration]** in the left rail.
+1. Select **[!UICONTROL Channel configurations]** from **[!UICONTROL General Settings]**.
+1. Select **[!UICONTROL Create channel configuration]**.
+1. In **[!UICONTROL Channel configuration details]**:
 
-To create the Mobile JSON placement: 
+   ![Channel configuration details](assets/ajo-code-based-experience-channel-configuration.png)
 
-1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Create placement.
-
-   1. in the **[!UICONTROL Details]** section, enter `Mobile JSON` as the **[!UICONTROL Name]**, select **[!UICONTROL Mobile]** from **[!UICONTROL Channel type]** and **[!UICONTROL JSON]** from **[!UICONTROL Content type]**.
-   1. Select **[!UICONTROL Save]** to save the placement.
-
-   ![Create placement](assets/ajo-create-placement.png){zoomable="yes"}
+   1. Enter a **[!UICONTROL Name]**. For example: `LumaMobileAppCodeBased`.
+   1. Enter a **[!UICONTROL Description]**. For example: `Code-based experience for Luma app used in Mobile SDK tutorial`.
+   1. Select **[!UICONTROL Code-based experience]** from the **[!UICONTROL Select channel]** drop-down menu.
+   1. Select one or more marketing actions from the **[!UICONTROL Select one or multiple marketing actions]**. For example **[!UICONTROL Onsite Personalization]**.
+   1. Select the platforms for which you want to configure the code-based experience. For this tutorial, select **[!UICONTROL iOS]** or **[!UICONTROL Android]** or both.
+      * For **[!UICONTROL iOS]**:
+        1. Enter of select **[!UICONTROL App id]**. For example: `com.adobe.luma.tutorial.swiftui`.
+        1. Enter of select a location for **[!UICONTROL Location or path inside the app]**. For example: `offersLocation`.
+        1. Enter a **[!UICONTROL Preview URL]**. For example: `lumatutorialswiftui://`.
+      * For **[!UICONTROL Android]**:
+        1. Enter of select **[!UICONTROL App id]**. For example: `com.adobe.luma.tutorial.android`.
+        1. Enter of select a location for **[!UICONTROL Location or path inside the app]**. For example: `offersLocation`.
+        1. Enter a **[!UICONTROL Preview URL]**. For example: `lumatutorialandroid://default`.
+      * **[!UICONTROL Content]**
+        * Select **[!UICONTROL JSON]** for the **[!UICONTROL Format]**. 
+1. Select **[!UICONTROL Submit]** to submit your code-based experience.
 
 
 
 ## Create offers
 
-1. In the Journey Optimizer UI, select ![Offers](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg)  **[!UICONTROL Offers]** from **[!UICONTROL DECISION MANAGEMENT]** in the left rail.
-1. In the **[!UICONTROL Offers]** screen, select **[!UICONTROL Browse]** to see the list of offers.
-1. Select **[!UICONTROL Create offer]**.
-1. In the **[!UICONTROL New offer]** dialog, select **[!UICONTROL Personalized offer]** and click **[!UICONTROL Next]**.
-1. In the **[!UICONTROL Details]** step of **[!UICONTROL Create new personalized offer]**:
-   1. Enter a **[!UICONTROL Name]** for the offer, for example `Luma - Juno Jacket`, and enter a **[!UICONTROL Start date and time]** and an **[!UICONTROL End date and time]**. Only offers within these dates are selected by the Decisioning engine.
-   1. Select **[!UICONTROL Next]**.
-      ![Offers - Details](assets/ajo-offers-details.png){zoomable="yes"}
+1. In the Journey Optimizer UI, select ![DecisionItems](/help/assets/icons2/DecisionItems.svg) **[!UICONTROL Catalogs]** from **[!UICONTROL Decisioning]** in the left rail.
+1. Select Offers from Catalogs to see the list of Offers.
+1. Select **[!UICONTROL Create item]**.
 
-1. In the **[!UICONTROL Add representations]** step of **[!UICONTROL Create new personalized offer]**:
-   1. Select ![Mobile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobile]** from **[!UICONTROL Channel]** list, and select **[!UICONTROL Mobile JSON]** from the **[!UICONTROL Placement]** list.
-   1. Select **[!UICONTROL Custom]** for **[!UICONTROL Content]**.
-   1. Select **[!UICONTROL Add content]**. In the **[!UICONTROL Add personalization]** dialog:
-      1. In case a [!UICONTROL Mode] selector is available, ensure it is set to **[!UICONTROL JSON]**.
-      1. Enter the following JSON:
-   
-            ```json
-            { 
-                "title": "Juno Jacket",
-                "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performance Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
-                "image": "https://newluma.enablementadobe.com/images/wj06-purple_main.jpg" 
-            }  
-            ```
+   1. In the ➊ **[!UICONTROL Attributes]** step of creating an offer (decision item):
 
-      1. Select **[!UICONTROL Save]**.
-         ![Offers - Custom content](assets/ajo-offers-customcontent.png){zoomable="yes"}
-   1. Select **[!UICONTROL Next]**.
-      ![Offer Representations](assets/ajo-offers-representations.png){zoomable="yes"} 
+      ![Attributes for an offer in Decisioning](assets/ajo-decisioning-offer-attributes.png)
 
-1. In the **[!UICONTROL Add constraints]** step of the **[!UICONTROL Create new personalized offer]**:
-   1. Set **[!UICONTROL Priority]** to `10`.
-   1. Toggle **[!UICONTROL Include capping]** off.
-   1. Select **[!UICONTROL Next]**.
-      ![Offers - Constraints](assets/ajo-offers-constraints.png){zoomable="yes"}
-
-1. In the **[!UICONTROL Review]** step of **[!UICONTROL Create new personalized]** offer:
-   1. Review the offer, then select **[!UICONTROL Finish]**.
-   1. In the **[!UICONTROL Save offer]** dialog, select **[!UICONTROL Save and approve]**.
-
-1. Repeat steps 3 - 8 to create four more offers with different names and content. All other configuration values, for example Start date and time or Priority, are similar to the first offer you created. You can quickly create duplicate and edit offers.
-
-   1. In Journey Optimizer UI, select ![Offers](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg) **[!UICONTROL Offers]** from the left rail, then select Offers from the top bar.
-   1. Select the row of the offer that you created.
-   1. In the right pane, select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmall_18_N.svg) **[!UICONTROL More actions]** and from the context menu select ![Duplicate](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Duplicate_18_N.svg) **[!UICONTROL Duplicate]**.
-
-      Use the table below to define the four other offers.
-
-       | Offer name | Offer content in JSON |
-       |---|---|
-       | Luma - Affirm Water Bottle | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://newluma.enablementadobe.com/images/ug06-lb-0.jpg" }` |
-       | Luma - Desiree Fitness Tee | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://newluma.enablementadobe.com/images/ws05-yellow_main.jpg" }` |
-       | Luma - Adrienne Trek Jacket | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://newluma.enablementadobe.com/images/wj08-gray_main.jpg" }` |
-       | Luma - Aero Daily Fitness Tee | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://newluma.enablementadobe.com/images/ms01-black_main.jpg" }` |
-
-       {style="table-layout:fixed"}
-
-1. As a final step you must create a fallback offer, which is an offer sent to customers if they are not eligible for other offers.
-   1. Select **[!UICONTROL Create offer]**.
-   1. In the **[!UICONTROL New offer]** dialog, select **[!UICONTROL Personalized offer]** and select **[!UICONTROL Next]**.
-   1. In the **[!UICONTROL Details]** step of **[!UICONTROL Create new fallback offer]**, enter a **[!UICONTROL Name]** for the offer, for example `Luma - Fallback Offer`, and select **[!UICONTROL Next]**.
-
-   1. In the **[!UICONTROL Add representations]** step of  **[!UICONTROL Create new fallback offer]**:
-      1. Select ![Mobile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobile]** from **[!UICONTROL Channel]** list, and select **[!UICONTROL Mobile JSON]** from **[!UICONTROL Placement]** list.
-      1. Select **[!UICONTROL Custom]** for **[!UICONTROL Content]**.
-      1. Select **[!UICONTROL Add content]**. 
-      1. In the **[!UICONTROL Add personalization]** dialog, enter the following JSON and select **[!UICONTROL Save]**:
-      
-            ```json
-            {  
-               "title": "Luma",
-               "text": "Your store for sports wear and equipment.", 
-               "image": "https://newluma.enablementadobe.com/images/logo.png" 
-            }  
-            ```
-
+      * In the **[!UICONTROL Standard attributes]** section:
+        1. Enter an **[!UICONTROL Offer name]**. For example: `Luma - Desiree Fitness Tee`.
+        2. Enter a **[!UICONTROL Start date]** or select one using ![Calendar](/help/assets/icons2/Calendar.svg). For example: `7/1/2026, 12:00 AM`. 
+        3. Enter a **[!UICONTROL End date]** or select one using ![Calendar](/help/assets/icons2/Calendar.svg). For example: `12/31/2026, 12:00 AM`.
+        4. Enter a **[!UICONTROL Priority]**. For example: `10`.
+        5. Select one or more appropriate tags from the **[!UICONTROL Tags]** drop-down menu. For example: **[!UICONTROL Luma - Mobile App]**.
+      * In the **[!UICONTROL Custom attributes]** section, enter values for the offer content and metadata. What data you can enter and how you can enter that data is entirely determined by how you havwve defined your [schema](#define-your-schema) for offers. In this tutorial, you want to provide a title, text and an image for each offer.
+        1. In the **[!UICONTROL Offer]** container, within the **[!UICONTROL Media Assets]** subcontainer:
+           1. Select **[!UICONTROL Add from URL]** for **[!UICONTROL Image]** and enter an appropriate value for E**[!UICONTROL nter source URL]**. For example: `https://newluma.enablementadobe.com/images/ws05-yellow_main.jpg`.
+           1. Select **[!UICONTROL Add from URL]** for **[!UICONTROL Image (high resolution)]** and enter an appropriate value for **[!UICONTROL Enter source URL]**. For example: `https://newluma.enablementadobe.com/images/ws05-yellow_main.jpg`.
+        1. In the **[!UICONTROL Offer]** container, within the **[!UICONTROL Text]** subcontainer:
+           1. Enter a value for **[!UICONTROL Full description]**. For example: `When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance`.
+           1. Enter a value for **[!UICONTROL Title]**. For example: **[!UICONTROL Desiree Fitness Tee]**.
       1. Select **[!UICONTROL Next]**.
+   1. In the ➋ **[!UICONTROL Elgibility]** step of the creation of an offer (decision item):
 
-
-1. In the **[!UICONTROL Review]** step of **[!UICONTROL Create new fallback]** offer:
-   1. Review the offer, then select **[!UICONTROL Finish]**.
-   1. In the **[!UICONTROL Save offer]** dialog, select **[!UICONTROL Save and approve]**.
+      ![Create offer item - Eligibility](assets/ajo-decisioning-offer-eligibility.png)
+      1. In **[!UICONTROL Eligibility]**, ensure **[!UICONTROL All visitors]** is selected.
+      1. You do not need to create a capping in the **[!UICONTROL Capping]** section.
+      1. Select **[!UICONTROL Next]**.
+   1. In the ➌ Review step op the creation of an offer (decision item):
+      1. Review the offer. You can use ![Edit](/help/assets/icons/Edit.svg) to change **[!UICONTROL Standard attributes]**, **[!UICONTROL Customer attributes]**, or **[!UICONTROL Profile constraints]**.
+      1. Select **[!UICONTROL Save]**.
+1. 
 
 You should now have the following list of offers:
 ![Offers list](assets/ajo-offers-list.png){zoomable="yes"}
