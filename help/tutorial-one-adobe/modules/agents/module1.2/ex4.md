@@ -70,6 +70,48 @@ You're now successfully logged in to CX Enterprise Coworker in Microsoft M365 Co
 
 ![Coworker](./images/cwmsftl5.png)
 
+## 1.2.4.3 Set context in CX Enterprise Coworker
+
+Before interacting further with CX Enterprise Coworker through Microsoft M365 Copilot, the context needs to be set.
+
+For this exercise, the context needs to be set to use:
+
+- **Sandbox**: **Prod - One Adobe (VA7)**
+
+  The sandbox setting helps to identify which sandbox AI Assistant should look at when asking questions.
+
+- **Dataview**: **AdobeOne - Unified Customer Data View**
+  
+  The dataview setting helps to identify which dataview AI Assistant should look at when asking questions.
+
+First, change the sandbox to the correct sandbox. If the sandbox isn't already set to **Prod - one-adobe (VA7)**, then use the following command and click **send**.
+  
+```
+change sandbox to one-adobe
+```
+
+![Agent Orchestrator](./images/copilotlogin7a.png)
+
+Then, enter the following **prompt** and click the **send** button.
+
+```
+list dataviews
+```
+
+![Agent Orchestrator](./images/copilotlogin9.png)
+
+Enter the following **prompt** and click the **send** button.
+
+```
+change the dataview to AdobeOne - Unified Customer Data View
+```
+
+![Agent Orchestrator](./images/copilot13.png)
+
+You should then see this. The context is now set correctly so you can start sending specific prompts next.
+
+![Agent Orchestrator](./images/copilot13a.png)
+
 You've now completed this lab.
 
 ## Next Steps
