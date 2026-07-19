@@ -7,6 +7,8 @@ doc-type: multipage-overview
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px"} 
 
+Go to [Login Information](./csc-sydney-users.md)
+
 ## Day 1 - July 20, 2026 
 
 | Start Time | End Time | Session | Resource |
@@ -27,10 +29,10 @@ doc-type: multipage-overview
 | 10.45 PM | 12.00 PM | Metadata Strategy | - |
 | 12.00 PM | 01.00 PM | Lunch | - |
 | 01.00 PM | 01.30 PM | Lab Intro & Setup | - |
-| 01.30 PM | 02.30 PM | Lab 1 - Planning to Workflow | - |
+| 01.30 PM | 02.30 PM | Lab 1 - Planning to Workflow | [Planning Link](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/wfplanning/wfpl1/wfplanning) <br> [Workflow Link](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/wfplanning/wfpl2/workfront) |
 | 02.30 PM | 02.45 PM | Break | - |
-| 02.45 PM | 03.45 PM | Lab 2 - Content Creation | - |
-| 03.45 PM | 04.45 PM | Lab 3 - Unified Review and Approval | - |
+| 02.45 PM | 03.45 PM | Lab 2 - Content Creation | [Lab Link](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/production/crpr4/express) |
+| 03.45 PM | 04.45 PM | Lab 3 - Unified Review and Approval | [Lab Link](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/production/crpr8/esm) |
 | 04.45 PM | 05.00 PM | Q&A & Wrap-up | - |
 
 ## Day 3 - July 22, 2026
@@ -43,9 +45,9 @@ doc-type: multipage-overview
 | 11.15 AM | 11.30 AM | Break | - |
 | 11.30 PM | 12.30 PM | Org Readiness | - |
 | 12.30 PM | 01.30 PM | Lunch | - |
-| 01.30 PM | 02.30 PM | Lab 4 - GenPeM Email & Meta Template | - |
+| 01.30 PM | 02.30 PM | Lab 4 - GenPeM Email & Meta Template | [Lab Link](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/production/crpr3/genstudio) |
 | 02.30 PM | 02.45 PM | Break | - |
-| 02.45 PM | 03.45 PM | Lab 5 - Firefly Custom Workflows | - |
+| 02.45 PM | 03.45 PM | Lab 5 - Firefly Custom Workflows | [Lab Link](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/production/crpr7/workflowbuilder) |
 | 03.45 PM | 04.00 PM | Close | - |
 
 

@@ -316,3 +316,4 @@ recommendations: noDisplay,noCatalog
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + {hide-from-toc} [Partner Labs Singapore Agenda](/help/tutorial-one-adobe/ai-nola.md)
 + {hide-from-toc} [Partner Labs Sydney Agenda](/help/tutorial-one-adobe/csc-sydney.md)
++ {hide-from-toc} [Partner Labs Sydney User Information](/help/tutorial-one-adobe/csc-sydney-users.md)
