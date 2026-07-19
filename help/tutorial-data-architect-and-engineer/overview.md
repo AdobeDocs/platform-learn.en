@@ -8,7 +8,7 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00.000Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-TQID: https://experienceleague.adobe.com/c7kjzg6YbnanyIJrk2SSQiz---KYOuA8JlbJYWp69ww
+TQID: https://experienceleague.adobe.com/c7kjzg6YbnanyIJrk2SSQiz%2D%2D%2DKYOuA8JlbJYWp69ww
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
