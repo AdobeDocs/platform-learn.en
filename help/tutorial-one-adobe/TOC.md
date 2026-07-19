@@ -314,4 +314,5 @@ recommendations: noDisplay,noCatalog
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
 
 + [Content Status](/help/tutorial-one-adobe/status.md)
-+ {hide-from-toc} [Partner Labs New Orleans Agenda](/help/tutorial-one-adobe/ai-nola.md)
++ {hide-from-toc} [Partner Labs Singapore Agenda](/help/tutorial-one-adobe/ai-nola.md)
++ {hide-from-toc} [Partner Labs Sydney Agenda](/help/tutorial-one-adobe/csc-sydney.md)
