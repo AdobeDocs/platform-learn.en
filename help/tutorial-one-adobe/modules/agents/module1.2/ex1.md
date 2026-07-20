@@ -60,7 +60,7 @@ You should then see this.
 
 ## 1.2.1.3 Set your context
 
-Click the **+** icon to start a new chat. Enter the following command and click **Send**.
+Click the **+** icon to start a new chat. Enter the following prompt and click **Send**.
 
 ```
 list dataviews
@@ -68,7 +68,7 @@ list dataviews
 
 ![AO](./images/aov2lab18.png)
 
-You should then see this. Enter the following command and click **Send**.
+You should then see this. Enter the following prompt and click **Send**.
 
 ```
 switch to dataview AdobeOne - Unified Customer Data View
