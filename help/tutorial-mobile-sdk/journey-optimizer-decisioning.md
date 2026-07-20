@@ -305,6 +305,37 @@ To present an offer to your mobile app user, you must create an offer collection
 You now create a campaign that uses both your offer collection and your code-based experience configuration channel.
 
 1. In the Journey Optimizer UI, select ![Claxon](/help/assets/icons2/Claxon.svg) **[!UICONTROL Campaigns]** from **[!UICONTROL Journey management]** in the left rail.
+1. Select Create campaign.
+1. In the Create your campaign dialog, select Scheduled - Marketing as the type of campaing you want to create.
+1. Select Confirm.
+1. In the Properties tab in the  Campaign - timestamp screen:
+   1. Enter a Name for the campaign. For example: Luma - Mobile App Offers
+   1. Optionally, enter a Description.
+1. Select Actions. 
+   1. In the Actions section:
+      1. Select ![Add](/help/assets/icons/Add.svg) Add action. From the drop-down menu, select ![Code](/help/assets/icons/Code.svg) Code-based experience.
+      1. In the Code-based experience action configuration section, select your code-based experience channel configuration LumaMobileAppCodeBased from the drop-down menu.
+   1. Leave all other settings for Optimization, Languages and Conflict management unchanged.
+1. Select Content
+   1. In the Code-based experience screen, select ![Edit](/help/assets/icons/Edit.svg) Edit code.
+   1. In the Code-based experience | Channel configuration : LumaMobileAppCodeBased screen:
+      1. In the editor, type the following JSON:
+
+         ```jaon
+         {
+            "version": "1.0",
+            "offers": [
+            ]
+         }
+         ```
+
+      1. Select ![DecisionItemsConfiguration](/help/assets/icons2/DecisionItemsConfiguration.svg) Decision policy from the second left rail.
+         1. Select ![DecisionItemsConfiguration](/help/assets/icons2/DecisionItemsConfiguration.svg) Add decision policy.
+         1. In the Create decision policy dialog wizard, in the ➊ Details step:
+            1. Enter a Name for the decision policy. For example: Luma - Decisioning policy.
+            1. Select or enter 2 for the Number of items. This entry assures two offers are returned.
+
+
 
 ## Create a decision
 
