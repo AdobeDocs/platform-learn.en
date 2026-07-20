@@ -6,6 +6,10 @@ doc-type: tutorial
 ---
 # 1.2.4 CX Enterprise Coworker with Microsoft 365 Copilot
 
+>[!IMPORTANT]
+>
+>In order to follow this exercise, you need to have access to the manifest file that needs to be manually uploaded in M365 Copilot. Talk to your instructor, or reach out in the internal Slack channel to access the manifest file.
+
 ## 1.2.4.1 Installing CX Enterprise Coworker in Microsoft 365 Copilot
 
 Open Microsoft Teams and go to **Copilot**. In the left menu, click the **+** icon.

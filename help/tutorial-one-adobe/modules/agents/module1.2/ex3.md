@@ -6,6 +6,10 @@ doc-type: tutorial
 ---
 # 1.2.3 Business Context in CX Enterprise Coworker
 
+>[!IMPORTANT]
+>
+>This exercise isn't finished yet and is just for your information only at this moment. You cannot follow these steps manually yourself yet.
+
 ## 1.2.3.1 Review & Upload Business Context
 
 Go to [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat).
