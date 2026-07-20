@@ -112,6 +112,130 @@ You should then see this. The context is now set correctly so you can start send
 
 ![Agent Orchestrator](./images/copilot13a.png)
 
+## 1.1.3.3 Start with overall purchase trends to anchor context and zoom into fiber 
+
+**Intent**
+
+Get a toplevel pulse on category demand—Mobile, Landline, Internet, TV, Fiber—specifically for the most recent 60 days. This sets baselines for seasonality, promo effects, and regional variance after the New York rollout. 
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Show me purchases by mainCategory over the last 2 months.
+```
+
+![Agent Orchestrator](./images/copilot18.png)
+
+You should then see this:
+
+![Agent Orchestrator](./images/copilot19.png)
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Show me purchases by mainCategory = Fiber over the last 2 months broken down by week
+```
+
+![Agent Orchestrator](./images/copilot20.png)
+
+You should then see this, which drills down into Fiber-specific trends. 
+
+![Agent Orchestrator](./images/copilot21.png)
+
+## 1.1.3.4 Correlate Orders with Content Preferences 
+
+**Intent**
+
+Test the hypothesis that a preference for a specific genre (e.g., SciFi, Sports, Drama) predicts broadband upgrade behavior—especially for high bandwidth needs. 
+
+First, you need to find out which field is used to store the genre preference.
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Which field is used to store the preferred genre
+```
+
+![Agent Orchestrator](./images/copilot22.png)
+
+You should then see this, which shows that the field used for genre is **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
+
+![Agent Orchestrator](./images/copilot23.png)
+
+With that information, you can start drilling down in the purchase data.
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Show me purchases by preferred genre for the last 2 months until today
+```
+
+![Agent Orchestrator](./images/copilot24.png)
+
+You should then see this.
+
+![Agent Orchestrator](./images/copilot25.png)
+
+## 1.1.3.5 Identify Existing Fiber Journeys
+
+**Intent** 
+
+Discover which active or recently concluded journeys include “Fiber” in the title—e.g., “Fiber Upgrade NYC – Sept”, “Fiber Trial – Streaming Bundle”. 
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+What journeys exist? 
+```
+
+![Agent Orchestrator](./images/copilot28.png)
+
+You should then see a list of journeys.
+
+![Agent Orchestrator](./images/copilot29.png)
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Which of these journeys has 'Fiber' in its name?
+```
+
+![Agent Orchestrator](./images/copilot31.png)
+
+You should then see this.
+
+![Agent Orchestrator](./images/copilot33.png)
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
+```
+
+![Agent Orchestrator](./images/copilot35.png)
+
+You should then see this.
+
+![Agent Orchestrator](./images/copilot36.png)
+
+## 1.1.3.6 Validate journey performance via fallout analysis 
+
+**Intent**
+
+You want to understand journey performance fallout to know if there are any nodes or conditions within the journey that are experiencing a large percentage of profiles being dropped. This is helpful in understanding if additional adjustments are needed in the journey.
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
+```
+
+![Agent Orchestrator](./images/copilot37.png)
+
+You should then see this.
+
+![Agent Orchestrator](./images/copilot38.png)
+
 You've now completed this lab.
 
 ## Next Steps
