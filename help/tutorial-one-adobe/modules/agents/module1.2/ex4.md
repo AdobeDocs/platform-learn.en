@@ -6,6 +6,10 @@ doc-type: tutorial
 ---
 # 1.2.4 CX Enterprise Coworker with Microsoft 365 Copilot
 
+>[!IMPORTANT]
+>
+>In order to follow this exercise, you need to have access to the manifest file that needs to be manually uploaded in M365 Copilot. Talk to your instructor, or reach out in the internal Slack channel to access the manifest file.
+
 ## 1.2.4.1 Installing CX Enterprise Coworker in Microsoft 365 Copilot
 
 Open Microsoft Teams and go to **Copilot**. In the left menu, click the **+** icon.
@@ -112,7 +116,7 @@ You should then see this. The context is now set correctly so you can start send
 
 ![Agent Orchestrator](./images/copilot13a.png)
 
-## 1.1.3.3 Start with overall purchase trends to anchor context and zoom into fiber 
+## 1.2.4.4 Start with overall purchase trends to anchor context and zoom into fiber 
 
 **Intent**
 
@@ -142,7 +146,7 @@ You should then see this, which drills down into Fiber-specific trends.
 
 ![Agent Orchestrator](./images/copilot21.png)
 
-## 1.1.3.4 Correlate Orders with Content Preferences 
+## 1.2.4.5 Correlate Orders with Content Preferences 
 
 **Intent**
 
@@ -176,7 +180,7 @@ You should then see this.
 
 ![Agent Orchestrator](./images/copilot25.png)
 
-## 1.1.3.5 Identify Existing Fiber Journeys
+## 1.2.4.6 Identify Existing Fiber Journeys
 
 **Intent** 
 
@@ -218,7 +222,7 @@ You should then see this.
 
 ![Agent Orchestrator](./images/copilot36.png)
 
-## 1.1.3.6 Validate journey performance via fallout analysis 
+## 1.2.4.7 Validate journey performance via fallout analysis 
 
 **Intent**
 
