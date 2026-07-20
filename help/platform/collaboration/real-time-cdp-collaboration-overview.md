@@ -38,7 +38,7 @@ For more information, see the Real-Time CDP Collaboration [documentation](https:
 
 [![ExL LIVE Apr 10, 2025](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
-## Getting started
+## Getting Started
 
 <!--
 CARDS
@@ -414,7 +414,7 @@ CARDS
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## Real-Time CDP collaboration starter
+## Real-Time CDP Collaboration Starter
 
 <!--
 CARDS
