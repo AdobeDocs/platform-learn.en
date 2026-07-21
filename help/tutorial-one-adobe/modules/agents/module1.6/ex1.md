@@ -29,7 +29,7 @@ For this exercise, you need to use:
 
 The Adobe Experience Manager (AEM) Discovery Agent is an AI-powered tool within AEM as a Cloud Service that enables users to find, retrieve, and utilize content—including Assets, Content Fragments, and Adaptive Forms—using natural language prompts. It eliminates the need for manual, click-heavy, or complex filtering by understanding intent and searching across the repository.
 
-In order to use **Discovery Agent**, you will first create some Tags in Adobe Experience Manager, and you will then tag some assets using those tags. Once that's done, you'll be able to use AI Assistant to discover assets in an easy and business-friendly way.
+In order to use **Discovery Agent**, you will first create some Tags in Adobe Experience Manager, and you will then tag some assets using those tags. Once that's done, you'll be able to use CX Enterprise Coworker to discover assets in an easy and business-friendly way.
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). The org you should select is `--aepImsOrgName--`. 
 
@@ -175,10 +175,6 @@ Repeat that process so that all 4 images are approved.
 
 ![AEM Agents](./images/aemagents30.png)
 
-Next, go to **My workspace** and click to open **AI Assistant**.
-
-![AEM Agents](./images/aemagents31.png)
-
 Go to [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat). Sign in using your Adobe account. After logging in, click your user initials in the bottom left part of the screen and make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
 
 ![AEM Agents](./images/aemagentscw1.png)
@@ -213,11 +209,7 @@ You will then see an enlarged view of the asset you selected, with some metadata
 
 The Content Update skill updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
 
-Go back to the AI Assistant screen. Close the side panel.
-
-![AEM Agents](./images/aemagents40.png)
-
-Select one of the proposed prompts and click **Send**.
+Go back to the CX Enterprise Coworker screen. Enter the following **prompt** and click **Send**.
 
 `For the first image, generate renditions for Instagram and LinkedIn posts`
 
