@@ -15,7 +15,7 @@ exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
 >
 >Before you begin, read the below instructions!
 
-## Instructions: Partner Lab New Orleans
+## Instructions for live workshops
 
 For this exercise, you need to use:
 
@@ -179,6 +179,10 @@ Next, go to **My workspace** and click to open **AI Assistant**.
 
 ![AEM Agents](./images/aemagents31.png)
 
+Go to [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat). Sign in using your Adobe account. After logging in, click your user initials in the bottom left part of the screen and make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
+
+![AEM Agents](./images/aemagentscw1.png)
+
 Enter the following prompt and click **Send**.
 
 ```javascript
@@ -187,19 +191,15 @@ find all assets tagged with '--aepUserLdap-- - Spring 2026'
 
 ![AEM Agents](./images/aemagents32.png)
 
-In case you have access to multiple AEM Assets CS environments you will see something like this. Click the proposed answer for the environment you wish to use and then click **Send**.
+In case you have access to multiple AEM Assets CS environments you will see something like this. Either you can enter the number of your environment, or you can speicfy the full path of your AEM Assets environemtn and then click **Send**.
 
 ![AEM Agents](./images/aemagents34.png)
 
-You should then see a similar answer. Click the icon to expand the AI Assistant to full screen.
+You should then see a similar answer.
 
 ![AEM Agents](./images/aemagents35.png)
 
-Review the answers.
-
-![AEM Agents](./images/aemagents36.png)
-
-Click the **View information** icon on any of the assets.
+Click the link on any of the assets.
 
 ![AEM Agents](./images/aemagents37.png)
 
@@ -237,7 +237,7 @@ Feel free to experiment with other prompts. Scroll up and select one of the othe
 
 ![AEM Agents](./images/aemagents42a.png)
 
-Review the images that were generated.
+Review the image that was generated.
 
 ![AEM Agents](./images/aemagents42b.png)
 
@@ -403,7 +403,7 @@ The URL should be similar to this: `https://author-pXXXXXX-eXXXXXXX.adobeaemclou
 
 ![AEM Agents](./images/aemagents70.png)
 
-Go to [https://experience.adobe.com/#/experiencemanager/](https://experience.adobe.com/#/experiencemanager/). Click to open **AI Assistant**.
+Go back to your CX Enterprise Coworker chat on [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat).
 
 ![AEM Agents](./images/aemagents71.png)
 
@@ -420,11 +420,11 @@ On the page XXX, please make the following changes:
 
 ![AEM Agents](./images/aemagents72.png)
 
-After 1-2 minutes, you should see this. Enter the prompt `generate` and click **Send**.
+After 1-2 minutes, you should see this. Select the prompt `Proceed` and click **Submit**.
 
 ![AEM Agents](./images/aemagents74.png)
 
-A couple of minutes later, you should see a confirmation like this that the changes have been performed. Click **Preview the updated page**.
+A couple of minutes later, you should see a confirmation like this that the changes have been performed. Click the **Preview** link.
 
 ![AEM Agents](./images/aemagents75.png)
 
@@ -432,63 +432,27 @@ You now get a visual confirmation of the changes that have been done. This previ
 
 ![AEM Agents](./images/aemagents76.png)
 
-To take action, click **Edit in AEM**. 
+To take action, click **Edit**. 
 
 ![AEM Agents](./images/aemagents75a.png)
 
-In the Universal Editor, you now see all the changes in detail, with the ability the change anything. Once you've reviewed the page, click **Publish**.
+In the Universal Editor, you now see all the changes in detail, with the ability the change anything. 
 
 ![AEM Agents](./images/aemagents77.png)
 
-Click **Publish** again. The change you've made isn't published to your production environment yet. Instead, it's been published under **Launches** in AEM. 
+Go back to your Coworker chat. Select **Promote** and then click **Submit**.
 
-Launches enable you to efficiently develop content for a future release. A Launch is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current pages. This means that you are effectively editing two versions at the same time: pages that are currently published, and a version of those pages, to be published at a time in the future. Once that time arrives you can replace the original pages and publish the new version.
-
-![AEM Agents](./images/aemagents78.png)
-
-To **Promote** your pending changes for a future release, go back to AEM. Click **Adobe Experience Manager** at the top of the page, click the **hammer** icon and then select **Launches**.
-
-![AEM Agents](./images/aemagents79.png)
-
-You should now see a pending **Launch**. Check the checkbox in front of the pending **Launch**.
-
-![AEM Agents](./images/aemagents80.png)
-
-Click **Promote**.
-
-![AEM Agents](./images/aemagents81.png)
-
-Select **Promote full launch** and click **Next**.
-
-![AEM Agents](./images/aemagents82.png)
-
-Click **Promote**.
-
-![AEM Agents](./images/aemagents83.png)
-
-You should now see this. Your changes are in production now.
-
-![AEM Agents](./images/aemagents84.png)
+![AEM Agents](./images/aemagents77a.png)
 
 Refresh your page, you should now see all your changes on the published page.
 
 ![AEM Agents](./images/aemagents85.png)
 
-Alternatively, instead of going through the manual promotion process, you can also enter the prompt `accept` in AI Assistant.
-
-![AEM Agents](./images/aemagents86.png)
-
-You should then get a confirmation that changes are published.
-
-![AEM Agents](./images/aemagents87.png)
-
 ### Content Update - Form Creation
 
 The Form Creation skill now enables users to build adaptive forms through natural language prompts without dependency on development or IT teams. This capability accelerates form development while maintaining brand consistency and allowing business users to create forms without deep technical product knowledge.
 
-Go to [https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat). 
-
-![AEM Agents](./images/aemagentsforms1.png)
+Go back to your CX Enterprise Coworker chat on [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat).
 
 Enter the following prompt and click **send**.
 
@@ -496,8 +460,19 @@ Enter the following prompt and click **send**.
 Create a new adaptive form using Edge Delivery Services and the existing CitiSignal site, with the following details:
 - Form name: "citisignal-fiber-max-interest-2"
 - Form fields: 4 text input fields are needed, for "first-name", "last-name", "email" and "city"
-- When the form is submitted, send the submission to a spreadsheet, with this URL: https://docs.google.com/spreadsheets/d/1WwKrcM8mZ2d_W3sMheUAw3nFhP_OFk05TsqxhHkudfQ/edit?usp=sharing.
 ```
+
+![AEM Agents](./images/aemagentsforms1.png)
+
+You should then get an answer like this one.
+
+Enter the following prompt and click **send**.
+
+```
+can you create the adaptive form for me?
+```
+
+![AEM Agents](./images/aemagentsforms2.png)
 
 ## Next Steps
 
