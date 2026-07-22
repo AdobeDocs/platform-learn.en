@@ -313,11 +313,6 @@ Your offer decision, consisting of a set of offers, is now ready for use. To use
 
 As discussed in previous lessons, installing a mobile tag extension only provides the configuration. Next you must install and register the Optimize SDK. If these steps aren't clear, review the [Install SDKs](install-sdks.md) section.
 
->[!NOTE]
->
->If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
->
-
 >[!BEGINTABS]
 
 >[!TAB iOS]
@@ -347,6 +342,17 @@ As discussed in previous lessons, installing a mobile tag extension only provide
         Assurance.self
     ]
     ```
+
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL general]** in the Xcode Project navigator. Ensure `showPersonalisation` is set to `true` and `showDecisioning` is set to `false` in the `config` section. 
+   
+   ```json
+   ...
+   "showPersonalisation": true,
+   "showDecisioning": false,
+   ...
+   ```
+
+   These settings ensure Decision Management is used for offers in the **[!UICONTROL Personalisation]** tab of the app.
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL decisions]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details that you copied from the Journey Optimizer interface.
 
@@ -438,6 +444,17 @@ As discussed in previous lessons, installing a mobile tag extension only provide
       Assurance.EXTENSION
    )
    ```
+
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL general.json]** in the project navigator.  Ensure `showPersonalisation` is set to `true` and `showDecisioning` is set to `false` in the `config` section. 
+   
+   ```json
+   ...
+   "showPersonalisation": true,
+   "showDecisioning": false,
+   ...
+   ```
+
+   These settings ensure Decision Management is used for offers in the **[!UICONTROL Personalisation]** tab of the app.
 
 1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL decisions.json]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details that you copied from the Journey Optimizer interface.
 

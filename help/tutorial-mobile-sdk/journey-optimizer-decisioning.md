@@ -44,7 +44,7 @@ Journey Optimizer Decisioning is the next generation of offer management and suc
 
 Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual. These decision items are seamlessly integrated into messages and experiences across Adobe Journey Optimizer channels: code-based experience, email, SMS, push notifications, and more. 
 
-In this lesson, the focus is on the use of the code-based experience channel to deliver offers in the mobile app. See [Decisioning](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/experience-decisioning-landing-page) for more information. 
+In this lesson, the focus is on the use of the code-based experience channel to deliver offers in the mobile app. And not on explaining in depth all capabilities of the Decisioning solution. Refer to the [Decisioning](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/experience-decisioning-landing-page) documentation for more information. 
 
 
 >[!NOTE]
@@ -300,28 +300,50 @@ To present an offer to your mobile app user, you must create an offer collection
 
     ![Offers - Collection](assets/ajo-decisioning-collecton-create.png){zoomable="yes"}
 
+## Create a selection strategy
+
+A selection strategy is reusable, and consists of a collection associated with an eligibility constraint and a ranking method to determine the offers to be shown when selected in a decision policy. The decision policy is covered in the [Create a campaign](#create-a-campaign) section.
+
+In our implementation, the selection strategy is kept as simple as possible. 
+
+1. In the Journey Optimizer UI, select ![Strategy](/help/assets/icons2/Strategy.svg) **[!UICONTROL Strategy setup]** from **[!UICONTROL Decisioning]** in the left rail.
+1. Select **[!UICONTROL Selection strategies]**.
+1. Select **[!UICONTROL Create selection strategy]**. In the **[!UICONTROL Create selection strategy]** dialog:
+   1. Enter a **[!UICONTROL Selection strategy name]**. For example: `Luma - Mobile App Selection Strategy`.
+   1. Use **[!UICONTROL Select collection]** to select the collection for the selection strategy. 
+      1. In the **[!UICONTROL Collection]** dialog select a collection. For example: **[!UICONTROL Luma - Mobile App Collection]**.
+      1. Select **[!UICONTROL Save]**.
+   1. Ensure **[!UICONTROL All visitors]** is selected for **[!UICONTROL Eligibility]**.
+   1. Ensure **[!UICONTROL Offer priority]** is selected for **[!UICONTROL Ranking method]**.
+1. Select **[!UICONTROL Create]** to create the selection strategy.
+
+   ![Create selection strategy](assets/ajo-decisioning-create-selection-strategy.png)
+
+
 ## Create a campaign
 
-You now create a campaign that uses both your offer collection and your code-based experience configuration channel.
+You now create a campaign that uses both your offer collection and your code-based experience configuration channel. Campaigns are coordinated marketing actions that deliver content to a specific audience across one or more channels. 
+
+As part of the campaign you also create a decision policy. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member. Their goal is to select the best offers for each profile, while the campaign/journey authoring allows you to indicate how the selected decision items should be presented, including which item attributes to be included in the message.
 
 1. In the Journey Optimizer UI, select ![Claxon](/help/assets/icons2/Claxon.svg) **[!UICONTROL Campaigns]** from **[!UICONTROL Journey management]** in the left rail.
-1. Select Create campaign.
-1. In the Create your campaign dialog, select Scheduled - Marketing as the type of campaing you want to create.
-1. Select Confirm.
-1. In the Properties tab in the  Campaign - timestamp screen:
-   1. Enter a Name for the campaign. For example: Luma - Mobile App Offers
-   1. Optionally, enter a Description.
-1. Select Actions. 
-   1. In the Actions section:
-      1. Select ![Add](/help/assets/icons/Add.svg) Add action. From the drop-down menu, select ![Code](/help/assets/icons/Code.svg) Code-based experience.
-      1. In the Code-based experience action configuration section, select your code-based experience channel configuration LumaMobileAppCodeBased from the drop-down menu.
-   1. Leave all other settings for Optimization, Languages and Conflict management unchanged.
-1. Select Content
-   1. In the Code-based experience screen, select ![Edit](/help/assets/icons/Edit.svg) Edit code.
-   1. In the Code-based experience | Channel configuration : LumaMobileAppCodeBased screen:
+1. Select **[!UICONTROL Create campaign]**.
+1. In the **[!UICONTROL Create your campaign]** dialog, select **[!UICONTROL Scheduled - Marketing]** as the type of campaign you want to create.
+1. Select **[!UICONTROL Confirm]**.
+1. In the **[!UICONTROL Properties]** tab in the **[!UICONTROL Campaign - *timestamp*]** screen:
+   1. Enter a **[!UICONTROL Name]** for the campaign. For example: `Luma - Mobile App Offers`.
+   1. Optionally, enter a **[!UICONTROL Description]**.
+1. Select **[!UICONTROL Actions]**. 
+   1. In the **[!UICONTROL Actions]** section:
+      1. Select ![Add](/help/assets/icons/Add.svg) **[!UICONTROL Add action]**. From the drop-down menu, select ![Code](/help/assets/icons/Code.svg) **[!UICONTROL Code-based experience]**.
+      1. In the **[!UICONTROL Code-based experience]** action configuration section, select your code-based experience channel configuration **[!UICONTROL LumaMobileAppCodeBased]** from the **[!UICONTROL Code-based experience channel configuration]** drop-down menu.
+   1. Leave all other settings for **[!UICONTROL Optimization]**, **[!UICONTROL Languages]** and **[!UICONTROL Conflict management]** unchanged.
+1. Select **[!UICONTROL Content]**.
+   1. In the **[!UICONTROL Code-based experience]** screen, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit code]**.
+   1. In the **[!UICONTROL Code-based experience | Channel configuration : LumaMobileAppCodeBased]** screen:
       1. In the editor, type the following JSON:
 
-         ```jaon
+         ```json
          {
             "version": "1.0",
             "offers": [
@@ -329,97 +351,66 @@ You now create a campaign that uses both your offer collection and your code-bas
          }
          ```
 
-      1. Select ![DecisionItemsConfiguration](/help/assets/icons2/DecisionItemsConfiguration.svg) Decision policy from the second left rail.
-         1. Select ![DecisionItemsConfiguration](/help/assets/icons2/DecisionItemsConfiguration.svg) Add decision policy.
-         1. In the Create decision policy dialog wizard, in the ➊ Details step:
-            1. Enter a Name for the decision policy. For example: Luma - Decisioning policy.
-            1. Select or enter 2 for the Number of items. This entry assures two offers are returned.
-
-
-
-## Create a decision
-
-The final step is to define a decision, which is the combination of one or more decision scopes and your fallback offer. 
-
-A decision scope is a combination of a specific placement (for example HTML in an email, or JSON in a mobile app) and one or more evaluation criteria. 
-
-An evaluation criterium is the combination of 
-
-* an offer collection,
-* eligibility rules: for example, is the offer only available for a specific audience,
-* a ranking method: when multiple offers are available to pick from, which method do you use to rank them (for example by offer priority, using a formula, or an AI model).
-
-See [Key steps to create and manage offers](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) if you want to understand how placements, rules, rankings, offers, representations, collections, decisions, and so on, interact and relate to each other. This lesson is solely focused on using the output of a decision rather than on the flexibility in defining decisions within Journey Optimizer - Decision Management.
-
-1. In the Journey Optimizer UI, select **[!UICONTROL Offers]** from the left rail.
-1. Select **[!UICONTROL Decisions]** from the top bar.
-1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Create decision]**.
-1. In the **[!UICONTROL Details]** step of **[!UICONTROL Create a new offer decision]**:
-   1. Enter a **[!UICONTROL Name]** for the decision, for example `Luma - Mobile App Decision`, enter **[!UICONTROL Start date and time]** and **[!UICONTROL End date and time]**.
-   1. Select **[!UICONTROL Next]**.
-
-1. In the **[!UICONTROL Add decision scopes]** step of **[!UICONTROL Create a new offer decision]**:
-   1. Select **[!UICONTROL Mobile JSON]** from **[!UICONTROL Placement]** list.
-   1. In the **[!UICONTROL Evaluation Criteria]** tile, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]**.
-      1. In the **[!UICONTROL Add Offer Collection]** dialog, select your offer collection. For example, **[!DNL Luma - Mobile App Collection]**.
-      1. Select **[!UICONTROL Add]**.
+      1. Select ![DecisionItemsConfiguration](/help/assets/icons2/DecisionItemsConfiguration.svg) **[!UICONTROL Decision policy]** from the second left rail.
+         1. Select ![DecisionItemsConfiguration](/help/assets/icons2/DecisionItemsConfiguration.svg) **[!UICONTROL Add decision policy]**.
+         1. In the **[!UICONTROL Create decision policy]** dialog wizard, in the ➊ **[!UICONTROL Details]** step:
+            1. Enter a **[!UICONTROL Name]** for the decision policy. For example: `Luma - Mobile App Decision Policy`.
+            1. Select or enter `2` for the **[!UICONTROL Number of items]**. This entry assures two offers are returned.
+            1. Select **[!UICONTROL Next]**.
+         1. In the **[!UICONTROL Create decision policy]** dialog wizard, in the ➋ **[!UICONTROL Strategies]** step:
+            1. In the **[!UICONTROL Strategy sequence]**, select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** to add a strategy sequence. You use [the selection strategy that you created earlier](#create-a-selection-strategy).
+            1. From the context menu, select **[!UICONTROL Selection strategy]**.
+               1. In the **[!UICONTROL Add a selection strategy]** dialog, select **[!UICONTROL Luma - Mobile App Selection Strategy]**.
+               1. Select **[!UICONTROL Save]**.
+            1. Select **[!UICONTROL Next]**.
+         1. In the **[!UICONTROL Create decision policy]** dialog wizard, in the ➋ **[!UICONTROL Review]** step, review your decision policy.
+            1. Select **[!UICONTROL Create]** to create the decision policy.
+      1. Now a decision policy is available, you can use the **[!UICONTROL Luma - Mobile App Decision Policy]** rail to insert proper elements into the JSON editor.
+         1. In the JSON editor, add a newline between `[` and `]`.
+         1. From the **[!UICONTROL Luma - Mobile App Decision Policy]** rail:
+            1. Select ![Add](/help/assets/icons/Add.svg) **[!UICONTROL Insert policy]** to insert the decision policy as JSON in the editor.
+            1. Position the cursor in the editor on a line before the closing <code>\{\{\/each\}\}</code>.
+            1. Select **[!UICONTROL _tenant-name_]** (for example: _techamarketingdemos) **[!UICONTROL >]** **[!UICONTROL Offer]** **[!UICONTROL >]** **[!UICONTROL Text content]** **[!UICONTROL >]** **[!UICONTROL Title]** and then **[!UICONTROL +]**. This adds the title of the offer to the JSON as a `title` element.
+            1. Select **[!UICONTROL _tenant-name_]** **[!UICONTROL >]** **[!UICONTROL Offer]** **[!UICONTROL >]** **[!UICONTROL Text content]** **[!UICONTROL >]** **[!UICONTROL Full description]** and then **[!UICONTROL +]**. This adds the description of the offer to the JSON as a `text` element.
+            1. Select **[!UICONTROL _tenant-name_]** > **[!UICONTROL Offer]** **[!UICONTROL >]** **[!UICONTROL Media assets]** **[!UICONTROL >]** **[!UICONTROL Image]** **[!UICONTROL >]** **[!UICONTROL sourceURL]** and then **[!UICONTROL +]**. This adds the source URL for the high resolution image of the offer to the JSON as an `image` element.
    
-         ![Decision - Select collection](assets/ajo-decision-selectcollection.png){zoomable="yes"}
+            Your final JSON should look similar to below, with updated values for the decision policy identifier and tenant names.
 
-   1. Ensure that **[!UICONTROL None]** is selected for **[!UICONTROL Eligibility]**, and **[!UICONTROL Offer priority]** is selected as the **[!UICONTROL Ranking method]**. 
-   1. Select **[!UICONTROL Next]**.
+            ![Final JSON for decisioning policy](assets/ajo-decisioning-final-json.png)
+
+            Ensure your `title`, `text`, and `image` JSON elements are wrapped as an object, using `{ }`. And that you do insert a `,` after <code>}</code> and before <code>\{\{\/each\}\}</code> in the JSON.
+
+      1. Use ![FileCode](/help/assets/icons/FileCode.svg) **[!UICONTROL Validate]** to validate the JSON. 
+      1. Select **[!UICONTROL Save and close]**.
+1. Select **[!UICONTROL Review]** to activate.
+1. The **[!UICONTROL Review to activate (Luma - Mobile App Offers)]** screen provides an overview of your campaign. 
    
-      ![Decision scopes](assets/ajo-decision-scopes.png){zoomable="yes"}
+   ![Review to activate](assets/ajo-decisioning-review-to-activate.png)
+  
+1. If you do not see any warnings or errors, select **[!UICONTROL Activate]** to activate the campaign. In the confirmation dialog, select **[!UICONTROL Activate]** once more. 
+1. In the list of campaigns, you should see the campaign changing status from ![StatusOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL Activating]** to  ![StatusOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL Processing]** to ![StatusBlue](/help/assets/icons/StatusBlue.svg) **[!UICONTROL Live]**. 
 
-1. In the **[!UICONTROL Add fallback offer]** step of **[!UICONTROL Create a new offer decision]**:
-   1. Select your fallback offer, for example the **[!DNL Luma - Fallback offer]**.
-   1. Select **[!UICONTROL Next]**.
-1. In the **[!UICONTROL Summary]** step of **[!UICONTROL Create a new offer decision]**:
-   1. Select **[!UICONTROL Finish]**.
-   1. In the **[!UICONTROL Save offer decision]** dialog, select **[!UICONTROL Save and activate]**.
-   1. In the **[!UICONTROL Decisions]** tab, you see your decision with status **[!UICONTROL Live]**.
+Now your code-based experience campaign is live and you can update the mobile app to use the code-based experience campaign to render offers on the location or suface defined in the code-based experience channel configuration.
 
-Your offer decision, consisting of a set of offers, is now ready for use. To use the decision in your app, you have to refer in your code to the decision scope.
-
-1. In the Journey Optimizer UI, select **[!UICONTROL Offers]**.
-1. Select **[!UICONTROL Decisions]** from the top bar.
-1. Select your decision, for example **[!DNL Luma - Mobile App Decision]**.
-1. In the **[!UICONTROL Decision scopes]** tile, select ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy]**.
-1. From the contextual menu, select **[!UICONTROL Decision scope]**.
-   
-   ![Copy decision scope](assets/ajo-copy-decisionscope.png){zoomable="yes"} 
-
-1. Use any text editor to paste the decision scope for later use. The decision scope has the following JSON format.
-
-    ```json
-    {
-        "xdm:activityId":"xcore:offer-activity:xxxxxxxxxxxxxxx",
-        "xdm:placementId":"xcore:offer-placement:xxxxxxxxxxxxxxx"
-    }
-    ```
 
 ## Implement offers in your app
 
-As discussed in previous lessons, installing a mobile tag extension only provides the configuration. Next you must install and register the Optimize SDK. If these steps aren't clear, review the [Install SDKs](install-sdks.md) section.
+As discussed in previous lessons, installing a mobile tag extension only provides the configuration. Next you must ensure the Messaging extension is configured for your app. If these steps aren't clear, review the [Install SDKs](install-sdks.md) section.
 
->[!NOTE]
->
->If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
->
 
 >[!BEGINTABS]
 
 >[!TAB iOS]
 
-1. In Xcode, ensure that [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. In Xcode, ensure that [AEP Messaing](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
-1. Ensure `AEPOptimize` is part of your list of imports.
+1. Ensure `AEPMessaging` is part of your list of imports.
 
    ```swift
-   import AEPOptimize
+   import AEPMessaging
    ```
    
-1. Ensure `Optimize.self` is part of the array of extensions that you are registering.
+1. Ensure `Messaging.self` is part of the array of extensions that you are registering.
 
     ```swift
     let extensions = [
@@ -437,71 +428,62 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
-1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL decisions]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details that you copied from the Journey Optimizer interface.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL general]** in the Xcode Project navigator. Ensure `showDecisioning` is set to `true` and `showPersonalization` is set to `false` in the `config` section. 
+   
+   ```json
+   ...
+   "showPersonalisation": false,
+   "showDecisioning": true,
+   ...
+   ```
 
-1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator. Find the `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` function. Add the following code:
+   These settings ensure Decisioning is used for offers in the **[!UICONTROL Personalisation]** tab of the app.
+
+
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL general]** in the Xcode Project navigator. Ensure a `decisioning` section with a `surface` element is configured, identifying the location or surface you have configured for your code-based experience channel. For example: `offersLocation`.
+
+   ```json
+   "decisioning": {
+      "surface": "offersLocation"
+   },
+   ```
+
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator. Find the `func updatePropositionsForSurface()` function. Add the following code:
 
    ```swift
-   // set up the XDM dictionary, define decision scope and call update proposition API
-   Task {
-      let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
-      let identityMap = ["identityMap" : ecid]
-      let xdmData = ["xdm" : identityMap]
-      let decisionScope = DecisionScope(activityId: activityId, placementId: placementId, itemCount: UInt(itemCount))
-      Optimize.clearCachedPropositions()
-      Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData) { data, error in
-            if let error = error {
-               Logger.aepMobileSDK.error("MobileSDK - updatePropositionsAT: Error updating propositions: \(error.localizedDescription)")
-            }
-      }
+   // get the propositions for the surfaces configured.
+   Logger.aepMobileSDK.info("MobileSDK - updatePropositionsForSurfaces: Updating \(surfaces.count) surface(s)")
+   for surface in surfaces {
+      Logger.aepMobileSDK.info("MobileSDK - updatePropositionsForSurfaces: Surface URI: \(surface.uri)")
    }
+        
+   // Call the Messaging extension API to fetch propositions
+   Messaging.updatePropositionsForSurfaces(surfaces)
+        
+   Logger.aepMobileSDK.info("MobileSDK - updatePropositionsForSurfaces: Update triggered successfully")
    ```
 
    This function:
+
+   * gets the propositions for the surfaces.
+
+   In this implementation, only one surface is configured and used. The code requires updates to handle multiple configured surfaces.
+
+
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeDecisioningOffersView]** in the Xcode Project navigator. Find the `func fetchPropositions() async` function and inspect the code of this function. The most important part of this function is the `Messaging.getPropositionsForSurfaces([surface]) { propositionsDict, error in` API call, which 
    
-   * sets up an XDM dictionary `xdmData`, containing the ECID to identify the profile for which you have to present the offers. 
-   * defines `decisionScope`, an object that is based on the decision you have defined in the Journey Optimizer - Decision Management interface and is defined using the copied decision scope from [Create a decision](#create-a-decision).  The Luma app uses a configuration file (`decisions.json`) that retrieves the scope parameters, based on the following JSON format:
-
-       ```json
-       "scopes": [
-           {
-               "name": "name of the scope",
-               "activityId": "xcore:offer-activity:xxxxxxxxxxxxxxx",
-               "placementId": "xcore:offer-placement:xxxxxxxxxxxxxxx",
-               "itemCount": 2
-           }
-       ]
-       ```
-
-      However, you can use any kind of implementation to ensure the Optimize APIs get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation. <br/>For your information: the other key-values in the `decisions.json` file are for future use and not relevant and used currently in this lesson and as part of the tutorial.
-
-   * calls two APIs: [`Optimize.clearCachePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandler).  These functions clear any cached propositions and update the propositions for this profile.
-
-1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeOffersView]** in the Xcode Project navigator. Find the `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` function and inspect the code of this function. The most important part of this function is the [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which 
-   
-    * retrieves the propositions for the current profile based on the decision scope (which you have defined in Journey Optimizer - Decision Management), 
+    * retrieves the propositions for the current profile based on the surface, 
     * retrieves the offer from the proposition,
-    * unwraps the content of the offer so it can be displayed properly in the app, and
-    * triggers the `displayed()` action on the offer which sends an event back to the Edge Network informing the offer is displayed. 
+    * unwraps the content of the offer (using the `parseCodeBasedContent` function) so it can be displayed properly in the app.
 
-1. Still in **[!DNL EdgeOffersView]**, add the following code to the `.onFirstAppear` modifier. This code ensures that the callback for updating the offers is registered only once.
+1. Still in **[!DNL EdgeDecisioningOffersView]**, see how in the .`task` modifier:
 
-    ```swift
-    // Invoke callback for offer updates
-    Task {
-        await self.onPropositionsUpdateOD(activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
-    }
-    ```
+   1. Propositions are updated using `self.updatePropositionsForSurface()`.
+   1. A brief wait is implemented for Edge network to respond and cache propositions.
+   1. The cached propositions are fetched using `await self.fetchPropositions`.
 
-1. Still in **[!UICONTROL EdgeOffersView]**, add the following code to the `.task` modifier. This code updates the offers when the view is refreshed.
-
-    ```swift
-    // Clear and update offers
-    await self.updatePropositionsOD(ecid: currentEcid, activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
-    ```
 
 >[!TAB Android]
-
 
 1. In Android Studio, ensure that [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) is part of the dependencies in **[!UICONTROL build.gradle.kts (Module :app)]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
 1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL MainActivity]** in the Android Studio navigator.
@@ -528,74 +510,57 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    )
    ```
 
-1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL decisions.json]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details that you copied from the Journey Optimizer interface.
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL general.json]** in the project navigator.  Ensure `showDecisioning` is set to `true` and `showPersonalization` is set to `false` in the `config` section. 
+   
+   ```json
+   ...
+   "showPersonalisation": false,
+   "showDecisioning": true,
+   ...
+   ```
 
-1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator. Find the `suspend fun updatePropositionsOD(ecid: String,        activityId: String, placementId: String, itemCount: Int) ` function. Add the following code:
+   These settings ensure Decisioning is used for offers in the **[!UICONTROL Personalisation]** tab of the app.
+
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL general.json]** in the project navigator. Ensure a `decisioning` section with a `surface` element is configured, identifying the location or surface you have configured for your code-based experience channel. For example: `offersLocation`.
+
+   ```json
+   "decisioning": {
+      "surface": "offersLocation"
+   },
+   ```
+
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator. Find the `suspend fun updatePropositionsForSurfaces(surfaces: List<Surface>)` function. Add the following code:
 
    ```kotlin
-   // set up the XDM dictionary, define decision scope and call update proposition API
+   // get the propositions for the surfaces configured
    withContext(Dispatchers.IO) {
-      val ecidMap = mapOf("ECID" to mapOf("id" to ecid, "primary" to true))
-      val identityMap = mapOf("identityMap" to ecidMap)
-      val xdmData = mapOf("xdm" to identityMap)
-      val decisionScope = DecisionScope(activityId, placementId, itemCount)
-      Optimize.clearCachedPropositions()
-      Optimize.updatePropositions(listOf(decisionScope), xdmData, null, object :
-            AdobeCallbackWithOptimizeError<MutableMap<DecisionScope?, OptimizeProposition?>?> {
-            override fun fail(optimizeError: AEPOptimizeError?) {
-               val responseError = optimizeError
-               Log.i("MobileSDK", "updatePropositionsOD error: ${responseError}")
-            }
-            override fun call(propositionsMap: MutableMap<DecisionScope?, OptimizeProposition?>?) {
-               val responseMap = propositionsMap
-               Log.i("MobileSDK", "updatePropositionsOD call: ${responseMap}")
-            }
-      })
+      Log.i("MobileSDK", "updatePropositionsForSurfaces: Updating ${surfaces.size} surface(s)")
+      surfaces.forEach { surface ->
+         Log.i("MobileSDK", "updatePropositionsForSurfaces: Surface URI: ${surface.uri}")
+      }
+           
+      Messaging.updatePropositionsForSurfaces(surfaces)
+      Log.i("MobileSDK", "updatePropositionsForSurfaces: Update triggered successfully")
    }
    ```
 
    This function:
+
+   * gets the propositions for the surfaces.
+
+   In this implementation, only one surface is configured and used. The code requires updates to handle multiple configured surfaces.
+
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL EdgeDecisioningOffersView.kt]** in the project navigator. Find the `suspend fun fetchPropositionsForSurface(surface: Surface): DecisioningResult = withContext(Dispatchers.IO)` function and inspect the code of this function. The most important part of this function is the `Messaging.getPropositionsForSurfaces(listOf(surface)) { propositionsMap -> propositionsMap[surface]?.let { propositions ->` API call, which 
    
-   * sets up an XDM dictionary `xdmData`, containing the ECID to identify the profile for which you have to present the offers. 
-   * defines `decisionScope`, an object that is based on the decision you have defined in the Journey Optimizer - Decision Management interface and is defined using the copied decision scope from [Create a decision](#create-a-decision).  The Luma app uses a configuration file (`decisions.json`) that retrieves the scope parameters, based on the following JSON format:
-
-       ```json
-       "scopes": [
-           {
-               "name": "name of the scope",
-               "activityId": "xcore:offer-activity:xxxxxxxxxxxxxxx",
-               "placementId": "xcore:offer-placement:xxxxxxxxxxxxxxx",
-               "itemCount": 2
-           }
-       ]
-       ```
-
-      However, you can use any kind of implementation to ensure the Optimize APIs get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation. <br/>For your information: the other key-values in the `decisions.json` file are for future use and not relevant and used currently in this lesson and as part of the tutorial.
-
-   * calls two APIs: [`Optimize.clearCachePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandler).  These functions clear any cached propositions and update the propositions for this profile.
-
-1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL EdgeOffers.kt]** in the Xcode Project navigator. Find the `suspend fun onPropositionsUpdateOD(ecid: String, activityId: String, placementId: String, itemCount: Int)` function and inspect the code of this function. The most important part of this function is the [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which 
-   
-    * retrieves the propositions for the current profile based on the decision scope (which you have defined in Journey Optimizer - Decision Management), 
+    * retrieves the propositions for the current profile based on the surface, 
     * retrieves the offer from the proposition,
-    * unwraps the content of the offer so it can be displayed properly in the app, and
-    * returns the offers.
+    * unwraps the content of the offer (using the `parseCodeBasedContent` function) so it can be displayed properly in the app.
 
-1. Still in **[!DNL EdgeOffers.kt]**, add the `LaunchedEffect` function to ensure offers are refreshed upon launching the Personalization tab.
+1. Still in **[!DNL EdgeDecisioningOffersView.kt]**, see how in the `LaunchedEffect` function:
 
-    ```kotlin
-    // recompose the view when the number of received offers changes
-    LaunchedEffect(offersOD.count()) {
-        updatePropositionsOD(
-            currentEcid,
-            decision.activityId,
-            decision.placementId,
-            decision.itemCount
-        )
-        offersOD =
-            onPropositionsUpdateOD(decision.activityId, decision.placementId, decision.itemCount)
-    }
-    ```
+   1. Propositions are updated using `MobileSDK.shared.updatePropositionsForSurfaces(listOf(surface))`.
+   1. A brief delay is implemented for Edge network to respond and cache propositions.
+   1. The cached propositions are fetched using `fetchPropositionsForSurface(surface)`.
 
 >[!ENDTABS]
 
