@@ -24,7 +24,7 @@ An example of such values can be found below. Currently, these values can't be u
 | Learner Profile LDAP        | `--aepUserLdap--` | `vangeluw`|
 | User Number        | `XXX` | `1`|
 
-As an example, in the below screenshot you can see a reference to `aepImsOrgName`.
+As an example, in the below screenshot you can see a reference to `aepImsOrgName` and `aepSandboxName`.
 
 ![DSN](./images/mod7before.png)
 
@@ -105,7 +105,7 @@ After activating your configuration, you'll see a green dot next to the initials
 
 ## Verify tutorial content
 
-As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}.
+As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents2/ex1){target="_blank"}.
 
 You should now see that all **Environment Variables** on this page have been replaced by their true values, based on the activated environment in the chrome extension.
 
