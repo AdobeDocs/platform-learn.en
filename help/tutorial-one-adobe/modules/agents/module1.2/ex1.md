@@ -18,7 +18,7 @@ In order to follow the steps in this lab as documented below, the following acce
 - Access to Real-Time CDP, Journey Optimizer and Customer Journey Analytics
 - Access to CX Enterprise Coworker
 
-## Instructions for live workshops
+## Instructions for in-person workshops
 
 For this exercise, you need to use:
 
@@ -36,7 +36,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 ## 1.2.1.1 Access CX Enterprise Coworker
 
-Go to [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat). Sign in using your Adobe account. After logging in, click your user initials in the bottom left part of the screen and make sure you've selected the correct instance and sandbox by changing selecting them as indicated below.
+Go to [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat). Sign in using your Adobe account. After logging in, click your user initials in the bottom left part of the screen and make sure you're in the org `--aepImsOrgName--` and in the sandbox `--aepSandboxName--` by selecting them as indicated below.
 
 ![AO](./images/aov2lab1.png)
 

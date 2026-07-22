@@ -15,7 +15,7 @@ exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
 >
 >Before you begin, read the below instructions!
 
-## Instructions for live workshops
+## Instructions for in-person workshops
 
 For this exercise, you need to use:
 
