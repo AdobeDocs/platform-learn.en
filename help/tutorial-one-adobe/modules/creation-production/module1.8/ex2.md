@@ -13,9 +13,7 @@ exl-id: 39854816-4572-46e5-8fe4-861da1eb41cf
 >
 >Before you begin, read the below instructions!
 
-## Instructions: Partner Lab New Orleans
-
-For this exercise, you need to use:
+## Instructions for in-person workshops
 
 - **Instance**: **Adobe Tech Insiders**
 - **Username**: **adobetechinsiders-XXX@adobeeventlab.com**

@@ -68,7 +68,7 @@ Enter the values as indicated below, which are all related to your CX Enterprise
 
 If you're attending one of the below events, please use the below values as indicated.
 
-| Name     | Partner Tech Labs New Orleans | Tech Insiders In-Person Workshop | Tech Insiders On-Demand Enablement |
+| Name     | Partner Tech Labs | Tech Insiders In-Person Workshop | Tech Insiders On-Demand Enablement |
 |:-------------:| :---------------:| :---------------:|:---------------:|
 | CX Enterprise IMS Org Name          |`Adobe Tech Insiders`|`Adobe Tech Insiders`|`CXO Enablement Training LAB`|
 | CX Enterprise IMS Org ID            |`907075E95BF479EC0A495C73@AdobeOrg`|`907075E95BF479EC0A495C73@AdobeOrg`|`0B6930256441790E0A495FFE@AdobeOrg`|
@@ -81,7 +81,7 @@ If you're attending one of the below events, please use the below values as indi
 
 This is the username that will be used as part of the tutorial. In this example, the LDAP is based off of the email address of this user. If the email address is **vangeluw@adobe.com**, the LDAP becomes **vangeluw**.
 
-If you're attending the Partner Tech Labs event in New Orleans, please apply the same logic and use the first part of your email address as the LDAP.
+If you're attending a Partner Tech Labs event, please apply the same logic and use the first part of your email address as the LDAP.
 
 The LDAP is used to ensure that the configuration you'll be doing will be linked to you, and won't conflict with other users that may be using the same instance and sandbox that you're using.
 

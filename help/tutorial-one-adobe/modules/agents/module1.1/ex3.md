@@ -31,7 +31,7 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479158?quality=12&learn=on)
 
-## Instructions for live workshops
+## Instructions for in-person workshops
 
 For this exercise, you need to use:
 
