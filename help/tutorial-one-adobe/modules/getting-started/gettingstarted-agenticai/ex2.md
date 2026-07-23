@@ -8,6 +8,10 @@ exl-id: a08945e8-1b21-49a3-962f-9ebd6ce8ea6f
 
 Below is an overview of the applications you will need to have installed on your computer before starting the tutorial.
 
+>[!IMPORTANT]
+>
+>If you've signed up for the on-demand access to CX Enterprise Coworker, then you don't need to install the below applications as they aren't needed for the CX Enterprise Coworker exercise.
+
 ## Adobe Creative Cloud
 
 Go to [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"} and click **Download Creative Cloud**. 

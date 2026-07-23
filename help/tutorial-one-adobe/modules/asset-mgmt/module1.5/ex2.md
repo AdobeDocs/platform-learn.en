@@ -19,7 +19,7 @@ product_v2:
 >
 >Before you begin, read the below instructions!
 
-## Instructions: Partner Lab New Orleans
+## Instructions for in-person workshops
 
 For this exercise, you need to use:
 
@@ -65,7 +65,7 @@ Click **Copy** to copy the full generated JSON payload.
 
 ![ACCS+AEM Sites](./images/accsaemsites5.png)
 
-Go to the GitHub repository that was created when setting up your AEM Sites CS/EDS environment. That repository was created in the exercise [1.1.2 Setup your AEM CS environment](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} and should be named **citisignal-aem-accs** or **techinsidersodXX-citisignal-aem-accs** or, in case you're attending a live in-person training, should be named **techinsidersXX-citisignal-aem-accs**.
+Go to the GitHub repository that was created when setting up your AEM Sites CS/EDS environment. That repository should be named **citisignal-aem-accs** or **techinsidersodXX-citisignal-aem-accs** or, in case you're attending a live in-person training, should be named **techinsidersXX-citisignal-aem-accs**.
 
 ![ACCS+AEM Sites](./images/accsaemsites6.png)
 

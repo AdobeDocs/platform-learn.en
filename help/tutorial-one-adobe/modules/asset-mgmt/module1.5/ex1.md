@@ -15,7 +15,7 @@ product_v2:
 >
 >Before you begin, read the below instructions!
 
-## Instructions: Partner Lab New Orleans
+## Instructions for in-person workshops
 
 For this exercise, you need to use:
 

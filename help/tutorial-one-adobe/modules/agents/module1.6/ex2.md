@@ -15,7 +15,7 @@ exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
 >
 >Before you begin, read the below instructions!
 
-## Instructions: Partner Lab New Orleans
+## Instructions for in-person workshops
 
 For this exercise, you need to use:
 
