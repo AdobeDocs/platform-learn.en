@@ -539,7 +539,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 1. Scroll to the top, and you see two random offers displayed  from the collection that you have defined in the **[!DNL DECISION LUMA - MOBILE APP DECISION]** tile.
 
-    <img src="assets/ajo-app-offers.png" width=300>
+    <img src="assets/ajo-app-decisioning-offers.png" width=300>
 
    The offers are random, as you have given all offers the same priority and the ranking for the decision is based on priority.
 
@@ -585,4 +585,4 @@ You should now have all the tools to start adding more functionality to your Jou
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Next: **[Perform A/B tests](target.md)**
+Next: **[Create and display offers with Decisioning](journey-optimizer-decisioning.md)**

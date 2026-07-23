@@ -574,9 +574,9 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 1. Go to the **[!DNL Personalization]** tab.
 
-1. Scroll to the top, and you see two random offers displayed  from the collection that you have defined in the **[!DNL DECISION LUMA - MOBILE APP DECISION]** tile.
+1. Scroll to the top, and you see two random offers displayed  from the collection that you have defined in the **[!DNL Surface Offers Location]** tile.
 
-    <img src="assets/ajo-app-offers.png" width=300>
+    <img src="assets/ajo-app-decisioning-offers.png" width=300>
 
    The offers are random, as you have given all offers the same priority and the ranking for the decision is based on priority.
 
@@ -587,9 +587,9 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 1. Go to the **[!DNL Personalization]** tab.
 
-1. Scroll to the top, and you see two random offers displayed in the upper box from the collection that you have defined in the **[!DNL DECISION LUMA - MOBILE APP DECISION]** tile.
+1. Scroll to the top, and you see two random offers displayed in the upper box from the collection that you have defined in the **[!DNL Surface Offers Location]** tile.
 
-    <img src="assets/ajo-app-offers-android.png" width=300>
+    <img src="assets/ajo-app-decisioning-offers-android.png" width=300>
 
    The offers are random, as you have given all offers the same priority and the ranking for the decision is based on priority.
 
@@ -600,25 +600,23 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 To validate the offers implementation in Assurance:
 
 1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
-1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Review & Simulate]** underneath **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
-1. Select **[!UICONTROL Save]**.
-1. Select **[!UICONTROL Review & Simulate]** in the left rail. Both datastream setup is validated and the SDK setup in your application.
-1. Select **[!UICONTROL Requests]** at the top bar. You see your **[!UICONTROL Offers]** requests.
-   ![AJO Decisioning validation](assets/assurance-decisioning-requests.png){zoomable="yes"}
+1. Select **[!UICONTROL Events]** in the left rail.
+1. Look for **[!UICONTROL Message propositions response]** events in the event list.
+1. In the right pane, unfold such an event: **[!UICONTROL ACPExtensionEventData]** > **[!UICONTROL propositions]** > **[!UICONTROL 0]** > **[!UICONTROL items]** > **[!UICONTROL 0]** > **[!UICONTROL data]** > **[!UICONTROL content]** > **[!UICONTROL offers]**. You see two offers **[!UICONTROL 0]** and **[!UICONTROL 1]** each with the data you expect.
 
-1. You can explore **[!UICONTROL Simulate]** and **[!UICONTROL Event List]** tabs for further functionality, checking your setup of Journey Optimizer Decision Management.
+   ![Decisioning offers assurance](assets/ajo-decisioning-offers-assurance.png)
 
 ## Next steps
 
-You should now have all the tools to start adding more functionality to your Journey Optimizer - Decision Management implementation. For example:
+You should now have all the tools to start adding more functionality to your Journey Optimizer - Decisioning implementation. For example:
 
 * apply different parameters to your offers (for example, priority, capping)
-* collect profile attributes in the app (see [Profile](profile.md)) and use these profile attributes to build audiences. Then use these audiences as part of the eligibility rules in your decision.
-* combine more than one decision scope.
+* collect profile attributes in the app (see [Profile](profile.md)) and use these profile attributes to build audiences. Then use these audiences as part of the eligibility rules in your decisioning.
+* combine more than one surface.
 
 >[!SUCCESS]
 >
->You have enabled the app to display offers using the Offer Decisioning and Target extension for the Experience Platform Mobile SDK.
+>You have enabled the app to display offers using the Decisioniong.
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
