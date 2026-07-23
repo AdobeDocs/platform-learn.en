@@ -38,7 +38,7 @@ topic_v2:
 
 Learn how to show offers from Journey Optimizer Decisioning in your mobile apps with Experience Platform Mobile SDK.
 
-Journey Optimizer Decisioning is the next generation of offer management and successor of [Decision Management](./journey-optimizer-offers.md). The Decisioning feature empowers you to deliver personalized marketing offers by combining a centralized catalog of decision items with a powerful decision engine. Whether you're tailoring content for individual audiences or optimizing strategies with AI-powered rankings, Decisioning provides the tools to make data-driven decisions at scale. Dive into the key concepts such as decision items, rules, and policies, and explore how these elements work together to select and prioritize the best content for your campaigns. From managing collections and placements to leveraging Adobe Experience Platform data, this comprehensive guide helps you unlock smarter personalization and drive impactful customer experiences.
+Journey Optimizer Decisioning is the next generation of offer management and the successor of [Decision Management](./journey-optimizer-offers.md). The Decisioning feature empowers you to deliver personalized marketing offers by combining a centralized catalog of decision items with a powerful decision engine. Whether you're tailoring content for individual audiences or optimizing strategies with AI-powered rankings, Decisioning provides the tools to make data-driven decisions at scale. Dive into the key concepts such as decision items, rules, and policies, and explore how these elements work together to select and prioritize the best content for your campaigns. From managing collections and placements to leveraging Adobe Experience Platform data, this comprehensive guide helps you unlock smarter personalization and drive impactful customer experiences.
 
 ![Architecture](assets/architecture-ajo.png){zoomable="yes"}
 
@@ -49,7 +49,7 @@ In this lesson, the focus is on the use of the code-based experience channel to 
 
 >[!NOTE]
 >
->This lesson is optional and only applies to Journey Optimizer users looking to use the Decision Management functionality to display offers in a mobile app.
+>This lesson is optional and only applies to Journey Optimizer users looking to use the Decisioning functionality to display offers in a mobile app.
 
 
 ## Prerequisites
@@ -67,8 +67,7 @@ In this lesson, you will
 * Create a schema to represent offers.
 * Validate setup in Assurance.
 * Configure a code-based experience channel configuration.
-* 
-* Create a code-based experience campaign, based on offers in Journey Optimizer - Decision Management.
+* Create a code-based experience campaign, based on offers in Journey Optimizer - Decisioning.
 * Implement offers from Decisioning in your app.
 
 
@@ -80,12 +79,12 @@ In this lesson, you will
 
 ### Update datastream configuration
 
-To ensure data sent from your mobile app to Platform Edge Network is forwarded to Journey Optimizer - Decision Management, update your datastream.
+To ensure data sent from your mobile app to Platform Edge Network is forwarded to Journey Optimizer - Decisioning, update your datastream.
 
 1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
 1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
 1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Adobe Journey Optimizer]** are enabled. 
-   * If you plan to only do the Decisioning lesson and not the Decision management lesson, you do not need to enable **[!UICONTROL Offer Decisioning]**.
+   * If you plan to only do this Decisioning lesson and not the [Decision management](./journey-optimizer-offers.md) lesson, you do not need to enable **[!UICONTROL Offer Decisioning]**.
    * If you do the Target lesson, select **[!UICONTROL Personalization Destinations]**, too. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) for more information.
 1. To save your datastream configuration, select **[!UICONTROL Save]** .
 
@@ -97,11 +96,14 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
 1. Navigate to the Data Collection interface and select **[!UICONTROL Schemas]** from the left rail.
 1. Select **[!UICONTROL Browse]** from the top bar.
 1. Open the **[!UICONTROL Personalized Offer Items - Experience Decisioning]** schema. This schema is the dedicated schema to configure your offer items, their attributes and metadata.
-1. Add additional field groups to your schema that represent how you want to use offers in Decisioning. Refer to [Create schema](./create-schema.md) to understand how you can create schemas. For this lesson, two field groups are created as part of the sandbox configuration: **[!UICONTROL Offer]** and **[!UICONTROL Offer Metadata]**. You can see the full structure of the schema below. All **[!UICONTROL mediaAssets]** fields, like **[!UICONTROL image]** or **[!UICONTROL imageLowRes]** are of type **[!UICONTROL DesignAssets]**. All other fields are either of type **[!UICONTROL Object]** or **[!UICONTROL String]**.
+1. Add additional field groups to your schema that represent how you want to use offers in Decisioning. Refer to [Create schema](./create-schema.md) to understand how you can create schemas. For this lesson, two field groups are created as part of the **[!UICONTROL _techmarketingdemos]** sandbox configuration: **[!UICONTROL Offer]** and **[!UICONTROL Offer Metadata]**. You can see the full structure of the schema below. 
+
+   * All **[!UICONTROL mediaAssets]** fields, like **[!UICONTROL image]** or **[!UICONTROL imageLowRes]** are of type **[!UICONTROL DesignAssets]** and automatically do have **[!UICONTROL destinationURL]**, **[!UICONTROL edgePath]**, **[!UICONTROL repository]**, **[!UICONTROL sourceURL]**, **[!UICONTROL trackedURL]** and **[!UICONTROL type]** string fields. 
+   * All other fields are either of type **[!UICONTROL Object]** (for example **[!UICONTROL offerMetadata]**) or **[!UICONTROL String]** (for example **[!UICONTROL fullDescription]**).
    
    ![Schema experience decisioning](assets/schema-experience-decisioning.png){zoomable="yes"}
 
-   You can define your **[!UICONTROL Personalized Offer Items - Experience Decisioning]** schema any way you want. The above is just an example that is used for the remainder of this lesson.
+   You can define your **[!UICONTROL Personalized Offer Items - Experience Decisioning]** schema any way you want. The above structure is just an example that is used for the remainder of this lesson.
 
 1. Ensure you select **[!UICONTROL Save]** to save any changes you make to the **[!UICONTROL Personalized Offer Items - Experience Decisioning]** schema.
 
@@ -185,12 +187,12 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 ## Validate setup in Assurance
 
-You do not need to validate the setup for Decisioning in Assurance. Decisioning does not use a specific Experience Platform Data Collection Tag extension, nor does Decisioning require an additional package for your app. Decisioning relies on the Messaging extension in your app, which you already should have added as part of the [Install Adobe Experience Platform Mobile SDKs](./install-sdks.md) and [Create and send in-app messagesless](./journey-optimizer-inapp.md) lessons in this tutorial.
+You do not need to validate the setup for Decisioning in Assurance. Decisioning does not use a specific Experience Platform Data Collection Tag extension, nor does Decisioning requires an additional package for your app. Decisioning relies on the Messaging extension in your app, which you already should have added as part of the [Install Adobe Experience Platform Mobile SDKs](./install-sdks.md) and [Create and send in-app messages](./journey-optimizer-inapp.md) lessons in this tutorial.
 
 
 ## Create code-based experience channel configuration
 
-To display offers in the screens of your app, you need to configure a dedicated code-based experience channel. This code-based experience channel defines the surface (the location) where you render your offers.
+To display offers in the screens of your app, you need to configure a dedicated code-based experience channel. This code-based experience channel defines the surface (the location) in the app where you display your offers.
 
 To create a code-based experience channel.
 
@@ -207,11 +209,11 @@ To create a code-based experience channel.
    1. Select one or more marketing actions from the **[!UICONTROL Select one or multiple marketing actions]**. For example **[!UICONTROL Onsite Personalization]**.
    1. Select the platforms for which you want to configure the code-based experience. For this tutorial, select **[!UICONTROL iOS]** or **[!UICONTROL Android]** or both.
       * For **[!UICONTROL iOS]**:
-        1. Enter of select **[!UICONTROL App id]**. For example: `com.adobe.luma.tutorial.swiftui`.
+        1. Enter of select **[!UICONTROL App id]**. For example, the identifier of your app: `com.adobe.luma.tutorial.swiftui`.
         1. Enter of select a location for **[!UICONTROL Location or path inside the app]**. For example: `offersLocation`.
         1. Enter a **[!UICONTROL Preview URL]**. For example: `lumatutorialswiftui://`.
       * For **[!UICONTROL Android]**:
-        1. Enter of select **[!UICONTROL App id]**. For example: `com.adobe.luma.tutorial.android`.
+        1. Enter of select **[!UICONTROL App id]**. For example, the identifier of your app: `com.adobe.luma.tutorial.android`.
         1. Enter of select a location for **[!UICONTROL Location or path inside the app]**. For example: `offersLocation`.
         1. Enter a **[!UICONTROL Preview URL]**. For example: `lumatutorialandroid://default`.
       * **[!UICONTROL Content]**
@@ -232,19 +234,20 @@ In this section you create offers for Decisioning.
 
       ![Attributes for an offer in Decisioning](assets/ajo-decisioning-offer-attributes.png){zoomable="yes"}
 
-      * In the **[!UICONTROL Standard attributes]** section:
-        1. Enter an **[!UICONTROL Offer name]**. For example: `Luma - Desiree Fitness Tee`.
-        2. Enter a **[!UICONTROL Start date]** or select one using ![Calendar](/help/assets/icons2/Calendar.svg). For example: `7/1/2026, 12:00 AM`. 
-        3. Enter a **[!UICONTROL End date]** or select one using ![Calendar](/help/assets/icons2/Calendar.svg). For example: `12/31/2026, 12:00 AM`.
-        4. Enter a **[!UICONTROL Priority]**. For example: `10`.
-        5. Select one or more appropriate tags from the **[!UICONTROL Tags]** drop-down menu. For example: **[!UICONTROL Luma - Mobile App]**.
-      * In the **[!UICONTROL Custom attributes]** section, enter values for the offer content and metadata. What data you can enter and how you can enter that data is entirely determined by how you havwve defined your [schema](#define-your-schema) for offers. In this tutorial, you want to provide a title, text and an image for each offer.
-        1. In the **[!UICONTROL Offer]** container, within the **[!UICONTROL Media Assets]** subcontainer:
-           1. Select **[!UICONTROL Add from URL]** for **[!UICONTROL Image]** and enter an appropriate value for E**[!UICONTROL nter source URL]**. For example: `https://newluma.enablementadobe.com/images/ws05-yellow_main.jpg`.
-           1. Select **[!UICONTROL Add from URL]** for **[!UICONTROL Image (high resolution)]** and enter an appropriate value for **[!UICONTROL Enter source URL]**. For example: `https://newluma.enablementadobe.com/images/ws05-yellow_main.jpg`.
-        1. In the **[!UICONTROL Offer]** container, within the **[!UICONTROL Text]** subcontainer:
-           1. Enter a value for **[!UICONTROL Full description]**. For example: `When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance`.
-           1. Enter a value for **[!UICONTROL Title]**. For example: **[!UICONTROL Desiree Fitness Tee]**.
+      1. In the **[!UICONTROL Standard attributes]** section:
+         1. Enter an **[!UICONTROL Offer name]**. For example: `Luma - Desiree Fitness Tee`.
+         1. Enter a **[!UICONTROL Start date]** or select one using ![Calendar](/help/assets/icons/Calendar.svg). For example: `7/1/2026, 12:00 AM`. 
+         1. Enter a **[!UICONTROL End date]** or select one using ![Calendar](/help/assets/icons/Calendar.svg). For example: `12/31/2026, 12:00 AM`.
+         1. Enter a **[!UICONTROL Priority]**. For example: `10`.
+         1. Select one or more appropriate tags from the **[!UICONTROL Tags]** drop-down menu. For example: **[!UICONTROL Luma - Mobile App]**.
+
+      1. In the **[!UICONTROL Custom attributes]** section, enter values for the offer content and metadata. What data you can enter and how you can enter that data is entirely determined by how you have defined your [schema](#define-your-schema) for offers. In this tutorial, you want to provide a title, text and an image for each offer.
+         1. In the **[!UICONTROL Offer]** container, within the **[!UICONTROL Media Assets]** subcontainer:
+            1. Select **[!UICONTROL Add from URL]** for **[!UICONTROL Image]** and enter an appropriate value for E**[!UICONTROL nter source URL]**. For example: `https://newluma.enablementadobe.com/images/ws05-yellow_main.jpg`.
+            1. Select **[!UICONTROL Add from URL]** for **[!UICONTROL Image (high resolution)]** and enter an appropriate value for **[!UICONTROL Enter source URL]**. For example: `https://newluma.enablementadobe.com/images/ws05-yellow_main.jpg`.
+         1. In the **[!UICONTROL Offer]** container, within the **[!UICONTROL Text]** subcontainer:
+            1. Enter a value for **[!UICONTROL Full description]**. For example: `When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance`.
+            1. Enter a value for **[!UICONTROL Title]**. For example: `Desiree Fitness Tee`.
       1. Select **[!UICONTROL Next]**.
    1. In the ➋ **[!UICONTROL Elgibility]** step of the creation of an offer (decision item):
 
@@ -260,7 +263,7 @@ In this section you create offers for Decisioning.
       1. Review the offer. You can use ![Edit](/help/assets/icons/Edit.svg) to change **[!UICONTROL Standard attributes]**, **[!UICONTROL Customer attributes]**, or **[!UICONTROL Profile constraints]**.
       1. Select **[!UICONTROL Save]**.
 
-1. Repeat step 3 for the following additional offers:
+1. Repeat step 3 (Create item) for the following additional offers:
 
    | Name | Title | Full description | Image and Image (high resolution) |
    |---|---|---|---|
@@ -269,7 +272,7 @@ In this section you create offers for Decisioning.
    | `Luma - Adrienne Trek Jacket` | `Adrienne Trek Jacket` | `You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.` | `https://newluma.enablementadobe.com/images/wj08-gray_main.jpg` |
    | `Luma - Juno Jacket` | `Juno Jacket` | `On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performanc Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.` | `https://newluma.enablementadobe.com/images/wj06-purple_main.jpg` | 
 
-   All other values, like **[!UICONTROL Start date]**, **[!UICONTROL End date]**, **[!UICONTROL Priority]**, **[!UICONTROL Capping]**, **[!UICONTROL Eligibility]**, and more should be the same across all offers.
+   All other values, like **[!UICONTROL Start date]**, **[!UICONTROL End date]**, **[!UICONTROL Priority]**, **[!UICONTROL Capping]**, **[!UICONTROL Eligibility]**, and other sthat are not explicitly defined in the table above should be the same across all offers and based on what you defined for the first offer.
 
 You should now have the following list of offers:
 
@@ -284,21 +287,20 @@ To present an offer to your mobile app user, you must create an offer collection
 1. Select **[!UICONTROL Collections]** from **[!UICONTROL Catalogs]** to see the list of **[!UICONTROL Collections]**.
 1. Select **[!UICONTROL Create collection]**.
 
-   ![Create a decisioning collection]
 1. In the **[!UICONTROL Details]** section:
    1. Enter a **[!UICONTROL Name]** for the collection. For example: `Luma - Mobile App Collection`.
    1. Enter a **[!UICONTROL Description]** for the collection. For example:  `Collection of Luma mobile app offers`.
 1. In the **[!UICONTROL Collection rules]** section, underneath **[!UICONTROL NUMBER OF ITEMS]**:
-   1. Select C**[!UICONTROL lick to create a decision item…]**
+   1. Select **[!UICONTROL Click to create a decision item…]**
    1. Use **[!UICONTROL Select attribute]** to select an attribute. 
       1. In the **[!UICONTROL Select an attribute]** dialog select a **[!UICONTROL Decision attribute]**. For example **[!UICONTROL Offer name]**.
       1. Select **[!UICONTROL Save]**.
    1. Use the **[!UICONTROL Equals]** drop-down menu to select a condition. For example **[!UICONTROL Starts with]**.
-   1. In the textfield enter the value for the condition. For example: `Luma -`. Thi value will select all offers which name starts with `Luma -` to be part of the collection. You can create any kind of rule and also combine rules, using ![AddCircle](/help/assets/icons/AddCircle.svg) Add rule.
+   1. In the textfield enter the value for the condition. For example: `Luma -`. This value will select all offers which name starts with `Luma -` to be part of the collection. You can create any kind of rule and also combine rules, using ![AddCircle](/help/assets/icons/AddCircle.svg) Add rule.
 1. Select **[!UICONTROL Create]** to create the collection.
 
 
-    ![Offers - Collection](assets/ajo-decisioning-collecton-create.png){zoomable="yes"}
+    ![Offers - Collection](assets/ajo-decisioning-collection-create.png){zoomable="yes"}
 
 ## Create a selection strategy
 
@@ -358,19 +360,19 @@ As part of the campaign you also create a decision policy. Decision policies are
             1. Select or enter `2` for the **[!UICONTROL Number of items]**. This entry assures two offers are returned.
             1. Select **[!UICONTROL Next]**.
          1. In the **[!UICONTROL Create decision policy]** dialog wizard, in the ➋ **[!UICONTROL Strategies]** step:
-            1. In the **[!UICONTROL Strategy sequence]**, select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** to add a strategy sequence. You use [the selection strategy that you created earlier](#create-a-selection-strategy).
+            1. In the **[!UICONTROL Strategy sequence]**, select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** to add a strategy sequence.
             1. From the context menu, select **[!UICONTROL Selection strategy]**.
-               1. In the **[!UICONTROL Add a selection strategy]** dialog, select **[!UICONTROL Luma - Mobile App Selection Strategy]**.
+               1. In the **[!UICONTROL Add a selection strategy]** dialog, select [the selection strategy that you created earlier](#create-a-selection-strategy), **[!UICONTROL Luma - Mobile App Selection Strategy]**.
                1. Select **[!UICONTROL Save]**.
             1. Select **[!UICONTROL Next]**.
-         1. In the **[!UICONTROL Create decision policy]** dialog wizard, in the ➋ **[!UICONTROL Review]** step, review your decision policy.
+         1. In the **[!UICONTROL Create decision policy]** dialog wizard, in the ➌ **[!UICONTROL Review]** step, review your decision policy.
             1. Select **[!UICONTROL Create]** to create the decision policy.
-      1. Now a decision policy is available, you can use the **[!UICONTROL Luma - Mobile App Decision Policy]** rail to insert proper elements into the JSON editor.
+      1. Now that a decision policy is available, you can use the **[!UICONTROL Luma - Mobile App Decision Policy]** rail to insert proper elements from that decision policy into the JSON editor.
          1. In the JSON editor, add a newline between `[` and `]`.
          1. From the **[!UICONTROL Luma - Mobile App Decision Policy]** rail:
             1. Select ![Add](/help/assets/icons/Add.svg) **[!UICONTROL Insert policy]** to insert the decision policy as JSON in the editor.
             1. Position the cursor in the editor on a line before the closing <code>\{\{\/each\}\}</code>.
-            1. Select **[!UICONTROL _tenant-name_]** (for example: _techamarketingdemos) **[!UICONTROL >]** **[!UICONTROL Offer]** **[!UICONTROL >]** **[!UICONTROL Text content]** **[!UICONTROL >]** **[!UICONTROL Title]** and then **[!UICONTROL +]**. This adds the title of the offer to the JSON as a `title` element.
+            1. Select **[!UICONTROL _tenant-name_]** (for example: **[!UICONTROL _techmarketingdemos]**) **[!UICONTROL >]** **[!UICONTROL Offer]** **[!UICONTROL >]** **[!UICONTROL Text content]** **[!UICONTROL >]** **[!UICONTROL Title]** and then **[!UICONTROL +]**. This adds the title of the offer to the JSON as a `title` element.
             1. Select **[!UICONTROL _tenant-name_]** **[!UICONTROL >]** **[!UICONTROL Offer]** **[!UICONTROL >]** **[!UICONTROL Text content]** **[!UICONTROL >]** **[!UICONTROL Full description]** and then **[!UICONTROL +]**. This adds the description of the offer to the JSON as a `text` element.
             1. Select **[!UICONTROL _tenant-name_]** > **[!UICONTROL Offer]** **[!UICONTROL >]** **[!UICONTROL Media assets]** **[!UICONTROL >]** **[!UICONTROL Image]** **[!UICONTROL >]** **[!UICONTROL sourceURL]** and then **[!UICONTROL +]**. This adds the source URL for the high resolution image of the offer to the JSON as an `image` element.
    
@@ -378,7 +380,7 @@ As part of the campaign you also create a decision policy. Decision policies are
 
             ![Final JSON for decisioning policy](assets/ajo-decisioning-final-json.png)
 
-            Ensure your `title`, `text`, and `image` JSON elements are wrapped as an object, using `{ }`. And that you do insert a `,` after <code>}</code> and before <code>\{\{\/each\}\}</code> in the JSON.
+            Ensure your `title`, `text`, and `image` JSON elements are wrapped as an object, using `{ }`. And that you do insert a `,` after that object and just before <code>\{\{\/each\}\}</code> in the JSON.
 
       1. Use ![FileCode](/help/assets/icons/FileCode.svg) **[!UICONTROL Validate]** to validate the JSON. 
       1. Select **[!UICONTROL Save and close]**.
@@ -467,7 +469,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
    * gets the propositions for the surfaces.
 
-   In this implementation, only one surface is configured and used. The code requires updates to handle multiple configured surfaces.
+   In this implementation, only one surface is configured and used. The code requires updates if you want to handle multiple configured surfaces.
 
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeDecisioningOffersView]** in the Xcode Project navigator. Find the `func fetchPropositions() async` function and inspect the code of this function. The most important part of this function is the `Messaging.getPropositionsForSurfaces([surface]) { propositionsDict, error in` API call, which 
@@ -548,7 +550,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
    * gets the propositions for the surfaces.
 
-   In this implementation, only one surface is configured and used. The code requires updates to handle multiple configured surfaces.
+   In this implementation, only one surface is configured and used. The code requires updates if you want to handle multiple configured surfaces.
 
 1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL EdgeDecisioningOffersView.kt]** in the project navigator. Find the `suspend fun fetchPropositionsForSurface(surface: Surface): DecisioningResult = withContext(Dispatchers.IO)` function and inspect the code of this function. The most important part of this function is the `Messaging.getPropositionsForSurfaces(listOf(surface)) { propositionsMap -> propositionsMap[surface]?.let { propositions ->` API call, which 
    
@@ -578,7 +580,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
     <img src="assets/ajo-app-decisioning-offers.png" width=300>
 
-   The offers are random, as you have given all offers the same priority and the ranking for the decision is based on priority.
+   The offers are random, as you have given all offers the same priority and the ranking for the offers is based on priority.
 
 
 >[!TAB Android]
@@ -591,7 +593,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
     <img src="assets/ajo-app-decisioning-offers-android.png" width=300>
 
-   The offers are random, as you have given all offers the same priority and the ranking for the decision is based on priority.
+   The offers are random, as you have given all offers the same priority and the ranking for the offers is based on priority.
 
 >[!ENDTABS]
 
