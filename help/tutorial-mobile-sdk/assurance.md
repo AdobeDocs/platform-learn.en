@@ -283,7 +283,7 @@ In your browser:
       
        <img src="assets/assurance-modal.png" width=300>
     
-    * Experience Cloud updates coming through in the Assurance UI, showing:
+    * Updates coming through in the Assurance UI, showing:
 
       1. Experience Events coming from the app.
       1. Details of a selected event.
@@ -366,7 +366,7 @@ In your browser:
       
        <img src="assets/assurance-modal-android.png" width=300>
     
-    * Experience Cloud updates coming through in the Assurance UI, showing:
+    * Updates coming through in the Assurance UI, showing:
 
       1. Experience Events coming from the app.
       1. Details of a selected event.

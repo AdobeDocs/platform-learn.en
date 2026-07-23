@@ -1,5 +1,5 @@
 ---
-title: Create and display offers with Platform Mobile SDK
+title: Create And Display Offers With Journey Optimizer Experience Decision Management
 description: Learn how to create and display offers with Platform Mobile SDK and Adobe Journey Optimizer Decision Management.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
@@ -39,14 +39,15 @@ topic_v2:
 
 Learn how to show offers from Journey Optimizer Decision Management in your mobile apps with Experience Platform Mobile SDK.
 
+>[!TIP]
+>
+>See the [Create and display offers with Decisioning](./journey-optimizer-decisioning.md) for more information on the successor of Decision Management.
+
 Journey Optimizer Decision Management helps you to deliver the best offer and experience to your customers across all touchpoints  at the right time. Once designed, target your audience with personalized offers.
 
 ![Architecture](assets/architecture-ajo.png){zoomable="yes"}
 
 Decision management makes personalization easy with a central library of marketing offers and a decision engine that applies rules and constraints to rich, real-time profiles created by Adobe Experience Platform. As a result, it enables you to send your customers the right offer at the right time. See [About Decision Management](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning) for more information. 
-
-
-
 
 >[!NOTE]
 >
@@ -312,11 +313,6 @@ Your offer decision, consisting of a set of offers, is now ready for use. To use
 
 As discussed in previous lessons, installing a mobile tag extension only provides the configuration. Next you must install and register the Optimize SDK. If these steps aren't clear, review the [Install SDKs](install-sdks.md) section.
 
->[!NOTE]
->
->If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
->
-
 >[!BEGINTABS]
 
 >[!TAB iOS]
@@ -346,6 +342,17 @@ As discussed in previous lessons, installing a mobile tag extension only provide
         Assurance.self
     ]
     ```
+
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL general]** in the Xcode Project navigator. Ensure `showPersonalisation` is set to `true` and `showDecisioning` is set to `false` in the `config` section. 
+   
+   ```json
+   ...
+   "showPersonalisation": true,
+   "showDecisioning": false,
+   ...
+   ```
+
+   These settings ensure Decision Management is used for offers in the **[!UICONTROL Personalisation]** tab of the app.
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL decisions]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details that you copied from the Journey Optimizer interface.
 
@@ -438,6 +445,17 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    )
    ```
 
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL general.json]** in the project navigator.  Ensure `showPersonalisation` is set to `true` and `showDecisioning` is set to `false` in the `config` section. 
+   
+   ```json
+   ...
+   "showPersonalisation": true,
+   "showDecisioning": false,
+   ...
+   ```
+
+   These settings ensure Decision Management is used for offers in the **[!UICONTROL Personalisation]** tab of the app.
+
 1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL decisions.json]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details that you copied from the Journey Optimizer interface.
 
 1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator. Find the `suspend fun updatePropositionsOD(ecid: String,        activityId: String, placementId: String, itemCount: Int) ` function. Add the following code:
@@ -521,7 +539,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 1. Scroll to the top, and you see two random offers displayed  from the collection that you have defined in the **[!DNL DECISION LUMA - MOBILE APP DECISION]** tile.
 
-    <img src="assets/ajo-app-offers.png" width=300>
+    <img src="assets/ajo-app-decisioning-offers.png" width=300>
 
    The offers are random, as you have given all offers the same priority and the ranking for the decision is based on priority.
 
@@ -567,4 +585,4 @@ You should now have all the tools to start adding more functionality to your Jou
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Next: **[Perform A/B tests](target.md)**
+Next: **[Create and display offers with Decisioning](journey-optimizer-decisioning.md)**
