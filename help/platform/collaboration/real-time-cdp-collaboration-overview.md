@@ -474,7 +474,7 @@ CARDS
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## Audience Mananger and Real-Time CDP Collaboration
+## Audience Manager and Real-Time CDP Collaboration
 
 <!--
 CARDS
