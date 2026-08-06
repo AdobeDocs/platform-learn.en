@@ -6,6 +6,13 @@ doc-type: tutorial
 ---
 # 1.2.4 CX Enterprise Coworker with Microsoft 365 Copilot
 
+[!BADGE Beta]
+
++++Beta Details
+By using the CX Enterprise Coworker with Microsoft 365 Copilot Beta, You hereby acknowledge that the Beta is provided "as is" without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any "Feedback" (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
+
++++
+
 >[!IMPORTANT]
 >
 >In order to follow this exercise, you need to have access to the manifest file that needs to be manually uploaded in M365 Copilot. Talk to your instructor, or reach out in the internal Slack channel to access the manifest file.
@@ -243,6 +250,8 @@ You should then see this.
 You've now completed this lab.
 
 ## Next Steps
+
+Go to [CX Enterprise Coworker with ChatGPT Enterprise](./ex5.md){target="_blank"}
 
 Go Back to [CX Enterprise Coworker](./coworker.md){target="_blank"}
 
