@@ -32,7 +32,11 @@ In this exercise, you'll setup business context in CX Enterprise Coworker which 
 
 [1.2.4 CX Enterprise Coworker with Microsoft 365 Copilot](./ex4.md){target="_blank"}
 
-In this exercise, you'll explore CX Enterprise Coworker's capabilities against the background of the CitiSignal launch campaign for Fiber Max, by using Adobe Marketing Agent with Microsoft 365 Copilot.
+In this exercise, you'll explore CX Enterprise Coworker's capabilities against the background of the CitiSignal launch campaign for Fiber Max, by using CX Enterprise Coworker with Microsoft 365 Copilot.
+
+[1.2.5 CX Enterprise Coworker with ChatGPT Enterprise](./ex5.md){target="_blank"}
+
+In this exercise, you'll explore CX Enterprise Coworker's capabilities against the background of the CitiSignal launch campaign for Fiber Max, by using CX Enterprise Coworker with ChatGPT Enterprise.
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
