@@ -3,13 +3,11 @@ title: Partner Labs Sydney Agenda
 description: Partner Labs Sydney Agenda
 doc-type: multipage-overview
 ---
-# Partner Labs Sydney Agenda
+# Partner Labs CSC Agenda
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px"} 
 
-Go to [Login Information](./csc-sydney-users.md)
-
-## Day 1 - July 20, 2026 
+## Day 1
 
 | Start Time | End Time | Session | Resource |
 |--- |--- |--- |--- |
@@ -19,7 +17,7 @@ Go to [Login Information](./csc-sydney-users.md)
 | 03.00 PM | 04.15 PM | GenStudio Architecture | - |
 | 04.15 PM | 05.00 PM | Wrap up and Q&A | - |
 
-## Day 2 - July 21, 2026
+## Day 2
 
 | Start Time | End Time | Session | Resources |
 |--- |--- |--- |--- |
@@ -35,7 +33,7 @@ Go to [Login Information](./csc-sydney-users.md)
 | 03.45 PM | 04.45 PM | Lab 3 - Unified Review and Approval | [Lab Link](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/production/crpr8/esm) |
 | 04.45 PM | 05.00 PM | Q&A & Wrap-up | - |
 
-## Day 3 - July 22, 2026
+## Day 3
 
 | Start Time | End Time | Session | Resources |
 |--- |--- |--- |--- |

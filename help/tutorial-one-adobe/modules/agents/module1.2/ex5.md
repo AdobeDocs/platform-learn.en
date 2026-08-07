@@ -121,6 +121,8 @@ You've now completed this lab.
 
 ## Next Steps
 
+Go to [CX Enterprise Coworker and AEM](./ex6.md){target="_blank"}
+
 Go Back to [CX Enterprise Coworker](./coworker.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}
