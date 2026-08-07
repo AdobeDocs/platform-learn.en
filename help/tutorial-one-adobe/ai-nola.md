@@ -20,7 +20,7 @@ Find your user information here: [Singapore User Information](./ai-nola-users.md
 | 01.00 PM | 02.15 PM | Lab - [Adobe Marketing Agent for ChatGPT Enterprise](./modules/agents/module1.1/ex2.md)<br><br>Lab - [Adobe Marketing Agent for Microsoft 365 Copilot](./modules/agents/module1.1/ex3.md){target="_blank"} | - |
 | 02.15 PM | 02.30 PM | Break | - |
 | 02.30 PM | 04.15 PM | Lab - [AEM & Agents](./modules/agents/module1.6/aemagents.md){target="_blank"} | - |
-| 04.15 PM | 05.00 PM | Lab - [Analytics & Agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} (Optional) | |
+| 04.15 PM | 05.00 PM | Lab - [Analytics & Agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} (Optional) | |.
 
 ## Day 2 - August 12, 2026
 
