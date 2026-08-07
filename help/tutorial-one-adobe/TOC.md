@@ -54,6 +54,8 @@ recommendations: noDisplay,noCatalog
     + [1.2.3 Business Context in CX Enterprise Coworker](/help/tutorial-one-adobe/modules/agents/module1.2/ex3.md)
     + [1.2.4 CX Enterprise Coworker with Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.2/ex4.md)
     + [1.2.5 CX Enterprise Coworker with ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.2/ex5.md)
+    + [1.2.6 CX Enterprise Coworker and AEM](/help/tutorial-one-adobe/modules/agents/module1.2/ex6.md)
+    + [1.2.7 CX Enterprise Coworker and Workfront](/help/tutorial-one-adobe/modules/agents/module1.2/ex7.md)
   + 1.3 Agent Composer {#agents3}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.3/composer.md)
     + [1.2.1 Getting started with Agent Composer](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
@@ -316,5 +318,6 @@ recommendations: noDisplay,noCatalog
 
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + {hide-from-toc} [Partner Labs Singapore Agenda](/help/tutorial-one-adobe/ai-nola.md)
++ {hide-from-toc} [Partner Labs Singapore User Information](/help/tutorial-one-adobe/ai-nola-users.md)
 + {hide-from-toc} [Partner Labs Sydney Agenda](/help/tutorial-one-adobe/csc-sydney.md)
 + {hide-from-toc} [Partner Labs Sydney User Information](/help/tutorial-one-adobe/csc-sydney-users.md)

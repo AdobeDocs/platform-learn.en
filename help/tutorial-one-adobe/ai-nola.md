@@ -7,6 +7,8 @@ doc-type: multipage-overview
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px"} 
 
+Find your user information here: [Singapore User Information](./ai-nola-users.md)
+
 ## Day 1 - August 11, 2026 
 
 | Start Time | End Time | Session | Resource |

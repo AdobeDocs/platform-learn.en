@@ -38,6 +38,14 @@ In this exercise, you'll explore CX Enterprise Coworker's capabilities against t
 
 In this exercise, you'll explore CX Enterprise Coworker's capabilities against the background of the CitiSignal launch campaign for Fiber Max, by using CX Enterprise Coworker with ChatGPT Enterprise.
 
+[1.2.6 CX Enterprise Coworker and AEM](./ex6.md){target="_blank"}
+
+In this exercise, you'll explore CX Enterprise Coworker's capabilities in combination with Adobe Experience Manager.
+
+[1.2.7 CX Enterprise Coworker and Workfront](./ex7.md){target="_blank"}
+
+In this exercise, you'll explore CX Enterprise Coworker's capabilities in combination with Adobe Workfront.
+
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
