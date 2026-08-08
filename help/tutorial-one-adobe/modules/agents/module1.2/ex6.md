@@ -8,10 +8,6 @@ doc-type: tutorial
 
 >[!IMPORTANT]
 >
->This content is being developed
-
->[!IMPORTANT]
->
 >Your AEM CS sandbox may be hibernated. Given that dehibernating a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
 >[!IMPORTANT]
@@ -30,7 +26,7 @@ For this exercise, you need to use:
 
 ## 1.2.6.1 Finding assets
 
-Go to [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat). Sign in using your Adobe account. After logging in, click your user initials in the bottom left part of the screen and make sure you've selected the correct instance (**--aepImsOrgName--**) and sandbox (**--aepSandboxName--**) by selecting them as indicated below.
+Go to [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat). Sign in using your Adobe account. After logging in, click your user initials in the bottom left part of the screen and make sure you've selected the correct instance (**`--aepImsOrgName--`**) and sandbox (**`--aepSandboxName--`**) by selecting them as indicated below.
 
 ![AEM Agents](./images/aemagentscw1.png)
 
@@ -70,7 +66,9 @@ The Content Update skill updates existing content — including content fragment
 
 Go back to CX Enterprise Coworker. Enter the following **prompt** and click **Send**.
 
-`For the first image, generate renditions for Instagram and LinkedIn posts`
+```
+For the first image, generate renditions for Instagram and LinkedIn posts
+```
 
 ![AEM Agents](./images/aemagents40a.png)
 
@@ -80,7 +78,9 @@ After a couple of minutes, you should see a similar response.
 
 Feel free to experiment with other prompts. Scroll up and select one of the other proposed prompts, or enter your own, and click **Send**.
 
-`For the first image, generate a mirrored image`
+```
+For the first image, generate a mirrored image
+```
 
 ![AEM Agents](./images/aemagents42a.png)
 
@@ -188,7 +188,7 @@ Your form now looks like this, which is identical to the handwritten drawing tha
 Enter the following prompt and click **Send**.
 
 ```
-Configure the form submission to post to https://hook.fusion.adobe.com/towc5m6h2ggdxkrrp5i0d277732uaqv8
+Configure the form submission to post to 'https://hook.fusion.adobe.com/towc5m6h2ggdxkrrp5i0d277732uaqv8'
 ```
 
 ![AEM Agents](./images/aemagentsforms8.png)
@@ -212,7 +212,7 @@ View the page in Universal Editor:
 Enter the following prompt and click **Send**.
 
 ```
-Publish the new page. Also, on the existing page Fiber Max, there's a text that says Fill out the form here to get started.. Add a link to that line which takes people who click the link to the new page that has the form.
+Publish the new page. Also, on the existing page Fiber Max, there's a text that says 'Fill out the form here to get started.'. Add a link to that line which takes people who click the link to the new page that has the form.
 ```
 
 ![AEM Agents](./images/aemagentsforms12.png)
