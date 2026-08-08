@@ -36,6 +36,10 @@ Go to [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.co
 
 Enter the following prompt and click **Send**.
 
+>[!IMPORTANT]
+>
+>Replace the X in the below prompt by the number that was assigned to you.
+
 ```
 I want to work with AEM next, please use the AEM environment Tech Insiders - AEM + ACCS X going forward
 ```
@@ -139,8 +143,12 @@ Visit your webpage, you should now see the updated navigation and the Fiber Max 
 
 Enter the following prompt. Click the **+** icon.
 
+>[!IMPORTANT]
+>
+>Replace the X in the below prompt by the number that was assigned to you.
+
 ```
-Create a new Edge Delivery Service Adaptive Form using the attached screenshot and https://github.com/woutervangeluwe/techinsidersXXX-citisignal-aem-accs github repository
+Create a new Edge Delivery Service Adaptive Form using the attached screenshot and https://github.com/woutervangeluwe/techinsidersX-citisignal-aem-accs github repository
 ```
 
 ![AEM Agents](./images/aemagentsforms1.png)
