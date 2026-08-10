@@ -188,7 +188,7 @@ Your form now looks like this, which is identical to the handwritten drawing tha
 Enter the following prompt and click **Send**.
 
 ```
-Configure the form submission to post to 'https://hook.fusion.adobe.com/towc5m6h2ggdxkrrp5i0d277732uaqv8'
+Configure the form submission to post to 'https://hook.fusion.adobe.com/towc5m6h2ggdxkrrp5i0d277732uaqv8' and configure a thank you message that shows 'Thank you for submitting the form' after submitting it.
 ```
 
 ![AEM Agents](./images/aemagentsforms8.png)
@@ -200,14 +200,14 @@ You should then see this.
 Enter the following prompt and click **Send**.
 
 ```
-Create a new page in the website CitiSignal with the name `Fiber-Max-Interest-Form'. Make sure that the page doesn't have any other content. Embed the form in a new section on that page.
+Create a new page in the website CitiSignal with the name `Fiber-Max-Interest-Form'. Set the Page Title to `Fiber Max Interest Form'. Make sure that the page doesn't have any other content. Embed the form in a new section on that page.
 ```
 
 ![AEM Agents](./images/aemagentsforms10.png)
 
 View the page in Universal Editor:
 
-![AEM Agents](./images/aemagentsforms11.png)
+![AEM Agents](./images/aemagentsforms11a.png)
 
 Enter the following prompt and click **Send**.
 
