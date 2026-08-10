@@ -15,12 +15,12 @@ Find your user information here: [Singapore User Information](./ai-nola-users.md
 |--- |--- |--- |--- |
 | 09.00 AM | 10.45 AM | Opening keynote - Agentic Building Blocks & Architecture | - |
 | 10.45 AM | 11.00 AM | Break | - |
-| 11.00 AM | 12.00 PM | Lab - [Getting started with CX Enterprise Coworker](./modules/agents/module1.2/ex1.md){target="_blank"} | - |
+| 11.00 AM | 12.00 PM | Lab - [Getting started - Agentic AI Lab Environment](./modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md){target="_blank"} | - |
 | 12.00 PM | 01.00 PM | Lunch | - |
-| 01.00 PM | 02.15 PM | Lab - [Adobe Marketing Agent for ChatGPT Enterprise](./modules/agents/module1.1/ex2.md)<br><br>Lab - [Adobe Marketing Agent for Microsoft 365 Copilot](./modules/agents/module1.1/ex3.md){target="_blank"} | - |
-| 02.15 PM | 02.30 PM | Break | - |
-| 02.30 PM | 04.15 PM | Lab - [AEM & Agents](./modules/agents/module1.6/aemagents.md){target="_blank"} | - |
-| 04.15 PM | 05.00 PM | Lab - [Analytics & Agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} (Optional) |- |
+| 01.00 PM | 02.30 PM | Lab - [Getting started with CX Enterprise Coworker](./modules/agents/module1.2/ex1.md){target="_blank"} <br> <br>Lab - [Using CX Enterprise Coworker for insights](./modules/agents/module1.2/ex2.md){target="_blank"} <br> <br>Lab - [Business Context in CX Enterprise Coworker](./modules/agents/module1.2/ex3.md){target="_blank"} | - |
+| 02.30 PM | 02.45 PM | Break | - |
+| 02.45 PM | 03.45 PM | Lab - [CX Enterprise Coworker with Microsoft 365 Copilot](./modules/agents/module1.2/ex4.md){target="_blank"} | - |
+| 03.45 PM | 05.00 PM | Lab - [CX Enterprise Coworker and AEM](./modules/agents/module1.2/ex6.md){target="_blank"} | - |
 
 ## Day 2 - August 12, 2026
 
