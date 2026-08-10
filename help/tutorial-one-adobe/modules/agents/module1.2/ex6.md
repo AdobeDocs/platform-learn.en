@@ -60,7 +60,7 @@ You should then see a similar answer.
 
 ## 1.2.6.2 Updating assets
 
-### Content Update - Assets
+### Content Optimization - Assets
 
 The Content Update skill updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
 
@@ -90,7 +90,7 @@ Review the image that was generated.
 
 ### Content Update - Pages
 
-Paste the following prompt and click **send**. Replace XXX in this prompt by the URL that you copied in the previous step.
+Paste the following prompt and click **send**.
 
 ```
 On the page Fiber Max in the site CitiSignal, please make the following changes:
