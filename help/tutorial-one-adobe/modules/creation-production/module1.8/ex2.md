@@ -37,9 +37,10 @@ You should now see all the reference images that were provided in Workfront. The
 
 ## 1.8.2.2 Adobe Cloud Drive
 
->[!NOTE]
->
->Adobe Cloud Drive isn't generally available yet. Contact your instructor for installation instructions.
+Go to [https://experience.adobe.com/#/downloads/content/software-distribution/en/workfront.html](https://experience.adobe.com/#/downloads/content/software-distribution/en/workfront.html) and click the version of the installer for your system.
+After downloading the installer, install Adobe Cloud Drive.
+
+![WF](./images/acd0a.png)
 
 After installing Adobe Cloud Drive, you need to sign in. Click the **Adobe Cloud Drive** icon in your task bar and then click **Sign in**.
 
