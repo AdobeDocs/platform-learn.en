@@ -8,6 +8,7 @@ doc-type: Feature Video
 duration: 220
 last-substantial-update: 2026-08-12
 jira: KT-22109
+hide: true
 ---
 
 # Create schedules for batch audience evaluation

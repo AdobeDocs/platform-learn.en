@@ -124,7 +124,7 @@ Campaigns
     + [Create multi-entity audiences](audiences/audience-builder/create-multi-entity-audiences.md)
     + [Create and activate account audiences (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
     + [Demo of streaming segmentation](/help/platform/audiences/audience-builder/streaming-segmentation-demo.md)
-    + [Create schedules for batch audience evaluation](/help/platform/audiences/audience-builder/flexible-schedules-for-batch-audience-evaluation.md)
+    + {hide-from-toc} [Create schedules for batch audience evaluation](/help/platform/audiences/audience-builder/flexible-schedules-for-batch-audience-evaluation.md)
     + [Evaluate batch audiences on demand](/help/platform/audiences/audience-builder/evaluate-audiences-on-demand.md)
   + Federated Audience Composition {#fac}
     + [Overview](audiences/fac/overview-of-federated-audience-composition.md)
