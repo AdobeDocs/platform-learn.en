@@ -8,15 +8,15 @@ product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 ---
-# 1.3 Agent Composer
+# 1.3 -
 
 ## Learning Objectives
 
-In this module, you'll learn how to use Agent Composer.
+In this module, you'll learn how to use ...
 
 ## Exercises
 
-[1.3.1 Getting started with Agent Composer](./ex1.md){target="_blank"}
+[1.3.1 Getting started with -](./ex1.md){target="_blank"}
 
 In this exercise, ...
 

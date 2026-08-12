@@ -56,9 +56,6 @@ recommendations: noDisplay,noCatalog
     + [1.2.5 CX Enterprise Coworker with ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.2/ex5.md)
     + [1.2.6 CX Enterprise Coworker and AEM](/help/tutorial-one-adobe/modules/agents/module1.2/ex6.md)
     + [1.2.7 CX Enterprise Coworker and Workfront](/help/tutorial-one-adobe/modules/agents/module1.2/ex7.md)
-  + 1.3 Agent Composer {#agents3}
-    + [Overview](/help/tutorial-one-adobe/modules/agents/module1.3/composer.md)
-    + [1.2.1 Getting started with Agent Composer](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
   + 1.4 Brand Concierge {#agents4}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
     + [1.4.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
