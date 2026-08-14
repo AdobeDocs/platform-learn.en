@@ -282,6 +282,7 @@ Enter the following prompt and click **Send**.
 ```
 Find the content fragment CitiSignal Fiber Max and make a copy, use the name --aepUserLdap-- - CitiSignal Fiber Max for the newly created content fragment
 ```
+
 ![Agent Orchestrator](./images/cwcf0.png)
 
 Provide the required permissions when prompted.
