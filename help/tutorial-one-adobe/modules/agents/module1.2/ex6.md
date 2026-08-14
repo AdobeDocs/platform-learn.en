@@ -93,7 +93,19 @@ Review the image that was generated.
 Paste the following prompt and click **send**.
 
 ```
-On the page Fiber Max in the site CitiSignal, please make the following changes:
+Find the page Fiber Max in the site CitiSignal and make a copy, use the name --aepUserLdap-- - Fiber Max as the newly created page and as the page title.
+```
+
+![AEM Agents](./images/aemagents70.png)
+
+You should then see this.
+
+![AEM Agents](./images/aemagents71.png)
+
+Paste the following prompt and click **send**.
+
+```
+On the newly created page --aepUserLdap-- - Fiber Max in the site CitiSignal, please make the following changes:
 
 - change the word 'winter' to 'spring'
 - change the word 'lion' to 'leopard'
@@ -103,7 +115,11 @@ On the page Fiber Max in the site CitiSignal, please make the following changes:
 
 ![AEM Agents](./images/aemagents72.png)
 
-You should then see this. Click the link to open the changed page.
+When prompted, review the changes, then select **proceed** and click **Submit**.
+
+![AEM Agents](./images/aemagents73.png)
+
+You should then see this. Click the link to preview the changed page.
 
 ![AEM Agents](./images/aemagents74.png)
 
@@ -111,13 +127,13 @@ Here's your page.
 
 ![AEM Agents](./images/aemagents75.png)
 
-Enter the following prompt and click **send**.
-
-```
-publish these changes
-```
+If you're happy with the changes, select **Promote** and then click **Submit**.
 
 ![AEM Agents](./images/aemagents76.png)
+
+Provide the required permissions when prompted.
+
+![AEM Agents](./images/aemagents76a.png)
 
 You should then see this.
 
@@ -126,14 +142,26 @@ You should then see this.
 Enter the following prompt and click **send**.
 
 ```
-Add a link to the Fiber Max page in the navigation of the website next to Entertainment, which is in the Header (nav) page
+Add a link to the newly created page --aepUserLdap-- - Fiber Max in the navigation of the website next to Entertainment, which is in the Header (nav) page
 ```
 
 ![AEM Agents](./images/aemagents77.png)
 
-You should then see this.
+If you're happy with the changes, select **Proceed** and then click **Submit**.
 
 ![AEM Agents](./images/aemagents77a.png)
+
+If you're happy with the changes, select **Promote** and then click **Submit**.
+
+![AEM Agents](./images/aemagents77b.png)
+
+Provide the required permissions when prompted.
+
+![AEM Agents](./images/aemagents77c.png)
+
+You should then see this. 
+
+![AEM Agents](./images/aemagents77d.png)
 
 Visit your webpage, you should now see the updated navigation and the Fiber Max page.
 
@@ -200,19 +228,23 @@ You should then see this.
 Enter the following prompt and click **Send**.
 
 ```
-Create a new page in the website CitiSignal with the name `Fiber-Max-Interest-Form'. Set the Page Title to `Fiber Max Interest Form'. Make sure that the page doesn't have any other content. Embed the form in a new section on that page.
+Create a new page in the website CitiSignal with the name `--aepUserLdap-- - Fiber-Max-Interest-Form'. Set the Page Title to `Fiber Max Interest Form'. Make sure that the page doesn't have any other content. Embed the form in a new section on that page.
 ```
 
 ![AEM Agents](./images/aemagentsforms10.png)
 
-View the page in Universal Editor:
+You should then see this.
+
+![AEM Agents](./images/aemagentsforms10a.png)
+
+Preview the page.
 
 ![AEM Agents](./images/aemagentsforms11a.png)
 
 Enter the following prompt and click **Send**.
 
 ```
-Publish the new page. Also, on the existing page Fiber Max, there's a text that says 'Fill out the form here to get started.'. Add a link to that line which takes people who click the link to the new page that has the form.
+Publish the new page. Also, on the existing page '--aepUserLdap-- - Fiber Max', there's a text that says 'Fill out the form here to get started.'. Add a link to that line which takes people who click the link to the new page that has the form.
 ```
 
 ![AEM Agents](./images/aemagentsforms12.png)
@@ -240,6 +272,71 @@ Go to your website, to the page **Fiber Max**. Click the link to fill out the fo
 Fill out the form and click **Submit**.
 
 ![AEM Agents](./images/aemagentsforms17.png)
+
+### Content Update - Content Fragments
+
+Go back to your Coworker chat on [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat).
+
+Enter the following prompt and click **Send**.
+
+```
+Find the content fragment CitiSignal Fiber Max and make a copy, use the name --aepUserLdap-- - CitiSignal Fiber Max for the newly created content fragment
+```
+![Agent Orchestrator](./images/cwcf0.png)
+
+Provide the required permissions when prompted.
+
+![Agent Orchestrator](./images/cwcf0b.png)
+
+You should then see this.
+
+![Agent Orchestrator](./images/cwcf0a.png)
+
+Open your AEM Author environment, and go to **Content Fragments**.
+
+![Agent Orchestrator](./images/cwcfaem1.png)
+
+You should now see the content fragment that you just created.
+
+![Agent Orchestrator](./images/cwcfaem2.png)
+
+Go back to your CX Enterprise Coworker chat. Enter the following prompt and click **Send**.
+
+```
+Find the content fragment --aepUserLdap-- - CitiSignal Fiber Max and make a variation called --aepUserLdap-- - CitiSignal Fiber Max (FR), then translate all fields into french
+```
+
+![Agent Orchestrator](./images/cwcf1.png)
+
+Provide the required permissions when prompted.
+
+![Agent Orchestrator](./images/cwcf2.png)
+
+You should then see this. Your fragment variation has been created successfully.
+
+![Agent Orchestrator](./images/cwcf3.png)
+
+You can now see your new variation in the AEM UI as well.
+
+![Agent Orchestrator](./images/cwcf4.png)
+
+Next, use CX Enterprise Coworker to translate your content fragment into more variations. Enter the following prompt and click **Send**.
+
+```
+now do the same thing for CitiSignal's top markets and their languages
+```
+
+![Agent Orchestrator](./images/cwcf5.png)
+
+CX Enterprise Coworker will then take the information about the top markets from the Business Context file that you uploaded in one of the previous exercises.
+
+After a couple of minutes, you should see this. 
+
+![Agent Orchestrator](./images/cwcf6.png)
+
+Go back to your AEM UI and refresh your screen. You can now see your new variations in your content fragment.
+
+![Agent Orchestrator](./images/cwcf7.png)
 
 You've now completed this lab.
 
