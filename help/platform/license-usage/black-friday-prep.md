@@ -12,4 +12,4 @@ hide: true
 
 Learn how to prepare for a Black Friday sale by using historical usage data to estimate the additional streaming and edge capacity you'll need. You'll walk through scheduling that capacity, reviewing its credit cost, and confirming the schedule before it locks. You'll also learn the lead times required for streaming and edge schedules so you can plan ahead.
 
->[!VIDEO]()
+>[!SLIDE](black-friday-prep)

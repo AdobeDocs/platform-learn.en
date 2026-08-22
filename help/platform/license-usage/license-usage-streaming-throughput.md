@@ -12,4 +12,4 @@ hide: true
 
 Learn what streaming throughput measures and how it functions as both a governance topic and a technical one. You'll see how admins use org and sandbox-level data to guide reallocation, and how developers use the Monitor path to trace load back to its source. You'll also learn what alerts and violations signal and the actions each role should take.
 
->[!VIDEO]()
+>[!SLIDE](license-usage-streaming-throughput)

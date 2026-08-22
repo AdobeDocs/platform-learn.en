@@ -12,4 +12,4 @@ hide: true
 
 Learn what growth credits are and how they let you exceed usage guardrails for edge throughput, streaming throughput, and batch segmentation during high-volume events. You'll learn how to access the credit dashboard and what it means for credits to be licensed, used, and reserved. You'll also learn the baseline limits for each of the three services that can draw on growth credits.
 
->[!VIDEO]()
+>[!SLIDE](growth-credits-and-dashboard)

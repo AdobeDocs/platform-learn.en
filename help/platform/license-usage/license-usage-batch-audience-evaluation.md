@@ -12,4 +12,4 @@ hide: true
 
 Learn how flexible audience evaluation lets you trigger batch audience jobs on demand, and why it should be treated as a limited, shared resource. You'll see what users should consider before requesting an on-demand evaluation and what admins should watch for across teams and time. You'll also learn how the daily and yearly limits reset, and why the contract year is the real planning horizon.
 
->[!VIDEO]()
+>[!SLIDE](license-usage-batch-audience-evaluation)

@@ -12,4 +12,4 @@ hide: true
 
 Learn what edge throughput measures and why both admins and developers need visibility into it. You'll see how admins use it for planning around major events and regional surges, and how developers trace load back to a specific datastream, service, or region. You'll also learn how to read the signal to decide whether the next step is planning, optimization, or escalation.
 
->[!VIDEO]()
+>[!SLIDE](license-usage-edge-throughput)

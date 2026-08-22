@@ -12,4 +12,4 @@ hide: true
 
 Learn how to plan capacity for two major business events in the same contract year, given that only one streaming schedule and one edge schedule can be active at a time. You'll learn the best practice for scheduling events one at a time and how to think about credit needs across the full year. You'll also learn why the contract year, not the calendar year, is the right planning horizon.
 
->[!VIDEO]()
+>[!SLIDE](two-events-one-year)

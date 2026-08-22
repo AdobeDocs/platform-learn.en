@@ -12,4 +12,4 @@ hide: true
 
 Learn how to interpret an unexpected traffic spike and determine whether it reflects real business demand, an implementation issue, or a temporary anomaly. You'll learn how to subscribe to proactive alerts and how admins and developers should each respond first when a spike occurs. You'll also learn how to use monitoring dashboards for root cause analysis across streaming, edge, and batch use cases.
 
->[!VIDEO]()
+>[!SLIDE](unexpected-traffic-spike)

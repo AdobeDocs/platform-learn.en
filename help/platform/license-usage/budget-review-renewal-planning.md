@@ -12,4 +12,4 @@ hide: true
 
 Learn how to use the credit dashboard to ground budget review and renewal conversations in real usage data. You'll review your licensed, consumed, reserved, and available credits, identify which services are consuming them, and check whether you're in an overage state. This turns renewal planning into a data-informed conversation with stakeholders.
 
->[!VIDEO]()
+>[!SLIDE](budget-review-renewal-planning)

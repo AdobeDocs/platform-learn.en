@@ -12,4 +12,4 @@ hide: true
 
 Get oriented with the License Usage capacity dashboards and the key concepts behind them, including capacity, consumption, violations, and alerts. You'll learn where to find the dashboards in the UI and what admins, users, and developers each use them for. This sets the foundation for the rest of the License Usage tutorials.
 
->[!VIDEO]()
+>[!SLIDE](license-usage-overview)

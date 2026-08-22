@@ -12,4 +12,4 @@ hide: true
 
 Learn why the contract anniversary date matters for annual planning, since it resets yearly limits like growth credits and audience evaluation schedules. You'll see why a capacity schedule can't span the anniversary date, using a Black Friday-to-Cyber Monday sale as an example. You'll also learn where to find your contract anniversary date on the capacity dashboard.
 
->[!VIDEO]()
+>[!SLIDE](approaching-contract-anniversary)
