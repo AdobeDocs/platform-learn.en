@@ -1,15 +1,15 @@
 ---
-title: Partner Labs Singapore Agenda
-description: Partner Labs Singapore Agenda
+title: Partner Labs Agenda
+description: Partner Labs Agenda
 doc-type: multipage-overview
 ---
-# Partner Labs Singapore Agenda
+# Partner Labs Agenda
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px"} 
 
-Find your user information here: [Singapore User Information](./ai-nola-users.md)
+Find your user information here: [User Information](./ai-nola-users.md)
 
-## Day 1 - August 11, 2026 
+## Day 1 
 
 | Start Time | End Time | Session | Resource |
 |--- |--- |--- |--- |
@@ -22,7 +22,7 @@ Find your user information here: [Singapore User Information](./ai-nola-users.md
 | 02.45 PM | 03.45 PM | Lab - [CX Enterprise Coworker with Microsoft 365 Copilot](./modules/agents/module1.2/ex4.md){target="_blank"} | - |
 | 03.45 PM | 05.00 PM | Lab - [CX Enterprise Coworker and AEM](./modules/agents/module1.2/ex6.md){target="_blank"} | - |
 
-## Day 2 - August 12, 2026
+## Day 2
 
 | Start Time | End Time | Session | Resources |
 |--- |--- |--- |--- |
@@ -34,7 +34,7 @@ Find your user information here: [Singapore User Information](./ai-nola-users.md
 | 02.45 PM | 04.30 PM | Lab - [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](./modules/creation-production/module1.8/esm.md){target="_blank"} | - |
 | 04.30 PM | 05.00 PM | Q&A & Wrap-up | - |
 
-## Day 3 - August 13, 2026
+## Day 3
 
 | Start Time | End Time | Session | Resources |
 |--- |--- |--- |--- |

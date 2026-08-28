@@ -1,6 +1,6 @@
 ---
-title: Partner Labs Sydney Agenda
-description: Partner Labs Sydney Agenda
+title: Partner Labs CSC Agenda
+description: Partner Labs CSC Agenda
 doc-type: multipage-overview
 ---
 # Partner Labs CSC Agenda
