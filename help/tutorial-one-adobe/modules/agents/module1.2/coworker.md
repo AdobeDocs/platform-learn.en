@@ -16,6 +16,10 @@ Whether you’re launching campaigns or responding to new signals, CX Enterprise
 
 Grounded in your brand, business processes, and customer context, it continuously evaluates outcomes, routes approvals at the right moments, and drives coordinated actions across workflows to deliver the right experiences.
 
+## Video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
+
 ## Exercises
 
 [1.2.1 Getting started with CX Enterprise Coworker](./ex1.md){target="_blank"}
@@ -45,6 +49,10 @@ In this exercise, you'll explore CX Enterprise Coworker's capabilities in combin
 [1.2.7 CX Enterprise Coworker and Workfront](./ex7.md){target="_blank"}
 
 In this exercise, you'll explore CX Enterprise Coworker's capabilities in combination with Adobe Workfront.
+
+[1.2.8 CX Enterprise Coworker and GenStudio for Performance Marketing](./ex8.md){target="_blank"}
+
+In this exercise, you'll explore CX Enterprise Coworker's capabilities in combination with GenStudio for Performance Marketing.
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 

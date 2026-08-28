@@ -14,6 +14,10 @@ doc-type: tutorial
 >
 >Before you begin, read the below instructions!
 
+## Video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3502436?quality=12&learn=on)
+
 ## Instructions for in-person workshops
 
 For this exercise, you need to use:
