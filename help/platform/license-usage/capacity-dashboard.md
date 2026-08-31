@@ -4,7 +4,7 @@ description: Navigate the Capacity dashboard to review streaming and edge guardr
 feature: License Usage
 role: Admin, Developer
 level: Beginner
-jira: KT-XXXXX
+jira: KT-22388
 hide: true
 ---
 
