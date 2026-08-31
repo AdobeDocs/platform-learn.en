@@ -1,7 +1,7 @@
 ---
 title: License Usage - Monitoring Guardrails with the Capacity Dashboard
 description: Navigate the Capacity dashboard to review streaming and edge guardrails, investigate alerts, allocate throughput across sandboxes, and respond to violations.
-feature: License Usage, Capacity
+feature: License Usage
 role: Admin, Developer
 level: Beginner
 jira: KT-XXXXX
