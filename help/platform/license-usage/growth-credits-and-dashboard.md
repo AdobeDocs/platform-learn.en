@@ -12,4 +12,11 @@ hide: true
 
 Learn what growth credits are and how they let you exceed usage guardrails for edge throughput, streaming throughput, and batch segmentation during high-volume events. You'll learn how to access the credit dashboard and what it means for credits to be licensed, used, and reserved. You'll also learn the baseline limits for each of the three services that can draw on growth credits.
 
->[!SLIDE](growth-credits-and-dashboard)
+Growth credits give you:
+
+* The flexibility and control to shift credits between capabilities as business needs change
+* The ability to self-schedule temporary capacity boosts through an interface instead of filing tickets and waiting through a new sales cycle
+* Full transparency into utilization with proactive usage alerts
+* Freedom from rigid, individually-licensed add-ons
+
+>[!VIDEO](https://video.tv.adobe.com/v/3503163?learn=on)
