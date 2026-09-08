@@ -5,6 +5,7 @@ feature: License Usage
 role: Admin
 level: Beginner
 jira: KT-21521
+duration: 63
 hide: true
 ---
 
