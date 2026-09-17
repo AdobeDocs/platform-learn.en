@@ -95,59 +95,102 @@ You should then see this. Click the **sandbox selection** menu. Choose the sandb
 
 ![Brand Concierge](./images/bc2.png)
 
-Next, fill out the following variables:
+Next, enter the URL of your CitiSignal website, which should look like this: (replace X by your number). Click **Create**.
 
-- **Company name**: CitiSignal
-
-- **concierge name**: `CitiSignal Sales Assistant`.
-
-Enter the following text under **What would you like the concierge to do?**.
-
-```javascript
-Brand Concierge should help customers find their best device, plan or entertainment deal. Brand Concierge should help users discover internet plans, entertainment deals,  and help find the best available packages. Brand Concierge should also answer questions about devices such as phones and watches.
+```
+techinsidersX.adobedemosystem.com
 ```
 
-- **Website link**: provide the link to the website you're using
+![Brand Concierge](./images/bc2a.png)
+
+You shuold then see this.
+
+![Brand Concierge](./images/bc2b.png)
+
+Update your **Brand Expression**. Click **Continue**.
+
+![Brand Concierge](./images/bc2c.png)
+
+You should then see this. Review your **Brand Profile**. If needed, update the values in the fields using the below details.
+
+**Industry**
+
+```
+Telecommunications
+```
+
+**Goal**
+
+```
+Help customers find their best device, plan or entertainment deal. Help users discover internet plans, entertainment deals,  and help find the best available packages. Answer questions about devices such as phones, watches and FiberMax packages.
+```
+
+**Product and services**
+
+```
+CitiSignal sells a comprehensive mix of wireless devices, home and business internet services, entertainment bundles, and hardware accessories. CitiSignal's inventory spans consumer tech, home networking, and enterprise services.
+
+Mobile Devices & Plans:
+- Smartphones: Current-generation flagship models including the Apple iPhone Air series.
+-Tablets & Laptops: Cellular-enabled mobile computing tablets from Apple.
+- Smartwatches: Connected wearables such as the Apple Watch Ultra.
+- Mobile Broadband
+- Wireless Plans: Postpaid and prepaid cellular data subscriptions tailored for individuals, families, and senior citizens.
+
+Broadband & Entertainment Services
+- FiberMax Home Internet: High-speed, fiber-optic residential broadband connections.
+```
+
+**Target audience**
+
+```
+CitiSignal's target audience is divided into two primary categories: individual consumers (B2C) and corporate/government entities (B2B). Because they position themselves as a premium provider focused on network reliability and speed, their marketing strategies target specific demographics, lifestyles, and professional tiers.
+```
+
+**Brand value**
+
+```
+- Network Reliability Equity: CitiSignal has spent decades positioning its brand around network quality, consistency, and "bulletproof" coverage, allowing it to charge premium tier pricing.
+- Infrastructure Investment: Continued multi-billion dollar deployments of 5G Home Internet and high-speed fiber-optic FiberMax networks secure long-term subscriber retention.
+- Enterprise & Public Sector Footprint: Serving as the primary communications backbone for federal agencies, municipal first responders, and multinational enterprise organizations ensures immense financial stability and high cash generation.
+```
+
+**Key differentiators**
+
+```
+CitiSignal differentiates itself from competitors through network reliability, a premium bundling ecosystem, and deep corporate/enterprise integration. While competitors often lean heavily on aggressive pricing strategies, CitiSignal leverages specific structural, technological, and service-based pillars to maintain its high-value customer base.
+```
+
+**Common use cases**
+
+```
+CitiSignal's common use cases span daily consumer activities, enterprise-grade industrial automation, and highly secure public sector communications. Because CitiSignal provides cellular, fiber, and cloud network computing infrastructures, their technology is applied to multiple distinct real-world scenarios.
+```
 
 Click **Continue**.
 
-![Brand Concierge](./images/bc5.png)
+![Brand Concierge](./images/bc2d.png)
 
-You should then see this. This information was generated using AI based on the input provided on the previous page. Review the oinformation and once you're happy with it, click **Generate concierge**.
+Review your setup and then click **Save Concierge**.
 
-![Brand Concierge](./images/bc6.png)
+![Brand Concierge](./images/bc2e.png)
 
-You should then see this. Click **+ Add** next to **product advisory for consumers**.
+After a couple of minutes, you should then see this. 
 
-![Brand Concierge](./images/bc6a.png)
+![Brand Concierge](./images/bc2f.png)
 
-You should then see this. Fill out the following fields using the below text.
+## 1.4.1.3 Adobe Commerce as a Cloud Service integration
 
-**What should the concierge know about the product or audience before making recommendations?**
+Click **Integrations**.
 
-```
-CitiSignal is a telecommunications company that sells devices such as phones and watches and that sells internet services such as their lead product CitiSignal Fiber Max. On top of that, CitiSignal sells entertainment services that offer premium streaming services at a discounted price. CitiSignal is targeting these 3 personas primarily: Smart Home Families, Online Gamers and Remote Professionals.
-```
+![Brand Concierge](./images/bcaccs1.png)
 
-**Are there any business rules or limitations the concierge should follow when making recommendations?**
 
-```
-Prioritize positioning the CitiSignal Fiber Max offering.
-```
 
-**Are there any specific keywords or phrases the concierge should follow or avoid?**
 
-```
-Competitor pricing, competitor products
-```
 
-Click **Save**. 
 
-![Brand Concierge](./images/bc13.png)
 
-Click the **arrow** to go back to the previous screen.
-
-![Brand Concierge](./images/bc13a.png)
 
 Go to **Knowledge Source** and click **Build your knowledge source**.
 
