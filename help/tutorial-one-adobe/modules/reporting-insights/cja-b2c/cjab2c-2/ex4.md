@@ -19,5 +19,5 @@ topic_v2:
 ---
 # 1.2.4 Load data from BigQuery into Adobe Experience Platform
 
--
+to be removed
 

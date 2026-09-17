@@ -21,5 +21,5 @@ topic_v2:
 ---
 # 1.2.1 Start using Google Cloud Platform
 
--
+to be removed
 

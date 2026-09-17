@@ -21,4 +21,4 @@ topic_v2:
 ---
 # 1.2.3 Connect GCP & BigQuery to Adobe Experience Platform
 
--
+to be removed

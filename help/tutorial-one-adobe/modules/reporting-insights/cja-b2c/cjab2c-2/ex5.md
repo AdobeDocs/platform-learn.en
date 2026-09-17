@@ -26,5 +26,5 @@ topic_v2:
 ---
 # 1.2.5 Analyze Google Analytics Data using Customer Journey Analytics 
 
---
+to be removed
 

@@ -19,4 +19,4 @@ topic_v2:
 ---
 # 1.2.2 Create your first query in BigQuery
 
--
+to be removed
