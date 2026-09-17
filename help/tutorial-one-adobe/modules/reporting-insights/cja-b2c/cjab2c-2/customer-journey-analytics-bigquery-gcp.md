@@ -38,38 +38,13 @@ In addition, we can enrich that Google Analytics data by joining it with other d
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform) 
 - Access to Customer Journey Analytics
 - Access to Google Cloud Platform and Google BigQuery
-- **Download these assets**: 
-  - [JSON - Sample Data: Loyalty Data](./../../../../assets/json/bqLoyalty.json)
+
 
 >[!NOTE]
 >
 >Don't forget to install, configure and use the Chrome Extension as referenced in [Install the Chrome extension for the Experience League documentation](../../../getting-started/gettingstarted/ex1.md)
 
-## Exercises
 
-[1.2.1 Start using Google Cloud Platform](./ex1.md)
-
-Start using your Google Cloud Platform environment.
-
-[1.2.2 Create your first query in BigQuery](./ex2.md)
-
-Learn how to use BigQuery to prepare the data for loading into Platform.
-
-[1.2.3 Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
-
-Learn how to setup the source connector in Adobe Experience Platform.
-
-[1.2.4 Load data from BigQuery into Adobe Experience Platform](./ex4.md)
-
-Learn how to configure the BigQuery source connector in Adobe Experience Platform to ingest your Google Analytics Data.
-
-[1.2.5 Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md)
-
-Learn how to analyze Google Analytics data in Customer Journey Analytics and combine it with Loyalty data.
-
-[Summary and benefits](./summary.md)
-
-Summary of this module and overview of the benefits.
 
 ![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px"}
 

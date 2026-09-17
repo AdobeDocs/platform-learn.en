@@ -102,7 +102,6 @@ Below is an overview of the status of the content in this tutorial.
 | Name                   | Last Update | Working 100% | Remarks | Time Investment |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md){target="_blank"}      | 06/01/2025        | Yes        | - | 2h |
-| [1.2 Customer Journey Analytics: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"}      | 07/01/2025        | No        | There's an issue with the data prep modelling for the source data. This is pending a fix. | 2h |
 | [2.1 Query Service](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"}      | 04/12/2024        | Yes        |-| 2h |
 | [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"}      | 02/08/2025        | No        |Content being developed| TBD |
 
