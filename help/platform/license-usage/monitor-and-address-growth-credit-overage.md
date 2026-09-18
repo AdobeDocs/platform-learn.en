@@ -7,6 +7,7 @@ level: Beginner
 jira: KT-21522
 duration: 256
 hide: true
+nudge: yes
 ---
 
 # Monitor and address growth credit overage
