@@ -243,6 +243,7 @@ Campaigns
   + {hide-from-toc} [A Tour of the Capacity Dashboards](/help/platform/license-usage/license-usage-overview.md)
   + {hide-from-toc} [Monitoring Guardrails with the Capacity Dashboard](/help/platform/license-usage/capacity-dashboard.md)
   + {hide-from-toc} Growth Credits {#growth-credits}
+    + {hide-from-toc} [Overview](/help/platform/license-usage/what-are-growth-credits.md)
     + {hide-from-toc} [Growth credit dashboard](/help/platform/license-usage/growth-credits-and-dashboard.md)
     + {hide-from-toc} [Schedule capacity](/help/platform/license-usage/schedule-capacity.md)
     + {hide-from-toc} [Schedule capacity for multiple events](/help/platform/license-usage/two-events-one-year.md)
