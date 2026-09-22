@@ -3,7 +3,7 @@ title: License Usage - Using Credit Data for Budget and Renewal Conversations
 description: Review licensed, consumed, and reserved credits, identify which services are driving usage, and check for overage before a renewal discussion.
 feature: License Usage
 role: Admin
-level: Beginner
+level: Intermediate, Experienced
 jira: KT-21520
 hide: true
 ---

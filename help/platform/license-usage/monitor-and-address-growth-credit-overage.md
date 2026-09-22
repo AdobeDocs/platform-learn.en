@@ -6,8 +6,8 @@ role: User, Admin
 level: Beginner
 jira: KT-21522
 duration: 256
-hide: true
-nudge: yes
+hide: false
+last-substantial-update: 2026-09-21
 ---
 
 # Monitor and address growth credit overage

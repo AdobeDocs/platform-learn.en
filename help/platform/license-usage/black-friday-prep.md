@@ -3,7 +3,7 @@ title: License Usage - Preparing Capacity for Black Friday
 description: Estimate, schedule, and lock in additional streaming and edge capacity ahead of a Black Friday sale using the capacity dashboards.
 feature: License Usage
 role: Admin, User, Developer
-level: Beginner
+level: Intermediate, Experienced
 jira: KT-21517
 hide: true
 ---
