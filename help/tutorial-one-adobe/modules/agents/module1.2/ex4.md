@@ -6,56 +6,25 @@ doc-type: tutorial
 ---
 # 1.2.4 CX Enterprise Coworker with Microsoft 365 Copilot
 
-[!BADGE Beta]
-
-+++Beta Details
-By using the CX Enterprise Coworker with Microsoft 365 Copilot Beta, You hereby acknowledge that the Beta is provided "as is" without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any "Feedback" (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
-
-+++
-
->[!IMPORTANT]
->
->In order to follow this exercise, you need to have access to the manifest file that needs to be manually uploaded in M365 Copilot. Talk to your instructor, or reach out in the internal Slack channel to access the manifest file.
-
 ## 1.2.4.1 Installing CX Enterprise Coworker in Microsoft 365 Copilot
 
-Open Microsoft Teams and go to **Copilot**. In the left menu, click the **+** icon.
+Open Microsoft Teams and go to **Copilot**. In the left menu, click **More agents**.
 
 ![Coworker](./images/cwmsft1.png)
 
-Click **Manage your apps**.
+Search for **Coworker** and click **CX Enterprise Coworker**.
 
 ![Coworker](./images/cwmsft2.png)
 
-Click **Upload an app**.
+Click **Add**.
 
 ![Coworker](./images/cwmsft3.png)
 
-Select **Upload a custom app**.
+Go to **Copilot** and then click **CX Enterprise Coworker**. You're now ready to start using **CX Enterprise Coworker**.
 
 ![Coworker](./images/cwmsft4.png)
 
-Download the manifest file to your desktop.
-
-![Coworker](./images/cwmsft9.png) 
-
-Select the manifest file and click **Open**.
-
-![Coworker](./images/cwmsft5.png)
-
-You should then see this. Click **Add**.
-
-![Coworker](./images/cwmsft6.png)
-
-You should then see this. Click **Open with Copilot**.
-
-![Coworker](./images/cwmsft7.png)
-
-You should then see this.
-
-![Coworker](./images/cwmsft8.png)
-
-## 1.2.4.2 Sign in to CX Enterprise Coworker in Microsodft M365 Copilot
+## 1.2.4.2 Sign in to CX Enterprise Coworker in Microsoft M365 Copilot
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -65,7 +34,7 @@ login
 
 ![Coworker](./images/cwmsftl1.png)
 
-Click **Sign in to CX Coworker M365**.
+Click **Sign in to Adobe CX Enterprise Coworker**.
 
 ![Coworker](./images/cwmsftl2.png)
 

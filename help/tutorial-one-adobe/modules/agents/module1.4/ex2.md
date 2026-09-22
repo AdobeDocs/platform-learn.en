@@ -60,7 +60,7 @@ Scroll down until you see the file **component-definition.json** and open it
 
 ![Block](./images/block8.png)
 
-Click the **pencl** icon to start editing the file.
+Click the **pencil** icon to start editing the file.
 
 ![Block](./images/block8a.png)
 
@@ -68,7 +68,7 @@ Scroll down until you see the **Blocks**. Set your cursor under the closing brac
 
 ![Block](./images/block9.png)
 
-Paste this code and enter a comma **,** after the block of code:
+Paste this code block.
 
 ```json
 {
@@ -106,9 +106,10 @@ Scroll down until you see the last item. Set your cursor next to the closing bra
 
 ![Block](./images/block12.png)
 
-Enter a comma **,**, then push enter and on the next line, paste this code:
+Paste this code:
 
 ```json
+,
 {
   "id": "brandconcierge",
   "fields": []
@@ -129,13 +130,16 @@ Scroll down until you see the file **component-filters.json** and click the **pe
 
 ![Block](./images/block14.png)
 
-You should then see this.
+Under **section**, paste the below code after the last element in the list of components.
+
+```json
+,
+"brandconcierge"
+```
 
 ![Block](./images/block14a.png)
 
-Under **section**, enter a comma `,` and paste the id of your component `"brandconcierge"` after the current last line.
-
-Click **Commit changes...**.
+You should then see this. Click **Commit changes...**.
 
 ![Block](./images/block15.png)
 
@@ -172,6 +176,13 @@ In the text box, enter `brandconcierge.js`. Copy the below text and then paste i
 ```javascript
 export default function decorate(block) {
   block.setAttribute('id', 'brand-concierge-mount');
+
+  window.adobe.concierge.bootstrap({
+      instanceName: "alloy",
+      stylingConfigurations: window.styleConfiguration,
+      selector: "#brand-concierge-mount",
+      stickySession: false
+    });
 }
 ```
 
@@ -183,7 +194,7 @@ Click **Commit changes**.
 
 ### Create new page & link new custom block
 
-Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
+Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Click your **Program** to open it.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -292,10 +303,10 @@ After updating the content using your AEM Author environment, you now need to up
 The following libraries are required to implement Brand Concierge on your website running on AEM CS/EDS:
 
 - [styleconfigurations.js](./assets/styleconfigurations.js)
-- [alloy.js](./assets/alloy.js)
-- [brandconciergemain.js](./assets/brandconciergemain.js)
+- alloy.js
+- brandconciergemain.js
 
-Download all 3 files to your desktop.
+Download the file **styleconfigurations.js** to your desktop. The other files will be loaded from another location.
 
 ![Brand Concierge](./images/aem0.png)
 
@@ -311,7 +322,7 @@ Click **Choose your files**.
 
 ![Brand Concierge](./images/aem3a.png)
 
-Select all 3 files **styleConfigurations.js, alloy.js and brandconciergemain.js** from your desktop and click **Open**.
+Select the file **styleConfigurations.js** from your desktop and click **Open**.
 
 ![Brand Concierge](./images/aem4.png)
 
@@ -321,7 +332,7 @@ Click **Commit changes**.
 
 ### Update head.html
 
-In the previous step you uploaded 3 new libraries. These libraries now need to be loaded when your website is loaded and the way to do that is to add references to these files in the file **head.html**. 
+In the previous step you uploaded a new file. This library, along with the 2 other mentioned libraries, now needs to be loaded when your website is loaded and the way to do that is to add references to these files in the file **head.html**. 
 
 Additionally, you also need to provide instructions in the **head.html** file to ensure that the libraries are loaded in the right order and in a correct way.
 
@@ -351,50 +362,45 @@ There are 2 fields in the below code that you need to update:
 >- **orgId** needs to be replaced by the IMS Org ID of your Adobe Experience Cloud instance.
 
 ```javascript
+<!-- Add this to your existing HTML page -->
 <script nonce="aem" src="/scripts/styleconfigurations.js"></script>
-
 <script nonce="aem">
-    !function (n, o) {
-      o.forEach(function (o) {
-        n[o] || ((n.__alloyNS = n.__alloyNS ||
-          []).push(o), n[o] = function () {
-            var u = arguments; return new Promise(
-              function (i, l) { n[o].q.push([i, l, u]) })
-          }, n[o].q = [])
-      })
-    }
-      (window, ["alloy"]);
-    </script>
-
-
-<script nonce="aem" src="/scripts/alloy.js"></script>
-
-<script nonce="aem">
-    alloy("configure", {
-        defaultConsent: "in",
-        edgeDomain: "edge.adobedc.net",
-        edgeBasePath: "ee",
-        datastreamId: "XXXXX", // replace datastreamId
-        orgId: "--aepImsOrgId--", // replace ims org Id
-        debugEnabled: true,
-        idMigrationEnabled: false,
-        thirdPartyCookiesEnabled: false,
-        prehidingStyle: ".personalization-container { opacity: 0 !important }",
-    });
-
-window["alloy"]("sendEvent", {
-    conversation: {
-        fetchConversationalExperience: true
-    }
-}).then(result => {
-    console.log("Conversation experience fetched", result);
-    window["alloy"]("bootstrapConversationalExperience", {
-        selector: "#brand-concierge-mount",
-        src: "/scripts/brandconciergemain.js",
-        stylingConfigurations: window.styleConfiguration,
-        stickySession: true // create a sticky session cookie with expiration
+  !function (n, o) {
+    o.forEach(function (o) {
+      n[o] || ((n.__alloyNS = n.__alloyNS ||
+        []).push(o), n[o] = function () {
+          var u = arguments; return new Promise(
+            function (i, l) { n[o].q.push([i, l, u]) })
+        }, n[o].q = [])
     })
-});
+  }
+  (window, ["alloy"]);
+</script>
+
+<style>
+  .bc-card__image {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+</style>
+
+<script nonce="aem" src="https://cdn1.adoberesources.net/alloy/2.32.0/alloy.min.js"></script>
+<script nonce="aem" src="https://experience.adobe.net/solutions/experience-platform-brand-concierge-web-agent/static-assets/main.js"></script>
+
+<script nonce="aem">
+  alloy("configure", {
+    defaultConsent: "in",
+    edgeDomain: "edge.adobedc.net",
+    edgeBasePath: "ee",
+    datastreamId: "XXXXX",
+    orgId: "--aepImsOrgId--",
+    debugEnabled: true,
+    idMigrationEnabled: false,
+    thirdPartyCookiesEnabled: false,
+    prehidingStyle: ".personalization-container { opacity: 0 !important }",
+  });
+
+  alloy("sendEvent", {});
 </script>
 ```
 
@@ -407,8 +413,6 @@ Click **Commit change**.
 ![Brand Concierge](./images/aem11.png)
 
 You've now updated the required code to load the libraries on your website.
-
-![Brand Concierge](./images/aem12.png)
 
 ## 1.4.2.3 Test your configuration
 
