@@ -38,56 +38,11 @@ IF YOUR NUMBER IS BETWEEN **95** and **180**, you need to use:
 - **Password**: use the password that was shared with you
 
 
-## 1.4.1.1 Brand Concierge overview
-
-While configuring Brand Concierge, the 2 main elements you'll be using are:
-
-- **Agent Composer (Configuration Layer)**
-  
-  Purpose: The primary UI platform used to build and configure conversational AI experiences.
-
-  Key Responsibilities:
-
-  - Define and manage data sources and knowledge bases
-  - Set brand expression (tone, style, guardrails)
-  - Setup the meeting booking agent
-
-- **Agent Orchestrator (Execution Engine)**
-
-  Purpose: The reasoning and orchestration engine that interprets user requests and executes the appropriate agent actions.
-
-  Key Responsibilities:
-
-  - Interpret natural language user intents
-  - Generate and execute multi-step reasoning plans
-  - Select and invoke appropriate operators/tools
-  - Enforce brand context, compliance, and guardrails
-  - Coordinate multi-agent workflows
-  - Aggregate and compose responses from multiple data sources
-
-- **Brand Concierge Conversation Runtime (Service Layer)**
-
-  Purpose: The customer-facing conversational service layer that manages chat sessions, context, and client interactions.
-
-  Key Components:
-
-  - Web Agent (Client): Browser or mobile chat UI integrated using the Web SDK
-  - Conversation Service (Backend): Manages session state and acts as the orchestration gateway
-
-  Key Responsibilities:
-
-  - Manage user sessions and conversation transcripts
-  - Handle user authentication and profiles
-  - Route messages between the client and the Agent Orchestrator
-  - Persist conversation context
-  - Log behavioral and operational events to AEP for analytics
-  - Apply surface-specific configurations
-
-## 1.4.1.2 Brand Concierge instance configuration
+## 1.4.1.1 Brand Concierge instance configuration
 
 To start creating your own Brand Concierge instance, follow the below steps.
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **Brand Concierge**.
+Go to [https://experience.adobe.com/](https://experience.adobe.com/). Open **Brand Concierge**.
 
 ![Brand Concierge](./images/bc1.png)
 
@@ -179,18 +134,7 @@ After a couple of minutes, you should then see this.
 
 ![Brand Concierge](./images/bc2f.png)
 
-## 1.4.1.3 Adobe Commerce as a Cloud Service integration
-
-Click **Integrations**.
-
-![Brand Concierge](./images/bcaccs1.png)
-
-
-
-
-
-
-
+## 1.4.1.2 Knowledge Sources Configuration
 
 Go to **Knowledge Source** and click **Build your knowledge source**.
 
@@ -223,7 +167,7 @@ or
 In the below image, you need to replace the base URL by your website's URL.
 
 The links to the products in the file below are related to the products that you configured as part of exercise 1 in the module 
-[1.5 Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md){target="_blank"}. 
+[1.5 Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md). 
 
 ![Brand Concierge](./images/bc8a.png)
 
@@ -269,6 +213,10 @@ You should then see this. Click **Add**.
 
 You'll then be back here. Processing will take 10-20 minutes so you'll have to come back here at a later stage to verify if processing was successful.
 
+>[!NOTE]
+>
+>Don't wait for processing to complete to continue. Continue with the next steps.
+
 ![Brand Concierge](./images/bc25.png)
 
 ## 1.4.1.3 Data Collection onboarding steps
@@ -277,7 +225,7 @@ Brand Concierge uses Adobe Experience Platform to store interaction data from co
 
 ### Datastream
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **Experience Platform**.
+Go to [https://experience.adobe.com/](https://experience.adobe.com/). Open **Experience Platform**.
 
 ![Brand Concierge](./images/aep1.png)
 
@@ -295,75 +243,116 @@ Click **Save**.
 
 ![Brand Concierge](./images/aep4.png)
 
-Your datastream is now configured. Copy the datastream name and the datastream id and write them down in a text file on your computer.
+You shoudl then see this. Click **Add Service**.
 
 ![Brand Concierge](./images/aep5.png)
+
+Select the following:
+
+- **Service**: **Adobe Experience Platform**
+- **Event Dataset**: **Brand Concierge Conversations Event Dataset**
+- check the box in front of **Brand Concierge**
+
+Click **Save**.
+
+![Brand Concierge](./images/aep6.png)
+
+Your datastream is now configured. Copy the datastream name and the datastream id and write them down in a text file on your computer.
+
+![Brand Concierge](./images/aep7.png)
 
 ### Datastream Config Management
 
 The next step is to enable the Brand Concierge Configuration Management API to configure the datastream that you just created. This is required to resolve things like IMS Org ID and sandbox details during request processing.
 
-Go to **Home** and then select **Admin controls**.
+Go to **Home** and then click your Brand Concierge instance..
 
 ![Brand Concierge](./images/admincontrols1.png)
 
-Go to **Datastream Config Management** and then click **Add Config**.
+Go to **Deployments**.
 
 ![Brand Concierge](./images/admincontrols2.png)
 
-Paste the **Datastream ID** of the datastream that you created earlier. Click **Save**.
+You should then see this. Click **+ Add Config**.
 
 ![Brand Concierge](./images/admincontrols3.png)
 
-You should then see something like this.
+Paste the **Datastream ID** of the datastream that you created earlier. Click **Save**.
 
 ![Brand Concierge](./images/admincontrols4.png)
 
-## 1.4.1.4 Styling Config Management
+Click **Modify** next to **Surface Config Management**.
 
-Go to **Styling Config Management**. Click **Initialize style config**.
+![Brand Concierge](./images/admincontrols5.png)
 
-![Brand Concierge](./images/admincontrols7.png)
+Enter the following:
 
-Enter the **Brand Name** `CitiSignal` and then click **Initialize style config**.
+- **Domain** equals `techinsidersX.adobedemosystem.com`
+- **Path** equals `/brandconcierge`
 
-![Brand Concierge](./images/admincontrols8.png)
+Click **Save**.
+
+![Brand Concierge](./images/admincontrols6.png)
 
 You should then see this.
 
-![Brand Concierge](./images/admincontrols9.png)
+![Brand Concierge](./images/admincontrols7.png)
 
-## 1.4.1.5 Finish knowledge source setup
+## 1.4.1.4 Finish knowledge source setup
 
-Go to **Knowledge Sources**. After 10-20 minutes, the **Status** of both knowledge sources should be **Completed**. Once the status is **Success** for both knowledge sources, click **Home**.
+Go to **Knowledge Sources**. After 10-20 minutes, the **Status** of both knowledge sources should be **Completed**. 
 
 ![Brand Concierge](./images/admincontrols10.png)
 
-You should then see this. Click **+ Connect** on the **Website links** card.
+Once the status is **Success** for both knowledge sources, click **Home** and then select your Brand Concierge instance.
 
 ![Brand Concierge](./images/bc28.png)
 
-Select the knowledge source **CitiSignal Website** and click **Save**.
+Click **Integrations**.
 
 ![Brand Concierge](./images/bc29.png)
 
-You should then see this. Click **+ Connect** on the **Product catalog** card.
+Click **Browse Integrations**.
 
 ![Brand Concierge](./images/bc30.png)
 
-Select the knowledge source **CitiSignal Products** and click **Save**.
+Select the integration **Product Catalog** and click **Configure**.
 
 ![Brand Concierge](./images/bc31.png)
 
-You should then see this. Click **Preview** to start interacting with your Brand Concierge.
+Click **Select knowledge source**.
 
 ![Brand Concierge](./images/bc32.png)
 
-You can now start asking questions related to the provided knowledge sources.
+Select the knowledge source **CitiSignal Products** and click **Save**.
 
 ![Brand Concierge](./images/bc33.png)
 
-Enter the question `what products do you sell?` and click **send**.
+Click the **Save** icon.
+
+![Brand Concierge](./images/bc34.png)
+
+You should then see this. Click **Knowledge Base Search**.
+
+![Brand Concierge](./images/bc35.png)
+
+Click **Configure**.
+
+![Brand Concierge](./images/bc36.png)
+
+Click the field for the current knowledge source.
+
+![Brand Concierge](./images/bc37.png)
+
+Select **CitiSignal website** and click **Save**.
+
+![Brand Concierge](./images/bc38.png)
+
+You should then see this. Click **Save**.
+
+![Brand Concierge](./images/bc39.png)
+
+You can now start testing your Brand Concierge. Enter the question `what products do you sell?` and click **send**.
 
 ![Brand Concierge](./images/bc102.png)
 
