@@ -288,14 +288,6 @@ recommendations: noDisplay,noCatalog
       + [1.1.4 Data Preparation in Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex4.md)
       + [1.1.5 Visualization using Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex5.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/summary.md)
-    + 1.2 Customer Journey Analytics: Ingest and Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector {#cja2}
-      + [Overview](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md)
-      + [1.2.1 Start using Google Cloud Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex1.md)
-      + [1.2.2 Create your first query in BigQuery](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex2.md)
-      + [1.2.3 Connect GCP & BigQuery to Adobe Experience Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex3.md)
-      + [1.2.4 Load data from BigQuery into Adobe Experience Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex4.md)
-      + [1.2.5 Analyze Google Analytics Data using Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex5.md)
-      + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/summary.md)
   + Data Distiller {#datadistiller} 
     + 2.1 Query Service {#dd1}
       + [Overview](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/query-service.md)

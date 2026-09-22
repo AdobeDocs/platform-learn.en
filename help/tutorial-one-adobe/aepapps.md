@@ -106,10 +106,6 @@ In this module, you'll learn how to setup and use Campaigns within Adobe Journey
 
 In this module, you'll get Online to Offline insights by configuring a dashboard containing omni-channel data.
 
-[1.2 Customer Journey Analytics: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md)
-
-In this module, you'll set up your own instance of Google Cloud Platform, load demo data in Google Cloud Platform and you'll then use the BigQuery Source Connector to ingest that data from Google Cloud Platform into Adobe Experience Platform.
-
 #### Data Distiller
 
 [2.1 Query Service](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
