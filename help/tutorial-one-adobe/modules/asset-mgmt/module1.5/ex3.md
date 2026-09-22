@@ -102,7 +102,7 @@ You should then have an empty folder.
 
 ![ACCS+AEM Assets](./images/ghdskt8.png)
 
-Go to [https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce). Click **<> Code** and then select **Download ZIP**. Download the file and then drop it on your desktop.
+Go to [https://github.com/woutervangeluwe/assets-commerce](https://github.com/woutervangeluwe/assets-commerce). Click **<> Code** and then select **Download ZIP**. Download the file and then drop it on your desktop.
 
 ![ACCS+AEM Assets](./images/accsaemassets15a.png)
 
