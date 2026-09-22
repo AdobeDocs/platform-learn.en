@@ -3,10 +3,11 @@ title: Understanding growth credits and the credit dashboard
 description: See how growth credits let you exceed guardrails for edge throughput, streaming throughput, and batch segmentation, and how to track them on the credit dashboard.
 feature: License Usage
 role: User, Developer, Leader, Admin
-level: Beginner
+level: Beginner, Intermediate
 jira: KT-21510
 duration: 269
-hide: true
+hide: false
+last-substantial-update: 2026-09-22
 ---
 
 # Understanding growth credits and the credit dashboard

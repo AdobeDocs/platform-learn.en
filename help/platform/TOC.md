@@ -124,7 +124,7 @@ Campaigns
     + [Create multi-entity audiences](audiences/audience-builder/create-multi-entity-audiences.md)
     + [Create and activate account audiences (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
     + [Demo of streaming segmentation](/help/platform/audiences/audience-builder/streaming-segmentation-demo.md)
-    + {hide-from-toc} [Create schedules for batch audience evaluation](/help/platform/audiences/audience-builder/flexible-schedules-for-batch-audience-evaluation.md)
+    + [Create schedules for batch audience evaluation](/help/platform/audiences/audience-builder/flexible-schedules-for-batch-audience-evaluation.md)
     + [Evaluate batch audiences on demand](/help/platform/audiences/audience-builder/evaluate-audiences-on-demand.md)
   + Federated Audience Composition {#fac}
     + [Overview](audiences/fac/overview-of-federated-audience-composition.md)
@@ -242,14 +242,15 @@ Campaigns
 + License Usage {#license-usage}
   + {hide-from-toc} [A Tour of the Capacity Dashboards](/help/platform/license-usage/license-usage-overview.md)
   + {hide-from-toc} [Monitoring Guardrails with the Capacity Dashboard](/help/platform/license-usage/capacity-dashboard.md)
-  + {hide-from-toc} Growth Credits {#growth-credits}
-    + {hide-from-toc} [Overview](/help/platform/license-usage/what-are-growth-credits.md)
-    + {hide-from-toc} [Growth credit dashboard](/help/platform/license-usage/growth-credits-and-dashboard.md)
-    + {hide-from-toc} [Schedule capacity](/help/platform/license-usage/schedule-capacity.md)
-    + {hide-from-toc} [Schedule capacity for multiple events](/help/platform/license-usage/two-events-one-year.md)
-    + {hide-from-toc} [Schedule capacity near your contract anniversary](/help/platform/license-usage/approaching-contract-anniversary.md)
+  + Growth Credits {#growth-credits}
+    + [Overview](/help/platform/license-usage/what-are-growth-credits.md)
+    + [Growth credit dashboard](/help/platform/license-usage/growth-credits-and-dashboard.md)
+    + [Schedule streaming capacity](/help/platform/license-usage/schedule-streaming-capacity.md)
+    + [Manage batch audience capacity](/help/platform/license-usage/manage-batch-audience-capacity.md)
+    + [Schedule capacity for multiple events](/help/platform/license-usage/two-events-one-year.md)
+    + [Schedule capacity near your contract anniversary](/help/platform/license-usage/approaching-contract-anniversary.md)
     + {hide-from-toc} [Respond to an unexpected traffic spike](/help/platform/license-usage/unexpected-traffic-spike.md)
-    + {hide-from-toc} [Monitor and address credit overage](/help/platform/license-usage/monitor-and-address-growth-credit-overage.md)
+    + [Monitor and address credit overage](/help/platform/license-usage/monitor-and-address-growth-credit-overage.md)
     + {hide-from-toc} [Budget and renew credits](/help/platform/license-usage/budget-review-renewal-planning.md)
 + Monitoring {#monitoring}
   + [Monitor data ingestion](/help/platform/monitoring/monitoring-dashboard.md)
