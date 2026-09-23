@@ -18,7 +18,7 @@ Control when your audiences run with flexible batch schedules in Adobe Experienc
 
 >[!AVAILABILITY]
 >
->Flexible batch audience scheduling is in Limited Availablity and is not available to all customers.
+>Flexible batch audience scheduling is in Limited Availability. Reach out to your Adobe account team for access.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3497106?learn=on)
 
