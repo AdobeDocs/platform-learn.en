@@ -1,6 +1,6 @@
 ---
 title: Manage batch audience evaluation capacity
-description: Learn how to use Adobe Experience Platform growth credits to make sure you have additional batch audience evaluation capacity to keep up with the demands of your marketing team.
+description: Learn how to use Adobe Experience Platform growth credits to make sure you have enough batch audience evaluation capacity to keep up with the demands of your marketing team.
 role: Admin, User
 level: Intermediate, Experienced
 doc-type: Feature Video
@@ -11,7 +11,7 @@ jira: KT-21514
 
 # Manage batch audience evaluation capacity
 
-Learn how to use Adobe Experience Platform growth credits to make sure you have additional batch audience evaluation capacity to keep up with the demands of your marketing team.
+Learn how to use Adobe Experience Platform growth credits to make sure you have enough batch audience evaluation capacity to keep up with the demands of your marketing team.
 
 >[!AVAILABILITY]
 >
