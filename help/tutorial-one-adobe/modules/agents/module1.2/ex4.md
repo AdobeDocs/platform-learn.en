@@ -156,7 +156,59 @@ You should then see this.
 
 ![Agent Orchestrator](./images/copilot25.png)
 
-## 1.2.4.6 Identify Existing Fiber Journeys
+## 1.2.4.6 Create a new audience
+
+**Intent**
+
+Based on the above findings and research, there's a correlation between customers that consume a lot of data and that have a preferred genre of sci-fi or fantasy. You will now combine these attributes in an audience.
+
+Enter the following **Prompt** and click the **send** button.
+
+```javascript
+Create an audience with the name --aepUserLdap-- - Heavy Downloaders - Sci-Fi or Fantasy (Copilot M365) that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
+```
+
+![Coworker](./images/aocptechlab32.png)
+
+If similar, already existing audiences are already available, you should see a similar message. Enter the following **Prompt** and click the **send** button.
+
+```javascript
+create a new one
+```
+
+![Coworker](./images/aocptechlab32a.png)
+
+Your audience has now been created.
+
+![Coworker](./images/aocptechlab38.png)
+
+## 1.2.4.7 Activate audience to destination
+
+Enter the following **Prompt** and click the **send** button.
+
+```javascript
+Which destinations exist?
+```
+
+![Coworker](./images/cpcwdest1.png)
+
+You should then see this.
+
+![Coworker](./images/cpcwdest2.png)
+
+Enter the following **Prompt** and click the **send** button.
+
+```javascript
+Activate the audience I just created to the Meta destination and set the field customer_file_source to USER_PROVIDED_ONLY.
+```
+
+![Coworker](./images/cpcwdest3.png)
+
+You should then see this.
+
+![Coworker](./images/cpcwdest5.png)
+
+## 1.2.4.8 Identify Existing Fiber Journeys
 
 **Intent** 
 
@@ -165,7 +217,7 @@ Discover which active or recently concluded journeys include “Fiber” in the 
 Enter the following **Prompt** and click the **send** button.
 
 ```
-What journeys exist? 
+What journeys exist?
 ```
 
 ![Agent Orchestrator](./images/copilot28.png)
@@ -173,18 +225,6 @@ What journeys exist?
 You should then see a list of journeys.
 
 ![Agent Orchestrator](./images/copilot29.png)
-
-Enter the following **Prompt** and click the **send** button.
-
-```
-Which of these journeys has 'Fiber' in its name?
-```
-
-![Agent Orchestrator](./images/copilot31.png)
-
-You should then see this.
-
-![Agent Orchestrator](./images/copilot33.png)
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -198,7 +238,7 @@ You should then see this.
 
 ![Agent Orchestrator](./images/copilot36.png)
 
-## 1.2.4.7 Validate journey performance via fallout analysis 
+## 1.2.4.9 Validate journey performance via fallout analysis 
 
 **Intent**
 
