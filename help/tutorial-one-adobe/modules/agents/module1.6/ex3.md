@@ -196,7 +196,7 @@ Click **Publish**.
 
 >[!NOTE]
 >
->Using Adobe Marketing Agent in ChatGPT requires the following:
+>Using this MCP Server in ChatGPT requires the following:
 >- a paid version of OpenAI's ChatGPT Enterprise
 >- using the ChatGPT Enterprise web client
 
