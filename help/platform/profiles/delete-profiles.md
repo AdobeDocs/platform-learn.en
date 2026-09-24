@@ -32,4 +32,8 @@ topic_v2:
 
 Learn how to delete data from the Profile Store using the Real-Time Customer Profile API. By using the Profile API, you can remove data from the profile store without affecting the data lake or identity graph. This can be helpful when troubleshooting identity graph issues and correcting occasional errors in data ingestion that only affect a few profiles.
 
+>[!CAUTION]
+>
+>This API has been deprecated and is not available to all customers. To delete profiles, please use the Data Lifecycle > [Record Delete](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/ui/record-delete) functionality
+
 >[!VIDEO](https://video.tv.adobe.com/v/3429807/?learn=on&enablevpops)
