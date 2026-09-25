@@ -22,12 +22,6 @@ For this exercise, you need to use:
 
 ## 1.2.9.1 Install the custom MCP server for CX Enterprise Coworker
 
->[!NOTE]
->
->Using CX Enterprise Coworker in ChatGPT requires the following:
->- a paid version of OpenAI's ChatGPT Enterprise
->- using the ChatGPT Enterprise web client
-
 Go to [https://claude.ai/](https://claude.ai/) and log in using your account details. Once you're logged in, you should see this. Go to **Customize**.
 
 ![Claude](./images/claude1.png)
