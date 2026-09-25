@@ -9,40 +9,32 @@ doc-type: multipage-overview
 
 Find your user information here: [User Information](./ai-nola-users.md)
 
-## Day 1 
+## Day 1
 
-| Start Time | End Time | Session | Resource |
-|--- |--- |--- |--- |
-| 09.00 AM | 10.45 AM | Opening keynote - Agentic Building Blocks & Architecture | - |
-| 10.45 AM | 11.00 AM | Break | - |
-| 11.00 AM | 12.00 PM | Lab - [Getting started - Agentic AI Lab Environment](./modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md){target="_blank"} | - |
-| 12.00 PM | 01.00 PM | Lunch | - |
-| 01.00 PM | 02.30 PM | Lab - [Getting started with CX Enterprise Coworker](./modules/agents/module1.2/ex1.md){target="_blank"} <br> <br>Lab - [Using CX Enterprise Coworker for insights](./modules/agents/module1.2/ex2.md){target="_blank"} <br> <br>Lab - [Business Context in CX Enterprise Coworker](./modules/agents/module1.2/ex3.md){target="_blank"} | - |
-| 02.30 PM | 02.45 PM | Break | - |
-| 02.45 PM | 03.45 PM | Lab - [CX Enterprise Coworker with Microsoft 365 Copilot](./modules/agents/module1.2/ex4.md){target="_blank"} | - |
-| 03.45 PM | 05.00 PM | Lab - [CX Enterprise Coworker and AEM](./modules/agents/module1.2/ex6.md){target="_blank"} | - |
+| Start Time | End Time | Session | Resources |
+|---|---|---|---|
+| 11.15 | 12.15 | Lab – [Getting started - Agentic AI Lab Environment](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/gettingstarted/gettingstartedagenticai/getting-started-agentic-ai) | – |
+| 13.00 | 14.15 | Lab – [Getting started with CX Enterprise Coworker](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents2/ex1) | – |
+| 14.30 | 16.00 | Lab – [CX Enterprise Coworker for insights](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents2/ex2) | – |
+| 14.30 | 16.00 | Lab – [Business Context in CX Enterprise Coworker](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents2/ex3) | – |
+| 16.15 | 17.00 | Lab – [CX Enterprise Coworker with Microsoft 365 Copilot](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents2/ex4) | – |
 
 ## Day 2
 
 | Start Time | End Time | Session | Resources |
-|--- |--- |--- |--- |
-| 09.00 AM | 09.20 AM | Welcome & Recap | - |
-| 09.20 AM | 12.00 PM | Lab - [Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | - |
-| 12.00 PM | 01.00 PM | Lunch | - |
-| 01.00 PM | 02.30 PM | Lab - [Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | - |
-| 02.30 PM | 02.45 PM | Break | - |
-| 02.45 PM | 04.30 PM | Lab - [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](./modules/creation-production/module1.8/esm.md){target="_blank"} | - |
-| 04.30 PM | 05.00 PM | Q&A & Wrap-up | - |
+|---|---|---|---|
+| 10.00 | 11.30 | Lab – [CX Enterprise Coworker and AEM](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents2/ex6) | – |
+| 11.45 | 12.30 | Lab – [Adobe Commerce + Start Lab](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/assetmgmt/assetm3/accs) *(linked to Adobe Commerce as a Cloud Service lab)* | – |
+| 13.30 | 14.30 | Lab – [Adobe Commerce As Cloud Service](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/assetmgmt/assetm3/accs) | – |
+| 14.30 | 15.30 | Lab – Adobe Brand Visibility | – |
+| 15.45 | 17.00 | Lab – [Brand Concierge](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents4/brandconcierge) | – |
 
 ## Day 3
 
 | Start Time | End Time | Session | Resources |
-|--- |--- |--- |--- |
-| 09.00 AM | 09.30 AM | Welcome & Recap | - |
-| 09.30 AM | 11.00 AM | Lab - [Firefly Creative Production Enterprise Workflow Builder](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | -|
-| 11.00 PM | 11.30 AM | Break | - |
-| 11.30 AM | 12.30 PM | Closing Keynote - Adobe's Agentic Future | - |
-| 12.30 PM | - | Event ends | - |
+|---|---|---|---|
+| 9.30 | 10.45 | Lab – [Unified Review & Approval with Workfront, Frame.io and Adobe Cloud Storage](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/production/crpr8/esm) | – |
+| 11.00 | 12.30 | Lab – [Firefly Creative Production Enterprise Workflow Builder](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/production/crpr7/workflowbuilder) | – |
 
 
 >[!NOTE]

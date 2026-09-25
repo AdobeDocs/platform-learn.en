@@ -54,6 +54,10 @@ In this exercise, you'll explore CX Enterprise Coworker's capabilities in combin
 
 In this exercise, you'll explore CX Enterprise Coworker's capabilities in combination with GenStudio for Performance Marketing.
 
+[1.2.9 CX Enterprise Coworker with Claude](./ex9.md){target="_blank"}
+
+In this exercise, you'll explore CX Enterprise Coworker's capabilities against the background of the CitiSignal launch campaign for Fiber Max, by using CX Enterprise Coworker with Claude.
+
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px"}
 
 >[!NOTE]
