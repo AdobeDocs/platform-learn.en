@@ -53,6 +53,7 @@ recommendations: noDisplay,noCatalog
     + [1.2.6 CX Enterprise Coworker and AEM](/help/tutorial-one-adobe/modules/agents/module1.2/ex6.md)
     + [1.2.7 CX Enterprise Coworker and Workfront](/help/tutorial-one-adobe/modules/agents/module1.2/ex7.md)
     + [1.2.8 CX Enterprise Coworker and GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/agents/module1.2/ex8.md)
+    + [1.2.9 CX Enterprise Coworker with Claude](/help/tutorial-one-adobe/modules/agents/module1.2/ex9.md)
   + 1.4 Brand Concierge {#agents4}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
     + [1.4.1 Getting started with Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
@@ -303,7 +304,7 @@ recommendations: noDisplay,noCatalog
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
 
 + [Content Status](/help/tutorial-one-adobe/status.md)
-+ {hide-from-toc} [Partner Labs Singapore Agenda](/help/tutorial-one-adobe/ai-nola.md)
-+ {hide-from-toc} [Partner Labs Singapore User Information](/help/tutorial-one-adobe/ai-nola-users.md)
++ {hide-from-toc} [CX Enterprise Coworker Partner Labs Agenda](/help/tutorial-one-adobe/ai-nola.md)
++ {hide-from-toc} [CX Enterprise User Information](/help/tutorial-one-adobe/ai-nola-users.md)
 + {hide-from-toc} [Partner Labs Sydney Agenda](/help/tutorial-one-adobe/csc-sydney.md)
 + {hide-from-toc} [Partner Labs Sydney User Information](/help/tutorial-one-adobe/csc-sydney-users.md)

@@ -6,14 +6,6 @@ doc-type: tutorial
 ---
 # 1.2.5 CX Enterprise Coworker with ChatGPT Enterprise
 
-[!BADGE Beta]
-
-+++Beta Details
-By using the CX Enterprise Coworker with ChatGPT Enterprise Beta, You hereby acknowledge that the Beta is provided "as is" without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any "Feedback" (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
-
-+++
-
-
 >[!IMPORTANT]
 >
 >Before you begin, read the below instructions!
@@ -40,13 +32,13 @@ Go to [https://chatgpt.com/](https://chatgpt.com/) and log in using your account
 
 ![ChatGPT](./images/chatgpt1.png)
 
-Click the **+** icon.
+Click the **+** icon and then select **Create app**.
 
 ![ChatGPT](./images/chatgpt2.png)
 
 Enter the following information:
 
-- **Name**: `CX Enterprise Coworker`
+- **Name**: `--aepUserLdap-- CX Enterprise Coworker`
 - **Connection**: enter the URL provided to you by your Adobe contact
 - **Authentication**: select `OAuth`
 - check the box in front of **I understand and want to continue**
@@ -59,7 +51,7 @@ Click **Sign in with CX Enterprise Coworker**.
 
 ![ChatGPT](./images/chatgpt4.png)
 
-ChatGPT will now attempt to connect to your Adobe account. After successfully logging in with your Adobe account, you should see this. Click **Refresh**.
+After logging in, you should then see this. CLick **Refresh**.
 
 ![ChatGPT](./images/chatgpt5.png)
 
@@ -69,7 +61,7 @@ You should then see this. Close this window and open a new chat.
 
 ## 1.2.5.2 Set context in CX Enterprise Coworker
 
-Before interacting further with Adobe Marketing Agent through ChatGPT, the context needs to be set.
+Before interacting further with CX Enterprise Coworker through ChatGPT, the context needs to be set.
 
 For this exercise, the context needs to be set to use:
 
@@ -86,7 +78,7 @@ The Dataview setting helps to identify which dataview ChatGPT should look at whe
 Open a new chat. Enter the following **Prompt** and click the **send** button.
 
 ```
-using CX Enterprise Coworker, change organization to Adobe Tech Insiders 
+using --aepUserLdap-- CX Enterprise Coworker, list sandboxes
 ```
 
 ![Coworker ChatGPT](./images/chatgpt11.png)
@@ -94,7 +86,7 @@ using CX Enterprise Coworker, change organization to Adobe Tech Insiders
 You should then see this. Enter the following **Prompt** and click the **send** button.
 
 ```
-change sandbox to One Adobe
+change sandbox to one-adobe
 ```
 
 ![Coworker ChatGPT](./images/chatgpt12.png)
@@ -115,7 +107,9 @@ switch to AdobeOne - Unified Customer Data View
 
 ![Coworker ChatGPT](./images/chatgpt14.png)
 
-Your context is now properly set, so you can start sending specific prompts next.
+You should then see this. The context is now set correctly so you can start sending specific prompts next.
+
+![Coworker ChatGPT](./images/chatgpt15.png)
 
 You've now completed this lab.
 
