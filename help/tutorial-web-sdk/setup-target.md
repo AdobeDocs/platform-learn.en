@@ -534,11 +534,11 @@ To create the analytics-on-bottom request:
 1. **[!UICONTROL Save]** the rule
 1. Update and rebuild your library
 
- ![send_decision_request_alone](assets/target-aa-request-guided.png)
+![send_decision_request_alone](assets/target-aa-request-guided.png)
 
-   >[!TIP]
-   >
-   >If the event you're fetching a Decisioning Proposition with doesn't have an Adobe Analytics event following it leave **[!UICONTROL Use guided events]** unchecked. You'll need to select all the options manually, but it unlocks the option to **[!UICONTROL Include rendered propositions]** along with your fetch request.
+>[!TIP]
+>
+>If the event you're fetching a Decisioning Proposition with doesn't have an Adobe Analytics event following it leave **[!UICONTROL Use guided events]** unchecked. You'll need to select all the options manually, but it unlocks the option to **[!UICONTROL Include rendered propositions]** along with your fetch request.
 
 
 ### Validate with the Debugger

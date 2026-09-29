@@ -409,11 +409,11 @@ Using the same beacon, validate that content page views are mapped to the correc
 Scroll down to **[!UICONTROL pageName]** to validate that the `Page Name` is correctly captured:
 
 
-    >[!NOTE]
-    >
-    > The `pageName` value might be `test` if you overwrote the `xdm` object with the `data` object in the earlier exercise.
+>[!NOTE]
+>
+> The `pageName` value might be `test` if you overwrote the `xdm` object with the `data` object in the earlier exercise.
 
-    ![Page name validation with Assurance](assets/assurance-hitdebugger-content-pagename.png)
+![Page name validation with Assurance](assets/assurance-hitdebugger-content-pagename.png)
 
 ### Product string and e-commerce events validation
 
