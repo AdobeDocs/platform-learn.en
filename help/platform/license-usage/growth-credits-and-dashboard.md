@@ -17,7 +17,7 @@ Learn what growth credits are and how they let you exceed usage guardrails for e
 Growth credits give you:
 
 * The flexibility and control to shift credits between capabilities as business needs change
-* The ability to self-schedule temporary capacity boosts through an interface instead of filing tickets and waiting through a new sales cycle
+* The ability to self-schedule temporary capacity boosts through an interface
 * Full transparency into utilization with proactive usage alerts
 
 >[!AVAILABILITY]
