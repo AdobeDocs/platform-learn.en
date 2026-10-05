@@ -306,5 +306,5 @@ recommendations: noDisplay,noCatalog
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + {hide-from-toc} [CX Enterprise Coworker Partner Labs Agenda](/help/tutorial-one-adobe/ai-nola.md)
 + {hide-from-toc} [CX Enterprise User Information](/help/tutorial-one-adobe/ai-nola-users.md)
-+ {hide-from-toc} [Partner Labs Sydney Agenda](/help/tutorial-one-adobe/csc-sydney.md)
-+ {hide-from-toc} [Partner Labs Sydney User Information](/help/tutorial-one-adobe/csc-sydney-users.md)
++ {hide-from-toc} [CSC Partner Labs Agenda](/help/tutorial-one-adobe/csc.md)
++ {hide-from-toc} [CSC Partner Labs User Information](/help/tutorial-one-adobe/csc-users.md)
