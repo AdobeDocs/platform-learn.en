@@ -7,7 +7,7 @@ doc-type: multipage-overview
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px"} 
 
-Find your user information here: [User Information](./csc-sydney-users.md)
+Find your user information here: [User Information](./csc-users.md)
 
 ## Tuesday
 
