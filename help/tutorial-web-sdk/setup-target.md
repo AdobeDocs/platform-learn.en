@@ -341,9 +341,9 @@ Now that you have configured the Platform Web SDK to request content for the `ho
 
    ![Render homepage hero rule](assets/target-rule-render-hero.png)
 
-   >[!TIP]
-   >
-   >Give your rule events, conditions, and actions descriptive names instead of using the default names. Robust rule component names make the search results much more useful.
+>[!TIP]
+>
+>Give your rule events, conditions, and actions descriptive names instead of using the default names. Robust rule component names make the search results much more useful.
 
 1. Enter `%event.propositions%` into the Propositions field as we're using the "Send event complete" event as the trigger for this rule. 
 1. In the "proposition metadata" section select the **[!UICONTROL Use a form]**
@@ -536,9 +536,9 @@ To create the analytics-on-bottom request:
 
  ![send_decision_request_alone](assets/target-aa-request-guided.png)
 
-   >[!TIP]
-   >
-   >If the event you're fetching a Decisioning Proposition with doesn't have an Adobe Analytics event following it leave **[!UICONTROL Use guided events]** unchecked. You'll need to select all the options manually, but it unlocks the option to **[!UICONTROL Include rendered propositions]** along with your fetch request.
+>[!TIP]
+>
+>If the event you're fetching a Decisioning Proposition with doesn't have an Adobe Analytics event following it leave **[!UICONTROL Use guided events]** unchecked. You'll need to select all the options manually, but it unlocks the option to **[!UICONTROL Include rendered propositions]** along with your fetch request.
 
 
 ### Validate with the Debugger
@@ -615,3 +615,4 @@ Now that you have completed this lesson you should have a working implementation
 >[!NOTE]
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+	
