@@ -341,9 +341,9 @@ Now that you have configured the Platform Web SDK to request content for the `ho
 
    ![Render homepage hero rule](assets/target-rule-render-hero.png)
 
-   >[!TIP]
-   >
-   >Give your rule events, conditions, and actions descriptive names instead of using the default names. Robust rule component names make the search results much more useful.
+>[!TIP]
+>
+>Give your rule events, conditions, and actions descriptive names instead of using the default names. Robust rule component names make the search results much more useful.
 
 1. Enter `%event.propositions%` into the Propositions field as we're using the "Send event complete" event as the trigger for this rule. 
 1. In the "proposition metadata" section select the **[!UICONTROL Use a form]**
