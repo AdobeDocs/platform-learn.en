@@ -77,9 +77,9 @@ Platform Web SDK sends data from your website to Platform Edge Network. Your dat
 
     ![Datastream save analytics](assets/datastream-add-analytics.png)
 
-    >[!TIP]
-    >
-    >Adding more report suites by selecting **[!UICONTROL Add Report Suite]** is equivalent to multi-suite tagging.
+>[!TIP]
+>
+>Adding more report suites by selecting **[!UICONTROL Add Report Suite]** is equivalent to multi-suite tagging.
 
 >[!WARNING]
 >
@@ -233,9 +233,9 @@ Let's create a rule to send an additional page view call to a different report s
 
 1. Leave the **[!UICONTROL Development]** tab selected. 
 
-    >[!TIP]
-    >
-    >    This tab determines in which tags environment the override occurs. For this excerise, you only specify the Development environment but when you deploy this to production remember to also do it in the **[!UICONTROL Production]** environment.
+>[!TIP]
+>
+>    This tab determines in which tags environment the override occurs. For this excerise, you only specify the Development environment but when you deploy this to production remember to also do it in the **[!UICONTROL Production]** environment.
 
 1. Select the **[!UICONTROL Sandbox]** you are using for the tutorial
 1. Select the **[!UICONTROL Datastream]**, in this case `Luma Web SDK: Development Environment`
@@ -286,9 +286,9 @@ To validate Analytics is capturing data properly through Experience Platform Web
 
     ![Analytics beacon Edge Trace](assets/analytics-debugger-edge-analytics.png)    
 
-    >[!TIP]
-    >
-    >The second dropdown corresponds to the Analytics report suite ID you are sending data to. It should match your own report suite, not the one in the screenshot.
+>[!TIP]
+>
+>The second dropdown corresponds to the Analytics report suite ID you are sending data to. It should match your own report suite, not the one in the screenshot.
 
 1. Scroll down to find `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. It is a Context Data Variable that captures ECID
 1. Keep scrolling down until you see the Analytics `[!UICONTROL mid]` variable. Both IDs match with your device's Experience Cloud ID.
@@ -296,9 +296,9 @@ To validate Analytics is capturing data properly through Experience Platform Web
 
     ![Analytics ECID](assets/analytics-debugger-ecid.png)    
 
-    >[!NOTE]
-    >
-    >Since you are logged in, take a moment to validate the authenticated ID `f660ab912ec121d1b1e928a0bb4bc61b` for the user **`test@test.com`** is captured as well in the `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
+>[!NOTE]
+>
+>Since you are logged in, take a moment to validate the authenticated ID `f660ab912ec121d1b1e928a0bb4bc61b` for the user **`test@test.com`** is captured as well in the `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
 
 ### Report suite override validation
 
@@ -319,9 +319,9 @@ Go to a product page like the [Livingston All-Purpose Tight product page](https:
 1. Look for `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. 
 1. Scroll down to see the `[!UICONTROL gn]` variable. It is the Analytics dynamic syntax for the `[!UICONTROL s.pageName]` variable. It captures the page name from the data layer.
 
-    >[!NOTE]
-    >
-    > The `gn` value might be `test` if you overwrote the `xdm` object with the `data` object in the earlier exercise.
+>[!NOTE]
+>
+> The `gn` value might be `test` if you overwrote the `xdm` object with the `data` object in the earlier exercise.
 
     ![Analytics product string](assets/analytics-debugger-edge-page-view.png)  
 
@@ -344,9 +344,9 @@ Since you are already on a product page, this exercise continues to use the same
 
 1. Also note `[!UICONTROL c.a.x.eventType]` is set to `commerce.productViews` since you are on a product page.
 
-    >[!TIP]
-    >
-    > The `product detail pages - adobeDataLayer push - set product details variables - 20` rule is overwriting the value of `eventType` set by the `all pages - adobeDataLayer push - set global variables - 1` rule as it is set to trigger later in the sequence
+>[!TIP]
+>
+> The `product detail pages - adobeDataLayer push - set product details variables - 20` rule is overwriting the value of `eventType` set by the `all pages - adobeDataLayer push - set global variables - 1` rule as it is set to trigger later in the sequence
 
 
     ![Analytics Product View](assets/analytics-debugger-prodView.png) 
@@ -409,9 +409,9 @@ Using the same beacon, validate that content page views are mapped to the correc
 Scroll down to **[!UICONTROL pageName]** to validate that the `Page Name` is correctly captured:
 
 
-    >[!NOTE]
-    >
-    > The `pageName` value might be `test` if you overwrote the `xdm` object with the `data` object in the earlier exercise.
+>[!NOTE]
+>
+> The `pageName` value might be `test` if you overwrote the `xdm` object with the `data` object in the earlier exercise.
 
     ![Page name validation with Assurance](assets/assurance-hitdebugger-content-pagename.png)
 
