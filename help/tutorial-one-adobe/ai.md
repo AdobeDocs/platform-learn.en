@@ -34,19 +34,6 @@ In this foundational module, you will prepare everything so that you can access 
 
 ### Agentic AI Tech Labs
 
-[1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
-
-**Goal** 
-
-Learn how to use Adobe Experience Platform Agents and Agent Orchestrator to: 
-
-- Analyze purchase trends
-- Identify high-propensity audiences
-- Validate journey performance
-- Create a new journey for the CitiSignal Fiber Max rollout
-
-You'll also learn how to use Adobe Marketing Agent in combination with tools such as Microsoft 365 Copilot, ChatGPT for Enterprise, Google Gemini Enterprise and Claude.
-
 [1.2 CX Enterprise Coworker](./modules/agents/module1.2/coworker.md)
 
 **Goal** 
@@ -79,20 +66,6 @@ In this exercise you'll learn how to:
 
 - Connect ChatGPT and/or Claude.ai to **Customer Journey Analytics** and perform data analysis tasks
 - Connect ChatGPT and/or Claude.ai to **Adobe Analytics** and perform data analysis tasks
-
-[1.6 AEM & Agents](./modules/agents/module1.6/aemagents.md){target="_blank"}
-
-**Goal**
-
-Adobe Experience Manager now includes several purpose-built agents, each designed to take on work that has historically required tons of manual effort. These are not generic AI assistants, they are domain-trained agents that understand AEM deeply and operate across content, code, assets, governance, and optimization.
-
-- **Experience Production Agent**, which accelerates updates, content changes, and even full site migrations. 
-- **Governance Agent**, enforces brand, rights, and compliance rules automatically. 
-- **Discovery Agent**, prepares content for AI-native discovery and acts as an intelligent strategist. 
-- **Content Optimization Agent**, instantly creates performance-ready, channel-specific asset variations. 
-- **Development Agent**, accelerates developers with AI-assisted troubleshooting and performance tuning.
-
-In this exercise you'll learn how to use these agents using both AI Assistant and Cursor through custom MCP server setup.
 
 [1.7 Intelligent Developer Tools for Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
 
