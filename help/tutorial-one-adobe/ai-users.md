@@ -1,9 +1,9 @@
 ---
-title: Partner Labs User Information
-description: Partner Labs User Information
+title: User Information
+description: User Information
 doc-type: multipage-overview
 ---
-# Partner Labs User Information
+# User Information
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px"} 
 
