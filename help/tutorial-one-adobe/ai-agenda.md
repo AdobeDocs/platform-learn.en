@@ -7,7 +7,7 @@ doc-type: multipage-overview
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px"} 
 
-Find your user information here: [User Information](./ai-nola-users.md)
+Find your user information here: [User Information](./ai-users.md)
 
 ## Day 1
 
