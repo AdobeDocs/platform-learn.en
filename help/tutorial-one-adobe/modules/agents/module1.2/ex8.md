@@ -28,6 +28,8 @@ You've now completed this lab.
 
 ## Next Steps
 
-Go Back to [CX Enterprise Coworker](./coworker.md){target="_blank"}
+Go to [CX Enterprise Coworker with Claude](./ex9.md){target="_blank"}
 
-[Go Back to All Modules](./../../../overview.md){target="_blank"}
+Go back to [CX Enterprise Coworker](./coworker.md){target="_blank"}
+
+Go back to [All Modules](./../../../overview.md){target="_blank"}
