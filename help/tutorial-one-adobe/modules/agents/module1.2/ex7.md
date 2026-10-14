@@ -8,10 +8,6 @@ doc-type: tutorial
 
 >[!IMPORTANT]
 >
->This content is being developed
-
->[!IMPORTANT]
->
 >Before you begin, read the below instructions!
 
 ## Instructions for in-person workshops
