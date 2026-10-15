@@ -4,7 +4,7 @@ description: Getting started with Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-TQID: https://experienceleague.adobe.com/JHksBmthS0ObZT-i4GeK9vJxmVrnuPyNlI-I8F3jBa4
+TQID: 'https://experienceleague.adobe.com/xf0xOZCeJSZ-F2UeXlAzYLQQ5QWg3umlWp03--VS6P4'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

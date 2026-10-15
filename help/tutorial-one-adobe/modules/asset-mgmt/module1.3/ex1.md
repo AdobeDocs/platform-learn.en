@@ -4,6 +4,10 @@ description: Create your first form
 kt: 5342
 doc-type: tutorial
 exl-id: 288e113f-2e9e-4352-8ddd-ca231b552b70
+TQID: 'https://experienceleague.adobe.com/wcI6zfTdvITxGpPnpzT4lTJM3dgaOIt6dTa6TAB9cpE'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.3.1 Create your first form
 

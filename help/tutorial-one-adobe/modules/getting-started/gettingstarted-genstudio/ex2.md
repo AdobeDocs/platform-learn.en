@@ -4,6 +4,10 @@ description: Getting Started - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: bf672ae5-3368-421b-974f-e182cdf0299f
+TQID: 'https://experienceleague.adobe.com/LcE4s5FmFNsNAeS56VhsixpJTV0WpoUiWjas4yj6-6M'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Configure your Adobe I/O project 
 

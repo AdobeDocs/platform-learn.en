@@ -4,6 +4,10 @@ description: Adobe Marketing Agent for Claude
 kt: 5342
 doc-type: tutorial
 exl-id: 2563ca77-699b-4cd3-af51-1105cea03c79
+TQID: 'https://experienceleague.adobe.com/soBKJnqJT2-QJej0F073-ujX3OEYmoxQVAdAJSgXbek'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.1.5 Adobe Marketing Agent for Claude
 

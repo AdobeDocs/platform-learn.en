@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-TQID: https://experienceleague.adobe.com/3mMLmNDoretelDqm3h6RUxOZQdbK7vBV4-mCjyG5kC4
+TQID: 'https://experienceleague.adobe.com/vDmPFE-gYCCNmGX0RWKJQSrklIBLrzfscTGB33zx3zI'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

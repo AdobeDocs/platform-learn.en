@@ -6,13 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
-TQID: https://experienceleague.adobe.com/uiR4dM-pg8ecRJGoyOvxmjG8dA1z-3au0xJE6aSKiLU
+TQID: 'https://experienceleague.adobe.com/dFnJBPBuOEL9f7k95q1xNv1jF6OSu6rBy7T5E-nIfos'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-feature_v2:
-  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
-    internal-label: Integrations
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer

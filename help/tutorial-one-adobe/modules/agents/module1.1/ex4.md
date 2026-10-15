@@ -4,6 +4,9 @@ description: Adobe Marketing Agent for Google Gemini Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.1.4 Adobe Marketing Agent for Google Gemini Enterprise
 

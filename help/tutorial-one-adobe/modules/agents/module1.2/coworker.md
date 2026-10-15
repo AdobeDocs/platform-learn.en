@@ -4,7 +4,7 @@ description: CX Enterprise Coworker
 kt: 5342
 doc-type: tutorial
 exl-id: bbd23d08-50bb-45a4-a687-92f9e3494ce5
-TQID: https://experienceleague.adobe.com/Uf0RVZsGz06vLUp7MM1jZ9ug-ROnnvV-9waqKLQZ5W0
+TQID: 'https://experienceleague.adobe.com/pH4gOnX3U-QqfJ-5edrKvh0CoHfXgkUfq2LtRUtUgi0'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

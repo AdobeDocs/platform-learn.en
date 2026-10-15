@@ -4,6 +4,10 @@ description: Scale Content Fragments with ChatGPT & MCP Server
 kt: 5342
 doc-type: tutorial
 exl-id: b7105351-e9de-4b2c-b3d7-2d4c8627f852
+TQID: 'https://experienceleague.adobe.com/MxANuOLuecbwMytEVQkqQ4iRFH9OlJCYixEpGsRUuuk'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.6.3 Scale Content Fragments with ChatGPT & MCP Server
 

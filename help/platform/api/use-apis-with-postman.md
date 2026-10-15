@@ -7,10 +7,16 @@ level: Beginner
 jira: KT-4010
 last-substantial-update: 2023-06-21T00:00:00.000Z
 exl-id: 6be96c5a-8edc-4ae9-8675-9e90708723c9
-TQID: https://experienceleague.adobe.com/fNgUBiEXRAGbeV2yihw3-bgaD-r94AFO6T-M8UDxn4A
+TQID: 'https://experienceleague.adobe.com/rIMLjXOnoBe-ESbKd0pSQcuaEXeCxF4RnSfD7xuMkRA'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
+feature_v2:
+  - id: a9eb38d5-9d89-492f-af4e-b968a07f2d91
+    internal-label: Permissions
+subfeature_v2:
+  - id: 01a3139f-2204-4e1b-bd65-5437f7d5a5bd
+    internal-label: API credentials
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer

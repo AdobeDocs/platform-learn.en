@@ -2,6 +2,10 @@
 title: Partner Labs Agenda
 description: Partner Labs Agenda
 doc-type: multipage-overview
+TQID: 'https://experienceleague.adobe.com/b3NSnbFqfi7DpZ7PMx3DI-7Pc-W20BMJodYzeM5ZPnI'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Partner Labs Agenda
 

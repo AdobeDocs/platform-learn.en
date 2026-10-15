@@ -4,7 +4,7 @@ description: Getting started with Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 4d431d9d-2e4b-41a4-a31d-b641e2369ced
-TQID: https://experienceleague.adobe.com/hSycIHKBOA4j-EVWGyBsqin0oZz96WAV-HFssaBoRG4
+TQID: 'https://experienceleague.adobe.com/1Ee5iPK98C-xSLfYRzBZaD0yB-SWaMSUaluxW75iexg'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

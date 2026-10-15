@@ -4,21 +4,10 @@ description: Adobe Journey Optimizer - Configure your journey and message
 kt: 5342
 doc-type: tutorial
 exl-id: 687eb818-2d50-4293-88e6-7e5945b91db6
-TQID: https://experienceleague.adobe.com/B1Btvtd3q06VkMiV-iqp4fKOrREwXLtZPyy1hZI0KQQ
+TQID: 'https://experienceleague.adobe.com/CkNfGzAFULHoK54iuSIwuv8Misn8no8z1hixYzQL2lU'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
-  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
-  - id: abc02dd6-664f-446a-9aaa-675bc0f2fe4a
-    internal-label: Sources
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-    internal-label: Data collection
 ---
 # 3.2.4 Create your journey and messages
 

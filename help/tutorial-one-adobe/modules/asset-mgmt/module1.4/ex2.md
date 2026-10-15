@@ -4,6 +4,10 @@ description: Use your dynamic media template with Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: 0dd499cc-ec3b-42c3-9c08-6512ea5b9377
+TQID: 'https://experienceleague.adobe.com/beW5TfeP7G8eVXGUSTY3cg--gmqSTxX9PDu6kkmyPc4'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.4.2 Use your dynamic media template with Adobe Journey Optimizer
 

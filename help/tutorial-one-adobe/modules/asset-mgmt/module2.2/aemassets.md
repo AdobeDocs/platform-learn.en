@@ -4,7 +4,7 @@ description: Adobe Experience Manager Assets
 kt: 5342
 doc-type: tutorial
 exl-id: 89d1fa65-0a1e-4565-b4c2-a12fc9d6dad9
-TQID: https://experienceleague.adobe.com/TjfC2qBBgSfVE4Sapu3EQATcz07sU5Lkx5N4V1rLbcQ
+TQID: 'https://experienceleague.adobe.com/LyT-WHdi6zS74czj77fkhJadrA6X44m--LjCa5BRQrY'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

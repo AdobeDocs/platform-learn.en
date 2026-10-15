@@ -4,6 +4,10 @@ description: Create your orchestrated campaign
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
+TQID: 'https://experienceleague.adobe.com/BVLeu6an7eg6cqCH4jIUNexI-jvgJp9jhUbJBd2mw-0'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 3.8.2 Create your orchestrated campaign
 

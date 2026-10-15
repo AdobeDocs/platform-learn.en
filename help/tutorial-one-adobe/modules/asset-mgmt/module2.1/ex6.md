@@ -4,6 +4,10 @@ description: AEM CS - Create your document-based website
 kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f
+TQID: 'https://experienceleague.adobe.com/xred6Prt2ty9ICqXffa-8a3D47a-QnUwwOKrl1BU2U4'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.1.2 to be removed
 

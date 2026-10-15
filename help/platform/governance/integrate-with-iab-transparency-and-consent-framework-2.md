@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-5950
 thumbnail: 38346.jpg
 exl-id: 337b97d0-fd29-4bdb-a79a-9fe428adaae8
-TQID: https://experienceleague.adobe.com/Tr3S4L4XSoTIP5kvpkm0GbpfZphZkEV-htKeQDkzxBw
+TQID: 'https://experienceleague.adobe.com/i-S9Na5slw7jsOKOyn78zVt8J9c9zjG3zSLOtW6iq4c'
 product_v2:
   - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
     internal-label: Real-Time Customer Data Platform
@@ -18,9 +18,6 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-    internal-label: Governance
 ---
 # Integrate with IAB's Transparency & Consent Framework 2.0
 

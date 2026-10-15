@@ -8,7 +8,7 @@ level: Intermediate
 jira: KT-6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-TQID: https://experienceleague.adobe.com/SnyDxJOsQhr1AApdpdCtTp-2pNjta8sBXzXzcn62nZI
+TQID: 'https://experienceleague.adobe.com/ldPTq3GHNHdZJlV54cOflFv8MN2ukg-ovx8TwiFMBTg'
 product_v2:
   - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
     internal-label: Real-Time Customer Data Platform
@@ -20,9 +20,6 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-topic_v2:
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-    internal-label: Email marketing
 ---
 # Configure file-based [!UICONTROL cloud storage] or [!UICONTROL email marketing] destinations
 

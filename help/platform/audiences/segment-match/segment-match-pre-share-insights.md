@@ -7,22 +7,22 @@ level: Intermediate
 jira: KT-10249
 thumbnail: 342378.jpeg
 exl-id: 0ea3c648-7366-462a-b6ed-dc911186e1f6
-TQID: https://experienceleague.adobe.com/U298uuD2ADzOx0yD0eeTMiaXhvhbRRsuWL0BUBQzUw4
+TQID: 'https://experienceleague.adobe.com/5gcuIWfk3R-ifm8r9aNBJChdB-MttPR4r8SiA9OcBA0'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
+  - id: b1c2d3e4-1001-4001-9001-100000000001
+    internal-label: Customer audiences
+subfeature_v2:
+  - id: f0c9f224-75f2-4864-8de6-859ae7856690
+    internal-label: Segment match
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-    internal-label: Insights
 ---
 # Segment Match pre-share insights
 

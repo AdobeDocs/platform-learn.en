@@ -8,18 +8,13 @@ jira: KT-11165
 thumbnail: 3409501.jpeg
 last-substantial-update: 2022-09-27T00:00:00.000Z
 exl-id: 3bc9ee9a-fcaf-42d3-9acb-c76632491825
-TQID: https://experienceleague.adobe.com/jpsWIRYKLn-IHtbbGyIYi6p5hmTgJPVViAQaQ-JwC5M
+TQID: 'https://experienceleague.adobe.com/2AE--Fl4TrFC-uqG7Ui9NxxyXeKTnSp5uggPHdZ5bKI'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: a37e4ecd-c740-426a-addf-cb1b483c5c5a
-    internal-label: Segmentation
-subfeature_v2:
-  - id: b784da9a-7978-4766-bf1f-5ab2b23d894a
-    internal-label: Federated Audience Composition
-  - id: fe06da76-5b92-43de-9bda-c5c9c01b55e8
-    internal-label: Segmentation UI
+  - id: de9975b2-c43a-4287-9698-4f4cad92b83f
+    internal-label: Schemas
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer

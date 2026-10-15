@@ -2,6 +2,10 @@
 title: Partner Labs CSC Agenda
 description: Partner Labs CSC Agenda
 doc-type: multipage-overview
+TQID: 'https://experienceleague.adobe.com/6y5LHq90LS0Ifv9J1-N621YlMev9rPwWISvzBhuBezQ'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Partner Labs CSC Agenda
 

@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 044677e4-7ca3-4dfe-9067-640983681ea7
-TQID: https://experienceleague.adobe.com/B6o8qd6cKFTUbJwWYr865-aelpsEfC-DfUUYv9lBZDo
+TQID: 'https://experienceleague.adobe.com/K5zMwGvv17cY8OW0whiim-v3Uf1CTio3UuP10G4xqJM'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
@@ -16,9 +16,6 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-    internal-label: Security
 ---
 # 1.6.2 Create your AWS S3 bucket
 

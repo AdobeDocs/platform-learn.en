@@ -3,6 +3,10 @@ title: CX Enterprise Coworker with Claude
 description: CX Enterprise Coworker with Claude Enterprise
 kt: 5342
 doc-type: tutorial
+TQID: 'https://experienceleague.adobe.com/5qfBqBpEUlEl7MTvjwntSf2cv-sZNjhGEcViWRaecN0'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.2.9 CX Enterprise Coworker with Claude
 

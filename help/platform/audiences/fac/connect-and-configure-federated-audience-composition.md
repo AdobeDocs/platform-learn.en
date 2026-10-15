@@ -9,13 +9,13 @@ duration: 0
 last-substantial-update: 2024-08-30T00:00:00.000Z
 jira: KT-16120
 exl-id: 993b514a-67ea-4d71-8c6b-e0e4f600b603
-TQID: https://experienceleague.adobe.com/IJ8nQs7zRqcDLO6iPOXas3L-YpWe9gpSRnDmk1-RXZk
+TQID: 'https://experienceleague.adobe.com/DMSzPWy0VKG46N9yyR2j-seWnw-LSpw-CEtw4Qs6YV8'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
+  - id: 095e8119-1425-57eb-9d8c-9e684f2c9771
+    internal-label: ''
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -24,11 +24,6 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-    internal-label: Governance
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
 ---
 # Connect and configure Federated Audience Composition
 

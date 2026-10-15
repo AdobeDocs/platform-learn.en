@@ -4,6 +4,10 @@ description: Getting Started - Agentic AI
 kt: 5342
 doc-type: tutorial
 exl-id: bc4a2fb8-8849-4315-8cbd-af05aab66381
+TQID: 'https://experienceleague.adobe.com/8-S-qa9O-RwKau2F3igwsZ2gokpZTvmgDGiKLUsOKgw'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Getting started - GenStudio
 

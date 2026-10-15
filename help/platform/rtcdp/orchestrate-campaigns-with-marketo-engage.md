@@ -8,7 +8,7 @@ level: Intermediate
 jira: KT-9263
 thumbnail: 338254.jpg
 exl-id: 1e5b951a-2b14-4e28-a2f2-818db7a8b376
-TQID: https://experienceleague.adobe.com/jLp-hulwkdAj3XXurEKhpKUMHTkt07sWu-H0OtfSYUo
+TQID: 'https://experienceleague.adobe.com/WsIK2SegD9UGcbGxLp57bg3aUGPhCPVbyDcK3XScO0Y'
 product_v2:
   - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
     internal-label: Real-Time Customer Data Platform

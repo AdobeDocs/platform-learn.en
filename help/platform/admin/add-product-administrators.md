@@ -9,13 +9,16 @@ jira: KT-7923
 thumbnail: 333860.jpg
 last-substantial-update: 2023-12-08T00:00:00.000Z
 exl-id: 7ede8f72-2b9d-4fb0-b176-c1e31b0e6f6e
-TQID: https://experienceleague.adobe.com/NUQHgR8jfFcC8kY8T-9ccvTLGvRUz-wpYvHAZ-6gBkg
+TQID: 'https://experienceleague.adobe.com/ASedxh0D-NFMcAJIAUDFNlBm0jNVIO2ukY7DpohhavA'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
+  - id: a9eb38d5-9d89-492f-af4e-b968a07f2d91
+    internal-label: Permissions
+subfeature_v2:
+  - id: ec65bbee-d543-4164-9337-273c0b22ac93
+    internal-label: Access control API
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

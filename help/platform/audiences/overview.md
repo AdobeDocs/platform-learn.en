@@ -1,10 +1,26 @@
 ---
 title: Audiences in Adobe Experience Platform
-description: Learn about audience creation options in Adobe Experience Platform 
+description: Learn about audience creation options in Adobe Experience Platform
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 feature: Audiences
 role: User
 level: Beginner
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: 095e8119-1425-57eb-9d8c-9e684f2c9771
+    internal-label: ''
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Audiences in Adobe Experience Platform
 

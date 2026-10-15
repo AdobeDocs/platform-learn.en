@@ -6,7 +6,7 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: f18a0ec9-ee56-42b9-98bd-b5e433d77043
-TQID: https://experienceleague.adobe.com/RBmoyl2Je6gICjMO9crQmpGp36Hkwpl02-YThCQ3h3Y
+TQID: 'https://experienceleague.adobe.com/GLskUNhoq4WylESD0coYjMtY-V9MTwKCSZ-XdG7zqB8'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

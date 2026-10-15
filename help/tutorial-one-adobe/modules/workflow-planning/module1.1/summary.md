@@ -4,7 +4,7 @@ description: Summary & benefits
 kt: 5342
 doc-type: tutorial
 exl-id: e3357411-7013-4963-9a5e-6183713655ea
-TQID: https://experienceleague.adobe.com/11BM4Y5IYK73IFJM-JIMyfLUy8HTRjsw85FldZyQPmc
+TQID: 'https://experienceleague.adobe.com/IW48IoIdHvBsgHboJcKJX28alFk4tf-OQgsRbJhtBw8'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

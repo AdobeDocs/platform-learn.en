@@ -4,6 +4,9 @@ description: Getting started with AEM Agents
 kt: 5342
 doc-type: tutorial
 exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.6.1 Getting started with AEM Agents
 

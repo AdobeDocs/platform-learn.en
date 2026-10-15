@@ -7,13 +7,10 @@ index: false
 hide: true
 recommendations: noCatalog, noDisplay
 exl-id: fb187c57-49e8-4893-bb45-d9891f3549f6
-TQID: https://experienceleague.adobe.com/bre3dq3tGZJ252nTzZvEYonvLCrZIRv61CzaB976D3A
+TQID: 'https://experienceleague.adobe.com/FmoAsmWmZ2c8iH9aUDC3qWDHa1f0S68H8s8YnOFoDj0'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-feature_v2:
-  - id: f8e8ea8a-6020-40da-99f7-6504fe599cb1
-    internal-label: AI Assistant
 ---
 # AAA Northeast's Use of AI Assistant
 

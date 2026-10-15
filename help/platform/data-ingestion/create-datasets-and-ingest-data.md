@@ -7,22 +7,21 @@ level: Beginner
 jira: KT-2700
 thumbnail: 27269.jpg
 exl-id: f01c7d88-a77e-4fb2-aa5a-d647abc41790
-TQID: https://experienceleague.adobe.com/FP9JkGInKt4S3hvPlV4dRTCqQYKmL0f3dfftHPkm7aY
+TQID: 'https://experienceleague.adobe.com/ANxg7B1qnRuc2hYow6BGAEhecHdho4YLEDKqKWZhYqU'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
+  - id: 21672ff6-316b-5124-bd76-24487e691233
+    internal-label: ''
+  - id: 9c3a4e5f-6d7b-4c8a-8e9f-1b2c3d4e5f6a
+    internal-label: Datasets
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-topic_v2:
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-    internal-label: Customer profiles
 ---
 # Create datasets and ingest data
 

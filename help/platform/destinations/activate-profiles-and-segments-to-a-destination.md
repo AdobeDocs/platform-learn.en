@@ -7,13 +7,13 @@ level: Beginner
 jira: KT-8483
 last-substantial-update: 2025-02-19T00:00:00.000Z
 exl-id: 659e7739-8d24-4b75-a0d2-56d087d5eea9
-TQID: https://experienceleague.adobe.com/WulwQyYTaTHmQnfKVYg7QlUz2u1buZrpEcPSs3bnFow
+TQID: 'https://experienceleague.adobe.com/32pjbVCY3IHP0lBRneCtQCX9YfgP7pLhCTRWV0-Zdps'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
+  - id: eec185bd-7d60-4193-ba3f-da427569936a
+    internal-label: Destinations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

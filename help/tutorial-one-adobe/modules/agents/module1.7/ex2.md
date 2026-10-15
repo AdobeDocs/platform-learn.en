@@ -4,6 +4,10 @@ description: Use Cursor to develop your project
 kt: 5342
 doc-type: tutorial
 exl-id: c73498b6-5e08-41b5-81a9-c0a76a6e2792
+TQID: 'https://experienceleague.adobe.com/UeTsCZ7Jjw8D-91Gb9XilYQyKdkC9jYKpaVLPSjB-R0'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.7.2 Use Cursor to develop your project
 

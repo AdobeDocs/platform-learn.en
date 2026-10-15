@@ -4,6 +4,15 @@ description: Learn how to create an XDM schema for mobile app events.
 feature: Mobile SDK,Schemas
 jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
+TQID: 'https://experienceleague.adobe.com/DJrBCvy9N5LJWq1hSQ1L1wR4E3cvHXm5MKh6s8Oksj0'
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Create an XDM schema
 

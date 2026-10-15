@@ -4,7 +4,7 @@ description: Adobe Experience Manager Cloud Service & Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-TQID: https://experienceleague.adobe.com/-AX9yWJrA-lf1Dw35ACBhmI-lNLI-xACfD4uL0aMahY
+TQID: 'https://experienceleague.adobe.com/8k9E-X26M8Fx6Dkz-pS8VuShJn3HhnuT7-3fYObQPMU'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

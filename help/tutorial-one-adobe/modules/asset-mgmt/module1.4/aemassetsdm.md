@@ -4,6 +4,10 @@ description: Adobe Experience Manager Assets & Dynamic Media
 kt: 5342
 doc-type: tutorial
 exl-id: f287d101-2ebc-480a-adad-9fc180cf614e
+TQID: 'https://experienceleague.adobe.com/dRydD3u7HGDDLa8z2IhMFkfhAjGs6XxIXrl5QTfYbAk'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.4 Adobe Experience Manager Assets & Dynamic Media
 

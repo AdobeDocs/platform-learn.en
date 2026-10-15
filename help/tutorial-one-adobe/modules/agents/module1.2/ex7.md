@@ -3,6 +3,10 @@ title: CX Enterprise Coworker and Workfront
 description: CX Enterprise Coworker and Workfront
 kt: 5342
 doc-type: tutorial
+TQID: 'https://experienceleague.adobe.com/n1u8mQWAyddn-ACwq9bYtWRLNdvn1JKKB2gVf92MlII'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.2.7 CX Enterprise Coworker and Workfront
 

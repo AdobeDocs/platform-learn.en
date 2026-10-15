@@ -3,7 +3,7 @@ title: Agent Composer
 description: Agent Composer
 kt: 5342
 doc-type: tutorial
-TQID: https://experienceleague.adobe.com/IpgkUrnDRnHXPBh0kq4Ib5HplNGE5yTkykkiRTsmvK4
+TQID: 'https://experienceleague.adobe.com/EYSv4-yOONu0mU9I9QYF-5Y9QUhph-qilJ0H-MsSwxY'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

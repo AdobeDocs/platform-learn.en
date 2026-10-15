@@ -3,6 +3,10 @@ title: AEP & Apps Tech Labs
 description: AEP & Apps Tech Labs
 doc-type: multipage-overview
 exl-id: 765842d8-3af0-4dc2-a4a4-ebb820b6553f
+TQID: 'https://experienceleague.adobe.com/xmJqfRsS0H1T-VolnXykl-kHIm6O-pDVhKi0LI9OJpg'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Overview - AEP & Apps Tech Labs
 
