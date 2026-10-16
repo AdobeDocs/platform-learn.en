@@ -13,15 +13,8 @@ product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: adf04a6a-050f-44bc-a52c-db79ccb22ebf
-    internal-label: Administration
-  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
-    internal-label: Implementation
-subfeature_v2:
   - id: a7150a74-b8a9-4042-b066-147c5f0ca505
     internal-label: Alerts
-  - id: a9eb38d5-9d89-492f-af4e-b968a07f2d91
-    internal-label: Permissions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
