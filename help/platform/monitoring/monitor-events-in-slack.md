@@ -6,6 +6,7 @@ role: Developer, Admin
 level: Intermediate
 duration: 519
 last-substantial-update: 2026-02-24T00:00:00.000Z
+nudge: yes
 jira: KT-20339
 exl-id: 6d4a072c-9eef-4a38-9459-9e1cbd66bfb5
 TQID: 'https://experienceleague.adobe.com/MND1feebcv1wYo5RoaZ6JOh6EJ7JfkO0-UWXD-q8F6s'

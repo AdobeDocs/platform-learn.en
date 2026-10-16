@@ -8,6 +8,7 @@ doc-type: Feature Video
 duration: 336
 last-substantial-update: 2026-05-01T00:00:00.000Z
 jira: KT-21107
+nudge: yes
 exl-id: 99129ca7-0e3d-4e0f-bb97-1a74a0b1ba23
 TQID: 'https://experienceleague.adobe.com/fqm6V0PVFKzsV-SXgAa0YfhK3Wq0Ur3EmdRMCUNQ3RM'
 product_v2:

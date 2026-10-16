@@ -7,6 +7,7 @@ level: Beginner
 doc-type: Feature Video
 duration: 202
 last-substantial-update: 2026-06-03T00:00:00.000Z
+nudge: yes
 jira: KT-21475
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9

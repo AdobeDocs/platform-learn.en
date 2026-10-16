@@ -9,6 +9,7 @@ level: Intermediate
 jira: KT-13830
 thumbnail: 3423075.jpg
 last-substantial-update: 2023-08-23T00:00:00.000Z
+nudge: yes
 exl-id: 7b6cb89d-b514-48ae-b932-1254abd57d31
 TQID: 'https://experienceleague.adobe.com/aiWNiTasRSBmTzUaCQ2psRvnAkVC9xvUZT8BistAhnI'
 product_v2:

@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2026-02-24T00:00:00.000Z
+nudge: yes
 jira: KT-20368
 exl-id: f9f43706-6d4b-49fb-aec4-773b0ccb13ec
 TQID: 'https://experienceleague.adobe.com/3NO6CijesK2IMnLG7fS-ubgCQW6oXakEcC2w0szVLzA'
