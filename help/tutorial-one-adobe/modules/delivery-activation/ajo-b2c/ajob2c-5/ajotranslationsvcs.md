@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer Translation Services
 kt: 5342
 doc-type: tutorial
 exl-id: c0b3e37f-69f5-41e3-8663-0dcf736d1fc0
-TQID: https://experienceleague.adobe.com/L8nd32ocJU25obPjILAefxRSk-BuYh7x5AmC-nJYxYs
+TQID: 'https://experienceleague.adobe.com/JCQSkPJZ5rs9kkJwrKUJ-nV9zlCmXI1eXVZe8ez485I'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

@@ -4,6 +4,10 @@ description: Getting Started - Install the Chrome extension for the Experience L
 kt: 5342
 doc-type: tutorial
 exl-id: 71b98082-294a-487a-be96-21e72fbf2221
+TQID: 'https://experienceleague.adobe.com/QR8YusXDt8k4E--cj-jPB-tXxXaLjz2oKh3db-CqDto'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Install the Chrome extension for the Experience League documentation
 

@@ -7,10 +7,13 @@ level: Beginner
 jira: KT-2698
 thumbnail: 27013.jpg
 exl-id: 411a96d5-4b03-4775-8eca-9c9d444c255b
-TQID: https://experienceleague.adobe.com/Wqqvisleme8csnWNJo-tg2Am3czE6k7j-l8joLo5laM
+TQID: 'https://experienceleague.adobe.com/FPQrBagtsy0pOXIQBK3US8lPcG3mSgFzYQsirFDNgk8'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
+feature_v2:
+  - id: de9975b2-c43a-4287-9698-4f4cad92b83f
+    internal-label: Schemas
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer

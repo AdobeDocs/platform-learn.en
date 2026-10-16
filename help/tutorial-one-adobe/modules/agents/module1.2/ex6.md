@@ -3,6 +3,10 @@ title: CX Enterprise Coworker and AEM
 description: CX Enterprise Coworker and AEM
 kt: 5342
 doc-type: tutorial
+TQID: 'https://experienceleague.adobe.com/1XuWetXLyQXEJ5M-J3-sUUXgwulTe3jvPB67b2VlLvY'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.2.6 CX Enterprise Coworker and AEM
 

@@ -4,6 +4,10 @@ description: Setup your AEM CS environment
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
+TQID: 'https://experienceleague.adobe.com/ITrSnifV1CpiwTeAve68QIQO7Xj1pINPMDq8b74CInQ'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.1.2 Setup your AEM CS environment
 

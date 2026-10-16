@@ -3,6 +3,10 @@ title: CX Enterprise Coworker with ChatGPT Enterprise
 description: CX Enterprise Coworker with ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
+TQID: 'https://experienceleague.adobe.com/CilofbV-TqzCplQtrqnp57wlA6K6NO3W8bRu4YKNAfU'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.2.5 CX Enterprise Coworker with ChatGPT Enterprise
 

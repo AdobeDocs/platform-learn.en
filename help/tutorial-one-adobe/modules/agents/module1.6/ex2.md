@@ -4,6 +4,10 @@ description: AEM MCP Servers & Cursor
 kt: 5342
 doc-type: tutorial
 exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
+TQID: 'https://experienceleague.adobe.com/hQ9tH7iVTptQa-yzsNoAepFad8rqG1Xcc1ZGL6sJ1Jk'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.6.2 AEM MCP Servers & Cursor
 

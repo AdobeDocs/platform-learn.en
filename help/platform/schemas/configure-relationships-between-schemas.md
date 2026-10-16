@@ -7,16 +7,13 @@ level: Intermediate
 jira: KT-7935
 thumbnail: 333536.jpg
 exl-id: e52cacce-bcf7-4583-9125-113634250e19
-TQID: https://experienceleague.adobe.com/yaNyTnoFovrIwgKtFoQm7JVZWfMhHG9Q3H67vsniN90
+TQID: 'https://experienceleague.adobe.com/weVfUoBxBs3Ad6saIoOThUSc2i5qIf6PHhSxHHTDfr0'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
-subfeature_v2:
-  - id: e5ae22e3-a3b0-46ed-804f-9abf1bbe3e74
-    internal-label: Guardrails
+  - id: de9975b2-c43a-4287-9698-4f4cad92b83f
+    internal-label: Schemas
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer

@@ -4,6 +4,9 @@ description: Create your assets and dynamic media template
 kt: 5342
 doc-type: tutorial
 exl-id: 3867f23b-9b88-4971-a892-5821800e39ac
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.4.1 Create your assets and dynamic media template
 

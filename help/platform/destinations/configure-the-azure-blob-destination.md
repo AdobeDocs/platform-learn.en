@@ -9,7 +9,7 @@ jira: KT-7068
 thumbnail: 331082.jpg
 last-substantial-update: 2025-04-30T00:00:00.000Z
 exl-id: 17340357-2e3a-4c94-b010-442fba70b216
-TQID: https://experienceleague.adobe.com/JXSHbI2Qq2SrNC4Vzt-M8MCaYpK9596sJKrMCj4IZls
+TQID: 'https://experienceleague.adobe.com/5TWFGBzxbGUqlHZkxFnnGHA-6RO9EluJq0sckbZAJsg'
 product_v2:
   - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
     internal-label: Real-Time Customer Data Platform
@@ -21,9 +21,6 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-    internal-label: Security
 ---
 # Configure the Azure Blob Destination
 

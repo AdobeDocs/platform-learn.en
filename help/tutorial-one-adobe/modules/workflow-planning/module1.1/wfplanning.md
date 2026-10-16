@@ -4,13 +4,10 @@ description: Adobe Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 08ed2cca-4670-4038-b2f0-aa7adb3fc2bf
-TQID: https://experienceleague.adobe.com/wrBDBrmbA7C8R1NzZw4fRqRdWv-zBBLOUYZ3CnwBvmk
+TQID: 'https://experienceleague.adobe.com/X02HzNYRtFyiXT9jrTDTsqCCHJFSdj1q-oY5-T-fxbo'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-feature_v2:
-  - id: f8e8ea8a-6020-40da-99f7-6504fe599cb1
-    internal-label: AI Assistant
 ---
 # 1.1 Adobe Workfront Planning
 

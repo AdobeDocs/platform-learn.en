@@ -3,6 +3,10 @@ title: CX Enterprise Coworker with Microsoft 365 Copilot
 description: CX Enterprise Coworker with Microsoft 365 Copilot
 kt: 5342
 doc-type: tutorial
+TQID: 'https://experienceleague.adobe.com/EXu-Kq6YG9og01OzhhXnOg34F2bw-60LMLFQBzYFD6Q'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.2.4 CX Enterprise Coworker with Microsoft 365 Copilot
 

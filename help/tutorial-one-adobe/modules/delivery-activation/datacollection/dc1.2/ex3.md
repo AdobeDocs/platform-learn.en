@@ -4,13 +4,10 @@ description: Foundation - Data Ingestion - Configure Datasets
 kt: 5342
 doc-type: tutorial
 exl-id: 322aaaaa-50f7-4da4-bc4b-1b7edfe17e54
-TQID: https://experienceleague.adobe.com/5KOjwxpU6B-fIJs0l2OlFBR7VGeh-EFySuiLINpOcv8
+TQID: 'https://experienceleague.adobe.com/iYk9zYsSnENGV3fACW6a7PDffO0MhYHbhr2fjc-nu6k'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
 ---
 # 1.2.3 Configure Datasets
 

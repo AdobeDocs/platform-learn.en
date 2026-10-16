@@ -4,13 +4,10 @@ description: Foundation - Data Ingestion
 kt: 5342
 doc-type: tutorial
 exl-id: 0fa38179-637b-4dda-a4e4-754a4cdd61a8
-TQID: https://experienceleague.adobe.com/E461LLPs-ijDuyOqbSmqlPZX9UppDryi5B6FMdx263Y
+TQID: 'https://experienceleague.adobe.com/za2VSe9EI60elw3zKAIsF7rynLHIYUi6l9ZSnLz5stk'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
 ---
 # 1.2 Data Ingestion
 

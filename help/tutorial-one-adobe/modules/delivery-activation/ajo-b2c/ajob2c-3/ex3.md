@@ -4,7 +4,7 @@ description: Configure a campaign with in-app messages
 kt: 5342
 doc-type: tutorial
 exl-id: c40b9b8c-9717-403c-bf02-6b8f42a59c05
-TQID: https://experienceleague.adobe.com/cY5jVsx-M25gvDLeBTnnnq6-KyrQYThgy8YbGzTYM0o
+TQID: 'https://experienceleague.adobe.com/fclbLniYmFihAhi07jKrwCaJHXq9f3OfQmJPJG-yrMQ'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

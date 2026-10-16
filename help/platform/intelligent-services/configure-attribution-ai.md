@@ -7,19 +7,22 @@ level: Beginner
 jira: KT-4174
 thumbnail: 32668.jpg
 exl-id: ea64175d-c2b4-4fcb-bbac-9ef30416f868
-TQID: https://experienceleague.adobe.com/uTd6GpD51LwXQ4tbWejYuK9toCeQvHqvpNu9jFyFVSI
+TQID: 'https://experienceleague.adobe.com/vNHfrdOj5r58cCPpYT-tdMWaHiJ8MGBxsOsaF-H4xxg'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
+feature_v2:
+  - id: f5a6b7c8-5003-4003-9003-500000000003
+    internal-label: Services
+subfeature_v2:
+  - id: b99a0135-be89-4dd1-b66a-c313ae5278fa
+    internal-label: Attribution AI
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-    internal-label: Insights
 ---
 # Configure Attribution AI
 

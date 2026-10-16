@@ -9,21 +9,21 @@ duration: 141
 last-substantial-update: 2024-01-27T00:00:00.000Z
 jira: KT-14806
 exl-id: 66d8992b-e812-4a5c-a696-45f29106aaab
-TQID: https://experienceleague.adobe.com/ryxTCR2LB-eNih-nwrNj1gTgX7GzKsfAvWhH2huiFA0
+TQID: 'https://experienceleague.adobe.com/R7sCJsYZFpI4VorJczfigsaVD1NVYpaoGGpFt-mi9vg'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
+feature_v2:
+  - id: ed87b366-4dcf-4108-97b9-e29ea31192dd
+    internal-label: Playbooks
 role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
 ---
 # Use Case Playbooks overview
 

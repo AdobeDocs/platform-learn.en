@@ -4,6 +4,10 @@ description: Getting Started - Agentic AI
 kt: 5342
 doc-type: tutorial
 exl-id: 1847dfe7-c82c-4977-bcc1-24bc92bf2022
+TQID: 'https://experienceleague.adobe.com/uTr598VzJxxHwIdGO3y0DjzjuH0p4xnFirxC5-hMNxg'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Getting started - Agentic AI
 

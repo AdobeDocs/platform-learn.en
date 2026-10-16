@@ -4,7 +4,7 @@ description: Getting started with Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
 exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
-TQID: https://experienceleague.adobe.com/uAwsiSShfsI7XfVdJYs7NH67-Ui08iIKD7TZOzaFgRc
+TQID: 'https://experienceleague.adobe.com/Uyy8Ntjlb9bEr-ZK2xw0rvTUessqw9g1IVWLNgZrjrI'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

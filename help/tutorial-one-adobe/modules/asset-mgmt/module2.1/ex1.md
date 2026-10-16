@@ -4,7 +4,7 @@ description: Create your Cloud Manager Program
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-TQID: https://experienceleague.adobe.com/w2lVn5FlXoTG1u9nPw0y4o106XvIki4aPU3czUpv11w
+TQID: 'https://experienceleague.adobe.com/FPWiq6VQzyGkoj2e6Dcb1n15-ohgwbRmLvzAcDxuuB0'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

@@ -9,10 +9,15 @@ duration: 72
 last-substantial-update: 2025-07-28T00:00:00.000Z
 jira: KT-18639
 exl-id: 476b841c-e9a8-4813-abda-f223339e175f
-TQID: https://experienceleague.adobe.com/MFO4CkX0Fx1PlwyOsle0Sa6NgHHTH1c5CRXPSLjIzSE
+TQID: 'https://experienceleague.adobe.com/91H3zlkOF-ZlAzKaH-NPwroFSgVQsARW5JCrTvr0VeA'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
+feature_v2:
+  - id: a7150a74-b8a9-4042-b066-147c5f0ca505
+    internal-label: Alerts
+  - id: 095e8119-1425-57eb-9d8c-9e684f2c9771
+    internal-label: ''
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

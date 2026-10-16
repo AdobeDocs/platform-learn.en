@@ -4,7 +4,7 @@ description: Configure HTTP API endpoint in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: 621a4db7-0aff-42bf-ad42-daec6e924451
-TQID: https://experienceleague.adobe.com/fiDSuABMj1cicvsJtdeZyIkw1CXjOxq0vh3x4sX5iz8
+TQID: 'https://experienceleague.adobe.com/uoWqhx4vWBG3xFDEQkY66KiINGMb74sHeXAc8f7NW-4'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

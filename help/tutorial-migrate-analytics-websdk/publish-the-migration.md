@@ -5,7 +5,7 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16767
 exl-id: 47c86999-6a9c-4451-8a59-475e8c65ab6a
-TQID: https://experienceleague.adobe.com/PzBeSKY9w-r-XtXHQ8z0M090IAxKo6qZqMjwhf57n6g
+TQID: 'https://experienceleague.adobe.com/g0LQf33ucvKNidtP9hOzAQl-eBH86kCw72omH6DTIYo'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
     internal-label: Analytics
@@ -15,11 +15,8 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-    internal-label: Implementation
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-    internal-label: Data collection
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Publish the migration to staging and production
 

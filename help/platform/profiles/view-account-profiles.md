@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-9260
 thumbnail: 338251.jpg
 exl-id: 2b739872-0f15-429c-8d19-f3bcc81f2f89
-TQID: https://experienceleague.adobe.com/zoXPDzL7h9sQrbY3-ry8lHq6QHnfkdg-lWDQRACT830
+TQID: 'https://experienceleague.adobe.com/10sr0AAkNZZ9m36VO0pT5azg8z5bMrsmKbP8o2814UA'
 product_v2:
   - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
     internal-label: Real-Time Customer Data Platform

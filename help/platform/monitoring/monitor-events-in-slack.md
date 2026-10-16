@@ -5,9 +5,25 @@ feature: Monitoring
 role: Developer, Admin
 level: Intermediate
 duration: 519
-last-substantial-update: 2026-02-24
+last-substantial-update: 2026-02-24T00:00:00.000Z
+nudge: yes
 jira: KT-20339
 exl-id: 6d4a072c-9eef-4a38-9459-9e1cbd66bfb5
+TQID: 'https://experienceleague.adobe.com/MND1feebcv1wYo5RoaZ6JOh6EJ7JfkO0-UWXD-q8F6s'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: ea0fde65-94aa-5066-abf8-d11798fe4ad5
+    internal-label: ''
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Monitor Experience Platform events in Slack
 

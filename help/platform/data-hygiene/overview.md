@@ -6,28 +6,26 @@ feature: Data Hygiene
 role: Developer
 level: Intermediate
 exl-id: 8a0c825a-68d2-4885-8cb6-981a79994327
-TQID: https://experienceleague.adobe.com/x23eGcZl1lpL19GPm1gktzWaOjMuNNtT3pPdQ1i2XE0
+TQID: 'https://experienceleague.adobe.com/kV4G5X4WPvzKJQuAFTvz-nWlLLe5LdqI2zOkNJMMac4'
 product_v2:
-  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
-    internal-label: Journey Optimizer
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
   - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
     internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
+  - id: e2caa907-399e-441d-a026-6f449b9a4286
+    internal-label: Data lifecycle
+subfeature_v2:
+  - id: b3d97c8e-b703-4581-afe3-c2c91d9c9c4d
+    internal-label: Data hygiene API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-    internal-label: Governance
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-    internal-label: Privacy
 ---
 # Data hygiene tutorials
 

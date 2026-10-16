@@ -10,7 +10,7 @@ thumbnail: 332599.jpg
 last-substantial-update: 2025-09-17T00:00:00.000Z
 duration: 277
 exl-id: 9ec200e6-8ef9-47f5-98ca-1c1a2da3fb29
-TQID: https://experienceleague.adobe.com/BBViN4hqgDzLhMcSVtGiTO7Jg9oCyEGQNh-7qJeZH6c
+TQID: 'https://experienceleague.adobe.com/P60bOIXNWOnlutp65fluJ6H-nJiaxUEqRbYDsnC9HVk'
 product_v2:
   - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
     internal-label: Real-Time Customer Data Platform
@@ -22,13 +22,6 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-topic_v2:
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-    internal-label: Email marketing
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-    internal-label: Governance
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-    internal-label: Optimization
 ---
 # Configure a social destination
 

@@ -4,6 +4,10 @@ description: Adobe Experience Manager & Agents
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
+TQID: 'https://experienceleague.adobe.com/lhnA7Hly4y1EQiPicVeZrDFWtENmZCrZ0l96mbqI308'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.6 Adobe Experience Manager & Agents
 

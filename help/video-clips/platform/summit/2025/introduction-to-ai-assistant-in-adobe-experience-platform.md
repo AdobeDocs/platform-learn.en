@@ -7,13 +7,10 @@ index: false
 hide: true
 recommendations: noCatalog, noDisplay
 exl-id: cd1c2d9d-c8f1-4b62-a80f-5606ee27df20
-TQID: https://experienceleague.adobe.com/TE5ZbhhZg9vKHTtezbq2XUhZzsupUnacnLcDPcgM-2c
+TQID: 'https://experienceleague.adobe.com/X6bO5Fh8YGRC6Tl6jTLKmZMtbEti8zqwtgtgkdlq-4g'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-feature_v2:
-  - id: f8e8ea8a-6020-40da-99f7-6504fe599cb1
-    internal-label: AI Assistant
 ---
 # Introduction to AI Assistant in Adobe Experience Platform
 

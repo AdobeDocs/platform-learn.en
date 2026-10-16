@@ -4,7 +4,7 @@ description: Audience Activation to Microsoft Azure Event Hub - Define an Azure 
 kt: 5342
 doc-type: tutorial
 exl-id: 2ce9dcfc-4b2c-48b4-b554-8a30abb850f3
-TQID: https://experienceleague.adobe.com/5I9u6ijKc-YYvDY1V0F-VoXXgTl2OHbI-4kkjwicW4U
+TQID: 'https://experienceleague.adobe.com/P-jnwpFTMvp4J3WXAOgvbRZuWjLB7dfCN9KS7Zl-cIM'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

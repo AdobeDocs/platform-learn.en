@@ -7,6 +7,10 @@ index: false
 hide: true
 recommendations: noCatalog, noDisplay
 exl-id: e80c4314-da35-43a4-aaee-3a0e1691e270
+TQID: 'https://experienceleague.adobe.com/navp7yd84Yp9MF71P-a34DMbo2-KkWjaoTwnzlr1fLw'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Discover, Activate, and Measure with Real-Time CDP Collaboration
 

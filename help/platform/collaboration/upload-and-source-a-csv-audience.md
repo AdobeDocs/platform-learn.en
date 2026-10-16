@@ -8,12 +8,13 @@ doc-type: Feature Video
 duration: 222
 last-substantial-update: '2026-05-14T00:00:00.000Z'
 jira: KT-21220
+TQID: 'https://experienceleague.adobe.com/Hynzif4S6okYywyIFmZlr-2Iu-2MfOvPcx2uQ-oKPP0'
 product_v2:
-  - id: fb6a47ca-2fb2-4cbc-8224-2e6b6cd3238f
-    internal-label: Real-Time Customer Data Platform Collaboration
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
-  - id: ae8e6429-7781-41ce-9d6b-23523bbf7dff
-    internal-label: Collaboration
+  - id: d7fb093f-571c-5a7a-8afe-52fdd31206ce
+    internal-label: ''
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

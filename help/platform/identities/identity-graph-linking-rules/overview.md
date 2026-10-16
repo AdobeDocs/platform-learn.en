@@ -9,26 +9,19 @@ duration: 262
 last-substantial-update: 2025-02-27T00:00:00.000Z
 jira: KT-16731
 exl-id: a61a83fe-76af-4b29-95ee-2fdb9b6bc096
-TQID: https://experienceleague.adobe.com/OgU8c-bf8NY0ARO0iHf50BKd13tf8OMZoh6f1AN3BSo
+TQID: 'https://experienceleague.adobe.com/8FFHYDi0ctbmBta89fZQPi7B0CToRoDcOqgE-77556k'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
-  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
-    internal-label: Implementation
+  - id: a50ad69b-1331-40e9-b634-531a085a6a54
+    internal-label: Identities
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-    internal-label: Implementation
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-    internal-label: Customer profiles
 ---
 # Identity graph linking rules overview
 

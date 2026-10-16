@@ -4,6 +4,10 @@ description: Setting up your development environment
 kt: 5342
 doc-type: tutorial
 exl-id: c9bfb327-362f-4475-89da-8e9788940d56
+TQID: 'https://experienceleague.adobe.com/w1e6e5sc4-PaLNSL2muzReEzY-YzUTny-LC9beK17ig'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.7.1 Setting up your development environment
 

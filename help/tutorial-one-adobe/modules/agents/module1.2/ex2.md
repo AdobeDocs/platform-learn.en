@@ -3,6 +3,10 @@ title: Using CX Enterprise Coworker for insights
 description: Using CX Enterprise Coworker for insights
 kt: 5342
 doc-type: tutorial
+TQID: 'https://experienceleague.adobe.com/B54lIkP5YgjlOxgCi7p0c4N7-AGWZ8rXI29vtNNTzW0'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.2.2 Using CX Enterprise Coworker for insights
 

@@ -7,18 +7,19 @@ level: Beginner
 last-substantial-update: '2026-05-14T00:00:00.000Z'
 jira: KT-21104
 hide: false
+TQID: 'https://experienceleague.adobe.com/1kzSn-p5ySp3YAmqIHyTXCKpHOxJ-k8f4V8ngKPxQ88'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: f8e8ea8a-6020-40da-99f7-6504fe599cb1
-    internal-label: AI Assistant
+    internal-label: AI assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-topic_v2:
-  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-    internal-label: Artificial intelligence
 ---
 # [!DNL Adobe Marketing Agent] for [!DNL Microsoft 365 Copilot] in action
 

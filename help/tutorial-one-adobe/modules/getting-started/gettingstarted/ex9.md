@@ -3,7 +3,7 @@ title: Getting Started - Applications to install
 description: Getting Started - Applications to install
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-TQID: https://experienceleague.adobe.com/eiwDF0gKoMltNaCPOYJEUK0hd9aNqVu3TxYdrhAYKQI
+TQID: 'https://experienceleague.adobe.com/NkIrtOxVrqSXfbN8fUg-FSWamoDg2tkwgbisUm0XK5U'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

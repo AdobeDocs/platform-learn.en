@@ -4,7 +4,7 @@ description: Adobe Analytics & Claude.ai with MCP server
 kt: 5342
 doc-type: tutorial
 exl-id: f821898d-b5d1-4de9-94ff-19b8aa81fe67
-TQID: https://experienceleague.adobe.com/N9Fm-Yq7dFm5ahf0n8MnyAZYkScuM51R-bW7hK0BGsY
+TQID: 'https://experienceleague.adobe.com/NA7TjP0dyow3YBnioC62-zbf3fljI-TFWtpdtFHQLfQ'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform

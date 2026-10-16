@@ -7,22 +7,19 @@ level: Intermediate
 last-substantial-update: 2023-12-08T00:00:00.000Z
 jira: KT-14615
 exl-id: e9c0541c-f674-4f50-8ed4-5048fd3dec5d
-TQID: https://experienceleague.adobe.com/0dM3mWQ1-rW8pmS6eT8lPI7UPM1VuiGNzmoZOu-fHfY
+TQID: 'https://experienceleague.adobe.com/A4kcbjSoamSethTwXrW26cguyRe-hSKJDG7QMOaLBko'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
+  - id: d9b97a7b-ccbd-5fc1-bb28-c1f834feacb8
+    internal-label: ''
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
 ---
 # Create a computed attribute for the sum of purchases
 

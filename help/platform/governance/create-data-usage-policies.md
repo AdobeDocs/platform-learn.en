@@ -7,10 +7,13 @@ level: Beginner
 jira: KT-4347
 thumbnail: 32977.jpg
 exl-id: 7bcab1e1-6344-48bd-8622-309c9dc17df9
-TQID: https://experienceleague.adobe.com/a-dYvnr0nQy1gaU9u2-UisdbB6L8pGdOLQ0r3CffWQM
+TQID: 'https://experienceleague.adobe.com/SXMr0eLW3G-S1aGLDuLJ3SEHDb086RSNTJ66aeIUfDQ'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
+feature_v2:
+  - id: 392d408e-4e40-5bf7-afae-72086f108746
+    internal-label: ''
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -19,13 +22,6 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-    internal-label: Governance
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-    internal-label: Privacy
 ---
 # Create data usage policies
 

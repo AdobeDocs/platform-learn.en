@@ -3,6 +3,10 @@ title: Getting Started - Agentic AI - Applications to install
 description: Getting Started - Agentic AI - Applications to install
 doc-type: multipage-overview
 exl-id: a08945e8-1b21-49a3-962f-9ebd6ce8ea6f
+TQID: 'https://experienceleague.adobe.com/GcXDiybbaWbw704e9-Ia-X6IIAtFLbDIoEodhrkq01I'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Applications to install
 

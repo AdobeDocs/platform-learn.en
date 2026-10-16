@@ -7,28 +7,22 @@ level: Experienced
 jira: KT-7349
 last-substantial-update: 2023-06-21T00:00:00.000Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-TQID: https://experienceleague.adobe.com/WBu4ngVlKgiFd1jC62Fme-hTbpdkLrIzipyqQyhxryQ
+TQID: 'https://experienceleague.adobe.com/e88zXBURm7kjIf5sI3-SwATiv1uX3QcQyXL55e2YTuM'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
-  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
-    internal-label: Implementation
+  - id: a9eb38d5-9d89-492f-af4e-b968a07f2d91
+    internal-label: Permissions
 subfeature_v2:
-  - id: e0c8953a-a203-4291-bef3-3560160d3041
-    internal-label: Get started
+  - id: 01a3139f-2204-4e1b-bd65-5437f7d5a5bd
+    internal-label: API credentials
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-    internal-label: Implementation
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-    internal-label: Governance
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-    internal-label: Customer profiles
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Import sample data to Adobe Experience Platform
 

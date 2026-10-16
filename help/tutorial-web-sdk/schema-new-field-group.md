@@ -4,6 +4,14 @@ description: Learn how to create an XDM schema for web data in the Data Collecti
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: d5947817-d24b-4ba3-8126-2c3d66e9422b
+    internal-label: Web SDK
+  - id: de9975b2-c43a-4287-9698-4f4cad92b83f
+    internal-label: Schemas
 ---
 # Create an XDM schema for web data
 

@@ -8,6 +8,16 @@ level: Beginner
 jira: KT-3821
 thumbnail: 29705.jpg
 exl-id: 790ff110-f74b-4b05-a2d4-e447c2a8ff34
+TQID: 'https://experienceleague.adobe.com/d8ynySuoI5qOYnwc6zj-eQnP1P2P8g74V46KgW3TbSw'
+product_v2:
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Introduction to Adobe Real-Time Customer Data Platform
 

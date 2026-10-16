@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-TQID: https://experienceleague.adobe.com/qaH97E4YgOyZJn-47MTaLzImAiXlEBJCQdut-ouwWkk
+TQID: 'https://experienceleague.adobe.com/qaH97E4YgOyZJn-47MTaLzImAiXlEBJCQdut-ouwWkk'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
@@ -16,9 +16,6 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-    internal-label: Security
 ---
 # 1.3.2 Configuration: Personas, Products and Templates
 

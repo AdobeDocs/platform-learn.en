@@ -3,6 +3,10 @@ title: CX Enterprise Coworker and GenStudio for Performance Marketing
 description: CX Enterprise Coworker and GenStudio for Performance Marketing
 kt: 5342
 doc-type: tutorial
+TQID: 'https://experienceleague.adobe.com/qbdXItAxK0erQPjnczAS06uLRND36mIvxw11YKpg4SU'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.2.8 CX Enterprise Coworker and GenStudio for Performance Marketing
 

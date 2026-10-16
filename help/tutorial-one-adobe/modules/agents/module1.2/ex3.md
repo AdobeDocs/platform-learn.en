@@ -3,6 +3,10 @@ title: Business Context in CX Enterprise Coworker
 description: Business Context in CX Enterprise Coworker
 kt: 5342
 doc-type: tutorial
+TQID: 'https://experienceleague.adobe.com/TfqIwvHej64pUXf6O2Gx6wPQLadQGARe319GtFeuh9k'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # 1.2.3 Business Context in CX Enterprise Coworker
 

@@ -6,21 +6,15 @@ role: User
 level: Beginner
 doc-type: Feature Video
 duration: 202
-last-substantial-update: 2026-06-03
+last-substantial-update: 2026-06-03T00:00:00.000Z
+nudge: yes
 jira: KT-21475
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
-    internal-label: Journey Optimizer
 feature_v2:
-  - id: a37e4ecd-c740-426a-addf-cb1b483c5c5a
-    internal-label: Segmentation
-subfeature_v2:
-  - id: b784da9a-7978-4766-bf1f-5ab2b23d894a
-    internal-label: Federated Audience Composition
-  - id: d1823595-9241-4128-8a33-e4ac3bf08773
-    internal-label: Audiences
+  - id: 095e8119-1425-57eb-9d8c-9e684f2c9771
+    internal-label: ''
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

@@ -8,15 +8,16 @@ doc-type: Feature Video
 jira: KT-14689
 last-substantial-update: 2023-12-15T00:00:00.000Z
 exl-id: 4bd28867-b664-4a45-8892-91af821cbbcc
-TQID: https://experienceleague.adobe.com/YFECUhqc5G6lJbuWw-uuN33JLMv68c7n944BzOhVmKY
+TQID: 'https://experienceleague.adobe.com/lfT6qOKiAFGXLJeFJb6LIMPQxarMh1Mp3LRaZD0vqew'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
-  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
-    internal-label: Integrations
+  - id: a9eb38d5-9d89-492f-af4e-b968a07f2d91
+    internal-label: Permissions
+subfeature_v2:
+  - id: ec65bbee-d543-4164-9337-273c0b22ac93
+    internal-label: Access control API
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

@@ -4,6 +4,10 @@ description: Getting Started - Postman setup
 kt: 5342
 doc-type: tutorial
 exl-id: a3a38c92-e6f4-41d4-a5da-70978689fa8b
+TQID: 'https://experienceleague.adobe.com/L7M9LHaomcuhiYAlHcE8CoQYYgIjP0G592L7qNzYVR4'
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 # Option 2: PostBuster setup
 
