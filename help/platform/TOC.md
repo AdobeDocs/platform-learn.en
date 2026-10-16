@@ -82,6 +82,7 @@ Campaigns
   + [Copy packages between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
   + [Share packages across IMS Orgs](/help/platform/admin/share-packages-across-orgs.md)
   + [Use alerts](/help/platform/admin/use-alerts.md)
+  + [Monitor alerts with Coworker](/help/platform/admin/alerts-with-coworker.md)
 + AI Assistant {#ai-assistant}
   + [Overview](/help/platform/ai-assistant/overview.md)
   + [Agent Orchestrator](/help/platform/ai-assistant/agent-orchestrator-overview.md)

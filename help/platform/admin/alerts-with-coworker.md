@@ -1,5 +1,5 @@
 ---
-title: Customer Alerts with Experience Platform and Coworker
+title: Monitor alerts with Coworker
 description: Adobe CX Enterprise Coworker lets Experience Platform administrators ask "what happened in the last 24 hours?" and get a conversational summary of alert severity, status, top alert types, and the objects most affected by critical alerts. Administrators can also manage subscriptions and focus on their own alerts, turning system signals into a personalized, prioritized briefing that speeds triage and diagnosis.
 role: Admin
 level: Beginner, Intermediate, Experienced
@@ -31,7 +31,7 @@ level_v2:
     internal-label: Intermediate
 ---
 
-# Customer Alerts with Experience Platform and Coworker
+# Monitor alerts with Coworker
 
 Adobe CX Enterprise Coworker lets Experience Platform administrators ask "what happened in the last 24 hours?" and get a conversational summary of alert severity, status, top alert types, and the objects most affected by critical alerts. Administrators can also manage subscriptions and focus on their own alerts, turning system signals into a personalized, prioritized briefing that speeds triage and diagnosis.
 
