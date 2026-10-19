@@ -24,8 +24,6 @@ For this exercise, you need to use:
 - **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
 - **Password**: use the password that was shared with you
 
-You've now completed this lab.
-
 ## 1.2.7.1 Accessing CX Enterprise Coworker
 
 Go to [https://experience.adobe.com](https://experience.adobe.com). Click to open Coworker.
