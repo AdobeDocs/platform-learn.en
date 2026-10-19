@@ -7,6 +7,12 @@ exl-id: a6057d20-b005-47c9-b294-263eaaf78084
 ---
 # Install the Chrome extension for the Experience League documentation
 
+## Video
+
+In this video, you'll learn how to install the Chrome extension that is used to personalize your experience when going through this tutorial.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504733?quality=12&learn=on)
+
 ## About the Chrome extension
 
 This tutorial has been made generic so that it can easily be reused by anyone, using any Adobe Experience Cloud instance. 
