@@ -20,6 +20,10 @@ For this exercise, you need to use:
 - **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
 - **Password**: use the password that was shared with you
 
+>[!IMPORTANT]
+>
+>You also need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+
 ## 1.2.7.1 Accessing CX Enterprise Coworker
 
 Go to [https://experience.adobe.com](https://experience.adobe.com). Click to open Coworker.
