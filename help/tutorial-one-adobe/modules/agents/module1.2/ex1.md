@@ -28,6 +28,10 @@ For this exercise, you need to use:
 - **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
 - **Password**: use the password that was shared with you
 
+>[!NOTE]
+>
+>This guided experience showcases how Coworker can support workflows spanning insights, audiences, and journeys. The exercise uses Adobe Journey Optimizer as an example for activation, but activation may also take place through other Adobe applications, such as Adobe Journey Optimizer B2B Edition or Marketo Engage, depending on the applications your organization uses.
+
 ## Video
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
