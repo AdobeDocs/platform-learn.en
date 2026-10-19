@@ -32,6 +32,10 @@ For this exercise, you need to use:
 - **AEM Program**: Tech Insiders - AEM + ACCS XXX which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 - **GitHub repository**: [https://github.com/woutervangeluwe/techinsidersXXX-citisignal-aem-accs](https://github.com/woutervangeluwe/techinsidersXXX-citisignal-aem-accs)
 
+>[!IMPORTANT]
+>
+>You also need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+
 ## 1.2.6.1 Finding assets
 
 Go to [https://experience.adobe.com/#/coworker/chat](https://experience.adobe.com/#/coworker/chat). Sign in using your Adobe account. After logging in, click your user initials in the bottom left part of the screen and make sure you've selected the correct instance (**`--aepImsOrgName--`**) and sandbox (**`--aepSandboxName--`**) by selecting them as indicated below.

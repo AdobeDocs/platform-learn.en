@@ -10,6 +10,10 @@ product_v2:
 ---
 # 1.2.2 Using CX Enterprise Coworker for insights
 
+>[!IMPORTANT]
+>
+>You also need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+
 Review and reuse the below prompts to get CX Enterprise Coworker's input.
 
 Enter the following prompt and click **Send**.

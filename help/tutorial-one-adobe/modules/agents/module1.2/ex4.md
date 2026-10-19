@@ -10,6 +10,10 @@ product_v2:
 ---
 # 1.2.4 CX Enterprise Coworker with Microsoft 365 Copilot
 
+>[!IMPORTANT]
+>
+>You also need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+
 ## 1.2.4.1 Installing CX Enterprise Coworker in Microsoft 365 Copilot
 
 Open Microsoft Teams and go to **Copilot**. In the left menu, click **More agents**.

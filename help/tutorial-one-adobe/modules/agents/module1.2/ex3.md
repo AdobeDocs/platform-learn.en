@@ -17,6 +17,10 @@ By using Business Context in CX Enterprise Coworker, You hereby acknowledge that
 
 +++
 
+>[!IMPORTANT]
+>
+>You also need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+
 ## 1.2.3.1 Review & Upload Business Context
 
 Go to [https://experience.adobe.com/#/home](https://experience.adobe.com/#/home). Verify that you're logged in to the right organization, which should be `--aepImsOrgName--`. Click to open **Coworker**.
