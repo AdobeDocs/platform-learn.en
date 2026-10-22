@@ -13,8 +13,6 @@ product_v2:
 feature_v2:
   - id: dc6ebdf7-9a94-43eb-9184-759cfdd0cf1c
     internal-label: Event forwarding
-  - id: 000dc7ac-a6c3-564d-bf22-5080bf496cc2
-    internal-label: ''
   - id: f6ac78a3-5b59-40f5-a37d-45df5303d3a3
     internal-label: Dashboards
 subfeature_v2:

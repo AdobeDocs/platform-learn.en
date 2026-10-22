@@ -12,9 +12,6 @@ product_v2:
     internal-label: Real-Time Customer Data Platform
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
-feature_v2:
-  - id: 095e8119-1425-57eb-9d8c-9e684f2c9771
-    internal-label: ''
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

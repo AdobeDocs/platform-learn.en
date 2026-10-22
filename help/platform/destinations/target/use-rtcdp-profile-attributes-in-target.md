@@ -21,8 +21,6 @@ product_v2:
 feature_v2:
   - id: eec185bd-7d60-4193-ba3f-da427569936a
     internal-label: Destinations
-  - id: d9b97a7b-ccbd-5fc1-bb28-c1f834feacb8
-    internal-label: ''
   - id: f6ac78a3-5b59-40f5-a37d-45df5303d3a3
     internal-label: Dashboards
 subfeature_v2:

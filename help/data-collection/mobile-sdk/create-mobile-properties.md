@@ -12,8 +12,6 @@ product_v2:
 feature_v2:
   - id: a8a79b8d-fdca-499c-a5ef-f88a099d8eb9
     internal-label: Mobile SDK
-  - id: 000dc7ac-a6c3-564d-bf22-5080bf496cc2
-    internal-label: ''
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer

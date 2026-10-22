@@ -21,8 +21,6 @@ product_v2:
 feature_v2:
   - id: eec185bd-7d60-4193-ba3f-da427569936a
     internal-label: Destinations
-  - id: 095e8119-1425-57eb-9d8c-9e684f2c9771
-    internal-label: ''
   - id: b1c2d3e4-1001-4001-9001-100000000001
     internal-label: Customer audiences
   - id: f6ac78a3-5b59-40f5-a37d-45df5303d3a3

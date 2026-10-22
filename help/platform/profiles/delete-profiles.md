@@ -14,8 +14,6 @@ product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: d9b97a7b-ccbd-5fc1-bb28-c1f834feacb8
-    internal-label: ''
   - id: e2caa907-399e-441d-a026-6f449b9a4286
     internal-label: Data lifecycle
 subfeature_v2:
