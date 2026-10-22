@@ -16,8 +16,6 @@ product_v2:
 feature_v2:
   - id: a7150a74-b8a9-4042-b066-147c5f0ca505
     internal-label: Alerts
-  - id: 095e8119-1425-57eb-9d8c-9e684f2c9771
-    internal-label: ''
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

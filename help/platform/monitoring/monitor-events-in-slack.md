@@ -6,16 +6,13 @@ role: Developer, Admin
 level: Intermediate
 duration: 519
 last-substantial-update: 2026-02-24T00:00:00.000Z
-nudge: yes
+nudge: 'yes'
 jira: KT-20339
 exl-id: 6d4a072c-9eef-4a38-9459-9e1cbd66bfb5
 TQID: 'https://experienceleague.adobe.com/MND1feebcv1wYo5RoaZ6JOh6EJ7JfkO0-UWXD-q8F6s'
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-feature_v2:
-  - id: ea0fde65-94aa-5066-abf8-d11798fe4ad5
-    internal-label: ''
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer

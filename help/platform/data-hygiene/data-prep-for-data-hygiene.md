@@ -14,8 +14,6 @@ product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: 21672ff6-316b-5124-bd76-24487e691233
-    internal-label: ''
   - id: abc02dd6-664f-446a-9aaa-675bc0f2fe4a
     internal-label: Sources
 subfeature_v2:
