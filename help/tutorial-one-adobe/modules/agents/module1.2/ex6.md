@@ -16,11 +16,11 @@ product_v2:
 
 >[!IMPORTANT]
 >
+>You need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+
+>[!IMPORTANT]
+>
 >Before you begin, read the below instructions!
-
-## Video
-
->[!VIDEO](https://video.tv.adobe.com/v/3502436?quality=12&learn=on)
 
 ## Instructions for in-person workshops
 
@@ -32,9 +32,11 @@ For this exercise, you need to use:
 - **AEM Program**: Tech Insiders - AEM + ACCS XXX which you can access through [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 - **GitHub repository**: [https://github.com/woutervangeluwe/techinsidersXXX-citisignal-aem-accs](https://github.com/woutervangeluwe/techinsidersXXX-citisignal-aem-accs)
 
->[!IMPORTANT]
->
->You also need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3502436?quality=12&learn=on)
 
 ## 1.2.6.1 Finding assets
 
