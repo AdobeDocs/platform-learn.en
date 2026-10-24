@@ -24,7 +24,6 @@ For this exercise, you need to use:
 - **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
 - **Password**: use the password that was shared with you
 
-
 ## Video
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
@@ -121,6 +120,170 @@ switch to AdobeOne - Unified Customer Data View
 You should then see this. The context is now set correctly so you can start sending specific prompts next.
 
 ![Coworker ChatGPT](./images/chatgpt15.png)
+
+## 1.2.5.3 Start with overall purchase trends to anchor context and zoom into fiber 
+
+**Intent**
+
+Get a toplevel pulse on category demand—Mobile, Landline, Internet, TV, Fiber—specifically for the most recent 60 days. This sets baselines for seasonality, promo effects, and regional variance after the New York rollout. 
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Show me purchases by mainCategory over the last 2 months.
+```
+
+![Coworker](./images/cgptcopilot18.png)
+
+You should then see this:
+
+![Coworker](./images/cgptcopilot19.png)
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Show me purchases by mainCategory = Fiber over the last 2 months broken down by week
+```
+
+![Coworker](./images/cgptcopilot20.png)
+
+You should then see this, which drills down into Fiber-specific trends. 
+
+![Coworker](./images/cgptcopilot21.png)
+
+## 1.2.5.4 Correlate Orders with Content Preferences 
+
+**Intent**
+
+Test the hypothesis that a preference for a specific genre (e.g., SciFi, Sports, Drama) predicts broadband upgrade behavior—especially for high bandwidth needs. 
+
+First, you need to find out which field is used to store the genre preference.
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Which field is used to store the preferred genre
+```
+
+![Coworker](./images/cgptcopilot22.png)
+
+You should then see this, which shows that the field used for genre is **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
+
+![Coworker](./images/cgptcopilot23.png)
+
+With that information, you can start drilling down in the purchase data.
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Show me purchases by preferred genre for the last 2 months until today
+```
+
+![Coworker](./images/cgptcopilot24.png)
+
+You should then see this.
+
+![Coworker](./images/cgptcopilot25.png)
+
+## 1.2.5.5 Create a new audience
+
+**Intent**
+
+Based on the above findings and research, there's a correlation between customers that consume a lot of data and that have a preferred genre of sci-fi or fantasy. You will now combine these attributes in an audience.
+
+Enter the following **Prompt** and click the **send** button.
+
+```javascript
+Create an audience with the name --aepUserLdap-- - Heavy Downloaders - Sci-Fi or Fantasy (Copilot M365) that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
+```
+
+![Coworker](./images/cgptaocptechlab32.png)
+
+Select **Allow once**.
+
+![Coworker](./images/cgptaocptechlab32a.png)
+
+If similar, already existing audiences are already available, you should see a similar message. 
+
+Select the option to **Create a new draft** and then click **Continue**.
+
+![Coworker](./images/cgptaocptechlab32b.png)
+
+Provide the required permissions.
+
+![Coworker](./images/cgptaocptechlab32c.png)
+
+Select **Allow once**.
+
+![Coworker](./images/cgptaocptechlab32d.png)
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Publish this audience
+```
+
+![Coworker](./images/cgptaocptechlab38.png)
+
+Select **Allow once**.
+
+![Coworker](./images/cgptaocptechlab38a.png)
+
+Provide the required permissions.
+
+![Coworker](./images/cgptaocptechlab38b.png)
+
+Your audience has now been published.
+
+![Coworker](./images/cgptaocptechlab38c.png)
+
+## 1.2.5.6 Identify Existing Fiber Journeys
+
+**Intent** 
+
+Discover which active or recently concluded journeys include “Fiber” in the title—e.g., “Fiber Upgrade NYC – Sept”, “Fiber Trial – Streaming Bundle”. 
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+What journeys exist?
+```
+
+![Coworker](./images/cgptcopilot28.png)
+
+You should then see a list of journeys.
+
+![Coworker](./images/cgptcopilot29.png)
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
+```
+
+![Coworker](./images/cgptcopilot35.png)
+
+You should then see this.
+
+![Coworker](./images/cgptcopilot36.png)
+
+## 1.2.5.7 Validate journey performance via fallout analysis 
+
+**Intent**
+
+You want to understand journey performance fallout to know if there are any nodes or conditions within the journey that are experiencing a large percentage of profiles being dropped. This is helpful in understanding if additional adjustments are needed in the journey.
+
+Enter the following **Prompt** and click the **send** button.
+
+```
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
+```
+
+![Coworker](./images/cgptcopilot37.png)
+
+You should then see this.
+
+![Coworker](./images/cgptcopilot38.png)
 
 You've now completed this lab.
 

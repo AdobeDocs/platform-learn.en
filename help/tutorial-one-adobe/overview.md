@@ -45,6 +45,7 @@ topic_v2:
 
 This tutorial is very diverse and offers clear insights in the following applications:
 
+- Adobe CX Enterprise Coworker
 - Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
 - Adobe Workfront Workflow, Adobe Workfront Planning & Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets, Forms, and Edge Delivery Services 
@@ -55,7 +56,7 @@ This tutorial is very diverse and offers clear insights in the following applica
 - Adobe Journey Optimizer
 - Adobe Customer Journey Analytics
 - Adobe Content Analytics
-- Adobe AEP Agent Orchestrator, Adobe Marketing Agent, Brand Concierge
+- Adobe Brand Concierge
 
 This tutorial doesn't just focus on Adobe applications, but takes into account the broader ecosystem in which brands operate. In order to do that, in some lessons there is a focus on how non-Adobe applications integrate with Adobe applications. As such, you'll gain a deep understanding in how the following applications will work together with Adobe Experience Platform:
 
