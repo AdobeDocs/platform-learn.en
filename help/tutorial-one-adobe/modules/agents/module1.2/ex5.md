@@ -28,7 +28,7 @@ For this exercise, you need to use:
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478410?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3504961?quality=12&learn=on)
 
 ## 1.2.5.1 Install the custom MCP server for CX Enterprise Coworker
 
@@ -194,7 +194,7 @@ Based on the above findings and research, there's a correlation between customer
 Enter the following **Prompt** and click the **send** button.
 
 ```javascript
-Create an audience with the name --aepUserLdap-- - Heavy Downloaders - Sci-Fi or Fantasy (Copilot M365) that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
+Create an audience with the name --aepUserLdap-- - Heavy Downloaders - Sci-Fi or Fantasy (ChatGPT) that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
 ![Coworker](./images/cgptaocptechlab32.png)
