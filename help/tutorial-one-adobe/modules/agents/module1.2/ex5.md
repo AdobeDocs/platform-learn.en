@@ -8,6 +8,10 @@ doc-type: tutorial
 
 >[!IMPORTANT]
 >
+>You need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+
+>[!IMPORTANT]
+>
 >Before you begin, read the below instructions!
 
 ## Instructions for in-person workshops
@@ -20,9 +24,12 @@ For this exercise, you need to use:
 - **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
 - **Password**: use the password that was shared with you
 
->[!IMPORTANT]
->
->You also need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478410?quality=12&learn=on)
 
 ## 1.2.5.1 Install the custom MCP server for CX Enterprise Coworker
 

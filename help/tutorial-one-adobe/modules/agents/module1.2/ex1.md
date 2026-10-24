@@ -11,16 +11,13 @@ product_v2:
 ---
 # 1.2.1 Getting started with CX Enterprise Coworker
 
-## Prerequisites
-
-In order to follow the steps in this lab as documented below, the following access is required:
-
-- Access to Real-Time CDP, Journey Optimizer and Customer Journey Analytics
-- Access to CX Enterprise Coworker
+>[!IMPORTANT]
+>
+>You need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
 
 >[!IMPORTANT]
 >
->You also need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+>Before you begin, read the below instructions!
 
 ## Instructions for in-person workshops
 

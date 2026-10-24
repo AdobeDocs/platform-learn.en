@@ -8,7 +8,13 @@ doc-type: tutorial
 
 >[!IMPORTANT]
 >
->You also need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+>You need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+
+## Video
+
+In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479158?quality=12&learn=on)
 
 ## 1.2.4.1 Installing CX Enterprise Coworker in Microsoft 365 Copilot
 

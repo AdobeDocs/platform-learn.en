@@ -8,9 +8,21 @@ doc-type: tutorial
 
 >[!IMPORTANT]
 >
->You also need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+>You need to have installed the **Chrome extension** that is used for this guided tutorial. You can download and install it following  [these instructions](./../../getting-started/gettingstarted-agenticai/ex1.md).
+
+## Instructions for in-person workshops
+
+For this exercise, you need to use:
+
+- **Instance**: **Adobe Tech Insiders**
+- **Sandbox**: **One Adobe**
+- **Dataview**: **AdobeOne - Unified Customer Data View**
+- **Username**: **adobetechinsiders-XXX@adobeeventlab.com** and replace XXX by the number that was assigned to you
+- **Password**: use the password that was shared with you
 
 Review and reuse the below prompts to get CX Enterprise Coworker's input.
+
+## 1.2.2.1 Outcome-based questions for CX Enterprise Coworker
 
 Enter the following prompt and click **Send**.
 
