@@ -42,7 +42,7 @@ Go to [https://chatgpt.com/](https://chatgpt.com/) and log in using your account
 
 ![ChatGPT](./images/chatgpt1.png)
 
-Click the **+** icon and then select **Create app**.
+Click the **Add** icon and then select **Add custom MCP server**.
 
 ![ChatGPT](./images/chatgpt2.png)
 
@@ -57,15 +57,15 @@ Click **Create**.
 
 ![ChatGPT](./images/chatgpt3.png)
 
-Click **Sign in with CX Enterprise Coworker**.
+Click **Continue to vangeluw CX Enterprise Coworker**.
 
 ![ChatGPT](./images/chatgpt4.png)
 
-After logging in, you should then see this. CLick **Refresh**.
+After logging in, you should then see this. Click to open your plugin.
 
 ![ChatGPT](./images/chatgpt5.png)
 
-You should then see this. Close this window and open a new chat.
+You should then see this. Click **Try in chat**.
 
 ![ChatGPT](./images/chatgpt6.png)
 
@@ -88,7 +88,7 @@ The Dataview setting helps to identify which dataview ChatGPT should look at whe
 Open a new chat. Enter the following **Prompt** and click the **send** button.
 
 ```
-using --aepUserLdap-- CX Enterprise Coworker, list sandboxes
+list sandboxes
 ```
 
 ![Coworker ChatGPT](./images/chatgpt11.png)
