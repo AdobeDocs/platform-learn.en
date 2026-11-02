@@ -10,9 +10,13 @@ product_v2:
 ---
 # Use your AEM website & AEP sandbox
 
->[!IMPORTANT]
->
->If you've signed up for the on-demand access to CX Enterprise Coworker, then you don't need to follow the below steps as they aren't relevant to the CX Enterprise Coworker exercise.
+## Video
+
+In this video, you'll learn which AEP sandbox to use when, and which AEM program to use.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3506046?quality=12&learn=on)
+
+## Your AEM program
 
 When taking the Agentic AI Tech Labs, you will be using an existing AEM as a Cloud Service program using Edge Delivery Services. This AEM as a Cloud Service program using Edge Delivery Services has been created for you and is already available at the start of the Tech Labs.
 
