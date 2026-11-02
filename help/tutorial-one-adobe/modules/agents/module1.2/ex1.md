@@ -1,6 +1,6 @@
 ---
-title: Getting started with CX Enterprise Coworker
-description: Getting started with CX Enterprise Coworker
+title: CX Enterprise Coworker with AEP, AJO and CJA
+description: CX Enterprise Coworker with AEP, AJO and CJA
 kt: 5342
 doc-type: tutorial
 exl-id: 12ceb547-4f1d-4c54-b51b-cb6a5654e922
@@ -9,7 +9,7 @@ product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 ---
-# 1.2.1 Getting started with CX Enterprise Coworker
+# 1.2.1 CX Enterprise Coworker with AEP, AJO and CJA
 
 >[!IMPORTANT]
 >
