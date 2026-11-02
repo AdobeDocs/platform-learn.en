@@ -36,12 +36,6 @@ In this video, you'll get an explanation and demonstration of all the steps invo
 
 ## 1.2.5.1 Install the custom MCP server for CX Enterprise Coworker
 
->[!NOTE]
->
->Using CX Enterprise Coworker in ChatGPT requires the following:
->- a paid version of OpenAI's ChatGPT Enterprise
->- using the ChatGPT Enterprise web client
-
 Go to [https://chatgpt.com/](https://chatgpt.com/) and log in using your account details. Once you're logged in, you should see this. Go to **Plugins**.
 
 ![ChatGPT](./images/chatgpt1.png)

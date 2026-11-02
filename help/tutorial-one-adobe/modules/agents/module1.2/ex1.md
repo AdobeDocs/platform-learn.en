@@ -1,6 +1,6 @@
 ---
-title: Getting started with CX Enterprise Coworker
-description: Getting started with CX Enterprise Coworker
+title: CX Enterprise Coworker with AEP, AJO and CJA
+description: CX Enterprise Coworker with AEP, AJO and CJA
 kt: 5342
 doc-type: tutorial
 exl-id: 12ceb547-4f1d-4c54-b51b-cb6a5654e922
@@ -9,7 +9,7 @@ product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 ---
-# 1.2.1 Getting started with CX Enterprise Coworker
+# 1.2.1 CX Enterprise Coworker with AEP, AJO and CJA
 
 >[!IMPORTANT]
 >
@@ -49,21 +49,7 @@ Before continuing, the selected instance and sandbox should look like this.
 
 ![AO](./images/aov2lab1a.png)
 
-## 1.2.1.2 Enable CJA plugin
-
-To install the CJA plugin, go to **Configurations**.
-
-![AO](./images/cwcjaplugin1.png)
-
-Search for `cja` and then click **Install**.
-
-![AO](./images/cwcjaplugin2.png)
-
-You should then see this.
-
-![AO](./images/cwcjaplugin3.png)
-
-## 1.2.1.3 Set your context
+## 1.2.1.2 Set your context
 
 Click the **+** icon to start a new chat. Enter the following prompt and click **Send**.
 
@@ -85,7 +71,7 @@ You should then see this.
 
 ![AO](./images/aov2lab21.png)
 
-## 1.2.1.4 Start with overall purchase trends to anchor context and zoom into fiber 
+## 1.2.1.3 Start with overall purchase trends to anchor context and zoom into fiber 
 
 **Intent**
 
@@ -115,7 +101,7 @@ You should then see this, which drills down into Fiber-specific trends.
 
 ![Coworker](./images/aotechlab7.png)
 
-## 1.2.1.5 Correlate Orders with Content Preferences 
+## 1.2.1.4 Correlate Orders with Content Preferences 
 
 **Intent**
 
@@ -149,7 +135,7 @@ You should then see this.
 
 ![Coworker](./images/aotechlab9.png)
 
-## 1.2.1.6 Identify Existing Fiber Journeys
+## 1.2.1.5 Identify Existing Fiber Journeys
 
 **Intent** 
 
@@ -191,7 +177,7 @@ You should then see this.
 
 ![Coworker](./images/aotechlab15b.png)
 
-## 1.2.1.7 Validate journey performance via fallout analysis 
+## 1.2.1.6 Validate journey performance via fallout analysis 
 
 **Intent**
 
@@ -209,7 +195,7 @@ You should then see this.
 
 ![Coworker](./images/aotechlab20.png)
 
-## 1.2.1.8 Create a new audience
+## 1.2.1.7 Create a new audience
 
 **Intent**
 
@@ -275,7 +261,7 @@ Your audience has now been created.
 
 ![Coworker](./images/aotechlab38.png)
 
-## 1.2.1.9 Activate audience to destination
+## 1.2.1.8 Activate audience to destination
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -305,7 +291,7 @@ You should then see this.
 
 ![Coworker](./images/cwdest5.png)
 
-## 1.2.1.10 Find existing audiences aligned to high usage and check if they are in use
+## 1.2.1.9 Find existing audiences aligned to high usage and check if they are in use
 
 **Intent**: 
 
@@ -353,7 +339,7 @@ You should then see something similar to this.
 
 For the upcoming launch of Fiber Max, you should now create a new journey.
 
-## 1.2.1.11 Create New Journey for Fiber Max Launch 
+## 1.2.1.10 Create New Journey for Fiber Max Launch 
 
 **Intent**: 
 
@@ -381,7 +367,7 @@ Your journey has now been created in draft mode.
 
 ![Coworker](./images/aocj9.png)
 
-## 1.2.1.12 Journey Conflict Management
+## 1.2.1.11 Journey Conflict Management
 
 Enter the following **Prompt** and click the **send** button.
 
@@ -407,7 +393,7 @@ You should then see this. Review the journey conflict information.
 
 ![Coworker](./images/aocj70a.png)
 
-## 1.2.1.13 Experiments
+## 1.2.1.12 Experiments
 
 Enter the following **Prompt** and click the **send** button.
 
