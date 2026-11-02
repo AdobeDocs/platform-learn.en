@@ -25,7 +25,7 @@ GenStudio for Performance Marketing uses the wealth of brand information from yo
 
 To start creating your own brand, follow the below steps.
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **GenStudio**.
+Go to [https://experience.adobe.com/](https://experience.adobe.com/). Open **GenStudio**.
 
 ![GSPeM](./images/gspem1.png)
 
