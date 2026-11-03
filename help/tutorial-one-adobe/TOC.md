@@ -45,7 +45,7 @@ recommendations: noDisplay,noCatalog
     + [1.1.1 AI Assistant and Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
   + 1.2 CX Enterprise Coworker {#agents2}
     + [Overview](/help/tutorial-one-adobe/modules/agents/module1.2/coworker.md)
-    + [1.2.1 CX Enterprise Coworker with AEP, AJO and CJA](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+    + [1.2.1 CX Enterprise Coworker with AEP, RTCDP, AJO and CJA](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
     + [1.2.2 Using CX Enterprise Coworker for insights](/help/tutorial-one-adobe/modules/agents/module1.2/ex2.md)
     + [1.2.3 Business Context in CX Enterprise Coworker](/help/tutorial-one-adobe/modules/agents/module1.2/ex3.md)
     + [1.2.4 CX Enterprise Coworker with Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.2/ex4.md)

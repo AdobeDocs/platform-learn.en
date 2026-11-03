@@ -22,7 +22,7 @@ Grounded in your brand, business processes, and customer context, it continuousl
 
 ## Exercises
 
-[1.2.1 CX Enterprise Coworker with AEP, AJO and CJA](./ex1.md){target="_blank"}
+[1.2.1 CX Enterprise Coworker with AEP, RTCDP, AJO and CJA](./ex1.md){target="_blank"}
 
 In this exercise, you'll provide specific prompts to CX Enterprise Coworker to explore your analytics data to find hidden insights which you'll then put into action by creating audiences and journeys.
 
