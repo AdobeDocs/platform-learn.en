@@ -9,7 +9,7 @@ product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 ---
-# 1.2.1 CX Enterprise Coworker with AEP, AJO and CJA
+# 1.2.1 CX Enterprise Coworker with AEP, RTCDP, AJO and CJA
 
 >[!IMPORTANT]
 >
@@ -37,7 +37,7 @@ For this exercise, you need to use:
 
 In this video, you'll get an explanation and demonstration of all the steps involved in this exercise.
 
->[!VIDEO](https://video.tv.adobe.com/v/3495927?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3502314?quality=12&learn=on)
 
 ## 1.2.1.1 Access CX Enterprise Coworker
 
