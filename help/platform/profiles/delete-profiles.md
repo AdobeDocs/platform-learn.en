@@ -16,8 +16,6 @@ product_v2:
 feature_v2:
   - id: e2caa907-399e-441d-a026-6f449b9a4286
     internal-label: Data lifecycle
-  - id: d9b97a7b-ccbd-5fc1-bb28-c1f834feacb8
-    internal-label: ''
 subfeature_v2:
   - id: b3d97c8e-b703-4581-afe3-c2c91d9c9c4d
     internal-label: Data hygiene API

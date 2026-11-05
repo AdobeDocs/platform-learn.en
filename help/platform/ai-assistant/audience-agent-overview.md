@@ -15,8 +15,6 @@ product_v2:
 feature_v2:
   - id: f8e8ea8a-6020-40da-99f7-6504fe599cb1
     internal-label: AI assistant
-  - id: 095e8119-1425-57eb-9d8c-9e684f2c9771
-    internal-label: ''
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

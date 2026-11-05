@@ -12,9 +12,6 @@ TQID: 'https://experienceleague.adobe.com/wCW3c8fHtvBBGl6fIfk6mMECYamWsiZ-Sb1cIe
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-feature_v2:
-  - id: d9b97a7b-ccbd-5fc1-bb28-c1f834feacb8
-    internal-label: ''
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
