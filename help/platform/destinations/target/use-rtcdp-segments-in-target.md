@@ -25,8 +25,6 @@ feature_v2:
     internal-label: Customer audiences
   - id: f6ac78a3-5b59-40f5-a37d-45df5303d3a3
     internal-label: Dashboards
-  - id: 095e8119-1425-57eb-9d8c-9e684f2c9771
-    internal-label: ''
 subfeature_v2:
   - id: f0c9f224-75f2-4864-8de6-859ae7856690
     internal-label: Segment match

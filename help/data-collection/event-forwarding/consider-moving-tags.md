@@ -15,8 +15,6 @@ feature_v2:
     internal-label: Event forwarding
   - id: f6ac78a3-5b59-40f5-a37d-45df5303d3a3
     internal-label: Dashboards
-  - id: 000dc7ac-a6c3-564d-bf22-5080bf496cc2
-    internal-label: ''
 subfeature_v2:
   - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
     internal-label: Integrations

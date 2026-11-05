@@ -16,8 +16,6 @@ product_v2:
 feature_v2:
   - id: abc02dd6-664f-446a-9aaa-675bc0f2fe4a
     internal-label: Sources
-  - id: 21672ff6-316b-5124-bd76-24487e691233
-    internal-label: ''
 subfeature_v2:
   - id: 1a2b3c4d-0037-4037-8037-000000000037
     internal-label: Data prep API

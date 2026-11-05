@@ -23,8 +23,6 @@ feature_v2:
     internal-label: Destinations
   - id: f6ac78a3-5b59-40f5-a37d-45df5303d3a3
     internal-label: Dashboards
-  - id: d9b97a7b-ccbd-5fc1-bb28-c1f834feacb8
-    internal-label: ''
 subfeature_v2:
   - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
     internal-label: Integrations

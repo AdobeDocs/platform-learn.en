@@ -17,8 +17,6 @@ feature_v2:
     internal-label: Policies
   - id: a9eb38d5-9d89-492f-af4e-b968a07f2d91
     internal-label: Permissions
-  - id: 392d408e-4e40-5bf7-afae-72086f108746
-    internal-label: ''
 subfeature_v2:
   - id: a3b3152b-4985-4b09-b52d-53d4801bd726
     internal-label: Consent
