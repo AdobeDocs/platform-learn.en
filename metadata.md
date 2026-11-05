@@ -1,7 +1,9 @@
 ---
 cloud: Experience Platform 
-product: experience platform
 solution: Experience Platform
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 landing-page-name: experience-platform
 landing-page-breadcrumb-title: Experience Platform
 solution-title: Documentation
@@ -15,6 +17,7 @@ feature-set: Experience Platform
 index: true
 mini-toc-levels: 2
 type: Tutorial
+usetq: true
 ---
 
 # Metadata for internal use
