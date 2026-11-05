@@ -1,6 +1,5 @@
 ---
 cloud: Experience Platform 
-product: experience platform
 solution: Experience Platform
 landing-page-name: experience-platform
 landing-page-breadcrumb-title: Experience Platform
@@ -15,6 +14,7 @@ feature-set: Experience Platform
 index: true
 mini-toc-levels: 2
 type: Tutorial
+usetq: true
 ---
 
 # Metadata for internal use
