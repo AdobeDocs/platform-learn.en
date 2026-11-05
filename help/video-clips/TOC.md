@@ -3,6 +3,9 @@ user-guide-title: Adobe Experience Platform Video clips
 breadcrumb-title: Video clips
 user-guide-description: Hidden collection
 auto-video-transcripts: true
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 ---
 
 # Adobe Experience Platform Video clips {#video-clips}
