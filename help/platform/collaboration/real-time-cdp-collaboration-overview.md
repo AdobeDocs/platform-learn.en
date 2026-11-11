@@ -39,6 +39,7 @@ CARDS
 * real-time-cdp-collaboration-intro.md
 * rtcdp-overview-for-agency-practitioners.md
 * rtcdp-collaboration-process-and-people.md
+* rtcdp-collaboration-clean-sketches-overview.md
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -48,7 +49,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration intro" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1785182519685" alt="Real-Time CDP Collaboration intro"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1794357048107" alt="Real-Time CDP Collaboration intro"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +72,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="Real-Time CDP Overview for Agency Practitioners" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1785182519656" alt="Real-Time CDP Overview for Agency Practitioners"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1794357048117" alt="Real-Time CDP Overview for Agency Practitioners"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,7 +95,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - Process and People" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1785182519672" alt="Real-Time CDP Collaboration - Process and People"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1794357048142" alt="Real-Time CDP Collaboration - Process and People"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -107,6 +108,29 @@ CARDS
                     <p class="is-size-6">This video gives guidance for users of Real-Time CDP Collaboration, both agency practitioners and mar tech teams, on how these cross functional teams should be working together across disparate use cases, data sources, audiences and goals to ensure success and operational efficiencies when adopting Real-Time CDP Collaboration</p>
                 </div>
                 <a href="rtcdp-collaboration-process-and-people.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="How Adobe Clean Sketch Technology Unlocks Privacy First Data Collaboration">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="rtcdp-collaboration-clean-sketches-overview.md" title="How Adobe Clean Sketch Technology Unlocks Privacy First Data Collaboration" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3508189/?format=jpeg&nocache=1794357048158" alt="How Adobe Clean Sketch Technology Unlocks Privacy First Data Collaboration"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="rtcdp-collaboration-clean-sketches-overview.md" target="_blank" rel="referrer" title="How Adobe Clean Sketch Technology Unlocks Privacy First Data Collaboration">How Adobe Clean Sketch Technology Unlocks Privacy First Data Collaboration</a>
+                    </p>
+                    <p class="is-size-6">Learn why Adobe clean sketch technology was created, what use cases it unlocks, how it works and the key privacy differentiators.</p>
+                </div>
+                <a href="rtcdp-collaboration-clean-sketches-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
                 </a>
             </div>
@@ -136,7 +160,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="Add product administrators for Adobe Experience Platform-based applications" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1785182520199" alt="Add product administrators for Adobe Experience Platform-based applications"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1794357048891" alt="Add product administrators for Adobe Experience Platform-based applications"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -159,7 +183,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Set permissions for Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1785182520190" alt="Set permissions for Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1794357048900" alt="Set permissions for Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -182,7 +206,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-up-an-advertiser-account.md" title="Set up an Advertiser account in Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452264/?format=jpeg&nocache=1785182520180" alt="Set up an Advertiser account in Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452264/?format=jpeg&nocache=1794357048882" alt="Set up an Advertiser account in Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -225,7 +249,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="reference-audiences-as-an-advertiser.md" title="Reference audiences as an advertiser in Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452217/?format=jpeg&nocache=1785182520566" alt="Reference audiences as an advertiser in Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452217/?format=jpeg&nocache=1794357049463" alt="Reference audiences as an advertiser in Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -248,7 +272,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="upload-and-source-a-csv-audience.md" title="Upload and Source a CSV Audience in Adobe Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3491131/?format=jpeg&nocache=1785182520583" alt="Upload and Source a CSV Audience in Adobe Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3491131/?format=jpeg&nocache=1794357049478" alt="Upload and Source a CSV Audience in Adobe Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -271,7 +295,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="connect-with-publishers.md" title="Connect with publishers in Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452218/?format=jpeg&nocache=1785182520578" alt="Connect with publishers in Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452218/?format=jpeg&nocache=1794357049496" alt="Connect with publishers in Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -294,7 +318,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Create a project in Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1785182520572" alt="Create a project in Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1794357049488" alt="Create a project in Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -317,7 +341,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discover-audience-overlaps-in-projects.md" title="Discover audience overlaps inside of Collaboration projects" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471675/?format=jpeg&nocache=1785182520601" alt="Discover audience overlaps inside of Collaboration projects"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471675/?format=jpeg&nocache=1794357049508" alt="Discover audience overlaps inside of Collaboration projects"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -340,7 +364,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="activate-audiences-in-projects.md" title="Activate audiences in Collaboration projects" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471677/?format=jpeg&nocache=1785182520611" alt="Activate audiences in Collaboration projects"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471677/?format=jpeg&nocache=1794357049527" alt="Activate audiences in Collaboration projects"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -363,7 +387,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="collaboration-measurement-setup-and-report-creation.md" title="Collaboration measurement - setup and report creation" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3486343/?format=jpeg&nocache=1785182520621" alt="Collaboration measurement - setup and report creation"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3486343/?format=jpeg&nocache=1794357049471" alt="Collaboration measurement - setup and report creation"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -386,7 +410,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="brand-to-brand-collaboration.md" title="Brand to Brand Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470936/?format=jpeg&nocache=1785182520592" alt="Brand to Brand Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470936/?format=jpeg&nocache=1794357049518" alt="Brand to Brand Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -423,7 +447,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-in-product-invitations.md" title="Real-Time CDP Collaboration In-product Invitations" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3486225/?format=jpeg&nocache=1785182521060" alt="Real-Time CDP Collaboration In-product Invitations"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3486225/?format=jpeg&nocache=1794357050116" alt="Real-Time CDP Collaboration In-product Invitations"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -446,7 +470,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-starter-initial-access-and-permissions-setup.md" title="Real-Time CDP Collaboration Starter - Initial Access and Permissions Setup" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3496038/?format=jpeg&nocache=1785182521049" alt="Real-Time CDP Collaboration Starter - Initial Access and Permissions Setup"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3496038/?format=jpeg&nocache=1794357050108" alt="Real-Time CDP Collaboration Starter - Initial Access and Permissions Setup"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -482,7 +506,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="source-audience-manager-segments-for-collaboration.md" title="Source Audience Manager segments for Real-Time CDP Collaboration Audiences" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3496412/?format=jpeg&nocache=1785182521456" alt="Source Audience Manager segments for Real-Time CDP Collaboration Audiences"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3496412/?format=jpeg&nocache=1794357051815" alt="Source Audience Manager segments for Real-Time CDP Collaboration Audiences"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
